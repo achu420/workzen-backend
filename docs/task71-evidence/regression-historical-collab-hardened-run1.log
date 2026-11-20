@@ -1,0 +1,59 @@
+
+Running 12 tests using 1 worker
+
+  ✓   1 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:282:3 › Task 66: real-time content fan-out › A1. owner->member live delivery + persistence (document body) (1.7s)
+  ✓   2 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:327:3 › Task 66: real-time content fan-out › A2. member->owner live delivery + persistence (2.2s)
+  ✓   3 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:349:3 › Task 66: real-time content fan-out › A3. continued collaboration (reload-based convergence both directions), no duplicate/stale content (5.8s)
+  ✓   4 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:385:3 › Task 66: real-time content fan-out › A4. Database/DatabaseRow browser fan-out (bounded attempt) (3.8s)
+  ✓   5 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:460:3 › Task 67: authorization and membership revocation › B1. initial authorized access (two independent contexts, same document) (1.4s)
+  ✓   6 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:482:3 › Task 67: authorization and membership revocation › B2. revoke membership while connected; existing socket is closed by the periodic revalidation timer (1.7s)
+  ✓   7 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:510:3 › Task 67: authorization and membership revocation › B3. reconnection attempt is rejected; no protected content delivered (14.3s)
+  -   8 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:537:3 › Task 67: authorization and membership revocation › B4. offline update + authorization (bounded attempt)
+  ✘   9 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:549:3 › Task 67: authorization and membership revocation › B5. membership restoration requires a fresh connection (42ms)
+  ✓  10 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:642:3 › Task 68: collaboration recovery and reconnection › C1. pre-restart collaboration + persistence (2.0s)
+  ✓  11 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:664:3 › Task 68: collaboration recovery and reconnection › C2. backend restart against the SAME storage; both contexts reconnect and pre-restart content persists (2.3s)
+  ✓  12 [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:689:3 › Task 68: collaboration recovery and reconnection › C3. post-restart bidirectional delivery + reload persistence (the outstanding Task 68 gap) (3.4s)
+
+
+  1) [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:549:3 › Task 67: authorization and membership revocation › B5. membership restoration requires a fresh connection 
+
+    Error: membership restoration via the test-members helper must succeed
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 500
+
+      551 |
+      552 |     const restoreResp = await grantMembership(env, workspaceId, ownerToken, memberEmail);
+    > 553 |     expect(restoreResp.status, 'membership restoration via the test-members helper must succeed').toBe(201);
+          |                                                                                                   ^
+      554 |
+      555 |     // Task 70 finding: pageB's own "No access to this page" permission-gate
+      556 |     // screen (see docs/task70-evidence/task67/*-after-reconnect-attempt.png)
+        at /Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e/historical-collaboration-acceptance.spec.ts:553:99
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/historical-collaboration-a-2a804-requires-a-fresh-connection-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/historical-collaboration-a-2a804-requires-a-fresh-connection-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/historical-collaboration-a-2a804-requires-a-fresh-connection-chromium/error-context.md
+
+    Error Context: test-results/historical-collaboration-a-2a804-requires-a-fresh-connection-chromium/error-context.md
+
+    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/historical-collaboration-a-2a804-requires-a-fresh-connection-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/historical-collaboration-a-2a804-requires-a-fresh-connection-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › test/e2e/historical-collaboration-acceptance.spec.ts:549:3 › Task 67: authorization and membership revocation › B5. membership restoration requires a fresh connection 
+  1 skipped
+  10 passed (1.6m)

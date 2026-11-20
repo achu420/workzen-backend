@@ -1,0 +1,16 @@
+WS OPEN ws://localhost:5202/?token=JdQ_8cGnn1ct
+WS OPEN ws://localhost:5202/?token=JdQ_8cGnn1ct
+WS OPEN ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=2420875265&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS OPEN ws://localhost:5202/?token=JdQ_8cGnn1ct
+WS OPEN ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=958865535&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS OPEN ws://localhost:5202/?token=JdQ_8cGnn1ct
+WS OPEN ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=3622910827&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS CLOSE ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=3622910827&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS OPEN ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=3622910827&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS CLOSE ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=3622910827&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS OPEN ws://localhost:5202/?token=JdQ_8cGnn1ct
+WS OPEN ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=4128518809&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS CLOSE ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=4128518809&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS OPEN ws://localhost:5202/?token=JdQ_8cGnn1ct
+WS OPEN ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=1459174416&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web
+WS CLOSE ws://localhost:8802/ws/v2/850a00a9-8275-459e-8cbd-0d9e2a713d3f/?clientId=1459174416&deviceId=-sc69Jqe&token=ruXUDvMX_hYQM0QM1obEJmLXIeC2VPw9mr4rIQ4TA9M&cv=0.10.0&cp=web

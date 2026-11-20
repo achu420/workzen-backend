@@ -1,0 +1,2387 @@
+{
+  "template_id": "performance-review-template",
+  "order": 141,
+  "name": "Performance Review Template",
+  "description": "Use this template as a joint document between employees and managers to assess the quarter's work and plan ahead for next quarter's progress.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"pen-tool\",\"color\":\"0xFFA34AFD\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Human Resources",
+    "Startups"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Performance-Review-Template-dc7c1ac2-ae2f-4994-8fff-00b7fc25b45d",
+  "pages": {
+    "id": "dc7c1ac2-ae2f-4994-8fff-00b7fc25b45d",
+    "name": "Performance Review Template",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"pen-tool\",\"color\":\"0xFFA34AFD\"}"
+    },
+    "document": {
+      "page_id": "6161788b-c3ee-5d81-be1f-6b774f566362",
+      "blocks": {
+        "sZwXAP": {
+          "id": "sZwXAP",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "LGPopc",
+          "external_id": "HyCyLQ",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "1. Quality of Deliverables"
+              }
+            ],
+            "level": 1
+          }
+        },
+        "6161788b-c3ee-5d81-be1f-6b774f566362": {
+          "id": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "ty": "page",
+          "parent": "",
+          "children": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "external_id": "LiWEC1",
+          "external_type": "text",
+          "data": {
+            "cover_selection_type": "CoverType.file",
+            "cover_selection": "https://images.unsplash.com/photo-1585669806456-bbfb218ee08d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ0MjI1NTh8&ixlib=rb-4.0.3&q=80&w=1080",
+            "selected_icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"pen-tool\",\"color\":\"0xFFA34AFD\"}",
+            "image_type": "1"
+          }
+        },
+        "DR_6jm": {
+          "id": "DR_6jm",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "jndkK4",
+          "external_id": "nHSTqS",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Feedback on the period: Duties, workload, tasks, collaboration, quality of work"
+              }
+            ]
+          }
+        },
+        "hKSNde": {
+          "id": "hKSNde",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "KDRV1m",
+          "external_id": "he10yk",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "2. Teamwork"
+              }
+            ],
+            "level": 1
+          }
+        },
+        "01ROec": {
+          "id": "01ROec",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "THkOUC",
+          "external_id": "xkFbco",
+          "external_type": "text",
+          "data": {
+            "level": 1,
+            "delta": [
+              {
+                "insert": "3. Innovation"
+              }
+            ]
+          }
+        },
+        "aAl0pA": {
+          "id": "aAl0pA",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "NCqDaR",
+          "external_id": "2dK0tp",
+          "external_type": "text",
+          "data": {
+            "level": 1,
+            "delta": [
+              {
+                "insert": "4. Skills development"
+              }
+            ]
+          }
+        },
+        "PvDzSm": {
+          "id": "PvDzSm",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "zxgtSY",
+          "external_id": "VcCY1h",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Q: Professional and personal skills you have developed in this quarter"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "VphQrl": {
+          "id": "VphQrl",
+          "ty": "quote",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "YTYF3X",
+          "external_id": "rsrmeH",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Ex: developed knowledge in software design and think more holistically when writing code"
+              }
+            ]
+          }
+        },
+        "tz5z7_": {
+          "id": "tz5z7_",
+          "ty": "paragraph",
+          "parent": "VphQrl",
+          "children": "JFFF5D",
+          "external_id": "huNE3S",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Ex: developed knowledge in software design and think more holistically when writing code"
+              }
+            ]
+          }
+        },
+        "QO23zo": {
+          "id": "QO23zo",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "B6VKBj",
+          "external_id": "wZDt-g",
+          "external_type": "text",
+          "data": {
+            "level": 3,
+            "delta": [
+              {
+                "insert": "A:"
+              }
+            ]
+          }
+        },
+        "11U-hx": {
+          "id": "11U-hx",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "4n3eET",
+          "external_id": "H_kFmR",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "ZM0mil": {
+          "id": "ZM0mil",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "PPa2mb",
+          "external_id": "YpRrUS",
+          "external_type": "text",
+          "data": {
+            "level": 3,
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Q: Professional and personal skills you want to develop next quarter"
+              }
+            ]
+          }
+        },
+        "jetS8R": {
+          "id": "jetS8R",
+          "ty": "quote",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "gBKR2E",
+          "external_id": "DwPkag",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Ex: improve project management skills to follow through a project to finish the last mile"
+              }
+            ]
+          }
+        },
+        "cRhp4g": {
+          "id": "cRhp4g",
+          "ty": "paragraph",
+          "parent": "jetS8R",
+          "children": "5Aq_-i",
+          "external_id": "c6ju9N",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Ex: improve project management skills to follow through a project to finish the last mile"
+              }
+            ]
+          }
+        },
+        "-b-_v-": {
+          "id": "-b-_v-",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "9m5KUo",
+          "external_id": "kaxD1i",
+          "external_type": "text",
+          "data": {
+            "level": 3,
+            "delta": [
+              {
+                "insert": "A:"
+              }
+            ]
+          }
+        },
+        "Lhtfmx": {
+          "id": "Lhtfmx",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "oPBUAc",
+          "external_id": "LvrYcf",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "qP_Boz": {
+          "id": "qP_Boz",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "zbHf6_",
+          "external_id": "1Q6mlW",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "rslbuA": {
+          "id": "rslbuA",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "iOGAOF",
+          "external_id": "D6zxIG",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "5. Feedback to your manager"
+              }
+            ],
+            "level": 1
+          }
+        },
+        "fKz8ON": {
+          "id": "fKz8ON",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "l82G6P",
+          "external_id": "LAehY1",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Q: "
+              },
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "You and your manager"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "JsyK6r": {
+          "id": "JsyK6r",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "Ru0CQu",
+          "external_id": "c5s8kt",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Feedback to your leader: Eg. the delegation of tasks, responsibilities and competence."
+              }
+            ]
+          }
+        },
+        "WgrL_s": {
+          "id": "WgrL_s",
+          "ty": "quote",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "rR2PEr",
+          "external_id": "sjeFKs",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Ex: Skillfully manage projects, people, and budget"
+              }
+            ]
+          }
+        },
+        "mC9RjO": {
+          "id": "mC9RjO",
+          "ty": "paragraph",
+          "parent": "WgrL_s",
+          "children": "0gzbAc",
+          "external_id": "fMWgdH",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Ex: Skillfully manage projects, people, and budget"
+              }
+            ]
+          }
+        },
+        "qhM7zr": {
+          "id": "qhM7zr",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "mt9Ltp",
+          "external_id": "swXp0h",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "A:"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "7NWz83": {
+          "id": "7NWz83",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "UjE94j",
+          "external_id": "blEFFb",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "81IsiW": {
+          "id": "81IsiW",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "Dqw4kt",
+          "external_id": "T4zAsT",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "zeCpX6": {
+          "id": "zeCpX6",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "1Q1om2",
+          "external_id": "69BXnR",
+          "external_type": "text",
+          "data": {
+            "level": 1,
+            "delta": [
+              {
+                "insert": "6. Career development in the long-term"
+              }
+            ]
+          }
+        },
+        "7SwzfL": {
+          "id": "7SwzfL",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "GWr2Ep",
+          "external_id": "haEfe_",
+          "external_type": "text",
+          "data": {
+            "level": 3,
+            "delta": [
+              {
+                "insert": "Q: Reflections on job opportunities, other tasks, new disciplines, etc. Do you need support from your manager to achieve your development goals?"
+              }
+            ]
+          }
+        },
+        "5lEGA8": {
+          "id": "5lEGA8",
+          "ty": "quote",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "pVeTaE",
+          "external_id": "Q_suFZ",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Ex: Need manager's support in preparation to become a Project Manager"
+              }
+            ]
+          }
+        },
+        "hGuU0-": {
+          "id": "hGuU0-",
+          "ty": "paragraph",
+          "parent": "5lEGA8",
+          "children": "loyxLb",
+          "external_id": "fyQhVQ",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Ex: Need manager's support in preparation to become a Project Manager"
+              }
+            ]
+          }
+        },
+        "qb7ZGC": {
+          "id": "qb7ZGC",
+          "ty": "heading",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "qAkcDJ",
+          "external_id": "21YXEX",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "A:"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "7MgMqR": {
+          "id": "7MgMqR",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "rvO2x0",
+          "external_id": "Rm6QkO",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "kZP2hn": {
+          "id": "kZP2hn",
+          "ty": "paragraph",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "5ELNho",
+          "external_id": "dkKEk7",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "IqBFhu": {
+          "id": "IqBFhu",
+          "ty": "simple_table",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "kdr6cZ",
+          "external_id": "TmVHoJ",
+          "external_type": "text",
+          "data": {
+            "column_widths": {
+              "0": 294.09375
+            },
+            "row_colors": {},
+            "enable_header_row": true,
+            "enable_header_column": false,
+            "distribute_column_widths_evenly": false
+          }
+        },
+        "1DL2Mz": {
+          "id": "1DL2Mz",
+          "ty": "simple_table_row",
+          "parent": "IqBFhu",
+          "children": "N8WhmG",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "f_Ozjo": {
+          "id": "f_Ozjo",
+          "ty": "simple_table_cell",
+          "parent": "1DL2Mz",
+          "children": "IWSgIa",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "v94zb_": {
+          "id": "v94zb_",
+          "ty": "paragraph",
+          "parent": "f_Ozjo",
+          "children": "ZaW1n6",
+          "external_id": "D92sTh",
+          "external_type": "text",
+          "data": {}
+        },
+        "UaTKW8": {
+          "id": "UaTKW8",
+          "ty": "simple_table_cell",
+          "parent": "1DL2Mz",
+          "children": "BsfJ-9",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "YF1DBM": {
+          "id": "YF1DBM",
+          "ty": "paragraph",
+          "parent": "UaTKW8",
+          "children": "oeJySc",
+          "external_id": "Mh1nW2",
+          "external_type": "text",
+          "data": {}
+        },
+        "qFYLwO": {
+          "id": "qFYLwO",
+          "ty": "simple_table_cell",
+          "parent": "1DL2Mz",
+          "children": "bnWd4F",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "RVqGq_": {
+          "id": "RVqGq_",
+          "ty": "paragraph",
+          "parent": "qFYLwO",
+          "children": "YkIkb8",
+          "external_id": "DIGH1s",
+          "external_type": "text",
+          "data": {}
+        },
+        "amt5n0": {
+          "id": "amt5n0",
+          "ty": "simple_table_cell",
+          "parent": "1DL2Mz",
+          "children": "Wo5V8X",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "iA7LDk": {
+          "id": "iA7LDk",
+          "ty": "paragraph",
+          "parent": "amt5n0",
+          "children": "CvOvzA",
+          "external_id": "ZMQS-V",
+          "external_type": "text",
+          "data": {}
+        },
+        "k_aSSq": {
+          "id": "k_aSSq",
+          "ty": "simple_table_cell",
+          "parent": "1DL2Mz",
+          "children": "Lt3MJT",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vfhPpU": {
+          "id": "vfhPpU",
+          "ty": "paragraph",
+          "parent": "k_aSSq",
+          "children": "MU6Mge",
+          "external_id": "5ERIVo",
+          "external_type": "text",
+          "data": {}
+        },
+        "Tu5xy_": {
+          "id": "Tu5xy_",
+          "ty": "simple_table_row",
+          "parent": "IqBFhu",
+          "children": "ohkYTD",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "pMwyy7": {
+          "id": "pMwyy7",
+          "ty": "simple_table_cell",
+          "parent": "Tu5xy_",
+          "children": "oCLQac",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "K5ApIE": {
+          "id": "K5ApIE",
+          "ty": "paragraph",
+          "parent": "pMwyy7",
+          "children": "hgC8NR",
+          "external_id": "GxsyOn",
+          "external_type": "text",
+          "data": {}
+        },
+        "Tr0kCB": {
+          "id": "Tr0kCB",
+          "ty": "simple_table_cell",
+          "parent": "Tu5xy_",
+          "children": "voF4G-",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "6bFTzb": {
+          "id": "6bFTzb",
+          "ty": "paragraph",
+          "parent": "Tr0kCB",
+          "children": "QKkJVG",
+          "external_id": "aNoHAS",
+          "external_type": "text",
+          "data": {}
+        },
+        "5snuQH": {
+          "id": "5snuQH",
+          "ty": "simple_table_cell",
+          "parent": "Tu5xy_",
+          "children": "PiCAx9",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "JJ5h7V": {
+          "id": "JJ5h7V",
+          "ty": "paragraph",
+          "parent": "5snuQH",
+          "children": "656r8Q",
+          "external_id": "Uq1Wbg",
+          "external_type": "text",
+          "data": {}
+        },
+        "zpF0Xf": {
+          "id": "zpF0Xf",
+          "ty": "simple_table_cell",
+          "parent": "Tu5xy_",
+          "children": "mRrjxv",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Rx5lGQ": {
+          "id": "Rx5lGQ",
+          "ty": "paragraph",
+          "parent": "zpF0Xf",
+          "children": "f-6Nrh",
+          "external_id": "xUrjSH",
+          "external_type": "text",
+          "data": {}
+        },
+        "bGtBic": {
+          "id": "bGtBic",
+          "ty": "simple_table_cell",
+          "parent": "Tu5xy_",
+          "children": "Llk-bd",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "WB8wtd": {
+          "id": "WB8wtd",
+          "ty": "paragraph",
+          "parent": "bGtBic",
+          "children": "LHBXsU",
+          "external_id": "w_KdOm",
+          "external_type": "text",
+          "data": {}
+        },
+        "xTH2_C": {
+          "id": "xTH2_C",
+          "ty": "simple_table_row",
+          "parent": "IqBFhu",
+          "children": "iNdJU0",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "awGHeU": {
+          "id": "awGHeU",
+          "ty": "simple_table_cell",
+          "parent": "xTH2_C",
+          "children": "DDjZ6p",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Ni-Ikn": {
+          "id": "Ni-Ikn",
+          "ty": "paragraph",
+          "parent": "awGHeU",
+          "children": "HvyCer",
+          "external_id": "HAOKM4",
+          "external_type": "text",
+          "data": {}
+        },
+        "4SmE7u": {
+          "id": "4SmE7u",
+          "ty": "simple_table_cell",
+          "parent": "xTH2_C",
+          "children": "8l9OVh",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "38U7Mc": {
+          "id": "38U7Mc",
+          "ty": "paragraph",
+          "parent": "4SmE7u",
+          "children": "m53_2E",
+          "external_id": "9q38zV",
+          "external_type": "text",
+          "data": {}
+        },
+        "zd3Yw7": {
+          "id": "zd3Yw7",
+          "ty": "simple_table_cell",
+          "parent": "xTH2_C",
+          "children": "P6VFfn",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "y_8bQM": {
+          "id": "y_8bQM",
+          "ty": "paragraph",
+          "parent": "zd3Yw7",
+          "children": "gMqEkL",
+          "external_id": "FW-DDh",
+          "external_type": "text",
+          "data": {}
+        },
+        "rZDJdU": {
+          "id": "rZDJdU",
+          "ty": "simple_table_cell",
+          "parent": "xTH2_C",
+          "children": "e6Gwg_",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vhx4Rr": {
+          "id": "vhx4Rr",
+          "ty": "paragraph",
+          "parent": "rZDJdU",
+          "children": "cvFdHj",
+          "external_id": "pIh72v",
+          "external_type": "text",
+          "data": {}
+        },
+        "egBY7i": {
+          "id": "egBY7i",
+          "ty": "simple_table_cell",
+          "parent": "xTH2_C",
+          "children": "v5VcrJ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "CL1Y7M": {
+          "id": "CL1Y7M",
+          "ty": "paragraph",
+          "parent": "egBY7i",
+          "children": "uaAGfT",
+          "external_id": "gcImaL",
+          "external_type": "text",
+          "data": {}
+        },
+        "svAIFA": {
+          "id": "svAIFA",
+          "ty": "simple_table_row",
+          "parent": "IqBFhu",
+          "children": "nv1tn4",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "6cSgt0": {
+          "id": "6cSgt0",
+          "ty": "simple_table_cell",
+          "parent": "svAIFA",
+          "children": "yD8bk_",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "amLYDH": {
+          "id": "amLYDH",
+          "ty": "paragraph",
+          "parent": "6cSgt0",
+          "children": "0ajR1V",
+          "external_id": "3yIkLp",
+          "external_type": "text",
+          "data": {}
+        },
+        "lkUy3n": {
+          "id": "lkUy3n",
+          "ty": "simple_table_cell",
+          "parent": "svAIFA",
+          "children": "X4uJQL",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "JnN4Bh": {
+          "id": "JnN4Bh",
+          "ty": "paragraph",
+          "parent": "lkUy3n",
+          "children": "bYnWhv",
+          "external_id": "vd2qDi",
+          "external_type": "text",
+          "data": {}
+        },
+        "B3IIdo": {
+          "id": "B3IIdo",
+          "ty": "simple_table_cell",
+          "parent": "svAIFA",
+          "children": "0s2oOf",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "mdQwtr": {
+          "id": "mdQwtr",
+          "ty": "paragraph",
+          "parent": "B3IIdo",
+          "children": "UbVUSW",
+          "external_id": "qV0dJT",
+          "external_type": "text",
+          "data": {}
+        },
+        "z2Vebx": {
+          "id": "z2Vebx",
+          "ty": "simple_table_cell",
+          "parent": "svAIFA",
+          "children": "54YtJI",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "HbQyVE": {
+          "id": "HbQyVE",
+          "ty": "paragraph",
+          "parent": "z2Vebx",
+          "children": "EfWCDg",
+          "external_id": "2mkrTZ",
+          "external_type": "text",
+          "data": {}
+        },
+        "RH-wBb": {
+          "id": "RH-wBb",
+          "ty": "simple_table_cell",
+          "parent": "svAIFA",
+          "children": "u8NW4R",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "dAgrCf": {
+          "id": "dAgrCf",
+          "ty": "paragraph",
+          "parent": "RH-wBb",
+          "children": "dtKUxZ",
+          "external_id": "-WYUd_",
+          "external_type": "text",
+          "data": {}
+        },
+        "3qaHcU": {
+          "id": "3qaHcU",
+          "ty": "simple_table_row",
+          "parent": "IqBFhu",
+          "children": "z0D6ow",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "genrqM": {
+          "id": "genrqM",
+          "ty": "simple_table_cell",
+          "parent": "3qaHcU",
+          "children": "CwA_Hp",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "cP6LVc": {
+          "id": "cP6LVc",
+          "ty": "paragraph",
+          "parent": "genrqM",
+          "children": "koPTAc",
+          "external_id": "Tg4DA4",
+          "external_type": "text",
+          "data": {}
+        },
+        "AC0TB4": {
+          "id": "AC0TB4",
+          "ty": "simple_table_cell",
+          "parent": "3qaHcU",
+          "children": "NyfCBl",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "oSHjRZ": {
+          "id": "oSHjRZ",
+          "ty": "paragraph",
+          "parent": "AC0TB4",
+          "children": "F8K0fU",
+          "external_id": "CxYf25",
+          "external_type": "text",
+          "data": {}
+        },
+        "iLSFuD": {
+          "id": "iLSFuD",
+          "ty": "simple_table_cell",
+          "parent": "3qaHcU",
+          "children": "DoHXq1",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Up24gY": {
+          "id": "Up24gY",
+          "ty": "paragraph",
+          "parent": "iLSFuD",
+          "children": "RDUZuV",
+          "external_id": "XxCuXC",
+          "external_type": "text",
+          "data": {}
+        },
+        "DyiaCa": {
+          "id": "DyiaCa",
+          "ty": "simple_table_cell",
+          "parent": "3qaHcU",
+          "children": "-4FDnk",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "UpK5fA": {
+          "id": "UpK5fA",
+          "ty": "paragraph",
+          "parent": "DyiaCa",
+          "children": "Tqp73Y",
+          "external_id": "zwFYM-",
+          "external_type": "text",
+          "data": {}
+        },
+        "F7g5yK": {
+          "id": "F7g5yK",
+          "ty": "simple_table_cell",
+          "parent": "3qaHcU",
+          "children": "YS9Sxo",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "IWbglg": {
+          "id": "IWbglg",
+          "ty": "paragraph",
+          "parent": "F7g5yK",
+          "children": "2HFjB3",
+          "external_id": "2FFx9n",
+          "external_type": "text",
+          "data": {}
+        },
+        "WM2YRz": {
+          "id": "WM2YRz",
+          "ty": "simple_table_row",
+          "parent": "IqBFhu",
+          "children": "V169BQ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "_Giujn": {
+          "id": "_Giujn",
+          "ty": "simple_table_cell",
+          "parent": "WM2YRz",
+          "children": "SAxHcV",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Cgb0a5": {
+          "id": "Cgb0a5",
+          "ty": "paragraph",
+          "parent": "_Giujn",
+          "children": "YLUEDQ",
+          "external_id": "CEAkLT",
+          "external_type": "text",
+          "data": {}
+        },
+        "DSp7bu": {
+          "id": "DSp7bu",
+          "ty": "simple_table_cell",
+          "parent": "WM2YRz",
+          "children": "SrIHTS",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "tdTn7D": {
+          "id": "tdTn7D",
+          "ty": "paragraph",
+          "parent": "DSp7bu",
+          "children": "NdYg9k",
+          "external_id": "mVlnlk",
+          "external_type": "text",
+          "data": {}
+        },
+        "Earp7c": {
+          "id": "Earp7c",
+          "ty": "simple_table_cell",
+          "parent": "WM2YRz",
+          "children": "WUtefh",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "0iWNup": {
+          "id": "0iWNup",
+          "ty": "paragraph",
+          "parent": "Earp7c",
+          "children": "GHy_1c",
+          "external_id": "ExJc4g",
+          "external_type": "text",
+          "data": {}
+        },
+        "aVTLmY": {
+          "id": "aVTLmY",
+          "ty": "simple_table_cell",
+          "parent": "WM2YRz",
+          "children": "nCxiox",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "pFkJ41": {
+          "id": "pFkJ41",
+          "ty": "paragraph",
+          "parent": "aVTLmY",
+          "children": "rMwJ0L",
+          "external_id": "q0NbV0",
+          "external_type": "text",
+          "data": {}
+        },
+        "OX_7TL": {
+          "id": "OX_7TL",
+          "ty": "simple_table_cell",
+          "parent": "WM2YRz",
+          "children": "E7zMTG",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "yiDhmF": {
+          "id": "yiDhmF",
+          "ty": "paragraph",
+          "parent": "OX_7TL",
+          "children": "tAC9Rm",
+          "external_id": "GVZNpt",
+          "external_type": "text",
+          "data": {}
+        },
+        "pU9rlj": {
+          "id": "pU9rlj",
+          "ty": "simple_table",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "0uOcbB",
+          "external_id": "Smrq1U",
+          "external_type": "text",
+          "data": {
+            "column_widths": {
+              "0": 293.359375
+            },
+            "enable_header_row": true,
+            "enable_header_column": false,
+            "row_colors": {},
+            "distribute_column_widths_evenly": false
+          }
+        },
+        "nSMgLo": {
+          "id": "nSMgLo",
+          "ty": "simple_table_row",
+          "parent": "pU9rlj",
+          "children": "DJddZj",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "qsUe4u": {
+          "id": "qsUe4u",
+          "ty": "simple_table_cell",
+          "parent": "nSMgLo",
+          "children": "VIOVFH",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "9Re8i7": {
+          "id": "9Re8i7",
+          "ty": "paragraph",
+          "parent": "qsUe4u",
+          "children": "PeGL1Z",
+          "external_id": "P9l9w5",
+          "external_type": "text",
+          "data": {}
+        },
+        "QcWniP": {
+          "id": "QcWniP",
+          "ty": "simple_table_cell",
+          "parent": "nSMgLo",
+          "children": "xdtUDA",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "aEfxJu": {
+          "id": "aEfxJu",
+          "ty": "paragraph",
+          "parent": "QcWniP",
+          "children": "CLCjCn",
+          "external_id": "74mQ_X",
+          "external_type": "text",
+          "data": {}
+        },
+        "tbIOHs": {
+          "id": "tbIOHs",
+          "ty": "simple_table_cell",
+          "parent": "nSMgLo",
+          "children": "GBkNhi",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "jvWiZw": {
+          "id": "jvWiZw",
+          "ty": "paragraph",
+          "parent": "tbIOHs",
+          "children": "yNrc8S",
+          "external_id": "OvBxuu",
+          "external_type": "text",
+          "data": {}
+        },
+        "MMbgYW": {
+          "id": "MMbgYW",
+          "ty": "simple_table_cell",
+          "parent": "nSMgLo",
+          "children": "dlJeoQ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "nIpDjI": {
+          "id": "nIpDjI",
+          "ty": "paragraph",
+          "parent": "MMbgYW",
+          "children": "ahbZC1",
+          "external_id": "5fuKHm",
+          "external_type": "text",
+          "data": {}
+        },
+        "S-A7di": {
+          "id": "S-A7di",
+          "ty": "simple_table_cell",
+          "parent": "nSMgLo",
+          "children": "4_UJb-",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "hkM0Bn": {
+          "id": "hkM0Bn",
+          "ty": "paragraph",
+          "parent": "S-A7di",
+          "children": "eufQHQ",
+          "external_id": "rrTgAb",
+          "external_type": "text",
+          "data": {}
+        },
+        "Ebvvyn": {
+          "id": "Ebvvyn",
+          "ty": "simple_table_row",
+          "parent": "pU9rlj",
+          "children": "68QJJF",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "LPzei0": {
+          "id": "LPzei0",
+          "ty": "simple_table_cell",
+          "parent": "Ebvvyn",
+          "children": "P3eOcA",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Xrti11": {
+          "id": "Xrti11",
+          "ty": "paragraph",
+          "parent": "LPzei0",
+          "children": "aJtmJB",
+          "external_id": "gMJy4q",
+          "external_type": "text",
+          "data": {}
+        },
+        "bJAUz6": {
+          "id": "bJAUz6",
+          "ty": "simple_table_cell",
+          "parent": "Ebvvyn",
+          "children": "DePyks",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "lMDB9b": {
+          "id": "lMDB9b",
+          "ty": "paragraph",
+          "parent": "bJAUz6",
+          "children": "4ww8Td",
+          "external_id": "7O-Uo3",
+          "external_type": "text",
+          "data": {}
+        },
+        "SzVhRo": {
+          "id": "SzVhRo",
+          "ty": "simple_table_cell",
+          "parent": "Ebvvyn",
+          "children": "sEQTjZ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "D3bapk": {
+          "id": "D3bapk",
+          "ty": "paragraph",
+          "parent": "SzVhRo",
+          "children": "GBWJKQ",
+          "external_id": "HiZSfu",
+          "external_type": "text",
+          "data": {}
+        },
+        "AXxE1P": {
+          "id": "AXxE1P",
+          "ty": "simple_table_cell",
+          "parent": "Ebvvyn",
+          "children": "tkwMS8",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "2q3gG-": {
+          "id": "2q3gG-",
+          "ty": "paragraph",
+          "parent": "AXxE1P",
+          "children": "Rr8d5g",
+          "external_id": "diULdG",
+          "external_type": "text",
+          "data": {}
+        },
+        "dTK8I6": {
+          "id": "dTK8I6",
+          "ty": "simple_table_cell",
+          "parent": "Ebvvyn",
+          "children": "UK-ii7",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "xuv73n": {
+          "id": "xuv73n",
+          "ty": "paragraph",
+          "parent": "dTK8I6",
+          "children": "zoMWHJ",
+          "external_id": "Bm9Ey8",
+          "external_type": "text",
+          "data": {}
+        },
+        "9OznHD": {
+          "id": "9OznHD",
+          "ty": "simple_table_row",
+          "parent": "pU9rlj",
+          "children": "KNOQyj",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "AEXgEi": {
+          "id": "AEXgEi",
+          "ty": "simple_table_cell",
+          "parent": "9OznHD",
+          "children": "CNCEQA",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "ifFmrq": {
+          "id": "ifFmrq",
+          "ty": "paragraph",
+          "parent": "AEXgEi",
+          "children": "VyaA61",
+          "external_id": "_JSrXt",
+          "external_type": "text",
+          "data": {}
+        },
+        "whmlAD": {
+          "id": "whmlAD",
+          "ty": "simple_table_cell",
+          "parent": "9OznHD",
+          "children": "pf3Zv3",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vlZ7-c": {
+          "id": "vlZ7-c",
+          "ty": "paragraph",
+          "parent": "whmlAD",
+          "children": "e4Iku-",
+          "external_id": "5MXjb6",
+          "external_type": "text",
+          "data": {}
+        },
+        "kNeVV3": {
+          "id": "kNeVV3",
+          "ty": "simple_table_cell",
+          "parent": "9OznHD",
+          "children": "lPiggw",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "RhH0vp": {
+          "id": "RhH0vp",
+          "ty": "paragraph",
+          "parent": "kNeVV3",
+          "children": "xc7g-_",
+          "external_id": "Naofwg",
+          "external_type": "text",
+          "data": {}
+        },
+        "W36ah3": {
+          "id": "W36ah3",
+          "ty": "simple_table_cell",
+          "parent": "9OznHD",
+          "children": "SCl8za",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "rzvqzC": {
+          "id": "rzvqzC",
+          "ty": "paragraph",
+          "parent": "W36ah3",
+          "children": "WuSs7N",
+          "external_id": "06v6eB",
+          "external_type": "text",
+          "data": {}
+        },
+        "PJvxg5": {
+          "id": "PJvxg5",
+          "ty": "simple_table_cell",
+          "parent": "9OznHD",
+          "children": "24Jt7I",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "qa-kFW": {
+          "id": "qa-kFW",
+          "ty": "paragraph",
+          "parent": "PJvxg5",
+          "children": "OsqJ3N",
+          "external_id": "uiswUr",
+          "external_type": "text",
+          "data": {}
+        },
+        "OKCfTm": {
+          "id": "OKCfTm",
+          "ty": "simple_table_row",
+          "parent": "pU9rlj",
+          "children": "Z-kgHX",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "ojyFtp": {
+          "id": "ojyFtp",
+          "ty": "simple_table_cell",
+          "parent": "OKCfTm",
+          "children": "7LmsLI",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "BvS1LO": {
+          "id": "BvS1LO",
+          "ty": "paragraph",
+          "parent": "ojyFtp",
+          "children": "qf_emE",
+          "external_id": "xazukJ",
+          "external_type": "text",
+          "data": {}
+        },
+        "fkZvc9": {
+          "id": "fkZvc9",
+          "ty": "simple_table_cell",
+          "parent": "OKCfTm",
+          "children": "TqSrw5",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "MOJXih": {
+          "id": "MOJXih",
+          "ty": "paragraph",
+          "parent": "fkZvc9",
+          "children": "5vucB_",
+          "external_id": "onKmdS",
+          "external_type": "text",
+          "data": {}
+        },
+        "p_xt1C": {
+          "id": "p_xt1C",
+          "ty": "simple_table_cell",
+          "parent": "OKCfTm",
+          "children": "HGdYAQ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "TvteLr": {
+          "id": "TvteLr",
+          "ty": "paragraph",
+          "parent": "p_xt1C",
+          "children": "HNwqVU",
+          "external_id": "Vz1FD4",
+          "external_type": "text",
+          "data": {}
+        },
+        "indChp": {
+          "id": "indChp",
+          "ty": "simple_table_cell",
+          "parent": "OKCfTm",
+          "children": "xkT77p",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "hbQGIS": {
+          "id": "hbQGIS",
+          "ty": "paragraph",
+          "parent": "indChp",
+          "children": "U3SyoF",
+          "external_id": "YDo-pn",
+          "external_type": "text",
+          "data": {}
+        },
+        "S4HYKS": {
+          "id": "S4HYKS",
+          "ty": "simple_table_cell",
+          "parent": "OKCfTm",
+          "children": "t3r6yx",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "sU3InR": {
+          "id": "sU3InR",
+          "ty": "paragraph",
+          "parent": "S4HYKS",
+          "children": "7Q1m6T",
+          "external_id": "HhHM4T",
+          "external_type": "text",
+          "data": {}
+        },
+        "dxbzVQ": {
+          "id": "dxbzVQ",
+          "ty": "simple_table",
+          "parent": "6161788b-c3ee-5d81-be1f-6b774f566362",
+          "children": "lc4d_O",
+          "external_id": "ivSilP",
+          "external_type": "text",
+          "data": {
+            "enable_header_column": false,
+            "column_widths": {
+              "0": 293.28125
+            },
+            "distribute_column_widths_evenly": false,
+            "enable_header_row": true,
+            "row_colors": {}
+          }
+        },
+        "04enQj": {
+          "id": "04enQj",
+          "ty": "simple_table_row",
+          "parent": "dxbzVQ",
+          "children": "42CUhB",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "TO00CA": {
+          "id": "TO00CA",
+          "ty": "simple_table_cell",
+          "parent": "04enQj",
+          "children": "BodQ37",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "XAthZ0": {
+          "id": "XAthZ0",
+          "ty": "paragraph",
+          "parent": "TO00CA",
+          "children": "plCUcT",
+          "external_id": "5AEpCV",
+          "external_type": "text",
+          "data": {}
+        },
+        "7xeG9x": {
+          "id": "7xeG9x",
+          "ty": "simple_table_cell",
+          "parent": "04enQj",
+          "children": "svYnfK",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "mgA5Pm": {
+          "id": "mgA5Pm",
+          "ty": "paragraph",
+          "parent": "7xeG9x",
+          "children": "DSkB61",
+          "external_id": "buAZu9",
+          "external_type": "text",
+          "data": {}
+        },
+        "J5_Kb_": {
+          "id": "J5_Kb_",
+          "ty": "simple_table_cell",
+          "parent": "04enQj",
+          "children": "_bjk_A",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "FDCAh-": {
+          "id": "FDCAh-",
+          "ty": "paragraph",
+          "parent": "J5_Kb_",
+          "children": "d-HjrS",
+          "external_id": "PtoS1T",
+          "external_type": "text",
+          "data": {}
+        },
+        "RHeLVS": {
+          "id": "RHeLVS",
+          "ty": "simple_table_cell",
+          "parent": "04enQj",
+          "children": "D-2KbT",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "0CpJbf": {
+          "id": "0CpJbf",
+          "ty": "paragraph",
+          "parent": "RHeLVS",
+          "children": "XYMzRn",
+          "external_id": "H1CtHK",
+          "external_type": "text",
+          "data": {}
+        },
+        "OWKSn0": {
+          "id": "OWKSn0",
+          "ty": "simple_table_cell",
+          "parent": "04enQj",
+          "children": "2Ko2JL",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "jnMHCL": {
+          "id": "jnMHCL",
+          "ty": "paragraph",
+          "parent": "OWKSn0",
+          "children": "PKvb91",
+          "external_id": "59RfZY",
+          "external_type": "text",
+          "data": {}
+        },
+        "ktVLWQ": {
+          "id": "ktVLWQ",
+          "ty": "simple_table_row",
+          "parent": "dxbzVQ",
+          "children": "TLBm-m",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "iDIiHT": {
+          "id": "iDIiHT",
+          "ty": "simple_table_cell",
+          "parent": "ktVLWQ",
+          "children": "LW8OgB",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "QQXuvN": {
+          "id": "QQXuvN",
+          "ty": "paragraph",
+          "parent": "iDIiHT",
+          "children": "bd1hfr",
+          "external_id": "4jAL8I",
+          "external_type": "text",
+          "data": {}
+        },
+        "8tfK--": {
+          "id": "8tfK--",
+          "ty": "simple_table_cell",
+          "parent": "ktVLWQ",
+          "children": "7UDo5c",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "D8gFwM": {
+          "id": "D8gFwM",
+          "ty": "paragraph",
+          "parent": "8tfK--",
+          "children": "vVMbs8",
+          "external_id": "KWiyLC",
+          "external_type": "text",
+          "data": {}
+        },
+        "UsYJKq": {
+          "id": "UsYJKq",
+          "ty": "simple_table_cell",
+          "parent": "ktVLWQ",
+          "children": "yy9ytL",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "26sSkA": {
+          "id": "26sSkA",
+          "ty": "paragraph",
+          "parent": "UsYJKq",
+          "children": "wT4cH0",
+          "external_id": "d-LgFT",
+          "external_type": "text",
+          "data": {}
+        },
+        "SYF_dH": {
+          "id": "SYF_dH",
+          "ty": "simple_table_cell",
+          "parent": "ktVLWQ",
+          "children": "4xmLnH",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "7pvZZi": {
+          "id": "7pvZZi",
+          "ty": "paragraph",
+          "parent": "SYF_dH",
+          "children": "8bQMii",
+          "external_id": "3lwScW",
+          "external_type": "text",
+          "data": {}
+        },
+        "KG9Ff8": {
+          "id": "KG9Ff8",
+          "ty": "simple_table_cell",
+          "parent": "ktVLWQ",
+          "children": "SMvSXC",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "ldR6bc": {
+          "id": "ldR6bc",
+          "ty": "paragraph",
+          "parent": "KG9Ff8",
+          "children": "doZN1y",
+          "external_id": "HZcnRL",
+          "external_type": "text",
+          "data": {}
+        },
+        "VXTP5s": {
+          "id": "VXTP5s",
+          "ty": "simple_table_row",
+          "parent": "dxbzVQ",
+          "children": "YLhcCS",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "I7mCp9": {
+          "id": "I7mCp9",
+          "ty": "simple_table_cell",
+          "parent": "VXTP5s",
+          "children": "tgzkr5",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "1cQcc1": {
+          "id": "1cQcc1",
+          "ty": "paragraph",
+          "parent": "I7mCp9",
+          "children": "9VwW-7",
+          "external_id": "4T8U3a",
+          "external_type": "text",
+          "data": {}
+        },
+        "Hi39AJ": {
+          "id": "Hi39AJ",
+          "ty": "simple_table_cell",
+          "parent": "VXTP5s",
+          "children": "qpiNYh",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "HSUqSF": {
+          "id": "HSUqSF",
+          "ty": "paragraph",
+          "parent": "Hi39AJ",
+          "children": "bNU42m",
+          "external_id": "5jk_en",
+          "external_type": "text",
+          "data": {}
+        },
+        "jVr4FI": {
+          "id": "jVr4FI",
+          "ty": "simple_table_cell",
+          "parent": "VXTP5s",
+          "children": "nXS4R-",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Rw4jZb": {
+          "id": "Rw4jZb",
+          "ty": "paragraph",
+          "parent": "jVr4FI",
+          "children": "4QR8p4",
+          "external_id": "7-8OO2",
+          "external_type": "text",
+          "data": {}
+        },
+        "W6KDtJ": {
+          "id": "W6KDtJ",
+          "ty": "simple_table_cell",
+          "parent": "VXTP5s",
+          "children": "XbK9as",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vmKG72": {
+          "id": "vmKG72",
+          "ty": "paragraph",
+          "parent": "W6KDtJ",
+          "children": "SfnZhi",
+          "external_id": "bCBizp",
+          "external_type": "text",
+          "data": {}
+        },
+        "_ESJmq": {
+          "id": "_ESJmq",
+          "ty": "simple_table_cell",
+          "parent": "VXTP5s",
+          "children": "AYL0RA",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "SGsL6z": {
+          "id": "SGsL6z",
+          "ty": "paragraph",
+          "parent": "_ESJmq",
+          "children": "LXwB7V",
+          "external_id": "MrHkg9",
+          "external_type": "text",
+          "data": {}
+        }
+      },
+      "meta": {
+        "children_map": {
+          "LGPopc": [],
+          "6161788b-c3ee-5d81-be1f-6b774f566362": [
+            "sZwXAP",
+            "DR_6jm",
+            "IqBFhu",
+            "hKSNde",
+            "pU9rlj",
+            "kZP2hn",
+            "01ROec",
+            "dxbzVQ",
+            "7MgMqR",
+            "aAl0pA",
+            "PvDzSm",
+            "VphQrl",
+            "QO23zo",
+            "11U-hx",
+            "ZM0mil",
+            "jetS8R",
+            "-b-_v-",
+            "Lhtfmx",
+            "qP_Boz",
+            "rslbuA",
+            "fKz8ON",
+            "JsyK6r",
+            "WgrL_s",
+            "qhM7zr",
+            "7NWz83",
+            "81IsiW",
+            "zeCpX6",
+            "7SwzfL",
+            "5lEGA8",
+            "qb7ZGC"
+          ],
+          "jndkK4": [],
+          "KDRV1m": [],
+          "THkOUC": [],
+          "NCqDaR": [],
+          "zxgtSY": [],
+          "YTYF3X": [
+            "tz5z7_"
+          ],
+          "JFFF5D": [],
+          "B6VKBj": [],
+          "4n3eET": [],
+          "PPa2mb": [],
+          "gBKR2E": [
+            "cRhp4g"
+          ],
+          "5Aq_-i": [],
+          "9m5KUo": [],
+          "oPBUAc": [],
+          "zbHf6_": [],
+          "iOGAOF": [],
+          "l82G6P": [],
+          "Ru0CQu": [],
+          "rR2PEr": [
+            "mC9RjO"
+          ],
+          "0gzbAc": [],
+          "mt9Ltp": [],
+          "UjE94j": [],
+          "Dqw4kt": [],
+          "1Q1om2": [],
+          "GWr2Ep": [],
+          "pVeTaE": [
+            "hGuU0-"
+          ],
+          "loyxLb": [],
+          "qAkcDJ": [],
+          "rvO2x0": [],
+          "5ELNho": [],
+          "kdr6cZ": [
+            "1DL2Mz",
+            "Tu5xy_",
+            "xTH2_C",
+            "svAIFA",
+            "3qaHcU",
+            "WM2YRz"
+          ],
+          "N8WhmG": [
+            "f_Ozjo",
+            "UaTKW8",
+            "qFYLwO",
+            "amt5n0",
+            "k_aSSq"
+          ],
+          "IWSgIa": [
+            "v94zb_"
+          ],
+          "ZaW1n6": [],
+          "BsfJ-9": [
+            "YF1DBM"
+          ],
+          "oeJySc": [],
+          "bnWd4F": [
+            "RVqGq_"
+          ],
+          "YkIkb8": [],
+          "Wo5V8X": [
+            "iA7LDk"
+          ],
+          "CvOvzA": [],
+          "Lt3MJT": [
+            "vfhPpU"
+          ],
+          "MU6Mge": [],
+          "ohkYTD": [
+            "pMwyy7",
+            "Tr0kCB",
+            "5snuQH",
+            "zpF0Xf",
+            "bGtBic"
+          ],
+          "oCLQac": [
+            "K5ApIE"
+          ],
+          "hgC8NR": [],
+          "voF4G-": [
+            "6bFTzb"
+          ],
+          "QKkJVG": [],
+          "PiCAx9": [
+            "JJ5h7V"
+          ],
+          "656r8Q": [],
+          "mRrjxv": [
+            "Rx5lGQ"
+          ],
+          "f-6Nrh": [],
+          "Llk-bd": [
+            "WB8wtd"
+          ],
+          "LHBXsU": [],
+          "iNdJU0": [
+            "awGHeU",
+            "4SmE7u",
+            "zd3Yw7",
+            "rZDJdU",
+            "egBY7i"
+          ],
+          "DDjZ6p": [
+            "Ni-Ikn"
+          ],
+          "HvyCer": [],
+          "8l9OVh": [
+            "38U7Mc"
+          ],
+          "m53_2E": [],
+          "P6VFfn": [
+            "y_8bQM"
+          ],
+          "gMqEkL": [],
+          "e6Gwg_": [
+            "vhx4Rr"
+          ],
+          "cvFdHj": [],
+          "v5VcrJ": [
+            "CL1Y7M"
+          ],
+          "uaAGfT": [],
+          "nv1tn4": [
+            "6cSgt0",
+            "lkUy3n",
+            "B3IIdo",
+            "z2Vebx",
+            "RH-wBb"
+          ],
+          "yD8bk_": [
+            "amLYDH"
+          ],
+          "0ajR1V": [],
+          "X4uJQL": [
+            "JnN4Bh"
+          ],
+          "bYnWhv": [],
+          "0s2oOf": [
+            "mdQwtr"
+          ],
+          "UbVUSW": [],
+          "54YtJI": [
+            "HbQyVE"
+          ],
+          "EfWCDg": [],
+          "u8NW4R": [
+            "dAgrCf"
+          ],
+          "dtKUxZ": [],
+          "z0D6ow": [
+            "genrqM",
+            "AC0TB4",
+            "iLSFuD",
+            "DyiaCa",
+            "F7g5yK"
+          ],
+          "CwA_Hp": [
+            "cP6LVc"
+          ],
+          "koPTAc": [],
+          "NyfCBl": [
+            "oSHjRZ"
+          ],
+          "F8K0fU": [],
+          "DoHXq1": [
+            "Up24gY"
+          ],
+          "RDUZuV": [],
+          "-4FDnk": [
+            "UpK5fA"
+          ],
+          "Tqp73Y": [],
+          "YS9Sxo": [
+            "IWbglg"
+          ],
+          "2HFjB3": [],
+          "V169BQ": [
+            "_Giujn",
+            "DSp7bu",
+            "Earp7c",
+            "aVTLmY",
+            "OX_7TL"
+          ],
+          "SAxHcV": [
+            "Cgb0a5"
+          ],
+          "YLUEDQ": [],
+          "SrIHTS": [
+            "tdTn7D"
+          ],
+          "NdYg9k": [],
+          "WUtefh": [
+            "0iWNup"
+          ],
+          "GHy_1c": [],
+          "nCxiox": [
+            "pFkJ41"
+          ],
+          "rMwJ0L": [],
+          "E7zMTG": [
+            "yiDhmF"
+          ],
+          "tAC9Rm": [],
+          "0uOcbB": [
+            "nSMgLo",
+            "Ebvvyn",
+            "9OznHD",
+            "OKCfTm"
+          ],
+          "DJddZj": [
+            "qsUe4u",
+            "QcWniP",
+            "tbIOHs",
+            "MMbgYW",
+            "S-A7di"
+          ],
+          "VIOVFH": [
+            "9Re8i7"
+          ],
+          "PeGL1Z": [],
+          "xdtUDA": [
+            "aEfxJu"
+          ],
+          "CLCjCn": [],
+          "GBkNhi": [
+            "jvWiZw"
+          ],
+          "yNrc8S": [],
+          "dlJeoQ": [
+            "nIpDjI"
+          ],
+          "ahbZC1": [],
+          "4_UJb-": [
+            "hkM0Bn"
+          ],
+          "eufQHQ": [],
+          "68QJJF": [
+            "LPzei0",
+            "bJAUz6",
+            "SzVhRo",
+            "AXxE1P",
+            "dTK8I6"
+          ],
+          "P3eOcA": [
+            "Xrti11"
+          ],
+          "aJtmJB": [],
+          "DePyks": [
+            "lMDB9b"
+          ],
+          "4ww8Td": [],
+          "sEQTjZ": [
+            "D3bapk"
+          ],
+          "GBWJKQ": [],
+          "tkwMS8": [
+            "2q3gG-"
+          ],
+          "Rr8d5g": [],
+          "UK-ii7": [
+            "xuv73n"
+          ],
+          "zoMWHJ": [],
+          "KNOQyj": [
+            "AEXgEi",
+            "whmlAD",
+            "kNeVV3",
+            "W36ah3",
+            "PJvxg5"
+          ],
+          "CNCEQA": [
+            "ifFmrq"
+          ],
+          "VyaA61": [],
+          "pf3Zv3": [
+            "vlZ7-c"
+          ],
+          "e4Iku-": [],
+          "lPiggw": [
+            "RhH0vp"
+          ],
+          "xc7g-_": [],
+          "SCl8za": [
+            "rzvqzC"
+          ],
+          "WuSs7N": [],
+          "24Jt7I": [
+            "qa-kFW"
+          ],
+          "OsqJ3N": [],
+          "Z-kgHX": [
+            "ojyFtp",
+            "fkZvc9",
+            "p_xt1C",
+            "indChp",
+            "S4HYKS"
+          ],
+          "7LmsLI": [
+            "BvS1LO"
+          ],
+          "qf_emE": [],
+          "TqSrw5": [
+            "MOJXih"
+          ],
+          "5vucB_": [],
+          "HGdYAQ": [
+            "TvteLr"
+          ],
+          "HNwqVU": [],
+          "xkT77p": [
+            "hbQGIS"
+          ],
+          "U3SyoF": [],
+          "t3r6yx": [
+            "sU3InR"
+          ],
+          "7Q1m6T": [],
+          "lc4d_O": [
+            "04enQj",
+            "ktVLWQ",
+            "VXTP5s"
+          ],
+          "42CUhB": [
+            "TO00CA",
+            "7xeG9x",
+            "J5_Kb_",
+            "RHeLVS",
+            "OWKSn0"
+          ],
+          "BodQ37": [
+            "XAthZ0"
+          ],
+          "plCUcT": [],
+          "svYnfK": [
+            "mgA5Pm"
+          ],
+          "DSkB61": [],
+          "_bjk_A": [
+            "FDCAh-"
+          ],
+          "d-HjrS": [],
+          "D-2KbT": [
+            "0CpJbf"
+          ],
+          "XYMzRn": [],
+          "2Ko2JL": [
+            "jnMHCL"
+          ],
+          "PKvb91": [],
+          "TLBm-m": [
+            "iDIiHT",
+            "8tfK--",
+            "UsYJKq",
+            "SYF_dH",
+            "KG9Ff8"
+          ],
+          "LW8OgB": [
+            "QQXuvN"
+          ],
+          "bd1hfr": [],
+          "7UDo5c": [
+            "D8gFwM"
+          ],
+          "vVMbs8": [],
+          "yy9ytL": [
+            "26sSkA"
+          ],
+          "wT4cH0": [],
+          "4xmLnH": [
+            "7pvZZi"
+          ],
+          "8bQMii": [],
+          "SMvSXC": [
+            "ldR6bc"
+          ],
+          "doZN1y": [],
+          "YLhcCS": [
+            "I7mCp9",
+            "Hi39AJ",
+            "jVr4FI",
+            "W6KDtJ",
+            "_ESJmq"
+          ],
+          "tgzkr5": [
+            "1cQcc1"
+          ],
+          "9VwW-7": [],
+          "qpiNYh": [
+            "HSUqSF"
+          ],
+          "bNU42m": [],
+          "nXS4R-": [
+            "Rw4jZb"
+          ],
+          "4QR8p4": [],
+          "XbK9as": [
+            "vmKG72"
+          ],
+          "SfnZhi": [],
+          "AYL0RA": [
+            "SGsL6z"
+          ],
+          "LXwB7V": []
+        },
+        "text_map": {
+          "HyCyLQ": "[{\"insert\":\"1. Quality of Deliverables\"}]",
+          "nHSTqS": "[{\"insert\":\"Feedback on the period: Duties, workload, tasks, collaboration, quality of work\"}]",
+          "he10yk": "[{\"insert\":\"2. Teamwork\"}]",
+          "xkFbco": "[{\"insert\":\"3. Innovation\"}]",
+          "2dK0tp": "[{\"insert\":\"4. Skills development\"}]",
+          "VcCY1h": "[{\"insert\":\"Q: Professional and personal skills you have developed in this quarter\"}]",
+          "rsrmeH": "[{\"insert\":\"Ex: developed knowledge in software design and think more holistically when writing code\"}]",
+          "huNE3S": "[{\"insert\":\"Ex: developed knowledge in software design and think more holistically when writing code\"}]",
+          "wZDt-g": "[{\"insert\":\"A:\"}]",
+          "H_kFmR": "[]",
+          "YpRrUS": "[{\"insert\":\"Q: Professional and personal skills you want to develop next quarter\",\"attributes\":{\"bold\":true}}]",
+          "DwPkag": "[{\"insert\":\"Ex: improve project management skills to follow through a project to finish the last mile\"}]",
+          "c6ju9N": "[{\"insert\":\"Ex: improve project management skills to follow through a project to finish the last mile\"}]",
+          "kaxD1i": "[{\"insert\":\"A:\"}]",
+          "LvrYcf": "[]",
+          "1Q6mlW": "[]",
+          "D6zxIG": "[{\"insert\":\"5. Feedback to your manager\"}]",
+          "LAehY1": "[{\"insert\":\"Q: \"},{\"insert\":\"You and your manager\",\"attributes\":{\"bold\":true}}]",
+          "c5s8kt": "[{\"insert\":\"Feedback to your leader: Eg. the delegation of tasks, responsibilities and competence.\"}]",
+          "sjeFKs": "[{\"insert\":\"Ex: Skillfully manage projects, people, and budget\"}]",
+          "fMWgdH": "[{\"insert\":\"Ex: Skillfully manage projects, people, and budget\"}]",
+          "swXp0h": "[{\"insert\":\"A:\"}]",
+          "blEFFb": "[]",
+          "T4zAsT": "[]",
+          "69BXnR": "[{\"insert\":\"6. Career development in the long-term\"}]",
+          "haEfe_": "[{\"insert\":\"Q: Reflections on job opportunities, other tasks, new disciplines, etc. Do you need support from your manager to achieve your development goals?\"}]",
+          "Q_suFZ": "[{\"insert\":\"Ex: Need manager's support in preparation to become a Project Manager\"}]",
+          "fyQhVQ": "[{\"insert\":\"Ex: Need manager's support in preparation to become a Project Manager\"}]",
+          "21YXEX": "[{\"insert\":\"A:\"}]",
+          "Rm6QkO": "[]",
+          "dkKEk7": "[]",
+          "D92sTh": "[{\"insert\":\"Descriptions\",\"attributes\":{\"bold\":true}}]",
+          "Mh1nW2": "[{\"insert\":\"Self-evaluated Score (out of 10)\",\"attributes\":{\"bold\":true}}]",
+          "DIGH1s": "[{\"insert\":\"Your Justifications\",\"attributes\":{\"bold\":true}}]",
+          "ZMQS-V": "[{\"insert\":\"Manager Evaluation Score (out of 10)\",\"attributes\":{\"bold\":true}}]",
+          "5ERIVo": "[{\"insert\":\"Comments\",\"attributes\":{\"bold\":true}}]",
+          "GxsyOn": "[{\"insert\":\"Accuracy: quality of your deliverable\"}]",
+          "aNoHAS": "[]",
+          "Uq1Wbg": "[]",
+          "xUrjSH": "[]",
+          "w_KdOm": "[]",
+          "HAOKM4": "[{\"insert\":\"Consistency: constantly deliver high quality work\"}]",
+          "9q38zV": "[]",
+          "FW-DDh": "[]",
+          "pIh72v": "[]",
+          "gcImaL": "[]",
+          "3yIkLp": "[{\"insert\":\"Follow-through: continue your project to its conclusion; get the last-mile done well\"}]",
+          "vd2qDi": "[]",
+          "qV0dJT": "[]",
+          "2mkrTZ": "[]",
+          "-WYUd_": "[]",
+          "Tg4DA4": "[{\"insert\":\"Meets deadlines: deliver your work as promised and properly manage your stakeholders’ expectation on the deadlines\"}]",
+          "CxYf25": "[]",
+          "XxCuXC": "[]",
+          "zwFYM-": "[]",
+          "2FFx9n": "[]",
+          "CEAkLT": "[{\"insert\":\"[AppFlowy Values] Aim high & iterate \"}]",
+          "mVlnlk": "[]",
+          "ExJc4g": "[]",
+          "q0NbV0": "[]",
+          "GVZNpt": "[]",
+          "P9l9w5": "[{\"insert\":\"Descriptions\",\"attributes\":{\"bold\":true}}]",
+          "74mQ_X": "[{\"insert\":\"Self-evaluated Score (out of 10)\",\"attributes\":{\"bold\":true}}]",
+          "OvBxuu": "[{\"insert\":\"Your Justifications\",\"attributes\":{\"bold\":true}}]",
+          "5fuKHm": "[{\"insert\":\"Manager Evaluation Score (out of 10)\",\"attributes\":{\"bold\":true}}]",
+          "rrTgAb": "[{\"insert\":\"Comments\",\"attributes\":{\"bold\":true}}]",
+          "gMJy4q": "[{\"insert\":\"Collaborates with internal and external teams across positions including contributors from AppFlowy’s community and third-party vendors & service providers\"}]",
+          "7O-Uo3": "[]",
+          "HiZSfu": "[]",
+          "diULdG": "[]",
+          "Bm9Ey8": "[]",
+          "_JSrXt": "[{\"insert\":\"Puts team targets higher than personal achievements\"}]",
+          "5MXjb6": "[]",
+          "Naofwg": "[]",
+          "06v6eB": "[]",
+          "uiswUr": "[]",
+          "xazukJ": "[{\"insert\":\"Contributes and takes initiative to social activities, eg: organizing virtual events to hangout with colleagues\"}]",
+          "onKmdS": "[]",
+          "Vz1FD4": "[]",
+          "YDo-pn": "[]",
+          "HhHM4T": "[]",
+          "5AEpCV": "[{\"insert\":\"Descriptions\",\"attributes\":{\"bold\":true}}]",
+          "buAZu9": "[{\"insert\":\"Self-evaluated Score (out of 10)\",\"attributes\":{\"bold\":true}}]",
+          "PtoS1T": "[{\"insert\":\"Your Justifications\",\"attributes\":{\"bold\":true}}]",
+          "H1CtHK": "[{\"insert\":\"Manager Evaluation Score (out of 10)\",\"attributes\":{\"bold\":true}}]",
+          "59RfZY": "[{\"insert\":\"Comments\",\"attributes\":{\"bold\":true}}]",
+          "4jAL8I": "[{\"insert\":\"Propose/use digital technologies to change internal processes\"}]",
+          "KWiyLC": "[]",
+          "d-LgFT": "[]",
+          "3lwScW": "[]",
+          "HZcnRL": "[]",
+          "4T8U3a": "[{\"insert\":\"Generates ideas and gives input that improves our product / business operations\"}]",
+          "5jk_en": "[]",
+          "7-8OO2": "[]",
+          "bCBizp": "[]",
+          "MrHkg9": "[]"
+        }
+      }
+    },
+    "children": []
+  }
+}

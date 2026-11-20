@@ -1,0 +1,45 @@
+{
+  "name": "appflowy-independent-backend-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Foundational isolated self-hosted workspace backend prototype",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/*.test.js",
+    "test:offline-collab": "node --test test/offline-collab.test.js",
+    "test:database-collab": "node --test test/database-collab.test.js",
+    "test:database-row-collab": "node --test test/database-row-collab.test.js",
+    "test:search": "node --test test/search.test.js test/search-text.test.js",
+    "reindex-search": "node scripts/reindex-search.mjs",
+    "test:database-catalog": "node --test test/database-catalog.test.js",
+    "test:database-view-collab": "node --test test/database-view-collab.test.js",
+    "test:collab-conformance": "node test/collab-conformance.js",
+    "test:realtime-fanout": "node --test test/realtime-fanout.test.js",
+    "test:multi-object-subscriptions": "node --test test/multi-object-subscriptions.test.js",
+    "test:multi-object-subscriptions-postgres": "TASK77_2_STORAGE=postgres node --test test/multi-object-subscriptions.test.js",
+    "test:security": "node --test test/security-authorization.test.js",
+    "test:collaboration-recovery": "node --test test/collaboration-recovery.test.js",
+    "test:row-document": "node --test test/row-document.test.js",
+    "test:postgres": "RUN_POSTGRES_TESTS=1 node --test test/postgres.test.js test/postgres-collab.test.js test/postgres-version-history.test.js test/postgres-migration-lock.test.js test/postgres-database-collab.test.js test/postgres-database-http-integration.test.js test/postgres-database-multiclient.test.js test/postgres-database-catalog.test.js test/postgres-realtime-fanout-document.test.js test/postgres-security-authorization.test.js test/postgres-collaboration-recovery.test.js test/postgres-database-view-collab.test.js test/postgres-row-document.test.js",
+    "test:parity": "RUN_POSTGRES_TESTS=1 node --test test/json-postgres-parity.test.js",
+    "test:e2e": "playwright test",
+    "test:backend-core": "node --test test/backend.test.js",
+    "test:pg-features": "STORAGE=postgres CARDS_TEST_STORAGE=postgres RUN_POSTGRES_TESTS=1 node --test test/workspace-ops.test.js test/nested-pages.test.js test/file-storage.test.js test/gotrue-account.test.js test/row-creation-routes.test.js test/cards-service.test.js test/cards-body.test.js",
+    "test:ci": "sh scripts/ci.sh",
+    "test:pg-modes": "RUN_POSTGRES_TESTS=1 CARDS_TEST_STORAGE=postgres node --test test/auto-versions.test.js test/card-history.test.js test/ai-workspace-chat.test.js test/mcp-pages.test.js test/mcp-comments.test.js test/template-library.test.js test/agent-activity.test.js test/agent-tokens.test.js test/mcp-e2e.test.js"
+  },
+  "dependencies": {
+    "nodemailer": "^10.5.0",
+    "pg": "^8.13.1",
+    "protobufjs": "^7.6.6",
+    "ws": "^8.22.0",
+    "yjs": "^14.0.0-16"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}

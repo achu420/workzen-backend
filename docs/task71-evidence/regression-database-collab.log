@@ -1,0 +1,33 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:database-collab
+> node --test test/database-collab.test.js
+
+(node:98708) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Database atomic creation: valid request initializes fields, inline Grid view, and metas (72.262709ms)
+✔ Database atomic creation: workspace catalog / Folder-tree discoverability (72.467125ms)
+✔ Database atomic creation: duplicate request_id (retry) is idempotent (69.206125ms)
+✔ Database atomic creation: invalid/malformed requests are rejected (missing identity, unsupported layout, unauthorized workspace) (117.064583ms)
+✔ Database WebSocket: unsupported collabType values are rejected, not silently admitted (62.479291ms)
+✔ Database WebSocket: a database id from another workspace is rejected (102.793208ms)
+✔ Database real-time: add a field and rename it over WebSocket updates (generic Yjs diff admission, same mechanism as Document edits) (59.555959ms)
+✔ Database real-time: duplicate/replayed update is admitted exactly once (67.632583ms)
+✔ Database real-time: no ack while persistence is pending, then acks only after durable write completes (delayed-persistence fault injection, Task 44 pattern) (366.59125ms)
+WebSocket Database update admission failed Error: task61 injected persistence failure
+    at store.persist (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/database-collab.test.js:565:41)
+    at mutate (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:912:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async operation (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:588:16)
+✔ Database real-time: no ack and closes with 1011 when persistence fails; the failed update is not durably admitted (failed-persistence fault injection, Task 44 pattern) (55.497334ms)
+✔ Database persistence: JSON store reconstructs the latest accepted state after a simulated backend restart (55.839083ms)
+✔ Space permission probe: GET .../collab/{spaceId}/permission?collab_type=0 resolves for a space (not just a Document page), unblocking the sidebar add-page button (96.170334ms)
+✔ Database permission probe: GET .../collab/{databaseId}/permission?collab_type=1 resolves for a Database object, unblocking the Grid view's field-menu UI actions (106.139541ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6214.707042
+EXIT:0

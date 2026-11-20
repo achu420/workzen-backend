@@ -1,0 +1,96 @@
+{
+  "setup": {
+    "storage": "json",
+    "workspaceId": "fe4325b3-e4ee-4721-aa96-f87a328c6297",
+    "createdDatabaseViewPageId": "b91d2c48-929e-4f5e-a429-f87df7af42a2",
+    "sharedDatabasePageId": "c16cd3c9-e464-4042-b558-61fdbbc80c02",
+    "sidebarPageWasAncestor": true,
+    "databaseId": "0da52603-f367-485f-91e1-769fe8e41a71",
+    "fieldId": "9eb2fa9f-c31e-48c7-9fd1-a49469a6391b",
+    "rowId": "957bd326-2fcc-4852-9f0b-20346ca0eca9",
+    "memberOpenedDatabase": {
+      "ok": true,
+      "via": "sidebar(attempt 1)"
+    },
+    "ownerOpenedDatabase": {
+      "ok": true,
+      "via": "sidebar(attempt 1)"
+    }
+  },
+  "wsA": [
+    {
+      "type": "open",
+      "url": "ws://localhost:14301/?token=7HgGPPB36Afh",
+      "t": 1794423065284
+    },
+    {
+      "type": "open",
+      "url": "ws://localhost:14301/?token=7HgGPPB36Afh",
+      "t": 1794423067148
+    },
+    {
+      "type": "open",
+      "url": "ws://127.0.0.1:19064/ws/v2/fe4325b3-e4ee-4721-aa96-f87a328c6297/?clientId=2212088030&deviceId=fHHLnAPd&token=sB4x0Muqw2jMjMKjIEYQn6kq9WI25xR6DGGn-rLqRBo&cv=0.10.0&cp=web",
+      "t": 1794423068094
+    },
+    {
+      "type": "open",
+      "url": "ws://localhost:14301/?token=7HgGPPB36Afh",
+      "t": 1794423070567
+    },
+    {
+      "type": "open",
+      "url": "ws://127.0.0.1:19064/ws/v2/fe4325b3-e4ee-4721-aa96-f87a328c6297/?clientId=3969164974&deviceId=fHHLnAPd&token=sB4x0Muqw2jMjMKjIEYQn6kq9WI25xR6DGGn-rLqRBo&cv=0.10.0&cp=web",
+      "t": 1794423070806
+    },
+    {
+      "type": "open",
+      "url": "ws://localhost:14301/?token=7HgGPPB36Afh",
+      "t": 1794423079039
+    },
+    {
+      "type": "open",
+      "url": "ws://127.0.0.1:19064/ws/v2/fe4325b3-e4ee-4721-aa96-f87a328c6297/?clientId=2756564137&deviceId=fHHLnAPd&token=sB4x0Muqw2jMjMKjIEYQn6kq9WI25xR6DGGn-rLqRBo&cv=0.10.0&cp=web",
+      "t": 1794423079273
+    },
+    {
+      "type": "open",
+      "url": "ws://localhost:14301/?token=7HgGPPB36Afh",
+      "t": 1794423103583
+    },
+    {
+      "type": "open",
+      "url": "ws://127.0.0.1:19064/ws/v2/fe4325b3-e4ee-4721-aa96-f87a328c6297/?clientId=187913503&deviceId=fHHLnAPd&token=sB4x0Muqw2jMjMKjIEYQn6kq9WI25xR6DGGn-rLqRBo&cv=0.10.0&cp=web",
+      "t": 1794423103814
+    }
+  ],
+  "wsB": [
+    {
+      "type": "open",
+      "url": "ws://localhost:14301/?token=7HgGPPB36Afh",
+      "t": 1794423074411
+    },
+    {
+      "type": "open",
+      "url": "ws://localhost:14301/?token=7HgGPPB36Afh",
+      "t": 1794423074726
+    },
+    {
+      "type": "open",
+      "url": "ws://127.0.0.1:19064/ws/v2/fe4325b3-e4ee-4721-aa96-f87a328c6297/?clientId=4065792948&deviceId=4xkWMI5z&token=5xPWeA3mJeqmQ9FreB4_PEGMWObs2yiVTkopLEKKKUU&cv=0.10.0&cp=web",
+      "t": 1794423075015
+    },
+    {
+      "type": "open",
+      "url": "ws://localhost:14301/?token=7HgGPPB36Afh",
+      "t": 1794423076056
+    },
+    {
+      "type": "open",
+      "url": "ws://127.0.0.1:19064/ws/v2/fe4325b3-e4ee-4721-aa96-f87a328c6297/?clientId=1104042089&deviceId=4xkWMI5z&token=5xPWeA3mJeqmQ9FreB4_PEGMWObs2yiVTkopLEKKKUU&cv=0.10.0&cp=web",
+      "t": 1794423076307
+    }
+  ],
+  "consoleA_closeCodes": [],
+  "consoleB_closeCodes": []
+}

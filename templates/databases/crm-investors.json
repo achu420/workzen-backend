@@ -1,0 +1,624 @@
+{
+  "template_id": "crm-investors",
+  "order": 107,
+  "name": "CRM investors",
+  "description": "A table to allow to list all the investors on the market, with their investment thesis and contact information. A must-have for all startups\n",
+  "icon": null,
+  "category": "Startups",
+  "categories": [
+    "Startups"
+  ],
+  "author": "GreenPhy Consulting",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/List-8e0faeca-dfd4-4e08-9b0e-c2fcca0b31b0",
+  "database_id": "26b6cce1-33dd-4f8e-97cb-e5742f87e6c8",
+  "fields": [
+    {
+      "id": "DP2DWs",
+      "name": "Note investessors",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "pw21GH",
+      "name": "Ticket",
+      "field_type": 4,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "4": {
+          "content": "{\"options\":[{\"id\":\"MUpJ\",\"name\":\"> $5 M\",\"color\":\"Purple\"},{\"id\":\"1nR5\",\"name\":\"$1 M\",\"color\":\"Pink\"},{\"id\":\"hKwd\",\"name\":\"$1 - 5 M\",\"color\":\"LightPink\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "Dqcsu2",
+      "name": "State",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "3": {
+          "content": "{\"options\":[],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "5tk-28",
+      "name": "Impact",
+      "field_type": 5,
+      "icon": "",
+      "type_options": {
+        "5": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "48Jnzl",
+      "name": "Geopgraphy",
+      "field_type": 4,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "4": {
+          "content": "{\"options\":[{\"id\":\"9NZY\",\"name\":\"Africa\",\"color\":\"Purple\"},{\"id\":\"No1F\",\"name\":\"Worlwide\",\"color\":\"Pink\"},{\"id\":\"-Fph\",\"name\":\"Europe\",\"color\":\"LightPink\"},{\"id\":\"zTXU\",\"name\":\"US\",\"color\":\"Orange\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "xAjMMg",
+      "name": "Offices",
+      "field_type": 4,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "4": {
+          "content": "{\"options\":[{\"id\":\"00CY\",\"name\":\"New York\",\"color\":\"Purple\"},{\"id\":\"IVhp\",\"name\":\"Dublin\",\"color\":\"Pink\"},{\"id\":\"SsX1\",\"name\":\"Paris\",\"color\":\"LightPink\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "sGTX8L",
+      "name": "Mail",
+      "field_type": 6,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "6": {
+          "content": "",
+          "url": ""
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "cVzoAj",
+      "name": "Note",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "oB8W1N",
+      "name": "Category",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "3": {
+          "content": "{\"options\":[{\"id\":\"dAV4\",\"name\":\"VC\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "UjERLw",
+      "name": "Sectors",
+      "field_type": 4,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "4": {
+          "content": "{\"options\":[{\"id\":\"Y4PF\",\"name\":\"Deeptech\",\"color\":\"Purple\"},{\"id\":\"DCfa\",\"name\":\"Infrastructure\",\"color\":\"Pink\"},{\"id\":\"xSyC\",\"name\":\"Hardware\",\"color\":\"LightPink\"},{\"id\":\"EH98\",\"name\":\"Security\",\"color\":\"Orange\"},{\"id\":\"cl4A\",\"name\":\"IoT\",\"color\":\"Yellow\"},{\"id\":\"tNkz\",\"name\":\"SaaS\",\"color\":\"Lime\"},{\"id\":\"Fh8I\",\"name\":\"Robotic\",\"color\":\"Green\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "tzRc3e",
+      "name": "Date",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "2": {
+          "date_format_v2": 0,
+          "timezone_id": "",
+          "time_format_v2": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "NlaZBt",
+      "name": "Investessor",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "rUTnNR",
+      "name": "Lead",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "3": {
+          "content": "{\"options\":[],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "TP0cD0",
+      "name": "Amount",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "1": {
+          "symbol": "RUB",
+          "format": 0,
+          "scale": 0,
+          "name": "Number"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "sYziWw",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "3": {
+          "content": "{\"options\":[{\"id\":\"GMGH\",\"name\":\"To contact\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "0NVX2L",
+      "name": "Stage",
+      "field_type": 4,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "4": {
+          "content": "{\"options\":[{\"id\":\"qYsU\",\"name\":\"Seed\",\"color\":\"Purple\"},{\"id\":\"CpSg\",\"name\":\"Serie A\",\"color\":\"Pink\"},{\"id\":\"2TTB\",\"name\":\"Growth\",\"color\":\"LightPink\"},{\"id\":\"NPEU\",\"name\":\"Pre-Seed\",\"color\":\"Orange\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "w_Bv97",
+      "name": "Contact",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "8e0faeca-dfd4-4e08-9b0e-c2fcca0b31b0",
+      "database_id": "26b6cce1-33dd-4f8e-97cb-e5742f87e6c8",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "753b5ba1-3cd6-4f85-80da-4218c72dd337",
+          "height": 60
+        },
+        {
+          "id": "eb99ffef-55e0-4649-938b-78bb4bfdd1e1",
+          "height": 60
+        },
+        {
+          "id": "666fd309-99e5-4040-b634-72508cbdc8ac",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "NlaZBt"
+        },
+        {
+          "id": "oB8W1N"
+        },
+        {
+          "id": "w_Bv97"
+        },
+        {
+          "id": "sGTX8L"
+        },
+        {
+          "id": "rUTnNR"
+        },
+        {
+          "id": "cVzoAj"
+        },
+        {
+          "id": "Dqcsu2"
+        },
+        {
+          "id": "sYziWw"
+        },
+        {
+          "id": "5tk-28"
+        },
+        {
+          "id": "48Jnzl"
+        },
+        {
+          "id": "xAjMMg"
+        },
+        {
+          "id": "UjERLw"
+        },
+        {
+          "id": "0NVX2L"
+        },
+        {
+          "id": "pw21GH"
+        },
+        {
+          "id": "DP2DWs"
+        },
+        {
+          "id": "TP0cD0"
+        },
+        {
+          "id": "tzRc3e"
+        }
+      ],
+      "field_settings": {
+        "NlaZBt": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "0NVX2L": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "sYziWw": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "Dqcsu2": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "pw21GH": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "DP2DWs": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "oB8W1N": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "xAjMMg": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "48Jnzl": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "TP0cD0": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "5tk-28": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "tzRc3e": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "w_Bv97": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "sGTX8L": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "rUTnNR": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "cVzoAj": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "UjERLw": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1788874112
+    }
+  ],
+  "rows": [
+    {
+      "id": "753b5ba1-3cd6-4f85-80da-4218c72dd337",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "tzRc3e": {
+          "field_type": 0,
+          "data": ""
+        },
+        "oB8W1N": {
+          "data": "VC",
+          "field_type": 0
+        },
+        "DP2DWs": {
+          "field_type": 0,
+          "data": ""
+        },
+        "0NVX2L": {
+          "field_type": 0,
+          "data": "Serie A,Seed,Pre-Seed,Growth"
+        },
+        "sGTX8L": {
+          "field_type": 0,
+          "data": ""
+        },
+        "Dqcsu2": {
+          "data": "",
+          "field_type": 0
+        },
+        "UjERLw": {
+          "field_type": 0,
+          "data": "IoT,Deeptech,Hardware,Infrastructure,Security,Robotic,SaaS"
+        },
+        "cVzoAj": {
+          "data": "",
+          "field_type": 0
+        },
+        "5tk-28": {
+          "field_type": 5,
+          "data": "No"
+        },
+        "rUTnNR": {
+          "data": "",
+          "field_type": 0
+        },
+        "pw21GH": {
+          "data": "$1 M ,$1 - 5 M,> $5 M",
+          "field_type": 0
+        },
+        "xAjMMg": {
+          "field_type": 0,
+          "data": "Paris,New York,Dublin"
+        },
+        "48Jnzl": {
+          "data": "Worlwide,US,Europe,Africa",
+          "field_type": 0
+        },
+        "TP0cD0": {
+          "data": "",
+          "field_type": 0
+        },
+        "w_Bv97": {
+          "field_type": 0,
+          "data": ""
+        },
+        "sYziWw": {
+          "data": "To contact",
+          "field_type": 0
+        },
+        "NlaZBt": {
+          "data": "Example Fund",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "666fd309-99e5-4040-b634-72508cbdc8ac",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "UjERLw": {
+          "data": "",
+          "field_type": 0
+        },
+        "Dqcsu2": {
+          "field_type": 0,
+          "data": ""
+        },
+        "sGTX8L": {
+          "data": "",
+          "field_type": 0
+        },
+        "cVzoAj": {
+          "field_type": 0,
+          "data": ""
+        },
+        "NlaZBt": {
+          "data": "",
+          "field_type": 0
+        },
+        "sYziWw": {
+          "field_type": 0,
+          "data": ""
+        },
+        "DP2DWs": {
+          "field_type": 0,
+          "data": ""
+        },
+        "TP0cD0": {
+          "data": "",
+          "field_type": 0
+        },
+        "rUTnNR": {
+          "data": "",
+          "field_type": 0
+        },
+        "xAjMMg": {
+          "field_type": 0,
+          "data": ""
+        },
+        "tzRc3e": {
+          "field_type": 0,
+          "data": ""
+        },
+        "w_Bv97": {
+          "field_type": 0,
+          "data": ""
+        },
+        "5tk-28": {
+          "data": "",
+          "field_type": 5
+        },
+        "48Jnzl": {
+          "field_type": 0,
+          "data": ""
+        },
+        "oB8W1N": {
+          "data": "",
+          "field_type": 0
+        },
+        "0NVX2L": {
+          "field_type": 0,
+          "data": ""
+        },
+        "pw21GH": {
+          "field_type": 0,
+          "data": ""
+        }
+      }
+    },
+    {
+      "id": "eb99ffef-55e0-4649-938b-78bb4bfdd1e1",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "cVzoAj": {
+          "data": "",
+          "field_type": 0
+        },
+        "0NVX2L": {
+          "data": "",
+          "field_type": 0
+        },
+        "tzRc3e": {
+          "field_type": 0,
+          "data": ""
+        },
+        "w_Bv97": {
+          "data": "",
+          "field_type": 0
+        },
+        "oB8W1N": {
+          "data": "",
+          "field_type": 0
+        },
+        "DP2DWs": {
+          "data": "",
+          "field_type": 0
+        },
+        "pw21GH": {
+          "data": "",
+          "field_type": 0
+        },
+        "rUTnNR": {
+          "data": "",
+          "field_type": 0
+        },
+        "TP0cD0": {
+          "data": "",
+          "field_type": 0
+        },
+        "48Jnzl": {
+          "data": "",
+          "field_type": 0
+        },
+        "xAjMMg": {
+          "data": "",
+          "field_type": 0
+        },
+        "5tk-28": {
+          "data": "",
+          "field_type": 5
+        },
+        "UjERLw": {
+          "data": "",
+          "field_type": 0
+        },
+        "sGTX8L": {
+          "data": "",
+          "field_type": 0
+        },
+        "Dqcsu2": {
+          "data": "",
+          "field_type": 0
+        },
+        "sYziWw": {
+          "data": "",
+          "field_type": 0
+        },
+        "NlaZBt": {
+          "field_type": 0,
+          "data": ""
+        }
+      }
+    }
+  ]
+}

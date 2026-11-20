@@ -1,0 +1,412 @@
+{
+  "page_id": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+  "blocks": {
+    "liSz7J": {
+      "id": "liSz7J",
+      "ty": "toggle_list",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "WdCaww",
+      "external_id": "lxgdkB",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Description and usage"
+          }
+        ],
+        "collapsed": true
+      }
+    },
+    "MBftX-": {
+      "id": "MBftX-",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "qudYz5",
+      "external_id": "ExI3cc",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "Drgcmu": {
+      "id": "Drgcmu",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "tQiUXV",
+      "external_id": "6rxctI",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "Hh3VeH": {
+      "id": "Hh3VeH",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "6XDEg_",
+      "external_id": "C9shPV",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Download branding assets"
+          }
+        ]
+      }
+    },
+    "lf8q_D": {
+      "id": "lf8q_D",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "0kgShn",
+      "external_id": "U7YnCT",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "KqnZ1X": {
+      "id": "KqnZ1X",
+      "ty": "heading",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "Un0JHL",
+      "external_id": "nCgncz",
+      "external_type": "text",
+      "data": {
+        "level": 2,
+        "delta": [
+          {
+            "insert": "Resources"
+          }
+        ]
+      }
+    },
+    "ZKhHo_": {
+      "id": "ZKhHo_",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "wylkfe",
+      "external_id": "gd70VC",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "PMnQy9": {
+      "id": "PMnQy9",
+      "ty": "simple_column",
+      "parent": "Mcf8l0",
+      "children": "ZjLiQT",
+      "external_id": null,
+      "external_type": null,
+      "data": {
+        "ratio": 0.5
+      }
+    },
+    "4BjNz4": {
+      "id": "4BjNz4",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "ea_b8k",
+      "external_id": "Qz08HM",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "21f04a87-7ef0-592a-85fb-c431610a1c91": {
+      "id": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "ty": "page",
+      "parent": "",
+      "children": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "external_id": "oUu1Zo",
+      "external_type": "text",
+      "data": {
+        "selected_icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"home-4\",\"color\":\"0xFFA34AFD\"}",
+        "cover_selection": "1",
+        "cover_selection_type": "CoverType.asset",
+        "image_type": "1"
+      }
+    },
+    "bKleq_": {
+      "id": "bKleq_",
+      "ty": "simple_column",
+      "parent": "Mcf8l0",
+      "children": "13brsi",
+      "external_id": null,
+      "external_type": null,
+      "data": {
+        "ratio": 0.5
+      }
+    },
+    "nULiLx": {
+      "id": "nULiLx",
+      "ty": "paragraph",
+      "parent": "PMnQy9",
+      "children": "8lzr5z",
+      "external_id": "GWnEAp",
+      "external_type": "text",
+      "data": {}
+    },
+    "zmxAxF": {
+      "id": "zmxAxF",
+      "ty": "paragraph",
+      "parent": "liSz7J",
+      "children": "Uai2sJ",
+      "external_id": "K6un9a",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "how to use this company wiki"
+          }
+        ]
+      }
+    },
+    "ebrzCO": {
+      "id": "ebrzCO",
+      "ty": "heading",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "LgGy6n",
+      "external_id": "A8GtoJ",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Logos"
+          }
+        ],
+        "level": 2
+      }
+    },
+    "qDdSFd": {
+      "id": "qDdSFd",
+      "ty": "paragraph",
+      "parent": "bKleq_",
+      "children": "Q4KQuM",
+      "external_id": "ZSn9z3",
+      "external_type": "text",
+      "data": {}
+    },
+    "kqGkp5": {
+      "id": "kqGkp5",
+      "ty": "heading",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "HU4beO",
+      "external_id": "tuxgL8",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "🏠 The Home"
+          }
+        ],
+        "level": 2
+      }
+    },
+    "1McjLN": {
+      "id": "1McjLN",
+      "ty": "paragraph",
+      "parent": "bKleq_",
+      "children": "0yPRJk",
+      "external_id": "XU_LY1",
+      "external_type": "text",
+      "data": {}
+    },
+    "1__QOZ": {
+      "id": "1__QOZ",
+      "ty": "file",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "khIn_g",
+      "external_id": null,
+      "external_type": null,
+      "data": {
+        "name": null,
+        "uploaded_at": 1724420042860,
+        "url": "",
+        "url_type": 0
+      }
+    },
+    "tQxNa9": {
+      "id": "tQxNa9",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "wafNdb",
+      "external_id": "N3uGW-",
+      "external_type": "text",
+      "data": {}
+    },
+    "Mcf8l0": {
+      "id": "Mcf8l0",
+      "ty": "simple_columns",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "12r9AA",
+      "external_id": null,
+      "external_type": null,
+      "data": {}
+    },
+    "aP-udP": {
+      "id": "aP-udP",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "9ZOkv7",
+      "external_id": "20SRrv",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "o8D1bq": {
+      "id": "o8D1bq",
+      "ty": "link_preview",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "7CepUz",
+      "external_id": null,
+      "external_type": null,
+      "data": {
+        "url": "https://github.com/AppFlowy-IO/AppFlowy"
+      }
+    },
+    "SYfH3Q": {
+      "id": "SYfH3Q",
+      "ty": "callout",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "Cqdp6p",
+      "external_id": "s7hGJ9",
+      "external_type": "text",
+      "data": {
+        "bgColor": "appflowy_them_color_tint4",
+        "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"star-1\"}",
+        "icon_type": "icon",
+        "textColor": "appflowy_them_color_tint4"
+      }
+    },
+    "PwqeXF": {
+      "id": "PwqeXF",
+      "ty": "paragraph",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "93k8xW",
+      "external_id": "2YfOE5",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "dfZLNx": {
+      "id": "dfZLNx",
+      "ty": "paragraph",
+      "parent": "bKleq_",
+      "children": "L7KME2",
+      "external_id": "V1Mllq",
+      "external_type": "text",
+      "data": {}
+    },
+    "U-Thbf": {
+      "id": "U-Thbf",
+      "ty": "image",
+      "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "children": "ZuLkp2",
+      "external_id": null,
+      "external_type": null,
+      "data": {
+        "width": null,
+        "align": "center",
+        "url": "",
+        "height": null
+      }
+    },
+    "UjS2WQ": {
+      "id": "UjS2WQ",
+      "ty": "paragraph",
+      "parent": "PMnQy9",
+      "children": "Uz8twV",
+      "external_id": "v9PDbp",
+      "external_type": "text",
+      "data": {}
+    }
+  },
+  "meta": {
+    "children_map": {
+      "Uai2sJ": [],
+      "wylkfe": [],
+      "ZuLkp2": [],
+      "0yPRJk": [],
+      "WdCaww": [
+        "zmxAxF"
+      ],
+      "qudYz5": [],
+      "Uz8twV": [],
+      "7CepUz": [],
+      "13brsi": [
+        "1McjLN",
+        "qDdSFd",
+        "dfZLNx"
+      ],
+      "ZjLiQT": [
+        "UjS2WQ",
+        "nULiLx"
+      ],
+      "93k8xW": [],
+      "HU4beO": [],
+      "Q4KQuM": [],
+      "tQiUXV": [],
+      "9ZOkv7": [],
+      "wafNdb": [],
+      "0kgShn": [],
+      "LgGy6n": [],
+      "12r9AA": [
+        "bKleq_",
+        "PMnQy9"
+      ],
+      "Cqdp6p": [],
+      "6XDEg_": [],
+      "Un0JHL": [],
+      "21f04a87-7ef0-592a-85fb-c431610a1c91": [
+        "liSz7J",
+        "Drgcmu",
+        "kqGkp5",
+        "SYfH3Q",
+        "MBftX-",
+        "Mcf8l0",
+        "lf8q_D",
+        "aP-udP",
+        "ebrzCO",
+        "U-Thbf",
+        "tQxNa9",
+        "Hh3VeH",
+        "1__QOZ",
+        "4BjNz4",
+        "ZKhHo_",
+        "KqnZ1X",
+        "o8D1bq",
+        "PwqeXF"
+      ],
+      "L7KME2": [],
+      "8lzr5z": [],
+      "ea_b8k": [],
+      "khIn_g": []
+    },
+    "text_map": {
+      "tuxgL8": "[{\"insert\":\"🏠 The Home\"}]",
+      "K6un9a": "[{\"insert\":\"how to use this company wiki\"}]",
+      "A8GtoJ": "[{\"insert\":\"Logos\"}]",
+      "V1Mllq": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"page_id\":\"91734dd9-64d8-4807-8f9b-82ff0d375afa\",\"type\":\"page\"}}}]",
+      "XU_LY1": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"265a4f51-eee7-4c36-ae37-8522fdd9d872\"}}}]",
+      "2YfOE5": "[]",
+      "20SRrv": "[]",
+      "Qz08HM": "[]",
+      "gd70VC": "[]",
+      "C9shPV": "[{\"insert\":\"Download branding assets\"}]",
+      "N3uGW-": "[]",
+      "lxgdkB": "[{\"insert\":\"Description and usage\"}]",
+      "v9PDbp": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"ab4c1ac4-38d6-4ec6-9e42-ae12cee8e694\"}}}]",
+      "nCgncz": "[{\"insert\":\"Resources\"}]",
+      "U7YnCT": "[]",
+      "GWnEAp": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"a4ca1533-cf77-4e73-a235-651970f63d21\"}}}]",
+      "6rxctI": "[]",
+      "ExI3cc": "[]",
+      "ZSn9z3": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"4a880d1c-3c36-4856-8bcd-80bc1d601a68\"}}}]",
+      "s7hGJ9": "[{\"insert\":\"Add your company motto or slogan here\"}]"
+    }
+  }
+}

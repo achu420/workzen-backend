@@ -1,0 +1,31 @@
+[2026-11-06T04:27:19.819Z] INFO - .env.local backed up (MD5-verified) :: c85de40fc13dc3b2379325c6ecc3471d
+[2026-11-06T04:27:19.819Z] INFO - Wrote temporary .env.local pointing at this run's disposable backend :: APPFLOWY_BASE_URL=http://127.0.0.1:8910 | APPFLOWY_GOTRUE_BASE_URL=http://127.0.0.1:8910 | APPFLOWY_WS_BASE_URL=ws://127.0.0.1:8910/ws/v2 | 
+[2026-11-06T04:27:20.329Z] PASS - Backend process started (STORAGE=json, port 8910) :: pid=7003
+[2026-11-06T04:27:21.379Z] PASS - Frontend dev server started (port 5310) :: pid=7009
+[2026-11-06T04:27:21.477Z] PASS - Scenario A: registered dedicated creator test account :: task64-json-creator-1793939241449@example.test
+[2026-11-06T04:27:26.756Z] PASS - Scenario A: login via real UI :: http://localhost:5310/app/22871629-0203-4b43-aac1-004646384236
+[2026-11-06T04:27:30.105Z] PASS - Scenario A: created a public Space via real UI
+[2026-11-06T04:27:33.949Z] PASS - Scenario A: created a Grid Database via real UI :: workspace=22871629-0203-4b43-aac1-004646384236 database=2daeaea6-1111-408a-9569-209e5d113148
+[2026-11-06T04:27:33.994Z] PASS - Scenario A: Grid Database view loads with a field header
+[2026-11-06T04:27:37.469Z] PASS - Scenario A: created row 1 and entered a value :: Task64 json row one
+[2026-11-06T04:27:40.914Z] PASS - Scenario A: created row 2 and entered a value :: Task64 json row two
+[2026-11-06T04:27:42.568Z] PASS - SCENARIO A RESULT: creator reload shows both rows and both values :: row1=true row2=true cell1="Task64 json row one" cell2="Task64 json row two"
+[2026-11-06T04:27:42.637Z] INFO - Resolved space id and container id via backend API (test plumbing, not under test) :: space=289cec53-a6fd-4997-b7d5-1f059596106d container=f4d4737d-2ed8-468b-8f75-2b9148da0d18
+[2026-11-06T04:27:42.660Z] PASS - Scenario B: registered a SEPARATE second member and added them to the workspace via the supported test-membership helper :: task64-json-member-1793939262637@example.test
+[2026-11-06T04:27:44.745Z] PASS - Scenario B: second member logged in via real UI in an independent browser context :: http://localhost:5310/app/22871629-0203-4b43-aac1-004646384236/9920c057-34ec-4633-8e8e-6fa4d499a2d4
+[2026-11-06T04:27:46.337Z] PASS - Scenario B: second member opens the shared workspace :: http://localhost:5310/app/22871629-0203-4b43-aac1-004646384236/9920c057-34ec-4633-8e8e-6fa4d499a2d4
+[2026-11-06T04:27:46.416Z] PASS - Scenario B: real catalog endpoint (GET /api/workspace/{id}/database) returns the Database to the second member :: {"databases":[{"database_id":"2daeaea6-1111-408a-9569-209e5d113148","views":[{"view_id":"f4d4737d-2ed8-468b-8f75-2b9148da0d18","layout":1,"is_container":true,"embedded":false,"name":"New Database","icon":null,"parent_view_id":"289cec53-a6fd-4997-b7d5-1f059596106d"},{"view_id":"9f899e2f-e37b-40e6-93a1-bcdc2ecaa7bc","layout":1,"is_container":false,"embedded":false,"name":"Grid","icon":null,"parent_view_id":"f4d4737d-2ed8-468b-8f75-2b9148da0d18"}]}],"has_more":false}
+[2026-11-06T04:27:47.168Z] PASS - Scenario B: Database is discoverable in the sidebar Folder tree (second member, never created it themselves)
+[2026-11-06T04:27:55.306Z] PASS - Scenario B: second member opens the Database and sees both rows + values :: grid=true row1=true row2=true cell1="Task64 json row one" cell2="Task64 json row two"
+[2026-11-06T04:27:57.224Z] PASS - Scenario B: second member reloads their context and the Database remains discoverable/opens successfully
+[2026-11-06T04:27:57.255Z] PASS - SCENARIO B RESULT (the critical fresh-session gap)
+[2026-11-06T04:27:57.303Z] INFO - Killed process on port 8910 :: pid=7003
+[2026-11-06T04:27:58.826Z] PASS - Scenario C: backend process restarted on the same port (same disposable storage) :: pid=7176
+[2026-11-06T04:28:02.517Z] PASS - Scenario C: re-authenticated after backend restart and reopened the shared workspace
+[2026-11-06T04:28:02.571Z] PASS - Scenario C: catalog still returns the Database after backend restart
+[2026-11-06T04:28:05.396Z] PASS - SCENARIO C RESULT: Database discoverable and opens with rows intact after backend restart :: grid=true row1=true row2=true cell1="Task64 json row one" cell2="Task64 json row two"
+[2026-11-06T04:28:07.272Z] PASS - Scenario D: the Space still renders in the sidebar
+[2026-11-06T04:28:08.811Z] PASS - Scenario D: the EXISTING Database (created before restart) still opens via the Folder tree
+[2026-11-06T04:28:11.943Z] PASS - Scenario D: a NEW ordinary Document page can be created and opens
+[2026-11-06T04:28:17.493Z] PASS - Scenario D: creating a brand-new SECOND Grid Database still works after the catalog fix
+[2026-11-06T04:28:17.519Z] PASS - SCENARIO D RESULT: regression checks

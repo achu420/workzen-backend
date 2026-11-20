@@ -1,0 +1,409 @@
+{
+  "template_id": "scrum-board-template",
+  "order": 117,
+  "name": "Scrum Board Template",
+  "description": "Template for a Software Development team following a Scrum process.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"color\":\"0xFFFFBA00\",\"groupName\":\"artificial_intelligence\",\"iconName\":\"ai-generate-variation-spark\"}"
+  },
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Engineering",
+    "Kanban",
+    "Startups"
+  ],
+  "author": "Robin, Founder at Cherry Wood Software",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Scrum-Board-Template-add69abe",
+  "database_id": "4184684d-331c-451b-a1e5-d5fe8dff08d1",
+  "fields": [
+    {
+      "id": "MCbMM2",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "FQO4KV",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "j_93Tx",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"jCnQ\",\"name\":\"How to use this Board\",\"color\":\"LightPink\"},{\"id\":\"gto0\",\"name\":\"Backlog\",\"color\":\"Cream\"},{\"id\":\"10ho\",\"name\":\"Next Sprint\",\"color\":\"Orange\"},{\"id\":\"xRlW\",\"name\":\"Sprint Backlog\",\"color\":\"Yellow\"},{\"id\":\"0YhS\",\"name\":\"Dev\",\"color\":\"Aqua\"},{\"id\":\"bvsS\",\"name\":\"Code Review\",\"color\":\"LightPink\"},{\"id\":\"RZD2\",\"name\":\"Testing\",\"color\":\"Pink\"},{\"id\":\"NiM5\",\"name\":\"Done Sprint DATE - DATE 🎉\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "0a6fc89e-e4ff-4ff7-832e-9f7688e5c058",
+      "database_id": "4184684d-331c-451b-a1e5-d5fe8dff08d1",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "ty": 3,
+          "id": "g:6tMf79",
+          "groups": [
+            {
+              "id": "j_93Tx",
+              "visible": false
+            },
+            {
+              "id": "jCnQ",
+              "visible": true
+            },
+            {
+              "id": "gto0",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "10ho"
+            },
+            {
+              "visible": true,
+              "id": "xRlW"
+            },
+            {
+              "id": "0YhS",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "bvsS"
+            },
+            {
+              "id": "RZD2",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "NiM5"
+            }
+          ],
+          "field_id": "j_93Tx",
+          "content": ""
+        }
+      ],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "51fa17ed-2b52-4fd5-9faa-2aba73065df0"
+        },
+        {
+          "id": "4168ac44-4eb3-436d-9dca-b00396aacdfb",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "fdd8ad18-d993-4256-bc4a-09b4ec3853a4"
+        },
+        {
+          "height": 60,
+          "id": "587e1c5d-e73e-418e-85e8-f656e375564a"
+        },
+        {
+          "id": "e9332098-d7af-41f5-b674-5544d2ce45c5",
+          "height": 60
+        },
+        {
+          "id": "27ebc77e-b6d2-4d13-875c-efaa740641ea",
+          "height": 60
+        },
+        {
+          "id": "91a0cdcc-a52a-4bd0-a77d-602fa3e21d4f",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "e74d3a64-ffe5-4324-bc2a-a4e9ad2d3168"
+        },
+        {
+          "height": 60,
+          "id": "91de73a3-34ca-458b-8fbb-36f8c8fa791b"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "MCbMM2"
+        },
+        {
+          "id": "j_93Tx"
+        },
+        {
+          "id": "FQO4KV"
+        }
+      ],
+      "field_settings": {
+        "MCbMM2": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "j_93Tx": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 1
+        },
+        "FQO4KV": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1787032339
+    },
+    {
+      "id": "40d75fd7-7bf7-416e-a208-af36ce5689e9",
+      "database_id": "4184684d-331c-451b-a1e5-d5fe8dff08d1",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "51fa17ed-2b52-4fd5-9faa-2aba73065df0",
+          "height": 60
+        },
+        {
+          "id": "4168ac44-4eb3-436d-9dca-b00396aacdfb",
+          "height": 60
+        },
+        {
+          "id": "fdd8ad18-d993-4256-bc4a-09b4ec3853a4",
+          "height": 60
+        },
+        {
+          "id": "587e1c5d-e73e-418e-85e8-f656e375564a",
+          "height": 60
+        },
+        {
+          "id": "e9332098-d7af-41f5-b674-5544d2ce45c5",
+          "height": 60
+        },
+        {
+          "id": "27ebc77e-b6d2-4d13-875c-efaa740641ea",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "91a0cdcc-a52a-4bd0-a77d-602fa3e21d4f"
+        },
+        {
+          "height": 60,
+          "id": "e74d3a64-ffe5-4324-bc2a-a4e9ad2d3168"
+        },
+        {
+          "height": 60,
+          "id": "91de73a3-34ca-458b-8fbb-36f8c8fa791b"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "MCbMM2"
+        },
+        {
+          "id": "j_93Tx"
+        },
+        {
+          "id": "FQO4KV"
+        }
+      ],
+      "field_settings": {
+        "j_93Tx": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "FQO4KV": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "MCbMM2": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1786517437
+    }
+  ],
+  "rows": [
+    {
+      "id": "51fa17ed-2b52-4fd5-9faa-2aba73065df0",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MCbMM2": {
+          "field_type": 0,
+          "data": "How to manage Sprints"
+        },
+        "j_93Tx": {
+          "data": "jCnQ",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "91a0cdcc-a52a-4bd0-a77d-602fa3e21d4f",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "j_93Tx": {
+          "data": "bvsS",
+          "field_type": 3
+        },
+        "MCbMM2": {
+          "data": "This Card is a Bug",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "91de73a3-34ca-458b-8fbb-36f8c8fa791b",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MCbMM2": {
+          "data": "I am a Card completed in the Current Sprint",
+          "field_type": 0
+        },
+        "j_93Tx": {
+          "data": "NiM5",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "587e1c5d-e73e-418e-85e8-f656e375564a",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MCbMM2": {
+          "field_type": 0,
+          "data": "Sprint Goal: -INSERT SPRINT GOAL HERE-"
+        },
+        "j_93Tx": {
+          "field_type": 3,
+          "data": "xRlW"
+        }
+      }
+    },
+    {
+      "id": "e9332098-d7af-41f5-b674-5544d2ce45c5",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MCbMM2": {
+          "data": "This Card is part of the Current Sprint. The Plan is to complete all Cards in this List by the end of the Sprint.",
+          "field_type": 0
+        },
+        "j_93Tx": {
+          "field_type": 3,
+          "data": "xRlW"
+        }
+      }
+    },
+    {
+      "id": "fdd8ad18-d993-4256-bc4a-09b4ec3853a4",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "j_93Tx": {
+          "field_type": 3,
+          "data": "10ho"
+        },
+        "FQO4KV": {
+          "data": "This Card is hoped to be included in the next Sprint.",
+          "field_type": 0
+        },
+        "MCbMM2": {
+          "field_type": 0,
+          "data": "This Card is todo - in the next Sprint"
+        }
+      }
+    },
+    {
+      "id": "27ebc77e-b6d2-4d13-875c-efaa740641ea",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "j_93Tx": {
+          "field_type": 3,
+          "data": "0YhS"
+        },
+        "MCbMM2": {
+          "data": "This Card is blocked!",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "4168ac44-4eb3-436d-9dca-b00396aacdfb",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "FQO4KV": {
+          "data": "Cards in the Backlog List need to be done but are not yet committed to be worked on by the team.",
+          "field_type": 0
+        },
+        "MCbMM2": {
+          "data": "This Card is todo - but the team is not committed to completing it yet",
+          "field_type": 0
+        },
+        "j_93Tx": {
+          "data": "gto0",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "e74d3a64-ffe5-4324-bc2a-a4e9ad2d3168",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MCbMM2": {
+          "field_type": 0,
+          "data": "This Card needs to be expedited"
+        },
+        "j_93Tx": {
+          "field_type": 3,
+          "data": "RZD2"
+        }
+      }
+    }
+  ]
+}

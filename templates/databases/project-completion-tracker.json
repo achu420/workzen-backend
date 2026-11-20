@@ -1,0 +1,813 @@
+{
+  "template_id": "project-completion-tracker",
+  "order": 101,
+  "name": "Project Completion Tracker",
+  "description": "Count completed tasks, track checklist progress, and see what remains across linked projects.",
+  "icon": null,
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Database"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/project-completion-tracker",
+  "database_id": "bdb6a5e9-b5c8-42b1-81dc-526311b4ee18",
+  "fields": [
+    {
+      "id": "total",
+      "name": "Total tasks",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "19": {
+          "expression": "prop(\"tasks\").length()",
+          "format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "completed",
+      "name": "Completed",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "calculation_type": 13,
+          "condition_value": "[]",
+          "target_field_id": "done",
+          "relation_field_id": "tasks",
+          "show_as": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "completion",
+      "name": "Completion %",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "19": {
+          "format": 36,
+          "expression": "if(prop(\"total\") == 0, empty(), prop(\"completed\") / prop(\"total\"))"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "health",
+      "name": "Health",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "19": {
+          "format": 0,
+          "expression": "if(prop(\"total\") == 0, \"Add tasks\", if(prop(\"completed\") == prop(\"total\"), \"Complete\", \"In progress\"))"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "project",
+      "name": "Project",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "remaining",
+      "name": "Remaining",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "19": {
+          "format": 0,
+          "expression": "prop(\"total\") - prop(\"completed\")"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "tasks",
+      "name": "Tasks",
+      "field_type": 10,
+      "icon": "",
+      "type_options": {
+        "10": {
+          "reciprocal_field_name": "Project",
+          "reciprocal_field_id": "project",
+          "is_two_way": true,
+          "target_limit": 1,
+          "database_id": "b16c7fc2-666a-43c7-b247-0b83b740ccc4",
+          "source_limit": 0
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "e7e982bc-810e-4178-b889-b1c68a9b2101",
+      "database_id": "bdb6a5e9-b5c8-42b1-81dc-526311b4ee18",
+      "name": "Completion overview",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "74ebf04a-4440-4277-acb3-aff7e3395657",
+          "height": 64
+        },
+        {
+          "height": 64,
+          "id": "7568081c-454c-49f6-a55c-704e49f90782"
+        },
+        {
+          "height": 64,
+          "id": "e4fce85d-8929-415b-99f2-6d0eb7716510"
+        },
+        {
+          "id": "b42a887c-4e1c-47e8-8512-2bbf140f9e9d",
+          "height": 64
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "project"
+        },
+        {
+          "id": "total"
+        },
+        {
+          "id": "completed"
+        },
+        {
+          "id": "remaining"
+        },
+        {
+          "id": "completion"
+        },
+        {
+          "id": "health"
+        },
+        {
+          "id": "tasks"
+        }
+      ],
+      "field_settings": {
+        "total": {
+          "visibility": 0,
+          "width": "160",
+          "wrap": true
+        },
+        "remaining": {
+          "visibility": 0,
+          "width": "150",
+          "wrap": true
+        },
+        "health": {
+          "width": "145",
+          "visibility": 0,
+          "wrap": true
+        },
+        "project": {
+          "visibility": 0,
+          "width": "210",
+          "wrap": true
+        },
+        "completed": {
+          "width": "150",
+          "visibility": 0,
+          "wrap": true
+        },
+        "completion": {
+          "width": "150",
+          "wrap": true,
+          "visibility": 0
+        },
+        "tasks": {
+          "visibility": 0,
+          "width": "270",
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1791965029
+    }
+  ],
+  "rows": [
+    {
+      "id": "b42a887c-4e1c-47e8-8512-2bbf140f9e9d",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "tasks": {
+          "created_at": "1791965268",
+          "field_type": 10,
+          "last_modified": "1791965268",
+          "data": []
+        },
+        "project": {
+          "last_modified": "1791965268",
+          "data": "Next quarter planning",
+          "created_at": "1791965268",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "74ebf04a-4440-4277-acb3-aff7e3395657",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "tasks": {
+          "data": [
+            "c6b806d9-a21b-4c24-8ca3-73ada66cc6cd",
+            "60551587-6493-4104-a967-29ed9df97162",
+            "97cb4262-4aa6-413e-9d4c-e2cc87a01c38",
+            "4597ce3d-e8f7-4463-ae25-fd2f807a2a87"
+          ],
+          "last_modified": "1791965268",
+          "created_at": "1791965268",
+          "field_type": 10
+        },
+        "project": {
+          "created_at": "1791965268",
+          "data": "Website launch",
+          "last_modified": "1791965268",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "e4fce85d-8929-415b-99f2-6d0eb7716510",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "project": {
+          "last_modified": "1791965268",
+          "created_at": "1791965268",
+          "data": "Customer research",
+          "field_type": 0
+        },
+        "tasks": {
+          "created_at": "1791965268",
+          "last_modified": "1791965268",
+          "data": [
+            "5bbc4426-c5af-477f-ba31-c11c053cbbc4",
+            "2a3fa599-c0ae-490b-84e5-e0cd0981ac4f"
+          ],
+          "field_type": 10
+        }
+      }
+    },
+    {
+      "id": "7568081c-454c-49f6-a55c-704e49f90782",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "project": {
+          "data": "Client onboarding",
+          "field_type": 0,
+          "created_at": "1791965268",
+          "last_modified": "1791965268"
+        },
+        "tasks": {
+          "field_type": 10,
+          "created_at": "1791965268",
+          "last_modified": "1791965268",
+          "data": [
+            "23bc4791-f0f3-4774-8464-83b1f9fc10e8",
+            "219494cd-be78-4566-bcfe-5ced9fffa566",
+            "af72f003-4482-4656-8739-d163820cce79"
+          ]
+        }
+      }
+    }
+  ],
+  "related_databases": [
+    {
+      "database_id": "b16c7fc2-666a-43c7-b247-0b83b740ccc4",
+      "fields": [
+        {
+          "id": "project",
+          "name": "Project",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "target_limit": 0,
+              "database_id": "bdb6a5e9-b5c8-42b1-81dc-526311b4ee18",
+              "is_two_way": true,
+              "reciprocal_field_id": "tasks",
+              "reciprocal_field_name": "Tasks",
+              "source_limit": 1
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "owner",
+          "name": "Owner",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "done",
+          "name": "Done",
+          "field_type": 5,
+          "icon": "",
+          "type_options": {
+            "5": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "priority",
+          "name": "Priority",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"priority0\",\"name\":\"High\",\"color\":\"Purple\"},{\"id\":\"priority1\",\"name\":\"Medium\",\"color\":\"Blue\"},{\"id\":\"priority2\",\"name\":\"Low\",\"color\":\"Green\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "task",
+          "name": "Task",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": true
+        }
+      ],
+      "views": [
+        {
+          "id": "7b25cf94-f5fa-4d6b-839b-e321428bbfc3",
+          "database_id": "b16c7fc2-666a-43c7-b247-0b83b740ccc4",
+          "name": "All tasks",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "height": 64,
+              "id": "c6b806d9-a21b-4c24-8ca3-73ada66cc6cd"
+            },
+            {
+              "height": 64,
+              "id": "60551587-6493-4104-a967-29ed9df97162"
+            },
+            {
+              "id": "97cb4262-4aa6-413e-9d4c-e2cc87a01c38",
+              "height": 64
+            },
+            {
+              "id": "4597ce3d-e8f7-4463-ae25-fd2f807a2a87",
+              "height": 64
+            },
+            {
+              "id": "23bc4791-f0f3-4774-8464-83b1f9fc10e8",
+              "height": 64
+            },
+            {
+              "id": "219494cd-be78-4566-bcfe-5ced9fffa566",
+              "height": 64
+            },
+            {
+              "id": "af72f003-4482-4656-8739-d163820cce79",
+              "height": 64
+            },
+            {
+              "height": 64,
+              "id": "5bbc4426-c5af-477f-ba31-c11c053cbbc4"
+            },
+            {
+              "height": 64,
+              "id": "2a3fa599-c0ae-490b-84e5-e0cd0981ac4f"
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "task"
+            },
+            {
+              "id": "done"
+            },
+            {
+              "id": "owner"
+            },
+            {
+              "id": "priority"
+            },
+            {
+              "id": "project"
+            }
+          ],
+          "field_settings": {
+            "project": {
+              "visibility": 0,
+              "width": "220",
+              "wrap": true
+            },
+            "owner": {
+              "visibility": 0,
+              "width": "120",
+              "wrap": true
+            },
+            "done": {
+              "wrap": true,
+              "visibility": 0,
+              "width": "90"
+            },
+            "task": {
+              "width": "280",
+              "wrap": true,
+              "visibility": 0
+            },
+            "priority": {
+              "wrap": true,
+              "width": "130",
+              "visibility": 0
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1791965034
+        }
+      ],
+      "rows": [
+        {
+          "id": "219494cd-be78-4566-bcfe-5ced9fffa566",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "owner": {
+              "data": "Sam",
+              "last_modified": "1791965249",
+              "created_at": "1791965249",
+              "field_type": 0
+            },
+            "done": {
+              "created_at": "1791965249",
+              "field_type": 5,
+              "data": "false",
+              "last_modified": "1791965249"
+            },
+            "priority": {
+              "created_at": "1791965249",
+              "last_modified": "1791965249",
+              "data": "priority0",
+              "field_type": 3
+            },
+            "task": {
+              "last_modified": "1791965249",
+              "created_at": "1791965249",
+              "data": "Set up client workspace",
+              "field_type": 0
+            },
+            "project": {
+              "field_type": 10,
+              "created_at": "1791965249",
+              "last_modified": "1791965249",
+              "data": [
+                "7568081c-454c-49f6-a55c-704e49f90782"
+              ]
+            }
+          }
+        },
+        {
+          "id": "af72f003-4482-4656-8739-d163820cce79",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task": {
+              "last_modified": "1791965249",
+              "created_at": "1791965249",
+              "data": "Review access permissions",
+              "field_type": 0
+            },
+            "project": {
+              "field_type": 10,
+              "last_modified": "1791965249",
+              "data": [
+                "7568081c-454c-49f6-a55c-704e49f90782"
+              ],
+              "created_at": "1791965249"
+            },
+            "owner": {
+              "field_type": 0,
+              "created_at": "1791965249",
+              "last_modified": "1791965249",
+              "data": "Riley"
+            },
+            "priority": {
+              "field_type": 3,
+              "created_at": "1791965249",
+              "last_modified": "1791965249",
+              "data": "priority0"
+            },
+            "done": {
+              "created_at": "1791965249",
+              "data": "false",
+              "field_type": 5,
+              "last_modified": "1791965249"
+            }
+          }
+        },
+        {
+          "id": "23bc4791-f0f3-4774-8464-83b1f9fc10e8",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task": {
+              "field_type": 0,
+              "last_modified": "1791965249",
+              "data": "Send welcome pack",
+              "created_at": "1791965249"
+            },
+            "project": {
+              "data": [
+                "7568081c-454c-49f6-a55c-704e49f90782"
+              ],
+              "field_type": 10,
+              "created_at": "1791965249",
+              "last_modified": "1791965249"
+            },
+            "priority": {
+              "created_at": "1791965249",
+              "field_type": 3,
+              "last_modified": "1791965249",
+              "data": "priority1"
+            },
+            "done": {
+              "created_at": "1791965249",
+              "last_modified": "1791965249",
+              "data": "true",
+              "field_type": 5
+            },
+            "owner": {
+              "created_at": "1791965249",
+              "field_type": 0,
+              "last_modified": "1791965249",
+              "data": "Alex"
+            }
+          }
+        },
+        {
+          "id": "2a3fa599-c0ae-490b-84e5-e0cd0981ac4f",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "owner": {
+              "data": "Jordan",
+              "created_at": "1791965249",
+              "field_type": 0,
+              "last_modified": "1791965249"
+            },
+            "task": {
+              "field_type": 0,
+              "created_at": "1791965249",
+              "data": "Share research summary",
+              "last_modified": "1791965249"
+            },
+            "done": {
+              "data": "true",
+              "field_type": 5,
+              "created_at": "1791965249",
+              "last_modified": "1791965249"
+            },
+            "project": {
+              "created_at": "1791965249",
+              "field_type": 10,
+              "last_modified": "1791965249",
+              "data": [
+                "e4fce85d-8929-415b-99f2-6d0eb7716510"
+              ]
+            },
+            "priority": {
+              "last_modified": "1791965249",
+              "created_at": "1791965249",
+              "data": "priority2",
+              "field_type": 3
+            }
+          }
+        },
+        {
+          "id": "c6b806d9-a21b-4c24-8ca3-73ada66cc6cd",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "done": {
+              "created_at": "1791965249",
+              "field_type": 5,
+              "last_modified": "1791965249",
+              "data": "true"
+            },
+            "project": {
+              "data": [
+                "74ebf04a-4440-4277-acb3-aff7e3395657"
+              ],
+              "field_type": 10,
+              "last_modified": "1791965249",
+              "created_at": "1791965249"
+            },
+            "task": {
+              "data": "Approve page designs",
+              "field_type": 0,
+              "created_at": "1791965249",
+              "last_modified": "1791965249"
+            },
+            "owner": {
+              "data": "Alex",
+              "created_at": "1791965249",
+              "field_type": 0,
+              "last_modified": "1791965249"
+            },
+            "priority": {
+              "data": "priority0",
+              "field_type": 3,
+              "created_at": "1791965249",
+              "last_modified": "1791965249"
+            }
+          }
+        },
+        {
+          "id": "60551587-6493-4104-a967-29ed9df97162",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "project": {
+              "field_type": 10,
+              "last_modified": "1791965249",
+              "created_at": "1791965249",
+              "data": [
+                "74ebf04a-4440-4277-acb3-aff7e3395657"
+              ]
+            },
+            "owner": {
+              "last_modified": "1791965249",
+              "data": "Sam",
+              "created_at": "1791965249",
+              "field_type": 0
+            },
+            "priority": {
+              "field_type": 3,
+              "last_modified": "1791965249",
+              "data": "priority0",
+              "created_at": "1791965249"
+            },
+            "task": {
+              "data": "Build pricing page",
+              "field_type": 0,
+              "last_modified": "1791965249",
+              "created_at": "1791965249"
+            },
+            "done": {
+              "data": "true",
+              "last_modified": "1791965249",
+              "field_type": 5,
+              "created_at": "1791965249"
+            }
+          }
+        },
+        {
+          "id": "5bbc4426-c5af-477f-ba31-c11c053cbbc4",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "priority": {
+              "data": "priority1",
+              "field_type": 3,
+              "last_modified": "1791965249",
+              "created_at": "1791965249"
+            },
+            "project": {
+              "field_type": 10,
+              "data": [
+                "e4fce85d-8929-415b-99f2-6d0eb7716510"
+              ],
+              "last_modified": "1791965249",
+              "created_at": "1791965249"
+            },
+            "done": {
+              "last_modified": "1791965249",
+              "created_at": "1791965249",
+              "field_type": 5,
+              "data": "true"
+            },
+            "owner": {
+              "last_modified": "1791965249",
+              "field_type": 0,
+              "data": "Riley",
+              "created_at": "1791965249"
+            },
+            "task": {
+              "last_modified": "1791965249",
+              "created_at": "1791965249",
+              "data": "Prepare interview guide",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "4597ce3d-e8f7-4463-ae25-fd2f807a2a87",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "done": {
+              "data": "false",
+              "last_modified": "1791965249",
+              "created_at": "1791965249",
+              "field_type": 5
+            },
+            "task": {
+              "data": "Run launch checklist",
+              "last_modified": "1791965249",
+              "field_type": 0,
+              "created_at": "1791965249"
+            },
+            "project": {
+              "data": [
+                "74ebf04a-4440-4277-acb3-aff7e3395657"
+              ],
+              "created_at": "1791965249",
+              "field_type": 10,
+              "last_modified": "1791965249"
+            },
+            "owner": {
+              "field_type": 0,
+              "data": "Jordan",
+              "last_modified": "1791965249",
+              "created_at": "1791965249"
+            },
+            "priority": {
+              "data": "priority0",
+              "field_type": 3,
+              "created_at": "1791965249",
+              "last_modified": "1791965249"
+            }
+          }
+        },
+        {
+          "id": "97cb4262-4aa6-413e-9d4c-e2cc87a01c38",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "project": {
+              "created_at": "1791965249",
+              "field_type": 10,
+              "data": [
+                "74ebf04a-4440-4277-acb3-aff7e3395657"
+              ],
+              "last_modified": "1791965249"
+            },
+            "task": {
+              "last_modified": "1791965249",
+              "field_type": 0,
+              "created_at": "1791965249",
+              "data": "Review mobile layouts"
+            },
+            "done": {
+              "field_type": 5,
+              "data": "false",
+              "last_modified": "1791965249",
+              "created_at": "1791965249"
+            },
+            "owner": {
+              "created_at": "1791965249",
+              "data": "Riley",
+              "field_type": 0,
+              "last_modified": "1791965249"
+            },
+            "priority": {
+              "created_at": "1791965249",
+              "last_modified": "1791965249",
+              "data": "priority1",
+              "field_type": 3
+            }
+          }
+        }
+      ],
+      "name": "Project Checklist Tasks",
+      "icon": null
+    }
+  ]
+}

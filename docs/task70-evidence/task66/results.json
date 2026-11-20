@@ -1,0 +1,37 @@
+[
+  {
+    "title": "A1. owner->member live delivery + persistence (document body)",
+    "status": "passed",
+    "annotations": [
+      {
+        "type": "live-delivery-BLOCKED",
+        "description": "live (no-refresh) delivery to member: FAIL (empty/placeholder editor content observed); same content after a reload (load-time fetch, not live push): PASS; readinessAfterReload={\"modalClosed\":true,\"toastCleared\":true,\"editorReady\":true,\"ok\":true}"
+      }
+    ]
+  },
+  {
+    "title": "A2. member->owner live delivery + persistence",
+    "status": "passed",
+    "annotations": [
+      {
+        "type": "live-delivery-BLOCKED",
+        "description": "live (no-refresh) delivery to owner (member->owner direction): FAIL; same content after reload: PASS"
+      }
+    ]
+  },
+  {
+    "title": "A3. continued collaboration (reload-based convergence both directions), no duplicate/stale content",
+    "status": "passed",
+    "annotations": [
+      {
+        "type": "live-delivery-status",
+        "description": "owner->member live: PASS; member->owner live: PASS; both converge after reload: owner=true, member=true"
+      }
+    ]
+  },
+  {
+    "title": "A4. Database/DatabaseRow browser fan-out (bounded attempt)",
+    "status": "passed",
+    "annotations": []
+  }
+]

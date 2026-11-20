@@ -1,0 +1,116 @@
+[
+  {
+    "t": 1794380736864,
+    "evt": "rawEmit-sync",
+    "objectId": "112879a8-73ea-4894-901a-2f4625ce33d9",
+    "collabType": 0,
+    "isSyncRequest": true
+  },
+  {
+    "t": 1794380736864,
+    "evt": "rawEmit-sync",
+    "objectId": "112879a8-73ea-4894-901a-2f4625ce33d9",
+    "collabType": 0,
+    "isSyncRequest": false
+  },
+  {
+    "t": 1794380736870,
+    "evt": "rawEmit-sync",
+    "objectId": "112879a8-73ea-4894-901a-2f4625ce33d9",
+    "collabType": 0,
+    "isSyncRequest": false
+  },
+  {
+    "t": 1794380737140,
+    "evt": "rawEmit-sync",
+    "objectId": "112879a8-73ea-4894-901a-2f4625ce33d9",
+    "collabType": 0,
+    "isSyncRequest": false
+  },
+  {
+    "t": 1794380738629,
+    "evt": "rawEmit-sync",
+    "objectId": "112879a8-73ea-4894-901a-2f4625ce33d9",
+    "collabType": 0,
+    "isSyncRequest": false
+  },
+  {
+    "t": 1794380738648,
+    "evt": "rawEmit-deferred-queued",
+    "objectId": "460ab7ae-e951-458f-b617-7badacadde69",
+    "collabType": 1,
+    "isSyncRequest": true
+  },
+  {
+    "t": 1794380738649,
+    "evt": "rawEmit-deferred-resolved",
+    "objectId": "460ab7ae-e951-458f-b617-7badacadde69",
+    "collabType": 1,
+    "isSyncRequest": true,
+    "allowed": true
+  },
+  {
+    "t": 1794380738947,
+    "evt": "rawEmit-deferred-queued",
+    "objectId": "6bf5a337-408f-4ff2-b19d-1e760c66671f",
+    "collabType": 4,
+    "isSyncRequest": true
+  },
+  {
+    "t": 1794380738947,
+    "evt": "rawEmit-deferred-resolved",
+    "objectId": "6bf5a337-408f-4ff2-b19d-1e760c66671f",
+    "collabType": 4,
+    "isSyncRequest": true,
+    "allowed": true
+  },
+  {
+    "t": 1794380738952,
+    "evt": "rawEmit-deferred-queued",
+    "objectId": "6bf5a337-408f-4ff2-b19d-1e760c66671f",
+    "collabType": 4,
+    "isSyncRequest": true
+  },
+  {
+    "t": 1794380738954,
+    "evt": "rawEmit-deferred-resolved",
+    "objectId": "6bf5a337-408f-4ff2-b19d-1e760c66671f",
+    "collabType": 4,
+    "isSyncRequest": true,
+    "allowed": true
+  },
+  {
+    "t": 1794380738957,
+    "evt": "ensureObjectBoundForSend-enter",
+    "objectId": "460ab7ae-e951-458f-b617-7badacadde69",
+    "lastBoundObjectId": "6bf5a337-408f-4ff2-b19d-1e760c66671f"
+  },
+  {
+    "t": 1794380738957,
+    "evt": "rawEmit-deferred-queued",
+    "objectId": "460ab7ae-e951-458f-b617-7badacadde69",
+    "collabType": 1,
+    "isSyncRequest": true
+  },
+  {
+    "t": 1794380738957,
+    "evt": "outbox-wsSendMessage",
+    "objectId": "460ab7ae-e951-458f-b617-7badacadde69",
+    "isUpdate": true
+  },
+  {
+    "t": 1794380738958,
+    "evt": "rawEmit-deferred-resolved",
+    "objectId": "460ab7ae-e951-458f-b617-7badacadde69",
+    "collabType": 1,
+    "isSyncRequest": true,
+    "allowed": true
+  },
+  {
+    "t": 1794380740300,
+    "evt": "rawEmit-sync",
+    "objectId": "167e40cd-c9e3-5204-a0c3-2a4676e10848",
+    "collabType": 0,
+    "isSyncRequest": true
+  }
+]

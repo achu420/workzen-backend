@@ -1,0 +1,1052 @@
+{
+  "template_id": "project-planning-doc",
+  "order": 132,
+  "name": "Project planning doc",
+  "description": "Start every project with this planning doc.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"calendar-jump-to-date\",\"color\":\"0xFFAAD93D\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Project Management",
+    "Docs",
+    "Engineering",
+    "Startups"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Project-planning-doc-0df80254-5a3d-42da-ba3d-f74541e2a5bd",
+  "pages": {
+    "id": "0df80254-5a3d-42da-ba3d-f74541e2a5bd",
+    "name": "Project planning doc",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"calendar-jump-to-date\",\"color\":\"0xFFAAD93D\"}"
+    },
+    "document": {
+      "page_id": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+      "blocks": {
+        "PxjGq6": {
+          "id": "PxjGq6",
+          "ty": "image",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "V2PhP_",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "url": "",
+            "height": null,
+            "align": "center",
+            "width": null
+          }
+        },
+        "gmxYrg": {
+          "id": "gmxYrg",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "VKBwqf",
+          "external_id": "YtborH",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "[Prj. Q2 24] AppFlowy Mobile"
+              }
+            ],
+            "level": 1
+          }
+        },
+        "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8": {
+          "id": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "ty": "page",
+          "parent": "",
+          "children": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "selected_icon": "📱",
+            "cover_selection": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ1ODY0NTd8&ixlib=rb-4.0.3&q=80&w=1080",
+            "cover_selection_type": "CoverType.file",
+            "image_type": "1"
+          }
+        },
+        "QFHTGO": {
+          "id": "QFHTGO",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "vRLDMv",
+          "external_id": "vuXVc1",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Project Name: AppFlowy Mobile Polish"
+              }
+            ]
+          }
+        },
+        "J2Ipcf": {
+          "id": "J2Ipcf",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "zRZTKE",
+          "external_id": "X7zDvS",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Date: April 8, 2024"
+              }
+            ]
+          }
+        },
+        "V4pEGs": {
+          "id": "V4pEGs",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "WcTPkD",
+          "external_id": "p7sUnW",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Project Manager: Lucas"
+              }
+            ]
+          }
+        },
+        "Y7vcZu": {
+          "id": "Y7vcZu",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "CW9b1I",
+          "external_id": "1BwRZ7",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Team Members:"
+              }
+            ]
+          }
+        },
+        "9YFFkH": {
+          "id": "9YFFkH",
+          "ty": "bulleted_list",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "X7bAci",
+          "external_id": "yBx79f",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Member 1"
+              }
+            ]
+          }
+        },
+        "7I0xqT": {
+          "id": "7I0xqT",
+          "ty": "bulleted_list",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "WcvJeX",
+          "external_id": "YelIm0",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Member 2"
+              }
+            ]
+          }
+        },
+        "MFKXtC": {
+          "id": "MFKXtC",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "Nl4SIj",
+          "external_id": "7nnrPS",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "1B5wPC": {
+          "id": "1B5wPC",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "Cd69YC",
+          "external_id": "5OoxQU",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Overview of the Project"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "pfb2Rl": {
+          "id": "pfb2Rl",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "dh8Xj7",
+          "external_id": "VoFtcv",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "uYjQH5": {
+          "id": "uYjQH5",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "59nZ6t",
+          "external_id": "4IXLUp",
+          "external_type": "text",
+          "data": {
+            "bgColor": null,
+            "level": 2,
+            "textDirection": null,
+            "delta": [
+              {
+                "insert": "Objective"
+              }
+            ]
+          }
+        },
+        "LGO1Si": {
+          "id": "LGO1Si",
+          "ty": "quote",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "BDfej4",
+          "external_id": "hKGP85",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "State the objectives of the project clearly and ensure they contain a measure of how to assess whether they have been achieved. \nThe statement should be realistic and should follow the SMART protocol: \n- Specific (get into the details), \n- Measurable (use quantitative language so that you know when you are finished)\n- Acceptable (to stakeholders)\n- Realistic (given project constraints)\n- Time-based (deadlines, not durations)"
+              }
+            ]
+          }
+        },
+        "Wh3slI": {
+          "id": "Wh3slI",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "8rpiYg",
+          "external_id": "6AQYOz",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "mSv3i_": {
+          "id": "mSv3i_",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "FpOs8s",
+          "external_id": "jror02",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "delta": [
+              {
+                "insert": "Scope"
+              }
+            ]
+          }
+        },
+        "fdmwxy": {
+          "id": "fdmwxy",
+          "ty": "quote",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "H2XJRH",
+          "external_id": "nMdeih",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Specify the scope of the project by identifying the domain or range of requirements\nIt’s equally important to include in the scope what’s not included in the project"
+              }
+            ]
+          }
+        },
+        "eePPH1": {
+          "id": "eePPH1",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "tBIlAb",
+          "external_id": "21zmZ1",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "3UoL3N": {
+          "id": "3UoL3N",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "d5YFbi",
+          "external_id": "nu8Svb",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Major Milestones"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "cGKeiy": {
+          "id": "cGKeiy",
+          "ty": "quote",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "At7htC",
+          "external_id": "pkJB4z",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "List all major milestones needed to ensure successful project completion."
+              }
+            ]
+          }
+        },
+        "jf3jFx": {
+          "id": "jf3jFx",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "AR70wH",
+          "external_id": "aYolRG",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "QLqNuJ": {
+          "id": "QLqNuJ",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "8taedc",
+          "external_id": "fm-2Cs",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Timeline"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "KqpulV": {
+          "id": "KqpulV",
+          "ty": "quote",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "8ioVb6",
+          "external_id": "Mlji7n",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "From xx/xx to xx/xx"
+              }
+            ]
+          }
+        },
+        "VV7QB2": {
+          "id": "VV7QB2",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "7tWURz",
+          "external_id": "qCDZ90",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "KK972O": {
+          "id": "KK972O",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "btlg79",
+          "external_id": "nyMXMF",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "delta": [
+              {
+                "insert": "Milestone 1 (v0.5.6)  04/22-05/06"
+              }
+            ]
+          }
+        },
+        "0YTq-I": {
+          "id": "0YTq-I",
+          "ty": "todo_list",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "Nm9IzJ",
+          "external_id": "aZ0umk",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Document style: compact, normal, wide (design ready) "
+              }
+            ],
+            "checked": true
+          }
+        },
+        "S9xkhX": {
+          "id": "S9xkhX",
+          "ty": "todo_list",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "y1QF7v",
+          "external_id": "wMl17g",
+          "external_type": "text",
+          "data": {
+            "checked": false,
+            "delta": [
+              {
+                "insert": "Toolbar fit to view for different screen sizes (design ready)"
+              }
+            ]
+          }
+        },
+        "ggFVhs": {
+          "id": "ggFVhs",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "Z4v5ci",
+          "external_id": "QTgwhy",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "saYghD": {
+          "id": "saYghD",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "oCrWsG",
+          "external_id": "rmu_8L",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "delta": [
+              {
+                "insert": "Project Stakeholders"
+              }
+            ]
+          }
+        },
+        "m50Ga1": {
+          "id": "m50Ga1",
+          "ty": "heading",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "DW2Sxo",
+          "external_id": "tInCHN",
+          "external_type": "text",
+          "data": {
+            "level": 2
+          }
+        },
+        "t7flnV": {
+          "id": "t7flnV",
+          "ty": "divider",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "IFZXkg",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "wiJ0f7": {
+          "id": "wiJ0f7",
+          "ty": "paragraph",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "tXRxO5",
+          "external_id": "iAMaLe",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "RzHZje": {
+          "id": "RzHZje",
+          "ty": "toggle_list",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "Lmk9fT",
+          "external_id": "uIaRVW",
+          "external_type": "text",
+          "data": {
+            "collapsed": true,
+            "level": 3
+          }
+        },
+        "MOMxj-": {
+          "id": "MOMxj-",
+          "ty": "quote",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "RrGMHN",
+          "external_id": "cy2fPu",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Provide a simple but precise statement of the project."
+              }
+            ]
+          }
+        },
+        "Dm_TEt": {
+          "id": "Dm_TEt",
+          "ty": "simple_table",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "HZKTS2",
+          "external_id": "x-lCno",
+          "external_type": "text",
+          "data": {
+            "enable_header_row": true,
+            "enable_header_column": false,
+            "column_widths": {
+              "0": 292,
+              "1": 292,
+              "2": 292
+            }
+          }
+        },
+        "zRHDDm": {
+          "id": "zRHDDm",
+          "ty": "simple_table_row",
+          "parent": "Dm_TEt",
+          "children": "B3UNIV",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "TJmX1x": {
+          "id": "TJmX1x",
+          "ty": "simple_table_cell",
+          "parent": "zRHDDm",
+          "children": "fH4-uQ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "99ZCST": {
+          "id": "99ZCST",
+          "ty": "paragraph",
+          "parent": "TJmX1x",
+          "children": "btk-Lj",
+          "external_id": "g814ff",
+          "external_type": "text",
+          "data": {}
+        },
+        "giMXKz": {
+          "id": "giMXKz",
+          "ty": "simple_table_cell",
+          "parent": "zRHDDm",
+          "children": "lXuBpp",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "-JQs4M": {
+          "id": "-JQs4M",
+          "ty": "paragraph",
+          "parent": "giMXKz",
+          "children": "1efQrK",
+          "external_id": "1aJhGD",
+          "external_type": "text",
+          "data": {}
+        },
+        "M8qLN3": {
+          "id": "M8qLN3",
+          "ty": "simple_table_cell",
+          "parent": "zRHDDm",
+          "children": "5SsV7N",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "45LI37": {
+          "id": "45LI37",
+          "ty": "paragraph",
+          "parent": "M8qLN3",
+          "children": "5hpMc5",
+          "external_id": "aghAIl",
+          "external_type": "text",
+          "data": {}
+        },
+        "qh7fMB": {
+          "id": "qh7fMB",
+          "ty": "simple_table_row",
+          "parent": "Dm_TEt",
+          "children": "Od1Y4P",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "EJMYSm": {
+          "id": "EJMYSm",
+          "ty": "simple_table_cell",
+          "parent": "qh7fMB",
+          "children": "cly_eL",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "4zKHHa": {
+          "id": "4zKHHa",
+          "ty": "paragraph",
+          "parent": "EJMYSm",
+          "children": "_afiwV",
+          "external_id": "uU3j7N",
+          "external_type": "text",
+          "data": {}
+        },
+        "JkkZLL": {
+          "id": "JkkZLL",
+          "ty": "simple_table_cell",
+          "parent": "qh7fMB",
+          "children": "V5VWDH",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "SO6Xpg": {
+          "id": "SO6Xpg",
+          "ty": "paragraph",
+          "parent": "JkkZLL",
+          "children": "LVv7ib",
+          "external_id": "JOaMQd",
+          "external_type": "text",
+          "data": {}
+        },
+        "5lWHLj": {
+          "id": "5lWHLj",
+          "ty": "simple_table_cell",
+          "parent": "qh7fMB",
+          "children": "p_qzie",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "BQm1iR": {
+          "id": "BQm1iR",
+          "ty": "paragraph",
+          "parent": "5lWHLj",
+          "children": "8-dN8S",
+          "external_id": "8NPo_w",
+          "external_type": "text",
+          "data": {}
+        },
+        "2gARmq": {
+          "id": "2gARmq",
+          "ty": "simple_table_row",
+          "parent": "Dm_TEt",
+          "children": "p7Gvu6",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "BHz3mz": {
+          "id": "BHz3mz",
+          "ty": "simple_table_cell",
+          "parent": "2gARmq",
+          "children": "-0s6V4",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "ruVQNP": {
+          "id": "ruVQNP",
+          "ty": "paragraph",
+          "parent": "BHz3mz",
+          "children": "z_nMrT",
+          "external_id": "E-7qQR",
+          "external_type": "text",
+          "data": {}
+        },
+        "cqpeqt": {
+          "id": "cqpeqt",
+          "ty": "simple_table_cell",
+          "parent": "2gARmq",
+          "children": "spPWJd",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "sFXxMQ": {
+          "id": "sFXxMQ",
+          "ty": "paragraph",
+          "parent": "cqpeqt",
+          "children": "J8pDXr",
+          "external_id": "tyabXj",
+          "external_type": "text",
+          "data": {}
+        },
+        "X8k-hb": {
+          "id": "X8k-hb",
+          "ty": "simple_table_cell",
+          "parent": "2gARmq",
+          "children": "dEpBZs",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "SSUzcF": {
+          "id": "SSUzcF",
+          "ty": "paragraph",
+          "parent": "X8k-hb",
+          "children": "n3BVwc",
+          "external_id": "Ffe9q2",
+          "external_type": "text",
+          "data": {}
+        },
+        "Pl1gqE": {
+          "id": "Pl1gqE",
+          "ty": "simple_table_row",
+          "parent": "Dm_TEt",
+          "children": "GWRx7I",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "CuGTyf": {
+          "id": "CuGTyf",
+          "ty": "simple_table_cell",
+          "parent": "Pl1gqE",
+          "children": "pcUIHM",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "nUpttR": {
+          "id": "nUpttR",
+          "ty": "paragraph",
+          "parent": "CuGTyf",
+          "children": "c67q-z",
+          "external_id": "sGNJmw",
+          "external_type": "text",
+          "data": {}
+        },
+        "om0ZQM": {
+          "id": "om0ZQM",
+          "ty": "simple_table_cell",
+          "parent": "Pl1gqE",
+          "children": "p0yM5h",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "grMS19": {
+          "id": "grMS19",
+          "ty": "paragraph",
+          "parent": "om0ZQM",
+          "children": "TirK9k",
+          "external_id": "pOMARy",
+          "external_type": "text",
+          "data": {}
+        },
+        "FNCOPL": {
+          "id": "FNCOPL",
+          "ty": "simple_table_cell",
+          "parent": "Pl1gqE",
+          "children": "hkREA3",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "0JrS7E": {
+          "id": "0JrS7E",
+          "ty": "paragraph",
+          "parent": "FNCOPL",
+          "children": "szxi7P",
+          "external_id": "keqYVH",
+          "external_type": "text",
+          "data": {}
+        },
+        "OnZebf": {
+          "id": "OnZebf",
+          "ty": "bulleted_list",
+          "parent": "RzHZje",
+          "children": "Jjydx4",
+          "external_id": "kS1Iz6",
+          "external_type": "text",
+          "data": {}
+        },
+        "r47ljm": {
+          "id": "r47ljm",
+          "ty": "bulleted_list",
+          "parent": "OnZebf",
+          "children": "s_talD",
+          "external_id": "kYg7LK",
+          "external_type": "text",
+          "data": {}
+        },
+        "ZY8vw7": {
+          "id": "ZY8vw7",
+          "ty": "bulleted_list",
+          "parent": "RzHZje",
+          "children": "ppYk4L",
+          "external_id": "Qv9ZMI",
+          "external_type": "text",
+          "data": {}
+        },
+        "MOl59W": {
+          "id": "MOl59W",
+          "ty": "bulleted_list",
+          "parent": "ZY8vw7",
+          "children": "xh85ql",
+          "external_id": "HA5QJ2",
+          "external_type": "text",
+          "data": {}
+        },
+        "tpk9l7": {
+          "id": "tpk9l7",
+          "ty": "paragraph",
+          "parent": "RzHZje",
+          "children": "PIIxUG",
+          "external_id": "w4hXad",
+          "external_type": "text",
+          "data": {}
+        },
+        "l5NL70": {
+          "id": "l5NL70",
+          "ty": "toggle_list",
+          "parent": "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8",
+          "children": "kyFVL-",
+          "external_id": "kid622",
+          "external_type": "text",
+          "data": {
+            "level": 3,
+            "collapsed": true
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "V2PhP_": [],
+          "ec2a7660-a8b0-5cf3-b35d-265db90f3eb8": [
+            "gmxYrg",
+            "t7flnV",
+            "QFHTGO",
+            "J2Ipcf",
+            "V4pEGs",
+            "Y7vcZu",
+            "9YFFkH",
+            "7I0xqT",
+            "MFKXtC",
+            "1B5wPC",
+            "MOMxj-",
+            "pfb2Rl",
+            "uYjQH5",
+            "LGO1Si",
+            "Wh3slI",
+            "mSv3i_",
+            "fdmwxy",
+            "eePPH1",
+            "3UoL3N",
+            "cGKeiy",
+            "jf3jFx",
+            "QLqNuJ",
+            "KqpulV",
+            "VV7QB2",
+            "KK972O",
+            "0YTq-I",
+            "S9xkhX",
+            "ggFVhs",
+            "saYghD",
+            "Dm_TEt",
+            "wiJ0f7",
+            "m50Ga1",
+            "PxjGq6",
+            "RzHZje",
+            "l5NL70"
+          ],
+          "vRLDMv": [],
+          "zRZTKE": [],
+          "WcTPkD": [],
+          "CW9b1I": [],
+          "X7bAci": [],
+          "WcvJeX": [],
+          "Nl4SIj": [],
+          "Cd69YC": [],
+          "dh8Xj7": [],
+          "59nZ6t": [],
+          "BDfej4": [],
+          "8rpiYg": [],
+          "FpOs8s": [],
+          "H2XJRH": [],
+          "tBIlAb": [],
+          "d5YFbi": [],
+          "At7htC": [],
+          "AR70wH": [],
+          "8taedc": [],
+          "8ioVb6": [],
+          "7tWURz": [],
+          "btlg79": [],
+          "Nm9IzJ": [],
+          "y1QF7v": [],
+          "Z4v5ci": [],
+          "oCrWsG": [],
+          "IFZXkg": [],
+          "DW2Sxo": [],
+          "tXRxO5": [],
+          "VKBwqf": [],
+          "Lmk9fT": [
+            "OnZebf",
+            "ZY8vw7",
+            "tpk9l7"
+          ],
+          "2MsqTo": [],
+          "RrGMHN": [],
+          "HZKTS2": [
+            "zRHDDm",
+            "qh7fMB",
+            "2gARmq",
+            "Pl1gqE"
+          ],
+          "B3UNIV": [
+            "TJmX1x",
+            "giMXKz",
+            "M8qLN3"
+          ],
+          "fH4-uQ": [
+            "99ZCST"
+          ],
+          "btk-Lj": [],
+          "lXuBpp": [
+            "-JQs4M"
+          ],
+          "1efQrK": [],
+          "5SsV7N": [
+            "45LI37"
+          ],
+          "5hpMc5": [],
+          "Od1Y4P": [
+            "EJMYSm",
+            "JkkZLL",
+            "5lWHLj"
+          ],
+          "cly_eL": [
+            "4zKHHa"
+          ],
+          "_afiwV": [],
+          "V5VWDH": [
+            "SO6Xpg"
+          ],
+          "LVv7ib": [],
+          "p_qzie": [
+            "BQm1iR"
+          ],
+          "8-dN8S": [],
+          "p7Gvu6": [
+            "BHz3mz",
+            "cqpeqt",
+            "X8k-hb"
+          ],
+          "-0s6V4": [
+            "ruVQNP"
+          ],
+          "z_nMrT": [],
+          "spPWJd": [
+            "sFXxMQ"
+          ],
+          "J8pDXr": [],
+          "dEpBZs": [
+            "SSUzcF"
+          ],
+          "n3BVwc": [],
+          "GWRx7I": [
+            "CuGTyf",
+            "om0ZQM",
+            "FNCOPL"
+          ],
+          "pcUIHM": [
+            "nUpttR"
+          ],
+          "c67q-z": [],
+          "p0yM5h": [
+            "grMS19"
+          ],
+          "TirK9k": [],
+          "hkREA3": [
+            "0JrS7E"
+          ],
+          "szxi7P": [],
+          "Jjydx4": [
+            "r47ljm"
+          ],
+          "s_talD": [],
+          "ppYk4L": [
+            "MOl59W"
+          ],
+          "xh85ql": [],
+          "PIIxUG": [],
+          "kyFVL-": []
+        },
+        "text_map": {
+          "YtborH": "[{\"insert\":\"[Prj. Q2 24] AppFlowy Mobile\"}]",
+          "vuXVc1": "[{\"insert\":\"Project Name: AppFlowy Mobile Polish\"}]",
+          "X7zDvS": "[{\"insert\":\"Date: April 8, 2024\"}]",
+          "p7sUnW": "[{\"insert\":\"Project Manager: Lucas\"}]",
+          "1BwRZ7": "[{\"insert\":\"Team Members:\"}]",
+          "yBx79f": "[{\"insert\":\"Member 1\"}]",
+          "YelIm0": "[{\"insert\":\"Member 2\"}]",
+          "7nnrPS": "[]",
+          "5OoxQU": "[{\"insert\":\"Overview of the Project\"}]",
+          "VoFtcv": "[]",
+          "4IXLUp": "[{\"insert\":\"Objective\"}]",
+          "hKGP85": "[{\"insert\":\"State the objectives of the project clearly and ensure they contain a measure of how to assess whether they have been achieved. \\nThe statement should be realistic and should follow the SMART protocol: \\n- Specific (get into the details), \\n- Measurable (use quantitative language so that you know when you are finished)\\n- Acceptable (to stakeholders)\\n- Realistic (given project constraints)\\n- Time-based (deadlines, not durations)\"}]",
+          "6AQYOz": "[]",
+          "jror02": "[{\"insert\":\"Scope\"}]",
+          "nMdeih": "[{\"insert\":\"Specify the scope of the project by identifying the domain or range of requirements\\nIt’s equally important to include in the scope what’s not included in the project\"}]",
+          "21zmZ1": "[]",
+          "nu8Svb": "[{\"insert\":\"Major Milestones\"}]",
+          "pkJB4z": "[{\"insert\":\"List all major milestones needed to ensure successful project completion.\"}]",
+          "aYolRG": "[]",
+          "fm-2Cs": "[{\"insert\":\"Timeline\"}]",
+          "Mlji7n": "[{\"insert\":\"From xx/xx to xx/xx\",\"attributes\":{\"bold\":true}}]",
+          "qCDZ90": "[]",
+          "nyMXMF": "[{\"insert\":\"Milestone 1 (v0.5.6)  04/22-05/06\"}]",
+          "aZ0umk": "[{\"insert\":\"Document style: compact, normal, wide (design ready) \"}]",
+          "wMl17g": "[{\"insert\":\"Toolbar fit to view for different screen sizes (design ready)\"}]",
+          "QTgwhy": "[]",
+          "rmu_8L": "[{\"insert\":\"Project Stakeholders\"}]",
+          "tInCHN": "[{\"insert\":\"Stand-up Memo\"}]",
+          "iAMaLe": "[]",
+          "uIaRVW": "[{\"insert\":\"03, Jun, 2024\"}]",
+          "cy2fPu": "[{\"insert\":\"Provide a simple but precise statement of the project.\"}]",
+          "g814ff": "[{\"insert\":\"Function\"}]",
+          "1aJhGD": "[{\"insert\":\"Name\"}]",
+          "aghAIl": "[{\"insert\":\"Role\"}]",
+          "uU3j7N": "[{\"insert\":\"Project Manager\"}]",
+          "JOaMQd": "[{\"insert\":\"Lucas\"}]",
+          "8NPo_w": "[{\"insert\":\"Leads the project\"}]",
+          "E-7qQR": "[{\"insert\":\"Software Engineer\"}]",
+          "tyabXj": "[{\"insert\":\"Richard\"}]",
+          "Ffe9q2": "[{\"insert\":\"Development\"}]",
+          "sGNJmw": "[{\"insert\":\"Designer\"}]",
+          "pOMARy": "[{\"insert\":\"Soulisa\"}]",
+          "keqYVH": "[{\"insert\":\"Design\"}]",
+          "kS1Iz6": "[{\"insert\":\"46% of the project has been completed (7/13=53.1%)\"}]",
+          "kYg7LK": "[{\"insert\":\"Mobile Home Page UI revamp has been finished.\"}]",
+          "Qv9ZMI": "[{\"insert\":\"The upcoming milestone is being able to release\"}]",
+          "HA5QJ2": "[{\"insert\":\"Mobile Notifications\",\"attributes\":{\"bold\":false}}]",
+          "w4hXad": "[]",
+          "kid622": "[{\"insert\":\"10, Jun, 2024\"}]"
+        }
+      }
+    },
+    "children": []
+  }
+}

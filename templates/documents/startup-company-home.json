@@ -1,0 +1,1497 @@
+{
+  "template_id": "startup-company-home",
+  "order": 5,
+  "name": "Simple Startup Company Home",
+  "description": "A company home page with onboarding, values and company story sub-pages.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"home-4\",\"color\":\"0xFFA34AFD\"}"
+  },
+  "pages": {
+    "id": "c8518f91-4fcf-4fd5-a32f-f220cf006479",
+    "name": "Simple Startup Company Home",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"home-4\",\"color\":\"0xFFA34AFD\"}"
+    },
+    "document": {
+      "page_id": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+      "blocks": {
+        "liSz7J": {
+          "id": "liSz7J",
+          "ty": "toggle_list",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "WdCaww",
+          "external_id": "lxgdkB",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Description and usage"
+              }
+            ],
+            "collapsed": true
+          }
+        },
+        "MBftX-": {
+          "id": "MBftX-",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "qudYz5",
+          "external_id": "ExI3cc",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "Drgcmu": {
+          "id": "Drgcmu",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "tQiUXV",
+          "external_id": "6rxctI",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "Hh3VeH": {
+          "id": "Hh3VeH",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "6XDEg_",
+          "external_id": "C9shPV",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Download branding assets"
+              }
+            ]
+          }
+        },
+        "lf8q_D": {
+          "id": "lf8q_D",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "0kgShn",
+          "external_id": "U7YnCT",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "KqnZ1X": {
+          "id": "KqnZ1X",
+          "ty": "heading",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "Un0JHL",
+          "external_id": "nCgncz",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "delta": [
+              {
+                "insert": "Resources"
+              }
+            ]
+          }
+        },
+        "ZKhHo_": {
+          "id": "ZKhHo_",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "wylkfe",
+          "external_id": "gd70VC",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "PMnQy9": {
+          "id": "PMnQy9",
+          "ty": "simple_column",
+          "parent": "Mcf8l0",
+          "children": "ZjLiQT",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "ratio": 0.5
+          }
+        },
+        "4BjNz4": {
+          "id": "4BjNz4",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "ea_b8k",
+          "external_id": "Qz08HM",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "21f04a87-7ef0-592a-85fb-c431610a1c91": {
+          "id": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "ty": "page",
+          "parent": "",
+          "children": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "external_id": "oUu1Zo",
+          "external_type": "text",
+          "data": {
+            "selected_icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"home-4\",\"color\":\"0xFFA34AFD\"}",
+            "cover_selection": "1",
+            "cover_selection_type": "CoverType.asset",
+            "image_type": "1"
+          }
+        },
+        "bKleq_": {
+          "id": "bKleq_",
+          "ty": "simple_column",
+          "parent": "Mcf8l0",
+          "children": "13brsi",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "ratio": 0.5
+          }
+        },
+        "nULiLx": {
+          "id": "nULiLx",
+          "ty": "paragraph",
+          "parent": "PMnQy9",
+          "children": "8lzr5z",
+          "external_id": "GWnEAp",
+          "external_type": "text",
+          "data": {}
+        },
+        "zmxAxF": {
+          "id": "zmxAxF",
+          "ty": "paragraph",
+          "parent": "liSz7J",
+          "children": "Uai2sJ",
+          "external_id": "K6un9a",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "how to use this company wiki"
+              }
+            ]
+          }
+        },
+        "ebrzCO": {
+          "id": "ebrzCO",
+          "ty": "heading",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "LgGy6n",
+          "external_id": "A8GtoJ",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Logos"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "qDdSFd": {
+          "id": "qDdSFd",
+          "ty": "paragraph",
+          "parent": "bKleq_",
+          "children": "Q4KQuM",
+          "external_id": "ZSn9z3",
+          "external_type": "text",
+          "data": {}
+        },
+        "kqGkp5": {
+          "id": "kqGkp5",
+          "ty": "heading",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "HU4beO",
+          "external_id": "tuxgL8",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "🏠 The Home"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "1McjLN": {
+          "id": "1McjLN",
+          "ty": "paragraph",
+          "parent": "bKleq_",
+          "children": "0yPRJk",
+          "external_id": "XU_LY1",
+          "external_type": "text",
+          "data": {}
+        },
+        "1__QOZ": {
+          "id": "1__QOZ",
+          "ty": "file",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "khIn_g",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "name": null,
+            "uploaded_at": 1724420042860,
+            "url": "",
+            "url_type": 0
+          }
+        },
+        "tQxNa9": {
+          "id": "tQxNa9",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "wafNdb",
+          "external_id": "N3uGW-",
+          "external_type": "text",
+          "data": {}
+        },
+        "Mcf8l0": {
+          "id": "Mcf8l0",
+          "ty": "simple_columns",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "12r9AA",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "aP-udP": {
+          "id": "aP-udP",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "9ZOkv7",
+          "external_id": "20SRrv",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "SYfH3Q": {
+          "id": "SYfH3Q",
+          "ty": "callout",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "Cqdp6p",
+          "external_id": "s7hGJ9",
+          "external_type": "text",
+          "data": {
+            "bgColor": "appflowy_them_color_tint4",
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"star-1\"}",
+            "icon_type": "icon",
+            "textColor": "appflowy_them_color_tint4"
+          }
+        },
+        "PwqeXF": {
+          "id": "PwqeXF",
+          "ty": "paragraph",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "93k8xW",
+          "external_id": "2YfOE5",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "dfZLNx": {
+          "id": "dfZLNx",
+          "ty": "paragraph",
+          "parent": "bKleq_",
+          "children": "L7KME2",
+          "external_id": "V1Mllq",
+          "external_type": "text",
+          "data": {}
+        },
+        "U-Thbf": {
+          "id": "U-Thbf",
+          "ty": "image",
+          "parent": "21f04a87-7ef0-592a-85fb-c431610a1c91",
+          "children": "ZuLkp2",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "width": null,
+            "align": "center",
+            "url": "",
+            "height": null
+          }
+        },
+        "UjS2WQ": {
+          "id": "UjS2WQ",
+          "ty": "paragraph",
+          "parent": "PMnQy9",
+          "children": "Uz8twV",
+          "external_id": "v9PDbp",
+          "external_type": "text",
+          "data": {}
+        }
+      },
+      "meta": {
+        "children_map": {
+          "Uai2sJ": [],
+          "wylkfe": [],
+          "ZuLkp2": [],
+          "0yPRJk": [],
+          "WdCaww": [
+            "zmxAxF"
+          ],
+          "qudYz5": [],
+          "Uz8twV": [],
+          "13brsi": [
+            "1McjLN",
+            "qDdSFd",
+            "dfZLNx"
+          ],
+          "ZjLiQT": [
+            "UjS2WQ",
+            "nULiLx"
+          ],
+          "93k8xW": [],
+          "HU4beO": [],
+          "Q4KQuM": [],
+          "tQiUXV": [],
+          "9ZOkv7": [],
+          "wafNdb": [],
+          "0kgShn": [],
+          "LgGy6n": [],
+          "12r9AA": [
+            "bKleq_",
+            "PMnQy9"
+          ],
+          "Cqdp6p": [],
+          "6XDEg_": [],
+          "Un0JHL": [],
+          "21f04a87-7ef0-592a-85fb-c431610a1c91": [
+            "liSz7J",
+            "Drgcmu",
+            "kqGkp5",
+            "SYfH3Q",
+            "MBftX-",
+            "Mcf8l0",
+            "lf8q_D",
+            "aP-udP",
+            "ebrzCO",
+            "U-Thbf",
+            "tQxNa9",
+            "Hh3VeH",
+            "1__QOZ",
+            "4BjNz4",
+            "ZKhHo_",
+            "KqnZ1X",
+            "PwqeXF"
+          ],
+          "L7KME2": [],
+          "8lzr5z": [],
+          "ea_b8k": [],
+          "khIn_g": []
+        },
+        "text_map": {
+          "tuxgL8": "[{\"insert\":\"🏠 The Home\"}]",
+          "K6un9a": "[{\"insert\":\"how to use this company wiki\"}]",
+          "A8GtoJ": "[{\"insert\":\"Logos\"}]",
+          "V1Mllq": "[{\"insert\":\"Open Positions\"}]",
+          "XU_LY1": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"265a4f51-eee7-4c36-ae37-8522fdd9d872\"}}}]",
+          "2YfOE5": "[]",
+          "20SRrv": "[]",
+          "Qz08HM": "[]",
+          "gd70VC": "[]",
+          "C9shPV": "[{\"insert\":\"Download branding assets\"}]",
+          "N3uGW-": "[]",
+          "lxgdkB": "[{\"insert\":\"Description and usage\"}]",
+          "v9PDbp": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"ab4c1ac4-38d6-4ec6-9e42-ae12cee8e694\"}}}]",
+          "nCgncz": "[{\"insert\":\"Resources\"}]",
+          "U7YnCT": "[]",
+          "GWnEAp": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"a4ca1533-cf77-4e73-a235-651970f63d21\"}}}]",
+          "6rxctI": "[]",
+          "ExI3cc": "[]",
+          "ZSn9z3": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"4a880d1c-3c36-4856-8bcd-80bc1d601a68\"}}}]",
+          "s7hGJ9": "[{\"insert\":\"Add your company motto or slogan here\"}]",
+          "5Ml204": "[{\"insert\":\"Welcome to the Workzen team. This guide will help you get started at work.\"}]",
+          "gZaG0g": "[{\"insert\":\"Set up a bi-weekly 1:1 sync with your manager\"}]",
+          "w2oJ6J": "[{\"insert\":\"Please submit your pull request and assign your team lead as the reviewer.\"}]",
+          "eeh8LA": "[{\"insert\":\"Code repository: ask your team lead for the link\"}]",
+          "PxSmg4": "[{\"insert\":\"Join our team chat group.\"}]",
+          "t1nqZ3": "[{\"insert\":\"Team documentation: ask your team lead for the link\"}]",
+          "7JlKul": "[{\"insert\":\"Respond to team chat messages and to issues / discussions in the tracker.\"}]",
+          "9jwjMb": "[{\"insert\":\"Report any bug in the latest Workzen release to your team lead or in the issue tracker\"}]",
+          "xeItX4": "[{\"insert\":\"Set up your development environment and build the project successfully.\"}]"
+        }
+      }
+    },
+    "children": [
+      {
+        "id": "a4ca1533-cf77-4e73-a235-651970f63d21",
+        "name": "New Joiners Guidebook",
+        "icon": {
+          "ty": 0,
+          "value": "🥳"
+        },
+        "document": {
+          "page_id": "94efb72f-dfd6-556e-8855-507e0425efce",
+          "blocks": {
+            "-HqrwZ": {
+              "id": "-HqrwZ",
+              "ty": "numbered_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "jrWkdi",
+              "external_id": "gZaG0g",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Set up a bi-weekly 1:1 sync with your manager"
+                  }
+                ]
+              }
+            },
+            "tybt89": {
+              "id": "tybt89",
+              "ty": "numbered_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "xMlaGf",
+              "external_id": "4FTxri",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Set up a weekly 1:1 sync with your mentor"
+                  }
+                ]
+              }
+            },
+            "WaqnVx": {
+              "id": "WaqnVx",
+              "ty": "numbered_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "poBx3Z",
+              "external_id": "2EUXVE",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Learn the project's architecture and design."
+                  }
+                ]
+              }
+            },
+            "9777NK": {
+              "id": "9777NK",
+              "ty": "paragraph",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "qbYUvY",
+              "external_id": "j_Vjoe",
+              "external_type": "text",
+              "data": {
+                "delta": []
+              }
+            },
+            "LRowgO": {
+              "id": "LRowgO",
+              "ty": "heading",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "G5tWJ_",
+              "external_id": "-NyPvq",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Day 2"
+                  }
+                ],
+                "level": 1
+              }
+            },
+            "94efb72f-dfd6-556e-8855-507e0425efce": {
+              "id": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "ty": "page",
+              "parent": "",
+              "children": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "external_id": null,
+              "external_type": null,
+              "data": {}
+            },
+            "xF1OEc": {
+              "id": "xF1OEc",
+              "ty": "heading",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "ukPWER",
+              "external_id": "tXY8AD",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Reference"
+                  }
+                ],
+                "level": 1
+              }
+            },
+            "aGdjUI": {
+              "id": "aGdjUI",
+              "ty": "bulleted_list",
+              "parent": "7-_nUk",
+              "children": "kJWDH3",
+              "external_id": "w2oJ6J",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Please submit your pull request and assign your team lead as the reviewer."
+                  }
+                ]
+              }
+            },
+            "q-KyBl": {
+              "id": "q-KyBl",
+              "ty": "heading",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "jTjQ2r",
+              "external_id": "LnOXLt",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Day 1"
+                  }
+                ],
+                "level": 1
+              }
+            },
+            "7-_nUk": {
+              "id": "7-_nUk",
+              "ty": "bulleted_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "CuWFTA",
+              "external_id": "eWbZLH",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Prioritize your tasks for the day and begin working on them."
+                  }
+                ]
+              }
+            },
+            "nwkEC1": {
+              "id": "nwkEC1",
+              "ty": "paragraph",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "1NQnOW",
+              "external_id": "5Ml204",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Welcome to the Workzen team. This guide will help you get started at work."
+                  }
+                ]
+              }
+            },
+            "6nx97t": {
+              "id": "6nx97t",
+              "ty": "bulleted_list",
+              "parent": "7-_nUk",
+              "children": "P9Ywx2",
+              "external_id": "4U1uxn",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Please create an issue with clear and detailed content, and update the fields, like "
+                  },
+                  {
+                    "attributes": {
+                      "code": true
+                    },
+                    "insert": "label"
+                  },
+                  {
+                    "insert": ", "
+                  },
+                  {
+                    "attributes": {
+                      "code": true
+                    },
+                    "insert": "project"
+                  },
+                  {
+                    "insert": ", and "
+                  },
+                  {
+                    "attributes": {
+                      "code": true
+                    },
+                    "insert": "roadmap"
+                  },
+                  {
+                    "insert": ", before you start a new task."
+                  }
+                ]
+              }
+            },
+            "nI6b_t": {
+              "id": "nI6b_t",
+              "ty": "paragraph",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "B7zXJk",
+              "external_id": "eeh8LA",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Code repository: ask your team lead for the link"
+                  }
+                ]
+              }
+            },
+            "AA7iD4": {
+              "id": "AA7iD4",
+              "ty": "numbered_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "2VHcBx",
+              "external_id": "PxSmg4",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Join our team chat group."
+                  }
+                ]
+              }
+            },
+            "yJKZ0u": {
+              "id": "yJKZ0u",
+              "ty": "paragraph",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "AzaTpO",
+              "external_id": "t1nqZ3",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Team documentation: ask your team lead for the link"
+                  }
+                ]
+              }
+            },
+            "dGmC-7": {
+              "id": "dGmC-7",
+              "ty": "bulleted_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "vPmfQ2",
+              "external_id": "7JlKul",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Respond to team chat messages and to issues / discussions in the tracker."
+                  }
+                ]
+              }
+            },
+            "_9NwJ7": {
+              "id": "_9NwJ7",
+              "ty": "heading",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "TaIYtF",
+              "external_id": "Voip5Z",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Daily"
+                  }
+                ],
+                "level": 1
+              }
+            },
+            "kWfyqI": {
+              "id": "kWfyqI",
+              "ty": "numbered_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "4gxIn7",
+              "external_id": "9jwjMb",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Report any bug in the latest Workzen release to your team lead or in the issue tracker"
+                  }
+                ]
+              }
+            },
+            "KpePdI": {
+              "id": "KpePdI",
+              "ty": "numbered_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "Yxx6kG",
+              "external_id": "xeItX4",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Set up your development environment and build the project successfully."
+                  }
+                ]
+              }
+            },
+            "4NH8AH": {
+              "id": "4NH8AH",
+              "ty": "todo_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "ysqz5G",
+              "external_id": "3fOPI_",
+              "external_type": "text",
+              "data": {
+                "checked": false,
+                "delta": [
+                  {
+                    "insert": "First Month Essentials"
+                  }
+                ]
+              }
+            },
+            "FjQzXH": {
+              "id": "FjQzXH",
+              "ty": "todo_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "ingoOA",
+              "external_id": "ki3SJD",
+              "external_type": "text",
+              "data": {
+                "checked": false,
+                "delta": [
+                  {
+                    "insert": "Receive your onboarding project from your mentor"
+                  }
+                ]
+              }
+            },
+            "COL4gK": {
+              "id": "COL4gK",
+              "ty": "todo_list",
+              "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+              "children": "6i_FvG",
+              "external_id": "XCTo35",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Follow the daily section to start your work"
+                  }
+                ],
+                "checked": false
+              }
+            }
+          },
+          "meta": {
+            "children_map": {
+              "qbYUvY": [],
+              "kJWDH3": [],
+              "ysqz5G": [],
+              "1NQnOW": [],
+              "jTjQ2r": [],
+              "CuWFTA": [
+                "6nx97t",
+                "aGdjUI"
+              ],
+              "B7zXJk": [],
+              "ukPWER": [],
+              "6i_FvG": [],
+              "P9Ywx2": [],
+              "94efb72f-dfd6-556e-8855-507e0425efce": [
+                "nwkEC1",
+                "q-KyBl",
+                "AA7iD4",
+                "KpePdI",
+                "WaqnVx",
+                "kWfyqI",
+                "tybt89",
+                "-HqrwZ",
+                "LRowgO",
+                "FjQzXH",
+                "4NH8AH",
+                "COL4gK",
+                "_9NwJ7",
+                "7-_nUk",
+                "dGmC-7",
+                "xF1OEc",
+                "nI6b_t",
+                "yJKZ0u",
+                "9777NK"
+              ],
+              "G5tWJ_": [],
+              "4gxIn7": [],
+              "poBx3Z": [],
+              "jrWkdi": [],
+              "Yxx6kG": [],
+              "xMlaGf": [],
+              "AzaTpO": [],
+              "vPmfQ2": [],
+              "TaIYtF": [],
+              "ingoOA": [],
+              "2VHcBx": []
+            },
+            "text_map": {
+              "t1nqZ3": "[{\"insert\":\"Team documentation: ask your team lead for the link\"}]",
+              "9jwjMb": "[{\"insert\":\"Report any bug in the latest Workzen release to your team lead or in the issue tracker\"}]",
+              "tXY8AD": "[{\"insert\":\"Reference\"}]",
+              "w2oJ6J": "[{\"insert\":\"Please submit your pull request and assign your team lead as the reviewer.\"}]",
+              "Voip5Z": "[{\"insert\":\"Daily\"}]",
+              "xeItX4": "[{\"insert\":\"Set up your development environment and build the project successfully.\"}]",
+              "3fOPI_": "[{\"insert\":\"First Month Essentials\"}]",
+              "LnOXLt": "[{\"insert\":\"Day 1\"}]",
+              "-NyPvq": "[{\"insert\":\"Day 2\"}]",
+              "gZaG0g": "[{\"insert\":\"Set up a bi-weekly 1:1 sync with your manager\"}]",
+              "eWbZLH": "[{\"insert\":\"Prioritize your tasks for the day and begin working on them.\"}]",
+              "5Ml204": "[{\"insert\":\"Welcome to the Workzen team. This guide will help you get started at work.\"}]",
+              "4FTxri": "[{\"insert\":\"Set up a weekly 1:1 sync with your mentor\"}]",
+              "j_Vjoe": "[]",
+              "PxSmg4": "[{\"insert\":\"Join our team chat group.\"}]",
+              "XCTo35": "[{\"insert\":\"Follow the daily section to start your work\"}]",
+              "eeh8LA": "[{\"insert\":\"Code repository: ask your team lead for the link\"}]",
+              "2EUXVE": "[{\"insert\":\"Learn the project's architecture and design.\"}]",
+              "4U1uxn": "[{\"insert\":\"Please create an issue with clear and detailed content, and update the fields, like \"},{\"insert\":\"label\",\"attributes\":{\"code\":true}},{\"insert\":\", \"},{\"insert\":\"project\",\"attributes\":{\"code\":true}},{\"insert\":\", and \"},{\"insert\":\"roadmap\",\"attributes\":{\"code\":true}},{\"insert\":\", before you start a new task.\"}]",
+              "7JlKul": "[{\"insert\":\"Respond to team chat messages and to issues / discussions in the tracker.\"}]",
+              "ki3SJD": "[{\"insert\":\"Receive your onboarding project from your mentor\"}]"
+            }
+          }
+        },
+        "children": []
+      },
+      {
+        "id": "ab4c1ac4-38d6-4ec6-9e42-ae12cee8e694",
+        "name": "New Hire Onboarding",
+        "icon": {
+          "ty": 0,
+          "value": "👋"
+        },
+        "document": {
+          "page_id": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+          "blocks": {
+            "VC8HFq": {
+              "id": "VC8HFq",
+              "ty": "paragraph",
+              "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "children": "rC9cCK",
+              "external_id": "5Q2l4b",
+              "external_type": "text",
+              "data": {
+                "delta": []
+              }
+            },
+            "Pdc5Eo": {
+              "id": "Pdc5Eo",
+              "ty": "paragraph",
+              "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "children": "XohQR5",
+              "external_id": "Sc0g9Q",
+              "external_type": "text",
+              "data": {
+                "delta": []
+              }
+            },
+            "9e933e92-49ce-5b9e-96dd-520cb8bffe36": {
+              "id": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "ty": "page",
+              "parent": "",
+              "children": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "external_id": null,
+              "external_type": null,
+              "data": {}
+            },
+            "bGkf_e": {
+              "id": "bGkf_e",
+              "ty": "paragraph",
+              "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "children": "IZNiII",
+              "external_id": "8XufDp",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Resources"
+                  }
+                ]
+              }
+            },
+            "OhlTvN": {
+              "id": "OhlTvN",
+              "ty": "bulleted_list",
+              "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "children": "XI8JF2",
+              "external_id": "Eavdr8",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "First Month Essentials"
+                  }
+                ]
+              }
+            },
+            "ncM1wG": {
+              "id": "ncM1wG",
+              "ty": "paragraph",
+              "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "children": "9N0VFW",
+              "external_id": "ZKvXTZ",
+              "external_type": "text",
+              "data": {
+                "delta": []
+              }
+            },
+            "ZQIcgF": {
+              "id": "ZQIcgF",
+              "ty": "bulleted_list",
+              "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "children": "TL-_SH",
+              "external_id": "YoJkFh",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "New Hire Contracts"
+                  }
+                ]
+              }
+            },
+            "ZSKY3b": {
+              "id": "ZSKY3b",
+              "ty": "bulleted_list",
+              "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "children": "ssOrHG",
+              "external_id": "JN0Wir",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "1:1 Meeting"
+                  }
+                ]
+              }
+            },
+            "NlYpwb": {
+              "id": "NlYpwb",
+              "ty": "paragraph",
+              "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+              "children": "TZYczY",
+              "external_id": "8bNZ1m",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "📧  Send Welcome Email"
+                  }
+                ]
+              }
+            }
+          },
+          "meta": {
+            "children_map": {
+              "ssOrHG": [],
+              "9N0VFW": [],
+              "XohQR5": [],
+              "XI8JF2": [],
+              "rC9cCK": [],
+              "TZYczY": [],
+              "9e933e92-49ce-5b9e-96dd-520cb8bffe36": [
+                "NlYpwb",
+                "ncM1wG",
+                "VC8HFq",
+                "bGkf_e",
+                "OhlTvN",
+                "ZQIcgF",
+                "ZSKY3b",
+                "Pdc5Eo"
+              ],
+              "TL-_SH": [],
+              "IZNiII": []
+            },
+            "text_map": {
+              "ZKvXTZ": "[]",
+              "JN0Wir": "[{\"insert\":\"1:1 Meeting\"}]",
+              "8XufDp": "[{\"insert\":\"Resources\"}]",
+              "Eavdr8": "[{\"insert\":\"First Month Essentials\"}]",
+              "5Q2l4b": "[]",
+              "YoJkFh": "[{\"insert\":\"New Hire Contracts\"}]",
+              "Sc0g9Q": "[]",
+              "8bNZ1m": "[{\"insert\":\"📧  Send Welcome Email\"}]"
+            }
+          }
+        },
+        "children": []
+      },
+      {
+        "id": "4a880d1c-3c36-4856-8bcd-80bc1d601a68",
+        "name": "Company values",
+        "icon": {
+          "ty": 0,
+          "value": "💜"
+        },
+        "document": {
+          "page_id": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+          "blocks": {
+            "2txjyT": {
+              "id": "2txjyT",
+              "ty": "paragraph",
+              "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "children": "agTGfS",
+              "external_id": "AARFrl",
+              "external_type": "text",
+              "data": {
+                "delta": []
+              }
+            },
+            "Nu8suY": {
+              "id": "Nu8suY",
+              "ty": "bulleted_list",
+              "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "children": "cYoyL1",
+              "external_id": "Z9I7c4",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Collaboration"
+                  }
+                ]
+              }
+            },
+            "JOugJ1": {
+              "id": "JOugJ1",
+              "ty": "bulleted_list",
+              "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "children": "7cQzVU",
+              "external_id": "l6-ZWN",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Transparency"
+                  }
+                ]
+              }
+            },
+            "8_DgwF": {
+              "id": "8_DgwF",
+              "ty": "bulleted_list",
+              "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "children": "gknmWD",
+              "external_id": "iGzpJo",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Honesty"
+                  }
+                ]
+              }
+            },
+            "VZJu-S": {
+              "id": "VZJu-S",
+              "ty": "bulleted_list",
+              "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "children": "vpsgDk",
+              "external_id": "JVlETx",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Mission-driven"
+                  }
+                ]
+              }
+            },
+            "BpyWqo": {
+              "id": "BpyWqo",
+              "ty": "bulleted_list",
+              "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "children": "K0a5J_",
+              "external_id": "3kTQQy",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "insert": "Aim High and Iterate"
+                  }
+                ]
+              }
+            },
+            "ef1c6446-a20a-51fa-bb09-c04a6f505c8e": {
+              "id": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "ty": "page",
+              "parent": "",
+              "children": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "external_id": null,
+              "external_type": null,
+              "data": {}
+            },
+            "ZnygLH": {
+              "id": "ZnygLH",
+              "ty": "paragraph",
+              "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+              "children": "NQcf5x",
+              "external_id": "wqWgxS",
+              "external_type": "text",
+              "data": {
+                "delta": []
+              }
+            }
+          },
+          "meta": {
+            "children_map": {
+              "K0a5J_": [],
+              "vpsgDk": [],
+              "ef1c6446-a20a-51fa-bb09-c04a6f505c8e": [
+                "VZJu-S",
+                "BpyWqo",
+                "JOugJ1",
+                "Nu8suY",
+                "8_DgwF",
+                "2txjyT",
+                "ZnygLH"
+              ],
+              "agTGfS": [],
+              "cYoyL1": [],
+              "7cQzVU": [],
+              "gknmWD": [],
+              "NQcf5x": []
+            },
+            "text_map": {
+              "l6-ZWN": "[{\"insert\":\"Transparency\"}]",
+              "JVlETx": "[{\"insert\":\"Mission-driven\"}]",
+              "Z9I7c4": "[{\"insert\":\"Collaboration\"}]",
+              "3kTQQy": "[{\"insert\":\"Aim High and Iterate\"}]",
+              "iGzpJo": "[{\"insert\":\"Honesty\"}]",
+              "wqWgxS": "[]",
+              "AARFrl": "[]"
+            }
+          }
+        },
+        "children": []
+      },
+      {
+        "id": "265a4f51-eee7-4c36-ae37-8522fdd9d872",
+        "name": "Our Story",
+        "icon": {
+          "ty": 0,
+          "value": "📜"
+        },
+        "document": {
+          "page_id": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+          "blocks": {
+            "fb541578-5d1d-5dcb-a67c-daeafdb66c54": {
+              "id": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "ty": "page",
+              "parent": "",
+              "children": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "external_id": null,
+              "external_type": null,
+              "data": {}
+            },
+            "BlLzBV": {
+              "id": "BlLzBV",
+              "ty": "heading",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "bSJlRJ",
+              "external_id": "XvWUU6",
+              "external_type": "text",
+              "data": {
+                "level": 2,
+                "delta": [
+                  {
+                    "insert": "Directory"
+                  }
+                ]
+              }
+            },
+            "eqQpfz": {
+              "id": "eqQpfz",
+              "ty": "paragraph",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "5EHWQt",
+              "external_id": "hkg5UC",
+              "external_type": "text",
+              "data": {}
+            },
+            "ywwuBz": {
+              "id": "ywwuBz",
+              "ty": "paragraph",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "kXkDch",
+              "external_id": "wLpvei",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "attributes": {
+                      "mention": {
+                        "page_id": "16ebf970-e404-4e67-8b7f-94c85515be43",
+                        "type": "page"
+                      }
+                    },
+                    "insert": "$"
+                  }
+                ]
+              }
+            },
+            "ejuDd4": {
+              "id": "ejuDd4",
+              "ty": "paragraph",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "N0iq_6",
+              "external_id": "Bj1JDz",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "attributes": {
+                      "mention": {
+                        "page_id": "d20fe0a4-2c24-4927-be23-980a3fc56d40",
+                        "type": "page"
+                      }
+                    },
+                    "insert": "$"
+                  }
+                ]
+              }
+            },
+            "tcxMFE": {
+              "id": "tcxMFE",
+              "ty": "paragraph",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "R-a-BB",
+              "external_id": "zUv_-e",
+              "external_type": "text",
+              "data": {
+                "delta": []
+              }
+            },
+            "gRL28R": {
+              "id": "gRL28R",
+              "ty": "paragraph",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "rBG8IW",
+              "external_id": "S2qKuu",
+              "external_type": "text",
+              "data": {}
+            },
+            "ux8uEj": {
+              "id": "ux8uEj",
+              "ty": "divider",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "kWo444",
+              "external_id": null,
+              "external_type": null,
+              "data": {}
+            },
+            "EMjz3U": {
+              "id": "EMjz3U",
+              "ty": "image",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "qw6LEA",
+              "external_id": null,
+              "external_type": null,
+              "data": {
+                "height": null,
+                "width": null,
+                "align": "center",
+                "url": ""
+              }
+            },
+            "WlxwzqEvRS": {
+              "id": "WlxwzqEvRS",
+              "ty": "paragraph",
+              "parent": "fb541578-5d1d-5dcb-a67c-daeafdb66c54",
+              "children": "YgpS8gCXgW",
+              "external_id": "5ltzfSCKBE",
+              "external_type": "text",
+              "data": {
+                "delta": [
+                  {
+                    "attributes": {
+                      "mention": {
+                        "page_id": "e1e99d45-505e-40b5-b286-9d99d109d8be",
+                        "type": "page"
+                      }
+                    },
+                    "insert": "$"
+                  }
+                ]
+              }
+            }
+          },
+          "meta": {
+            "children_map": {
+              "rBG8IW": [],
+              "kXkDch": [],
+              "N0iq_6": [],
+              "YgpS8gCXgW": [],
+              "kWo444": [],
+              "fb541578-5d1d-5dcb-a67c-daeafdb66c54": [
+                "BlLzBV",
+                "WlxwzqEvRS",
+                "ejuDd4",
+                "ywwuBz",
+                "tcxMFE",
+                "ux8uEj",
+                "EMjz3U",
+                "gRL28R",
+                "eqQpfz"
+              ],
+              "5EHWQt": [],
+              "qw6LEA": [],
+              "R-a-BB": [],
+              "bSJlRJ": []
+            },
+            "text_map": {
+              "XvWUU6": "[{\"insert\":\"Directory\"}]",
+              "zUv_-e": "[]",
+              "S2qKuu": "[]",
+              "Bj1JDz": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"2223dc1f-01bf-4453-af33-be409d32288e\"}}}]",
+              "hkg5UC": "[]",
+              "5ltzfSCKBE": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"64e49d70-d675-4984-a251-69f56c0d12ec\"}}}]",
+              "wLpvei": "[{\"insert\":\"$\",\"attributes\":{\"mention\":{\"type\":\"page\",\"page_id\":\"5a23fbb9-f8f8-4362-862a-cce498b1c7e5\"}}}]"
+            }
+          }
+        },
+        "children": [
+          {
+            "id": "64e49d70-d675-4984-a251-69f56c0d12ec",
+            "name": "Company",
+            "icon": {
+              "ty": 0,
+              "value": "🏡"
+            },
+            "document": {
+              "page_id": "dc4ebbf3-cf3b-57cb-87b0-015626e4f8b3",
+              "blocks": {
+                "dc4ebbf3-cf3b-57cb-87b0-015626e4f8b3": {
+                  "id": "dc4ebbf3-cf3b-57cb-87b0-015626e4f8b3",
+                  "ty": "page",
+                  "parent": "",
+                  "children": "dc4ebbf3-cf3b-57cb-87b0-015626e4f8b3",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "Jp_1PRtYbu": {
+                  "id": "Jp_1PRtYbu",
+                  "ty": "paragraph",
+                  "parent": "dc4ebbf3-cf3b-57cb-87b0-015626e4f8b3",
+                  "children": "YmDm4KNtGf",
+                  "external_id": "AA3pI2Y8vg",
+                  "external_type": "text",
+                  "data": {}
+                }
+              },
+              "meta": {
+                "children_map": {
+                  "dc4ebbf3-cf3b-57cb-87b0-015626e4f8b3": [
+                    "Jp_1PRtYbu"
+                  ],
+                  "YmDm4KNtGf": []
+                },
+                "text_map": {
+                  "AA3pI2Y8vg": "[]"
+                }
+              }
+            },
+            "children": []
+          },
+          {
+            "id": "5a23fbb9-f8f8-4362-862a-cce498b1c7e5",
+            "name": "Metrics",
+            "icon": {
+              "ty": 0,
+              "value": "🎯"
+            },
+            "document": {
+              "page_id": "83bb8430-d7b5-5889-b831-3199a9d061d4",
+              "blocks": {
+                "83bb8430-d7b5-5889-b831-3199a9d061d4": {
+                  "id": "83bb8430-d7b5-5889-b831-3199a9d061d4",
+                  "ty": "page",
+                  "parent": "",
+                  "children": "83bb8430-d7b5-5889-b831-3199a9d061d4",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "2Jiv19qQdl": {
+                  "id": "2Jiv19qQdl",
+                  "ty": "paragraph",
+                  "parent": "83bb8430-d7b5-5889-b831-3199a9d061d4",
+                  "children": "RHDsBwSdCH",
+                  "external_id": "DAQtqwKfIW",
+                  "external_type": "text",
+                  "data": {}
+                }
+              },
+              "meta": {
+                "children_map": {
+                  "RHDsBwSdCH": [],
+                  "83bb8430-d7b5-5889-b831-3199a9d061d4": [
+                    "2Jiv19qQdl"
+                  ]
+                },
+                "text_map": {
+                  "DAQtqwKfIW": "[]"
+                }
+              }
+            },
+            "children": []
+          },
+          {
+            "id": "2223dc1f-01bf-4453-af33-be409d32288e",
+            "name": "Project",
+            "icon": {
+              "ty": 0,
+              "value": "💫"
+            },
+            "document": {
+              "page_id": "a518edb6-39a9-5ab2-b6be-2647e92f6723",
+              "blocks": {
+                "a518edb6-39a9-5ab2-b6be-2647e92f6723": {
+                  "id": "a518edb6-39a9-5ab2-b6be-2647e92f6723",
+                  "ty": "page",
+                  "parent": "",
+                  "children": "a518edb6-39a9-5ab2-b6be-2647e92f6723",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "qMnWznHmjY": {
+                  "id": "qMnWznHmjY",
+                  "ty": "paragraph",
+                  "parent": "a518edb6-39a9-5ab2-b6be-2647e92f6723",
+                  "children": "QSfRDT1EKz",
+                  "external_id": "oFfs2ooF-y",
+                  "external_type": "text",
+                  "data": {}
+                }
+              },
+              "meta": {
+                "children_map": {
+                  "a518edb6-39a9-5ab2-b6be-2647e92f6723": [
+                    "qMnWznHmjY"
+                  ],
+                  "QSfRDT1EKz": []
+                },
+                "text_map": {
+                  "oFfs2ooF-y": "[]"
+                }
+              }
+            },
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+}

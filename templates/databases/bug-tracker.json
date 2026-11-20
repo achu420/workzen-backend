@@ -1,0 +1,644 @@
+{
+  "template_id": "bug-tracker",
+  "order": 111,
+  "name": "Bug Tracker",
+  "description": "Streamline your bug reporting and tracking with this easy-to-use template.",
+  "icon": null,
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Engineering",
+    "Kanban",
+    "Startups"
+  ],
+  "author": "Robin, Founder at Blue Cat Reports",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Bug-Tracker-13a84186",
+  "database_id": "20ebe8ed-9b45-4cff-a7a2-6c11480bc497",
+  "fields": [
+    {
+      "id": "No2At4",
+      "name": "Priority",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"ma48\",\"name\":\"Priority: Minor\",\"color\":\"Yellow\"},{\"id\":\"nedg\",\"name\":\"Priority: Major\",\"color\":\"LightPink\"},{\"id\":\"FcTJ\",\"name\":\"Priority: Critical\",\"color\":\"Pink\"},{\"id\":\"37i2\",\"name\":\"Priority: Trivial\",\"color\":\"Blue\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "1N_n0Y",
+      "name": "Source",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"iS0T\",\"name\":\"Internal\",\"color\":\"Purple\"},{\"id\":\"MhZ6\",\"name\":\"External\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "Y6BrZV",
+      "name": "Date Reported",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "time_format_v2": 1,
+          "timezone_id": "Asia/Singapore",
+          "date_format_v2": 3
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "6qXOS0",
+      "name": "Email",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "Wcleie",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"l_uX\",\"name\":\"Reported\",\"color\":\"Purple\"},{\"id\":\"ar8R\",\"name\":\"Can't reproduce\",\"color\":\"Orange\"},{\"id\":\"FCPs\",\"name\":\"Planned\",\"color\":\"Yellow\"},{\"id\":\"us4m\",\"name\":\"In Progress\",\"color\":\"Pink\"},{\"id\":\"yyNs\",\"name\":\"Confirm Fix\",\"color\":\"LightPink\"},{\"id\":\"jFNk\",\"name\":\"Done\",\"color\":\"Green\"},{\"id\":\"R5iV\",\"name\":\"Won't fix\",\"color\":\"Cream\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "Vr8WzD",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "kn_BVw",
+      "name": "Browser",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"alcY\",\"name\":\"Chrome\",\"color\":\"Purple\"},{\"id\":\"wrUW\",\"name\":\"Firefox\",\"color\":\"Pink\"},{\"id\":\"ODlK\",\"name\":\"Edge\",\"color\":\"LightPink\"},{\"id\":\"gQAe\",\"name\":\"Safari\",\"color\":\"Orange\"},{\"id\":\"PR5d\",\"name\":\"Opera\",\"color\":\"Yellow\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "e95910f2-c71b-44a0-9398-1a3d434a2bce",
+      "database_id": "20ebe8ed-9b45-4cff-a7a2-6c11480bc497",
+      "name": "Kanban",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "content": "",
+          "groups": [
+            {
+              "id": "Wcleie",
+              "visible": false
+            },
+            {
+              "id": "l_uX",
+              "visible": true
+            },
+            {
+              "id": "ar8R",
+              "visible": true
+            },
+            {
+              "id": "FCPs",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "us4m"
+            },
+            {
+              "id": "yyNs",
+              "visible": true
+            },
+            {
+              "id": "jFNk",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "R5iV"
+            }
+          ],
+          "id": "g:LRhkss",
+          "field_id": "Wcleie",
+          "ty": 3
+        }
+      ],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "c8cfe3ff-0855-4f55-b57e-0cec17ec1803"
+        },
+        {
+          "height": 60,
+          "id": "27e3483a-5eb5-46aa-9119-ac71fcdf1f1e"
+        },
+        {
+          "height": 60,
+          "id": "ebda1f69-6c6f-4bda-9caa-647e3a7256ae"
+        },
+        {
+          "id": "666678b5-20e9-4a0d-a25f-a34779c54e9c",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "d52b6ccd-5e27-4240-89e0-3bca7c9fc5b4"
+        },
+        {
+          "id": "e9bf89f0-afb4-4ab6-b4e8-ba58779f3b9e",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "012cfbf5-a72b-414f-8aad-40d5526ab40f"
+        },
+        {
+          "id": "442dceac-aa23-47d3-9e7b-6314df2f2ff5",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "Vr8WzD"
+        },
+        {
+          "id": "Wcleie"
+        },
+        {
+          "id": "kn_BVw"
+        },
+        {
+          "id": "6qXOS0"
+        },
+        {
+          "id": "Y6BrZV"
+        },
+        {
+          "id": "1N_n0Y"
+        },
+        {
+          "id": "No2At4"
+        }
+      ],
+      "field_settings": {
+        "1N_n0Y": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 1
+        },
+        "Vr8WzD": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "Wcleie": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        },
+        "6qXOS0": {
+          "width": 150,
+          "visibility": 1,
+          "wrap": false
+        },
+        "Y6BrZV": {
+          "wrap": false,
+          "visibility": 1,
+          "width": 150
+        },
+        "No2At4": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 1
+        },
+        "kn_BVw": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1788079712
+    },
+    {
+      "id": "1c43ddea-91b0-4cf3-b9e8-40d63157331d",
+      "database_id": "20ebe8ed-9b45-4cff-a7a2-6c11480bc497",
+      "name": "Bug list",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "c8cfe3ff-0855-4f55-b57e-0cec17ec1803"
+        },
+        {
+          "id": "27e3483a-5eb5-46aa-9119-ac71fcdf1f1e",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "ebda1f69-6c6f-4bda-9caa-647e3a7256ae"
+        },
+        {
+          "id": "666678b5-20e9-4a0d-a25f-a34779c54e9c",
+          "height": 60
+        },
+        {
+          "id": "d52b6ccd-5e27-4240-89e0-3bca7c9fc5b4",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "e9bf89f0-afb4-4ab6-b4e8-ba58779f3b9e"
+        },
+        {
+          "id": "012cfbf5-a72b-414f-8aad-40d5526ab40f",
+          "height": 60
+        },
+        {
+          "id": "442dceac-aa23-47d3-9e7b-6314df2f2ff5",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "Vr8WzD"
+        },
+        {
+          "id": "Wcleie"
+        },
+        {
+          "id": "kn_BVw"
+        },
+        {
+          "id": "6qXOS0"
+        },
+        {
+          "id": "Y6BrZV"
+        },
+        {
+          "id": "1N_n0Y"
+        },
+        {
+          "id": "No2At4"
+        }
+      ],
+      "field_settings": {
+        "Wcleie": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "kn_BVw": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "Vr8WzD": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "6qXOS0": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "1N_n0Y": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "No2At4": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "Y6BrZV": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1787124751
+    }
+  ],
+  "rows": [
+    {
+      "id": "012cfbf5-a72b-414f-8aad-40d5526ab40f",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "Vr8WzD": {
+          "data": "A bug which was fixed and confirmed as fixed",
+          "field_type": 0
+        },
+        "Y6BrZV": {
+          "include_time": false,
+          "end_timestamp": "",
+          "last_modified": "1788079679",
+          "is_range": false,
+          "reminder_id": "",
+          "data": "1742486400",
+          "field_type": 2
+        },
+        "No2At4": {
+          "field_type": 3,
+          "data": "ma48"
+        },
+        "Wcleie": {
+          "data": "jFNk",
+          "field_type": 3
+        },
+        "6qXOS0": {
+          "field_type": 0,
+          "data": "eddie@fakemail.com"
+        },
+        "kn_BVw": {
+          "data": "alcY",
+          "field_type": 3
+        },
+        "1N_n0Y": {
+          "field_type": 3,
+          "data": "MhZ6"
+        }
+      }
+    },
+    {
+      "id": "666678b5-20e9-4a0d-a25f-a34779c54e9c",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "No2At4": {
+          "field_type": 3,
+          "data": "nedg"
+        },
+        "Wcleie": {
+          "data": "us4m",
+          "field_type": 3
+        },
+        "kn_BVw": {
+          "data": "alcY",
+          "field_type": 3
+        },
+        "Y6BrZV": {
+          "reminder_id": "",
+          "last_modified": "1788079466",
+          "is_range": false,
+          "field_type": 2,
+          "data": "1785945600",
+          "include_time": false,
+          "end_timestamp": ""
+        },
+        "Vr8WzD": {
+          "field_type": 0,
+          "data": "This bug is in progress"
+        },
+        "1N_n0Y": {
+          "data": "iS0T",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "c8cfe3ff-0855-4f55-b57e-0cec17ec1803",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "6qXOS0": {
+          "data": "robin@fakemail.com",
+          "field_type": 0
+        },
+        "Vr8WzD": {
+          "data": "This Card has just been reported",
+          "field_type": 0
+        },
+        "Wcleie": {
+          "data": "l_uX",
+          "field_type": 3
+        },
+        "Y6BrZV": {
+          "reminder_id": "",
+          "include_time": true,
+          "end_timestamp": "",
+          "field_type": 2,
+          "data": "1787443200",
+          "is_range": false,
+          "last_modified": "1788079460"
+        },
+        "kn_BVw": {
+          "field_type": 3,
+          "data": "alcY"
+        }
+      }
+    },
+    {
+      "id": "442dceac-aa23-47d3-9e7b-6314df2f2ff5",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "Y6BrZV": {
+          "data": "1772294400",
+          "end_timestamp": "",
+          "include_time": false,
+          "reminder_id": "",
+          "last_modified": "1788079698",
+          "is_range": false,
+          "field_type": 2
+        },
+        "1N_n0Y": {
+          "field_type": 3,
+          "data": "iS0T"
+        },
+        "Vr8WzD": {
+          "field_type": 0,
+          "data": "A bug we will not fix"
+        },
+        "kn_BVw": {
+          "data": "PR5d",
+          "field_type": 3
+        },
+        "Wcleie": {
+          "data": "R5iV",
+          "field_type": 3
+        },
+        "No2At4": {
+          "data": "37i2",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "27e3483a-5eb5-46aa-9119-ac71fcdf1f1e",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "kn_BVw": {
+          "field_type": 3,
+          "data": "wrUW"
+        },
+        "Wcleie": {
+          "data": "ar8R",
+          "field_type": 3
+        },
+        "Vr8WzD": {
+          "data": "This bug can't be reproduced",
+          "field_type": 0
+        },
+        "1N_n0Y": {
+          "data": "iS0T",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "e9bf89f0-afb4-4ab6-b4e8-ba58779f3b9e",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "No2At4": {
+          "field_type": 3,
+          "data": "ma48"
+        },
+        "1N_n0Y": {
+          "data": "iS0T",
+          "field_type": 3
+        },
+        "Y6BrZV": {
+          "field_type": 2,
+          "data": "1775318400",
+          "is_range": false,
+          "reminder_id": "",
+          "include_time": false,
+          "end_timestamp": "",
+          "last_modified": "1788079473"
+        },
+        "Wcleie": {
+          "data": "yyNs",
+          "field_type": 3
+        },
+        "Vr8WzD": {
+          "field_type": 0,
+          "data": "A fixed bug which we need to confirm is resolved"
+        },
+        "kn_BVw": {
+          "data": "gQAe",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "d52b6ccd-5e27-4240-89e0-3bca7c9fc5b4",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "1N_n0Y": {
+          "field_type": 3,
+          "data": "MhZ6"
+        },
+        "Vr8WzD": {
+          "field_type": 0,
+          "data": "This bug is in progress but blocked"
+        },
+        "Wcleie": {
+          "data": "us4m",
+          "field_type": 3
+        },
+        "Y6BrZV": {
+          "last_modified": "1788079470",
+          "reminder_id": "",
+          "include_time": false,
+          "field_type": 2,
+          "end_timestamp": "",
+          "data": "1787328000",
+          "is_range": false
+        },
+        "kn_BVw": {
+          "field_type": 3,
+          "data": "alcY"
+        },
+        "6qXOS0": {
+          "data": "arran@fakeemail.com",
+          "field_type": 0
+        },
+        "No2At4": {
+          "data": "FcTJ",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "ebda1f69-6c6f-4bda-9caa-647e3a7256ae",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "Wcleie": {
+          "data": "FCPs",
+          "field_type": 3
+        },
+        "1N_n0Y": {
+          "field_type": 3,
+          "data": "iS0T"
+        },
+        "Y6BrZV": {
+          "field_type": 2,
+          "is_range": false,
+          "data": "1772812800",
+          "end_timestamp": "",
+          "reminder_id": "",
+          "include_time": false,
+          "last_modified": "1788079463"
+        },
+        "Vr8WzD": {
+          "field_type": 0,
+          "data": "This bug is scheduled to be fixed"
+        },
+        "No2At4": {
+          "field_type": 3,
+          "data": "ma48"
+        },
+        "kn_BVw": {
+          "field_type": 3,
+          "data": "ODlK"
+        }
+      }
+    }
+  ]
+}

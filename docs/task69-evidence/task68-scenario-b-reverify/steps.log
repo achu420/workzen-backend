@@ -1,0 +1,19 @@
+[2026-11-10T10:10:00.313Z] INFO - .env.local backed up (MD5-verified) :: c85de40fc13dc3b2379325c6ecc3471d
+[2026-11-10T10:10:00.823Z] PASS - Backend process started (STORAGE=json, port 19304) :: pid=20201
+[2026-11-10T10:10:01.852Z] PASS - Frontend dev server started (port 14304) :: pid=20207
+[2026-11-10T10:10:01.985Z] PASS - Registered real user account via the backend's own auth API :: task69-t68reverify-1794305401958@example.test
+[2026-11-10T10:10:07.016Z] PASS - Logged in via real UI :: http://localhost:14304/app/60fd3d5d-3916-46a5-bd1c-161946dfeb62
+[2026-11-10T10:10:09.503Z] PASS - Created a public Space via real UI :: workspace=60fd3d5d-3916-46a5-bd1c-161946dfeb62
+[2026-11-10T10:10:11.011Z] PASS - Created a new Document page via real UI :: pageId=112c2b00-5326-4e88-9aa3-da719a13145b
+[2026-11-10T10:10:12.016Z] PASS - Navigated out of the ViewModal to the stable full-page route (Task 69 readiness gate) :: {"modalClosed":true,"toastCleared":true,"editorReady":true,"ok":true}
+[2026-11-10T10:10:14.493Z] PASS - Edit before restart typed and locally confirmed :: t68reverify-pre-restart-1794305412016
+[2026-11-10T10:10:15.551Z] PASS - Backend restarted against the same data file :: pid=20272
+[2026-11-10T10:10:33.743Z] PASS - Document reached ready state after reload post-restart :: {"modalClosed":true,"toastCleared":true,"editorReady":true,"ok":true}
+[2026-11-10T10:10:33.808Z] PASS - Pre-restart content persisted across restart :: t68reverify-pre-restart-1794305412016
+[2026-11-10T10:10:36.505Z] PASS - New edit after restart succeeds end-to-end :: t68reverify-post-restart-1794305433808
+[2026-11-10T10:10:57.319Z] FAIL - WORKFLOW FAILED :: page.waitForURL: Timeout 20000ms exceeded.
+=========================== logs ===========================
+waiting for navigation until "load"
+============================================================
+    at main (/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task69-evidence/task68-scenario-b-reverify.mjs:310:22)
+[2026-11-10T10:10:57.324Z] PASS - .env.local restored byte-for-byte (MD5-verified)

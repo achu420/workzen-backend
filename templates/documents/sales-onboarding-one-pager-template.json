@@ -1,0 +1,398 @@
+{
+  "template_id": "sales-onboarding-one-pager-template",
+  "order": 125,
+  "name": "Sales Onboarding One Pager Template",
+  "description": "This template can be fully customized. You can edit content, change image(s), apply custom colors, add or subtract pages.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"check-square\",\"color\":\"0xFFAAD93D\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Human Resources",
+    "Sales & CRM"
+  ],
+  "author": "VISME",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Marketing-Onboarding-One-Pager-Template",
+  "pages": {
+    "id": "17b35848-b34f-43a9-a945-0efecc384e7f",
+    "name": "Sales Onboarding One Pager Template",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"check-square\",\"color\":\"0xFFAAD93D\"}"
+    },
+    "document": {
+      "page_id": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+      "blocks": {
+        "4d09c24f-ca3c-58c3-8140-329bd5233aa3": {
+          "id": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "ty": "page",
+          "parent": "",
+          "children": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "external_id": "xMilyl",
+          "external_type": "text",
+          "data": {
+            "cover_selection_type": "CoverType.file",
+            "cover_selection": "https://beta.appflowy.cloud/api/file_storage/fe17e5ce-30f1-4381-90a1-ab583d62cfb6/v1/blob/17b35848%2Db34f%2D43a9%2Da945%2D0efecc384e7f/j4sukARXcI-D0vzg0QXgdOfb-_wR__qs4EWYHJIqWLY=.jpg",
+            "image_type": "1",
+            "selected_icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"check-square\",\"color\":\"0xFFAAD93D\"}"
+          }
+        },
+        "otj5mt": {
+          "id": "otj5mt",
+          "ty": "heading",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "tWLJI6",
+          "external_id": "zhoABR",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "bgColor": "appflowy_them_color_tint7"
+          }
+        },
+        "Ja_Ndo": {
+          "id": "Ja_Ndo",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "xDcXqH",
+          "external_id": "EKZ1-c",
+          "external_type": "text",
+          "data": {
+            "checked": false
+          }
+        },
+        "R8tDaj": {
+          "id": "R8tDaj",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "Bm349C",
+          "external_id": "er6pjC",
+          "external_type": "text",
+          "data": {
+            "checked": false
+          }
+        },
+        "Arxtrs": {
+          "id": "Arxtrs",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "qSzaRC",
+          "external_id": "s3KW9_",
+          "external_type": "text",
+          "data": {
+            "checked": false
+          }
+        },
+        "LP6KCe": {
+          "id": "LP6KCe",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "uOAiCQ",
+          "external_id": "MXTvGS",
+          "external_type": "text",
+          "data": {
+            "checked": false
+          }
+        },
+        "Ve8stk": {
+          "id": "Ve8stk",
+          "ty": "paragraph",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "uZPYPx",
+          "external_id": "AS9hRg",
+          "external_type": "text",
+          "data": {}
+        },
+        "FTobJ6": {
+          "id": "FTobJ6",
+          "ty": "heading",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "Cxwk3t",
+          "external_id": "kELyRv",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "bgColor": "appflowy_them_color_tint7"
+          }
+        },
+        "QhZrfG": {
+          "id": "QhZrfG",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "X6Atds",
+          "external_id": "u52ZGQ",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "checked": false,
+            "bgColor": null
+          }
+        },
+        "Hakzwa": {
+          "id": "Hakzwa",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "5Tblp1",
+          "external_id": "aHHv2S",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "checked": false,
+            "bgColor": null
+          }
+        },
+        "TOt1PJ": {
+          "id": "TOt1PJ",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "reAzJ7",
+          "external_id": "gx9ZWQ",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "checked": false,
+            "bgColor": null
+          }
+        },
+        "9vexab": {
+          "id": "9vexab",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "RQPt43",
+          "external_id": "4HipLz",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "checked": false,
+            "bgColor": null
+          }
+        },
+        "Ic6rnp": {
+          "id": "Ic6rnp",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "83TuWD",
+          "external_id": "-hxLGP",
+          "external_type": "text",
+          "data": {
+            "bgColor": null,
+            "checked": false,
+            "textDirection": null
+          }
+        },
+        "6UhtAi": {
+          "id": "6UhtAi",
+          "ty": "paragraph",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "mC4gJP",
+          "external_id": "OXN65K",
+          "external_type": "text",
+          "data": {}
+        },
+        "SQPxFH": {
+          "id": "SQPxFH",
+          "ty": "heading",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "xEpOEX",
+          "external_id": "bZ4EjI",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "bgColor": "appflowy_them_color_tint7"
+          }
+        },
+        "iPzCCo": {
+          "id": "iPzCCo",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "g3bqgR",
+          "external_id": "ETa7wq",
+          "external_type": "text",
+          "data": {
+            "checked": false,
+            "bgColor": null,
+            "textDirection": null
+          }
+        },
+        "UVeGsM": {
+          "id": "UVeGsM",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "V6WrJo",
+          "external_id": "FmpWYG",
+          "external_type": "text",
+          "data": {
+            "checked": false,
+            "textDirection": null,
+            "bgColor": null
+          }
+        },
+        "QpBFEH": {
+          "id": "QpBFEH",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "1Th3dB",
+          "external_id": "-m-vHV",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "checked": false,
+            "bgColor": null
+          }
+        },
+        "Af4QXt": {
+          "id": "Af4QXt",
+          "ty": "paragraph",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "spHtdm",
+          "external_id": "ClA9kG",
+          "external_type": "text",
+          "data": {}
+        },
+        "UkaPBU": {
+          "id": "UkaPBU",
+          "ty": "heading",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "CnK1CP",
+          "external_id": "Vi-XPP",
+          "external_type": "text",
+          "data": {
+            "bgColor": "appflowy_them_color_tint7",
+            "level": 2
+          }
+        },
+        "0xkTPz": {
+          "id": "0xkTPz",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "Ri6WtJ",
+          "external_id": "a71cN6",
+          "external_type": "text",
+          "data": {
+            "checked": false,
+            "bgColor": null,
+            "textDirection": null
+          }
+        },
+        "U83vwa": {
+          "id": "U83vwa",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "UULFy0",
+          "external_id": "2mOO2Q",
+          "external_type": "text",
+          "data": {
+            "bgColor": null,
+            "checked": false,
+            "textDirection": null
+          }
+        },
+        "k04F-c": {
+          "id": "k04F-c",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "ZQaoQN",
+          "external_id": "KWM6B1",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "checked": false,
+            "bgColor": null
+          }
+        },
+        "Bw_hzo": {
+          "id": "Bw_hzo",
+          "ty": "todo_list",
+          "parent": "4d09c24f-ca3c-58c3-8140-329bd5233aa3",
+          "children": "S5OJKr",
+          "external_id": "0um-Uo",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "checked": false,
+            "bgColor": null
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "4d09c24f-ca3c-58c3-8140-329bd5233aa3": [
+            "otj5mt",
+            "Ja_Ndo",
+            "R8tDaj",
+            "Arxtrs",
+            "LP6KCe",
+            "Ve8stk",
+            "FTobJ6",
+            "QhZrfG",
+            "Hakzwa",
+            "TOt1PJ",
+            "9vexab",
+            "Ic6rnp",
+            "6UhtAi",
+            "SQPxFH",
+            "iPzCCo",
+            "UVeGsM",
+            "QpBFEH",
+            "Af4QXt",
+            "UkaPBU",
+            "0xkTPz",
+            "U83vwa",
+            "k04F-c",
+            "Bw_hzo"
+          ],
+          "tWLJI6": [],
+          "xDcXqH": [],
+          "Bm349C": [],
+          "qSzaRC": [],
+          "uOAiCQ": [],
+          "uZPYPx": [],
+          "Cxwk3t": [],
+          "X6Atds": [],
+          "5Tblp1": [],
+          "reAzJ7": [],
+          "RQPt43": [],
+          "83TuWD": [],
+          "mC4gJP": [],
+          "xEpOEX": [],
+          "g3bqgR": [],
+          "V6WrJo": [],
+          "1Th3dB": [],
+          "spHtdm": [],
+          "CnK1CP": [],
+          "Ri6WtJ": [],
+          "UULFy0": [],
+          "ZQaoQN": [],
+          "S5OJKr": []
+        },
+        "text_map": {
+          "zhoABR": "[{\"insert\":\"Week 1\"}]",
+          "EKZ1-c": "[{\"insert\":\"Schedule introductions with Operations, Marketing, Project Management, and Finance teams\"}]",
+          "er6pjC": "[{\"insert\":\"Familiarize yourself with the company's mission statement and core values\"}]",
+          "s3KW9_": "[{\"insert\":\"Review the organizational chart to understand team roles and reporting lines\"}]",
+          "MXTvGS": "[{\"insert\":\"Attend an orientation session on core services and project types\"}]",
+          "AS9hRg": "[]",
+          "kELyRv": "[{\"insert\":\"Week 2\"}]",
+          "u52ZGQ": "[{\"insert\":\"Review the current sales pipeline\"}]",
+          "aHHv2S": "[{\"insert\":\"Complete CRM tutorials and practice managing lead entries\"}]",
+          "gx9ZWQ": "[{\"insert\":\"Review past proposals\"}]",
+          "4HipLz": "[{\"insert\":\"Analyze recent sales reports to identify trends and areas for improvement\"}]",
+          "-hxLGP": "[{\"insert\":\"Learn about key performance indicators (KPIs) used to measure success\"}]",
+          "OXN65K": "[]",
+          "bZ4EjI": "[{\"insert\":\"Week 3\"}]",
+          "ETa7wq": "[{\"insert\":\"Attend training sessions on core services\"}]",
+          "FmpWYG": "[{\"insert\":\"Schedule visits to ongoing projects with the project manager\"}]",
+          "-m-vHV": "[{\"insert\":\"Analyze competitor products/services to understand market positioning\"}]",
+          "ClA9kG": "[]",
+          "Vi-XPP": "[{\"insert\":\"Week 4\"}]",
+          "a71cN6": "[{\"insert\":\"Meet with the team lead to go over key client accounts\"}]",
+          "2mOO2Q": "[{\"insert\":\"Review company templates and best practices for emails and calls\"}]",
+          "KWM6B1": "[{\"insert\":\"Discuss sales targets and KPIs with the leadership team\"}]",
+          "0um-Uo": "[{\"insert\":\"Work with management to identify and prioritize key accounts to focus on\"}]"
+        }
+      }
+    },
+    "children": []
+  }
+}

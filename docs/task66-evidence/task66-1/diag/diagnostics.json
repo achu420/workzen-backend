@@ -1,0 +1,38 @@
+{
+  "before": {
+    "titleRect": null,
+    "stickyRect": null,
+    "dialogPaperRect": null,
+    "dialogPaperScrollTop": null,
+    "activeElementId": "editor-title-3397590c-8082-4d63-855d-5808a4ee570b",
+    "activeElementTestId": "page-title-input",
+    "titleZIndex": null,
+    "stickyZIndex": null,
+    "titleVisible": false
+  },
+  "after": {
+    "titleRect": null,
+    "stickyRect": null,
+    "dialogPaperRect": null,
+    "dialogPaperScrollTop": null,
+    "activeElementId": "editor-title-3397590c-8082-4d63-855d-5808a4ee570b",
+    "activeElementTestId": "page-title-input",
+    "titleZIndex": null,
+    "stickyZIndex": null,
+    "titleVisible": false
+  },
+  "afterClick": {
+    "titleRect": null,
+    "stickyRect": null,
+    "dialogPaperRect": null,
+    "dialogPaperScrollTop": null,
+    "activeElementId": "editor-title-3397590c-8082-4d63-855d-5808a4ee570b",
+    "activeElementTestId": "page-title-input",
+    "titleZIndex": null,
+    "stickyZIndex": null,
+    "titleVisible": false
+  },
+  "clickError": "TimeoutError: locator.click: Timeout 8000ms exceeded.\nCall log:\n  - waiting for locator('#editor-title-c8bddcb7-b42b-4956-aaee-4954a2337033')\n",
+  "overlapBefore": "unknown (missing rect)",
+  "overlapAfter": "unknown (missing rect)"
+}

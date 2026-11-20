@@ -1,0 +1,303 @@
+{
+  "template_id": "eisenhower-matrix",
+  "order": 116,
+  "name": "Eisenhower Matrix",
+  "description": "Use this template to prioritize your tasks and focus on the most important work.\n",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"dashboard-circle\",\"color\":\"0xFFFFBA00\"}"
+  },
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Kanban",
+    "Startups"
+  ],
+  "author": "Crystal @ c_solutions",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Eisenhower-Matrix-223f4605",
+  "database_id": "72cedb34-1e41-4fdf-a61b-44c1fd36364b",
+  "fields": [
+    {
+      "id": "edmELG",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "Ee_rn8",
+      "name": "Date",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "i1eC3u",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "sFXP7E",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "3": {
+          "content": "{\"options\":[{\"id\":\"eOZU\",\"name\":\"Done\",\"color\":\"Lime\"},{\"id\":\"SLC1\",\"name\":\"Urgent but less important\",\"color\":\"Yellow\"},{\"id\":\"WGHJ\",\"name\":\"Not important not urgent\",\"color\":\"Orange\"},{\"id\":\"UkCe\",\"name\":\"Important but less urgent\",\"color\":\"LightPink\"},{\"id\":\"LE38\",\"name\":\"Important & urgent\",\"color\":\"Pink\"},{\"id\":\"G9VQ\",\"name\":\"Explanation\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "ututMu",
+      "name": "Checklist",
+      "field_type": 7,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "7": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "9e6tmT",
+      "name": "Attachments",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "7e24cd93-eada-472c-9db4-d2be30756a41",
+      "database_id": "72cedb34-1e41-4fdf-a61b-44c1fd36364b",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": false
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "collapsed_group_ids": [],
+          "content": "",
+          "groups": [
+            {
+              "id": "sFXP7E",
+              "visible": false
+            },
+            {
+              "id": "eOZU",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "SLC1"
+            },
+            {
+              "visible": true,
+              "id": "WGHJ"
+            },
+            {
+              "id": "UkCe",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "LE38"
+            },
+            {
+              "visible": true,
+              "id": "G9VQ"
+            }
+          ],
+          "field_id": "sFXP7E",
+          "id": "g:XKNgth",
+          "ty": 3
+        }
+      ],
+      "row_orders": [
+        {
+          "id": "e341c87d-07b5-4162-8872-65fe97f4dfdd",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "edmELG"
+        },
+        {
+          "id": "sFXP7E"
+        },
+        {
+          "id": "i1eC3u"
+        },
+        {
+          "id": "9e6tmT"
+        },
+        {
+          "id": "ututMu"
+        },
+        {
+          "id": "Ee_rn8"
+        }
+      ],
+      "field_settings": {
+        "9e6tmT": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        },
+        "edmELG": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "i1eC3u": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        },
+        "sFXP7E": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 1
+        },
+        "ututMu": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        },
+        "Ee_rn8": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 1
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    },
+    {
+      "id": "7a86f4fd-1180-4295-b2e8-3b31fd078dad",
+      "database_id": "72cedb34-1e41-4fdf-a61b-44c1fd36364b",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "e341c87d-07b5-4162-8872-65fe97f4dfdd",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "edmELG"
+        },
+        {
+          "id": "sFXP7E"
+        },
+        {
+          "id": "i1eC3u"
+        },
+        {
+          "id": "9e6tmT"
+        },
+        {
+          "id": "ututMu"
+        },
+        {
+          "id": "Ee_rn8"
+        }
+      ],
+      "field_settings": {
+        "i1eC3u": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "Ee_rn8": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "edmELG": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "sFXP7E": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "ututMu": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 255
+        },
+        "9e6tmT": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1786516127
+    }
+  ],
+  "rows": [
+    {
+      "id": "e341c87d-07b5-4162-8872-65fe97f4dfdd",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "sFXP7E": {
+          "field_type": 3,
+          "data": "eOZU"
+        },
+        "i1eC3u": {
+          "last_modified": 1786516328,
+          "data": "The lists represents the category the task belong too.The cards represents the tasks.Categories describing the type of tasks:I Important & urgent:- Crises- Pressing problems- Deadline-driven projects, meetings, reparationsII Important but less urgent:- Preperation- Prevention- Values clarification- Planning- Relationship building- True re-creation- EmpowermentIII Urgent but less important:- Interruptions, some phone calls- Some mail, some reports- Some meetings- Many proximate, pressing matters- Many popular activitiesIV Not important & not urgent:- Trivia, busywork- Some phone calls- Time wasters- \"Escape\" activities- Irrelevant mail- Excessive TV",
+          "created_at": 1786516328,
+          "field_type": 0
+        },
+        "ututMu": {
+          "field_type": 0,
+          "data": "[ ] Deside if the task is urgent and how important it is. (in witch list does it belong?)\n[ ] Make a card with task-name in the correct list.\n[ ] Put every information (/attachment), that you need to fulfil the task, within the card.\n[ ] Optional: You could choose to put a due date for the task.\n[ ] Optional: If it is a big task you could choose to split it up in mini tasks by using a checklist like this.\n[ ] Optional: If you choose to delegate a task you could invite the person you like to delegate the task too to be a member to a specific task (card). You could chat within the card with each-other to discus the task.\n[ ] When a task is complete, just simply click on the card and move it to the list 'Done\""
+        },
+        "edmELG": {
+          "data": "Eisenhower Matrix",
+          "field_type": 0
+        },
+        "9e6tmT": {
+          "data": "Eisenhower Matrix on Eisenhower Matrix Task Board _ Trello.pdf",
+          "field_type": 0
+        }
+      }
+    }
+  ]
+}

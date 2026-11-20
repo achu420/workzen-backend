@@ -1,0 +1,38 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:security
+> node --test test/security-authorization.test.js
+
+(node:98824) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ REST: unauthenticated request is rejected (15.5665ms)
+✔ REST: invalid/garbage token is rejected (1.50325ms)
+✔ REST: revoked session (logout) is rejected on every subsequent request (54.390458ms)
+✔ REST: a non-member cannot read a workspace by guessing its id (95.515583ms)
+✔ REST: a malformed/non-existent workspace id is rejected safely (no crash, no leak) (46.027041ms)
+✔ REST: an authorized member CAN read workspace content (positive control) (98.01175ms)
+✔ REST: a user cannot read a page that belongs to a workspace they are not a member of, even knowing its id (101.862875ms)
+✔ REST: guessing another workspace's Document collab object id, scoped under your OWN workspace id, returns not-found rather than leaking content (96.338083ms)
+✔ REST: Document creation rejects a parent_view_id (space) that belongs to a different workspace (93.872667ms)
+✔ REST: membership revocation takes effect immediately on the next request (no caching of stale membership) (90.531125ms)
+✔ REST: the test-members revocation helper itself is gated like the existing grant helper (member role cannot revoke) (121.980459ms)
+✔ WS: connection with no token is rejected and never admitted (41.980709ms)
+✔ WS: connection with an invalid token is rejected (43.667833ms)
+✔ WS: connection using a revoked (logged-out) session is rejected (41.56625ms)
+✔ WS: a non-member is rejected at admission for a workspace they do not belong to (84.304ms)
+✔ WS: an authorized member CAN connect and sync (positive control) (81.871416ms)
+✔ WS: requesting a Document object id that belongs to a DIFFERENT workspace is rejected after admission, and the socket is never added as a receivable peer (87.300958ms)
+✔ WS: a malformed SyncRequest (missing state vector) is rejected and closes without mutating durable state (43.741042ms)
+✔ WS lifecycle: an actively-sending connection is rejected on its very next message after membership is revoked (pre-existing per-message revalidation, preserved) (89.684959ms)
+✔ WS lifecycle (Task 67 new mechanism): an IDLE revoked peer -- one that never sends another message -- is still closed and removed from the peer registry within the bounded periodic revalidation window, and stops receiving live fan-out (284.786833ms)
+✔ WS lifecycle: reconnection after revocation is rejected at admission (restored handshake does not auto-regrant access) (85.317584ms)
+✔ WS lifecycle: restoring membership after revocation requires a fresh connection/check, not an automatic regrant of the old socket (84.779791ms)
+✔ WS lifecycle: a session that expires while connected is rejected on the next inbound message (41.803209ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1952.691792
+EXIT:0

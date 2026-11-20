@@ -1,0 +1,1704 @@
+{
+  "template_id": "project-management",
+  "order": 114,
+  "name": "Project Management",
+  "description": "Manage it all: your tasks, budget, stakeholders, assets, and more.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"color\":\"0xFFFFBA00\",\"groupName\":\"interface_essential\",\"iconName\":\"layers-1\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Project Management",
+    "Database",
+    "Kanban"
+  ],
+  "author": "Airtable",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Projects-708b487d",
+  "database_id": "96248b0c-14d4-4248-b10f-ec21db278e68",
+  "fields": [
+    {
+      "id": "PkOzFG",
+      "name": "Working Team",
+      "field_type": 10,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "10": {
+          "database_id": "a7b669e9-1fdb-412f-aa47-d60a1d475a8d",
+          "source_limit": 0,
+          "target_limit": 0,
+          "reciprocal_field_name": "Projects",
+          "reciprocal_field_id": "q41izt",
+          "is_two_way": true
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "o1_9Mc",
+      "name": "Kickoff date",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "time_format_v2": 1,
+          "date_format_v2": 3,
+          "timezone_id": "Asia/Singapore"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "x6jreb",
+      "name": "Name",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "KrRAOh",
+      "name": "Budget",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "format": 1,
+          "scale": 0,
+          "symbol": "$",
+          "name": "Number"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "GvMXnU",
+      "name": "Tasks",
+      "field_type": 10,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "10": {
+          "database_id": "f78a3822-6655-4f45-9e2a-748af9ea2dc7",
+          "target_limit": 0,
+          "is_two_way": true,
+          "reciprocal_field_name": "Related Proj",
+          "reciprocal_field_id": "wl3shh",
+          "source_limit": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "IRD_3U",
+      "name": "Lead",
+      "field_type": 10,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"GFCV\",\"name\":\"Paris\",\"color\":\"Purple\"},{\"id\":\"TPw5\",\"name\":\"Cameron\",\"color\":\"Purple\"},{\"id\":\"OvMz\",\"name\":\"Gai\",\"color\":\"Purple\"},{\"id\":\"di_C\",\"name\":\"Leslie\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        },
+        "10": {
+          "reciprocal_field_id": "g89yi8",
+          "target_limit": 0,
+          "source_limit": 0,
+          "reciprocal_field_name": "Lead Project",
+          "is_two_way": true,
+          "database_id": "a7b669e9-1fdb-412f-aa47-d60a1d475a8d"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "hR6c9F",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "3": {
+          "content": "{\"disable_color\":false,\"options\":[{\"id\":\"5TqYYa\",\"name\":\"Kickoff\",\"color\":\"Purple\"},{\"id\":\"TnrCWJ\",\"name\":\"Execution\",\"color\":\"Pink\"},{\"id\":\"nKph2d\",\"name\":\"Completed\",\"color\":\"LightPink\"},{\"id\":\"WgWYIk\",\"name\":\"Planning\",\"color\":\"Orange\"},{\"id\":\"AO12dE\",\"name\":\"Delayed\",\"color\":\"Yellow\"}]}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "FTl9Ji",
+      "name": "Due Date",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "date_format_v2": 3,
+          "timezone_id": "Asia/Singapore",
+          "time_format_v2": 1
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "e68bd5ba-afcc-43cb-98f7-47e10df08f00",
+      "database_id": "96248b0c-14d4-4248-b10f-ec21db278e68",
+      "name": "By Lead",
+      "layout": 0,
+      "layout_settings": {
+        "0": {
+          "hide_empty_groups": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "field_id": "IRD_3U",
+          "id": "g:_4ajyy",
+          "content": "",
+          "groups": [
+            {
+              "visible": true,
+              "id": "IRD_3U"
+            },
+            {
+              "visible": true,
+              "id": "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+            },
+            {
+              "id": "71ad13a7-9832-43c5-9b25-05adb50ae2bc",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "5faa8daf-909b-4a4d-a59e-ed70e2d11e24"
+            }
+          ],
+          "collapsed_group_ids": [],
+          "ty": 10
+        }
+      ],
+      "row_orders": [
+        {
+          "id": "424cc538-9206-452e-a148-0608fb2bd076",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "39119124-88c9-4cf2-89a6-3aa3c63cd240"
+        },
+        {
+          "height": 60,
+          "id": "c6ffce3e-996e-4329-af3a-fb75cd4cc39f"
+        },
+        {
+          "id": "b4451276-2c85-4a6f-92ef-287423317347",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "d3b23efb-f031-4874-9c79-e4b539f4b3e5"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "x6jreb"
+        },
+        {
+          "id": "hR6c9F"
+        },
+        {
+          "id": "GvMXnU"
+        },
+        {
+          "id": "PkOzFG"
+        },
+        {
+          "id": "IRD_3U"
+        },
+        {
+          "id": "o1_9Mc"
+        },
+        {
+          "id": "FTl9Ji"
+        },
+        {
+          "id": "KrRAOh"
+        }
+      ],
+      "field_settings": {
+        "GvMXnU": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "IRD_3U": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "KrRAOh": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "PkOzFG": {
+          "wrap": false,
+          "visibility": 0
+        },
+        "x6jreb": {
+          "wrap": false,
+          "visibility": 0,
+          "width": "246"
+        },
+        "FTl9Ji": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "hR6c9F": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "o1_9Mc": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "imDT39": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1787036632
+    },
+    {
+      "id": "2a6537b2-8b98-43da-8d22-f1892f8a4e39",
+      "database_id": "96248b0c-14d4-4248-b10f-ec21db278e68",
+      "name": "By Deadline",
+      "layout": 2,
+      "layout_settings": {
+        "2": {
+          "layout_ty": 0,
+          "show_weekends": true,
+          "field_id": "FTl9Ji",
+          "show_week_numbers": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "424cc538-9206-452e-a148-0608fb2bd076"
+        },
+        {
+          "height": 60,
+          "id": "39119124-88c9-4cf2-89a6-3aa3c63cd240"
+        },
+        {
+          "height": 60,
+          "id": "c6ffce3e-996e-4329-af3a-fb75cd4cc39f"
+        },
+        {
+          "height": 60,
+          "id": "b4451276-2c85-4a6f-92ef-287423317347"
+        },
+        {
+          "id": "d3b23efb-f031-4874-9c79-e4b539f4b3e5",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "x6jreb"
+        },
+        {
+          "id": "hR6c9F"
+        },
+        {
+          "id": "PkOzFG"
+        },
+        {
+          "id": "IRD_3U"
+        },
+        {
+          "id": "o1_9Mc"
+        },
+        {
+          "id": "FTl9Ji"
+        },
+        {
+          "id": "GvMXnU"
+        },
+        {
+          "id": "KrRAOh"
+        }
+      ],
+      "field_settings": {
+        "o1_9Mc": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        },
+        "KrRAOh": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 1
+        },
+        "FTl9Ji": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        },
+        "IRD_3U": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        },
+        "GvMXnU": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        },
+        "x6jreb": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "hR6c9F": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        },
+        "PkOzFG": {
+          "wrap": false,
+          "visibility": 1,
+          "width": 150
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1787644592
+    }
+  ],
+  "rows": [
+    {
+      "id": "c6ffce3e-996e-4329-af3a-fb75cd4cc39f",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "KrRAOh": {
+          "data": "35000",
+          "field_type": 1
+        },
+        "x6jreb": {
+          "data": "Q2 Net Promoter Score",
+          "field_type": 0
+        },
+        "FTl9Ji": {
+          "data": "1780156800",
+          "end_timestamp": "",
+          "last_modified": "1787640849",
+          "reminder_id": "",
+          "field_type": 2,
+          "include_time": false,
+          "is_range": false
+        },
+        "PkOzFG": {
+          "created_at": "1787640611",
+          "field_type": 10,
+          "last_modified": "1787640613",
+          "data": [
+            "1b4cbd3c-8d21-4c21-aed0-82a203146ec3",
+            "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+          ]
+        },
+        "IRD_3U": {
+          "data": [
+            "71ad13a7-9832-43c5-9b25-05adb50ae2bc"
+          ],
+          "field_type": 10,
+          "last_modified": "1787640687",
+          "created_at": "1787640687"
+        },
+        "o1_9Mc": {
+          "include_time": false,
+          "is_range": false,
+          "data": "1775750400",
+          "field_type": 2,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "last_modified": "1787640834"
+        },
+        "hR6c9F": {
+          "data": "Completed",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "39119124-88c9-4cf2-89a6-3aa3c63cd240",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "x6jreb": {
+          "data": "Employee satisfaction survey",
+          "field_type": 0
+        },
+        "GvMXnU": {
+          "created_at": "1787640807",
+          "field_type": 10,
+          "data": [
+            "4f1b4b10-f16e-4ef2-831d-bb2aeaf6b2a3",
+            "3ab4300e-a6c9-456c-9cfe-5b6269761efd",
+            "640481d6-773c-4323-970c-84904e78c7b7"
+          ],
+          "last_modified": "1787640812"
+        },
+        "hR6c9F": {
+          "data": "Execution",
+          "field_type": 0
+        },
+        "IRD_3U": {
+          "data": [
+            "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+          ],
+          "field_type": 10,
+          "created_at": "1787640684",
+          "last_modified": "1787640684"
+        },
+        "PkOzFG": {
+          "created_at": "1787640605",
+          "last_modified": "1787640605",
+          "data": [
+            "e6a565af-b573-4cd7-a5b0-6b3086931312"
+          ],
+          "field_type": 10
+        },
+        "FTl9Ji": {
+          "include_time": false,
+          "field_type": 2,
+          "is_range": false,
+          "data": "1785945600",
+          "end_timestamp": "",
+          "last_modified": "1787640847",
+          "reminder_id": ""
+        },
+        "KrRAOh": {
+          "field_type": 1,
+          "data": "28000"
+        },
+        "o1_9Mc": {
+          "reminder_id": "",
+          "field_type": 2,
+          "data": "1781971200",
+          "is_range": false,
+          "include_time": false,
+          "end_timestamp": "",
+          "last_modified": "1787640831"
+        }
+      }
+    },
+    {
+      "id": "b4451276-2c85-4a6f-92ef-287423317347",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "hR6c9F": {
+          "field_type": 0,
+          "data": "Planning"
+        },
+        "FTl9Ji": {
+          "is_range": false,
+          "last_modified": "1787640851",
+          "include_time": false,
+          "reminder_id": "",
+          "data": "1791561600",
+          "end_timestamp": "",
+          "field_type": 2
+        },
+        "x6jreb": {
+          "field_type": 0,
+          "data": "New homepage"
+        },
+        "KrRAOh": {
+          "data": "156000",
+          "field_type": 1
+        },
+        "IRD_3U": {
+          "field_type": 10,
+          "data": [
+            "5faa8daf-909b-4a4d-a59e-ed70e2d11e24"
+          ],
+          "created_at": "1787640697",
+          "last_modified": "1787640697"
+        },
+        "PkOzFG": {
+          "created_at": "1787640617",
+          "data": [
+            "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb",
+            "71ad13a7-9832-43c5-9b25-05adb50ae2bc"
+          ],
+          "field_type": 10,
+          "last_modified": "1787640619"
+        },
+        "o1_9Mc": {
+          "include_time": false,
+          "is_range": false,
+          "last_modified": "1787640837",
+          "data": "1787328000",
+          "end_timestamp": "",
+          "reminder_id": "",
+          "field_type": 2
+        }
+      }
+    },
+    {
+      "id": "424cc538-9206-452e-a148-0608fb2bd076",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "IRD_3U": {
+          "data": [
+            "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+          ],
+          "field_type": 10,
+          "last_modified": "1787640678",
+          "created_at": "1787640678"
+        },
+        "KrRAOh": {
+          "data": "345000",
+          "field_type": 1
+        },
+        "PkOzFG": {
+          "data": [
+            "1b4cbd3c-8d21-4c21-aed0-82a203146ec3",
+            "981b2b07-b1ab-44e5-9e6e-03bab616dbcb"
+          ],
+          "created_at": "1787640597",
+          "field_type": 10,
+          "last_modified": "1787640599"
+        },
+        "hR6c9F": {
+          "data": "Kickoff",
+          "field_type": 0
+        },
+        "GvMXnU": {
+          "created_at": "1787640796",
+          "last_modified": "1787640796",
+          "data": [
+            "a4a32876-c3ea-4f32-9907-92b04322cc0b"
+          ],
+          "field_type": 10
+        },
+        "o1_9Mc": {
+          "last_modified": "1787640828",
+          "include_time": false,
+          "end_timestamp": "",
+          "data": "1785772800",
+          "reminder_id": "",
+          "field_type": 2,
+          "is_range": false
+        },
+        "FTl9Ji": {
+          "is_range": false,
+          "last_modified": "1787640843",
+          "include_time": false,
+          "field_type": 2,
+          "reminder_id": "",
+          "data": "1786723200",
+          "end_timestamp": ""
+        },
+        "x6jreb": {
+          "data": "Brand refresh and redesign",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "d3b23efb-f031-4874-9c79-e4b539f4b3e5",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "KrRAOh": {
+          "data": "6500",
+          "field_type": 1
+        },
+        "o1_9Mc": {
+          "end_timestamp": "",
+          "is_range": false,
+          "last_modified": "1787640839",
+          "reminder_id": "",
+          "include_time": false,
+          "data": "1776528000",
+          "field_type": 2
+        },
+        "IRD_3U": {
+          "field_type": 10,
+          "created_at": "1787640701",
+          "data": [
+            "5faa8daf-909b-4a4d-a59e-ed70e2d11e24"
+          ],
+          "last_modified": "1787640701"
+        },
+        "x6jreb": {
+          "data": "Updated welcome emails",
+          "field_type": 0
+        },
+        "FTl9Ji": {
+          "last_modified": "1787640854",
+          "is_range": false,
+          "reminder_id": "",
+          "data": "1788883200",
+          "end_timestamp": "",
+          "include_time": false,
+          "field_type": 2
+        },
+        "hR6c9F": {
+          "data": "Delayed",
+          "field_type": 0
+        },
+        "PkOzFG": {
+          "created_at": "1787640624",
+          "data": [
+            "71ad13a7-9832-43c5-9b25-05adb50ae2bc"
+          ],
+          "field_type": 10,
+          "last_modified": "1787640624"
+        }
+      }
+    }
+  ],
+  "related_databases": [
+    {
+      "database_id": "a7b669e9-1fdb-412f-aa47-d60a1d475a8d",
+      "fields": [
+        {
+          "id": "q41izt",
+          "name": "Projects",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "source_limit": 0,
+              "is_two_way": true,
+              "reciprocal_field_id": "PkOzFG",
+              "target_limit": 0,
+              "database_id": "96248b0c-14d4-4248-b10f-ec21db278e68"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "R3EKHP",
+          "name": "Name",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": true
+        },
+        {
+          "id": "kGaseb",
+          "name": "BU",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"Cloud\",\"name\":\"Cloud\",\"color\":\"Purple\"},{\"id\":\"Mobile\",\"name\":\"Mobile\",\"color\":\"Pink\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "g89yi8",
+          "name": "Lead Project",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "source_limit": 0,
+              "is_two_way": true,
+              "target_limit": 0,
+              "reciprocal_field_id": "IRD_3U",
+              "database_id": "96248b0c-14d4-4248-b10f-ec21db278e68"
+            }
+          },
+          "is_primary": false
+        }
+      ],
+      "views": [
+        {
+          "id": "3137c82f-adde-4d88-8161-bd59f046d267",
+          "database_id": "a7b669e9-1fdb-412f-aa47-d60a1d475a8d",
+          "name": "HR",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "id": "1b4cbd3c-8d21-4c21-aed0-82a203146ec3",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+            },
+            {
+              "id": "981b2b07-b1ab-44e5-9e6e-03bab616dbcb",
+              "height": 60
+            },
+            {
+              "height": 36,
+              "id": "71ad13a7-9832-43c5-9b25-05adb50ae2bc"
+            },
+            {
+              "id": "e6a565af-b573-4cd7-a5b0-6b3086931312",
+              "height": 36
+            },
+            {
+              "id": "5faa8daf-909b-4a4d-a59e-ed70e2d11e24",
+              "height": 36
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "R3EKHP"
+            },
+            {
+              "id": "kGaseb"
+            },
+            {
+              "id": "g89yi8"
+            },
+            {
+              "id": "q41izt"
+            }
+          ],
+          "field_settings": {
+            "MaxJnv": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "kGaseb": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "q41izt": {
+              "width": "284",
+              "visibility": 0
+            },
+            "R3EKHP": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "g89yi8": {
+              "visibility": 0
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1787036923
+        }
+      ],
+      "rows": [
+        {
+          "id": "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "g89yi8": {
+              "data": [
+                "424cc538-9206-452e-a148-0608fb2bd076",
+                "39119124-88c9-4cf2-89a6-3aa3c63cd240"
+              ],
+              "field_type": 10,
+              "created_at": "1787640678",
+              "last_modified": "1787640684"
+            },
+            "kGaseb": {
+              "data": "Mobile",
+              "created_at": "1787037117",
+              "last_modified": "1787037117",
+              "field_type": 3
+            },
+            "q41izt": {
+              "field_type": 10,
+              "data": [
+                "c6ffce3e-996e-4329-af3a-fb75cd4cc39f",
+                "b4451276-2c85-4a6f-92ef-287423317347"
+              ],
+              "created_at": "1787640613",
+              "last_modified": "1787640617"
+            },
+            "R3EKHP": {
+              "data": "Paris",
+              "field_type": 0,
+              "created_at": "1787036950",
+              "last_modified": "1787036950"
+            }
+          }
+        },
+        {
+          "id": "e6a565af-b573-4cd7-a5b0-6b3086931312",
+          "height": 36,
+          "visibility": true,
+          "cells": {
+            "kGaseb": {
+              "field_type": 3,
+              "data": "Cloud",
+              "last_modified": "1787037130",
+              "created_at": "1787037130"
+            },
+            "R3EKHP": {
+              "field_type": 0,
+              "created_at": "1787036966",
+              "data": "Ash",
+              "last_modified": "1787036966"
+            },
+            "q41izt": {
+              "field_type": 10,
+              "last_modified": "1787640605",
+              "created_at": "1787640605",
+              "data": [
+                "39119124-88c9-4cf2-89a6-3aa3c63cd240"
+              ]
+            }
+          }
+        },
+        {
+          "id": "71ad13a7-9832-43c5-9b25-05adb50ae2bc",
+          "height": 36,
+          "visibility": true,
+          "cells": {
+            "R3EKHP": {
+              "created_at": "1787036959",
+              "last_modified": "1787036959",
+              "data": "Cameron",
+              "field_type": 0
+            },
+            "kGaseb": {
+              "field_type": 3,
+              "data": "Mobile",
+              "created_at": "1787037128",
+              "last_modified": "1787037128"
+            },
+            "q41izt": {
+              "created_at": "1787640619",
+              "data": [
+                "b4451276-2c85-4a6f-92ef-287423317347",
+                "d3b23efb-f031-4874-9c79-e4b539f4b3e5"
+              ],
+              "last_modified": "1787640624",
+              "field_type": 10
+            },
+            "g89yi8": {
+              "created_at": "1787640687",
+              "field_type": 10,
+              "last_modified": "1787640687",
+              "data": [
+                "c6ffce3e-996e-4329-af3a-fb75cd4cc39f"
+              ]
+            }
+          }
+        },
+        {
+          "id": "1b4cbd3c-8d21-4c21-aed0-82a203146ec3",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "q41izt": {
+              "field_type": 10,
+              "data": [
+                "424cc538-9206-452e-a148-0608fb2bd076",
+                "c6ffce3e-996e-4329-af3a-fb75cd4cc39f"
+              ],
+              "created_at": "1787640597",
+              "last_modified": "1787640611"
+            },
+            "R3EKHP": {
+              "data": "Jordan",
+              "created_at": "1787036945",
+              "field_type": 0,
+              "last_modified": "1787036945"
+            },
+            "kGaseb": {
+              "last_modified": "1787037106",
+              "data": "Cloud",
+              "field_type": 3,
+              "created_at": "1787037106"
+            }
+          }
+        },
+        {
+          "id": "981b2b07-b1ab-44e5-9e6e-03bab616dbcb",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "R3EKHP": {
+              "data": "Sam",
+              "field_type": 0,
+              "created_at": "1787036954",
+              "last_modified": "1787036954"
+            },
+            "q41izt": {
+              "field_type": 10,
+              "last_modified": "1787640599",
+              "data": [
+                "424cc538-9206-452e-a148-0608fb2bd076"
+              ],
+              "created_at": "1787640599"
+            },
+            "kGaseb": {
+              "created_at": "1787037123",
+              "last_modified": "1787037123",
+              "field_type": 3,
+              "data": "Cloud"
+            }
+          }
+        },
+        {
+          "id": "5faa8daf-909b-4a4d-a59e-ed70e2d11e24",
+          "height": 36,
+          "visibility": true,
+          "cells": {
+            "g89yi8": {
+              "field_type": 10,
+              "last_modified": "1787640701",
+              "created_at": "1787640697",
+              "data": [
+                "b4451276-2c85-4a6f-92ef-287423317347",
+                "d3b23efb-f031-4874-9c79-e4b539f4b3e5"
+              ]
+            },
+            "R3EKHP": {
+              "field_type": 0,
+              "created_at": "1787640697",
+              "data": "Gai",
+              "last_modified": "1787640697"
+            }
+          }
+        }
+      ],
+      "name": "People",
+      "icon": {
+        "ty": 2,
+        "value": "{\"color\":\"0xFFFFBA00\",\"groupName\":\"artificial_intelligence\",\"iconName\":\"ai-generate-portrait-image-spark\"}"
+      }
+    },
+    {
+      "database_id": "f78a3822-6655-4f45-9e2a-748af9ea2dc7",
+      "fields": [
+        {
+          "id": "7i8xoD",
+          "name": "Kickoff",
+          "field_type": 2,
+          "icon": "",
+          "type_options": {
+            "2": {
+              "date_format_v2": 3,
+              "time_format_v2": 1,
+              "timezone_id": "Asia/Singapore"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "5uHS49",
+          "name": "Status",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"tvZe\",\"name\":\"In progress\",\"color\":\"Green\"},{\"id\":\"Ylaf\",\"name\":\"Kickoff\",\"color\":\"Aqua\"},{\"id\":\"acdG\",\"name\":\"Complete\",\"color\":\"Pink\"},{\"id\":\"P-5p\",\"name\":\"Delayed\",\"color\":\"LightPink\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "fQe6q2",
+          "name": "Days to complete",
+          "field_type": 1,
+          "icon": "",
+          "type_options": {
+            "1": {
+              "format": 0,
+              "name": "Number",
+              "symbol": "RUB",
+              "scale": 0
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "wl3shh",
+          "name": "Related Proj",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "database_id": "96248b0c-14d4-4248-b10f-ec21db278e68",
+              "target_limit": 0,
+              "is_two_way": true,
+              "source_limit": 0,
+              "reciprocal_field_id": "GvMXnU"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "vMLzCO",
+          "name": "Due date",
+          "field_type": 2,
+          "icon": "",
+          "type_options": {
+            "2": {
+              "date_format_v2": 3,
+              "time_format_v2": 1,
+              "timezone_id": "Asia/Singapore"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "fwtblW",
+          "name": "Project lead",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"v0yq\",\"name\":\"Paris\",\"color\":\"Purple\"},{\"id\":\"LX0a\",\"name\":\"Cameron\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            },
+            "10": {
+              "target_limit": 0,
+              "is_two_way": false,
+              "database_id": "a7b669e9-1fdb-412f-aa47-d60a1d475a8d",
+              "source_limit": 0
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "CkURpm",
+          "name": "Subtask",
+          "field_type": 7,
+          "icon": "",
+          "type_options": {
+            "0": {},
+            "7": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "4iweTZ",
+          "name": "Name",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": true
+        }
+      ],
+      "views": [
+        {
+          "id": "5b35b5da-edf1-4e14-9f37-4f8da7e0fef9",
+          "database_id": "f78a3822-6655-4f45-9e2a-748af9ea2dc7",
+          "name": "List",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "height": 60,
+              "id": "a4a32876-c3ea-4f32-9907-92b04322cc0b"
+            },
+            {
+              "height": 60,
+              "id": "df6cc143-984b-453a-ae01-7c0a6cf2ee93"
+            },
+            {
+              "height": 60,
+              "id": "12d99097-7c4b-4a01-abeb-2494de9564af"
+            },
+            {
+              "height": 60,
+              "id": "640481d6-773c-4323-970c-84904e78c7b7"
+            },
+            {
+              "height": 60,
+              "id": "4f1b4b10-f16e-4ef2-831d-bb2aeaf6b2a3"
+            },
+            {
+              "height": 60,
+              "id": "3ab4300e-a6c9-456c-9cfe-5b6269761efd"
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "4iweTZ"
+            },
+            {
+              "id": "fwtblW"
+            },
+            {
+              "id": "5uHS49"
+            },
+            {
+              "id": "CkURpm"
+            },
+            {
+              "id": "7i8xoD"
+            },
+            {
+              "id": "vMLzCO"
+            },
+            {
+              "id": "fQe6q2"
+            },
+            {
+              "id": "wl3shh"
+            }
+          ],
+          "field_settings": {
+            "qXO9HA": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "fwtblW": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 0
+            },
+            "fQe6q2": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "5uHS49": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "4iweTZ": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "wl3shh": {
+              "visibility": 0
+            },
+            "CkURpm": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "vMLzCO": {
+              "width": 150,
+              "visibility": 0,
+              "wrap": false
+            },
+            "7i8xoD": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1787036663
+        },
+        {
+          "id": "325e69c3-ae37-4196-8952-e8d2aa276f93",
+          "database_id": "f78a3822-6655-4f45-9e2a-748af9ea2dc7",
+          "name": "By Status",
+          "layout": 1,
+          "layout_settings": {
+            "1": {
+              "collapse_hidden_groups": true,
+              "hide_ungrouped_column": true
+            }
+          },
+          "filters": [],
+          "sorts": [],
+          "group_settings": [
+            {
+              "content": "",
+              "field_id": "5uHS49",
+              "id": "g:cppAej",
+              "groups": [
+                {
+                  "visible": true,
+                  "id": "Ylaf"
+                },
+                {
+                  "visible": false,
+                  "id": "5uHS49"
+                },
+                {
+                  "id": "tvZe",
+                  "visible": true
+                },
+                {
+                  "id": "P-5p",
+                  "visible": true
+                },
+                {
+                  "id": "acdG",
+                  "visible": true
+                }
+              ],
+              "ty": 3
+            }
+          ],
+          "row_orders": [
+            {
+              "height": 60,
+              "id": "a4a32876-c3ea-4f32-9907-92b04322cc0b"
+            },
+            {
+              "id": "df6cc143-984b-453a-ae01-7c0a6cf2ee93",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "12d99097-7c4b-4a01-abeb-2494de9564af"
+            },
+            {
+              "height": 60,
+              "id": "640481d6-773c-4323-970c-84904e78c7b7"
+            },
+            {
+              "height": 60,
+              "id": "4f1b4b10-f16e-4ef2-831d-bb2aeaf6b2a3"
+            },
+            {
+              "height": 60,
+              "id": "3ab4300e-a6c9-456c-9cfe-5b6269761efd"
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "4iweTZ"
+            },
+            {
+              "id": "5uHS49"
+            },
+            {
+              "id": "CkURpm"
+            },
+            {
+              "id": "fwtblW"
+            },
+            {
+              "id": "7i8xoD"
+            },
+            {
+              "id": "vMLzCO"
+            },
+            {
+              "id": "fQe6q2"
+            },
+            {
+              "id": "wl3shh"
+            }
+          ],
+          "field_settings": {
+            "fQe6q2": {
+              "wrap": false,
+              "visibility": 1,
+              "width": 150
+            },
+            "vMLzCO": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 1
+            },
+            "fwtblW": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "4iweTZ": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "5uHS49": {
+              "width": 150,
+              "visibility": 1,
+              "wrap": false
+            },
+            "wl3shh": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "7i8xoD": {
+              "wrap": false,
+              "visibility": 1,
+              "width": 150
+            },
+            "CkURpm": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 1
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1787644651
+        }
+      ],
+      "rows": [
+        {
+          "id": "12d99097-7c4b-4a01-abeb-2494de9564af",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "vMLzCO": {
+              "field_type": 2,
+              "end_timestamp": "",
+              "is_range": false,
+              "reminder_id": "",
+              "data": "1786723200",
+              "last_modified": "1787123500",
+              "include_time": false
+            },
+            "4iweTZ": {
+              "data": "Sign design contract",
+              "field_type": 0
+            },
+            "5uHS49": {
+              "field_type": 3,
+              "data": "tvZe"
+            },
+            "CkURpm": {
+              "data": "[x] task 1\n[ ] task 2\n[ ] task 3\n[ ] task 4",
+              "field_type": 0
+            },
+            "fwtblW": {
+              "created_at": "1787123455",
+              "data": [
+                "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+              ],
+              "field_type": 10,
+              "last_modified": "1787123455"
+            },
+            "7i8xoD": {
+              "is_range": false,
+              "reminder_id": "",
+              "field_type": 2,
+              "last_modified": "1787123480",
+              "data": "1786464000",
+              "end_timestamp": "",
+              "include_time": false
+            },
+            "fQe6q2": {
+              "data": "3",
+              "field_type": 1
+            }
+          }
+        },
+        {
+          "id": "640481d6-773c-4323-970c-84904e78c7b7",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "7i8xoD": {
+              "last_modified": "1787123486",
+              "reminder_id": "",
+              "end_timestamp": "",
+              "field_type": 2,
+              "include_time": false,
+              "data": "1781971200",
+              "is_range": false
+            },
+            "5uHS49": {
+              "field_type": 3,
+              "data": "acdG"
+            },
+            "4iweTZ": {
+              "data": "Execute survey",
+              "field_type": 0
+            },
+            "CkURpm": {
+              "field_type": 0,
+              "data": "[x] task 1\n[x] task 2\n[x] task 3\n[x] task 4\n[x] task 5"
+            },
+            "fQe6q2": {
+              "data": "14",
+              "field_type": 1
+            },
+            "wl3shh": {
+              "created_at": "1787640812",
+              "field_type": 10,
+              "data": [
+                "39119124-88c9-4cf2-89a6-3aa3c63cd240"
+              ],
+              "last_modified": "1787640812"
+            },
+            "fwtblW": {
+              "data": [
+                "71ad13a7-9832-43c5-9b25-05adb50ae2bc"
+              ],
+              "created_at": "1787123461",
+              "last_modified": "1787123461",
+              "field_type": 10
+            },
+            "vMLzCO": {
+              "end_timestamp": "",
+              "data": "1785859200",
+              "is_range": false,
+              "last_modified": "1787123502",
+              "field_type": 2,
+              "include_time": false,
+              "reminder_id": ""
+            }
+          }
+        },
+        {
+          "id": "4f1b4b10-f16e-4ef2-831d-bb2aeaf6b2a3",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "fQe6q2": {
+              "field_type": 1,
+              "data": "30"
+            },
+            "5uHS49": {
+              "data": "P-5p",
+              "field_type": 3
+            },
+            "vMLzCO": {
+              "include_time": false,
+              "field_type": 2,
+              "last_modified": "1787123505",
+              "reminder_id": "",
+              "end_timestamp": "",
+              "is_range": false,
+              "data": "1785945600"
+            },
+            "wl3shh": {
+              "created_at": "1787640807",
+              "last_modified": "1787640807",
+              "data": [
+                "39119124-88c9-4cf2-89a6-3aa3c63cd240"
+              ],
+              "field_type": 10
+            },
+            "4iweTZ": {
+              "data": "Prep for next employee survey",
+              "field_type": 0
+            },
+            "7i8xoD": {
+              "last_modified": "1787123489",
+              "include_time": false,
+              "is_range": false,
+              "end_timestamp": "",
+              "data": "1783440000",
+              "reminder_id": "",
+              "field_type": 2
+            },
+            "fwtblW": {
+              "created_at": "1787123463",
+              "data": [
+                "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+              ],
+              "field_type": 10,
+              "last_modified": "1787123463"
+            },
+            "CkURpm": {
+              "field_type": 0,
+              "data": "[ ] task 1\n[ ] task 2\n[ ] task 3\n[ ] task 4"
+            }
+          }
+        },
+        {
+          "id": "a4a32876-c3ea-4f32-9907-92b04322cc0b",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "CkURpm": {
+              "data": "[x] task 1\n[x] task 2\n[x] task 3\n[ ] task 4",
+              "field_type": 0
+            },
+            "wl3shh": {
+              "created_at": "1787640796",
+              "last_modified": "1787640796",
+              "data": [
+                "424cc538-9206-452e-a148-0608fb2bd076"
+              ],
+              "field_type": 10
+            },
+            "5uHS49": {
+              "field_type": 3,
+              "data": "tvZe",
+              "last_modified": "1787123522"
+            },
+            "7i8xoD": {
+              "reminder_id": "",
+              "last_modified": "1787123473",
+              "include_time": false,
+              "end_timestamp": "",
+              "data": "1785772800",
+              "field_type": 2,
+              "is_range": false
+            },
+            "4iweTZ": {
+              "data": "Find design agency",
+              "field_type": 0
+            },
+            "fwtblW": {
+              "data": [
+                "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+              ],
+              "field_type": 10,
+              "last_modified": "1787123444",
+              "created_at": "1787123444"
+            },
+            "vMLzCO": {
+              "reminder_id": "",
+              "data": "1786723200",
+              "end_timestamp": "",
+              "field_type": 2,
+              "is_range": false,
+              "include_time": false,
+              "last_modified": "1787123495"
+            },
+            "fQe6q2": {
+              "data": "5",
+              "field_type": 1
+            }
+          }
+        },
+        {
+          "id": "df6cc143-984b-453a-ae01-7c0a6cf2ee93",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "5uHS49": {
+              "data": "Ylaf",
+              "field_type": 3
+            },
+            "CkURpm": {
+              "field_type": 0,
+              "data": "[ ] task 1\n[ ] task 2\n[ ] task 3"
+            },
+            "7i8xoD": {
+              "is_range": false,
+              "end_timestamp": "",
+              "last_modified": "1787123477",
+              "include_time": false,
+              "field_type": 2,
+              "reminder_id": "",
+              "data": "1786118400"
+            },
+            "fwtblW": {
+              "data": [
+                "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+              ],
+              "created_at": "1787123453",
+              "last_modified": "1787123453",
+              "field_type": 10
+            },
+            "fQe6q2": {
+              "data": "4",
+              "field_type": 1
+            },
+            "vMLzCO": {
+              "end_timestamp": "",
+              "last_modified": "1787123497",
+              "reminder_id": "",
+              "field_type": 2,
+              "include_time": false,
+              "data": "1786723200",
+              "is_range": false
+            },
+            "4iweTZ": {
+              "data": "Kick off design work",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "3ab4300e-a6c9-456c-9cfe-5b6269761efd",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "4iweTZ": {
+              "field_type": 0,
+              "data": "Share employee survey results"
+            },
+            "fwtblW": {
+              "field_type": 10,
+              "created_at": "1787123466",
+              "data": [
+                "c33210ca-50ee-4ffa-a1ec-a60b5d5110bb"
+              ],
+              "last_modified": "1787123466"
+            },
+            "7i8xoD": {
+              "reminder_id": "",
+              "last_modified": "1787123492",
+              "field_type": 2,
+              "data": "1782316800",
+              "include_time": false,
+              "end_timestamp": "",
+              "is_range": false
+            },
+            "wl3shh": {
+              "created_at": "1787640810",
+              "data": [
+                "39119124-88c9-4cf2-89a6-3aa3c63cd240"
+              ],
+              "field_type": 10,
+              "last_modified": "1787640810"
+            },
+            "5uHS49": {
+              "field_type": 3,
+              "data": "acdG"
+            },
+            "vMLzCO": {
+              "last_modified": "1787123507",
+              "reminder_id": "",
+              "is_range": false,
+              "include_time": false,
+              "end_timestamp": "",
+              "data": "1785859200",
+              "field_type": 2
+            },
+            "CkURpm": {
+              "field_type": 0,
+              "data": "[x] task 1\n[x] task 2\n[x] task 3"
+            },
+            "fQe6q2": {
+              "field_type": 1,
+              "data": "7"
+            }
+          }
+        }
+      ],
+      "name": "Project Management - By Status",
+      "icon": null
+    }
+  ]
+}

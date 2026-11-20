@@ -1,0 +1,107 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:postgres
+> RUN_POSTGRES_TESTS=1 node --test test/postgres.test.js test/postgres-collab.test.js test/postgres-version-history.test.js test/postgres-migration-lock.test.js test/postgres-database-collab.test.js test/postgres-database-http-integration.test.js test/postgres-database-multiclient.test.js test/postgres-database-catalog.test.js test/postgres-realtime-fanout-document.test.js test/postgres-security-authorization.test.js test/postgres-collaboration-recovery.test.js
+
+(node:5902) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ durable PostgreSQL collaboration state survives reload, deduplicates, and isolates invalid references (50.459208ms)
+✔ independent PostgreSQL repositories serialize concurrent updates without overwrite (15.302625ms)
+(node:5903) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PostgreSQL recovery: backend process restart against the same database preserves content, Rid continuity, and live fan-out keeps working (342.481ms)
+✔ PostgreSQL recovery: two clients reconnect simultaneously with distinct pending edits -- no lost updates, no Rid collision, both converge (124.686333ms)
+✔ PostgreSQL recovery (authorization): disconnect, revoke membership, reconnection is rejected and no protected content is returned (103.672458ms)
+(node:5904) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PostgreSQL mode: empty workspace reports an empty, non-error catalog (86.590417ms)
+✔ PostgreSQL mode: one Database is discoverable with correct container+primary-view association (63.184708ms)
+✔ PostgreSQL mode: multiple Databases in the same workspace are all discoverable (73.513417ms)
+✔ PostgreSQL mode: a Database created in one session is discoverable by a completely separate second session (the fresh-session gap Task 63 found) (102.227ms)
+✔ PostgreSQL mode: cross-workspace isolation and unauthorized access (107.384542ms)
+✔ PostgreSQL mode: missing workspace id (well-formed UUID, no such workspace) is rejected (47.152625ms)
+✔ PostgreSQL mode: pagination offset/limit, has_more and stable ordering (55.9685ms)
+✔ PostgreSQL mode: invalid pagination parameters are rejected (49.530584ms)
+✔ PostgreSQL mode: malformed container metadata is excluded without hiding other valid Databases (48.26775ms)
+✔ PostgreSQL mode: a container with no matching primary-view page is still included (container-only entry) (44.228708ms)
+✔ PostgreSQL mode: a decoy child page with a mismatched database_id is never selected as the primary view (44.604708ms)
+✔ PostgreSQL mode regression: ordinary Document pages and Folder-tree navigation are unaffected (46.466834ms)
+✔ PostgreSQL mode: GET page-view cold-fetches a Database primary-view page by serving the Database collab (46.796584ms)
+✔ PostgreSQL mode: GET page-view cold-fetches a Database CONTAINER page by serving the same Database collab (47.141834ms)
+✔ PostgreSQL mode regression: GET page-view for an ordinary Document page is unaffected (44.725041ms)
+✔ PostgreSQL mode: GET page-view returns COLLAB_NOT_FOUND when a Database page's referenced database collab is genuinely missing (44.373125ms)
+(node:5905) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Database (PostgreSQL): atomic creation, retrieval, update, idempotency, cross-workspace isolation, restart reconstruction (164.852458ms)
+✔ DatabaseRow (PostgreSQL): atomic creation mutates parent row_orders, is independently retrievable with collab_version null, restarts reconstruct correctly, cross-workspace rejected (32.511333ms)
+✔ Atomic row creation (PostgreSQL): idempotent replay has a stable update_batch_id, request_id reuse with a different payload is rejected, unknown database/view are rejected (16.620542ms)
+✔ Atomic row creation (PostgreSQL): transaction rollback via fault injection leaves no partial state at every checkpoint, and a subsequent retry succeeds (28.47175ms)
+✔ Atomic row creation (PostgreSQL): true concurrency -- independent rows, same-request-id races, and conflicting request_ids (20.801375ms)
+(node:5906) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PostgreSQL mode: REST Database creation, collab read, WS sync+field update, REST row creation (x2), collab read, WS cell update, and restart all work end-to-end (140.788041ms)
+ℹ Postgres HTTP/WS integration: database=973f396c-9e13-4ce6-856c-09fb49b7ee9a row1=059f3f46-302f-45e9-b035-d348fa4725e1 row2=485af046-a6fd-4a7f-99a9-d8bf4959c9f6
+(node:5907) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PostgreSQL multi-client (WebSocket protocol level): the atomic REST row-creation endpoint still does not broadcast (unchanged, out of Task 66 scope), but an ordinary WS cell update now live-broadcasts to another connected peer (Task 66) (4189.769875ms)
+ℹ REST row creation broadcast check: peer received NOTHING (no unsolicited frame within 2.5s)
+ℹ Ordinary WS cell-update broadcast check (Task 66): peer received {"objectId":"0c45654e-d8ca-41eb-b24a-9718fc29531b","collabType":4,"messageId":{"timestamp":"1794301729958","counter":0}}
+(node:5908) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ migration lock key derivation is deterministic, distinct per database, and within Postgres bigint range (17.82775ms)
+✔ two concurrent real connections contend for the same migration lock; only one holds it at a time (322.702ms)
+✔ two independent openPostgresStore() calls against the same fresh database serialize migration and both succeed without duplicate application (218.443459ms)
+✔ three concurrent openPostgresStore() initializers against a fresh database all succeed with migrations applied exactly once (260.999167ms)
+✔ a slow first initializer forces a genuinely concurrent second initializer to wait, then recheck, before completing (927.42625ms)
+✔ lock acquisition timeout produces a clear, bounded error, and does not block the holder (323.284416ms)
+✔ releasing a lock not held by the session reports an error instead of silently succeeding (8.691333ms)
+✔ terminating a session that holds the lock (connection loss) releases it; no permanent lock remains (317.9755ms)
+✔ a genuine migration SQL failure (real Postgres unique-violation) rolls back, releases the lock, leaves no misleading success record, and a corrected retry succeeds (159.264458ms)
+✔ reopening an already-fully-migrated database is a fast no-op recheck and leaves no advisory lock behind (75.979417ms)
+(node:5909) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PostgreSQL multi-client (WebSocket protocol level, Task 66): an already-connected second client receives an accepted Document update live, without sending a new SyncRequest, and content converges (271.689833ms)
+ℹ Document WS update broadcast check (Task 66, Postgres): peer received {"objectId":"ec614527-e224-47a4-a87b-20d4a7730999","collabType":0,"messageId":{"timestamp":"1794301727518","counter":0}}
+(node:5910) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PostgreSQL: a non-member cannot read a workspace, and membership revocation is immediately effective (REST) (204.438041ms)
+✔ PostgreSQL: WS admission rejects a non-member, and an idle revoked peer is closed by the bounded periodic revalidation timer and stops receiving live fan-out (375.6555ms)
+(node:5911) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ version-history (Postgres): named version creation is durably persisted with correct state and metadata (149.10025ms)
+✔ version-history (Postgres): history listing returns correct ordering/metadata and excludes other documents/workspaces (23.687375ms)
+✔ version-history (Postgres): restoring an earlier version installs its exact content and persists metadata/restore audit row (20.518084ms)
+✔ version-history (Postgres): restore preserves prior history (tombstone-not-delete) and a before-restore snapshot is added (22.326458ms)
+✔ version-history (Postgres): failed restore (missing/tombstoned target) rolls back with no partial writes (14.467625ms)
+✔ version-history (Postgres): duplicate restore requests are idempotent and concurrent competing restores resolve to exactly one applied result (17.522625ms)
+✔ version-history (Postgres): separate documents maintain fully independent version histories (15.2855ms)
+(node:5912) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ PostgreSQL end-to-end isolated persistence and concurrency (298.994083ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 49
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10771.315625
+
+> appflowy-independent-backend-prototype@0.1.0 test:parity
+> RUN_POSTGRES_TESTS=1 node --test test/json-postgres-parity.test.js
+
+(node:6032) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ JSON/PostgreSQL parity: identical operation sequence produces identical logical outcomes (47.925458ms)
+ℹ JSON fingerprint: {"createOutcome":"applied","createDatabaseId":"4cc63214-cb0e-4927-9d96-ef3b5e940476","databaseCollabVersion":"appflowy-database-v1","createRowOutcome":"applied","rowOrdersAfterCreate":["429992ce-2b68-4e26-8065-3139e430e893"],"rowCollabVersionIsNull":true,"cellUpdateStatus":"applied","rowOrdersAfterReopen":["429992ce-2b68-4e26-8065-3139e430e893"],"persistedCellValue":"edited value","replayOutcome":"already_applied","replayUpdateBatchId":"914ff19b-9930-42e1-a049-cb3e7e27ae30","originalUpdateBatchId":"914ff19b-9930-42e1-a049-cb3e7e27ae30","duplicateUpdateStatus":"duplicate","duplicateMessageIdMatches":true}
+ℹ Postgres fingerprint: {"createOutcome":"applied","createDatabaseId":"4cc63214-cb0e-4927-9d96-ef3b5e940476","databaseCollabVersion":"appflowy-database-v1","createRowOutcome":"applied","rowOrdersAfterCreate":["429992ce-2b68-4e26-8065-3139e430e893"],"rowCollabVersionIsNull":true,"cellUpdateStatus":"applied","rowOrdersAfterReopen":["429992ce-2b68-4e26-8065-3139e430e893"],"persistedCellValue":"edited value","replayOutcome":"already_applied","replayUpdateBatchId":"914ff19b-9930-42e1-a049-cb3e7e27ae30","originalUpdateBatchId":"914ff19b-9930-42e1-a049-cb3e7e27ae30","duplicateUpdateStatus":"duplicate","duplicateMessageIdMatches":true}
+✔ JSON/PostgreSQL parity: workspace Database catalog derivation produces identical logical results (21.94825ms)
+ℹ JSON catalogA: [{"database_id":"4a105122-25f3-450e-acd3-4118f9bc758c","views":[{"view_id":"51b61057-6dc3-4d1b-85ef-ffc9e8971b77","layout":1,"is_container":true,"embedded":false,"name":"First-by-time","icon":null,"parent_view_id":"8c628774-4ed4-45a6-9239-0d8eae48cd80"},{"view_id":"748e3f4b-14a9-4077-a8f0-9db48cbda8a2","layout":1,"is_container":false,"embedded":false,"name":"First-by-time","icon":null,"parent_view_id":"51b61057-6dc3-4d1b-85ef-ffc9e8971b77"}]},{"database_id":"04458c42-ac9e-43f8-a539-fb52867bbef4","views":[{"view_id":"923c1346-35dd-4ba3-b8c7-cf819b2047f3","layout":1,"is_container":true,"embedded":false,"name":"Orphan","icon":null,"parent_view_id":"8c628774-4ed4-45a6-9239-0d8eae48cd80"}]},{"database_id":"1cc34e4b-bf87-4c12-8f16-3a0dad70c1e1","views":[{"view_id":"5546819f-bd1d-4be6-9933-c07b50787b45","layout":1,"is_container":true,"embedded":false,"name":"Second-by-time","icon":null,"parent_view_id":"8c628774-4ed4-45a6-9239-0d8eae48cd80"},{"view_id":"77516f23-7aa5-4668-a539-02e4160ac478","layout":1,"is_container":false,"embedded":false,"name":"Second-by-time","icon":null,"parent_view_id":"5546819f-bd1d-4be6-9933-c07b50787b45"}]}]
+ℹ Postgres catalogA: [{"database_id":"4a105122-25f3-450e-acd3-4118f9bc758c","views":[{"view_id":"51b61057-6dc3-4d1b-85ef-ffc9e8971b77","layout":1,"is_container":true,"embedded":false,"name":"First-by-time","icon":null,"parent_view_id":"8c628774-4ed4-45a6-9239-0d8eae48cd80"},{"view_id":"748e3f4b-14a9-4077-a8f0-9db48cbda8a2","layout":1,"is_container":false,"embedded":false,"name":"First-by-time","icon":null,"parent_view_id":"51b61057-6dc3-4d1b-85ef-ffc9e8971b77"}]},{"database_id":"04458c42-ac9e-43f8-a539-fb52867bbef4","views":[{"view_id":"923c1346-35dd-4ba3-b8c7-cf819b2047f3","layout":1,"is_container":true,"embedded":false,"name":"Orphan","icon":null,"parent_view_id":"8c628774-4ed4-45a6-9239-0d8eae48cd80"}]},{"database_id":"1cc34e4b-bf87-4c12-8f16-3a0dad70c1e1","views":[{"view_id":"5546819f-bd1d-4be6-9933-c07b50787b45","layout":1,"is_container":true,"embedded":false,"name":"Second-by-time","icon":null,"parent_view_id":"8c628774-4ed4-45a6-9239-0d8eae48cd80"},{"view_id":"77516f23-7aa5-4668-a539-02e4160ac478","layout":1,"is_container":false,"embedded":false,"name":"Second-by-time","icon":null,"parent_view_id":"5546819f-bd1d-4be6-9933-c07b50787b45"}]}]
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 160.425875

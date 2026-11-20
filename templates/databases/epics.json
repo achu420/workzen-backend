@@ -1,0 +1,1192 @@
+{
+  "template_id": "epics",
+  "order": 2,
+  "name": "Epics",
+  "description": "Break projects into epics and follow their progress.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"computer_devices\",\"iconName\":\"database\",\"color\":\"0xFFFF8933\"}"
+  },
+  "fields": [
+    {
+      "id": "MLWHNh",
+      "name": "Epic ID",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "t-zltF",
+      "name": "Epic",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "g7cCbA",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"Q0XT\",\"name\":\"In progress\",\"color\":\"Yellow\"},{\"id\":\"cB8b\",\"name\":\"Ready\",\"color\":\"Green\"},{\"id\":\"TZJw\",\"name\":\"Blocked\",\"color\":\"LightPink\"},{\"id\":\"Qymf\",\"name\":\"Backlog\",\"color\":\"Cream\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "oeyUnm",
+      "name": "Priority",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"ukBG\",\"name\":\"P0\",\"color\":\"Purple\"},{\"id\":\"ZKE-\",\"name\":\"P1\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "atWtix",
+      "name": "Owner",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "FdTE66",
+      "name": "Team",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"PkK5\",\"name\":\"Platform\",\"color\":\"Purple\"},{\"id\":\"s8jr\",\"name\":\"Identity\",\"color\":\"Purple\"},{\"id\":\"425j\",\"name\":\"Infrastructure\",\"color\":\"Purple\"},{\"id\":\"4O1_\",\"name\":\"Mobile\",\"color\":\"Purple\"},{\"id\":\"6145\",\"name\":\"Database\",\"color\":\"Purple\"},{\"id\":\"owy1\",\"name\":\"AI Platform\",\"color\":\"Purple\"},{\"id\":\"tGsd\",\"name\":\"Solutions\",\"color\":\"Purple\"},{\"id\":\"_4q5\",\"name\":\"Growth Engineering\",\"color\":\"Purple\"},{\"id\":\"WtZk\",\"name\":\"Product Operations\",\"color\":\"Purple\"},{\"id\":\"E6f4\",\"name\":\"Marketing\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "odZnpi",
+      "name": "Start Date",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "time_format_v2": 1,
+          "date_format_v2": 3,
+          "timezone_id": "Asia/Singapore"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "BCUV9A",
+      "name": "Target Date",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "time_format_v2": 1,
+          "date_format_v2": 3,
+          "timezone_id": "Asia/Singapore"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "xExFP7",
+      "name": "Release",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "name": "Number",
+          "symbol": "RUB",
+          "format": 0,
+          "scale": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "HenEdL",
+      "name": "Progress",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "format": 0,
+          "name": "Number",
+          "symbol": "RUB",
+          "scale": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "sMOS-G",
+      "name": "Dependencies",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"1Ki4\",\"name\":\"Space-level roles\",\"color\":\"Purple\"},{\"id\":\"uNP1\",\"name\":\"Conflict merge performance\",\"color\":\"Purple\"},{\"id\":\"9rdl\",\"name\":\"Private model gateway\",\"color\":\"Purple\"},{\"id\":\"TvJe\",\"name\":\"Private model gateway; Custom embedding pipeline\",\"color\":\"Purple\"},{\"id\":\"zX5n\",\"name\":\"Structured workspace importer\",\"color\":\"Purple\"},{\"id\":\"XkEg\",\"name\":\"Enterprise solution pages\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "wWZwhZ",
+      "name": "Acceptance Criteria",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "a10f41fb-962a-4557-9892-a6581308aac3",
+      "database_id": "3356b569-dc1e-4d5e-a20c-083a8ce756ce",
+      "name": "List",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "group_settings": [],
+      "sorts": [],
+      "row_orders": [
+        {
+          "id": "7b1c56ce-7586-4b4c-9a30-f172c7c5f85c",
+          "height": 60
+        },
+        {
+          "id": "61f4c9ef-e370-4d08-8cfd-94f079914e7e",
+          "height": 60
+        },
+        {
+          "id": "97faeb91-df8b-4dda-82e6-25a6071a4e91",
+          "height": 60
+        },
+        {
+          "id": "7392630a-4e5e-450d-b2d9-2b1463b8176b",
+          "height": 60
+        },
+        {
+          "id": "eed0182b-4b5e-4e27-8e76-95a324f355bb",
+          "height": 60
+        },
+        {
+          "id": "8fe0a343-c8dc-4c06-8d0b-1014811ee22a",
+          "height": 60
+        },
+        {
+          "id": "4d5869f5-05b3-42b6-aa49-03dc384d8d05",
+          "height": 60
+        },
+        {
+          "id": "ca3c6043-afcc-4c38-9da2-df1efd9923ae",
+          "height": 60
+        },
+        {
+          "id": "b6dc9c39-7070-4e6a-b0f3-32ed88e59ab6",
+          "height": 60
+        },
+        {
+          "id": "8cd0fbae-2e93-46f1-9cbf-f2f4b6d53e88",
+          "height": 60
+        },
+        {
+          "id": "ee57871b-91a8-47a8-8198-81557631e0b9",
+          "height": 60
+        },
+        {
+          "id": "db895a51-8d7c-4185-941a-e852158c04a1",
+          "height": 60
+        },
+        {
+          "id": "f68d6b98-c123-4173-baf5-b1c4383e94c8",
+          "height": 60
+        },
+        {
+          "id": "7366fd08-f317-45de-91b0-4cfcf6c89b07",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "MLWHNh"
+        },
+        {
+          "id": "t-zltF"
+        },
+        {
+          "id": "g7cCbA"
+        },
+        {
+          "id": "oeyUnm"
+        },
+        {
+          "id": "atWtix"
+        },
+        {
+          "id": "FdTE66"
+        },
+        {
+          "id": "odZnpi"
+        },
+        {
+          "id": "BCUV9A"
+        },
+        {
+          "id": "xExFP7"
+        },
+        {
+          "id": "HenEdL"
+        },
+        {
+          "id": "sMOS-G"
+        },
+        {
+          "id": "wWZwhZ"
+        }
+      ],
+      "field_settings": {
+        "HenEdL": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "atWtix": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "BCUV9A": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "oeyUnm": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "FdTE66": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "t-zltF": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "wWZwhZ": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "odZnpi": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "sMOS-G": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "xExFP7": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "g7cCbA": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "MLWHNh": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        }
+      },
+      "created_at": 1786518672,
+      "modified_at": 1786519228,
+      "is_inline": false,
+      "embedded": false
+    }
+  ],
+  "rows": [
+    {
+      "id": "7b1c56ce-7586-4b4c-9a30-f172c7c5f85c",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "odZnpi": {
+          "is_range": false,
+          "end_timestamp": "",
+          "include_time": false,
+          "field_type": 2,
+          "data": "1783267200",
+          "reminder_id": ""
+        },
+        "MLWHNh": {
+          "field_type": 0,
+          "data": "EPC-001"
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "Admins can assign predefined roles at the space level and existing members retain valid access."
+        },
+        "xExFP7": {
+          "data": "2026.09",
+          "field_type": 1
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "PkK5"
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Maya Chen"
+        },
+        "t-zltF": {
+          "field_type": 0,
+          "data": "Space-level roles"
+        },
+        "g7cCbA": {
+          "field_type": 3,
+          "data": "Q0XT"
+        },
+        "BCUV9A": {
+          "end_timestamp": "",
+          "is_range": false,
+          "reminder_id": "",
+          "field_type": 2,
+          "data": "1787241600",
+          "include_time": false
+        },
+        "HenEdL": {
+          "data": "65",
+          "field_type": 1
+        },
+        "oeyUnm": {
+          "data": "ukBG",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "61f4c9ef-e370-4d08-8cfd-94f079914e7e",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "BCUV9A": {
+          "is_range": false,
+          "reminder_id": "",
+          "field_type": 2,
+          "include_time": false,
+          "data": "1788451200",
+          "end_timestamp": ""
+        },
+        "sMOS-G": {
+          "data": "1Ki4",
+          "field_type": 3
+        },
+        "t-zltF": {
+          "data": "Permission inheritance",
+          "field_type": 0
+        },
+        "MLWHNh": {
+          "data": "EPC-002",
+          "field_type": 0
+        },
+        "HenEdL": {
+          "data": "40",
+          "field_type": 1
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "Pages inherit space permissions by default and exceptions are visible and auditable."
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Ethan Lee"
+        },
+        "odZnpi": {
+          "data": "1784476800",
+          "end_timestamp": "",
+          "field_type": 2,
+          "is_range": false,
+          "reminder_id": "",
+          "include_time": false
+        },
+        "xExFP7": {
+          "data": "2026.09",
+          "field_type": 1
+        },
+        "g7cCbA": {
+          "data": "Q0XT",
+          "field_type": 3
+        },
+        "oeyUnm": {
+          "field_type": 3,
+          "data": "ukBG"
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "PkK5"
+        }
+      }
+    },
+    {
+      "id": "97faeb91-df8b-4dda-82e6-25a6071a4e91",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "FdTE66": {
+          "data": "s8jr",
+          "field_type": 3
+        },
+        "sMOS-G": {
+          "field_type": 3,
+          "data": "1Ki4"
+        },
+        "g7cCbA": {
+          "field_type": 3,
+          "data": "cB8b"
+        },
+        "atWtix": {
+          "data": "Priya Shah",
+          "field_type": 0
+        },
+        "HenEdL": {
+          "data": "10",
+          "field_type": 1
+        },
+        "MLWHNh": {
+          "data": "EPC-003",
+          "field_type": 0
+        },
+        "t-zltF": {
+          "data": "Group-to-role mapping",
+          "field_type": 0
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "Directory groups can be mapped to workspace roles and changes sync automatically."
+        },
+        "oeyUnm": {
+          "data": "ZKE-",
+          "field_type": 3
+        },
+        "xExFP7": {
+          "field_type": 1,
+          "data": "2026.09"
+        },
+        "odZnpi": {
+          "reminder_id": "",
+          "data": "1786291200",
+          "include_time": false,
+          "end_timestamp": "",
+          "is_range": false,
+          "field_type": 2
+        },
+        "BCUV9A": {
+          "data": "1789660800",
+          "reminder_id": "",
+          "end_timestamp": "",
+          "is_range": false,
+          "field_type": 2,
+          "include_time": false
+        }
+      }
+    },
+    {
+      "id": "7392630a-4e5e-450d-b2d9-2b1463b8176b",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "xExFP7": {
+          "field_type": 1,
+          "data": "2026.08"
+        },
+        "MLWHNh": {
+          "data": "EPC-004",
+          "field_type": 0
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Noah Williams"
+        },
+        "oeyUnm": {
+          "data": "ukBG",
+          "field_type": 3
+        },
+        "HenEdL": {
+          "field_type": 1,
+          "data": "72"
+        },
+        "t-zltF": {
+          "field_type": 0,
+          "data": "Conflict merge performance"
+        },
+        "BCUV9A": {
+          "reminder_id": "",
+          "field_type": 2,
+          "include_time": false,
+          "is_range": false,
+          "end_timestamp": "",
+          "data": "1787846400"
+        },
+        "g7cCbA": {
+          "field_type": 3,
+          "data": "Q0XT"
+        },
+        "odZnpi": {
+          "data": "1781452800",
+          "field_type": 2,
+          "is_range": false,
+          "end_timestamp": "",
+          "reminder_id": "",
+          "include_time": false
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "425j"
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "P95 merge time stays below the target for representative large workspaces."
+        }
+      }
+    },
+    {
+      "id": "eed0182b-4b5e-4e27-8e76-95a324f355bb",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "oeyUnm": {
+          "data": "ukBG",
+          "field_type": 3
+        },
+        "odZnpi": {
+          "data": "1782835200",
+          "end_timestamp": "",
+          "field_type": 2,
+          "reminder_id": "",
+          "include_time": false,
+          "is_range": false
+        },
+        "wWZwhZ": {
+          "data": "Interrupted writes recover without data loss on supported Android and iOS versions.",
+          "field_type": 0
+        },
+        "MLWHNh": {
+          "field_type": 0,
+          "data": "EPC-005"
+        },
+        "sMOS-G": {
+          "field_type": 3,
+          "data": "uNP1"
+        },
+        "BCUV9A": {
+          "reminder_id": "",
+          "end_timestamp": "",
+          "data": "1789056000",
+          "field_type": 2,
+          "is_range": false,
+          "include_time": false
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Lina Gomez"
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "4O1_"
+        },
+        "xExFP7": {
+          "data": "2026.09",
+          "field_type": 1
+        },
+        "HenEdL": {
+          "data": "45",
+          "field_type": 1
+        },
+        "t-zltF": {
+          "data": "Mobile offline recovery",
+          "field_type": 0
+        },
+        "g7cCbA": {
+          "data": "TZJw",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "8fe0a343-c8dc-4c06-8d0b-1014811ee22a",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MLWHNh": {
+          "data": "EPC-006",
+          "field_type": 0
+        },
+        "xExFP7": {
+          "field_type": 1,
+          "data": "2026.09"
+        },
+        "BCUV9A": {
+          "end_timestamp": "",
+          "field_type": 2,
+          "include_time": false,
+          "reminder_id": "",
+          "is_range": false,
+          "data": "1790697600"
+        },
+        "odZnpi": {
+          "data": "1783872000",
+          "reminder_id": "",
+          "end_timestamp": "",
+          "field_type": 2,
+          "include_time": false,
+          "is_range": false
+        },
+        "g7cCbA": {
+          "data": "Q0XT",
+          "field_type": 3
+        },
+        "atWtix": {
+          "data": "Owen Clark",
+          "field_type": 0
+        },
+        "t-zltF": {
+          "field_type": 0,
+          "data": "Large database synchronization"
+        },
+        "oeyUnm": {
+          "field_type": 3,
+          "data": "ZKE-"
+        },
+        "sMOS-G": {
+          "data": "uNP1",
+          "field_type": 3
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "6145"
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "Large databases meet sync latency and memory benchmarks on desktop and mobile."
+        },
+        "HenEdL": {
+          "field_type": 1,
+          "data": "38"
+        }
+      }
+    },
+    {
+      "id": "4d5869f5-05b3-42b6-aa49-03dc384d8d05",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MLWHNh": {
+          "data": "EPC-007",
+          "field_type": 0
+        },
+        "HenEdL": {
+          "data": "50",
+          "field_type": 1
+        },
+        "g7cCbA": {
+          "data": "Q0XT",
+          "field_type": 3
+        },
+        "xExFP7": {
+          "field_type": 1,
+          "data": "2026.09"
+        },
+        "BCUV9A": {
+          "reminder_id": "",
+          "end_timestamp": "",
+          "data": "1788451200",
+          "field_type": 2,
+          "include_time": false,
+          "is_range": false
+        },
+        "oeyUnm": {
+          "field_type": 3,
+          "data": "ukBG"
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "owy1"
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Ava Patel"
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "Admins can connect supported private model endpoints without sending data externally."
+        },
+        "t-zltF": {
+          "data": "Private model gateway",
+          "field_type": 0
+        },
+        "odZnpi": {
+          "data": "1784476800",
+          "reminder_id": "",
+          "field_type": 2,
+          "include_time": false,
+          "end_timestamp": "",
+          "is_range": false
+        }
+      }
+    },
+    {
+      "id": "ca3c6043-afcc-4c38-9da2-df1efd9923ae",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "sMOS-G": {
+          "field_type": 3,
+          "data": "9rdl"
+        },
+        "oeyUnm": {
+          "data": "ZKE-",
+          "field_type": 3
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Daniel Kim"
+        },
+        "MLWHNh": {
+          "field_type": 0,
+          "data": "EPC-008"
+        },
+        "t-zltF": {
+          "data": "Custom embedding pipeline",
+          "field_type": 0
+        },
+        "odZnpi": {
+          "reminder_id": "",
+          "end_timestamp": "",
+          "field_type": 2,
+          "data": "1786896000",
+          "include_time": false,
+          "is_range": false
+        },
+        "g7cCbA": {
+          "data": "cB8b",
+          "field_type": 3
+        },
+        "BCUV9A": {
+          "include_time": false,
+          "data": "1790265600",
+          "field_type": 2,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "is_range": false
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "owy1"
+        },
+        "xExFP7": {
+          "data": "2026.1",
+          "field_type": 1
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "Customers can configure approved embedding models and rebuild workspace indexes."
+        },
+        "HenEdL": {
+          "field_type": 1,
+          "data": "15"
+        }
+      }
+    },
+    {
+      "id": "b6dc9c39-7070-4e6a-b0f3-32ed88e59ab6",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "g7cCbA": {
+          "field_type": 3,
+          "data": "Qymf"
+        },
+        "odZnpi": {
+          "field_type": 2,
+          "end_timestamp": "",
+          "reminder_id": "",
+          "is_range": false,
+          "include_time": false,
+          "data": "1789315200"
+        },
+        "HenEdL": {
+          "data": "0",
+          "field_type": 1
+        },
+        "oeyUnm": {
+          "data": "ZKE-",
+          "field_type": 3
+        },
+        "FdTE66": {
+          "data": "tGsd",
+          "field_type": 3
+        },
+        "MLWHNh": {
+          "data": "EPC-009",
+          "field_type": 0
+        },
+        "BCUV9A": {
+          "field_type": 2,
+          "data": "1792080000",
+          "reminder_id": "",
+          "end_timestamp": "",
+          "is_range": false,
+          "include_time": false
+        },
+        "t-zltF": {
+          "data": "Air-gapped deployment guide",
+          "field_type": 0
+        },
+        "atWtix": {
+          "data": "Grace Tan",
+          "field_type": 0
+        },
+        "xExFP7": {
+          "data": "2026.1",
+          "field_type": 1
+        },
+        "sMOS-G": {
+          "field_type": 3,
+          "data": "TvJe"
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "A customer can deploy and validate the AI stack without outbound internet access."
+        }
+      }
+    },
+    {
+      "id": "8cd0fbae-2e93-46f1-9cbf-f2f4b6d53e88",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "atWtix": {
+          "data": "Leo Martin",
+          "field_type": 0
+        },
+        "HenEdL": {
+          "field_type": 1,
+          "data": "12"
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "_4q5"
+        },
+        "g7cCbA": {
+          "data": "cB8b",
+          "field_type": 3
+        },
+        "odZnpi": {
+          "include_time": false,
+          "is_range": false,
+          "end_timestamp": "",
+          "reminder_id": "",
+          "field_type": 2,
+          "data": "1786896000"
+        },
+        "MLWHNh": {
+          "data": "EPC-010",
+          "field_type": 0
+        },
+        "t-zltF": {
+          "data": "Structured workspace importer",
+          "field_type": 0
+        },
+        "xExFP7": {
+          "data": "2026.1",
+          "field_type": 1
+        },
+        "oeyUnm": {
+          "field_type": 3,
+          "data": "ukBG"
+        },
+        "BCUV9A": {
+          "include_time": false,
+          "end_timestamp": "",
+          "field_type": 2,
+          "data": "1790870400",
+          "reminder_id": "",
+          "is_range": false
+        },
+        "wWZwhZ": {
+          "data": "Importer preserves page hierarchy, databases, properties, and common rich-text blocks.",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "ee57871b-91a8-47a8-8198-81557631e0b9",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "BCUV9A": {
+          "data": "1793894400",
+          "reminder_id": "",
+          "end_timestamp": "",
+          "field_type": 2,
+          "include_time": false,
+          "is_range": false
+        },
+        "HenEdL": {
+          "data": "0",
+          "field_type": 1
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Nora Evans"
+        },
+        "wWZwhZ": {
+          "data": "Each migration produces a report of imported, transformed, skipped, and failed items.",
+          "field_type": 0
+        },
+        "sMOS-G": {
+          "data": "zX5n",
+          "field_type": 3
+        },
+        "oeyUnm": {
+          "field_type": 3,
+          "data": "ZKE-"
+        },
+        "t-zltF": {
+          "data": "Migration validation report",
+          "field_type": 0
+        },
+        "g7cCbA": {
+          "field_type": 3,
+          "data": "Qymf"
+        },
+        "MLWHNh": {
+          "data": "EPC-011",
+          "field_type": 0
+        },
+        "xExFP7": {
+          "data": "2026.11",
+          "field_type": 1
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "_4q5"
+        },
+        "odZnpi": {
+          "is_range": false,
+          "field_type": 2,
+          "reminder_id": "",
+          "include_time": false,
+          "end_timestamp": "",
+          "data": "1789920000"
+        }
+      }
+    },
+    {
+      "id": "db895a51-8d7c-4185-941a-e852158c04a1",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "t-zltF": {
+          "field_type": 0,
+          "data": "Portfolio health scorecard"
+        },
+        "atWtix": {
+          "data": "Sofia Rossi",
+          "field_type": 0
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "Leaders can compare status, health, progress, milestones, and risks across active projects."
+        },
+        "BCUV9A": {
+          "data": "1792080000",
+          "include_time": false,
+          "field_type": 2,
+          "end_timestamp": "",
+          "is_range": false,
+          "reminder_id": ""
+        },
+        "oeyUnm": {
+          "data": "ZKE-",
+          "field_type": 3
+        },
+        "FdTE66": {
+          "data": "WtZk",
+          "field_type": 3
+        },
+        "HenEdL": {
+          "data": "0",
+          "field_type": 1
+        },
+        "xExFP7": {
+          "field_type": 1,
+          "data": "2026.1"
+        },
+        "MLWHNh": {
+          "field_type": 0,
+          "data": "EPC-012"
+        },
+        "odZnpi": {
+          "reminder_id": "",
+          "include_time": false,
+          "end_timestamp": "",
+          "is_range": false,
+          "data": "1788710400",
+          "field_type": 2
+        },
+        "g7cCbA": {
+          "data": "Qymf",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "f68d6b98-c123-4173-baf5-b1c4383e94c8",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "oeyUnm": {
+          "data": "ZKE-",
+          "field_type": 3
+        },
+        "BCUV9A": {
+          "include_time": false,
+          "reminder_id": "",
+          "field_type": 2,
+          "is_range": false,
+          "data": "1786636800",
+          "end_timestamp": ""
+        },
+        "odZnpi": {
+          "is_range": false,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "data": "1783872000",
+          "include_time": false,
+          "field_type": 2
+        },
+        "MLWHNh": {
+          "data": "EPC-013",
+          "field_type": 0
+        },
+        "t-zltF": {
+          "data": "Enterprise solution pages",
+          "field_type": 0
+        },
+        "wWZwhZ": {
+          "field_type": 0,
+          "data": "Core enterprise pages clearly explain deployment, security, migration, and administration."
+        },
+        "FdTE66": {
+          "field_type": 3,
+          "data": "E6f4"
+        },
+        "HenEdL": {
+          "data": "85",
+          "field_type": 1
+        },
+        "g7cCbA": {
+          "data": "Q0XT",
+          "field_type": 3
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Emma Davis"
+        },
+        "xExFP7": {
+          "data": "Website August",
+          "field_type": 1
+        }
+      }
+    },
+    {
+      "id": "7366fd08-f317-45de-91b0-4cfcf6c89b07",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "HenEdL": {
+          "data": "55",
+          "field_type": 1
+        },
+        "wWZwhZ": {
+          "data": "Website includes approved proof points, quantified outcomes, and customer examples.",
+          "field_type": 0
+        },
+        "g7cCbA": {
+          "data": "Q0XT",
+          "field_type": 3
+        },
+        "BCUV9A": {
+          "include_time": false,
+          "is_range": false,
+          "end_timestamp": "",
+          "field_type": 2,
+          "reminder_id": "",
+          "data": "1787846400"
+        },
+        "sMOS-G": {
+          "data": "XkEg",
+          "field_type": 3
+        },
+        "atWtix": {
+          "field_type": 0,
+          "data": "Jack Brown"
+        },
+        "xExFP7": {
+          "data": "Website August",
+          "field_type": 1
+        },
+        "odZnpi": {
+          "is_range": false,
+          "data": "1785081600",
+          "end_timestamp": "",
+          "include_time": false,
+          "reminder_id": "",
+          "field_type": 2
+        },
+        "oeyUnm": {
+          "field_type": 3,
+          "data": "ZKE-"
+        },
+        "t-zltF": {
+          "data": "Customer proof library",
+          "field_type": 0
+        },
+        "MLWHNh": {
+          "data": "EPC-014",
+          "field_type": 0
+        },
+        "FdTE66": {
+          "data": "E6f4",
+          "field_type": 3
+        }
+      }
+    }
+  ]
+}

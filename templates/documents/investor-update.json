@@ -1,0 +1,701 @@
+{
+  "template_id": "investor-update",
+  "order": 140,
+  "name": "Investor update",
+  "description": "\"The best founders write good and frequent updates because it reflects their own processes and attention to metrics and consistent growth,\" says Aaron Harris, Group Partner at Y Combinator.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"money_shopping\",\"iconName\":\"graph-bar-increase\",\"color\":\"0xFFA34AFD\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Startups"
+  ],
+  "author": "Notion",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Investor-update-bae3fd41-eab3-4961-b121-278db8951ff9",
+  "pages": {
+    "id": "bae3fd41-eab3-4961-b121-278db8951ff9",
+    "name": "Investor update",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"money_shopping\",\"iconName\":\"graph-bar-increase\",\"color\":\"0xFFA34AFD\"}"
+    },
+    "document": {
+      "page_id": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+      "blocks": {
+        "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a": {
+          "id": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "ty": "page",
+          "parent": "",
+          "children": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "external_id": "WJFsvP",
+          "external_type": "text",
+          "data": {
+            "selected_icon": "{\"groupName\":\"money_shopping\",\"iconName\":\"graph-bar-increase\",\"color\":\"0xFFA34AFD\"}",
+            "image_type": "1",
+            "cover_selection_type": "CoverType.file",
+            "cover_selection": "https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ0MjE4MzN8&ixlib=rb-4.0.3&q=80&w=1080"
+          }
+        },
+        "nPYrqT": {
+          "id": "nPYrqT",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "NvAcU0",
+          "external_id": "J1Us4F",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "tBpPdT": {
+          "id": "tBpPdT",
+          "ty": "divider",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "3-jHAU",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "d-suRs": {
+          "id": "d-suRs",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "HfWZVx",
+          "external_id": "hjT4WY",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "cWjeuk": {
+          "id": "cWjeuk",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "xuTLE6",
+          "external_id": "hcKQVk",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "ac5GNG": {
+          "id": "ac5GNG",
+          "ty": "divider",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "7Dz2Ml",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Y9luK6": {
+          "id": "Y9luK6",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "of2I-B",
+          "external_id": "8Cuepe",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "DFcOR8": {
+          "id": "DFcOR8",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "-NqLh5",
+          "external_id": "1MU5Zr",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "s4ea-k": {
+          "id": "s4ea-k",
+          "ty": "heading",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "zu37Hc",
+          "external_id": "dTkOS1",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "👁️ Lows"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "3Fq0Gc": {
+          "id": "3Fq0Gc",
+          "ty": "heading",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "axC-3f",
+          "external_id": "B4IhWN",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "📈 Key metrics for August"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "oNFsFM": {
+          "id": "oNFsFM",
+          "ty": "heading",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "qC_b6U",
+          "external_id": "QV4FSg",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "💬 Asks"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "0oyIhV": {
+          "id": "0oyIhV",
+          "ty": "divider",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "B4mo4R",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Deop6v": {
+          "id": "Deop6v",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "Y5J18u",
+          "external_id": "tdJ8zP",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "muxxSo": {
+          "id": "muxxSo",
+          "ty": "heading",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "FOpL-3",
+          "external_id": "WU8jkw",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "🚀 Highlights"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "cw7xH4": {
+          "id": "cw7xH4",
+          "ty": "divider",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "c1uBfe",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "rtGDcJ": {
+          "id": "rtGDcJ",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "YAn2eQ",
+          "external_id": "tbvslO",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "font_color": "0xff9e9e9e"
+                },
+                "insert": "Open the toggle to view more details."
+              }
+            ]
+          }
+        },
+        "SnWZf3": {
+          "id": "SnWZf3",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "4eDelf",
+          "external_id": "A_VZmM",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "font_color": "0xff9e9e9e"
+                },
+                "insert": "Open the toggle to view more details."
+              }
+            ]
+          }
+        },
+        "lnG8Vm": {
+          "id": "lnG8Vm",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "_DSBgD",
+          "external_id": "5prPU4",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "italic": true
+                },
+                "insert": "No longer want this update? Too frequent? Too long? Too short? Any questions or concerns? Please let me know."
+              }
+            ]
+          }
+        },
+        "qmsqlP": {
+          "id": "qmsqlP",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "3uMHM-",
+          "external_id": "u0hsu4",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "italic": true
+                },
+                "insert": "Cheers,"
+              }
+            ]
+          }
+        },
+        "XieMHV": {
+          "id": "XieMHV",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "-SaHlI",
+          "external_id": "WtKDLH",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "italic": true
+                },
+                "insert": "Founder"
+              }
+            ]
+          }
+        },
+        "gdg2lh": {
+          "id": "gdg2lh",
+          "ty": "toggle_list",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "5wTWTN",
+          "external_id": "D3xXCj",
+          "external_type": "text",
+          "data": {
+            "collapsed": true,
+            "delta": [
+              {
+                "insert": "Mobile app on App Store"
+              }
+            ]
+          }
+        },
+        "Wj5OTz": {
+          "id": "Wj5OTz",
+          "ty": "bulleted_list",
+          "parent": "gdg2lh",
+          "children": "aM5uOK",
+          "external_id": "Vp_-Xp",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "xxxxx downloads"
+              }
+            ]
+          }
+        },
+        "NPGdz8": {
+          "id": "NPGdz8",
+          "ty": "bulleted_list",
+          "parent": "gdg2lh",
+          "children": "XzIMKY",
+          "external_id": "jIpkk1",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "4.8/5.0 average ratings"
+              }
+            ]
+          }
+        },
+        "RLhMjw": {
+          "id": "RLhMjw",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "X_MhdF",
+          "external_id": "y5D2hO",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "hDFyCF": {
+          "id": "hDFyCF",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "u7-T4d",
+          "external_id": "F5oHkt",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "WM8ymD": {
+          "id": "WM8ymD",
+          "ty": "toggle_list",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "3rRPlh",
+          "external_id": "76Hd-c",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Have not been able to hire a designer"
+              }
+            ],
+            "collapsed": true
+          }
+        },
+        "MPnCrL": {
+          "id": "MPnCrL",
+          "ty": "paragraph",
+          "parent": "WM8ymD",
+          "children": "HExjzN",
+          "external_id": "A7l88A",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "font_color": "0xff9e9e9e"
+                },
+                "insert": "add more details here"
+              }
+            ]
+          }
+        },
+        "fpz2yk": {
+          "id": "fpz2yk",
+          "ty": "bulleted_list",
+          "parent": "WM8ymD",
+          "children": "EBhmlS",
+          "external_id": "JFv1Gj",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "0F5QQg": {
+          "id": "0F5QQg",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "fkZ9Cc",
+          "external_id": "uBj-Rt",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "font_color": "0xff9e9e9e"
+                },
+                "insert": "Open the toggle to view more details."
+              }
+            ]
+          }
+        },
+        "4Efbya": {
+          "id": "4Efbya",
+          "ty": "toggle_list",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "WtJl1W",
+          "external_id": "kn1kY3",
+          "external_type": "text",
+          "data": {
+            "collapsed": true,
+            "delta": [
+              {
+                "insert": "Total downloads 1M"
+              }
+            ]
+          }
+        },
+        "errqhA": {
+          "id": "errqhA",
+          "ty": "paragraph",
+          "parent": "4Efbya",
+          "children": "46btXz",
+          "external_id": "tmv_Bj",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Windows 50%"
+              }
+            ]
+          }
+        },
+        "kyrUeA": {
+          "id": "kyrUeA",
+          "ty": "toggle_list",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "M1O2bF",
+          "external_id": "f1LpyD",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Retention rate xx%"
+              }
+            ],
+            "collapsed": true
+          }
+        },
+        "znVKkb": {
+          "id": "znVKkb",
+          "ty": "image",
+          "parent": "kyrUeA",
+          "children": "41VaXs",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "align": "left",
+            "width": 437.1015625,
+            "image_type": 2,
+            "url": "https://images.unsplash.com/photo-1709734110054-3b0db38c959c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ0MjE2NTB8&ixlib=rb-4.0.3&q=80&w=1080"
+          }
+        },
+        "xqH8aT": {
+          "id": "xqH8aT",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "BTf-s9",
+          "external_id": "znWMgp",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "font_color": "0xff9e9e9e"
+                },
+                "insert": "Open the toggle to view more details."
+              }
+            ]
+          }
+        },
+        "gJUtnd": {
+          "id": "gJUtnd",
+          "ty": "toggle_list",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "iV9RMC",
+          "external_id": "wvB3fD",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Leads for a great Rust developer"
+              }
+            ],
+            "collapsed": true
+          }
+        },
+        "m3ckTv": {
+          "id": "m3ckTv",
+          "ty": "paragraph",
+          "parent": "gJUtnd",
+          "children": "5WB_uj",
+          "external_id": "e7mJ30",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "NhIMeB": {
+          "id": "NhIMeB",
+          "ty": "paragraph",
+          "parent": "gJUtnd",
+          "children": "pEcvdz",
+          "external_id": "zw6Fy_",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "font_color": "0xff9e9e9e"
+                },
+                "insert": "Add more details"
+              }
+            ]
+          }
+        },
+        "idVBn6": {
+          "id": "idVBn6",
+          "ty": "numbered_list",
+          "parent": "gJUtnd",
+          "children": "UNniKm",
+          "external_id": "BoJvi3",
+          "external_type": "text",
+          "data": {
+            "delta": [],
+            "number": 1
+          }
+        },
+        "QEHv1N": {
+          "id": "QEHv1N",
+          "ty": "paragraph",
+          "parent": "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a",
+          "children": "JD1tj1",
+          "external_id": "f856ZW",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "44471d3b-244b-5bf3-90b3-a8a6f78c9c4a": [
+            "nPYrqT",
+            "oNFsFM",
+            "tBpPdT",
+            "xqH8aT",
+            "gJUtnd",
+            "d-suRs",
+            "cWjeuk",
+            "3Fq0Gc",
+            "ac5GNG",
+            "0F5QQg",
+            "4Efbya",
+            "kyrUeA",
+            "Y9luK6",
+            "DFcOR8",
+            "s4ea-k",
+            "0oyIhV",
+            "SnWZf3",
+            "WM8ymD",
+            "Deop6v",
+            "QEHv1N",
+            "muxxSo",
+            "cw7xH4",
+            "rtGDcJ",
+            "gdg2lh",
+            "RLhMjw",
+            "hDFyCF",
+            "lnG8Vm",
+            "qmsqlP",
+            "XieMHV"
+          ],
+          "NvAcU0": [],
+          "3-jHAU": [],
+          "HfWZVx": [],
+          "xuTLE6": [],
+          "7Dz2Ml": [],
+          "of2I-B": [],
+          "-NqLh5": [],
+          "zu37Hc": [],
+          "axC-3f": [],
+          "qC_b6U": [],
+          "B4mo4R": [],
+          "Y5J18u": [],
+          "FOpL-3": [],
+          "c1uBfe": [],
+          "YAn2eQ": [],
+          "4eDelf": [],
+          "_DSBgD": [],
+          "3uMHM-": [],
+          "-SaHlI": [],
+          "5wTWTN": [
+            "Wj5OTz",
+            "NPGdz8"
+          ],
+          "aM5uOK": [],
+          "XzIMKY": [],
+          "X_MhdF": [],
+          "u7-T4d": [],
+          "3rRPlh": [
+            "MPnCrL",
+            "fpz2yk"
+          ],
+          "HExjzN": [],
+          "EBhmlS": [],
+          "fkZ9Cc": [],
+          "WtJl1W": [
+            "errqhA"
+          ],
+          "46btXz": [],
+          "M1O2bF": [
+            "znVKkb"
+          ],
+          "41VaXs": [],
+          "BTf-s9": [],
+          "iV9RMC": [
+            "NhIMeB",
+            "idVBn6",
+            "m3ckTv"
+          ],
+          "5WB_uj": [],
+          "pEcvdz": [],
+          "UNniKm": [],
+          "JD1tj1": []
+        },
+        "text_map": {
+          "J1Us4F": "[]",
+          "hjT4WY": "[]",
+          "hcKQVk": "[]",
+          "8Cuepe": "[]",
+          "1MU5Zr": "[]",
+          "dTkOS1": "[{\"insert\":\"👁️ Lows\"}]",
+          "B4IhWN": "[{\"insert\":\"📈 Key metrics for August\"}]",
+          "QV4FSg": "[{\"insert\":\"💬 Asks\"}]",
+          "tdJ8zP": "[]",
+          "WU8jkw": "[{\"insert\":\"🚀 Highlights\"}]",
+          "tbvslO": "[{\"insert\":\"Open the toggle to view more details.\",\"attributes\":{\"font_color\":\"0xff9e9e9e\"}}]",
+          "A_VZmM": "[{\"insert\":\"Open the toggle to view more details.\",\"attributes\":{\"font_color\":\"0xff9e9e9e\"}}]",
+          "5prPU4": "[{\"insert\":\"No longer want this update? Too frequent? Too long? Too short? Any questions or concerns? Please let me know.\",\"attributes\":{\"italic\":true}}]",
+          "u0hsu4": "[{\"insert\":\"Cheers,\",\"attributes\":{\"italic\":true}}]",
+          "WtKDLH": "[{\"insert\":\"Founder\",\"attributes\":{\"italic\":true}}]",
+          "D3xXCj": "[{\"insert\":\"Mobile app on App Store\"}]",
+          "Vp_-Xp": "[{\"insert\":\"xxxxx downloads\"}]",
+          "jIpkk1": "[{\"insert\":\"4.8/5.0 average ratings\"}]",
+          "y5D2hO": "[]",
+          "F5oHkt": "[]",
+          "76Hd-c": "[{\"insert\":\"Have not been able to hire a designer\"}]",
+          "A7l88A": "[{\"insert\":\"add more details here\",\"attributes\":{\"font_color\":\"0xff9e9e9e\"}}]",
+          "JFv1Gj": "[]",
+          "uBj-Rt": "[{\"insert\":\"Open the toggle to view more details.\",\"attributes\":{\"font_color\":\"0xff9e9e9e\"}}]",
+          "kn1kY3": "[{\"insert\":\"Total downloads 1M\"}]",
+          "tmv_Bj": "[{\"insert\":\"Windows 50%\"}]",
+          "f1LpyD": "[{\"insert\":\"Retention rate xx%\"}]",
+          "znWMgp": "[{\"insert\":\"Open the toggle to view more details.\",\"attributes\":{\"font_color\":\"0xff9e9e9e\"}}]",
+          "wvB3fD": "[{\"insert\":\"Leads for a great Rust developer\"}]",
+          "e7mJ30": "[]",
+          "zw6Fy_": "[{\"insert\":\"Add more details\",\"attributes\":{\"font_color\":\"0xff9e9e9e\"}}]",
+          "BoJvi3": "[]",
+          "f856ZW": "[]"
+        }
+      }
+    },
+    "children": []
+  }
+}

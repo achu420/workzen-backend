@@ -1,0 +1,1594 @@
+{
+  "template_id": "event-planning-sop",
+  "order": 7,
+  "name": "Event Planning SOP",
+  "description": "A standard operating procedure for planning events.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"entertainment\",\"iconName\":\"party-popper\",\"color\":\"0xFFFFBA00\"}"
+  },
+  "pages": {
+    "id": "a4b77d13-6a2c-4ed6-8c80-d4f247b5ba7b",
+    "name": "Event Planning SOP",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"entertainment\",\"iconName\":\"party-popper\",\"color\":\"0xFFFFBA00\"}"
+    },
+    "document": {
+      "page_id": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+      "blocks": {
+        "zMQGKO": {
+          "id": "zMQGKO",
+          "ty": "paragraph",
+          "parent": "DCd0JY",
+          "children": "7q6ajO",
+          "external_id": "BsgL9T",
+          "external_type": "text",
+          "data": {}
+        },
+        "J4KlAT": {
+          "id": "J4KlAT",
+          "ty": "simple_table_cell",
+          "parent": "2EA31M",
+          "children": "IKgBCd",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "AHqKUF": {
+          "id": "AHqKUF",
+          "ty": "simple_table_cell",
+          "parent": "hAo8E6",
+          "children": "3vC75R",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "FkwsnL": {
+          "id": "FkwsnL",
+          "ty": "simple_table_cell",
+          "parent": "vE9kFF",
+          "children": "1ft54W",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vBpxF_": {
+          "id": "vBpxF_",
+          "ty": "paragraph",
+          "parent": "AnWUyX",
+          "children": "Ga2UlM",
+          "external_id": "NXjzgA",
+          "external_type": "text",
+          "data": {}
+        },
+        "gXZWqG": {
+          "id": "gXZWqG",
+          "ty": "simple_table_cell",
+          "parent": "RjalsU",
+          "children": "d3RjE2",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "E9nLbg": {
+          "id": "E9nLbg",
+          "ty": "simple_table_cell",
+          "parent": "t_G7xM",
+          "children": "2ZSfGL",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "-YAaUr": {
+          "id": "-YAaUr",
+          "ty": "simple_table_row",
+          "parent": "LxGcgr",
+          "children": "etzx9w",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "F-MVZG": {
+          "id": "F-MVZG",
+          "ty": "simple_table_row",
+          "parent": "AzULrB",
+          "children": "xzoe0H",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "KxP7KH": {
+          "id": "KxP7KH",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "095eSu",
+          "external_id": "kUoAEY",
+          "external_type": "text",
+          "data": {}
+        },
+        "VO-egv": {
+          "id": "VO-egv",
+          "ty": "paragraph",
+          "parent": "HxMlKE",
+          "children": "s2WB5j",
+          "external_id": "5BxCdF",
+          "external_type": "text",
+          "data": {}
+        },
+        "hmOaOI": {
+          "id": "hmOaOI",
+          "ty": "simple_table_row",
+          "parent": "Yy1xbm",
+          "children": "i3CHld",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "t_G7xM": {
+          "id": "t_G7xM",
+          "ty": "simple_table_row",
+          "parent": "8ZM9GQ",
+          "children": "1zBbzF",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "duDwJf": {
+          "id": "duDwJf",
+          "ty": "simple_table_cell",
+          "parent": "bAujkL",
+          "children": "waZ_Bk",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "sDGqD7": {
+          "id": "sDGqD7",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "8oZwqt",
+          "external_id": "bEdI6T",
+          "external_type": "text",
+          "data": {}
+        },
+        "AdQxsr": {
+          "id": "AdQxsr",
+          "ty": "paragraph",
+          "parent": "Di8Nco",
+          "children": "xWc25v",
+          "external_id": "KOYrVg",
+          "external_type": "text",
+          "data": {}
+        },
+        "ukyBOn": {
+          "id": "ukyBOn",
+          "ty": "simple_table_cell",
+          "parent": "FMgfpn",
+          "children": "COI4Sn",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "9REd4H": {
+          "id": "9REd4H",
+          "ty": "simple_table_cell",
+          "parent": "35_zI3",
+          "children": "KwNjgu",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "bAujkL": {
+          "id": "bAujkL",
+          "ty": "simple_table_row",
+          "parent": "6k2ti_",
+          "children": "kqFu6w",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "YqhEUd": {
+          "id": "YqhEUd",
+          "ty": "paragraph",
+          "parent": "AHqKUF",
+          "children": "pxLUy1",
+          "external_id": "omAsQo",
+          "external_type": "text",
+          "data": {}
+        },
+        "60fQI_": {
+          "id": "60fQI_",
+          "ty": "simple_table_cell",
+          "parent": "nNvCL7",
+          "children": "TZsg1m",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Z7pkOG": {
+          "id": "Z7pkOG",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "Ik5JN7",
+          "external_id": "q94POu",
+          "external_type": "text",
+          "data": {}
+        },
+        "nNvCL7": {
+          "id": "nNvCL7",
+          "ty": "simple_table_row",
+          "parent": "Yy1xbm",
+          "children": "DMWUAM",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "absiMS": {
+          "id": "absiMS",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "u0Zjj5",
+          "external_id": "TK_3Vz",
+          "external_type": "text",
+          "data": {}
+        },
+        "mRSUgF": {
+          "id": "mRSUgF",
+          "ty": "simple_table_row",
+          "parent": "Yy1xbm",
+          "children": "5HbrL8",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Qs8SCo": {
+          "id": "Qs8SCo",
+          "ty": "simple_table_cell",
+          "parent": "-YAaUr",
+          "children": "bfW5TJ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "SBkvjB": {
+          "id": "SBkvjB",
+          "ty": "paragraph",
+          "parent": "l08sVI",
+          "children": "ENgBvo",
+          "external_id": "Y-wzI0",
+          "external_type": "text",
+          "data": {}
+        },
+        "eZ9Uns": {
+          "id": "eZ9Uns",
+          "ty": "paragraph",
+          "parent": "hJJpxb",
+          "children": "ig_DMa",
+          "external_id": "FQGvZN",
+          "external_type": "text",
+          "data": {}
+        },
+        "zPQxoq": {
+          "id": "zPQxoq",
+          "ty": "simple_table_row",
+          "parent": "8ZM9GQ",
+          "children": "Mq4VLo",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "ZfGbKZ": {
+          "id": "ZfGbKZ",
+          "ty": "callout",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "aZdezA",
+          "external_id": "uI9iA6",
+          "external_type": "text",
+          "data": {
+            "bgColor": "appflowy_them_color_tint6",
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"text-flow-rows\"}",
+            "icon_type": "icon",
+            "textColor": "appflowy_them_color_tint6"
+          }
+        },
+        "fhdLCC": {
+          "id": "fhdLCC",
+          "ty": "paragraph",
+          "parent": "ukyBOn",
+          "children": "op6aZy",
+          "external_id": "Uq5F2v",
+          "external_type": "text",
+          "data": {}
+        },
+        "dLw7k1": {
+          "id": "dLw7k1",
+          "ty": "simple_table_cell",
+          "parent": "RVw22s",
+          "children": "317SjA",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "zAOYp6": {
+          "id": "zAOYp6",
+          "ty": "paragraph",
+          "parent": "t_oqzQ",
+          "children": "pj9VCD",
+          "external_id": "CTQQb2",
+          "external_type": "text",
+          "data": {}
+        },
+        "u0CLSm": {
+          "id": "u0CLSm",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "MLNEfc",
+          "external_id": "vjfE9b",
+          "external_type": "text",
+          "data": {}
+        },
+        "ByFRsG": {
+          "id": "ByFRsG",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "YkPcjq",
+          "external_id": "Mhm3-2",
+          "external_type": "text",
+          "data": {
+            "rowPosition": 0,
+            "height": 8,
+            "colPosition": 0,
+            "width": 160
+          }
+        },
+        "6rSjxW": {
+          "id": "6rSjxW",
+          "ty": "paragraph",
+          "parent": "dLw7k1",
+          "children": "fx3kNS",
+          "external_id": "xpgFXO",
+          "external_type": "text",
+          "data": {}
+        },
+        "Av1aIj": {
+          "id": "Av1aIj",
+          "ty": "simple_table_cell",
+          "parent": "vE9kFF",
+          "children": "qw6bVc",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "2vxogE": {
+          "id": "2vxogE",
+          "ty": "paragraph",
+          "parent": "JXF2NY",
+          "children": "5PFvDX",
+          "external_id": "XKhgAg",
+          "external_type": "text",
+          "data": {}
+        },
+        "HbDzwN": {
+          "id": "HbDzwN",
+          "ty": "heading",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "1uAeYq",
+          "external_id": "eiEFgv",
+          "external_type": "text",
+          "data": {
+            "level": 2
+          }
+        },
+        "a7JiJp": {
+          "id": "a7JiJp",
+          "ty": "simple_table_cell",
+          "parent": "hAo8E6",
+          "children": "PAD-uO",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "JgG4Hj": {
+          "id": "JgG4Hj",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "ThFu4j",
+          "external_id": "z9ZKJJ",
+          "external_type": "text",
+          "data": {}
+        },
+        "hJJpxb": {
+          "id": "hJJpxb",
+          "ty": "simple_table_cell",
+          "parent": "mRSUgF",
+          "children": "A7xS_I",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Di8Nco": {
+          "id": "Di8Nco",
+          "ty": "simple_table_cell",
+          "parent": "1CpcPb",
+          "children": "9eMHHx",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "TnqAC5": {
+          "id": "TnqAC5",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "7Lp7gb",
+          "external_id": "qnJ9uE",
+          "external_type": "text",
+          "data": {}
+        },
+        "x9bCKF": {
+          "id": "x9bCKF",
+          "ty": "simple_table_row",
+          "parent": "8ZM9GQ",
+          "children": "7ppaB5",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "ELV8-L": {
+          "id": "ELV8-L",
+          "ty": "simple_table_cell",
+          "parent": "hmOaOI",
+          "children": "8H7byt",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "uojdq0": {
+          "id": "uojdq0",
+          "ty": "paragraph",
+          "parent": "IDZicl",
+          "children": "RPNrgP",
+          "external_id": "wlfmdh",
+          "external_type": "text",
+          "data": {}
+        },
+        "IDZicl": {
+          "id": "IDZicl",
+          "ty": "simple_table_cell",
+          "parent": "hmOaOI",
+          "children": "sBf1W9",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "JXF2NY": {
+          "id": "JXF2NY",
+          "ty": "simple_table_cell",
+          "parent": "RjalsU",
+          "children": "oUsdit",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "ZsnfWe": {
+          "id": "ZsnfWe",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "timset",
+          "external_id": "84-9PP",
+          "external_type": "text",
+          "data": {}
+        },
+        "0L-NuY": {
+          "id": "0L-NuY",
+          "ty": "simple_table_cell",
+          "parent": "F-MVZG",
+          "children": "cB472J",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "glhgfl": {
+          "id": "glhgfl",
+          "ty": "paragraph",
+          "parent": "duDwJf",
+          "children": "ogD8SD",
+          "external_id": "HsDWie",
+          "external_type": "text",
+          "data": {}
+        },
+        "qZgy66": {
+          "id": "qZgy66",
+          "ty": "simple_table_cell",
+          "parent": "FMgfpn",
+          "children": "2EyUDk",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "AzULrB": {
+          "id": "AzULrB",
+          "ty": "simple_table",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "Zqybjz",
+          "external_id": "89e01B",
+          "external_type": "text",
+          "data": {
+            "row_colors": {
+              "0": "appflowy_them_color_tint4"
+            },
+            "column_widths": {
+              "0": 217.5703125,
+              "1": 525.203125
+            },
+            "enable_header_column": false,
+            "enable_header_row": true,
+            "distribute_column_widths_evenly": false
+          }
+        },
+        "O8QaDm": {
+          "id": "O8QaDm",
+          "ty": "heading",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "KNOGUH",
+          "external_id": "I8hO7a",
+          "external_type": "text",
+          "data": {
+            "level": 2
+          }
+        },
+        "z7WIwD": {
+          "id": "z7WIwD",
+          "ty": "paragraph",
+          "parent": "a7JiJp",
+          "children": "dHjH0-",
+          "external_id": "EuGdlR",
+          "external_type": "text",
+          "data": {}
+        },
+        "R2CTgE": {
+          "id": "R2CTgE",
+          "ty": "paragraph",
+          "parent": "Vi9QJ6",
+          "children": "AgV9sH",
+          "external_id": "ygo7dg",
+          "external_type": "text",
+          "data": {}
+        },
+        "NiPP3n": {
+          "id": "NiPP3n",
+          "ty": "paragraph",
+          "parent": "K5ZNl8",
+          "children": "rj4x4P",
+          "external_id": "OcXlfY",
+          "external_type": "text",
+          "data": {}
+        },
+        "FPSKDe": {
+          "id": "FPSKDe",
+          "ty": "callout",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "edgnRe",
+          "external_id": "s6GRs5",
+          "external_type": "text",
+          "data": {
+            "bgColor": "appflowy_them_color_tint6",
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"text-flow-rows\"}",
+            "icon_type": "icon",
+            "textColor": "appflowy_them_color_tint6"
+          }
+        },
+        "hAo8E6": {
+          "id": "hAo8E6",
+          "ty": "simple_table_row",
+          "parent": "LxGcgr",
+          "children": "KN0LLZ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "p-x_IC": {
+          "id": "p-x_IC",
+          "ty": "simple_table_cell",
+          "parent": "2EA31M",
+          "children": "0SILPB",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "jqyyzJ": {
+          "id": "jqyyzJ",
+          "ty": "paragraph",
+          "parent": "qZgy66",
+          "children": "DlDfZd",
+          "external_id": "DUzn96",
+          "external_type": "text",
+          "data": {}
+        },
+        "fGzFd_": {
+          "id": "fGzFd_",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "vfXwsW",
+          "external_id": "ssfnzG",
+          "external_type": "text",
+          "data": {
+            "colPosition": 1,
+            "rowPosition": 0,
+            "width": 160,
+            "height": 8
+          }
+        },
+        "fJjAg3": {
+          "id": "fJjAg3",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "BsUQcU",
+          "external_id": "r4bPAu",
+          "external_type": "text",
+          "data": {}
+        },
+        "J75pob": {
+          "id": "J75pob",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "0Rj323",
+          "external_id": "m0NH1W",
+          "external_type": "text",
+          "data": {}
+        },
+        "Yy1xbm": {
+          "id": "Yy1xbm",
+          "ty": "simple_table",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "5Bhcqh",
+          "external_id": "lw1LUz",
+          "external_type": "text",
+          "data": {
+            "enable_header_row": true,
+            "enable_header_column": false,
+            "row_colors": {
+              "0": "appflowy_them_color_tint4"
+            },
+            "distribute_column_widths_evenly": false,
+            "column_widths": {
+              "0": 223.35546875,
+              "1": 521.453125
+            }
+          }
+        },
+        "QsuTvb": {
+          "id": "QsuTvb",
+          "ty": "simple_table_cell",
+          "parent": "zPQxoq",
+          "children": "3RSd16",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "KGmUB9": {
+          "id": "KGmUB9",
+          "ty": "simple_table_cell",
+          "parent": "RVw22s",
+          "children": "o-lyOl",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vhXsdh": {
+          "id": "vhXsdh",
+          "ty": "simple_table_cell",
+          "parent": "bAujkL",
+          "children": "lmuQkZ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vUfLG6": {
+          "id": "vUfLG6",
+          "ty": "paragraph",
+          "parent": "p-x_IC",
+          "children": "U8MCgo",
+          "external_id": "FH5bZ9",
+          "external_type": "text",
+          "data": {}
+        },
+        "Sk4_PW": {
+          "id": "Sk4_PW",
+          "ty": "paragraph",
+          "parent": "J4KlAT",
+          "children": "C-hYZX",
+          "external_id": "zapbBL",
+          "external_type": "text",
+          "data": {}
+        },
+        "LiWbMl": {
+          "id": "LiWbMl",
+          "ty": "paragraph",
+          "parent": "ryJw4L",
+          "children": "GK72tT",
+          "external_id": "dxriU3",
+          "external_type": "text",
+          "data": {}
+        },
+        "6k2ti_": {
+          "id": "6k2ti_",
+          "ty": "simple_table",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "aIxnRO",
+          "external_id": "cpIzSk",
+          "external_type": "text",
+          "data": {
+            "row_colors": {
+              "0": "appflowy_them_color_tint4"
+            },
+            "enable_header_row": true,
+            "distribute_column_widths_evenly": false,
+            "column_widths": {
+              "0": 229.140625,
+              "1": 519.953125
+            },
+            "enable_header_column": false
+          }
+        },
+        "ohtwYZ": {
+          "id": "ohtwYZ",
+          "ty": "paragraph",
+          "parent": "gXZWqG",
+          "children": "O4dbjs",
+          "external_id": "NZq9IR",
+          "external_type": "text",
+          "data": {}
+        },
+        "LPQVVI": {
+          "id": "LPQVVI",
+          "ty": "heading",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "mOcWDQ",
+          "external_id": "dKYVuH",
+          "external_type": "text",
+          "data": {
+            "level": 2
+          }
+        },
+        "JyP2L7": {
+          "id": "JyP2L7",
+          "ty": "paragraph",
+          "parent": "QsuTvb",
+          "children": "O0eZxN",
+          "external_id": "T2PXIF",
+          "external_type": "text",
+          "data": {}
+        },
+        "FMgfpn": {
+          "id": "FMgfpn",
+          "ty": "simple_table_row",
+          "parent": "AzULrB",
+          "children": "1QyxtX",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vE9kFF": {
+          "id": "vE9kFF",
+          "ty": "simple_table_row",
+          "parent": "AzULrB",
+          "children": "RrDrg9",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "RVw22s": {
+          "id": "RVw22s",
+          "ty": "simple_table_row",
+          "parent": "LxGcgr",
+          "children": "52G0Y8",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "35_zI3": {
+          "id": "35_zI3",
+          "ty": "simple_table_row",
+          "parent": "6k2ti_",
+          "children": "7gjg1q",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "1CpcPb": {
+          "id": "1CpcPb",
+          "ty": "simple_table_row",
+          "parent": "8ZM9GQ",
+          "children": "y0kiLM",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "LxGcgr": {
+          "id": "LxGcgr",
+          "ty": "simple_table",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "Xh3hjS",
+          "external_id": "5I7lvi",
+          "external_type": "text",
+          "data": {
+            "distribute_column_widths_evenly": false,
+            "enable_header_row": true,
+            "row_colors": {
+              "0": "appflowy_them_color_tint4"
+            },
+            "enable_header_column": false,
+            "column_widths": {
+              "0": 225.87890625,
+              "1": 528.484375
+            }
+          }
+        },
+        "8ZM9GQ": {
+          "id": "8ZM9GQ",
+          "ty": "simple_table",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "o-GsLz",
+          "external_id": "8V-NG2",
+          "external_type": "text",
+          "data": {
+            "distribute_column_widths_evenly": false,
+            "column_widths": {
+              "0": 218.8984375,
+              "1": 519.18359375
+            },
+            "enable_header_column": false,
+            "row_colors": {
+              "0": "appflowy_them_color_tint4"
+            },
+            "enable_header_row": true
+          }
+        },
+        "6-V9Uz": {
+          "id": "6-V9Uz",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "0B-0C2",
+          "external_id": "26mYuS",
+          "external_type": "text",
+          "data": {}
+        },
+        "Rd3F7y": {
+          "id": "Rd3F7y",
+          "ty": "callout",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "uypPtG",
+          "external_id": "qb7UIT",
+          "external_type": "text",
+          "data": {
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"text-flow-rows\"}",
+            "icon_type": "icon",
+            "bgColor": "appflowy_them_color_tint6",
+            "textColor": "appflowy_them_color_tint6"
+          }
+        },
+        "k9r80u": {
+          "id": "k9r80u",
+          "ty": "paragraph",
+          "parent": "CGsbX6",
+          "children": "-oJ2wk",
+          "external_id": "ejoQso",
+          "external_type": "text",
+          "data": {}
+        },
+        "GwTK4c": {
+          "id": "GwTK4c",
+          "ty": "heading",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "Yjk_Q2",
+          "external_id": "hBsuGN",
+          "external_type": "text",
+          "data": {
+            "level": 2
+          }
+        },
+        "SFP1v6": {
+          "id": "SFP1v6",
+          "ty": "callout",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "5CpJ7F",
+          "external_id": "g8zi8L",
+          "external_type": "text",
+          "data": {
+            "textColor": "appflowy_them_color_tint6",
+            "bgColor": "appflowy_them_color_tint6",
+            "icon_type": "icon",
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"text-flow-rows\"}"
+          }
+        },
+        "PdS51u": {
+          "id": "PdS51u",
+          "ty": "paragraph",
+          "parent": "9REd4H",
+          "children": "u3-86-",
+          "external_id": "5QYPZm",
+          "external_type": "text",
+          "data": {}
+        },
+        "d9b9NX": {
+          "id": "d9b9NX",
+          "ty": "heading",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "x0yoVJ",
+          "external_id": "ozepF6",
+          "external_type": "text",
+          "data": {
+            "level": 2
+          }
+        },
+        "LmsdsY": {
+          "id": "LmsdsY",
+          "ty": "paragraph",
+          "parent": "E9nLbg",
+          "children": "ZeCd_1",
+          "external_id": "es4qax",
+          "external_type": "text",
+          "data": {}
+        },
+        "RY5Lia": {
+          "id": "RY5Lia",
+          "ty": "paragraph",
+          "parent": "vhXsdh",
+          "children": "4Ovezl",
+          "external_id": "4ceInP",
+          "external_type": "text",
+          "data": {}
+        },
+        "k3xfa_": {
+          "id": "k3xfa_",
+          "ty": "paragraph",
+          "parent": "FkwsnL",
+          "children": "2T0eEZ",
+          "external_id": "2o4wrv",
+          "external_type": "text",
+          "data": {}
+        },
+        "iRY7t6": {
+          "id": "iRY7t6",
+          "ty": "simple_table_cell",
+          "parent": "35_zI3",
+          "children": "N33phZ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "e1Wjnu": {
+          "id": "e1Wjnu",
+          "ty": "paragraph",
+          "parent": "iRY7t6",
+          "children": "xh8ROa",
+          "external_id": "c2mOPQ",
+          "external_type": "text",
+          "data": {}
+        },
+        "32Czc1": {
+          "id": "32Czc1",
+          "ty": "paragraph",
+          "parent": "Qs8SCo",
+          "children": "mITGzz",
+          "external_id": "yGKl_g",
+          "external_type": "text",
+          "data": {}
+        },
+        "CGsbX6": {
+          "id": "CGsbX6",
+          "ty": "simple_table_cell",
+          "parent": "E_Oq1_",
+          "children": "RIwm_g",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "AnWUyX": {
+          "id": "AnWUyX",
+          "ty": "simple_table_cell",
+          "parent": "mRSUgF",
+          "children": "52yRxP",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "vfCv_g": {
+          "id": "vfCv_g",
+          "ty": "paragraph",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "2Jf53t",
+          "external_id": "SVGyVY",
+          "external_type": "text",
+          "data": {}
+        },
+        "zVIiyy": {
+          "id": "zVIiyy",
+          "ty": "paragraph",
+          "parent": "Ke5N4Z",
+          "children": "sONrnW",
+          "external_id": "fyIeGh",
+          "external_type": "text",
+          "data": {}
+        },
+        "xeC209": {
+          "id": "xeC209",
+          "ty": "paragraph",
+          "parent": "0L-NuY",
+          "children": "2kOnT2",
+          "external_id": "jAtraG",
+          "external_type": "text",
+          "data": {}
+        },
+        "2EA31M": {
+          "id": "2EA31M",
+          "ty": "simple_table_row",
+          "parent": "6k2ti_",
+          "children": "_sX4Hk",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "DCd0JY": {
+          "id": "DCd0JY",
+          "ty": "simple_table_cell",
+          "parent": "x9bCKF",
+          "children": "ahFNSf",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Lb3LHZ": {
+          "id": "Lb3LHZ",
+          "ty": "heading",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "D95VUr",
+          "external_id": "9FsDiv",
+          "external_type": "text",
+          "data": {
+            "level": 1
+          }
+        },
+        "Vi9QJ6": {
+          "id": "Vi9QJ6",
+          "ty": "simple_table_cell",
+          "parent": "t_G7xM",
+          "children": "dh3fLv",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "RjalsU": {
+          "id": "RjalsU",
+          "ty": "simple_table_row",
+          "parent": "AzULrB",
+          "children": "i3TNS9",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "E_Oq1_": {
+          "id": "E_Oq1_",
+          "ty": "simple_table_row",
+          "parent": "6k2ti_",
+          "children": "JZm0EC",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Ke5N4Z": {
+          "id": "Ke5N4Z",
+          "ty": "simple_table_cell",
+          "parent": "x9bCKF",
+          "children": "WJRugB",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "unOVln": {
+          "id": "unOVln",
+          "ty": "callout",
+          "parent": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "children": "ebrr52",
+          "external_id": "SlL-Pd",
+          "external_type": "text",
+          "data": {
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"text-flow-rows\"}",
+            "bgColor": "appflowy_them_color_tint6",
+            "textColor": "appflowy_them_color_tint6",
+            "icon_type": "icon"
+          }
+        },
+        "37947d6c-0bd1-5794-98c2-6241bbe05f7c": {
+          "id": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "ty": "page",
+          "parent": "",
+          "children": "37947d6c-0bd1-5794-98c2-6241bbe05f7c",
+          "external_id": "bfQyQn",
+          "external_type": "text",
+          "data": {
+            "cover_selection": "0xffffefe3",
+            "colDefaultWidth": 160,
+            "colsHeight": 44,
+            "colMinimumWidth": 40,
+            "selected_icon": "{\"groupName\":\"entertainment\",\"iconName\":\"party-popper\",\"color\":\"0xFFFFBA00\"}",
+            "rowDefaultHeight": 40,
+            "cover_selection_type": "CoverType.color",
+            "colsLen": 2,
+            "rowsLen": 1,
+            "image_type": "1"
+          }
+        },
+        "MvTHtf": {
+          "id": "MvTHtf",
+          "ty": "paragraph",
+          "parent": "KGmUB9",
+          "children": "PyTrm1",
+          "external_id": "IIxhEz",
+          "external_type": "text",
+          "data": {}
+        },
+        "ryJw4L": {
+          "id": "ryJw4L",
+          "ty": "simple_table_cell",
+          "parent": "F-MVZG",
+          "children": "6j1exR",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "l08sVI": {
+          "id": "l08sVI",
+          "ty": "simple_table_cell",
+          "parent": "zPQxoq",
+          "children": "cLMHJk",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "_DfImy": {
+          "id": "_DfImy",
+          "ty": "paragraph",
+          "parent": "60fQI_",
+          "children": "ga1J_x",
+          "external_id": "ishdAw",
+          "external_type": "text",
+          "data": {}
+        },
+        "HxMlKE": {
+          "id": "HxMlKE",
+          "ty": "simple_table_cell",
+          "parent": "nNvCL7",
+          "children": "tQVDy7",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "K5ZNl8": {
+          "id": "K5ZNl8",
+          "ty": "simple_table_cell",
+          "parent": "-YAaUr",
+          "children": "_le9bb",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "Ba6GoH": {
+          "id": "Ba6GoH",
+          "ty": "simple_table_cell",
+          "parent": "E_Oq1_",
+          "children": "2-vaDJ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "t_oqzQ": {
+          "id": "t_oqzQ",
+          "ty": "simple_table_cell",
+          "parent": "1CpcPb",
+          "children": "dkhAoK",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "oG7Y2w": {
+          "id": "oG7Y2w",
+          "ty": "paragraph",
+          "parent": "Ba6GoH",
+          "children": "ly1kXT",
+          "external_id": "opO26L",
+          "external_type": "text",
+          "data": {}
+        },
+        "rdUhCv": {
+          "id": "rdUhCv",
+          "ty": "paragraph",
+          "parent": "Av1aIj",
+          "children": "0rXrup",
+          "external_id": "9u3tNE",
+          "external_type": "text",
+          "data": {}
+        },
+        "wUP7iz": {
+          "id": "wUP7iz",
+          "ty": "paragraph",
+          "parent": "ELV8-L",
+          "children": "DrDRcK",
+          "external_id": "aoT7_y",
+          "external_type": "text",
+          "data": {}
+        }
+      },
+      "meta": {
+        "children_map": {
+          "2kOnT2": [],
+          "37947d6c-0bd1-5794-98c2-6241bbe05f7c": [
+            "ByFRsG",
+            "fGzFd_",
+            "Lb3LHZ",
+            "ZfGbKZ",
+            "TnqAC5",
+            "AzULrB",
+            "HbDzwN",
+            "vfCv_g",
+            "unOVln",
+            "Z7pkOG",
+            "8ZM9GQ",
+            "d9b9NX",
+            "sDGqD7",
+            "SFP1v6",
+            "6-V9Uz",
+            "Yy1xbm",
+            "O8QaDm",
+            "J75pob",
+            "ZsnfWe",
+            "GwTK4c",
+            "absiMS",
+            "FPSKDe",
+            "u0CLSm",
+            "6k2ti_",
+            "LPQVVI",
+            "JgG4Hj",
+            "Rd3F7y",
+            "fJjAg3",
+            "LxGcgr",
+            "KxP7KH"
+          ],
+          "op6aZy": [],
+          "3vC75R": [
+            "YqhEUd"
+          ],
+          "o-lyOl": [
+            "MvTHtf"
+          ],
+          "xWc25v": [],
+          "GK72tT": [],
+          "9eMHHx": [
+            "AdQxsr"
+          ],
+          "tQVDy7": [
+            "VO-egv"
+          ],
+          "IKgBCd": [
+            "Sk4_PW"
+          ],
+          "Xh3hjS": [
+            "-YAaUr",
+            "hAo8E6",
+            "RVw22s"
+          ],
+          "aZdezA": [],
+          "y0kiLM": [
+            "Di8Nco",
+            "t_oqzQ"
+          ],
+          "1zBbzF": [
+            "Vi9QJ6",
+            "E9nLbg"
+          ],
+          "oUsdit": [
+            "2vxogE"
+          ],
+          "sONrnW": [],
+          "xzoe0H": [
+            "0L-NuY",
+            "ryJw4L"
+          ],
+          "lmuQkZ": [
+            "RY5Lia"
+          ],
+          "x0yoVJ": [],
+          "sBf1W9": [
+            "uojdq0"
+          ],
+          "DrDRcK": [],
+          "dkhAoK": [
+            "zAOYp6"
+          ],
+          "TZsg1m": [
+            "_DfImy"
+          ],
+          "1QyxtX": [
+            "ukyBOn",
+            "qZgy66"
+          ],
+          "BsUQcU": [],
+          "pj9VCD": [],
+          "MLNEfc": [],
+          "ig_DMa": [],
+          "317SjA": [
+            "6rSjxW"
+          ],
+          "C-hYZX": [],
+          "N33phZ": [
+            "e1Wjnu"
+          ],
+          "Zqybjz": [
+            "F-MVZG",
+            "RjalsU",
+            "FMgfpn",
+            "vE9kFF"
+          ],
+          "vfXwsW": [],
+          "DMWUAM": [
+            "60fQI_",
+            "HxMlKE"
+          ],
+          "bfW5TJ": [
+            "32Czc1"
+          ],
+          "DlDfZd": [],
+          "mITGzz": [],
+          "ogD8SD": [],
+          "PAD-uO": [
+            "z7WIwD"
+          ],
+          "qw6bVc": [
+            "rdUhCv"
+          ],
+          "7q6ajO": [],
+          "ENgBvo": [],
+          "pxLUy1": [],
+          "8H7byt": [
+            "wUP7iz"
+          ],
+          "s2WB5j": [],
+          "2-vaDJ": [
+            "oG7Y2w"
+          ],
+          "5HbrL8": [
+            "AnWUyX",
+            "hJJpxb"
+          ],
+          "mOcWDQ": [],
+          "095eSu": [],
+          "52G0Y8": [
+            "dLw7k1",
+            "KGmUB9"
+          ],
+          "2T0eEZ": [],
+          "waZ_Bk": [
+            "glhgfl"
+          ],
+          "7Lp7gb": [],
+          "ZeCd_1": [],
+          "D95VUr": [],
+          "uypPtG": [],
+          "Ik5JN7": [],
+          "-oJ2wk": [],
+          "edgnRe": [],
+          "U8MCgo": [],
+          "fx3kNS": [],
+          "6j1exR": [
+            "LiWbMl"
+          ],
+          "5PFvDX": [],
+          "xh8ROa": [],
+          "rj4x4P": [],
+          "YkPcjq": [],
+          "o-GsLz": [
+            "t_G7xM",
+            "1CpcPb",
+            "zPQxoq",
+            "x9bCKF"
+          ],
+          "dHjH0-": [],
+          "0B-0C2": [],
+          "kqFu6w": [
+            "duDwJf",
+            "vhXsdh"
+          ],
+          "KwNjgu": [
+            "PdS51u"
+          ],
+          "0Rj323": [],
+          "52yRxP": [
+            "vBpxF_"
+          ],
+          "Mq4VLo": [
+            "l08sVI",
+            "QsuTvb"
+          ],
+          "cLMHJk": [
+            "SBkvjB"
+          ],
+          "7gjg1q": [
+            "9REd4H",
+            "iRY7t6"
+          ],
+          "WJRugB": [
+            "zVIiyy"
+          ],
+          "O0eZxN": [],
+          "AgV9sH": [],
+          "O4dbjs": [],
+          "cB472J": [
+            "xeC209"
+          ],
+          "u3-86-": [],
+          "u0Zjj5": [],
+          "Yjk_Q2": [],
+          "RrDrg9": [
+            "FkwsnL",
+            "Av1aIj"
+          ],
+          "aIxnRO": [
+            "E_Oq1_",
+            "35_zI3",
+            "2EA31M",
+            "bAujkL"
+          ],
+          "ahFNSf": [
+            "zMQGKO"
+          ],
+          "JZm0EC": [
+            "Ba6GoH",
+            "CGsbX6"
+          ],
+          "RPNrgP": [],
+          "PyTrm1": [],
+          "5CpJ7F": [],
+          "1ft54W": [
+            "k3xfa_"
+          ],
+          "KNOGUH": [],
+          "A7xS_I": [
+            "eZ9Uns"
+          ],
+          "timset": [],
+          "Ga2UlM": [],
+          "8oZwqt": [],
+          "KN0LLZ": [
+            "AHqKUF",
+            "a7JiJp"
+          ],
+          "0SILPB": [
+            "vUfLG6"
+          ],
+          "ThFu4j": [],
+          "etzx9w": [
+            "K5ZNl8",
+            "Qs8SCo"
+          ],
+          "i3CHld": [
+            "IDZicl",
+            "ELV8-L"
+          ],
+          "4Ovezl": [],
+          "2ZSfGL": [
+            "LmsdsY"
+          ],
+          "2Jf53t": [],
+          "ly1kXT": [],
+          "1uAeYq": [],
+          "RIwm_g": [
+            "k9r80u"
+          ],
+          "i3TNS9": [
+            "JXF2NY",
+            "gXZWqG"
+          ],
+          "2EyUDk": [
+            "jqyyzJ"
+          ],
+          "COI4Sn": [
+            "fhdLCC"
+          ],
+          "d3RjE2": [
+            "ohtwYZ"
+          ],
+          "ga1J_x": [],
+          "_sX4Hk": [
+            "p-x_IC",
+            "J4KlAT"
+          ],
+          "5Bhcqh": [
+            "nNvCL7",
+            "hmOaOI",
+            "mRSUgF"
+          ],
+          "0rXrup": [],
+          "ebrr52": [],
+          "3RSd16": [
+            "JyP2L7"
+          ],
+          "_le9bb": [
+            "NiPP3n"
+          ],
+          "dh3fLv": [
+            "R2CTgE"
+          ],
+          "7ppaB5": [
+            "Ke5N4Z",
+            "DCd0JY"
+          ]
+        },
+        "text_map": {
+          "Uq5F2v": "[{\"insert\":\"Define objectives\"}]",
+          "aoT7_y": "[{\"insert\":\"The venue should align with the event's purpose, objectives, and target audience.\"}]",
+          "fyIeGh": "[{\"insert\":\"Event location\"}]",
+          "opO26L": "[{\"insert\":\"Task\",\"attributes\":{\"bold\":true}}]",
+          "q94POu": "[]",
+          "eiEFgv": "[{\"insert\":\"2. Event Planning\"}]",
+          "vjfE9b": "[]",
+          "KOYrVg": "[{\"insert\":\"Event date\"}]",
+          "NZq9IR": "[{\"insert\":\"What are the key messages of the event?\"}]",
+          "ishdAw": "[{\"insert\":\"Task\",\"attributes\":{\"bold\":true}}]",
+          "84-9PP": "[]",
+          "SlL-Pd": "[{\"insert\":\"Tip\",\"attributes\":{\"bold\":true}},{\"insert\":\": When planning an event, it's important to consider the company calendar, public holidays, and the target audience's availability. This helps to maximize attendance and ensure the event is successful.\"}]",
+          "IIxhEz": "[{\"insert\":\"Analyze the feedback to evaluate the event's success and identify areas for improvement.\"}]",
+          "4ceInP": "[{\"insert\":\"Ensure the venue is cleaned up and all equipment is returned.\"}]",
+          "9FsDiv": "[{\"insert\":\"1. Event Conceptualization\"}]",
+          "CTQQb2": "[{\"insert\":\"Consider company calendar, public holidays, and target audience availability.\"}]",
+          "zapbBL": "[{\"insert\":\"Manage event logistics and address any issues that arise.\"}]",
+          "FH5bZ9": "[{\"insert\":\"Event management\"}]",
+          "kUoAEY": "[]",
+          "2o4wrv": "[{\"insert\":\"Identify target audience\"}]",
+          "bEdI6T": "[{\"insert\":\"Book a venue that is appropriate for the event's purpose, objectives, target audience, and budget. Confirm the booking and any necessary details with the venue.\"}]",
+          "TK_3Vz": "[{\"insert\":\"Ensure the event runs smoothly and according to plan. This may involve coordinating with the venue, managing event logistics, and addressing any issues that arise.\"}]",
+          "NXjzgA": "[{\"insert\":\"Venue booking\"}]",
+          "SVGyVY": "[{\"insert\":\"Identify the event date, time, and location. Consider the event's purpose, objectives, and target audience when making these decisions.\"}]",
+          "T2PXIF": "[{\"insert\":\"Consider the duration of the event and the target audience's time zone.\"}]",
+          "EuGdlR": "[{\"insert\":\"Collect feedback from event participants through surveys or interviews\"}]",
+          "s6GRs5": "[{\"insert\":\"Event Execution\",\"attributes\":{\"bold\":true}},{\"insert\":\": Ensuring the event runs smoothly and according to plan is crucial. This may involve coordinating with the venue, managing event logistics, and addressing any issues that arise.\"}]",
+          "jAtraG": "[]",
+          "xpgFXO": "[{\"insert\":\"Feedback analysis\"}]",
+          "DUzn96": "[{\"insert\":\"What are the desired outcomes of the event?\"}]",
+          "5BxCdF": "[{\"insert\":\"Details\",\"attributes\":{\"bold\":true}}]",
+          "BsgL9T": "[{\"insert\":\"Consider the target audience's geographic distribution and the event's budget.\"}]",
+          "dKYVuH": "[{\"insert\":\"6. Post-Event Feedback Collection\"}]",
+          "uI9iA6": "[{\"insert\":\"Remember\",\"attributes\":{\"bold\":true}},{\"insert\":\": A well-defined event purpose and clear objectives are key to a successful event. They guide the planning process and help ensure the event is successful and meets the company's needs.\"}]",
+          "5QYPZm": "[{\"insert\":\"Event setup\"}]",
+          "qb7UIT": "[{\"insert\":\"Feedback is a Gift\",\"attributes\":{\"bold\":true}},{\"insert\":\": Collecting and analyzing feedback from event participants is a valuable opportunity to learn and improve. It can provide insights into what worked well and what could be improved for future events.\"}]",
+          "m0NH1W": "[{\"insert\":\"Promote the event to the target audience. Use appropriate promotion channels and provide all necessary information about the event.\"}]",
+          "g8zi8L": "[{\"insert\":\"Note\",\"attributes\":{\"bold\":true}},{\"insert\":\": The event venue should align with the event's purpose, objectives, and target audience. It's also important to consider the venue's capacity, location, and available facilities.\"}]",
+          "dxriU3": "[{\"insert\":\"Questions to Consider\",\"attributes\":{\"bold\":true}}]",
+          "r4bPAu": "[]",
+          "ssfnzG": "[]",
+          "ozepF6": "[{\"insert\":\"3. Venue Booking\"}]",
+          "wlfmdh": "[{\"insert\":\"Venue selection\"}]",
+          "es4qax": "[{\"insert\":\"Details\",\"attributes\":{\"bold\":true}}]",
+          "OcXlfY": "[{\"insert\":\"Task\",\"attributes\":{\"bold\":true}}]",
+          "yGKl_g": "[{\"insert\":\"Details\",\"attributes\":{\"bold\":true}}]",
+          "Mhm3-2": "[{\"insert\":\"This Standard Operating Procedure (SOP) is a guide for organizing company events, from venue booking to post-event feedback collection.\"}]",
+          "hBsuGN": "[{\"insert\":\"5. Event Execution\"}]",
+          "z9ZKJJ": "[{\"insert\":\"Collect feedback from event participants. Use this feedback to evaluate the event's success and identify areas for improvement.\"}]",
+          "HsDWie": "[{\"insert\":\"Event breakdown\"}]",
+          "Y-wzI0": "[{\"insert\":\"Event time\"}]",
+          "I8hO7a": "[{\"insert\":\"4. Event Promotion\"}]",
+          "omAsQo": "[{\"insert\":\"Feedback collection\"}]",
+          "ygo7dg": "[{\"insert\":\"Task\",\"attributes\":{\"bold\":true}}]",
+          "XKhgAg": "[{\"insert\":\"Define purpose\"}]",
+          "26mYuS": "[]",
+          "ejoQso": "[{\"insert\":\"Details\",\"attributes\":{\"bold\":true}}]",
+          "c2mOPQ": "[{\"insert\":\"Ensure the venue is set up according to the event plan.\"}]",
+          "FQGvZN": "[{\"insert\":\"Confirm the booking and any necessary details with the venue.\"}]",
+          "9u3tNE": "[{\"insert\":\"Who are the event's stakeholders?\"}]",
+          "qnJ9uE": "[]"
+        }
+      }
+    },
+    "children": []
+  }
+}

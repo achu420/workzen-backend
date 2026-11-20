@@ -1,0 +1,6 @@
+[2026-11-05T20:04:34.588Z] PASS - Login after backend restart (fresh process, same PostgreSQL database) :: http://localhost:5202/app/87663b77-b4fc-43f0-a970-2e3d038cabd9
+[2026-11-05T20:04:53.453Z] FAIL - RESTART VERIFICATION FAILED :: page.waitForSelector: Timeout 15000ms exceeded.
+Call log:
+  - waiting for locator('[data-testid^="grid-row-"]') to be visible
+
+    at main (/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task63-evidence/task63-restart-verify.mjs:63:16)

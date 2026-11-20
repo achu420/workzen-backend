@@ -1,0 +1,63 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test
+> node --test test/backend.test.js
+
+(node:98602) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ registration, duplicate rejection, login, invalid password, me and logout (99.510375ms)
+✔ AppFlowy-Web password login, verification, profile, refresh rotation and logout (67.943375ms)
+✔ AppFlowy-Web server info and workspace bootstrap return authorized persisted data (130.050417ms)
+✔ AppFlowy-Web workspace outline returns authorized persisted view metadata (93.19925ms)
+✔ AppFlowy-Web selected-view navigation returns the authorized ancestor chain (82.014292ms)
+✔ AppFlowy-Web renames a page view and the title survives reopening the store (82.128625ms)
+✔ AppFlowy-Web creates and exposes a workspace-scoped public space (82.305375ms)
+✔ AppFlowy-Web reads the persisted workspace database collaboration object (83.645125ms)
+✔ AppFlowy-Web atomically creates a default Document with valid persisted Yjs state (88.554917ms)
+✔ AppFlowy-Web initializes and durably admits an authenticated Document WebSocket update (89.094834ms)
+✔ AppFlowy-Web Document WebSocket reconnect replays the manifest and resent updates are admitted exactly once (45.371083ms)
+✔ AppFlowy-Web full-sync batch reconciles and persists authorized Documents (91.794333ms)
+✔ websocket-http-convergence: WebSocket update and HTTP full-sync/batch update converge on one durable document state (45.881042ms)
+✔ realtime-ack: WebSocket emits no ack while persistence is pending, then acks only after persistence durably completes (delayed-persistence fault injection) (356.248208ms)
+WebSocket Document update admission failed Error: task44 injected persistence failure
+    at store.persist (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/backend.test.js:1786:41)
+    at mutate (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:912:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async operation (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:174:16)
+✔ realtime-ack: WebSocket emits no ack and closes with 1011 when persistence fails, and the failed update is not durably admitted (failed-persistence fault injection) (78.433333ms)
+WebSocket Document update admission failed Error: task44 injected persistence failure (attempt 1)
+    at store.persist (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/backend.test.js:1849:41)
+    at mutate (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:912:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async operation (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:174:16)
+✔ realtime-ack: retrying an update after a persistence-failure close (via reconnect+resend, the established client retry semantics from Task 41) is admitted exactly once (46.012167ms)
+✔ rid-allocation-ordering: sequential updates on one WebSocket connection admit in order with correlated acks (48.695459ms)
+✔ rid-allocation-ordering: Rid sequence continues monotonically across a reconnect (46.383333ms)
+✔ rid-allocation-ordering: concurrent updates from two connections get distinct, non-colliding Rids and converge (46.939417ms)
+✔ rid-allocation-ordering: a duplicate/retried submission is admitted exactly once and returns the original Rid (47.398917ms)
+✔ rid-allocation-ordering: Rids issued by the WebSocket lane and the HTTP full-sync/batch lane share one monotonic sequence (45.904542ms)
+✔ rid-allocation-ordering: ack correctly references the delayed update's own Rid under a controlled persistence delay (51.29625ms)
+✔ restore-transition: update before restore, generation bump via durable restore_id, stale-generation rejection, and valid post-restore update (50.8575ms)
+✔ AppFlowy-Web WebSocket authenticates and completes the WorkspaceDatabase manifest exchange (44.678042ms)
+✔ protected routes reject unauthenticated requests (0.25375ms)
+✔ workspace owner, member helper, and isolation authorization (43.439917ms)
+✔ page CRUD, optimistic concurrency, validation and cross-workspace denial (2.220625ms)
+✔ data survives reopening the application with the same isolated file (3.783042ms)
+✔ compaction-retention: no compaction/snapshot mechanism exists; many sequential updates remain reconstructable from the single stored current-state blob, by a fresh client, and after a storage restart (56.267292ms)
+✔ version-history: create named snapshot, list it, preview it, tombstone-delete it and verify it no longer appears (47.547875ms)
+✔ version-history: restore a previous version preserves identity, advances generation, keeps before-restore snapshot, does not consume a workspace Rid, and rejects stale-generation updates (51.589209ms)
+✔ version-history: duplicate restore requests do not create multiple restore events; competing restores use optimistic concurrency (first wins); persistence failure does not report success; state survives a restart reload (63.248958ms)
+✔ CORS: allowed origin receives CORS headers, disallowed origin does not, and OPTIONS preflight is answered (42.809625ms)
+✔ CORS: WebSocket upgrades are unaffected by CORS middleware (no Origin-based rejection at the HTTP layer) (0.609625ms)
+✔ CORS (Task 55): preflight allows Cache-Control and Device-Id, and real requests using them succeed (21.274708ms)
+✔ capability flag: enable_page_history reports true by default and can be overridden via ENABLE_PAGE_HISTORY=false (1.597042ms)
+✔ WebSocket route alias: `/ws/{workspaceId}` (AppFlowy-Web real client route, Task 52) behaves identically to `/ws/v2/{workspaceId}` for auth, authorization, sync, update-persistence/ack and reconnect (95.447167ms)
+✔ Task 53: favorites, trash, shared-with-me and database catalog unblock the AppFlowy-Web sidebar (54.86575ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6689.881916
+EXIT:0

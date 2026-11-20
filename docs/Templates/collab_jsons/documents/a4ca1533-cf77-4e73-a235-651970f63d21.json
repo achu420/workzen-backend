@@ -1,0 +1,470 @@
+{
+  "page_id": "94efb72f-dfd6-556e-8855-507e0425efce",
+  "blocks": {
+    "-HqrwZ": {
+      "id": "-HqrwZ",
+      "ty": "numbered_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "jrWkdi",
+      "external_id": "gZaG0g",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Set up a bi-weekly 1:1 sync with Annie"
+          }
+        ]
+      }
+    },
+    "tybt89": {
+      "id": "tybt89",
+      "ty": "numbered_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "xMlaGf",
+      "external_id": "4FTxri",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Set up a weekly 1:1 sync with your mentor"
+          }
+        ]
+      }
+    },
+    "WaqnVx": {
+      "id": "WaqnVx",
+      "ty": "numbered_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "poBx3Z",
+      "external_id": "2EUXVE",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Learn the project's architecture and design."
+          }
+        ]
+      }
+    },
+    "9777NK": {
+      "id": "9777NK",
+      "ty": "paragraph",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "qbYUvY",
+      "external_id": "j_Vjoe",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "LRowgO": {
+      "id": "LRowgO",
+      "ty": "heading",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "G5tWJ_",
+      "external_id": "-NyPvq",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Day 2"
+          }
+        ],
+        "level": 1
+      }
+    },
+    "94efb72f-dfd6-556e-8855-507e0425efce": {
+      "id": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "ty": "page",
+      "parent": "",
+      "children": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "external_id": null,
+      "external_type": null,
+      "data": {}
+    },
+    "xF1OEc": {
+      "id": "xF1OEc",
+      "ty": "heading",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "ukPWER",
+      "external_id": "tXY8AD",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Reference"
+          }
+        ],
+        "level": 1
+      }
+    },
+    "aGdjUI": {
+      "id": "aGdjUI",
+      "ty": "bulleted_list",
+      "parent": "7-_nUk",
+      "children": "kJWDH3",
+      "external_id": "w2oJ6J",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Please submit your pull request and assign Nathan or Lucas as the reviewer."
+          }
+        ]
+      }
+    },
+    "q-KyBl": {
+      "id": "q-KyBl",
+      "ty": "heading",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "jTjQ2r",
+      "external_id": "LnOXLt",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Day 1"
+          }
+        ],
+        "level": 1
+      }
+    },
+    "7-_nUk": {
+      "id": "7-_nUk",
+      "ty": "bulleted_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "CuWFTA",
+      "external_id": "eWbZLH",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Prioritize your tasks for the day and begin working on them."
+          }
+        ]
+      }
+    },
+    "nwkEC1": {
+      "id": "nwkEC1",
+      "ty": "paragraph",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "1NQnOW",
+      "external_id": "5Ml204",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Welcome to the AppFlowy team. This guide will help you get started at work."
+          }
+        ]
+      }
+    },
+    "6nx97t": {
+      "id": "6nx97t",
+      "ty": "bulleted_list",
+      "parent": "7-_nUk",
+      "children": "P9Ywx2",
+      "external_id": "4U1uxn",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Please create an issue with clear and detailed content, and update the fields, like "
+          },
+          {
+            "attributes": {
+              "code": true
+            },
+            "insert": "label"
+          },
+          {
+            "insert": ", "
+          },
+          {
+            "attributes": {
+              "code": true
+            },
+            "insert": "project"
+          },
+          {
+            "insert": ", and "
+          },
+          {
+            "attributes": {
+              "code": true
+            },
+            "insert": "roadmap"
+          },
+          {
+            "insert": ", before you start a new task."
+          }
+        ]
+      }
+    },
+    "nI6b_t": {
+      "id": "nI6b_t",
+      "ty": "paragraph",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "B7zXJk",
+      "external_id": "eeh8LA",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "href": "https://github.com/AppFlowy-IO"
+            },
+            "insert": "AppFlowy Github Link"
+          }
+        ]
+      }
+    },
+    "AA7iD4": {
+      "id": "AA7iD4",
+      "ty": "numbered_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "2VHcBx",
+      "external_id": "PxSmg4",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Join our Slack and "
+          },
+          {
+            "attributes": {
+              "href": "https://discord.com/invite/9Q2xaN37tV"
+            },
+            "insert": "Discord"
+          },
+          {
+            "insert": " group."
+          }
+        ]
+      }
+    },
+    "yJKZ0u": {
+      "id": "yJKZ0u",
+      "ty": "paragraph",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "AzaTpO",
+      "external_id": "t1nqZ3",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "href": "https://appflowy.gitbook.io/docs/essential-documentation/readme"
+            },
+            "insert": "AppFlowy GitBook Link"
+          }
+        ]
+      }
+    },
+    "dGmC-7": {
+      "id": "dGmC-7",
+      "ty": "bulleted_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "vPmfQ2",
+      "external_id": "7JlKul",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Respond to messages on Discord and issues / discussions on Github."
+          }
+        ]
+      }
+    },
+    "_9NwJ7": {
+      "id": "_9NwJ7",
+      "ty": "heading",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "TaIYtF",
+      "external_id": "Voip5Z",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Daily"
+          }
+        ],
+        "level": 1
+      }
+    },
+    "kWfyqI": {
+      "id": "kWfyqI",
+      "ty": "numbered_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "4gxIn7",
+      "external_id": "9jwjMb",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Report a bug for AppFlowy’s latest "
+          },
+          {
+            "attributes": {
+              "href": "https://github.com/AppFlowy-IO/AppFlowy/releases"
+            },
+            "insert": "release"
+          },
+          {
+            "insert": " on GitHub via "
+          },
+          {
+            "attributes": {
+              "href": "https://github.com/AppFlowy-IO/AppFlowy/issues/new/choose"
+            },
+            "insert": "Issues"
+          }
+        ]
+      }
+    },
+    "KpePdI": {
+      "id": "KpePdI",
+      "ty": "numbered_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "Yxx6kG",
+      "external_id": "xeItX4",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Set up your "
+          },
+          {
+            "attributes": {
+              "href": "https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods/from-source"
+            },
+            "insert": "development environment"
+          },
+          {
+            "insert": " and build the project successfully."
+          }
+        ]
+      }
+    },
+    "4NH8AH": {
+      "id": "4NH8AH",
+      "ty": "todo_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "ysqz5G",
+      "external_id": "3fOPI_",
+      "external_type": "text",
+      "data": {
+        "checked": false,
+        "delta": [
+          {
+            "insert": "First Month Essentials"
+          }
+        ]
+      }
+    },
+    "FjQzXH": {
+      "id": "FjQzXH",
+      "ty": "todo_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "ingoOA",
+      "external_id": "ki3SJD",
+      "external_type": "text",
+      "data": {
+        "checked": false,
+        "delta": [
+          {
+            "insert": "Receive your onboarding project from your mentor"
+          }
+        ]
+      }
+    },
+    "COL4gK": {
+      "id": "COL4gK",
+      "ty": "todo_list",
+      "parent": "94efb72f-dfd6-556e-8855-507e0425efce",
+      "children": "6i_FvG",
+      "external_id": "XCTo35",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Follow the daily section to start your work"
+          }
+        ],
+        "checked": false
+      }
+    }
+  },
+  "meta": {
+    "children_map": {
+      "qbYUvY": [],
+      "kJWDH3": [],
+      "ysqz5G": [],
+      "1NQnOW": [],
+      "jTjQ2r": [],
+      "CuWFTA": [
+        "6nx97t",
+        "aGdjUI"
+      ],
+      "B7zXJk": [],
+      "ukPWER": [],
+      "6i_FvG": [],
+      "P9Ywx2": [],
+      "94efb72f-dfd6-556e-8855-507e0425efce": [
+        "nwkEC1",
+        "q-KyBl",
+        "AA7iD4",
+        "KpePdI",
+        "WaqnVx",
+        "kWfyqI",
+        "tybt89",
+        "-HqrwZ",
+        "LRowgO",
+        "FjQzXH",
+        "4NH8AH",
+        "COL4gK",
+        "_9NwJ7",
+        "7-_nUk",
+        "dGmC-7",
+        "xF1OEc",
+        "nI6b_t",
+        "yJKZ0u",
+        "9777NK"
+      ],
+      "G5tWJ_": [],
+      "4gxIn7": [],
+      "poBx3Z": [],
+      "jrWkdi": [],
+      "Yxx6kG": [],
+      "xMlaGf": [],
+      "AzaTpO": [],
+      "vPmfQ2": [],
+      "TaIYtF": [],
+      "ingoOA": [],
+      "2VHcBx": []
+    },
+    "text_map": {
+      "t1nqZ3": "[{\"insert\":\"AppFlowy GitBook Link\",\"attributes\":{\"href\":\"https://appflowy.gitbook.io/docs/essential-documentation/readme\"}}]",
+      "9jwjMb": "[{\"insert\":\"Report a bug for AppFlowy’s latest \"},{\"insert\":\"release\",\"attributes\":{\"href\":\"https://github.com/AppFlowy-IO/AppFlowy/releases\"}},{\"insert\":\" on GitHub via \"},{\"insert\":\"Issues\",\"attributes\":{\"href\":\"https://github.com/AppFlowy-IO/AppFlowy/issues/new/choose\"}}]",
+      "tXY8AD": "[{\"insert\":\"Reference\"}]",
+      "w2oJ6J": "[{\"insert\":\"Please submit your pull request and assign Nathan or Lucas as the reviewer.\"}]",
+      "Voip5Z": "[{\"insert\":\"Daily\"}]",
+      "xeItX4": "[{\"insert\":\"Set up your \"},{\"insert\":\"development environment\",\"attributes\":{\"href\":\"https://appflowy.gitbook.io/docs/essential-documentation/install-appflowy/installation-methods/from-source\"}},{\"insert\":\" and build the project successfully.\"}]",
+      "3fOPI_": "[{\"insert\":\"First Month Essentials\"}]",
+      "LnOXLt": "[{\"insert\":\"Day 1\"}]",
+      "-NyPvq": "[{\"insert\":\"Day 2\"}]",
+      "gZaG0g": "[{\"insert\":\"Set up a bi-weekly 1:1 sync with Annie\"}]",
+      "eWbZLH": "[{\"insert\":\"Prioritize your tasks for the day and begin working on them.\"}]",
+      "5Ml204": "[{\"insert\":\"Welcome to the AppFlowy team. This guide will help you get started at work.\"}]",
+      "4FTxri": "[{\"insert\":\"Set up a weekly 1:1 sync with your mentor\"}]",
+      "j_Vjoe": "[]",
+      "PxSmg4": "[{\"insert\":\"Join our Slack and \"},{\"insert\":\"Discord\",\"attributes\":{\"href\":\"https://discord.com/invite/9Q2xaN37tV\"}},{\"insert\":\" group.\"}]",
+      "XCTo35": "[{\"insert\":\"Follow the daily section to start your work\"}]",
+      "eeh8LA": "[{\"insert\":\"AppFlowy Github Link\",\"attributes\":{\"href\":\"https://github.com/AppFlowy-IO\"}}]",
+      "2EUXVE": "[{\"insert\":\"Learn the project's architecture and design.\"}]",
+      "4U1uxn": "[{\"insert\":\"Please create an issue with clear and detailed content, and update the fields, like \"},{\"insert\":\"label\",\"attributes\":{\"code\":true}},{\"insert\":\", \"},{\"insert\":\"project\",\"attributes\":{\"code\":true}},{\"insert\":\", and \"},{\"insert\":\"roadmap\",\"attributes\":{\"code\":true}},{\"insert\":\", before you start a new task.\"}]",
+      "7JlKul": "[{\"insert\":\"Respond to messages on Discord and issues / discussions on Github.\"}]",
+      "ki3SJD": "[{\"insert\":\"Receive your onboarding project from your mentor\"}]"
+    }
+  }
+}

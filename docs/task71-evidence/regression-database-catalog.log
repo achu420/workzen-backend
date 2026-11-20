@@ -1,0 +1,32 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:database-catalog
+> node --test test/database-catalog.test.js
+
+(node:98710) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ empty workspace reports an empty, non-error catalog (66.516625ms)
+✔ one Database is discoverable with correct container+primary-view association (74.993ms)
+✔ multiple Databases in the same workspace are all discoverable (84.170542ms)
+✔ a Database created by a fresh HTTP request is immediately visible to the catalog without any session-local state (115.506708ms)
+✔ cross-workspace isolation: a Database never appears in another workspace's catalog (103.694042ms)
+✔ unauthorized and unauthenticated access is rejected (100.6885ms)
+✔ missing/invalid workspace id is rejected without leaking data (49.864708ms)
+✔ pagination: offset/limit windows the database list with correct has_more and stable ordering (70.569583ms)
+✔ invalid pagination parameters are rejected (51.757ms)
+✔ malformed container metadata (invalid database_id) is excluded without hiding other valid Databases (48.77175ms)
+✔ a container with no matching primary-view page is still included (container-only entry), not silently dropped (48.97425ms)
+✔ a decoy child page with a mismatched database_id is never selected as the primary view (invalid primary-view association) (49.186834ms)
+✔ regression: ordinary Document pages and Folder-tree navigation are unaffected by the catalog fix (50.110792ms)
+✔ GET page-view cold-fetches a Database primary-view page by serving the Database collab (no Document collab exists for it) (65.160208ms)
+✔ GET page-view cold-fetches a Database CONTAINER page by serving the same Database collab (51.525834ms)
+✔ regression: GET page-view for an ordinary Document page is unaffected (still requires/serves the real Document collab) (52.69275ms)
+✔ GET page-view returns COLLAB_NOT_FOUND (not a Document 404) when a Database page's referenced database collab is genuinely missing (51.7785ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1298.244125
+EXIT:0

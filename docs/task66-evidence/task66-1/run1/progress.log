@@ -1,0 +1,70 @@
+[2026-11-06T10:57:27.566Z] INFO - script started, pid=88423
+[2026-11-06T10:57:27.567Z] INFO - .env.local backed up (MD5-verified) :: c85de40fc13dc3b2379325c6ecc3471d
+[2026-11-06T10:57:27.568Z] INFO - Wrote temporary .env.local pointing at this run's disposable backend :: APPFLOWY_BASE_URL=http://127.0.0.1:8797 | APPFLOWY_GOTRUE_BASE_URL=http://127.0.0.1:8797 | APPFLOWY_WS_BASE_URL=ws://127.0.0.1:8797/ws/v2 | 
+[2026-11-06T10:57:28.082Z] PASS - Backend process started (STORAGE=json, port 8797) :: pid=88424
+[2026-11-06T10:57:29.109Z] PASS - Frontend dev server started (port 5197) :: pid=88429
+[2026-11-06T10:57:29.391Z] PASS - Registered two SEPARATE real user accounts (owner, member) :: task66-owner-1793962649332@example.test / task66-member-1793962649332@example.test
+[2026-11-06T10:57:34.636Z] PASS - Owner logged in via real UI (browser context 1) :: http://localhost:5197/app/c385d957-8e9e-4294-ab06-5bf452c350ce
+[2026-11-06T10:57:37.896Z] PASS - Owner created a public Space via real UI :: workspace=c385d957-8e9e-4294-ab06-5bf452c350ce
+[2026-11-06T10:57:37.953Z] PASS - Member added to owner's workspace via the supported test-membership helper
+[2026-11-06T10:57:41.579Z] PASS - Member logged in via real UI (independent browser context 2) and opened the shared workspace :: http://localhost:5197/app/c385d957-8e9e-4294-ab06-5bf452c350ce/3fbd1eb7-72cc-4991-b5da-6dc677597013
+[2026-11-06T10:57:42.957Z] PASS - Owner created a new Document page via real UI (id resolved from the peek-modal DOM, not page.url()) :: pageId=26faf488-b63f-4741-ad53-326583171b66
+[2026-11-06T10:57:45.314Z] PASS - Owner's view is the single, non-modal, correctly-identified Document (pre-type sanity check) :: titleCount=1 dialogCount=0
+[2026-11-06T10:57:45.317Z] PASS - Owner's Document finished initial hydration (title shows its real stored value, not empty) before typing
+[2026-11-06T10:57:45.355Z] TRACE - typeIntoDocument[owner-1st] attempt=1 start
+[2026-11-06T10:57:45.362Z] TRACE - clickIntoDocumentBody[owner-1st] start
+[2026-11-06T10:57:45.367Z] TRACE - clickIntoDocumentBody[owner-1st] titleCount=1
+[2026-11-06T10:57:45.369Z] TRACE - clickIntoDocumentBody[owner-1st] title visible
+[2026-11-06T10:57:45.378Z] TRACE - clickIntoDocumentBody[owner-1st] visible=true enabled=true box={"x":394,"y":88,"width":760,"height":60}
+[2026-11-06T10:57:45.379Z] TRACE - clickIntoDocumentBody[owner-1st] hitTarget={"matches":true,"elTag":"DIV","elId":"editor-title-26faf488-b63f-4741-ad53-326583171b66"}
+[2026-11-06T10:57:45.397Z] TRACE - clickIntoDocumentBody[owner-1st] title clicked
+[2026-11-06T10:57:45.398Z] TRACE - clickIntoDocumentBody[owner-1st] focusedAfterClick=editor-title-26faf488-b63f-4741-ad53-326583171b66
+[2026-11-06T10:57:45.705Z] TRACE - clickIntoDocumentBody[owner-1st] End + ArrowDown pressed
+[2026-11-06T10:57:45.706Z] TRACE - clickIntoDocumentBody[owner-1st] focusedAfterArrowDown=editor-26faf488-b63f-4741-ad53-326583171b66
+[2026-11-06T10:57:45.706Z] TRACE - clickIntoDocumentBody[owner-1st] done
+[2026-11-06T10:57:46.015Z] TRACE - typeIntoDocument[owner-1st] Home pressed
+[2026-11-06T10:57:46.020Z] TRACE - typeIntoDocument[owner-1st] Shift+End pressed
+[2026-11-06T10:57:46.186Z] TRACE - typeIntoDocument[owner-1st] typed, about to verify
+[2026-11-06T10:57:47.397Z] PASS - Owner typed text into the Document editor :: typed="task66-doc-owner-1793962665355" localDomNow="task66-doc-owner-1793962665355"
+[2026-11-06T10:57:47.438Z] INFO - DIAGNOSTIC: server-side Document state right after owner types ::  | task66-doc-owner-1793962665355
+[2026-11-06T10:57:49.700Z] PASS - Member (second browser context) opened the SAME Document via the sidebar/URL :: http://localhost:5197/app/c385d957-8e9e-4294-ab06-5bf452c350ce/26faf488-b63f-4741-ad53-326583171b66
+[2026-11-06T10:57:49.731Z] PASS - Member sees the owner's already-typed text after opening (baseline, via initial sync) :: task66-doc-owner-1793962665355
+[2026-11-06T10:57:49.731Z] TRACE - typeIntoDocument[owner-2nd] attempt=1 start
+[2026-11-06T10:57:49.734Z] TRACE - clickIntoDocumentBody[owner-2nd] start
+[2026-11-06T10:57:49.739Z] TRACE - clickIntoDocumentBody[owner-2nd] titleCount=1
+[2026-11-06T10:57:49.740Z] TRACE - clickIntoDocumentBody[owner-2nd] title visible
+[2026-11-06T10:57:49.743Z] TRACE - clickIntoDocumentBody[owner-2nd] visible=true enabled=true box={"x":394,"y":88,"width":760,"height":60}
+[2026-11-06T10:57:49.743Z] TRACE - clickIntoDocumentBody[owner-2nd] hitTarget={"matches":true,"elTag":"DIV","elId":"editor-title-26faf488-b63f-4741-ad53-326583171b66"}
+[2026-11-06T10:57:49.766Z] TRACE - clickIntoDocumentBody[owner-2nd] title clicked
+[2026-11-06T10:57:49.767Z] TRACE - clickIntoDocumentBody[owner-2nd] focusedAfterClick=editor-title-26faf488-b63f-4741-ad53-326583171b66
+[2026-11-06T10:57:50.074Z] TRACE - clickIntoDocumentBody[owner-2nd] End + ArrowDown pressed
+[2026-11-06T10:57:50.074Z] TRACE - clickIntoDocumentBody[owner-2nd] focusedAfterArrowDown=editor-26faf488-b63f-4741-ad53-326583171b66
+[2026-11-06T10:57:50.075Z] TRACE - clickIntoDocumentBody[owner-2nd] done
+[2026-11-06T10:57:50.381Z] TRACE - typeIntoDocument[owner-2nd] Home pressed
+[2026-11-06T10:57:50.385Z] TRACE - typeIntoDocument[owner-2nd] Shift+End pressed
+[2026-11-06T10:57:50.547Z] TRACE - typeIntoDocument[owner-2nd] typed, about to verify
+[2026-11-06T10:57:51.955Z] PASS - Owner typed a SECOND marker while member is already open (no member reload yet) :: task66-doc-owner2-1793962669731
+[2026-11-06T10:57:52.105Z] PASS - SCENARIO 1a RESULT: member observes owner's second edit LIVE, no reload :: task66-doc-owner2-1793962669731
+[2026-11-06T10:57:52.454Z] TRACE - typeIntoDocument[member-1st] attempt=1 start
+[2026-11-06T10:57:52.485Z] TRACE - clickIntoDocumentBody[member-1st] start
+[2026-11-06T10:57:52.518Z] TRACE - clickIntoDocumentBody[member-1st] titleCount=1
+[2026-11-06T10:57:52.569Z] TRACE - clickIntoDocumentBody[member-1st] title visible
+[2026-11-06T10:57:53.169Z] TRACE - clickIntoDocumentBody[member-1st] visible=true enabled=true box={"x":394,"y":88,"width":760,"height":60}
+[2026-11-06T10:57:53.597Z] TRACE - clickIntoDocumentBody[member-1st] hitTarget={"matches":true,"elTag":"DIV","elId":"editor-title-26faf488-b63f-4741-ad53-326583171b66"}
+[2026-11-06T10:58:02.453Z] TRACE - clickIntoDocumentBody[member-1st] title clicked
+[2026-11-06T10:58:05.164Z] TRACE - clickIntoDocumentBody[member-1st] focusedAfterClick=editor-title-26faf488-b63f-4741-ad53-326583171b66
+[2026-11-06T10:58:30.765Z] TRACE - clickIntoDocumentBody[member-1st] End + ArrowDown pressed
+[2026-11-06T10:58:44.273Z] TRACE - clickIntoDocumentBody[member-1st] focusedAfterArrowDown=editor-26faf488-b63f-4741-ad53-326583171b66
+[2026-11-06T10:58:44.273Z] TRACE - clickIntoDocumentBody[member-1st] done
+[2026-11-06T10:58:54.575Z] INFO - typeIntoDocument[member-1st]: attempt failed, retrying whole attempt (suspected transient flakiness, not a targeting bug) :: attempt=1 pageId=26faf488-b63f-4741-ad53-326583171b66 text="task66-doc-member-1793962665355" error="Error: STUCK AT: member-1st keyboard.press(Home) (exceeded 10000ms)"
+[2026-11-06T10:58:55.376Z] TRACE - typeIntoDocument[member-1st] attempt=2 start
+[2026-11-06T10:59:18.630Z] TRACE - clickIntoDocumentBody[member-1st] start
+[2026-11-06T10:59:51.340Z] TRACE - clickIntoDocumentBody[member-1st] titleCount=1
+[2026-11-06T10:59:53.388Z] INFO - typeIntoDocument[member-1st]: attempt failed, retrying whole attempt (suspected transient flakiness, not a targeting bug) :: attempt=2 pageId=26faf488-b63f-4741-ad53-326583171b66 text="task66-doc-member-1793962665355" error="Error: locator.waitFor: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /Users/achal/Library/Caches/ms-playwright/chromium-1248/chrome-mac-arm64/Google Chrome for Testing.ap"
+[2026-11-06T10:59:53.390Z] FAIL - WORKFLOW FAILED :: page.waitForTimeout: Target page, context or browser has been closed
+    at typeIntoDocument (/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task66-evidence/task66-1/task66-1-browser-verify.mjs:520:22)
+    at async main (/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task66-evidence/task66-1/task66-1-browser-verify.mjs:784:5)
+[2026-11-06T10:59:53.464Z] PASS - .env.local restored byte-for-byte (MD5-verified) :: c85de40fc13dc3b2379325c6ecc3471d

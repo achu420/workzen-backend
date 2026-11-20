@@ -1,0 +1,47 @@
+[2026-11-06T06:13:56.843Z] INFO - .env.local backed up (MD5-verified) :: c85de40fc13dc3b2379325c6ecc3471d
+[2026-11-06T06:13:56.844Z] INFO - Wrote temporary .env.local pointing at this run's disposable backend :: APPFLOWY_BASE_URL=http://127.0.0.1:8795 | APPFLOWY_GOTRUE_BASE_URL=http://127.0.0.1:8795 | APPFLOWY_WS_BASE_URL=ws://127.0.0.1:8795/ws/v2 | 
+[2026-11-06T06:13:57.358Z] PASS - Backend process started (STORAGE=json, port 8795) :: pid=30706
+[2026-11-06T06:13:58.818Z] PASS - Frontend dev server started (port 5195) :: pid=30713
+[2026-11-06T06:13:58.959Z] PASS - Registered two SEPARATE real user accounts (owner, member) :: task66-owner-1793945638899@example.test / task66-member-1793945638899@example.test
+[2026-11-06T06:14:03.775Z] PASS - Owner logged in via real UI (browser context 1) :: http://localhost:5195/app/345ac2c7-da2b-4a7f-8309-682de34ba15e
+[2026-11-06T06:14:07.057Z] PASS - Owner created a public Space via real UI :: workspace=345ac2c7-da2b-4a7f-8309-682de34ba15e
+[2026-11-06T06:14:07.104Z] PASS - Member added to owner's workspace via the supported test-membership helper
+[2026-11-06T06:14:10.711Z] PASS - Member logged in via real UI (independent browser context 2) and opened the shared workspace :: http://localhost:5195/app/345ac2c7-da2b-4a7f-8309-682de34ba15e/25a3de34-2bbc-4e8f-acbe-31e393f565fa
+[2026-11-06T06:14:14.004Z] PASS - Owner created a new Document page via real UI :: pageId=25a3de34-2bbc-4e8f-acbe-31e393f565fa
+[2026-11-06T06:14:44.059Z] FAIL - WORKFLOW FAILED :: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('#editor-title-25a3de34-2bbc-4e8f-acbe-31e393f565fa')
+    - locator resolved to <div contenteditable="true" data-placeholder="Untitled" data-testid="page-title-input" id="editor-title-25a3de34-2bbc-4e8f-acbe-31e393f565fa" class="custom-caret relative flex-1 cursor-text whitespace-pre-wrap break-words empty:before:text-text-tertiary empty:before:content-[attr(data-placeholder)] focus:outline-none"></div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="sticky top-0 z-[10] flex w-full items-center justify-between gap-2 bg-surface-primary px-4 py-4">…</div> from <div role="presentation" class="MuiDialog-root MuiModal-root css-1k1ctqs-MuiModal-root-MuiDialog-root">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="sticky top-0 z-[10] flex w-full items-center justify-between gap-2 bg-surface-primary px-4 py-4">…</div> from <div role="presentation" class="MuiDialog-root MuiModal-root css-1k1ctqs-MuiModal-root-MuiDialog-root">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    48 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="sticky top-0 z-[10] flex w-full items-center justify-between gap-2 bg-surface-primary px-4 py-4">…</div> from <div role="presentation" class="MuiDialog-root MuiModal-root css-1k1ctqs-MuiModal-root-MuiDialog-root">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+    10 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="flex h-full min-w-0 max-w-full items-end justify-start gap-2 px-24 max-sm:hidden max-sm:px-6">…</div> from <div role="presentation" class="MuiDialog-root MuiModal-root css-1k1ctqs-MuiModal-root-MuiDialog-root">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+    at clickIntoDocumentBody (/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task66-evidence/task66-browser-verify.mjs:295:19)
+    at async typeIntoDocument (/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task66-evidence/task66-browser-verify.mjs:313:7)
+    at async main (/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task66-evidence/task66-browser-verify.mjs:430:5)

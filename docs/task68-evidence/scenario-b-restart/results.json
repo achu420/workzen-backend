@@ -1,0 +1,6 @@
+{
+  "documentEditBeforeRestart": "NOT TESTED",
+  "backendRestarted": "NOT TESTED",
+  "documentPersistedAfterRestart": "NOT TESTED",
+  "documentWritableAfterRestart": "NOT TESTED"
+}

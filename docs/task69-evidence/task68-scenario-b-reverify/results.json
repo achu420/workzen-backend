@@ -1,0 +1,7 @@
+{
+  "documentEditBeforeRestart": "PASS",
+  "backendRestarted": "PASS",
+  "documentPersistedAfterRestart": "PASS",
+  "documentWritableAfterRestart": "PASS",
+  "liveDeliveryAfterRestart": "NOT TESTED"
+}

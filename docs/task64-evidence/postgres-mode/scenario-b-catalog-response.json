@@ -1,0 +1,32 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "databases": [
+      {
+        "database_id": "50d361a8-53b1-4097-850d-b344ba09d0c1",
+        "views": [
+          {
+            "view_id": "7bb32143-a32d-4748-892a-b2437b2d73d6",
+            "layout": 1,
+            "is_container": true,
+            "embedded": false,
+            "name": "New Database",
+            "icon": null,
+            "parent_view_id": "8ff5bb50-f1bb-432a-affb-9b678c5151ce"
+          },
+          {
+            "view_id": "51be9830-a73c-433e-9a76-217b23372f6d",
+            "layout": 1,
+            "is_container": false,
+            "embedded": false,
+            "name": "Grid",
+            "icon": null,
+            "parent_view_id": "7bb32143-a32d-4748-892a-b2437b2d73d6"
+          }
+        ]
+      }
+    ],
+    "has_more": false
+  }
+}

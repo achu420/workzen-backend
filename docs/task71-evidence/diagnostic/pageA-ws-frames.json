@@ -1,0 +1,482 @@
+[
+  {
+    "t": 1931,
+    "dir": "received",
+    "bytes": 20
+  },
+  {
+    "t": 2939,
+    "dir": "received",
+    "bytes": 20
+  },
+  {
+    "t": 5239,
+    "dir": "sent",
+    "bytes": 84
+  },
+  {
+    "t": 5239,
+    "dir": "sent",
+    "bytes": 328
+  },
+  {
+    "t": 5241,
+    "dir": "sent",
+    "bytes": 319
+  },
+  {
+    "t": 5243,
+    "dir": "received",
+    "bytes": 84
+  },
+  {
+    "t": 6123,
+    "dir": "sent",
+    "bytes": 328
+  },
+  {
+    "t": 6405,
+    "dir": "sent",
+    "bytes": 145
+  },
+  {
+    "t": 6440,
+    "dir": "received",
+    "bytes": 20
+  },
+  {
+    "t": 6795,
+    "dir": "sent",
+    "bytes": 84
+  },
+  {
+    "t": 6795,
+    "dir": "sent",
+    "bytes": 328
+  },
+  {
+    "t": 6799,
+    "dir": "received",
+    "bytes": 84
+  },
+  {
+    "t": 6807,
+    "dir": "sent",
+    "bytes": 319
+  },
+  {
+    "t": 7107,
+    "dir": "sent",
+    "bytes": 328
+  },
+  {
+    "t": 8416,
+    "dir": "sent",
+    "bytes": 84
+  },
+  {
+    "t": 8416,
+    "dir": "sent",
+    "bytes": 327
+  },
+  {
+    "t": 8418,
+    "dir": "sent",
+    "bytes": 318
+  },
+  {
+    "t": 8419,
+    "dir": "received",
+    "bytes": 84
+  },
+  {
+    "t": 8516,
+    "dir": "sent",
+    "bytes": 327
+  },
+  {
+    "t": 9026,
+    "dir": "sent",
+    "bytes": 144
+  },
+  {
+    "t": 16555,
+    "dir": "sent",
+    "bytes": 90
+  },
+  {
+    "t": 16555,
+    "dir": "sent",
+    "bytes": 328
+  },
+  {
+    "t": 16555,
+    "dir": "sent",
+    "bytes": 160
+  },
+  {
+    "t": 16560,
+    "dir": "sent",
+    "bytes": 156
+  },
+  {
+    "t": 16566,
+    "dir": "received",
+    "bytes": 84
+  },
+  {
+    "t": 16567,
+    "dir": "sent",
+    "bytes": 160
+  },
+  {
+    "t": 16570,
+    "dir": "received",
+    "bytes": 328
+  },
+  {
+    "t": 16570,
+    "dir": "received",
+    "bytes": 164
+  },
+  {
+    "t": 16571,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16571,
+    "dir": "received",
+    "bytes": 154
+  },
+  {
+    "t": 16572,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16572,
+    "dir": "received",
+    "bytes": 164
+  },
+  {
+    "t": 16572,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16585,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16586,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16586,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16611,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16611,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16612,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16637,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16649,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16650,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16669,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16670,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16671,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16695,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16696,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16696,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16720,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16733,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16733,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16745,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16750,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16750,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16771,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16772,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16772,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16797,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16798,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16798,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16823,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16823,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16824,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16848,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16849,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16849,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16874,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16875,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16875,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16900,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16900,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16901,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16926,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16927,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16927,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16951,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16952,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16952,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 16976,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 16977,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 16977,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 17002,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 17003,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 17003,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 17027,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 17028,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 17028,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 17052,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 17066,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 17066,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 17077,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 17083,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 17084,
+    "dir": "received",
+    "bytes": 90
+  },
+  {
+    "t": 17103,
+    "dir": "sent",
+    "bytes": 99
+  },
+  {
+    "t": 17103,
+    "dir": "received",
+    "bytes": 97
+  },
+  {
+    "t": 17104,
+    "dir": "received",
+    "bytes": 90
+  }
+]

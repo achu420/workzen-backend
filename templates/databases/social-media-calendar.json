@@ -1,0 +1,616 @@
+{
+  "template_id": "social-media-calendar",
+  "order": 127,
+  "name": "Social Media Calendar",
+  "description": "Wrangle the unwrangle-able by showcasing your important events and dates directly alongside your posts. ",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"phone\",\"iconName\":\"notification-alarm-2\",\"color\":\"0xFFFFBA00\"}"
+  },
+  "category": "Marketing",
+  "categories": [
+    "Marketing",
+    "Startups"
+  ],
+  "author": "Airtable",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Social-Media-Calendar-4f3a86ee-637f-4d77-b6ad-3c5692fdeb75",
+  "database_id": "c79f57cb-cd8d-436a-8db3-07edd6e9f088",
+  "fields": [
+    {
+      "id": "0piuQy",
+      "name": "Title",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        }
+      },
+      "is_primary": true
+    },
+    {
+      "id": "HgxCbP",
+      "name": "Scheduled",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "timezone_id": "",
+          "time_format": 1,
+          "date_format": 3
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "_raTZZ",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"7K6v\",\"name\":\"Request\",\"color\":\"LightPink\"},{\"id\":\"nS9q\",\"name\":\"On hold\",\"color\":\"Pink\"},{\"id\":\"k-Ov\",\"name\":\"Planning\",\"color\":\"Green\"},{\"id\":\"moCF\",\"name\":\"Live\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        },
+        "4": {
+          "content": "{\"options\":[],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "ZGnvyB",
+      "name": "Type of post",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": "",
+          "content": "{\"options\":[],\"disable_color\":false}"
+        },
+        "3": {
+          "content": "{\"options\":[{\"id\":\"N9Op\",\"name\":\"Launch\",\"color\":\"Purple\"},{\"id\":\"Nmyu\",\"name\":\"Evergreen content\",\"color\":\"Green\"},{\"id\":\"oqZ9\",\"name\":\"Paid\",\"color\":\"Pink\"},{\"id\":\"YG14\",\"name\":\"Organic content\",\"color\":\"Aqua\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "1RpTm_",
+      "name": "Channels",
+      "field_type": 4,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": "",
+          "content": "{\"options\":[],\"disable_color\":false}"
+        },
+        "3": {
+          "content": "{\"options\":[],\"disable_color\":false}"
+        },
+        "4": {
+          "content": "{\"options\":[{\"id\":\"0Ew4\",\"name\":\"TikTok\",\"color\":\"Purple\"},{\"id\":\"k15k\",\"name\":\"Facebook\",\"color\":\"Blue\"},{\"id\":\"ob-j\",\"name\":\"LinkedIn\",\"color\":\"Yellow\"},{\"id\":\"rrqY\",\"name\":\"Instagram\",\"color\":\"Orange\"},{\"id\":\"ZIMw\",\"name\":\"Twitter\",\"color\":\"Aqua\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "8RJcw-",
+      "name": "Copy",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "vqu1G6",
+      "name": "Social media owner",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": "",
+          "content": "{\"options\":[],\"disable_color\":false}"
+        },
+        "3": {
+          "content": "{\"options\":[{\"id\":\"pIGl\",\"name\":\"Jac\",\"color\":\"Pink\"},{\"id\":\"Yp_M\",\"name\":\"Ari\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "ri0ex7",
+      "name": "Progress update",
+      "field_type": 11,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": "",
+          "auto_fill": false
+        },
+        "11": {
+          "auto_fill": false
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "4f3a86ee-637f-4d77-b6ad-3c5692fdeb75",
+      "database_id": "c79f57cb-cd8d-436a-8db3-07edd6e9f088",
+      "name": "Calendar",
+      "layout": 2,
+      "layout_settings": {
+        "2": {
+          "show_week_numbers": true,
+          "show_weekends": true,
+          "field_id": "HgxCbP",
+          "layout_ty": 0,
+          "first_day_of_week": 0
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "3ae5540b-7898-4351-87a6-444132f66a95"
+        },
+        {
+          "height": 60,
+          "id": "d106296d-a986-401e-80ca-a2800000b54f"
+        },
+        {
+          "id": "af70a513-d151-4ef4-94b5-cd4ce1bb0def",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "2695ce95-adbb-4002-a679-eed16064fca5"
+        },
+        {
+          "height": 60,
+          "id": "4e6c8a51-c754-4dc2-88e8-c6e09935a54d"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "0piuQy"
+        },
+        {
+          "id": "HgxCbP"
+        },
+        {
+          "id": "_raTZZ"
+        },
+        {
+          "id": "ZGnvyB"
+        },
+        {
+          "id": "1RpTm_"
+        },
+        {
+          "id": "8RJcw-"
+        },
+        {
+          "id": "vqu1G6"
+        },
+        {
+          "id": "ri0ex7"
+        }
+      ],
+      "field_settings": {
+        "_raTZZ": {
+          "width": 150,
+          "wrap": true,
+          "visibility": 1
+        },
+        "ri0ex7": {
+          "wrap": true,
+          "width": 150,
+          "visibility": 2
+        },
+        "ZGnvyB": {
+          "width": 150,
+          "visibility": 2,
+          "wrap": true
+        },
+        "1RpTm_": {
+          "width": 150,
+          "wrap": true,
+          "visibility": 2
+        },
+        "HgxCbP": {
+          "wrap": true,
+          "width": 150,
+          "visibility": 2
+        },
+        "vqu1G6": {
+          "visibility": 2,
+          "wrap": true,
+          "width": 150
+        },
+        "8RJcw-": {
+          "width": 150,
+          "visibility": 2,
+          "wrap": true
+        },
+        "0piuQy": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": true
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1724483630
+    },
+    {
+      "id": "079a177f-75c7-4d86-94d4-41ffa7523cb4",
+      "database_id": "c79f57cb-cd8d-436a-8db3-07edd6e9f088",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "3ae5540b-7898-4351-87a6-444132f66a95",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "d106296d-a986-401e-80ca-a2800000b54f"
+        },
+        {
+          "id": "af70a513-d151-4ef4-94b5-cd4ce1bb0def",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "2695ce95-adbb-4002-a679-eed16064fca5"
+        },
+        {
+          "height": 60,
+          "id": "4e6c8a51-c754-4dc2-88e8-c6e09935a54d"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "0piuQy"
+        },
+        {
+          "id": "HgxCbP"
+        },
+        {
+          "id": "_raTZZ"
+        },
+        {
+          "id": "ZGnvyB"
+        },
+        {
+          "id": "1RpTm_"
+        },
+        {
+          "id": "8RJcw-"
+        },
+        {
+          "id": "vqu1G6"
+        },
+        {
+          "id": "ri0ex7"
+        }
+      ],
+      "field_settings": {
+        "ri0ex7": {
+          "width": 293,
+          "wrap": true,
+          "visibility": 0
+        },
+        "8RJcw-": {
+          "wrap": true,
+          "visibility": 0,
+          "width": 200
+        },
+        "HgxCbP": {
+          "visibility": 0,
+          "width": 125,
+          "wrap": true
+        },
+        "vqu1G6": {
+          "visibility": 0
+        },
+        "_raTZZ": {
+          "width": 107,
+          "wrap": true,
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    }
+  ],
+  "rows": [
+    {
+      "id": "af70a513-d151-4ef4-94b5-cd4ce1bb0def",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0piuQy": {
+          "created_at": 1724484225,
+          "field_type": 0,
+          "data": "Engineer interview",
+          "last_modified": 1724484225
+        },
+        "HgxCbP": {
+          "created_at": 1724484229,
+          "is_range": false,
+          "reminder_id": "",
+          "field_type": 2,
+          "end_timestamp": "",
+          "include_time": true,
+          "data": "1723620600",
+          "last_modified": 1724484235
+        },
+        "_raTZZ": {
+          "created_at": 1724484239,
+          "field_type": 3,
+          "data": "nS9q",
+          "last_modified": 1724484239
+        },
+        "ZGnvyB": {
+          "created_at": 1724484251,
+          "data": "Nmyu",
+          "field_type": 3,
+          "last_modified": 1724484265
+        },
+        "1RpTm_": {
+          "created_at": 1724484271,
+          "data": "rrqY,0Ew4,ZIMw",
+          "field_type": 4,
+          "last_modified": 1724484274
+        },
+        "8RJcw-": {
+          "created_at": 1724484296,
+          "data": "Learn about the secrets to building an app (it involves going to the beach) that makes users happy from @SkylerXu. http://www.example.com/skyler-xu",
+          "field_type": 0,
+          "last_modified": 1724484296
+        },
+        "vqu1G6": {
+          "created_at": 1724484307,
+          "field_type": 3,
+          "data": "Yp_M",
+          "last_modified": 1724484307
+        },
+        "ri0ex7": {
+          "created_at": 1724484532,
+          "data": "The scheduled post on August 14, 2024 at 15:30 is an Evergreen Content titled \"Engineer Interview\". It will be shared across the social media channels Instagram, TikTok, and Twitter. The content creator for this post is Ari, who has it currently on hold.",
+          "field_type": 11,
+          "last_modified": 1724484577
+        }
+      }
+    },
+    {
+      "id": "4e6c8a51-c754-4dc2-88e8-c6e09935a54d",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0piuQy": {
+          "created_at": 1724484413,
+          "field_type": 0,
+          "data": "Better sharing",
+          "last_modified": 1724484413
+        },
+        "HgxCbP": {
+          "created_at": 1724484418,
+          "end_timestamp": "",
+          "reminder_id": "",
+          "field_type": 2,
+          "is_range": false,
+          "data": "1724090400",
+          "include_time": true,
+          "last_modified": 1724484434
+        },
+        "_raTZZ": {
+          "created_at": 1724484442,
+          "field_type": 3,
+          "data": "7K6v",
+          "last_modified": 1724484442
+        },
+        "ZGnvyB": {
+          "created_at": 1724484446,
+          "field_type": 3,
+          "data": "N9Op",
+          "last_modified": 1724484446
+        },
+        "1RpTm_": {
+          "created_at": 1724484452,
+          "field_type": 4,
+          "data": "0Ew4,ZIMw",
+          "last_modified": 1724484453
+        },
+        "8RJcw-": {
+          "created_at": 1724484466,
+          "data": "It's easier than ever before to share videos directly from our app (especially cute dogs, please share cute dogs). http://www.example.com/improved-sharing",
+          "field_type": 0,
+          "last_modified": 1724484466
+        },
+        "vqu1G6": {
+          "created_at": 1724484470,
+          "data": "pIGl",
+          "field_type": 3,
+          "last_modified": 1724484470
+        }
+      }
+    },
+    {
+      "id": "d106296d-a986-401e-80ca-a2800000b54f",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0piuQy": {
+          "created_at": 1724484087,
+          "data": "Drone security",
+          "field_type": 0,
+          "last_modified": 1724484087
+        },
+        "HgxCbP": {
+          "created_at": 1724484091,
+          "reminder_id": "",
+          "field_type": 2,
+          "data": "1723015200",
+          "include_time": true,
+          "end_timestamp": "",
+          "is_range": false,
+          "last_modified": 1724484100
+        },
+        "_raTZZ": {
+          "created_at": 1724484115,
+          "field_type": 3,
+          "data": "k-Ov",
+          "last_modified": 1724484125
+        },
+        "ZGnvyB": {
+          "created_at": 1724484130,
+          "data": "oqZ9",
+          "field_type": 3,
+          "last_modified": 1724484130
+        },
+        "1RpTm_": {
+          "created_at": 1724484183,
+          "field_type": 4,
+          "data": "ob-j,ZIMw",
+          "last_modified": 1724484197
+        },
+        "8RJcw-": {
+          "created_at": 1724484211,
+          "data": "Continued improvements to our drone security: http://www.example.com/security-updates-drone",
+          "field_type": 0,
+          "last_modified": 1724484211
+        },
+        "vqu1G6": {
+          "created_at": 1724484214,
+          "field_type": 3,
+          "data": "pIGl",
+          "last_modified": 1724484214
+        }
+      }
+    },
+    {
+      "id": "2695ce95-adbb-4002-a679-eed16064fca5",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0piuQy": {
+          "created_at": 1724484329,
+          "field_type": 0,
+          "data": "Peace of mind",
+          "last_modified": 1724484329
+        },
+        "HgxCbP": {
+          "created_at": 1724484331,
+          "data": "1724315400",
+          "field_type": 2,
+          "is_range": false,
+          "end_timestamp": "",
+          "include_time": true,
+          "reminder_id": "mtdg5g1iQrUg2udzaBOCt",
+          "last_modified": 1724484347
+        },
+        "_raTZZ": {
+          "created_at": 1724484360,
+          "data": "7K6v",
+          "field_type": 3,
+          "last_modified": 1724484360
+        },
+        "ZGnvyB": {
+          "created_at": 1724484366,
+          "data": "oqZ9",
+          "field_type": 3,
+          "last_modified": 1724484366
+        },
+        "1RpTm_": {
+          "created_at": 1724484374,
+          "field_type": 4,
+          "data": "rrqY,k15k",
+          "last_modified": 1724484375
+        },
+        "8RJcw-": {
+          "created_at": 1724484389,
+          "field_type": 0,
+          "data": "Never let the fear of the unknown get in your way. With our products, you can rest assured everything you capture is safe.",
+          "last_modified": 1724484389
+        },
+        "vqu1G6": {
+          "created_at": 1724484396,
+          "field_type": 3,
+          "data": "pIGl",
+          "last_modified": 1724484396
+        }
+      }
+    },
+    {
+      "id": "3ae5540b-7898-4351-87a6-444132f66a95",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "HgxCbP": {
+          "end_timestamp": "",
+          "data": "1722787200",
+          "field_type": 2,
+          "include_time": false,
+          "reminder_id": "",
+          "is_range": false
+        },
+        "0piuQy": {
+          "created_at": 1724483675,
+          "field_type": 0,
+          "data": "Easy reporting",
+          "last_modified": 1724483679
+        },
+        "_raTZZ": {
+          "created_at": 1724483693,
+          "field_type": 3,
+          "data": "moCF",
+          "last_modified": 1724483693
+        },
+        "ZGnvyB": {
+          "created_at": 1724483743,
+          "data": "YG14",
+          "field_type": 3,
+          "last_modified": 1724484140
+        },
+        "1RpTm_": {
+          "created_at": 1724483769,
+          "data": "ZIMw,rrqY,ob-j,0Ew4,k15k",
+          "field_type": 4,
+          "last_modified": 1724484172
+        },
+        "8RJcw-": {
+          "created_at": 1724484070,
+          "field_type": 0,
+          "data": "It's never fun when products go down, especially when you can't get updates. Follow @RealTimeDownTime for instant updates when we're having issues.",
+          "last_modified": 1724484070
+        },
+        "vqu1G6": {
+          "created_at": 1724484076,
+          "field_type": 3,
+          "data": "Yp_M",
+          "last_modified": 1724484076
+        },
+        "ri0ex7": {
+          "created_at": 1724484487,
+          "data": "The social media owner Ari posted an organic content titled \"Easy Reporting\" on August 5, 2024. The post is live and provides updates about potential product issues through the channels Twitter, Instagram, LinkedIn, TikTok, and Facebook. It encourages followers to follow @RealTimeDownTime for instant updates when there are any problems with their products.",
+          "field_type": 11,
+          "last_modified": 1724484487
+        }
+      }
+    }
+  ]
+}

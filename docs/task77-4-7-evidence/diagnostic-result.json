@@ -1,0 +1,129 @@
+{
+  "armB": {
+    "arm": "warmed",
+    "warmupOperationsPerformed": [
+      "beforeAll-equivalent setup (identical to original)",
+      "A: renameField(pageA) -- exact reuse",
+      "B: renameField(pageB) + pageA.reload() -- exact reuse (pageA reload is B's documented effect on pageA)",
+      "C: writeCell(pageA) + pageB.reload() -- exact reuse",
+      "D: writeCell(pageB) + pageA.reload() -- exact reuse (2nd pageA reload, D's documented effect on pageA)",
+      "E: createRow(pageA) -- exact reuse",
+      "F: concurrent writeCell(pageA)+writeCell(pageB) on separate fields -- exact reuse",
+      "G: 3x contextA.setOffline(true/false) + renameField(pageA) + writeCell(pageA) per cycle -- exact reuse of all pageA/contextA operations (peer-live-poll windows shortened from 10s/20s to 1.5s since this diagnostic does not assert on them, consistent with not re-testing G's own acceptance criteria -- only reproducing its state effect on contextA/pageA)",
+      "H: writeCell(pageA) + restartBackend(env) [REAL process kill+respawn] + pageA.reload() + pageB.reload() + writeCell(pageA) + renameField(pageA) -- exact reuse"
+    ],
+    "warmupOperationsOmitted": [
+      {
+        "op": "P0",
+        "reason": "read-only HTTP/DOM queries, no observable effect on pageA/pageB/contextA/contextB state -- confirmed by source read"
+      }
+    ],
+    "firstWriteCommitted": true,
+    "secondWriteSucceeded": true,
+    "secondWriteError": null,
+    "checkpoints": [
+      {
+        "label": "after-first-write-commits",
+        "selector": "[data-testid=\"grid-cell-afcc998b-41c6-41bd-bd83-cf13bfbc2218-2f4bc3d9-ed2a-4452-9a0f-440be409fc85\"]",
+        "matchCount": 1,
+        "visibleCount": 1,
+        "attached": true,
+        "boundingBox": {
+          "x": 364,
+          "y": 258.5,
+          "width": 150,
+          "height": 37
+        },
+        "computedVisibility": "visible",
+        "computedDisplay": "flex",
+        "inViewport": true,
+        "hitTestSameNode": true,
+        "rowPresentCount": 5,
+        "gridPresent": true,
+        "activeElementTag": "BODY",
+        "activeElementEditable": false,
+        "editorLikeCount": 1,
+        "rendererResponsive": true,
+        "consoleErrorsSinceLast": 0
+      },
+      {
+        "label": "before-write",
+        "selector": "[data-testid=\"grid-cell-afcc998b-41c6-41bd-bd83-cf13bfbc2218-2f4bc3d9-ed2a-4452-9a0f-440be409fc85\"]",
+        "matchCount": 1,
+        "visibleCount": 1,
+        "attached": true,
+        "boundingBox": {
+          "x": 364,
+          "y": 258.5,
+          "width": 150,
+          "height": 37
+        },
+        "computedVisibility": "visible",
+        "computedDisplay": "flex",
+        "inViewport": true,
+        "hitTestSameNode": true,
+        "rowPresentCount": 5,
+        "gridPresent": true,
+        "activeElementTag": "BODY",
+        "activeElementEditable": false,
+        "editorLikeCount": 1,
+        "rendererResponsive": true,
+        "consoleErrorsSinceLast": 0
+      },
+      {
+        "label": "retry-attempt-1",
+        "selector": "[data-testid=\"grid-cell-afcc998b-41c6-41bd-bd83-cf13bfbc2218-2f4bc3d9-ed2a-4452-9a0f-440be409fc85\"]",
+        "matchCount": 1,
+        "visibleCount": 1,
+        "attached": true,
+        "boundingBox": {
+          "x": 364,
+          "y": 258.5,
+          "width": 150,
+          "height": 37
+        },
+        "computedVisibility": "visible",
+        "computedDisplay": "flex",
+        "inViewport": true,
+        "hitTestSameNode": true,
+        "rowPresentCount": 5,
+        "gridPresent": true,
+        "activeElementTag": "BODY",
+        "activeElementEditable": false,
+        "editorLikeCount": 1,
+        "rendererResponsive": true,
+        "consoleErrorsSinceLast": 0
+      },
+      {
+        "label": "outcome-success",
+        "selector": "[data-testid=\"grid-cell-afcc998b-41c6-41bd-bd83-cf13bfbc2218-2f4bc3d9-ed2a-4452-9a0f-440be409fc85\"]",
+        "matchCount": 1,
+        "visibleCount": 1,
+        "attached": true,
+        "boundingBox": {
+          "x": 364,
+          "y": 258.5,
+          "width": 150,
+          "height": 256
+        },
+        "computedVisibility": "visible",
+        "computedDisplay": "flex",
+        "inViewport": true,
+        "hitTestSameNode": true,
+        "rowPresentCount": 5,
+        "gridPresent": true,
+        "activeElementTag": "DIV",
+        "activeElementEditable": true,
+        "editorLikeCount": 2,
+        "rendererResponsive": true,
+        "consoleErrorsSinceLast": 0
+      }
+    ],
+    "docPageId": "e7aa854a-5f07-45bc-9260-0e413d6bfe8e",
+    "docEditable": false,
+    "spaNavigationEvidence": {
+      "framenavigatedCount": 3,
+      "viaClassification": "spa-after-reload-retry"
+    }
+  }
+}

@@ -1,0 +1,2322 @@
+[
+  {
+    "t": 9718,
+    "text": "[vite] connecting..."
+  },
+  {
+    "t": 9729,
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+  },
+  {
+    "t": 9745,
+    "text": "[vite] connected."
+  },
+  {
+    "t": 9903,
+    "text": "[initAPIService][request] no token found, sending request without auth header {url: /api/server-info/auth-providers}"
+  },
+  {
+    "t": 9905,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 9906,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 9907,
+    "text": "Auth providers API returned error: Request failed"
+  },
+  {
+    "t": 9907,
+    "text": "Failed to fetch auth providers: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 9909,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 10075,
+    "text": "[Auth] signInWithPassword: completing login flow"
+  },
+  {
+    "t": 10075,
+    "text": "[Auth] signInWithPassword: starting {email: task71-diag-member-1794327611181-170252@example.test}"
+  },
+  {
+    "t": 10099,
+    "text": "[Auth] signInWithPassword: GoTrue returned tokens, completing auth flow"
+  },
+  {
+    "t": 10099,
+    "text": "[Auth] signInWithPassword: verifying token with AppFlowy Cloud"
+  },
+  {
+    "t": 10099,
+    "text": "[initAPIService][request] no token found, sending request without auth header {url: /api/user/verify/PzfdWS65SKuY7NRPdd5c2XbrqAptHQwYRuLLR-ll_b4}"
+  },
+  {
+    "t": 10099,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/verify/PzfdWS65SKuY7NRPdd5c2XbrqAptHQwYRuLLR-ll_b4, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10099,
+    "text": "[Auth] signInWithPassword: verifyToken completed {isNewUser: false}"
+  },
+  {
+    "t": 10099,
+    "text": "[Auth] signInWithPassword: refreshing token"
+  },
+  {
+    "t": 10099,
+    "text": "[Auth] refreshToken: requesting new token"
+  },
+  {
+    "t": 10101,
+    "text": "[Auth] refreshToken: success, saving token"
+  },
+  {
+    "t": 10101,
+    "text": "[Auth] signInWithPassword: success, calling afterAuth"
+  },
+  {
+    "t": 10101,
+    "text": "[Auth] afterAuth: no redirectTo saved, going to /app"
+  },
+  {
+    "t": 10108,
+    "text": "[vite] connecting..."
+  },
+  {
+    "t": 10128,
+    "text": "[vite] connected."
+  },
+  {
+    "t": 10128,
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+  },
+  {
+    "t": 10377,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 10379,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/server-info, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10379,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/workspace, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10384,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 10400,
+    "text": "[AppWorkspaceRedirect] Redirecting to workspace {workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55}"
+  },
+  {
+    "t": 10421,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/favorite, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10421,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/7963859b-70de-48b2-a9bd-35a0cb596b55?depth=6, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10421,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/sharing/workspace/79638…iew/7963859b-70de-48b2-a9bd-35a0cb596b55?depth=50, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10421,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…8b2-a9bd-35a0cb596b55/database?offset=0&limit=200, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10421,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/trash, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10421,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/v1/7963859b-7…607356c-5e4a-4a45-940c-8a7c85cbc07f?collab_type=2, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10434,
+    "text": "🔗 Start WebSocket connection {url: ws://127.0.0.1:19071/ws/v2, workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, deviceId: SWlDHVKa}"
+  },
+  {
+    "t": 10458,
+    "text": "[ViewLoader] openView start {workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, layout: 0, databaseId: undefined}"
+  },
+  {
+    "t": 10463,
+    "text": "✅ WebSocket connection opened"
+  },
+  {
+    "t": 10469,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 10470,
+    "text": "{code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 10470,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1-4b16-8582-bc81e795b8d5/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10470,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1-4b16-8582-bc81e795b8d5/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10522,
+    "text": "[DB] openCollabDBWithProvider start {name: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, alreadyOpened: false}"
+  },
+  {
+    "t": 10523,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/profile, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10527,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 10527,
+    "text": "Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 10528,
+    "text": "[DB] collab provider synced {name: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, syncDurationMs: 6, wasOpened: false}"
+  },
+  {
+    "t": 10528,
+    "text": "[ViewLoader] cache check {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, fromCache: false, forceFetch: false, durationMs: 69}"
+  },
+  {
+    "t": 10528,
+    "text": "[ViewLoader] fetching from server {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 10530,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…55/page-view/3d4f141e-0ba1-4b16-8582-bc81e795b8d5, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 10530,
+    "text": "[ViewLoader] fetch complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, dataBytes: 827, rowCount: 0, databaseMetadataOnly: false, fetchDurationMs: 3}"
+  },
+  {
+    "t": 10530,
+    "text": "[ViewLoader] openView complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, fromCache: false, collabType: 0, totalDurationMs: 72}"
+  },
+  {
+    "t": 10530,
+    "text": "[useViewOperations] loadView complete (sync not bound) {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, layout: 0, collabType: 0, databaseIdHint: undefined, isSubDocument: false}"
+  },
+  {
+    "t": 10531,
+    "text": "[AppPage] loadPageDoc complete, setting doc state {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docViewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docObjectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 10531,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 10533,
+    "text": "📡 User awareness dispatched: {version: 1, timestamp: 1794327621, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"1e2a04b7-52f3-4453-af6a-a8527aa7daac\"}}"
+  },
+  {
+    "t": 10533,
+    "text": "[AppPage] bindViewSync starting {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docViewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docObjectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 10533,
+    "text": "[useViewOperations] bindViewSync starting {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, hasAwareness: true}"
+  },
+  {
+    "t": 10533,
+    "text": "Registering sync context for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5 with collabType 0"
+  },
+  {
+    "t": 10533,
+    "text": "Initializing sync for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5 with collabType 0"
+  },
+  {
+    "t": 10533,
+    "text": "[sync] binding context with manifest exchange {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: undefined}"
+  },
+  {
+    "t": 10533,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 10533,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 10533,
+    "text": "Registered sync context for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5; owner count=1"
+  },
+  {
+    "t": 10533,
+    "text": "[useViewOperations] bindViewSync complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0}"
+  },
+  {
+    "t": 10533,
+    "text": "[AppPage] bindViewSync complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 10535,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 10535,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 10535,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 10535,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 10535,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: undefined, bytes: 2}"
+  },
+  {
+    "t": 10535,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 10537,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 10537,
+    "text": "Failed to hydrate workspace member profile: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 10541,
+    "text": "🎯 Input focused"
+  },
+  {
+    "t": 10542,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 10542,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 10542,
+    "text": "🚫 Cursor awareness cleared for current user"
+  },
+  {
+    "t": 10752,
+    "text": "MUI: You are providing a disabled `button` child to the Tooltip component.\nA disabled element does not fire events.\nTooltip needs to listen to the child element's events to display the title.\n\nAdd a simple wrapper element, such as a `span`."
+  },
+  {
+    "t": 10768,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 10769,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 10784,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 10784,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 10851,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 10852,
+    "text": "🎯 Cursor awareness synced: {version: 1, timestamp: 1794327622, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"1e2a04b7-52f3-4453-af6a-a8527aa7daac\"}, selection: undefined}"
+  },
+  {
+    "t": 10852,
+    "text": "[Header.Users] users updated [Object]"
+  },
+  {
+    "t": 11263,
+    "text": "👋 Input blurred"
+  },
+  {
+    "t": 11364,
+    "text": "🧹 Cleaning input state after blur"
+  },
+  {
+    "t": 11498,
+    "text": "[vite] connecting..."
+  },
+  {
+    "t": 11534,
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+  },
+  {
+    "t": 11534,
+    "text": "[vite] connected."
+  },
+  {
+    "t": 11779,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 11780,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/workspace, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11780,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/server-info, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11786,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 11801,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/profile, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11806,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/favorite, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11806,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/7963859b-70de-48b2-a9bd-35a0cb596b55?depth=6, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11806,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/sharing/workspace/79638…iew/7963859b-70de-48b2-a9bd-35a0cb596b55?depth=50, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11807,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…8b2-a9bd-35a0cb596b55/database?offset=0&limit=200, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11807,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/trash, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11807,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/v1/7963859b-7…607356c-5e4a-4a45-940c-8a7c85cbc07f?collab_type=2, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11817,
+    "text": "🔗 Start WebSocket connection {url: ws://127.0.0.1:19071/ws/v2, workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, deviceId: SWlDHVKa}"
+  },
+  {
+    "t": 11819,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/3d4f141e-0ba1-4b16-8582-bc81e795b8d5?depth=1, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11828,
+    "text": "[ViewLoader] openView start {workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, layout: 0, databaseId: undefined}"
+  },
+  {
+    "t": 11837,
+    "text": "✅ WebSocket connection opened"
+  },
+  {
+    "t": 11838,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 11838,
+    "text": "{code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 11838,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1-4b16-8582-bc81e795b8d5/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11841,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1-4b16-8582-bc81e795b8d5/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11849,
+    "text": "[DB] openCollabDBWithProvider start {name: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, alreadyOpened: false}"
+  },
+  {
+    "t": 11849,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 11849,
+    "text": "Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 11869,
+    "text": "[DB] collab provider synced {name: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, syncDurationMs: 20, wasOpened: false}"
+  },
+  {
+    "t": 11869,
+    "text": "[ViewLoader] cached document is empty shell, re-fetching {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, blockCount: 2}"
+  },
+  {
+    "t": 11869,
+    "text": "[ViewLoader] cache check {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, fromCache: false, forceFetch: false, durationMs: 41}"
+  },
+  {
+    "t": 11869,
+    "text": "[ViewLoader] fetching from server {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 11871,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…55/page-view/3d4f141e-0ba1-4b16-8582-bc81e795b8d5, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 11871,
+    "text": "[ViewLoader] fetch complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, dataBytes: 827, rowCount: 0, databaseMetadataOnly: false, fetchDurationMs: 1}"
+  },
+  {
+    "t": 11871,
+    "text": "[ViewLoader] openView complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, fromCache: false, collabType: 0, totalDurationMs: 42}"
+  },
+  {
+    "t": 11871,
+    "text": "[useViewOperations] loadView complete (sync not bound) {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, layout: 0, collabType: 0, databaseIdHint: undefined, isSubDocument: false}"
+  },
+  {
+    "t": 11871,
+    "text": "[AppPage] loadPageDoc complete, setting doc state {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docViewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docObjectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 11871,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 11873,
+    "text": "📡 User awareness dispatched: {version: 1, timestamp: 1794327623, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"1e2a04b7-52f3-4453-af6a-a8527aa7daac\"}}"
+  },
+  {
+    "t": 11873,
+    "text": "[AppPage] bindViewSync starting {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docViewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docObjectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 11873,
+    "text": "[useViewOperations] bindViewSync starting {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, hasAwareness: true}"
+  },
+  {
+    "t": 11873,
+    "text": "Registering sync context for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5 with collabType 0"
+  },
+  {
+    "t": 11873,
+    "text": "Initializing sync for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5 with collabType 0"
+  },
+  {
+    "t": 11873,
+    "text": "[sync] binding context with manifest exchange {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: undefined}"
+  },
+  {
+    "t": 11873,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 11873,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 11873,
+    "text": "Registered sync context for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5; owner count=1"
+  },
+  {
+    "t": 11873,
+    "text": "[useViewOperations] bindViewSync complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0}"
+  },
+  {
+    "t": 11873,
+    "text": "[AppPage] bindViewSync complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 11878,
+    "text": "🎯 Input focused"
+  },
+  {
+    "t": 11878,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 11878,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 11878,
+    "text": "🚫 Cursor awareness cleared for current user"
+  },
+  {
+    "t": 11879,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 11879,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 11879,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 11879,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 11879,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: undefined, bytes: 2}"
+  },
+  {
+    "t": 11879,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 11886,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 11886,
+    "text": "Failed to hydrate workspace member profile: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 12067,
+    "text": "MUI: You are providing a disabled `button` child to the Tooltip component.\nA disabled element does not fire events.\nTooltip needs to listen to the child element's events to display the title.\n\nAdd a simple wrapper element, such as a `span`."
+  },
+  {
+    "t": 12080,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 12080,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 12096,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 12096,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 12167,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 12167,
+    "text": "🎯 Cursor awareness synced: {version: 1, timestamp: 1794327623, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"1e2a04b7-52f3-4453-af6a-a8527aa7daac\"}, selection: undefined}"
+  },
+  {
+    "t": 12167,
+    "text": "[Header.Users] users updated [Object]"
+  },
+  {
+    "t": 12578,
+    "text": "👋 Input blurred"
+  },
+  {
+    "t": 12680,
+    "text": "🧹 Cleaning input state after blur"
+  },
+  {
+    "t": 12831,
+    "text": "[Outline] [manual-expand] expand node {viewId: af24edf2-544e-4a92-b136-99a048a9e6e0, alreadyLoaded: false}"
+  },
+  {
+    "t": 12831,
+    "text": "[Outline] [manual-expand] requesting single subtree {viewId: af24edf2-544e-4a92-b136-99a048a9e6e0, depth: 1}"
+  },
+  {
+    "t": 12831,
+    "text": "[Outline] [loadViewChildren] requesting single subtree {workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, viewId: af24edf2-544e-4a92-b136-99a048a9e6e0, depth: 1, usedCachedChildren: false}"
+  },
+  {
+    "t": 12843,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/af24edf2-544e-4a92-b136-99a048a9e6e0?depth=1, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 12858,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…e-4a92-b136-99a048a9e6e0/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 12858,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 16556,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=null, isCollabVersionId=false"
+  },
+  {
+    "t": 16556,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16556,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16556,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=null, incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16556,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16556,
+    "text": "🎯 No selection found for client 1899084571"
+  },
+  {
+    "t": 16556,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16557,
+    "text": "[Header.Users] users updated [Object, Object]"
+  },
+  {
+    "t": 16559,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16559,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16559,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16559,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16559,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16560,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:27.823Z}"
+  },
+  {
+    "t": 16560,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16560,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16560,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(1), targetPath: Array(2)}"
+  },
+  {
+    "t": 16561,
+    "text": "➕ Inserting at offset 0: t undefined"
+  },
+  {
+    "t": 16561,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16561,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 0, text: t, path: Array(3)}"
+  },
+  {
+    "t": 16562,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16562,
+    "text": "applyRemoteEvents: 2.2470703125 ms"
+  },
+  {
+    "t": 16562,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16562,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16562,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16562,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16567,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16567,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16567,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16567,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16567,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16567,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16567,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16568,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16568,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16568,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16568,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16568,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16568,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16568,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16583,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16583,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16583,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16583,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16583,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16583,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:27.847Z}"
+  },
+  {
+    "t": 16583,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16583,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16583,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16584,
+    "text": "➕ Inserting at offset 1: 7 undefined"
+  },
+  {
+    "t": 16584,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16584,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 1, text: 7, path: Array(3)}"
+  },
+  {
+    "t": 16584,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16584,
+    "text": "applyRemoteEvents: 0.5400390625 ms"
+  },
+  {
+    "t": 16584,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16584,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16584,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16584,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16609,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16609,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16609,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16609,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16609,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16609,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:27.872Z}"
+  },
+  {
+    "t": 16609,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16609,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16609,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16609,
+    "text": "➕ Inserting at offset 2: 1 undefined"
+  },
+  {
+    "t": 16609,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16609,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 2, text: 1, path: Array(3)}"
+  },
+  {
+    "t": 16609,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16609,
+    "text": "applyRemoteEvents: 0.494873046875 ms"
+  },
+  {
+    "t": 16609,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16609,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16609,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16609,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16635,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16635,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16635,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16635,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16635,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16635,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:27.899Z}"
+  },
+  {
+    "t": 16635,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16635,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16635,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16635,
+    "text": "➕ Inserting at offset 3: - undefined"
+  },
+  {
+    "t": 16635,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16636,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 3, text: -, path: Array(3)}"
+  },
+  {
+    "t": 16636,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16636,
+    "text": "applyRemoteEvents: 0.487060546875 ms"
+  },
+  {
+    "t": 16636,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16636,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16636,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16636,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16667,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16667,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16667,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16667,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16667,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16668,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:27.931Z}"
+  },
+  {
+    "t": 16668,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16668,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16668,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16668,
+    "text": "➕ Inserting at offset 4: d undefined"
+  },
+  {
+    "t": 16668,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16668,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 4, text: d, path: Array(3)}"
+  },
+  {
+    "t": 16668,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16668,
+    "text": "applyRemoteEvents: 0.489013671875 ms"
+  },
+  {
+    "t": 16668,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16668,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16668,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16668,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16694,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16694,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16694,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16694,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16694,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16694,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:27.957Z}"
+  },
+  {
+    "t": 16694,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16694,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16694,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16694,
+    "text": "➕ Inserting at offset 5: i undefined"
+  },
+  {
+    "t": 16694,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16694,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 5, text: i, path: Array(3)}"
+  },
+  {
+    "t": 16694,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16694,
+    "text": "applyRemoteEvents: 0.489990234375 ms"
+  },
+  {
+    "t": 16694,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16694,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16694,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16694,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16718,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16718,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16718,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16718,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16719,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16719,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:27.982Z}"
+  },
+  {
+    "t": 16719,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16719,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16719,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16719,
+    "text": "➕ Inserting at offset 6: a undefined"
+  },
+  {
+    "t": 16719,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16719,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 6, text: a, path: Array(3)}"
+  },
+  {
+    "t": 16719,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16719,
+    "text": "applyRemoteEvents: 0.494140625 ms"
+  },
+  {
+    "t": 16719,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16719,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16719,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16719,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16743,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16743,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16743,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16743,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16743,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16743,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.007Z}"
+  },
+  {
+    "t": 16743,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16743,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16743,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16744,
+    "text": "➕ Inserting at offset 7: g undefined"
+  },
+  {
+    "t": 16744,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16744,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 7, text: g, path: Array(3)}"
+  },
+  {
+    "t": 16744,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16744,
+    "text": "applyRemoteEvents: 0.51416015625 ms"
+  },
+  {
+    "t": 16744,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16744,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16744,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16744,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16769,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16769,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16769,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16769,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16769,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16769,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.033Z}"
+  },
+  {
+    "t": 16769,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16769,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16769,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16769,
+    "text": "➕ Inserting at offset 8: - undefined"
+  },
+  {
+    "t": 16769,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16769,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 8, text: -, path: Array(3)}"
+  },
+  {
+    "t": 16769,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16769,
+    "text": "applyRemoteEvents: 0.510986328125 ms"
+  },
+  {
+    "t": 16770,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16770,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16770,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16770,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16795,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16795,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16795,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16795,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16795,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16795,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.059Z}"
+  },
+  {
+    "t": 16795,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16795,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16795,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16795,
+    "text": "➕ Inserting at offset 9: 1 undefined"
+  },
+  {
+    "t": 16795,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16795,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 9, text: 1, path: Array(3)}"
+  },
+  {
+    "t": 16795,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16795,
+    "text": "applyRemoteEvents: 0.501953125 ms"
+  },
+  {
+    "t": 16795,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16796,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16796,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16796,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16821,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16821,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16821,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16821,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16821,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16821,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.084Z}"
+  },
+  {
+    "t": 16821,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16821,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16821,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16821,
+    "text": "➕ Inserting at offset 10: 7 undefined"
+  },
+  {
+    "t": 16821,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16821,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 10, text: 7, path: Array(3)}"
+  },
+  {
+    "t": 16821,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16821,
+    "text": "applyRemoteEvents: 0.472900390625 ms"
+  },
+  {
+    "t": 16821,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16821,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16821,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16821,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16845,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16845,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16846,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16846,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16846,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16846,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.109Z}"
+  },
+  {
+    "t": 16846,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16846,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16846,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16846,
+    "text": "➕ Inserting at offset 11: 9 undefined"
+  },
+  {
+    "t": 16846,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16846,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 11, text: 9, path: Array(3)}"
+  },
+  {
+    "t": 16846,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16846,
+    "text": "applyRemoteEvents: 0.467041015625 ms"
+  },
+  {
+    "t": 16846,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16846,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16846,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16846,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16872,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16872,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16873,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16873,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16873,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16873,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.136Z}"
+  },
+  {
+    "t": 16873,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16873,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16873,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16873,
+    "text": "➕ Inserting at offset 12: 4 undefined"
+  },
+  {
+    "t": 16873,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16873,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 12, text: 4, path: Array(3)}"
+  },
+  {
+    "t": 16873,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16873,
+    "text": "applyRemoteEvents: 0.483154296875 ms"
+  },
+  {
+    "t": 16873,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16873,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16873,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16873,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16898,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16898,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16898,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16898,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16898,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16898,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.162Z}"
+  },
+  {
+    "t": 16899,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16899,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16899,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16899,
+    "text": "➕ Inserting at offset 13: 3 undefined"
+  },
+  {
+    "t": 16899,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16899,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 13, text: 3, path: Array(3)}"
+  },
+  {
+    "t": 16899,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16899,
+    "text": "applyRemoteEvents: 0.468017578125 ms"
+  },
+  {
+    "t": 16899,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16899,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16899,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16899,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16924,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16924,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16924,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16924,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16924,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16924,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.187Z}"
+  },
+  {
+    "t": 16924,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16924,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16924,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16924,
+    "text": "➕ Inserting at offset 14: 2 undefined"
+  },
+  {
+    "t": 16924,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16924,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 14, text: 2, path: Array(3)}"
+  },
+  {
+    "t": 16924,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16924,
+    "text": "applyRemoteEvents: 0.4619140625 ms"
+  },
+  {
+    "t": 16924,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16924,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16924,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16924,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16949,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16949,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16949,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16949,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16949,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16950,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.213Z}"
+  },
+  {
+    "t": 16950,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16950,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16950,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16950,
+    "text": "➕ Inserting at offset 15: 7 undefined"
+  },
+  {
+    "t": 16950,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16950,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 15, text: 7, path: Array(3)}"
+  },
+  {
+    "t": 16950,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16950,
+    "text": "applyRemoteEvents: 0.610107421875 ms"
+  },
+  {
+    "t": 16950,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16950,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16950,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16950,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16974,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16974,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16974,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16974,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16974,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16974,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.238Z}"
+  },
+  {
+    "t": 16974,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 16974,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 16974,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 16975,
+    "text": "➕ Inserting at offset 16: 6 undefined"
+  },
+  {
+    "t": 16975,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 16975,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 16, text: 6, path: Array(3)}"
+  },
+  {
+    "t": 16975,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 16975,
+    "text": "applyRemoteEvents: 0.47998046875 ms"
+  },
+  {
+    "t": 16975,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 16975,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 16975,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16975,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17000,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17000,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17000,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17000,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17000,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17000,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.264Z}"
+  },
+  {
+    "t": 17000,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 17000,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 17000,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 17000,
+    "text": "➕ Inserting at offset 17: 2 undefined"
+  },
+  {
+    "t": 17000,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 17000,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 17, text: 2, path: Array(3)}"
+  },
+  {
+    "t": 17000,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 17000,
+    "text": "applyRemoteEvents: 0.47314453125 ms"
+  },
+  {
+    "t": 17000,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 17000,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 17000,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17000,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17026,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17026,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17026,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17026,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17026,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17026,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.289Z}"
+  },
+  {
+    "t": 17026,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 17026,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 17026,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 17026,
+    "text": "➕ Inserting at offset 18: 7 undefined"
+  },
+  {
+    "t": 17026,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 17026,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 18, text: 7, path: Array(3)}"
+  },
+  {
+    "t": 17026,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 17026,
+    "text": "applyRemoteEvents: 0.458984375 ms"
+  },
+  {
+    "t": 17026,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 17026,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 17026,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17026,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17050,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17050,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17050,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17050,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17050,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17050,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.314Z}"
+  },
+  {
+    "t": 17050,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 17050,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 17050,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 17050,
+    "text": "➕ Inserting at offset 19: 7 undefined"
+  },
+  {
+    "t": 17051,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 17051,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 19, text: 7, path: Array(3)}"
+  },
+  {
+    "t": 17051,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 17051,
+    "text": "applyRemoteEvents: 0.48388671875 ms"
+  },
+  {
+    "t": 17051,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 17051,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 17051,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17051,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17075,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17075,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17075,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17075,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17075,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17075,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.339Z}"
+  },
+  {
+    "t": 17075,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 17075,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 17076,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 17076,
+    "text": "➕ Inserting at offset 20: 6 undefined"
+  },
+  {
+    "t": 17076,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 17076,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 20, text: 6, path: Array(3)}"
+  },
+  {
+    "t": 17076,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 17076,
+    "text": "applyRemoteEvents: 0.472900390625 ms"
+  },
+  {
+    "t": 17076,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 17076,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 17076,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17076,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17101,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17101,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=undefined, isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17101,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17101,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=undefined, activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17101,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s undefined appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17101,
+    "text": "=== Translating Yjs events to Slate operations === {eventCount: 1, eventTypes: Array(1), timestamp: 2026-11-10T16:20:28.365Z}"
+  },
+  {
+    "t": 17101,
+    "text": "Processing event 1/1: {path: Array(4), type: YTextEvent}"
+  },
+  {
+    "t": 17101,
+    "text": "→ Applying text content changes for textId: VPGz0osjI3"
+  },
+  {
+    "t": 17101,
+    "text": "📝 Applying YText event {textId: VPGz0osjI3, delta: Array(2), targetPath: Array(2)}"
+  },
+  {
+    "t": 17101,
+    "text": "➕ Inserting at offset 21: 2 undefined"
+  },
+  {
+    "t": 17101,
+    "text": "🔄 Generated 1 operations from delta: [Object]"
+  },
+  {
+    "t": 17101,
+    "text": "Applying operation 1/1: {type: insert_text, offset: 21, text: 2, path: Array(3)}"
+  },
+  {
+    "t": 17101,
+    "text": "=== Yjs events translation completed ==="
+  },
+  {
+    "t": 17101,
+    "text": "applyRemoteEvents: 0.465087890625 ms"
+  },
+  {
+    "t": 17101,
+    "text": "[T71] {\"stage\":\"2-observe-deep\",\"eventCount\":1}"
+  },
+  {
+    "t": 17101,
+    "text": "[T71] {\"stage\":\"1-doc-update\",\"origin\":\"remote\"}"
+  },
+  {
+    "t": 17101,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17101,
+    "text": "Received collab message: 0 CollabMessage"
+  }
+]

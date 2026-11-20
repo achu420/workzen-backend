@@ -1,0 +1,27 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:realtime-fanout
+> node --test test/realtime-fanout.test.js
+
+(node:98823) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Task 66 fan-out (JSON, Document): an already-connected second client receives an accepted Document update live, without sending a new SyncRequest, and content converges (129.157375ms)
+✔ Task 66 fan-out (JSON, Database): an already-connected second client receives an accepted Database field update live (100.936583ms)
+✔ Task 66 fan-out (JSON, DatabaseRow): an already-connected second client receives an accepted cell update live (104.150416ms)
+WebSocket Document update admission failed Error: task66 injected persistence failure
+    at store.persist (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/realtime-fanout.test.js:535:45)
+    at mutate (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:912:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async operation (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:174:16)
+WebSocket Document peer fan-out failed Error: task66 simulated flaky peer send failure
+    at serverSideFlakyPeer.send (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/realtime-fanout.test.js:577:50)
+    at processFrame (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/server.js:1864:30)
+✔ Task 66 fan-out negative cases (Document, JSON storage): sender no-dup, cross-workspace isolation, cross-object isolation, disconnected peer, validation-rejected, storage-rejected, one failed peer does not block another (5809.643875ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6273.305958
+EXIT:0

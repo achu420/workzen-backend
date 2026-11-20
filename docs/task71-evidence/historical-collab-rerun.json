@@ -1,0 +1,691 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/26.11.0_1/bin/node",
+      "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/node_modules/.bin/playwright",
+      "test",
+      "test/e2e/historical-collaboration-acceptance.spec.ts",
+      "--reporter=json"
+    ],
+    "configFile": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/playwright.config.ts",
+    "rootDir": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e",
+        "snapshotDir": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 120000,
+        "use": {
+          "headless": true,
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "trace": "retain-on-failure",
+          "screenshot": "only-on-failure",
+          "video": "retain-on-failure",
+          "actionTimeout": 10000,
+          "ignoreHTTPSErrors": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Safari/537.36",
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "historical-collaboration-acceptance.spec.ts",
+      "file": "historical-collaboration-acceptance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Task 66: real-time content fan-out",
+          "file": "historical-collaboration-acceptance.spec.ts",
+          "line": 230,
+          "column": 6,
+          "specs": [
+            {
+              "title": "A1. owner->member live delivery + persistence (document body)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "live-delivery-pass",
+                      "description": "live (no-refresh) delivery to member: PASS; same content after a reload (load-time fetch, not live push): PASS; readinessAfterReload={\"modalClosed\":true,\"toastCleared\":true,\"editorReady\":true,\"ok\":true}"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1594,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:24:57.166Z",
+                      "annotations": [
+                        {
+                          "type": "live-delivery-pass",
+                          "description": "live (no-refresh) delivery to member: PASS; same content after a reload (load-time fetch, not live push): PASS; readinessAfterReload={\"modalClosed\":true,\"toastCleared\":true,\"editorReady\":true,\"ok\":true}"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-7f77fa4c9d14902a79f7",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 282,
+              "column": 3
+            },
+            {
+              "title": "A2. member->owner live delivery + persistence",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "live-delivery-pass",
+                      "description": "live (no-refresh) delivery to owner (member->owner direction): PASS; same content after reload: PASS"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2187,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:25:17.243Z",
+                      "annotations": [
+                        {
+                          "type": "live-delivery-pass",
+                          "description": "live (no-refresh) delivery to owner (member->owner direction): PASS; same content after reload: PASS"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-7d98e4b5167c3a6cb079",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 332,
+              "column": 3
+            },
+            {
+              "title": "A3. continued collaboration (reload-based convergence both directions), no duplicate/stale content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "live-delivery-status",
+                      "description": "owner->member live: PASS; member->owner live: PASS; both converge after reload: owner=true, member=true"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5832,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:25:19.442Z",
+                      "annotations": [
+                        {
+                          "type": "live-delivery-status",
+                          "description": "owner->member live: PASS; member->owner live: PASS; both converge after reload: owner=true, member=true"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-e569eb2034d3932576ff",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 351,
+              "column": 3
+            },
+            {
+              "title": "A4. Database/DatabaseRow browser fan-out (bounded attempt)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "limitation",
+                      "description": "Grid page 68451e7a-51d0-495f-891b-36faad1d4e00 did not reach the Document readiness gate (expected -- that gate is editor-title-scoped, not grid-scoped). Database/DatabaseRow browser fan-out NOT TESTED beyond page creation."
+                    },
+                    {
+                      "type": "skip",
+                      "description": "Grid readiness could not be established with the Document-scoped readiness helper.",
+                      "location": {
+                        "file": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e/historical-collaboration-acceptance.spec.ts",
+                        "line": 394,
+                        "column": 12
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 21835,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:25:25.297Z",
+                      "annotations": [
+                        {
+                          "type": "limitation",
+                          "description": "Grid page 68451e7a-51d0-495f-891b-36faad1d4e00 did not reach the Document readiness gate (expected -- that gate is editor-title-scoped, not grid-scoped). Database/DatabaseRow browser fan-out NOT TESTED beyond page creation."
+                        },
+                        {
+                          "type": "skip",
+                          "description": "Grid readiness could not be established with the Document-scoped readiness helper.",
+                          "location": {
+                            "file": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e/historical-collaboration-acceptance.spec.ts",
+                            "line": 394,
+                            "column": 12
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2aba962acc8c93939827-9d50e8b956e27401eec4",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 384,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Task 67: authorization and membership revocation",
+          "file": "historical-collaboration-acceptance.spec.ts",
+          "line": 403,
+          "column": 6,
+          "specs": [
+            {
+              "title": "B1. initial authorized access (two independent contexts, same document)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "live-delivery-pass",
+                      "description": "authorized member live (no-refresh) read: PASS; same content after reload: PASS"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1428,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:25:47.224Z",
+                      "annotations": [
+                        {
+                          "type": "live-delivery-pass",
+                          "description": "authorized member live (no-refresh) read: PASS; same content after reload: PASS"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-5f54ba5e8925bbfaaa33",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 459,
+              "column": 3
+            },
+            {
+              "title": "B2. revoke membership while connected; existing socket is closed by the periodic revalidation timer",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1715,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:26:07.060Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-8a53b2b6dbb68bfaedad",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 477,
+              "column": 3
+            },
+            {
+              "title": "B3. reconnection attempt is rejected; no protected content delivered",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "evidence",
+                      "description": "workspace-API responses observed after reconnect attempt: [403,403,403,403,403,404,403,403]; url=http://localhost:14204/app/63f8c250-a2a8-46ed-be63-8a81edb349b3/e08ebf9b-268c-45f7-b250-1b588ff17668"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14277,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:26:08.788Z",
+                      "annotations": [
+                        {
+                          "type": "evidence",
+                          "description": "workspace-API responses observed after reconnect attempt: [403,403,403,403,403,404,403,403]; url=http://localhost:14204/app/63f8c250-a2a8-46ed-be63-8a81edb349b3/e08ebf9b-268c-45f7-b250-1b588ff17668"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-a61fcfa18b3cf8adbaf6",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 505,
+              "column": 3
+            },
+            {
+              "title": "B4. offline update + authorization (bounded attempt)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "limitation",
+                      "description": "Not attempted via the real browser in this run: constructing a reliable browser-level \"offline pending edit survives a revoke-while-offline-then-reconnect\" scenario requires deterministic control over this app's own sync-outbox timing that the proven Task 69 helpers do not yet expose, and the guardrail reserves new ad hoc timing hacks for a case with evidence justifying them. Protocol-level evidence for revoked-membership-rejects-offline-replay remains Task 67/68's authoritative evidence (test/security-authorization.test.js, test/collaboration-recovery.test.js). Classified NOT TESTED at the browser level, not claimed as passing."
+                    },
+                    {
+                      "type": "skip",
+                      "description": "Deliberately not attempted at the browser level this run; see annotation.",
+                      "location": {
+                        "file": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e/historical-collaboration-acceptance.spec.ts",
+                        "line": 541,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:26:23.076Z",
+                      "annotations": [
+                        {
+                          "type": "limitation",
+                          "description": "Not attempted via the real browser in this run: constructing a reliable browser-level \"offline pending edit survives a revoke-while-offline-then-reconnect\" scenario requires deterministic control over this app's own sync-outbox timing that the proven Task 69 helpers do not yet expose, and the guardrail reserves new ad hoc timing hacks for a case with evidence justifying them. Protocol-level evidence for revoked-membership-rejects-offline-replay remains Task 67/68's authoritative evidence (test/security-authorization.test.js, test/collaboration-recovery.test.js). Classified NOT TESTED at the browser level, not claimed as passing."
+                        },
+                        {
+                          "type": "skip",
+                          "description": "Deliberately not attempted at the browser level this run; see annotation.",
+                          "location": {
+                            "file": "/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/e2e/historical-collaboration-acceptance.spec.ts",
+                            "line": 541,
+                            "column": 10
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "2aba962acc8c93939827-ef5f594c019c342b871f",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 532,
+              "column": 3
+            },
+            {
+              "title": "B5. membership restoration requires a fresh connection",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "evidence",
+                      "description": "old tab content reappeared after restoration (no manual reload): true; a NEW WebSocket open event was observed on that same tab in that window: true (opens before=10, after=11)"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10017,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:26:23.088Z",
+                      "annotations": [
+                        {
+                          "type": "evidence",
+                          "description": "old tab content reappeared after restoration (no manual reload): true; a NEW WebSocket open event was observed on that same tab in that window: true (opens before=10, after=11)"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-4110083d97698770c5ab",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 544,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Task 68: collaboration recovery and reconnection",
+          "file": "historical-collaboration-acceptance.spec.ts",
+          "line": 587,
+          "column": 6,
+          "specs": [
+            {
+              "title": "C1. pre-restart collaboration + persistence",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "live-delivery-pass",
+                      "description": "member live (no-refresh) receipt of pre-restart marker: PASS; same content after reload: PASS"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1509,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:26:33.173Z",
+                      "annotations": [
+                        {
+                          "type": "live-delivery-pass",
+                          "description": "member live (no-refresh) receipt of pre-restart marker: PASS; same content after reload: PASS"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-41eea73216e3d3866556",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 637,
+              "column": 3
+            },
+            {
+              "title": "C2. backend restart against the SAME storage; both contexts reconnect and pre-restart content persists",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2251,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:26:52.810Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-6ff783a5a67d2477bda9",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 655,
+              "column": 3
+            },
+            {
+              "title": "C3. post-restart bidirectional delivery + reload persistence (the outstanding Task 68 gap)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "live-delivery-pass",
+                      "description": "post-restart LIVE (no-refresh) owner->member: PASS; post-restart LIVE member->owner: PASS -- this is the specific Task 68 bonus leg left outstanding by Task 69; same cross-context live-render gap documented for Task 66/67 applies here too (see report)."
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3395,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-10T16:26:55.067Z",
+                      "annotations": [
+                        {
+                          "type": "live-delivery-pass",
+                          "description": "post-restart LIVE (no-refresh) owner->member: PASS; post-restart LIVE member->owner: PASS -- this is the specific Task 68 bonus leg left outstanding by Task 69; same cross-context live-render gap documented for Task 66/67 applies here too (see report)."
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2aba962acc8c93939827-3b03d176e8def3a80103",
+              "file": "historical-collaboration-acceptance.spec.ts",
+              "line": 680,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T16:24:56.976Z",
+    "duration": 121670.88,
+    "expected": 10,
+    "skipped": 2,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

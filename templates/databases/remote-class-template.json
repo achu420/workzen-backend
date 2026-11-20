@@ -1,0 +1,579 @@
+{
+  "template_id": "remote-class-template",
+  "order": 120,
+  "name": "Remote Class Template",
+  "description": "Remote class template to stay on top of your coursework.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"open-book\",\"color\":\"0xFF535CE4\"}"
+  },
+  "category": "Education",
+  "categories": [
+    "Education"
+  ],
+  "author": "Kelly Theisen, Assistant Professor of Chemistry",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Remote-Class-Template-e5c05ab8-9401-43c2-beba-ad2d02758a3b",
+  "database_id": "cb707ea3-45e9-4531-b9f4-9adb7f6fb052",
+  "fields": [
+    {
+      "id": "MDAZfE",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        }
+      },
+      "is_primary": true
+    },
+    {
+      "id": "96K6jS",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"-ERA\",\"name\":\"Exams\",\"color\":\"Pink\"},{\"id\":\"oU-o\",\"name\":\"Resources\",\"color\":\"Purple\"},{\"id\":\"M4Cz\",\"name\":\"Weekly Assignments\",\"color\":\"Orange\"},{\"id\":\"42FV\",\"name\":\"Lab Projects\",\"color\":\"Yellow\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "zrQ5Xh",
+      "name": "Checklist",
+      "field_type": 7,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        },
+        "7": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "9PPPbP",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "pslqKn",
+      "name": "Due",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": "",
+          "date_format": 3,
+          "timezone_id": "",
+          "time_format": 1
+        },
+        "2": {
+          "timezone_id": "",
+          "date_format": 3,
+          "time_format": 1
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "e5c05ab8-9401-43c2-beba-ad2d02758a3b",
+      "database_id": "cb707ea3-45e9-4531-b9f4-9adb7f6fb052",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "hide_ungrouped_column": true,
+          "collapse_hidden_groups": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "content": "",
+          "ty": 3,
+          "field_id": "96K6jS",
+          "groups": [
+            {
+              "visible": true,
+              "id": "96K6jS"
+            },
+            {
+              "visible": true,
+              "id": "oU-o"
+            },
+            {
+              "visible": true,
+              "id": "M4Cz"
+            },
+            {
+              "visible": true,
+              "id": "42FV"
+            },
+            {
+              "id": "-ERA",
+              "visible": true
+            }
+          ],
+          "id": "g:ek1E6r"
+        }
+      ],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "b832161a-8404-4a75-85ac-8f973baba703"
+        },
+        {
+          "id": "480cbae9-265d-4fb9-ac50-4624e1042f5b",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "ba8e575c-5d97-43d9-85ae-51f7583cf866"
+        },
+        {
+          "id": "03729829-fff0-4496-aad7-b9256c720697",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "3ccbc52f-9d2f-4bbd-8743-272b76cf27be"
+        },
+        {
+          "height": 60,
+          "id": "a97e3f8a-9220-4cfa-9aa2-9d156771c225"
+        },
+        {
+          "height": 60,
+          "id": "48198fce-fd95-49bf-9bff-4d4400140bf7"
+        },
+        {
+          "height": 60,
+          "id": "3665ab38-b3bd-4101-a7f2-3fa5013fde86"
+        },
+        {
+          "id": "50065cce-e900-47b7-8bc9-3f25fa414e15",
+          "height": 60
+        },
+        {
+          "id": "56766e04-c5f7-4e4f-8de8-5e5ce83fe137",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "22028e7b-b7c9-46d3-a4ae-094d434f5e87"
+        },
+        {
+          "height": 60,
+          "id": "4ff74ecf-85d4-41b3-8f86-5f0e11455414"
+        },
+        {
+          "id": "80c412c6-997c-4c37-aae9-49ebb3f6e29b",
+          "height": 60
+        },
+        {
+          "id": "0cb04c87-6db4-4bbc-a86c-0ca8550b5fca",
+          "height": 60
+        },
+        {
+          "id": "bdf7cd4d-d9a3-4df5-b839-f6c83a209ba4",
+          "height": 60
+        },
+        {
+          "id": "ad8da8f2-3e3b-4d6d-bc64-50062020a1cf",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "MDAZfE"
+        },
+        {
+          "id": "96K6jS"
+        },
+        {
+          "id": "zrQ5Xh"
+        },
+        {
+          "id": "9PPPbP"
+        },
+        {
+          "id": "pslqKn"
+        }
+      ],
+      "field_settings": {
+        "MDAZfE": {
+          "wrap": true,
+          "visibility": 0,
+          "width": 150
+        },
+        "9PPPbP": {
+          "wrap": true,
+          "visibility": 2,
+          "width": 150
+        },
+        "96K6jS": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": true
+        },
+        "zrQ5Xh": {
+          "visibility": 1
+        },
+        "pslqKn": {
+          "visibility": 1
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1724472059
+    }
+  ],
+  "rows": [
+    {
+      "id": "a97e3f8a-9220-4cfa-9aa2-9d156771c225",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Week of 4/20-26"
+        },
+        "96K6jS": {
+          "field_type": 3,
+          "data": "M4Cz"
+        }
+      }
+    },
+    {
+      "id": "bdf7cd4d-d9a3-4df5-b839-f6c83a209ba4",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "data": "Exam 3: Ch. 10-12, 15-16, and 18-21",
+          "field_type": 0,
+          "created_at": 1724472270,
+          "last_modified": 1724472272
+        },
+        "96K6jS": {
+          "data": "-ERA",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "ad8da8f2-3e3b-4d6d-bc64-50062020a1cf",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "96K6jS": {
+          "field_type": 3,
+          "data": "-ERA"
+        },
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Optional Retake (Finals Week)",
+          "created_at": 1724472281,
+          "last_modified": 1724472287
+        }
+      }
+    },
+    {
+      "id": "4ff74ecf-85d4-41b3-8f86-5f0e11455414",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "96K6jS": {
+          "field_type": 3,
+          "data": "42FV"
+        },
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Final Lab Report - Hexokinase Track"
+        }
+      }
+    },
+    {
+      "id": "80c412c6-997c-4c37-aae9-49ebb3f6e29b",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "96K6jS": {
+          "field_type": 3,
+          "data": "-ERA"
+        },
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Exam 2: Ch. 5-8"
+        }
+      }
+    },
+    {
+      "id": "48198fce-fd95-49bf-9bff-4d4400140bf7",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Week of 4/27-5/3"
+        },
+        "96K6jS": {
+          "field_type": 3,
+          "data": "M4Cz"
+        }
+      }
+    },
+    {
+      "id": "50065cce-e900-47b7-8bc9-3f25fa414e15",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "data": "Finals Week 5/9-15",
+          "field_type": 0
+        },
+        "96K6jS": {
+          "field_type": 3,
+          "data": "M4Cz"
+        }
+      }
+    },
+    {
+      "id": "22028e7b-b7c9-46d3-a4ae-094d434f5e87",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "96K6jS": {
+          "field_type": 3,
+          "data": "42FV"
+        },
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Final Lab Report - Catalase Track"
+        }
+      }
+    },
+    {
+      "id": "56766e04-c5f7-4e4f-8de8-5e5ce83fe137",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Poster - Both Tracks"
+        },
+        "96K6jS": {
+          "field_type": 3,
+          "data": "42FV"
+        },
+        "9PPPbP": {
+          "created_at": 1724472518,
+          "data": "The poster will cover Labs 2, 5 and 6. For the catalase track you may also include Lab 7. You can work with just your lab partner or with another 1 or 2 groups who are also on the same track as you. Rubric will be posted on Moodle.",
+          "field_type": 0,
+          "last_modified": 1724472518
+        },
+        "zrQ5Xh": {
+          "created_at": 1724472519,
+          "data": "{\"options\":[{\"id\":\"VHnW\",\"name\":\"Week of 4/6-12: Start by copying template to your Drive account and sharing it with your partner/small group. Make the introduction/background sections based on your Literature Search information (use bullet points), make sure to cite any papers used. Add your favorite images from Labs 2 and 5 to the results section.\",\"color\":\"Purple\"},{\"id\":\"1-Q0\",\"name\":\"Week of 4/13-20: Make the (brief) methods section and conclusions based on Labs 2 and 5 (still bullet points). Add any figure captions for the background/results, add or move section labels and the title/authors. Feel free to change the colors/locations of section headings, they are just an example!\",\"color\":\"Purple\"},{\"id\":\"EVDg\",\"name\":\"Final Steps: Review the rubric on Moodle to make sure you followed all guidlines, edit your poster for typos/grammar etc. and then upload to Moodle as a pdf file.\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "field_type": 7,
+          "last_modified": 1724472543
+        }
+      }
+    },
+    {
+      "id": "b832161a-8404-4a75-85ac-8f973baba703",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Ways to contact Dr. Theisen Remotely",
+          "created_at": 1724472299,
+          "last_modified": 1724472309
+        },
+        "96K6jS": {
+          "data": "oU-o",
+          "field_type": 3
+        }
+      },
+      "document": {
+        "page_id": "efd5f009-2477-5cb4-85c3-9832d8a30bc2",
+        "blocks": {
+          "efd5f009-2477-5cb4-85c3-9832d8a30bc2": {
+            "id": "efd5f009-2477-5cb4-85c3-9832d8a30bc2",
+            "ty": "page",
+            "parent": "",
+            "children": "efd5f009-2477-5cb4-85c3-9832d8a30bc2",
+            "external_id": null,
+            "external_type": null,
+            "data": {}
+          },
+          "pjdH6M4r8C": {
+            "id": "pjdH6M4r8C",
+            "ty": "paragraph",
+            "parent": "efd5f009-2477-5cb4-85c3-9832d8a30bc2",
+            "children": "Ul6jSkbd0Z",
+            "external_id": "CrFtOKnHLY",
+            "external_type": "text",
+            "data": {}
+          }
+        },
+        "meta": {
+          "children_map": {
+            "efd5f009-2477-5cb4-85c3-9832d8a30bc2": [
+              "pjdH6M4r8C"
+            ],
+            "Ul6jSkbd0Z": []
+          },
+          "text_map": {
+            "CrFtOKnHLY": "[{\"insert\":\"theison@edu.edu\"}]"
+          }
+        }
+      }
+    },
+    {
+      "id": "03729829-fff0-4496-aad7-b9256c720697",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Week of 4/6-12"
+        },
+        "96K6jS": {
+          "field_type": 3,
+          "data": "M4Cz"
+        }
+      }
+    },
+    {
+      "id": "3ccbc52f-9d2f-4bbd-8743-272b76cf27be",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "96K6jS": {
+          "data": "M4Cz",
+          "field_type": 3
+        },
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Week of 4/13-19"
+        }
+      }
+    },
+    {
+      "id": "ba8e575c-5d97-43d9-85ae-51f7583cf866",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "96K6jS": {
+          "field_type": 3,
+          "data": "M4Cz"
+        },
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Week of 3/30-4/5"
+        },
+        "zrQ5Xh": {
+          "created_at": 1724472451,
+          "data": "{\"options\":[{\"id\":\"CUBL\",\"name\":\"Study for Exam 2\",\"color\":\"Purple\"},{\"id\":\"Rh42\",\"name\":\"Complete Exam 2 on Moodle between 3/29 and 3/31\",\"color\":\"Purple\"},{\"id\":\"L_ab\",\"name\":\"Watch/Listen/Read Thursday Content, Ch. 10\",\"color\":\"Purple\"},{\"id\":\"kGM-\",\"name\":\"Complete Thursday Worksheet, Upload to Moodle\",\"color\":\"Purple\"},{\"id\":\"OkT4\",\"name\":\"Complete Labs 8 and 9 Worksheet (after you do the lecture content), Upload to Moodle\",\"color\":\"Purple\"},{\"id\":\"ufTT\",\"name\":\"Ask any questions you have\",\"color\":\"Purple\"},{\"id\":\"Vt9G\",\"name\":\"\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "field_type": 7,
+          "last_modified": 1724472479
+        },
+        "pslqKn": {
+          "created_at": 1724472779,
+          "field_type": 2,
+          "include_time": false,
+          "reminder_id": "1B_cihZH5y68DDJsoosKL",
+          "data": "1712290379",
+          "end_timestamp": "",
+          "is_range": false,
+          "last_modified": 1724472782
+        }
+      }
+    },
+    {
+      "id": "480cbae9-265d-4fb9-ac50-4624e1042f5b",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "field_type": 0,
+          "data": "Week of 3/23-3/29"
+        },
+        "96K6jS": {
+          "field_type": 3,
+          "data": "M4Cz"
+        },
+        "zrQ5Xh": {
+          "created_at": 1724472398,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"FKSm\",\"name\":\"Watch/Listen/Read Tuesday Content, Ch. 5-8\",\"color\":\"Purple\"},{\"id\":\"Ssxv\",\"name\":\"Complete Tuesday Worksheet, Upload to Moodle\",\"color\":\"Purple\"},{\"id\":\"Xvnp\",\"name\":\"Watch/Listen/Read Thursday Content, Ch. 5-8\",\"color\":\"Purple\"},{\"id\":\"4SoV\",\"name\":\"Complete Thursday Worksheet, Upload to Moodle\",\"color\":\"Purple\"},{\"id\":\"CPou\",\"name\":\"No Lab Worksheet this Week, decide if you want to work with just your lab partner or with a larger group for your poster.\",\"color\":\"Purple\"},{\"id\":\"htm2\",\"name\":\"Look through Learning Objectives for Ch. 5-8\",\"color\":\"Purple\"},{\"id\":\"qJPX\",\"name\":\"Ask any questions you have\",\"color\":\"Purple\"},{\"id\":\"5AXf\",\"name\":\"Study for Exam 2\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1724472437
+        },
+        "pslqKn": {
+          "created_at": 1724472584,
+          "data": "1711685384",
+          "end_timestamp": "",
+          "is_range": false,
+          "field_type": 2,
+          "include_time": false,
+          "reminder_id": "0GSykBbUkpveIjrFgTuSN",
+          "last_modified": 1724472587
+        }
+      }
+    },
+    {
+      "id": "3665ab38-b3bd-4101-a7f2-3fa5013fde86",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "96K6jS": {
+          "field_type": 3,
+          "data": "M4Cz"
+        },
+        "MDAZfE": {
+          "data": "Week of 5/4-5/10",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "0cb04c87-6db4-4bbc-a86c-0ca8550b5fca",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MDAZfE": {
+          "data": "Lab Exam",
+          "field_type": 0
+        },
+        "96K6jS": {
+          "field_type": 3,
+          "data": "-ERA"
+        },
+        "pslqKn": {
+          "created_at": 1724472802,
+          "data": "1714191202",
+          "field_type": 2,
+          "reminder_id": "Z1FMrleaDyH3irPWThbMd",
+          "include_time": false,
+          "is_range": false,
+          "end_timestamp": "",
+          "last_modified": 1724472803
+        }
+      }
+    }
+  ]
+}

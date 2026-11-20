@@ -1,0 +1,188 @@
+=== npm run test ===
+✔ page CRUD, optimistic concurrency, validation and cross-workspace denial (2.489542ms)
+✔ data survives reopening the application with the same isolated file (3.893875ms)
+✔ compaction-retention: no compaction/snapshot mechanism exists; many sequential updates remain reconstructable from the single stored current-state blob, by a fresh client, and after a storage restart (53.629792ms)
+✔ version-history: create named snapshot, list it, preview it, tombstone-delete it and verify it no longer appears (47.923667ms)
+✔ version-history: restore a previous version preserves identity, advances generation, keeps before-restore snapshot, does not consume a workspace Rid, and rejects stale-generation updates (51.278875ms)
+✔ version-history: duplicate restore requests do not create multiple restore events; competing restores use optimistic concurrency (first wins); persistence failure does not report success; state survives a restart reload (62.520667ms)
+✔ CORS: allowed origin receives CORS headers, disallowed origin does not, and OPTIONS preflight is answered (42.841ms)
+✔ CORS: WebSocket upgrades are unaffected by CORS middleware (no Origin-based rejection at the HTTP layer) (0.60825ms)
+✔ CORS (Task 55): preflight allows Cache-Control and Device-Id, and real requests using them succeed (21.683833ms)
+✔ capability flag: enable_page_history reports true by default and can be overridden via ENABLE_PAGE_HISTORY=false (1.63225ms)
+✔ WebSocket route alias: `/ws/{workspaceId}` (AppFlowy-Web real client route, Task 52) behaves identically to `/ws/v2/{workspaceId}` for auth, authorization, sync, update-persistence/ack and reconnect (96.837166ms)
+✔ Task 53: favorites, trash, shared-with-me and database catalog unblock the AppFlowy-Web sidebar (55.640167ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6670.499416
+=== npm run test:offline-collab ===
+
+> appflowy-independent-backend-prototype@0.1.0 test:offline-collab
+> node --test test/offline-collab.test.js
+
+(node:18236) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ loads the source-derived AppFlowy page fixture and computes state-vector diffs (3.771791ms)
+✔ accepts a valid ordinary-text Yjs update and rejects duplicate delivery (1.609625ms)
+✔ validates v2, metadata, malformed payloads, and unsupported flags safely (1.23ms)
+✔ decodes source-shaped protobuf envelopes and rejects malformed frames (1.929209ms)
+✔ rejects invalid sync vectors and does not claim durability or server ordering (0.473083ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 107.02375
+=== npm run test:collab-conformance ===
+(Use `node --trace-warnings ...` to show where the warning was created)
+COLLAB_CONFORMANCE_SUMMARY
+passed=6
+failed=0
+pending=2
+skipped=0
+resolved=5
+PASS AppFlowy page fixture loads and computes a state-vector diff
+PASS fixture hashes and deterministic manifest
+PASS local durability is distinct from wire acknowledgement
+PASS malformed frames, vectors, versions, and restore metadata are rejected
+PASS ordinary text update applies and after-state vector is advisory locally
+PASS supported protobuf envelopes round-trip and flags are v1/v2 only
+PENDING compaction-retention: No source defines stream trimming, Yjs compaction, or the recovery response after history is removed. Evidence needed: Upstream retention/compaction implementation and state-vector recovery fixture.
+PENDING cross-instance-replay: The protocol comments imply a shared Redis stream, but no server implementation proves ordering or failover across instances. Evidence needed: Two-instance replay/restart integration fixture using the authoritative stream.
+RESOLVED restore-transition: Task 49A implemented a real, server-side document version-history and restore mechanism on top of the restore-generation fencing that already existed (Task 45's `restore_id`/`expectedRestoreId` in preparePageCollabUpdate). Named snapshots and an implicit before-restore snapshot are stored as full, independently reconstructable Yjs states (storage.js `pageCollabVersions`); restore (storage.js `restorePageCollabVersion`) installs a selected version's state, advances `restore_id`, does not consume a workspace Rid, is serialized on the same single-writer queue as ordinary updates (so concurrent restores/updates resolve by first-durable-write-wins), is idempotent for duplicate requests (digest-based, since the frontend contract carries no request/idempotency key), and is durably persisted via the same mutate()/persist boundary before reporting success. Authoritative generation changes are therefore proven server behavior, not just client-side fencing. One limitation remains, documented rather than invented: no confirmed WebSocket broadcast/notification frame exists (upstream or in this backend) to tell OTHER already-connected clients that a restore happened; safety still rests entirely on existing stale-generation rejection (an update carrying a pre-restore restoreId is rejected and the socket closed), and another client only picks up the restored state by reconnecting and issuing a fresh SyncRequest. Evidence: test/backend.test.js "version-history:" fixtures (Task 49A) exercise the real HTTP routes end to end: (1) create a named snapshot via POST .../collab/{id}/history, list it, preview its exact stored bytes via GET .../history/{version} (binary, matching collab-api.ts's previewCollabVersion contract), tombstone-delete it via DELETE .../history, and confirm it disappears from listing and both preview and restore of it are rejected (404 / 409 VERSION_DELETED); (2) restore via POST .../collab/{id}/revert to a prior named snapshot and assert: document identity (object_id) is unchanged, the workspace Rid counter is untouched, `restore_id`/`generation` advance, the before-restore snapshot is retained in history, a fresh client reconstructs the restored content byte-for-byte, and both store.acceptPageCollabUpdate() directly and the real WebSocket admission path (Task 45's existing fencing, reused unmodified) reject an update carrying the pre-restore restoreId with RESTORE_GENERATION_MISMATCH while a post-restore update with the current restoreId succeeds; (3) duplicate restore requests produce one restore event and one before-restore snapshot (not two), two concurrently issued competing restores resolve to exactly one consistent durable state (single-writer queue), a `store.persist` fault-injection (Task 44's hook) proves a restore whose persistence fails reports an error and leaves durable state unchanged, and reopening the same disposable JSON file (openStore) after the test confirms the restored document state, restore_id, and version history all survive a restart. PostgreSQL parity and real-browser verification are explicitly out of scope for Task 49A and remain future work.
+RESOLVED rid-allocation-ordering: Task 46 traced that the messageId ("Rid", collab-protocol.js:7: {timestamp, counter}) is allocated entirely server-side inside storage.js acceptPageCollabUpdate (storage.js:162-245), inside mutate() (storage.js:269-274), a single-writer serialization point for the whole JSON store. The allocator counter is scoped PER-WORKSPACE (s.workspaceRids[workspaceId], storage.js:204-212), not per-document, per-connection, or per-client: clients never assign a messageId on an outbound Update (server.js:1079-1082 closes the socket if they try). Ordering is guaranteed by mutate()'s serialization of admissions, not by any client-supplied field. Dedup is keyed per-document on a payload-digest (optionally also a caller messageKey) independent of the Rid; a dedup hit returns the ORIGINAL messageId rather than allocating a new one. The HTTP full-sync/batch lane and the WebSocket lane call the identical acceptPageCollabUpdate and draw from the same per-workspace allocator. This is single-instance-only: there is one store/process in this backend, so no claim is made about cross-instance ordering or failover, which is why cross-instance-replay remains separately pending. Evidence: test/backend.test.js has six "rid-allocation-ordering:" fixtures: (1) sequential updates on one WebSocket connection assert each ack's Rid is strictly greater than the previous and that the accompanying manifest frame's lastMessageId matches the ack; (2) a reconnect fixture (reusing Task 41's reconnect-with-resumed-state-vector convention) asserts the Rid allocated after reconnecting is strictly greater than the pre-reconnect Rid; (3) two separate WebSocket connections send concurrent updates to the same Document and the test asserts both acks arrive, their Rids do not collide, neither update is silently lost, and the merged durable state vector matches an independently computed local merge; (4) a resend of the identical update payload (reusing the Task 41/44-established payload-digest dedup) asserts the second ack carries the exact same Rid as the first, not a new one, and the marker text appears exactly once in durable state; (5) one update over the WebSocket lane and one over the HTTP full-sync/batch lane (same Document) assert the HTTP-lane Rid is strictly ordered after the WebSocket-lane Rid, proving they share one sequence; (6) reusing Task 44's `store.persist` gate-promise hook, an update is delayed under persistence and the test asserts the ack observed after release carries a Rid strictly after a pre-delay baseline Rid (not a stale or unrelated one) and that durable state reflects both updates. No production code change was needed or made; this is a protocol-verification task and no defect was found.
+RESOLVED duplicate-admission: storage.js (JSON mode) and postgres-collab-repository.js (PostgreSQL mode) both key duplicate detection on a payload-digest of the admitted Yjs update (optionally also a caller-supplied messageKey), returning the original messageId and documentState without re-applying or re-counting a resend. Both server.js WebSocket and HTTP full-sync/batch handlers call the same store.acceptPageCollabUpdate function, so this dedup applies to both lanes identically. Evidence: test/backend.test.js: "AppFlowy-Web Document WebSocket reconnect replays the manifest and resent updates are admitted exactly once" (Task 41) opens a WebSocket session, sends an update, closes the session before any further client action, reconnects with the client's pre-update state vector (modeling the sync-outbox client resending a queued record it never confirmed), and asserts: (1) reconnect correctly replays the missing update; (2) resending the identical update payload returns the same messageId as the original, not a new one; (3) the persisted document contains the marker text exactly once, not twice. This proves our server's own admission is idempotent under a two-delivery scenario — it does not establish that payload-digest is the AppFlowy-compatible wire key (upstream server evidence for that remains unavailable), only that THIS server does not double-apply or double-count a resent client update.
+RESOLVED websocket-http-convergence: Task 43 added an end-to-end fixture confirming the WebSocket update lane and the HTTP full-sync/batch lane converge on one durable, internally consistent document state when used together on the same object. Evidence: test/backend.test.js: "websocket-http-convergence: WebSocket update and HTTP full-sync/batch update converge on one durable document state" sends update A over the authenticated Document WebSocket (receiving a server-issued messageId ack), then builds update B from a Y.Doc that has already applied A and submits it through POST /api/workspace/v1/{workspaceId}/collab/full-sync/batch (receiving a later server-issued messageId). It then reads the document back over HTTP GET and separately resyncs it over a fresh WebSocket SyncRequest, and in both cases asserts: both edits' marker text are present, and the resulting Yjs state vector exactly matches an independently computed local merge of A and B. This confirms the shared admission function (storage.js acceptPageCollabUpdate, called from both server.js:1084 and server.js:581) produces one coherent durable state across both lanes, not just that the two call sites are textually the same function.
+RESOLVED realtime-ack: Task 44 proved via real fault injection (not static tracing) that the Document WebSocket update handler never emits a successful ack before `mutate()`'s durable persist step completes, using the pre-existing `store.persist` override hook in storage.js:271-272 as the injection seam. Evidence: test/backend.test.js has three fixtures: (1) "...delayed-persistence fault injection" installs a persist hook that blocks on an unresolved promise, sends an update, confirms no ack arrives within a grace window while blocked and persistence has not completed, then releases the hook and confirms the ack is emitted only after persistence completes and the update is durably readable back; (2) "...failed-persistence fault injection" installs a persist hook that always throws, confirms no ack frame is ever observed and the socket instead closes with code 1011 and reason "Document update could not be persisted" (server.js), then restores working persistence and confirms the failed update is absent from durable state; (3) "...retrying an update after a persistence-failure close..." repeats the failure scenario, then reconnects and resends the identical update per the Task 41-established client retry semantics (sync-outbox resend of an unconfirmed record after reconnect with the pre-update state vector), and confirms the retried update is admitted exactly once in final durable state. No production code change was needed: the `store.persist` override hook already existed.
+=== npm run test:database-collab ===
+✔ Database real-time: add a field and rename it over WebSocket updates (generic Yjs diff admission, same mechanism as Document edits) (47.838833ms)
+✔ Database real-time: duplicate/replayed update is admitted exactly once (45.919458ms)
+✔ Database real-time: no ack while persistence is pending, then acks only after durable write completes (delayed-persistence fault injection, Task 44 pattern) (359.385791ms)
+WebSocket Database update admission failed Error: task61 injected persistence failure
+    at store.persist (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/database-collab.test.js:565:41)
+    at mutate (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:912:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async operation (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:588:16)
+✔ Database real-time: no ack and closes with 1011 when persistence fails; the failed update is not durably admitted (failed-persistence fault injection, Task 44 pattern) (78.730875ms)
+✔ Database persistence: JSON store reconstructs the latest accepted state after a simulated backend restart (46.408042ms)
+✔ Space permission probe: GET .../collab/{spaceId}/permission?collab_type=0 resolves for a space (not just a Document page), unblocking the sidebar add-page button (84.737083ms)
+✔ Database permission probe: GET .../collab/{databaseId}/permission?collab_type=1 resolves for a Database object, unblocking the Grid view's field-menu UI actions (94.926166ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6028.515167
+=== npm run test:database-row-collab ===
+✔ DatabaseRow WebSocket: unsupported collabType values are rejected, not silently admitted (48.069958ms)
+✔ DatabaseRow WebSocket: a row id from another workspace is rejected (89.012083ms)
+✔ DatabaseRow real-time: writing a cell over WebSocket updates (generic Yjs diff admission, same mechanism as Database field edits) (47.125125ms)
+✔ DatabaseRow real-time: duplicate/replayed update is admitted exactly once (48.289542ms)
+✔ DatabaseRow real-time: no ack while persistence is pending, then acks only after durable write completes (delayed-persistence fault injection, Task 44 pattern) (360.347041ms)
+WebSocket DatabaseRow update admission failed Error: task62 injected persistence failure
+    at store.persist (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/database-row-collab.test.js:596:41)
+    at mutate (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:912:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async operation (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:807:16)
+✔ DatabaseRow real-time: no ack and closes with 1011 when persistence fails; the failed update is not durably admitted (failed-persistence fault injection, Task 44 pattern) (80.95075ms)
+✔ DatabaseRow persistence: JSON store reconstructs the latest accepted state after a simulated backend restart, including row_orders membership (48.459833ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6049.679
+=== npm run test:database-catalog ===
+✔ unauthorized and unauthenticated access is rejected (80.151291ms)
+✔ missing/invalid workspace id is rejected without leaking data (40.432416ms)
+✔ pagination: offset/limit windows the database list with correct has_more and stable ordering (44.506292ms)
+✔ invalid pagination parameters are rejected (40.723166ms)
+✔ malformed container metadata (invalid database_id) is excluded without hiding other valid Databases (42.204417ms)
+✔ a container with no matching primary-view page is still included (container-only entry), not silently dropped (41.819625ms)
+✔ a decoy child page with a mismatched database_id is never selected as the primary view (invalid primary-view association) (44.170833ms)
+✔ regression: ordinary Document pages and Folder-tree navigation are unaffected by the catalog fix (43.486875ms)
+✔ GET page-view cold-fetches a Database primary-view page by serving the Database collab (no Document collab exists for it) (42.781833ms)
+✔ GET page-view cold-fetches a Database CONTAINER page by serving the same Database collab (42.485125ms)
+✔ regression: GET page-view for an ordinary Document page is unaffected (still requires/serves the real Document collab) (41.901167ms)
+✔ GET page-view returns COLLAB_NOT_FOUND (not a Document 404) when a Database page's referenced database collab is genuinely missing (41.573584ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 974.222875
+=== npm run test:realtime-fanout ===
+✔ Task 66 fan-out (JSON, Document): an already-connected second client receives an accepted Document update live, without sending a new SyncRequest, and content converges (127.367375ms)
+✔ Task 66 fan-out (JSON, Database): an already-connected second client receives an accepted Database field update live (92.356459ms)
+✔ Task 66 fan-out (JSON, DatabaseRow): an already-connected second client receives an accepted cell update live (87.590417ms)
+WebSocket Document update admission failed Error: task66 injected persistence failure
+    at store.persist (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/realtime-fanout.test.js:535:45)
+    at mutate (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:912:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async operation (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:174:16)
+WebSocket Document peer fan-out failed Error: task66 simulated flaky peer send failure
+    at serverSideFlakyPeer.send (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/realtime-fanout.test.js:577:50)
+    at processFrame (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/server.js:1864:30)
+✔ Task 66 fan-out negative cases (Document, JSON storage): sender no-dup, cross-workspace isolation, cross-object isolation, disconnected peer, validation-rejected, storage-rejected, one failed peer does not block another (5790.076417ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6218.625083
+=== npm run test:security ===
+✔ WS: connection with no token is rejected and never admitted (41.402ms)
+✔ WS: connection with an invalid token is rejected (40.205417ms)
+✔ WS: connection using a revoked (logged-out) session is rejected (40.254416ms)
+✔ WS: a non-member is rejected at admission for a workspace they do not belong to (80.665083ms)
+✔ WS: an authorized member CAN connect and sync (positive control) (80.769667ms)
+✔ WS: requesting a Document object id that belongs to a DIFFERENT workspace is rejected after admission, and the socket is never added as a receivable peer (82.9005ms)
+✔ WS: a malformed SyncRequest (missing state vector) is rejected and closes without mutating durable state (43.228166ms)
+✔ WS lifecycle: an actively-sending connection is rejected on its very next message after membership is revoked (pre-existing per-message revalidation, preserved) (85.450834ms)
+✔ WS lifecycle (Task 67 new mechanism): an IDLE revoked peer -- one that never sends another message -- is still closed and removed from the peer registry within the bounded periodic revalidation window, and stops receiving live fan-out (281.100208ms)
+✔ WS lifecycle: reconnection after revocation is rejected at admission (restored handshake does not auto-regrant access) (99.128292ms)
+✔ WS lifecycle: restoring membership after revocation requires a fresh connection/check, not an automatic regrant of the old socket (81.699791ms)
+✔ WS lifecycle: a session that expires while connected is rejected on the next inbound message (42.005584ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1817.526583
+=== npm run test:collaboration-recovery ===
+> node --test test/collaboration-recovery.test.js
+
+(node:18460) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Recovery (Document): client A is ungracefully dropped mid-session, client B edits while A is offline, A reconnects and reconciles via state-vector sync, both converge (110.882ms)
+✔ Recovery (Document): backend process restart against the same data file preserves content, Rid continuity, and live fan-out keeps working (50.514375ms)
+✔ Recovery (Document): resending an identical update payload after a presumed lost ack is deduplicated -- same Rid, no double effect (43.989667ms)
+✔ Recovery (Document): two concurrent submissions of the identical payload from different sockets never double-apply and never collide on Rid (43.972084ms)
+✔ Recovery (Document): two clients reconnect simultaneously, each submits a different pending edit, both are preserved and both converge (84.724125ms)
+✔ Recovery (Database + DatabaseRow): backend restart preserves field metadata and row cell content, and both remain writable after restart (47.940125ms)
+✔ Recovery (authorization): disconnect, revoke membership, reconnection is rejected, no protected content is returned, and a pending offline edit is not accepted (88.871583ms)
+✔ Recovery (authorization): restoring membership after revocation requires a brand-new connection -- the old revoked socket never resurrects (85.434875ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 664.943833

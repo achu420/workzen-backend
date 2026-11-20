@@ -1,0 +1,412 @@
+{
+  "template_id": "learn-a-language",
+  "order": 137,
+  "name": "Learn A Language",
+  "description": "Learning a language with AppFlowy Kanban.\n",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"artificial_intelligence\",\"iconName\":\"ai-network-spark\",\"color\":\"0xFF535CE4\"}"
+  },
+  "category": "Education",
+  "categories": [
+    "Education"
+  ],
+  "author": "Duolingo",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Learn-A-Language-933a4486-7b84-4f77-8acb-ac08f322be9d",
+  "database_id": "5c923930-460c-45d2-b68c-4493b64bc30f",
+  "fields": [
+    {
+      "id": "jSSl7T",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        }
+      },
+      "is_primary": true
+    },
+    {
+      "id": "q2zN0F",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"wfgS\",\"name\":\"Learned\",\"color\":\"LightPink\"},{\"id\":\"JTew\",\"name\":\"To Learn\",\"color\":\"Pink\"},{\"id\":\"nzaO\",\"name\":\"To Do\",\"color\":\"Purple\"},{\"id\":\"Npla\",\"name\":\"Doing\",\"color\":\"Orange\"},{\"id\":\"ggmD\",\"name\":\"Done\",\"color\":\"Yellow\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "p_5osQ",
+      "name": "Checklist",
+      "field_type": 7,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        },
+        "7": {}
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "933a4486-7b84-4f77-8acb-ac08f322be9d",
+      "database_id": "5c923930-460c-45d2-b68c-4493b64bc30f",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "id": "g:9Gx066",
+          "ty": 3,
+          "groups": [
+            {
+              "id": "q2zN0F",
+              "visible": true
+            },
+            {
+              "id": "nzaO",
+              "visible": true
+            },
+            {
+              "id": "Npla",
+              "visible": true
+            },
+            {
+              "id": "ggmD",
+              "visible": true
+            },
+            {
+              "id": "JTew",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "wfgS"
+            }
+          ],
+          "content": "",
+          "field_id": "q2zN0F"
+        }
+      ],
+      "row_orders": [
+        {
+          "id": "0f052035-ea6b-443a-9ebc-f47e72047a4f",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "5969bfa1-ddfb-4dc9-a2a3-826ce1d3d65a"
+        },
+        {
+          "id": "af8bd65b-5007-4fdc-9a3c-ccefa273c6fb",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "33bab5b0-c51a-48e6-9c35-6a567989d6f9"
+        },
+        {
+          "height": 60,
+          "id": "59c44582-3b1c-4763-9014-34d5dac8a818"
+        },
+        {
+          "id": "98446adc-136c-4519-b63b-ac023e93f075",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "d465440b-5810-4e2d-affa-8f530e206e30"
+        },
+        {
+          "height": 60,
+          "id": "7e207029-0ccd-4deb-a954-5ee26161ba56"
+        },
+        {
+          "id": "4a57d18a-08d8-4e7b-aace-ade4bbaf8132",
+          "height": 60
+        },
+        {
+          "id": "feb36012-207d-47f3-889a-5c603acd7a81",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "f35c8fcb-7277-48bc-9f75-55e3d3434dfd"
+        },
+        {
+          "height": 60,
+          "id": "0d1ab819-67c6-44bb-bafe-911983b8a83e"
+        },
+        {
+          "height": 60,
+          "id": "efacae18-d0ef-445c-8a04-a7206f060e75"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "jSSl7T"
+        },
+        {
+          "id": "q2zN0F"
+        },
+        {
+          "id": "p_5osQ"
+        }
+      ],
+      "field_settings": {
+        "q2zN0F": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": true
+        },
+        "jSSl7T": {
+          "wrap": true,
+          "visibility": 0,
+          "width": 150
+        },
+        "p_5osQ": {
+          "visibility": 1
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1724472972
+    }
+  ],
+  "rows": [
+    {
+      "id": "33bab5b0-c51a-48e6-9c35-6a567989d6f9",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "q2zN0F": {
+          "data": "nzaO",
+          "field_type": 3
+        },
+        "jSSl7T": {
+          "field_type": 0,
+          "data": "Create a list of foreign movies & shows to watch"
+        }
+      }
+    },
+    {
+      "id": "d465440b-5810-4e2d-affa-8f530e206e30",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "jSSl7T": {
+          "field_type": 0,
+          "data": "Establish a daily study schedule"
+        },
+        "q2zN0F": {
+          "data": "Npla",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "efacae18-d0ef-445c-8a04-a7206f060e75",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "jSSl7T": {
+          "field_type": 0,
+          "data": "Lesson 2"
+        },
+        "q2zN0F": {
+          "field_type": 3,
+          "data": "wfgS"
+        },
+        "p_5osQ": {
+          "created_at": 1724473262,
+          "data": "{\"options\":[{\"id\":\"_T81\",\"name\":\"Weather\",\"color\":\"Purple\"},{\"id\":\"Mbdd\",\"name\":\"Present tense\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "field_type": 7,
+          "last_modified": 1724473273
+        }
+      }
+    },
+    {
+      "id": "7e207029-0ccd-4deb-a954-5ee26161ba56",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "q2zN0F": {
+          "data": "Npla",
+          "field_type": 3
+        },
+        "jSSl7T": {
+          "data": "Make or buy practice flashcards",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "f35c8fcb-7277-48bc-9f75-55e3d3434dfd",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "q2zN0F": {
+          "data": "JTew",
+          "field_type": 3
+        },
+        "jSSl7T": {
+          "data": "Lesson 5",
+          "field_type": 0
+        },
+        "p_5osQ": {
+          "created_at": 1724473194,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"vsej\",\"name\":\"Bonjour\",\"color\":\"Purple\"},{\"id\":\"69wE\",\"name\":\"Bien\",\"color\":\"Purple\"},{\"id\":\"stXQ\",\"name\":\"De rien\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1724473211
+        }
+      }
+    },
+    {
+      "id": "4a57d18a-08d8-4e7b-aace-ade4bbaf8132",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "q2zN0F": {
+          "field_type": 3,
+          "data": "ggmD"
+        },
+        "jSSl7T": {
+          "field_type": 0,
+          "data": "Sign up for Duolingo (and other free services)",
+          "created_at": 1724473138,
+          "last_modified": 1724473138
+        }
+      }
+    },
+    {
+      "id": "59c44582-3b1c-4763-9014-34d5dac8a818",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "q2zN0F": {
+          "data": "nzaO",
+          "field_type": 3
+        },
+        "jSSl7T": {
+          "data": "Sign up to practice with native speakers",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "feb36012-207d-47f3-889a-5c603acd7a81",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "jSSl7T": {
+          "data": "Find books to read in your chosen language",
+          "field_type": 0
+        },
+        "q2zN0F": {
+          "field_type": 3,
+          "data": "ggmD"
+        }
+      }
+    },
+    {
+      "id": "98446adc-136c-4519-b63b-ac023e93f075",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "q2zN0F": {
+          "data": "nzaO",
+          "field_type": 3
+        },
+        "jSSl7T": {
+          "data": "Plan a trip to location where language is spoken",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "0f052035-ea6b-443a-9ebc-f47e72047a4f",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "jSSl7T": {
+          "field_type": 0,
+          "data": "Pick a language to learn",
+          "created_at": 1724473000,
+          "last_modified": 1724473006
+        },
+        "q2zN0F": {
+          "field_type": 3,
+          "data": "nzaO"
+        }
+      }
+    },
+    {
+      "id": "af8bd65b-5007-4fdc-9a3c-ccefa273c6fb",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "jSSl7T": {
+          "data": "Add a language immersion plug-in to your browser",
+          "field_type": 0,
+          "created_at": 1724473022,
+          "last_modified": 1724473034
+        },
+        "q2zN0F": {
+          "field_type": 3,
+          "data": "nzaO"
+        }
+      }
+    },
+    {
+      "id": "5969bfa1-ddfb-4dc9-a2a3-826ce1d3d65a",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "q2zN0F": {
+          "field_type": 3,
+          "data": "nzaO"
+        },
+        "jSSl7T": {
+          "field_type": 0,
+          "data": "Listen to podcasts in the language",
+          "created_at": 1724473010,
+          "last_modified": 1724473018
+        }
+      }
+    },
+    {
+      "id": "0d1ab819-67c6-44bb-bafe-911983b8a83e",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "jSSl7T": {
+          "field_type": 0,
+          "data": "Lesson 1"
+        },
+        "q2zN0F": {
+          "data": "wfgS",
+          "field_type": 3
+        },
+        "p_5osQ": {
+          "created_at": 1724473239,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"dFog\",\"name\":\"alphabet\",\"color\":\"Purple\"},{\"id\":\"XbCD\",\"name\":\"greetings\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1724473257
+        }
+      }
+    }
+  ]
+}

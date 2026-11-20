@@ -1,0 +1,860 @@
+{
+  "template_id": "business-proposal-template",
+  "order": 122,
+  "name": "Business Proposal Template",
+  "description": "Propose your business as the ideal solution using HubSpot's Free Business Proposal Templates.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"money_shopping\",\"iconName\":\"bag-suitcase-1\",\"color\":\"0xFFA34AFD\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Sales & CRM",
+    "Docs",
+    "Startups"
+  ],
+  "author": "HubSpot",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/HubSpot-Business-Proposal-Template",
+  "pages": {
+    "id": "9bee6e94-735c-406d-a40a-1ef9314ed87c",
+    "name": "Business Proposal Template",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"money_shopping\",\"iconName\":\"bag-suitcase-1\",\"color\":\"0xFFA34AFD\"}"
+    },
+    "document": {
+      "page_id": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+      "blocks": {
+        "ziGL7B": {
+          "id": "ziGL7B",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "I3lLWO",
+          "external_id": "puxd2M",
+          "external_type": "text",
+          "data": {}
+        },
+        "7a6290ad-1e33-5733-aca9-f689ff52879d": {
+          "id": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "ty": "page",
+          "parent": "",
+          "children": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "A-HEjW": {
+          "id": "A-HEjW",
+          "ty": "heading",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "dNfVHV",
+          "external_id": "mNgv1O",
+          "external_type": "text",
+          "data": {
+            "level": 1
+          }
+        },
+        "kX4UPZ": {
+          "id": "kX4UPZ",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "Mi_z1P",
+          "external_id": "Oen6_v",
+          "external_type": "text",
+          "data": {}
+        },
+        "2w_2i7": {
+          "id": "2w_2i7",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "b0ejHV",
+          "external_id": "C5v3Ix",
+          "external_type": "text",
+          "data": {}
+        },
+        "8hNVc-": {
+          "id": "8hNVc-",
+          "ty": "heading",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "Sdzp83",
+          "external_id": "W-Yt9g",
+          "external_type": "text",
+          "data": {
+            "level": 1
+          }
+        },
+        "zbIXX-": {
+          "id": "zbIXX-",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "p5o1H2",
+          "external_id": "qkEqdD",
+          "external_type": "text",
+          "data": {}
+        },
+        "YSNMHy": {
+          "id": "YSNMHy",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "NhjIK3",
+          "external_id": "tWc0Qm",
+          "external_type": "text",
+          "data": {}
+        },
+        "tKZKjN": {
+          "id": "tKZKjN",
+          "ty": "callout",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "XW8JA-",
+          "external_id": "SnQQz0",
+          "external_type": "text",
+          "data": {}
+        },
+        "9qsach": {
+          "id": "9qsach",
+          "ty": "callout",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "GNqZEV",
+          "external_id": "wop6QS",
+          "external_type": "text",
+          "data": {}
+        },
+        "qD3upR": {
+          "id": "qD3upR",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "Ml9NXs",
+          "external_id": "zQj-lW",
+          "external_type": "text",
+          "data": {}
+        },
+        "q-gE71": {
+          "id": "q-gE71",
+          "ty": "callout",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "vafmpl",
+          "external_id": "aM1eqK",
+          "external_type": "text",
+          "data": {}
+        },
+        "weKUiZ": {
+          "id": "weKUiZ",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "uUE-0f",
+          "external_id": "TsAg65",
+          "external_type": "text",
+          "data": {}
+        },
+        "0U02Vj": {
+          "id": "0U02Vj",
+          "ty": "heading",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "OMaUPY",
+          "external_id": "FioZm4",
+          "external_type": "text",
+          "data": {
+            "level": 1
+          }
+        },
+        "vYKBdw": {
+          "id": "vYKBdw",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "qSWujW",
+          "external_id": "LMG4yN",
+          "external_type": "text",
+          "data": {}
+        },
+        "0nhB14": {
+          "id": "0nhB14",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "GtjuU0",
+          "external_id": "qWNGEL",
+          "external_type": "text",
+          "data": {}
+        },
+        "CqwXaP": {
+          "id": "CqwXaP",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "8Waqnv",
+          "external_id": "c7YQM3",
+          "external_type": "text",
+          "data": {}
+        },
+        "PGuG-4": {
+          "id": "PGuG-4",
+          "ty": "callout",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "_JtymW",
+          "external_id": "u1kb0g",
+          "external_type": "text",
+          "data": {}
+        },
+        "BBEwdQ": {
+          "id": "BBEwdQ",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "tQrwUC",
+          "external_id": "QXjVuq",
+          "external_type": "text",
+          "data": {}
+        },
+        "HohS64": {
+          "id": "HohS64",
+          "ty": "heading",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "-FELYO",
+          "external_id": "ySl3Xj",
+          "external_type": "text",
+          "data": {
+            "level": 1
+          }
+        },
+        "V2qKgt": {
+          "id": "V2qKgt",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "oUgLFI",
+          "external_id": "qLX4F4",
+          "external_type": "text",
+          "data": {}
+        },
+        "sHLGVn": {
+          "id": "sHLGVn",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "CZb8wd",
+          "external_id": "QD7QX_",
+          "external_type": "text",
+          "data": {}
+        },
+        "BTEAIh": {
+          "id": "BTEAIh",
+          "ty": "image",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "TaDVqA",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "height": null,
+            "align": "center",
+            "width": null,
+            "url": ""
+          }
+        },
+        "V5hnGs": {
+          "id": "V5hnGs",
+          "ty": "callout",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "Qh1qpx",
+          "external_id": "mKc0ZU",
+          "external_type": "text",
+          "data": {
+            "icon": "📌",
+            "bgColor": "0x0"
+          }
+        },
+        "Z1YEQj": {
+          "id": "Z1YEQj",
+          "ty": "simple_table",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "siT66c",
+          "external_id": "1VE6Xy",
+          "external_type": "text",
+          "data": {
+            "enable_header_row": false,
+            "column_widths": {
+              "0": 342.21875,
+              "1": 342.21875
+            },
+            "enable_header_column": false,
+            "distribute_column_widths_evenly": true
+          }
+        },
+        "gnjdLP": {
+          "id": "gnjdLP",
+          "ty": "simple_table_row",
+          "parent": "Z1YEQj",
+          "children": "sM6uCQ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "m6e6ry": {
+          "id": "m6e6ry",
+          "ty": "simple_table_cell",
+          "parent": "gnjdLP",
+          "children": "gTSm2a",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "M5dLJn": {
+          "id": "M5dLJn",
+          "ty": "simple_table_cell",
+          "parent": "gnjdLP",
+          "children": "lXkxe1",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "JtlqqK": {
+          "id": "JtlqqK",
+          "ty": "simple_table_row",
+          "parent": "Z1YEQj",
+          "children": "TnrcxC",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "TtsD9A": {
+          "id": "TtsD9A",
+          "ty": "simple_table_cell",
+          "parent": "JtlqqK",
+          "children": "121cD0",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "JGb-Qk": {
+          "id": "JGb-Qk",
+          "ty": "paragraph",
+          "parent": "TtsD9A",
+          "children": "MILHtx",
+          "external_id": "fHEglo",
+          "external_type": "text",
+          "data": {}
+        },
+        "OEIePB": {
+          "id": "OEIePB",
+          "ty": "simple_table_cell",
+          "parent": "JtlqqK",
+          "children": "4DVjPd",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "YeNmna": {
+          "id": "YeNmna",
+          "ty": "paragraph",
+          "parent": "OEIePB",
+          "children": "q7NMUi",
+          "external_id": "FElotg",
+          "external_type": "text",
+          "data": {}
+        },
+        "bdSkf4": {
+          "id": "bdSkf4",
+          "ty": "paragraph",
+          "parent": "m6e6ry",
+          "children": "QaBvVJ",
+          "external_id": "ndUfbb",
+          "external_type": "text",
+          "data": {
+            "align": "center"
+          }
+        },
+        "xra4Yv": {
+          "id": "xra4Yv",
+          "ty": "paragraph",
+          "parent": "M5dLJn",
+          "children": "TSK1q8",
+          "external_id": "89UsNw",
+          "external_type": "text",
+          "data": {
+            "align": "center"
+          }
+        },
+        "AQmpPX": {
+          "id": "AQmpPX",
+          "ty": "simple_table",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "Yi7uik",
+          "external_id": "p-QUnS",
+          "external_type": "text",
+          "data": {
+            "distribute_column_widths_evenly": true,
+            "enable_header_row": false,
+            "enable_header_column": false,
+            "column_widths": {
+              "0": 327.814453125,
+              "1": 327.814453125
+            }
+          }
+        },
+        "VMffx1": {
+          "id": "VMffx1",
+          "ty": "simple_table_row",
+          "parent": "AQmpPX",
+          "children": "v6yLDu",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "lyChkS": {
+          "id": "lyChkS",
+          "ty": "simple_table_cell",
+          "parent": "VMffx1",
+          "children": "4khhkC",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "tPGO5A": {
+          "id": "tPGO5A",
+          "ty": "simple_table_cell",
+          "parent": "VMffx1",
+          "children": "nxxfHZ",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "zTM0GX": {
+          "id": "zTM0GX",
+          "ty": "simple_table_row",
+          "parent": "AQmpPX",
+          "children": "-5rNPS",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "9RoRLg": {
+          "id": "9RoRLg",
+          "ty": "simple_table_cell",
+          "parent": "zTM0GX",
+          "children": "fpdILb",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "duCqFT": {
+          "id": "duCqFT",
+          "ty": "paragraph",
+          "parent": "9RoRLg",
+          "children": "XSZn_f",
+          "external_id": "hZQlbL",
+          "external_type": "text",
+          "data": {}
+        },
+        "1rV6SW": {
+          "id": "1rV6SW",
+          "ty": "simple_table_cell",
+          "parent": "zTM0GX",
+          "children": "KYXsod",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "DE0qC_": {
+          "id": "DE0qC_",
+          "ty": "paragraph",
+          "parent": "1rV6SW",
+          "children": "Hh2LH4",
+          "external_id": "FcQT4Y",
+          "external_type": "text",
+          "data": {}
+        },
+        "Em6XvO": {
+          "id": "Em6XvO",
+          "ty": "paragraph",
+          "parent": "lyChkS",
+          "children": "N8zEPR",
+          "external_id": "7Q6wj9",
+          "external_type": "text",
+          "data": {
+            "align": "center"
+          }
+        },
+        "8FGAVz": {
+          "id": "8FGAVz",
+          "ty": "paragraph",
+          "parent": "tPGO5A",
+          "children": "QYIVpq",
+          "external_id": "o5Bnrr",
+          "external_type": "text",
+          "data": {
+            "align": "center"
+          }
+        },
+        "f2V5j5": {
+          "id": "f2V5j5",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "fEw1Z7",
+          "external_id": "2ZSbWC",
+          "external_type": "text",
+          "data": {}
+        },
+        "PgFtoL": {
+          "id": "PgFtoL",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "jPLUyr",
+          "external_id": "bABJaF",
+          "external_type": "text",
+          "data": {}
+        },
+        "eRrdUX": {
+          "id": "eRrdUX",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "ccR_R1",
+          "external_id": "xhJXdB",
+          "external_type": "text",
+          "data": {}
+        },
+        "bPSfmI": {
+          "id": "bPSfmI",
+          "ty": "heading",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "BUpUk1",
+          "external_id": "j0Y2hr",
+          "external_type": "text",
+          "data": {
+            "level": 1
+          }
+        },
+        "IHkk0w": {
+          "id": "IHkk0w",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "H-s0Lw",
+          "external_id": "6zhDj-",
+          "external_type": "text",
+          "data": {}
+        },
+        "-oSOl-": {
+          "id": "-oSOl-",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "uln8WR",
+          "external_id": "6m8jNY",
+          "external_type": "text",
+          "data": {}
+        },
+        "3wnekk": {
+          "id": "3wnekk",
+          "ty": "heading",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "klUeA4",
+          "external_id": "OOhN9L",
+          "external_type": "text",
+          "data": {
+            "level": 1
+          }
+        },
+        "ZCGCou": {
+          "id": "ZCGCou",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "IP9N2-",
+          "external_id": "uw4iba",
+          "external_type": "text",
+          "data": {}
+        },
+        "5umJaK": {
+          "id": "5umJaK",
+          "ty": "heading",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "vAuVjF",
+          "external_id": "lW947u",
+          "external_type": "text",
+          "data": {
+            "level": 1
+          }
+        },
+        "1Zzw0I": {
+          "id": "1Zzw0I",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "hkKeZ3",
+          "external_id": "c5IGyP",
+          "external_type": "text",
+          "data": {}
+        },
+        "BWUU7H": {
+          "id": "BWUU7H",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "XJxA7J",
+          "external_id": "lfDuzM",
+          "external_type": "text",
+          "data": {}
+        },
+        "-imnsw": {
+          "id": "-imnsw",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "p-DLJA",
+          "external_id": "h_ttc1",
+          "external_type": "text",
+          "data": {}
+        },
+        "XCliEE": {
+          "id": "XCliEE",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "pEIWYg",
+          "external_id": "7bcVKb",
+          "external_type": "text",
+          "data": {}
+        },
+        "BB4Xg7": {
+          "id": "BB4Xg7",
+          "ty": "callout",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "XEitcf",
+          "external_id": "ddb1iR",
+          "external_type": "text",
+          "data": {
+            "bgColor": null,
+            "textDirection": null
+          }
+        },
+        "v92EDj": {
+          "id": "v92EDj",
+          "ty": "callout",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "y4zy0a",
+          "external_id": "DEJFqp",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "bgColor": null
+          }
+        },
+        "RJkg0H": {
+          "id": "RJkg0H",
+          "ty": "callout",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "VTf7qQ",
+          "external_id": "sadw9f",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "bgColor": null
+          }
+        },
+        "Emvqtr": {
+          "id": "Emvqtr",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "CM-zpB",
+          "external_id": "0haSdi",
+          "external_type": "text",
+          "data": {}
+        },
+        "OWdHzq": {
+          "id": "OWdHzq",
+          "ty": "paragraph",
+          "parent": "7a6290ad-1e33-5733-aca9-f689ff52879d",
+          "children": "ULIpLO",
+          "external_id": "hKEIM4",
+          "external_type": "text",
+          "data": {}
+        }
+      },
+      "meta": {
+        "children_map": {
+          "I3lLWO": [],
+          "7a6290ad-1e33-5733-aca9-f689ff52879d": [
+            "ziGL7B",
+            "tKZKjN",
+            "A-HEjW",
+            "kX4UPZ",
+            "2w_2i7",
+            "9qsach",
+            "8hNVc-",
+            "zbIXX-",
+            "YSNMHy",
+            "eRrdUX",
+            "Z1YEQj",
+            "qD3upR",
+            "q-gE71",
+            "weKUiZ",
+            "0U02Vj",
+            "vYKBdw",
+            "0nhB14",
+            "CqwXaP",
+            "PGuG-4",
+            "BBEwdQ",
+            "HohS64",
+            "V2qKgt",
+            "sHLGVn",
+            "BTEAIh",
+            "PgFtoL",
+            "AQmpPX",
+            "f2V5j5",
+            "V5hnGs",
+            "BWUU7H",
+            "bPSfmI",
+            "IHkk0w",
+            "-oSOl-",
+            "BB4Xg7",
+            "-imnsw",
+            "3wnekk",
+            "ZCGCou",
+            "v92EDj",
+            "XCliEE",
+            "5umJaK",
+            "1Zzw0I",
+            "RJkg0H",
+            "Emvqtr",
+            "OWdHzq"
+          ],
+          "dNfVHV": [],
+          "Mi_z1P": [],
+          "b0ejHV": [],
+          "Sdzp83": [],
+          "p5o1H2": [],
+          "NhjIK3": [],
+          "XW8JA-": [],
+          "GNqZEV": [],
+          "Ml9NXs": [],
+          "vafmpl": [],
+          "uUE-0f": [],
+          "OMaUPY": [],
+          "qSWujW": [],
+          "GtjuU0": [],
+          "8Waqnv": [],
+          "_JtymW": [],
+          "tQrwUC": [],
+          "-FELYO": [],
+          "oUgLFI": [],
+          "CZb8wd": [],
+          "TaDVqA": [],
+          "Qh1qpx": [],
+          "siT66c": [
+            "gnjdLP",
+            "JtlqqK"
+          ],
+          "sM6uCQ": [
+            "m6e6ry",
+            "M5dLJn"
+          ],
+          "gTSm2a": [
+            "bdSkf4"
+          ],
+          "lXkxe1": [
+            "xra4Yv"
+          ],
+          "TnrcxC": [
+            "TtsD9A",
+            "OEIePB"
+          ],
+          "121cD0": [
+            "JGb-Qk"
+          ],
+          "MILHtx": [],
+          "4DVjPd": [
+            "YeNmna"
+          ],
+          "q7NMUi": [],
+          "QaBvVJ": [],
+          "TSK1q8": [],
+          "Yi7uik": [
+            "VMffx1",
+            "zTM0GX"
+          ],
+          "v6yLDu": [
+            "lyChkS",
+            "tPGO5A"
+          ],
+          "4khhkC": [
+            "Em6XvO"
+          ],
+          "nxxfHZ": [
+            "8FGAVz"
+          ],
+          "-5rNPS": [
+            "9RoRLg",
+            "1rV6SW"
+          ],
+          "fpdILb": [
+            "duCqFT"
+          ],
+          "XSZn_f": [],
+          "KYXsod": [
+            "DE0qC_"
+          ],
+          "Hh2LH4": [],
+          "N8zEPR": [],
+          "QYIVpq": [],
+          "fEw1Z7": [],
+          "jPLUyr": [],
+          "ccR_R1": [],
+          "BUpUk1": [],
+          "H-s0Lw": [],
+          "uln8WR": [],
+          "klUeA4": [],
+          "IP9N2-": [],
+          "vAuVjF": [],
+          "hkKeZ3": [],
+          "XJxA7J": [],
+          "p-DLJA": [],
+          "pEIWYg": [],
+          "XEitcf": [],
+          "y4zy0a": [],
+          "VTf7qQ": [],
+          "CM-zpB": [],
+          "ULIpLO": []
+        },
+        "text_map": {
+          "puxd2M": "[{\"insert\":\"No matter what kind of business you have, you will need to write a proposal at some point. You might respond to a Request for Proposals (RFP) that you saw advertised on an industry website, or you might receive an invitation directly from a client. Either way, it is essential to construct a clear, comprehensive response. You can adapt this template to meet the specific requirements of your potential client. \"}]",
+          "mNgv1O": "[{\"insert\":\"Understanding of the Problem\",\"attributes\":{\"font_color\":\"0xff2596be\"}}]",
+          "Oen6_v": "[{\"insert\":\"Projects are typically developed around problems that need to be solved. In this section, show the potential client that you understand the history of the problem and the unique requirements that it entails.  \"}]",
+          "C5v3Ix": "[{\"insert\":\"Keep your proposal customer-focused. Make the client feel like you understand them better than any of your competitors.\"}]",
+          "W-Yt9g": "[{\"insert\":\"Proposed Solution\",\"attributes\":{\"font_color\":\"0xff2596be\"}}]",
+          "qkEqdD": "[{\"insert\":\"This section is the heart of your proposal. Present your solution in as much detail as possible, preferably in a step-by-step format that addresses all of the client’s requirements. \"}]",
+          "tWc0Qm": "[{\"insert\":\"To really drive home the point that your offering meets all of the client’s needs, consider providing a “features and benefits” table like the one below. It outlines key parts of your product or service and their specific value to the potential client. \"}]",
+          "SnQQz0": "[{\"insert\":\"If your business proposal is particularly long, consider including an Executive Summary that provides the highlights. See HubSpot’s Executive Summary template for more detailed guidance. \"}]",
+          "wop6QS": "[{\"insert\":\"Think of the organization of this section like a funnel. Start with a broad description of the context, then continue to give more specifics about the potential client and their general needs, and finally home in on the particular problem at hand.\"}]",
+          "zQj-lW": "[{\"insert\":\"You know the saying “a picture is worth a thousand words”? Well, it rings true in business proposals! Try to\\nprovide tables and graphics when possible to break up the narrative and make your points easier to understand and digest. If you work in a field that is suited to it, consider including images and examples of your products or services. \"}]",
+          "aM1eqK": "[{\"insert\":\"Keep your solution focused on the client. Be specific about how you will meet their unique requirements. Using a proposal template is helpful, but you need to tailor it to every new project.\"}]",
+          "TsAg65": "[]",
+          "FioZm4": "[{\"insert\":\"Pricing Information\",\"attributes\":{\"font_color\":\"0xff2596be\"}}]",
+          "LMG4yN": "[{\"insert\":\"While the Proposed Solution section is important for persuading the potential client to choose your company, it is also crucial to provide a well-documented, competitive pricing summary. Make sure you include pricing for everything that you described in the previous section. \"}]",
+          "qWNGEL": "[{\"insert\":\"Depending on the good or service you are providing, you might be paid on a fixed fee, hourly, or per unit basis. You might want to suggest a one-time payment or a series of installments. If you will be paid in multiple installments, consider detailing this in a Pricing Schedule. \"}]",
+          "c7YQM3": "[{\"insert\":\"You should also list and explain any assumptions that, if they were to change, would alter the price of your proposal. For example, the number of in-person meetings required, the start and completion dates of the\\ncontract, and the number of rounds of revisions allowed. \"}]",
+          "u1kb0g": "[{\"insert\":\"If your pricing structure is complicated, consider using Microsoft Excel, Google Sheets, or another spreadsheet tool to calculate your final price. You can provide the price in this format or transfer it to your proposal document. \"}]",
+          "QXjVuq": "[]",
+          "ySl3Xj": "[{\"insert\":\"Proposed Schedule\",\"attributes\":{\"font_color\":\"0xff2596be\"}}]",
+          "qLX4F4": "[{\"insert\":\"Whether or not your client specified an expected completion date, you will want to propose one. You should offer a detailed schedule of the phases needed to meet the requirements of the proposal. You should also describe the work products, also called deliverables, associated with each phase.\"}]",
+          "QD7QX_": "[{\"insert\":\"Consider presenting the schedule graphically in a timeline or as a table with activities and dates, as shown below. \"}]",
+          "mKc0ZU": "[{\"insert\":\"A project schedule is an essential tool for successful project management. By providing a detailed schedule in your proposal, you can show the client that you are committed to completing the project by the deadline. \"}]",
+          "fHEglo": "[]",
+          "FElotg": "[]",
+          "ndUfbb": "[{\"insert\":\"Product/Service Feature\",\"attributes\":{\"bold\":true,\"font_color\":\"0xff2596be\"}}]",
+          "89UsNw": "[{\"insert\":\"Benefit to the Client\",\"attributes\":{\"bold\":true,\"font_color\":\"0xff2596be\"}}]",
+          "hZQlbL": "[]",
+          "FcQT4Y": "[]",
+          "7Q6wj9": "[{\"insert\":\"Project Activity\",\"attributes\":{\"font_color\":\"0xff2596be\",\"bold\":true}}]",
+          "o5Bnrr": "[{\"insert\":\"Date of Completion\",\"attributes\":{\"bold\":true,\"font_color\":\"0xff2596be\"}}]",
+          "2ZSbWC": "[]",
+          "bABJaF": "[]",
+          "xhJXdB": "[]",
+          "j0Y2hr": "[{\"insert\":\"Conclusion\",\"attributes\":{\"font_color\":\"0xff2596be\"}}]",
+          "6zhDj-": "[{\"insert\":\"It is always a good idea to simplify things for the customer. Begin the conclusion by briefly stating why you are the best choice to meet the requirements. Describe the next steps and confirm your availability for future discussions. \"}]",
+          "6m8jNY": "[{\"insert\":\"Then, rather than make them search for it, provide detailed contact information right at the end of your proposal, so the client can get in touch with you easily. \"}]",
+          "OOhN9L": "[{\"insert\":\"Terms and Conditions\",\"attributes\":{\"font_color\":\"0xff2596be\"}}]",
+          "uw4iba": "[{\"insert\":\"Include your company’s terms and conditions. The terms and conditions indicate the provisions, requirements, rules, specifications, and standards on which the resulting contract will be based.\"}]",
+          "lW947u": "[{\"insert\":\"Appendices\",\"attributes\":{\"font_color\":\"0xff2596be\"}}]",
+          "c5IGyP": "[{\"insert\":\"Appendices are a good place to include any information that you think is important, but that the client did not specifically request. Also, it is a good place to insert documents that are too large to include within the document. You can reference the proposal and attach them in the Appendices so that they do not interrupt the flow of the narrative.  \"}]",
+          "lfDuzM": "[]",
+          "h_ttc1": "[]",
+          "7bcVKb": "[]",
+          "ddb1iR": "[{\"insert\":\"Consider including a signature page directly in your proposal. This way, the client can sign right away without having to request an additional document. \"}]",
+          "DEJFqp": "[{\"insert\":\"Be sure to make any adaptations that are necessary for this specific proposal.\"}]",
+          "sadw9f": "[{\"insert\":\"Sample items for the Appendices include the bios and/or resumes of the team that would work on the project, photographs of products you will use in the solution, or screenshots of your software solution.\"}]",
+          "0haSdi": "[]",
+          "hKEIM4": "[]"
+        }
+      }
+    },
+    "children": []
+  }
+}

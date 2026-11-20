@@ -1,0 +1,581 @@
+{
+  "template_id": "software-development",
+  "order": 110,
+  "name": "Software Development",
+  "description": "Template for software development team to organize, manage tasks, manage deadlines and features for their software development projects.",
+  "icon": null,
+  "category": "Engineering",
+  "categories": [
+    "Engineering",
+    "Kanban"
+  ],
+  "author": "iLyas Farawe, CTO @ Techbarn",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Grid-7baa7b71-1db2-49e3-8f29-725717e5451d",
+  "database_id": "30c86dc3-0d4b-4a59-b16a-fa93558b0b1f",
+  "fields": [
+    {
+      "id": "DGCdMg",
+      "name": "To-do List",
+      "field_type": 7,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"A6LN\",\"name\":\"[ ] [Example task]\\n[ ] [Another example task\",\"color\":\"Purple\"},{\"id\":\"p9NL\",\"name\":\"[ ] Document endpoint on postman\",\"color\":\"Purple\"},{\"id\":\"9aBr\",\"name\":\"[x] Implement endpoint to like tweet\\n[ ] Document endpoint on postman\",\"color\":\"Purple\"},{\"id\":\"n5NO\",\"name\":\"[x] Implement endpoint to send new tweet\\n[x] Document endpoint on postman\\n[ ] Create form to send a new tweet\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        },
+        "7": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "NZPiul",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"mDpB\",\"name\":\"🎬 Templates\",\"color\":\"Purple\"},{\"id\":\"srti\",\"name\":\"🗒️ Backlog\",\"color\":\"Yellow\"},{\"id\":\"CzEY\",\"name\":\"🗓️ Sprint Backlog - [ Timeline ]\",\"color\":\"Orange\"},{\"id\":\"RKxy\",\"name\":\"📆 Working on\",\"color\":\"Pink\"},{\"id\":\"5yUZ\",\"name\":\"🐞 Bugs\",\"color\":\"LightPink\"},{\"id\":\"CgTw\",\"name\":\"🧑🏽‍💻 Testing [Staging Server]\",\"color\":\"Lime\"},{\"id\":\"Sb5P\",\"name\":\"Sprint - Done [Version: 1.2.0]\",\"color\":\"Green\"},{\"id\":\"scOc\",\"name\":\"Sprint - Done [Version: 1.1.0]\",\"color\":\"Aqua\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "My3NvY",
+      "name": "Description",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"CNgz\",\"name\":\"[Example Feature]\",\"color\":\"Purple\"},{\"id\":\"sPdB\",\"name\":\"Users Management\",\"color\":\"Purple\"},{\"id\":\"04vc\",\"name\":\"Report Generator\",\"color\":\"Purple\"},{\"id\":\"ZCtJ\",\"name\":\"Likes System\",\"color\":\"Purple\"},{\"id\":\"B_Bl\",\"name\":\"Tweet System\",\"color\":\"Purple\"},{\"id\":\"_nTj\",\"name\":\"File Management\",\"color\":\"Purple\"},{\"id\":\"uUYt\",\"name\":\"[Another Example Feature] 0112\",\"color\":\"Purple\"},{\"id\":\"xcNu\",\"name\":\"[Example Feature] 011\",\"color\":\"Purple\"},{\"id\":\"QtNm\",\"name\":\"[Example Feature] 01\",\"color\":\"Purple\"},{\"id\":\"gwu9\",\"name\":\"[Another Example Feature] 03\",\"color\":\"Purple\"},{\"id\":\"6Q9Q\",\"name\":\"[Example Feature] 02\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": true
+    }
+  ],
+  "views": [
+    {
+      "id": "0563acd3-61ca-4ca5-b723-5afad2cf4ba1",
+      "database_id": "30c86dc3-0d4b-4a59-b16a-fa93558b0b1f",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": false
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "id": "g:niZ0Km",
+          "content": "",
+          "ty": 3,
+          "field_id": "NZPiul",
+          "groups": [
+            {
+              "visible": false,
+              "id": "NZPiul"
+            },
+            {
+              "id": "mDpB",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "srti"
+            },
+            {
+              "visible": true,
+              "id": "CzEY"
+            },
+            {
+              "id": "RKxy",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "5yUZ"
+            },
+            {
+              "id": "CgTw",
+              "visible": true
+            },
+            {
+              "id": "Sb5P",
+              "visible": true
+            },
+            {
+              "id": "scOc",
+              "visible": true
+            }
+          ],
+          "collapsed_group_ids": []
+        }
+      ],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "71050d3f-33a1-44d7-8ab0-b0fd491e799e"
+        },
+        {
+          "id": "2386055d-7a22-42d0-96de-86d55f123ba2",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "37677391-619d-46ad-9605-df02cf107501"
+        },
+        {
+          "id": "93dbb16f-6e8c-45ab-9e1f-de3019c8146e",
+          "height": 60
+        },
+        {
+          "id": "0a1e4ba4-d11f-45fa-b621-62e06cd15ae4",
+          "height": 60
+        },
+        {
+          "id": "2961781e-4f42-483c-9dd9-0cd29807f417",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "ecb5e3a7-66ce-4c74-b416-f77bed97b4cc"
+        },
+        {
+          "id": "516f5691-deb9-4c6b-a085-21337f081053",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "e1696303-1ad6-4ed2-8743-ddd3b4e23207"
+        },
+        {
+          "height": 60,
+          "id": "2937099d-9479-464e-9343-849b6a7173bd"
+        },
+        {
+          "id": "91685a22-4cde-4332-9991-25601189da8e",
+          "height": 60
+        },
+        {
+          "id": "97389fdb-1b8f-45ec-9f5b-f9e1e6695625",
+          "height": 60
+        },
+        {
+          "id": "ec5a8a1c-00de-4a05-b84e-0ac778d03fb8",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "286b60de-0f25-4731-9f98-ce24f575aaed"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "My3NvY"
+        },
+        {
+          "id": "NZPiul"
+        },
+        {
+          "id": "DGCdMg"
+        }
+      ],
+      "field_settings": {
+        "My3NvY": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "NZPiul": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        },
+        "DGCdMg": {
+          "width": 150,
+          "visibility": 1,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    },
+    {
+      "id": "7baa7b71-1db2-49e3-8f29-725717e5451d",
+      "database_id": "30c86dc3-0d4b-4a59-b16a-fa93558b0b1f",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "71050d3f-33a1-44d7-8ab0-b0fd491e799e"
+        },
+        {
+          "height": 60,
+          "id": "2386055d-7a22-42d0-96de-86d55f123ba2"
+        },
+        {
+          "height": 60,
+          "id": "37677391-619d-46ad-9605-df02cf107501"
+        },
+        {
+          "height": 60,
+          "id": "93dbb16f-6e8c-45ab-9e1f-de3019c8146e"
+        },
+        {
+          "height": 60,
+          "id": "0a1e4ba4-d11f-45fa-b621-62e06cd15ae4"
+        },
+        {
+          "height": 60,
+          "id": "2961781e-4f42-483c-9dd9-0cd29807f417"
+        },
+        {
+          "height": 60,
+          "id": "ecb5e3a7-66ce-4c74-b416-f77bed97b4cc"
+        },
+        {
+          "height": 60,
+          "id": "516f5691-deb9-4c6b-a085-21337f081053"
+        },
+        {
+          "height": 60,
+          "id": "e1696303-1ad6-4ed2-8743-ddd3b4e23207"
+        },
+        {
+          "height": 60,
+          "id": "2937099d-9479-464e-9343-849b6a7173bd"
+        },
+        {
+          "id": "91685a22-4cde-4332-9991-25601189da8e",
+          "height": 60
+        },
+        {
+          "id": "97389fdb-1b8f-45ec-9f5b-f9e1e6695625",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "ec5a8a1c-00de-4a05-b84e-0ac778d03fb8"
+        },
+        {
+          "height": 60,
+          "id": "286b60de-0f25-4731-9f98-ce24f575aaed"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "My3NvY"
+        },
+        {
+          "id": "NZPiul"
+        },
+        {
+          "id": "DGCdMg"
+        }
+      ],
+      "field_settings": {
+        "My3NvY": {
+          "wrap": false,
+          "width": 266,
+          "visibility": 0
+        },
+        "DGCdMg": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "NZPiul": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1788080679
+    }
+  ],
+  "rows": [
+    {
+      "id": "ec5a8a1c-00de-4a05-b84e-0ac778d03fb8",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "NZPiul": {
+          "data": "scOc",
+          "field_type": 3
+        },
+        "My3NvY": {
+          "field_type": 3,
+          "data": "gwu9"
+        },
+        "DGCdMg": {
+          "data": "{\"options\":[{\"id\":\"rwMA\",\"name\":\"[Example task]\",\"color\":\"Purple\"},{\"id\":\"Q88j\",\"name\":\"[Another example task]\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "field_type": 7,
+          "last_modified": 1788095091,
+          "created_at": 1788095081
+        }
+      }
+    },
+    {
+      "id": "2386055d-7a22-42d0-96de-86d55f123ba2",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "NZPiul": {
+          "data": "srti",
+          "field_type": 3
+        },
+        "DGCdMg": {
+          "created_at": 1788094767,
+          "last_modified": 1788094820,
+          "data": "{\"options\":[{\"id\":\"73Xh\",\"name\":\"Create form to register a new user\",\"color\":\"Purple\"},{\"id\":\"XEee\",\"name\":\"Implement endpoint to register new user\",\"color\":\"Purple\"},{\"id\":\"sRqN\",\"name\":\"Implement authentication endpoint for mobile app developer\",\"color\":\"Purple\"},{\"id\":\"-kCd\",\"name\":\"Implement functionality to register a new user\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "field_type": 7
+        },
+        "My3NvY": {
+          "field_type": 3,
+          "data": "sPdB"
+        }
+      }
+    },
+    {
+      "id": "286b60de-0f25-4731-9f98-ce24f575aaed",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "NZPiul": {
+          "field_type": 3,
+          "data": "scOc"
+        },
+        "DGCdMg": {
+          "created_at": 1788095101,
+          "data": "{\"options\":[{\"id\":\"O1uM\",\"name\":\"[Example task]\",\"color\":\"Purple\"},{\"id\":\"xW6k\",\"name\":\"[Another example task]\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1788095106,
+          "field_type": 7
+        },
+        "My3NvY": {
+          "data": "6Q9Q",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "97389fdb-1b8f-45ec-9f5b-f9e1e6695625",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "DGCdMg": {
+          "last_modified": 1788095065,
+          "created_at": 1788095059,
+          "data": "{\"options\":[{\"id\":\"zxA2\",\"name\":\"[Example task]\",\"color\":\"Purple\"},{\"id\":\"kq6o\",\"name\":\"[Another example task]\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "field_type": 7
+        },
+        "NZPiul": {
+          "data": "scOc",
+          "field_type": 3
+        },
+        "My3NvY": {
+          "field_type": 3,
+          "data": "QtNm"
+        }
+      }
+    },
+    {
+      "id": "2937099d-9479-464e-9343-849b6a7173bd",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "NZPiul": {
+          "field_type": 3,
+          "data": "Sb5P"
+        },
+        "My3NvY": {
+          "data": "uUYt",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "37677391-619d-46ad-9605-df02cf107501",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "DGCdMg": {
+          "last_modified": 1788094925,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"sLuz\",\"name\":\"Create a form to generate tweet report\",\"color\":\"Purple\"},{\"id\":\"aRne\",\"name\":\"Implement report functionality\",\"color\":\"Purple\"},{\"id\":\"FduQ\",\"name\":\"Filter by date tweeted\",\"color\":\"Purple\"},{\"id\":\"vJ2p\",\"name\":\"Download report as CSV\",\"color\":\"Purple\"},{\"id\":\"qXXA\",\"name\":\"Download report as CSV\",\"color\":\"Purple\"}],\"selected_option_ids\":[\"sLuz\",\"aRne\",\"FduQ\"]}",
+          "created_at": 1788094884
+        },
+        "NZPiul": {
+          "field_type": 3,
+          "data": "srti"
+        },
+        "My3NvY": {
+          "data": "04vc",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "71050d3f-33a1-44d7-8ab0-b0fd491e799e",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "My3NvY": {
+          "data": "CNgz",
+          "field_type": 3
+        },
+        "DGCdMg": {
+          "data": "{\"options\":[{\"id\":\"KD6E\",\"name\":\"[Example task]\",\"color\":\"Purple\"},{\"id\":\"w-sX\",\"name\":\"[Another example task]\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "field_type": 7,
+          "created_at": 1788094652,
+          "last_modified": 1788094746
+        },
+        "NZPiul": {
+          "field_type": 3,
+          "data": "mDpB"
+        }
+      }
+    },
+    {
+      "id": "2961781e-4f42-483c-9dd9-0cd29807f417",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "My3NvY": {
+          "data": "B_Bl",
+          "field_type": 3
+        },
+        "NZPiul": {
+          "data": "RKxy",
+          "field_type": 3
+        },
+        "DGCdMg": {
+          "field_type": 7,
+          "created_at": 1788094985,
+          "data": "{\"options\":[{\"id\":\"Z0OZ\",\"name\":\"Implement functionality to send a new tweet\",\"color\":\"Purple\"}],\"selected_option_ids\":[\"Z0OZ\"]}",
+          "last_modified": 1788094989
+        }
+      }
+    },
+    {
+      "id": "91685a22-4cde-4332-9991-25601189da8e",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "My3NvY": {
+          "field_type": 3,
+          "data": "xcNu"
+        },
+        "NZPiul": {
+          "field_type": 3,
+          "data": "Sb5P"
+        },
+        "DGCdMg": {
+          "last_modified": 1788095048,
+          "data": "{\"options\":[{\"id\":\"hdrF\",\"name\":\"[Example task]\",\"color\":\"Purple\"},{\"id\":\"oj-D\",\"name\":\"[Another example task]\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "created_at": 1788095019,
+          "field_type": 7
+        }
+      }
+    },
+    {
+      "id": "0a1e4ba4-d11f-45fa-b621-62e06cd15ae4",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "NZPiul": {
+          "data": "CzEY",
+          "field_type": 3
+        },
+        "My3NvY": {
+          "data": "CNgz",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "516f5691-deb9-4c6b-a085-21337f081053",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "DGCdMg": {
+          "field_type": 7,
+          "last_modified": 1788095155,
+          "data": "{\"options\":[],\"selected_option_ids\":[]}",
+          "created_at": 1788095144
+        },
+        "My3NvY": {
+          "field_type": 3,
+          "data": "_nTj"
+        },
+        "NZPiul": {
+          "field_type": 3,
+          "data": "5yUZ"
+        }
+      }
+    },
+    {
+      "id": "e1696303-1ad6-4ed2-8743-ddd3b4e23207",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "My3NvY": {
+          "field_type": 3,
+          "data": "CNgz"
+        },
+        "NZPiul": {
+          "data": "CgTw",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "93dbb16f-6e8c-45ab-9e1f-de3019c8146e",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "My3NvY": {
+          "field_type": 3,
+          "data": "ZCtJ"
+        },
+        "DGCdMg": {
+          "data": "{\"options\":[{\"id\":\"Ya-h\",\"name\":\"Create like button\",\"color\":\"Purple\"},{\"id\":\"unIS\",\"name\":\"Implement functionality to like tweet\",\"color\":\"Purple\"}],\"selected_option_ids\":[\"Ya-h\"]}",
+          "field_type": 7,
+          "created_at": 1788094945,
+          "last_modified": 1788094961
+        },
+        "NZPiul": {
+          "data": "CzEY",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "ecb5e3a7-66ce-4c74-b416-f77bed97b4cc",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "NZPiul": {
+          "field_type": 3,
+          "data": "RKxy"
+        },
+        "DGCdMg": {
+          "field_type": 3,
+          "data": "A6LN"
+        },
+        "My3NvY": {
+          "data": "CNgz",
+          "field_type": 3
+        }
+      }
+    }
+  ]
+}

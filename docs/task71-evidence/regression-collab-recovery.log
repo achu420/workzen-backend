@@ -1,0 +1,23 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:collaboration-recovery
+> node --test test/collaboration-recovery.test.js
+
+(node:98825) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Recovery (Document): client A is ungracefully dropped mid-session, client B edits while A is offline, A reconnects and reconciles via state-vector sync, both converge (128.287458ms)
+✔ Recovery (Document): backend process restart against the same data file preserves content, Rid continuity, and live fan-out keeps working (59.948917ms)
+✔ Recovery (Document): resending an identical update payload after a presumed lost ack is deduplicated -- same Rid, no double effect (51.04325ms)
+✔ Recovery (Document): two concurrent submissions of the identical payload from different sockets never double-apply and never collide on Rid (57.954333ms)
+✔ Recovery (Document): two clients reconnect simultaneously, each submits a different pending edit, both are preserved and both converge (102.316125ms)
+✔ Recovery (Database + DatabaseRow): backend restart preserves field metadata and row cell content, and both remain writable after restart (58.606083ms)
+✔ Recovery (authorization): disconnect, revoke membership, reconnection is rejected, no protected content is returned, and a pending offline edit is not accepted (99.353209ms)
+✔ Recovery (authorization): restoring membership after revocation requires a brand-new connection -- the old revoked socket never resurrects (97.016084ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 776.997125
+EXIT:0

@@ -1,0 +1,893 @@
+{
+  "template_id": "fundraising-tracker",
+  "order": 139,
+  "name": "Fundraising tracker",
+  "description": "Use this database to keep all information about potential investors in one place. ",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"money_shopping\",\"iconName\":\"bag-dollar\",\"color\":\"0xFFA34AFD\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Kanban",
+    "Startups"
+  ],
+  "author": "Notion",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Fundraising-tracker-4c488d3f-0aa2-4da8-99a5-9198afdeb97c",
+  "pages": {
+    "id": "4c488d3f-0aa2-4da8-99a5-9198afdeb97c",
+    "name": "Fundraising tracker",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"money_shopping\",\"iconName\":\"bag-dollar\",\"color\":\"0xFFA34AFD\"}"
+    },
+    "document": {
+      "page_id": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+      "blocks": {
+        "19ae9370-7c9e-5be6-9a20-1e64afdedaa0": {
+          "id": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "ty": "page",
+          "parent": "",
+          "children": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "external_id": "YPnxyl",
+          "external_type": "text",
+          "data": {
+            "image_type": "1",
+            "cover_selection_type": "CoverType.file",
+            "selected_icon": "{\"groupName\":\"money_shopping\",\"iconName\":\"bag-dollar\",\"color\":\"0xFFA34AFD\"}",
+            "cover_selection": "https://images.unsplash.com/photo-1495366554757-8568e69d7f80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ1NzMwMDd8&ixlib=rb-4.0.3&q=80&w=1080"
+          }
+        },
+        "CO6gYv": {
+          "id": "CO6gYv",
+          "ty": "grid",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "ibbH3x",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "parent_id": "4c488d3f-0aa2-4da8-99a5-9198afdeb97c",
+            "view_id": "a4210294-e883-40da-b24e-f433f5e5813f",
+            "view_ids": [
+              "a4210294-e883-40da-b24e-f433f5e5813f"
+            ],
+            "database_id": "d0918fde-33ef-4f09-9294-e6f4c08cb5ab"
+          }
+        },
+        "GAK2qc": {
+          "id": "GAK2qc",
+          "ty": "bulleted_list",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "eBkWWJ",
+          "external_id": "1rWgQ9",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Average check size"
+              },
+              {
+                "insert": ": the average amount the firm invests in seed deals "
+              }
+            ]
+          }
+        },
+        "Gz-lUb": {
+          "id": "Gz-lUb",
+          "ty": "paragraph",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "fj4UHb",
+          "external_id": "-aVVXx",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Here are our suggestions for what to start with: "
+              }
+            ]
+          }
+        },
+        "L1hNdR": {
+          "id": "L1hNdR",
+          "ty": "paragraph",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "LO5aWv",
+          "external_id": "JdW5hB",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Hover over each investor's name and click OPEN to add meeting notes, links, and much more inside the page. "
+              }
+            ]
+          }
+        },
+        "P2E6ka": {
+          "id": "P2E6ka",
+          "ty": "paragraph",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "r10A2_",
+          "external_id": "N0tnFo",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Use this database to keep all information about potential investors in one place. "
+              }
+            ]
+          }
+        },
+        "SgUPcx": {
+          "id": "SgUPcx",
+          "ty": "bulleted_list",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "6lMjvI",
+          "external_id": "PtdF02",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Capital committed:"
+              },
+              {
+                "insert": " how much the firm has committed to invest via the "
+              },
+              {
+                "attributes": {
+                  "href": "https://www.ycombinator.com/handshake/"
+                },
+                "insert": "handshake protocol"
+              },
+              {
+                "insert": " "
+              }
+            ]
+          }
+        },
+        "VOIX7D": {
+          "id": "VOIX7D",
+          "ty": "paragraph",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "WK02DG",
+          "external_id": "CpAZDE",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "You can customize any of the properties to track whatever information is important to you. "
+              }
+            ]
+          }
+        },
+        "VU2jnC": {
+          "id": "VU2jnC",
+          "ty": "paragraph",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "F5u251",
+          "external_id": "q-o58V",
+          "external_type": "text",
+          "data": {}
+        },
+        "bq7bHz": {
+          "id": "bq7bHz",
+          "ty": "bulleted_list",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "Hpzvxu",
+          "external_id": "25mrkw",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Partner name:"
+              },
+              {
+                "insert": " the partner at the firm you are targeting "
+              }
+            ]
+          }
+        },
+        "dV-uQo": {
+          "id": "dV-uQo",
+          "ty": "bulleted_list",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "xTgdpr",
+          "external_id": "RaBlPk",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Portfolio:"
+              },
+              {
+                "insert": " companies that the firm has already invested in "
+              }
+            ]
+          }
+        },
+        "eYvzqY": {
+          "id": "eYvzqY",
+          "ty": "bulleted_list",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "GcRO4w",
+          "external_id": "HR1hiw",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Status:"
+              },
+              {
+                "insert": " what stage of the investment process is the firm in? "
+              }
+            ]
+          }
+        },
+        "nD6_5g": {
+          "id": "nD6_5g",
+          "ty": "paragraph",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "Sv3AMU",
+          "external_id": "BUMsoO",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "rhWXE4": {
+          "id": "rhWXE4",
+          "ty": "bulleted_list",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "I2tTnP",
+          "external_id": "s-OTF7",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Warm contact name:"
+              },
+              {
+                "insert": " the person connected to the firm and has agreed to do an intro "
+              }
+            ]
+          }
+        },
+        "uNByZt": {
+          "id": "uNByZt",
+          "ty": "bulleted_list",
+          "parent": "19ae9370-7c9e-5be6-9a20-1e64afdedaa0",
+          "children": "528WN4",
+          "external_id": "z0j0Ya",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "Lost reason:"
+              },
+              {
+                "insert": " the reasons the firm gave when they decided not to invest"
+              }
+            ]
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "19ae9370-7c9e-5be6-9a20-1e64afdedaa0": [
+            "P2E6ka",
+            "L1hNdR",
+            "VOIX7D",
+            "Gz-lUb",
+            "eYvzqY",
+            "GAK2qc",
+            "SgUPcx",
+            "bq7bHz",
+            "dV-uQo",
+            "rhWXE4",
+            "uNByZt",
+            "nD6_5g",
+            "CO6gYv",
+            "VU2jnC"
+          ],
+          "ibbH3x": [],
+          "eBkWWJ": [],
+          "fj4UHb": [],
+          "LO5aWv": [],
+          "r10A2_": [],
+          "6lMjvI": [],
+          "WK02DG": [],
+          "F5u251": [],
+          "Hpzvxu": [],
+          "xTgdpr": [],
+          "GcRO4w": [],
+          "Sv3AMU": [],
+          "I2tTnP": [],
+          "528WN4": []
+        },
+        "text_map": {
+          "1rWgQ9": "[{\"insert\":\"Average check size\",\"attributes\":{\"bold\":true}},{\"insert\":\": the average amount the firm invests in seed deals \"}]",
+          "-aVVXx": "[{\"insert\":\"Here are our suggestions for what to start with: \"}]",
+          "JdW5hB": "[{\"insert\":\"Hover over each investor's name and click OPEN to add meeting notes, links, and much more inside the page. \"}]",
+          "N0tnFo": "[{\"insert\":\"Use this database to keep all information about potential investors in one place. \"}]",
+          "PtdF02": "[{\"insert\":\"Capital committed:\",\"attributes\":{\"bold\":true}},{\"insert\":\" how much the firm has committed to invest via the \"},{\"insert\":\"handshake protocol\",\"attributes\":{\"href\":\"https://www.ycombinator.com/handshake/\"}},{\"insert\":\" \"}]",
+          "CpAZDE": "[{\"insert\":\"You can customize any of the properties to track whatever information is important to you. \"}]",
+          "q-o58V": "[]",
+          "25mrkw": "[{\"insert\":\"Partner name:\",\"attributes\":{\"bold\":true}},{\"insert\":\" the partner at the firm you are targeting \"}]",
+          "RaBlPk": "[{\"insert\":\"Portfolio:\",\"attributes\":{\"bold\":true}},{\"insert\":\" companies that the firm has already invested in \"}]",
+          "HR1hiw": "[{\"insert\":\"Status:\",\"attributes\":{\"bold\":true}},{\"insert\":\" what stage of the investment process is the firm in? \"}]",
+          "BUMsoO": "[]",
+          "s-OTF7": "[{\"insert\":\"Warm contact name:\",\"attributes\":{\"bold\":true}},{\"insert\":\" the person connected to the firm and has agreed to do an intro \"}]",
+          "z0j0Ya": "[{\"insert\":\"Lost reason:\",\"attributes\":{\"bold\":true}},{\"insert\":\" the reasons the firm gave when they decided not to invest\"}]"
+        }
+      }
+    },
+    "children": []
+  },
+  "embedded_databases": [
+    {
+      "block_id": "CO6gYv",
+      "name": "Waitlist",
+      "icon": {
+        "ty": 2,
+        "value": "{\"groupName\":\"map_travel\",\"iconName\":\"baggage\"}"
+      },
+      "view_ids": [
+        "a4210294-e883-40da-b24e-f433f5e5813f"
+      ],
+      "database": {
+        "database_id": "d0918fde-33ef-4f09-9294-e6f4c08cb5ab",
+        "fields": [
+          {
+            "id": "QdHsLP",
+            "name": "Warm Contact Email",
+            "field_type": 0,
+            "icon": "",
+            "type_options": {
+              "0": {}
+            },
+            "is_primary": false
+          },
+          {
+            "id": "UpyeXg",
+            "name": "Partner Email",
+            "field_type": 6,
+            "icon": "",
+            "type_options": {
+              "0": {},
+              "6": {
+                "url": "",
+                "content": ""
+              }
+            },
+            "is_primary": false
+          },
+          {
+            "id": "NJLtAa",
+            "name": "Capital Committed",
+            "field_type": 1,
+            "icon": "",
+            "type_options": {
+              "0": {},
+              "1": {
+                "format": 0,
+                "scale": 0,
+                "name": "Number",
+                "symbol": "RUB"
+              }
+            },
+            "is_primary": false
+          },
+          {
+            "id": "C3dFtP",
+            "name": "Description",
+            "field_type": 0,
+            "icon": "",
+            "type_options": {
+              "0": {}
+            },
+            "is_primary": false
+          },
+          {
+            "id": "nGYjuQ",
+            "name": "Partner Name",
+            "field_type": 0,
+            "icon": "",
+            "type_options": {
+              "0": {}
+            },
+            "is_primary": false
+          },
+          {
+            "id": "BQ3Ooh",
+            "name": "Name",
+            "field_type": 0,
+            "icon": "",
+            "type_options": {
+              "0": {}
+            },
+            "is_primary": true
+          },
+          {
+            "id": "98kAMM",
+            "name": "Portfolio",
+            "field_type": 6,
+            "icon": "",
+            "type_options": {
+              "6": {
+                "url": "",
+                "content": ""
+              }
+            },
+            "is_primary": false
+          },
+          {
+            "id": "PCQV7F",
+            "name": "Avg Check Size",
+            "field_type": 1,
+            "icon": "",
+            "type_options": {
+              "1": {
+                "format": 1,
+                "scale": 0,
+                "name": "Number",
+                "symbol": "$"
+              }
+            },
+            "is_primary": false
+          },
+          {
+            "id": "Qdvfy3",
+            "name": "Status",
+            "field_type": 3,
+            "icon": "",
+            "type_options": {
+              "0": {},
+              "3": {
+                "content": "{\"options\":[{\"id\":\"KahM\",\"name\":\"Won\",\"color\":\"Purple\"},{\"id\":\"pMHy\",\"name\":\"Pitched\",\"color\":\"Pink\"}],\"disable_color\":false}"
+              }
+            },
+            "is_primary": false
+          },
+          {
+            "id": "iqmWDN",
+            "name": "Warm Contact Name",
+            "field_type": 0,
+            "icon": "",
+            "type_options": {
+              "0": {}
+            },
+            "is_primary": false
+          }
+        ],
+        "views": [
+          {
+            "id": "a4210294-e883-40da-b24e-f433f5e5813f",
+            "database_id": "d0918fde-33ef-4f09-9294-e6f4c08cb5ab",
+            "name": "View of Table",
+            "layout": 0,
+            "layout_settings": {},
+            "filters": [
+              {
+                "field_id": "Qdvfy3",
+                "condition": 4,
+                "id": "XhBg9P",
+                "filter_type": 2,
+                "ty": 3,
+                "content": ""
+              }
+            ],
+            "sorts": [],
+            "group_settings": [],
+            "row_orders": [
+              {
+                "id": "ee086a16-44d8-483a-8ad8-533b666cef88",
+                "height": 60
+              },
+              {
+                "id": "7873358f-6faf-4875-9d6e-892c074e63c4",
+                "height": 60
+              },
+              {
+                "height": 60,
+                "id": "4776d705-f0be-4fce-bcab-bfb4ed06bcf7"
+              }
+            ],
+            "field_orders": [
+              {
+                "id": "BQ3Ooh"
+              },
+              {
+                "id": "C3dFtP"
+              },
+              {
+                "id": "Qdvfy3"
+              },
+              {
+                "id": "PCQV7F"
+              },
+              {
+                "id": "NJLtAa"
+              },
+              {
+                "id": "98kAMM"
+              },
+              {
+                "id": "nGYjuQ"
+              },
+              {
+                "id": "UpyeXg"
+              },
+              {
+                "id": "iqmWDN"
+              },
+              {
+                "id": "QdHsLP"
+              }
+            ],
+            "field_settings": {
+              "Qdvfy3": {
+                "visibility": 0,
+                "width": 150,
+                "wrap": false
+              },
+              "iqmWDN": {
+                "wrap": false,
+                "width": 150,
+                "visibility": 0
+              },
+              "nGYjuQ": {
+                "width": 150,
+                "visibility": 0,
+                "wrap": false
+              },
+              "BQ3Ooh": {
+                "width": 150,
+                "wrap": false,
+                "visibility": 0
+              },
+              "PCQV7F": {
+                "width": 150,
+                "wrap": false,
+                "visibility": 0
+              },
+              "UpyeXg": {
+                "visibility": 0,
+                "wrap": false,
+                "width": 150
+              },
+              "C3dFtP": {
+                "visibility": 0,
+                "width": 150,
+                "wrap": false
+              },
+              "NJLtAa": {
+                "width": 150,
+                "wrap": false,
+                "visibility": 0
+              },
+              "QdHsLP": {
+                "visibility": 0,
+                "wrap": false,
+                "width": 150
+              },
+              "98kAMM": {
+                "width": 150,
+                "visibility": 0,
+                "wrap": false
+              }
+            },
+            "is_inline": false,
+            "embedded": false,
+            "created_at": 0
+          },
+          {
+            "id": "daa9f112-4b44-47b5-b85c-e0db98113110",
+            "database_id": "d0918fde-33ef-4f09-9294-e6f4c08cb5ab",
+            "name": "Board",
+            "layout": 1,
+            "layout_settings": {
+              "1": {
+                "collapse_hidden_groups": true,
+                "hide_ungrouped_column": false
+              }
+            },
+            "filters": [],
+            "sorts": [],
+            "group_settings": [
+              {
+                "field_id": "Qdvfy3",
+                "ty": 3,
+                "id": "g:af8nPN",
+                "collapsed_group_ids": [],
+                "content": "",
+                "groups": [
+                  {
+                    "id": "Qdvfy3",
+                    "visible": true
+                  },
+                  {
+                    "id": "KahM",
+                    "visible": true
+                  },
+                  {
+                    "id": "pMHy",
+                    "visible": true
+                  }
+                ]
+              }
+            ],
+            "row_orders": [
+              {
+                "height": 60,
+                "id": "ee086a16-44d8-483a-8ad8-533b666cef88"
+              },
+              {
+                "id": "7873358f-6faf-4875-9d6e-892c074e63c4",
+                "height": 60
+              },
+              {
+                "height": 60,
+                "id": "4776d705-f0be-4fce-bcab-bfb4ed06bcf7"
+              }
+            ],
+            "field_orders": [
+              {
+                "id": "BQ3Ooh"
+              },
+              {
+                "id": "C3dFtP"
+              },
+              {
+                "id": "Qdvfy3"
+              },
+              {
+                "id": "PCQV7F"
+              },
+              {
+                "id": "NJLtAa"
+              },
+              {
+                "id": "98kAMM"
+              },
+              {
+                "id": "nGYjuQ"
+              },
+              {
+                "id": "UpyeXg"
+              },
+              {
+                "id": "iqmWDN"
+              },
+              {
+                "id": "QdHsLP"
+              }
+            ],
+            "field_settings": {
+              "QdHsLP": {
+                "width": 150,
+                "wrap": false,
+                "visibility": 1
+              },
+              "C3dFtP": {
+                "visibility": 1,
+                "width": 150,
+                "wrap": false
+              },
+              "BQ3Ooh": {
+                "width": 150,
+                "wrap": false,
+                "visibility": 0
+              },
+              "UpyeXg": {
+                "wrap": false,
+                "width": 150,
+                "visibility": 1
+              },
+              "NJLtAa": {
+                "wrap": false,
+                "visibility": 1,
+                "width": 150
+              },
+              "Qdvfy3": {
+                "visibility": 1,
+                "wrap": false,
+                "width": 150
+              },
+              "iqmWDN": {
+                "wrap": false,
+                "visibility": 1,
+                "width": 150
+              },
+              "nGYjuQ": {
+                "width": 150,
+                "visibility": 1,
+                "wrap": false
+              },
+              "98kAMM": {
+                "width": 150,
+                "wrap": false,
+                "visibility": 1
+              },
+              "PCQV7F": {
+                "width": 150,
+                "wrap": false,
+                "visibility": 1
+              }
+            },
+            "is_inline": false,
+            "embedded": false,
+            "created_at": 0
+          }
+        ],
+        "rows": [
+          {
+            "id": "ee086a16-44d8-483a-8ad8-533b666cef88",
+            "height": 60,
+            "visibility": true,
+            "cells": {
+              "98kAMM": {
+                "data": "https://www.sequoiacap.com/our-companies/",
+                "field_type": 6
+              },
+              "PCQV7F": {
+                "data": "",
+                "field_type": 1
+              },
+              "QdHsLP": {
+                "field_type": 0,
+                "data": ""
+              },
+              "BQ3Ooh": {
+                "field_type": 0,
+                "data": "Sequoia"
+              },
+              "UpyeXg": {
+                "data": "",
+                "field_type": 0
+              },
+              "iqmWDN": {
+                "data": "",
+                "field_type": 0
+              },
+              "Qdvfy3": {
+                "last_modified": 1788098588,
+                "created_at": 1788098582,
+                "field_type": 3,
+                "data": "KahM"
+              },
+              "nGYjuQ": {
+                "data": "",
+                "field_type": 0
+              },
+              "NJLtAa": {
+                "data": "",
+                "field_type": 0
+              },
+              "C3dFtP": {
+                "data": "We help the daring build legendary companies.",
+                "field_type": 0
+              }
+            }
+          },
+          {
+            "id": "4776d705-f0be-4fce-bcab-bfb4ed06bcf7",
+            "height": 60,
+            "visibility": true,
+            "cells": {
+              "PCQV7F": {
+                "field_type": 1,
+                "data": ""
+              },
+              "UpyeXg": {
+                "field_type": 0,
+                "data": ""
+              },
+              "NJLtAa": {
+                "field_type": 0,
+                "data": ""
+              },
+              "QdHsLP": {
+                "data": "",
+                "field_type": 0
+              },
+              "nGYjuQ": {
+                "data": "",
+                "field_type": 0
+              },
+              "BQ3Ooh": {
+                "data": "500 Startups",
+                "field_type": 0
+              },
+              "C3dFtP": {
+                "field_type": 0,
+                "data": ""
+              },
+              "98kAMM": {
+                "field_type": 6,
+                "data": ""
+              },
+              "iqmWDN": {
+                "data": "",
+                "field_type": 0
+              },
+              "Qdvfy3": {
+                "field_type": 0,
+                "data": ""
+              }
+            }
+          },
+          {
+            "id": "7873358f-6faf-4875-9d6e-892c074e63c4",
+            "height": 60,
+            "visibility": true,
+            "cells": {
+              "QdHsLP": {
+                "data": "",
+                "field_type": 0
+              },
+              "C3dFtP": {
+                "data": "We give startups a disproportionate advantage.",
+                "field_type": 0
+              },
+              "nGYjuQ": {
+                "data": "",
+                "field_type": 0
+              },
+              "98kAMM": {
+                "data": "https://www.ycombinator.com",
+                "field_type": 6
+              },
+              "NJLtAa": {
+                "field_type": 0,
+                "data": ""
+              },
+              "Qdvfy3": {
+                "created_at": 1788873583,
+                "data": "pMHy",
+                "last_modified": 1788873583,
+                "field_type": 3
+              },
+              "PCQV7F": {
+                "data": "500000",
+                "field_type": 1
+              },
+              "BQ3Ooh": {
+                "data": "Y Combinator",
+                "field_type": 0
+              },
+              "UpyeXg": {
+                "field_type": 0,
+                "data": ""
+              },
+              "iqmWDN": {
+                "data": "",
+                "field_type": 0
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[2026-11-06T11:34:13.980Z] INFO - .env.local backed up (MD5-verified) :: c85de40fc13dc3b2379325c6ecc3471d
+[2026-11-06T11:34:13.981Z] INFO - Wrote temporary .env.local pointing at this run's disposable backend :: APPFLOWY_BASE_URL=http://127.0.0.1:8799 | APPFLOWY_GOTRUE_BASE_URL=http://127.0.0.1:8799 | APPFLOWY_WS_BASE_URL=ws://127.0.0.1:8799/ws/v2 | 
+[2026-11-06T11:34:14.493Z] PASS - Backend process started (STORAGE=json, port 8799) :: pid=96488
+[2026-11-06T11:34:15.529Z] PASS - Frontend dev server started (port 5195) :: pid=96494
+[2026-11-06T11:34:15.660Z] PASS - Registered two SEPARATE real user accounts (owner, member) :: task67-owner-1793964855609@example.test / task67-member-1793964855609@example.test
+[2026-11-06T11:34:20.838Z] PASS - Owner logged in via real UI (browser context 1) :: http://localhost:5195/app/c529193f-aff6-4c94-824a-4c9dcbf6841f
+[2026-11-06T11:34:24.181Z] PASS - Owner created a public Space via real UI :: workspace=c529193f-aff6-4c94-824a-4c9dcbf6841f
+[2026-11-06T11:34:24.236Z] PASS - Member added to owner's workspace via the supported test-membership helper
+[2026-11-06T11:34:27.882Z] PASS - Member logged in via real UI (independent browser context 2) and opened the shared workspace :: http://localhost:5195/app/c529193f-aff6-4c94-824a-4c9dcbf6841f/b48d8610-57b7-47f9-901a-af0401072b1d
+[2026-11-06T11:34:31.197Z] PASS - Owner created a new Document page via real UI :: pageId=b48d8610-57b7-47f9-901a-af0401072b1d
+[2026-11-06T11:34:31.714Z] FAIL - WORKFLOW FAILED :: Error: Could not programmatically focus title element #editor-title-b48d8610-57b7-47f9-901a-af0401072b1d
+    at clickIntoDocumentBody (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task67-evidence/task67-browser-verify.mjs:180:27)
+    at async typeIntoDocument (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task67-evidence/task67-browser-verify.mjs:186:7)
+    at async main (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/docs/task67-evidence/task67-browser-verify.mjs:292:5)

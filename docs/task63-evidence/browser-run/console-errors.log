@@ -1,0 +1,66 @@
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to fetch auth providers: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to hydrate workspace member profile: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to hydrate workspace member profile: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] [outbox] enqueue failed {objectId: 691d932f-65bf-4a8d-be66-f6654c27e353, error: DexieError2} ARGS=["[outbox] enqueue failed",{"objectId":"691d932f-65bf-4a8d-be66-f6654c27e353","error":{"name":"NotFoundError"}}]
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] [Outline] [loadViewChildrenBatch] Failed to load children for [850a00a9-8275-459e-8cbd-0d9e2a713d3f] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] [Outline] [loadViewChildrenBatch] Failed to load children for [f2e35f50-0d17-449d-8724-f27dfdf21f91, 50ce5886-6e40-4f51-8606-e7320c306eb5] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] [outbox] enqueue failed {objectId: 691d932f-65bf-4a8d-be66-f6654c27e353, error: DexieError2} ARGS=["[outbox] enqueue failed",{"objectId":"691d932f-65bf-4a8d-be66-f6654c27e353","error":{"name":"NotFoundError"}}]
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] [Outline] [loadViewChildrenBatch] Failed to load children for [850a00a9-8275-459e-8cbd-0d9e2a713d3f] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] [Outline] [loadViewChildrenBatch] Failed to load children for [f2e35f50-0d17-449d-8724-f27dfdf21f91, 50ce5886-6e40-4f51-8606-e7320c306eb5] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] [Outline] [loadViewChildrenBatch] Failed to load children for [850a00a9-8275-459e-8cbd-0d9e2a713d3f] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] [Outline] [loadViewChildrenBatch] Failed to load children for [f2e35f50-0d17-449d-8724-f27dfdf21f91, 50ce5886-6e40-4f51-8606-e7320c306eb5] {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[error] Failed to load resource: the server responded with a status of 404 (Not Found)

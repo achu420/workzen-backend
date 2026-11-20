@@ -1,0 +1,434 @@
+{
+  "template_id": "daily-journal",
+  "order": 126,
+  "name": "Daily Journal",
+  "description": "Document daily experiences, explore thoughts and feelings, or track personal milestones.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"computer_devices\",\"iconName\":\"keyboard\",\"color\":\"0xFF535CE4\"}"
+  },
+  "category": "Database",
+  "categories": [
+    "Database",
+    "Docs",
+    "Education"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Daily-Journal-706323c0-f8bf-49be-b73b-059b10f7ac96",
+  "database_id": "88b42e1a-8bde-4874-90d3-31344a60ed9f",
+  "fields": [
+    {
+      "id": "MrxJRS",
+      "name": "Name",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        }
+      },
+      "is_primary": true
+    },
+    {
+      "id": "JCXYO7",
+      "name": "Created",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "date_format": 3,
+          "time_format": 1,
+          "timezone_id": ""
+        },
+        "3": {
+          "content": "{\"options\":[],\"disable_color\":false}",
+          "date_format": 3,
+          "time_format": 1,
+          "field_type": 9,
+          "include_time": true
+        },
+        "9": {
+          "include_time": false,
+          "time_format": 1,
+          "field_type": 9,
+          "date_format": 3,
+          "timezone_id": ""
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "aCSY_C",
+      "name": "Tags",
+      "field_type": 4,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": "",
+          "content": "{\"options\":[],\"disable_color\":false}"
+        },
+        "3": {
+          "content": "{\"options\":[],\"disable_color\":false}"
+        },
+        "4": {
+          "content": "{\"options\":[{\"id\":\"NRw7\",\"name\":\"Special event\",\"color\":\"LightPink\"},{\"id\":\"OOMi\",\"name\":\"Daily\",\"color\":\"Pink\"},{\"id\":\"xrQG\",\"name\":\"Planning\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "706323c0-f8bf-49be-b73b-059b10f7ac96",
+      "database_id": "88b42e1a-8bde-4874-90d3-31344a60ed9f",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "446b0d15-b42b-4a68-8677-7b0bf14093e8",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "9e4eba9d-53c9-4209-81fd-b4f77340b40f"
+        },
+        {
+          "id": "fa5e30a0-0326-47be-9896-c91588d34640",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "MrxJRS"
+        },
+        {
+          "id": "JCXYO7"
+        },
+        {
+          "id": "aCSY_C"
+        }
+      ],
+      "field_settings": {
+        "MrxJRS": {
+          "width": 150,
+          "wrap": true,
+          "visibility": 0
+        },
+        "JCXYO7": {
+          "width": 150,
+          "wrap": true,
+          "visibility": 0
+        },
+        "aCSY_C": {
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1726750818
+    },
+    {
+      "id": "0531829e-9c29-4897-8ba2-1607ecf9cf0f",
+      "database_id": "88b42e1a-8bde-4874-90d3-31344a60ed9f",
+      "name": "Calendar",
+      "layout": 2,
+      "layout_settings": {
+        "2": {
+          "show_weekends": false,
+          "show_week_numbers": false,
+          "layout_ty": 0,
+          "field_id": "JCXYO7",
+          "first_day_of_week": 0
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "446b0d15-b42b-4a68-8677-7b0bf14093e8",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "9e4eba9d-53c9-4209-81fd-b4f77340b40f"
+        },
+        {
+          "id": "fa5e30a0-0326-47be-9896-c91588d34640",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "MrxJRS"
+        },
+        {
+          "id": "JCXYO7"
+        },
+        {
+          "id": "aCSY_C"
+        }
+      ],
+      "field_settings": {
+        "aCSY_C": {
+          "visibility": 1
+        },
+        "JCXYO7": {
+          "visibility": 2,
+          "width": 150,
+          "wrap": true
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    }
+  ],
+  "rows": [
+    {
+      "id": "446b0d15-b42b-4a68-8677-7b0bf14093e8",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MrxJRS": {
+          "created_at": 1726750850,
+          "field_type": 0,
+          "data": "09/19/24",
+          "last_modified": 1726751027
+        },
+        "JCXYO7": {
+          "created_at": 1726751111,
+          "include_time": false,
+          "end_timestamp": "",
+          "data": "1726751111",
+          "is_range": false,
+          "field_type": 2,
+          "reminder_id": "",
+          "last_modified": 1726751111
+        },
+        "aCSY_C": {
+          "created_at": 1726751574,
+          "data": "NRw7",
+          "field_type": 4,
+          "last_modified": 1726751603
+        }
+      },
+      "document": {
+        "page_id": "7ba68648-f3d8-56c2-a39e-e07c6c07df00",
+        "blocks": {
+          "VbnAVDGiG9": {
+            "id": "VbnAVDGiG9",
+            "ty": "paragraph",
+            "parent": "7ba68648-f3d8-56c2-a39e-e07c6c07df00",
+            "children": "XlJwwLrvrD",
+            "external_id": "zLaFhwQm_P",
+            "external_type": "text",
+            "data": {}
+          },
+          "7ba68648-f3d8-56c2-a39e-e07c6c07df00": {
+            "id": "7ba68648-f3d8-56c2-a39e-e07c6c07df00",
+            "ty": "page",
+            "parent": "",
+            "children": "7ba68648-f3d8-56c2-a39e-e07c6c07df00",
+            "external_id": null,
+            "external_type": null,
+            "data": {}
+          },
+          "d-iG_u": {
+            "id": "d-iG_u",
+            "ty": "paragraph",
+            "parent": "7ba68648-f3d8-56c2-a39e-e07c6c07df00",
+            "children": "91S5e7",
+            "external_id": "pjCbcn",
+            "external_type": "text",
+            "data": {}
+          },
+          "_Q2Vpj": {
+            "id": "_Q2Vpj",
+            "ty": "paragraph",
+            "parent": "7ba68648-f3d8-56c2-a39e-e07c6c07df00",
+            "children": "K_T--U",
+            "external_id": "39AFFM",
+            "external_type": "text",
+            "data": {}
+          }
+        },
+        "meta": {
+          "children_map": {
+            "XlJwwLrvrD": [],
+            "7ba68648-f3d8-56c2-a39e-e07c6c07df00": [
+              "VbnAVDGiG9",
+              "d-iG_u",
+              "_Q2Vpj"
+            ],
+            "91S5e7": [],
+            "K_T--U": []
+          },
+          "text_map": {
+            "zLaFhwQm_P": "[{\"insert\":\"This is my daily note.\"}]",
+            "pjCbcn": "[]",
+            "39AFFM": "[{\"insert\":\"Love open source and AppFlowy\"}]"
+          }
+        }
+      }
+    },
+    {
+      "id": "9e4eba9d-53c9-4209-81fd-b4f77340b40f",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MrxJRS": {
+          "created_at": 1726751135,
+          "data": "09/18/24",
+          "field_type": 0,
+          "last_modified": 1726751135
+        },
+        "JCXYO7": {
+          "created_at": 1726751137,
+          "field_type": 2,
+          "data": "1726664737",
+          "include_time": false,
+          "is_range": false,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "last_modified": 1726751137
+        },
+        "aCSY_C": {
+          "created_at": 1726751593,
+          "data": "OOMi",
+          "field_type": 4,
+          "last_modified": 1726751593
+        }
+      },
+      "document": {
+        "page_id": "35bdc854-fd8b-57c2-9ac2-190b6c2f24cd",
+        "blocks": {
+          "35bdc854-fd8b-57c2-9ac2-190b6c2f24cd": {
+            "id": "35bdc854-fd8b-57c2-9ac2-190b6c2f24cd",
+            "ty": "page",
+            "parent": "",
+            "children": "35bdc854-fd8b-57c2-9ac2-190b6c2f24cd",
+            "external_id": null,
+            "external_type": null,
+            "data": {}
+          },
+          "KgQ2jpIDP4": {
+            "id": "KgQ2jpIDP4",
+            "ty": "paragraph",
+            "parent": "35bdc854-fd8b-57c2-9ac2-190b6c2f24cd",
+            "children": "31A68qRCy-",
+            "external_id": "PKiD45oJvp",
+            "external_type": "text",
+            "data": {}
+          }
+        },
+        "meta": {
+          "children_map": {
+            "35bdc854-fd8b-57c2-9ac2-190b6c2f24cd": [
+              "KgQ2jpIDP4"
+            ],
+            "31A68qRCy-": []
+          },
+          "text_map": {
+            "PKiD45oJvp": "[{\"insert\":\"Jot down quick notes here\"}]"
+          }
+        }
+      }
+    },
+    {
+      "id": "fa5e30a0-0326-47be-9896-c91588d34640",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "JCXYO7": {
+          "created_at": 1726751211,
+          "include_time": false,
+          "field_type": 2,
+          "end_timestamp": "",
+          "data": "1726578411",
+          "reminder_id": "",
+          "is_range": false,
+          "last_modified": 1726751211
+        },
+        "MrxJRS": {
+          "created_at": 1726751222,
+          "field_type": 0,
+          "data": "09/17/24",
+          "last_modified": 1726751222
+        },
+        "aCSY_C": {
+          "created_at": 1726751588,
+          "field_type": 4,
+          "data": "xrQG",
+          "last_modified": 1726751588
+        }
+      },
+      "document": {
+        "page_id": "f9c47cec-cbb4-52be-aab0-8db90940c676",
+        "blocks": {
+          "f9c47cec-cbb4-52be-aab0-8db90940c676": {
+            "id": "f9c47cec-cbb4-52be-aab0-8db90940c676",
+            "ty": "page",
+            "parent": "",
+            "children": "f9c47cec-cbb4-52be-aab0-8db90940c676",
+            "external_id": null,
+            "external_type": null,
+            "data": {}
+          },
+          "TLKSfxNxyR": {
+            "id": "TLKSfxNxyR",
+            "ty": "paragraph",
+            "parent": "f9c47cec-cbb4-52be-aab0-8db90940c676",
+            "children": "JUHiegy9l4",
+            "external_id": "JGU3duGGlF",
+            "external_type": "text",
+            "data": {}
+          },
+          "DFmUFd": {
+            "id": "DFmUFd",
+            "ty": "todo_list",
+            "parent": "f9c47cec-cbb4-52be-aab0-8db90940c676",
+            "children": "ikp9Dp",
+            "external_id": "p5YutW",
+            "external_type": "text",
+            "data": {
+              "checked": false
+            }
+          },
+          "Qa16aj": {
+            "id": "Qa16aj",
+            "ty": "todo_list",
+            "parent": "f9c47cec-cbb4-52be-aab0-8db90940c676",
+            "children": "5_cf8n",
+            "external_id": "0Bjsb9",
+            "external_type": "text",
+            "data": {
+              "checked": false
+            }
+          }
+        },
+        "meta": {
+          "children_map": {
+            "f9c47cec-cbb4-52be-aab0-8db90940c676": [
+              "TLKSfxNxyR",
+              "DFmUFd",
+              "Qa16aj"
+            ],
+            "JUHiegy9l4": [],
+            "ikp9Dp": [],
+            "5_cf8n": []
+          },
+          "text_map": {
+            "JGU3duGGlF": "[{\"insert\":\"To-dos:\"}]",
+            "p5YutW": "[{\"insert\":\"Mood board\"}]",
+            "0Bjsb9": "[]"
+          }
+        }
+      }
+    }
+  ]
+}

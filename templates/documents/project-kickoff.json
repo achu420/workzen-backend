@@ -1,0 +1,405 @@
+{
+  "template_id": "project-kickoff",
+  "order": 133,
+  "name": "Project kickoff",
+  "description": "Get everyone aligned quickly with this template.",
+  "icon": null,
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Docs",
+    "Engineering",
+    "Startups"
+  ],
+  "author": "Slite",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Project-kickoff-9b7da771-d4b9-45dc-938a-830922085017",
+  "pages": {
+    "id": "9b7da771-d4b9-45dc-938a-830922085017",
+    "name": "Project kickoff",
+    "icon": null,
+    "document": {
+      "page_id": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+      "blocks": {
+        "fcef8fbf-31b8-5cb7-b1b3-4494adc77363": {
+          "id": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "ty": "page",
+          "parent": "",
+          "children": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "cover_selection": "https://images.unsplash.com/photo-1534030665069-90e016e995e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ1ODYyMzN8&ixlib=rb-4.0.3&q=80&w=1080",
+            "cover_selection_type": "CoverType.file",
+            "image_type": "1"
+          }
+        },
+        "zrRhCo": {
+          "id": "zrRhCo",
+          "ty": "paragraph",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "H-_Wsk",
+          "external_id": "EdvOvk",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Write down the main topics to discuss to successfully kick your project off."
+              }
+            ]
+          }
+        },
+        "73s58r": {
+          "id": "73s58r",
+          "ty": "bulleted_list",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "an3gEm",
+          "external_id": "GcgvOx",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "E.g. project roadmap"
+              }
+            ]
+          }
+        },
+        "niciky": {
+          "id": "niciky",
+          "ty": "bulleted_list",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "k7CKi8",
+          "external_id": "vCgFEB",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Remaining open questions"
+              }
+            ]
+          }
+        },
+        "y5Krqj": {
+          "id": "y5Krqj",
+          "ty": "paragraph",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "vE0KUh",
+          "external_id": "akuaWO",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "Gj4Z5_": {
+          "id": "Gj4Z5_",
+          "ty": "heading",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "oHwDl5",
+          "external_id": "uFgwcd",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "🗒 Notes"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "CeoQZw": {
+          "id": "CeoQZw",
+          "ty": "paragraph",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "xcee0t",
+          "external_id": "6zd9FT",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Succinctly cover any key information discussed in the meeting."
+              }
+            ]
+          }
+        },
+        "UdtYuS": {
+          "id": "UdtYuS",
+          "ty": "paragraph",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "br0RcS",
+          "external_id": "_IulYB",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "e3Kljz": {
+          "id": "e3Kljz",
+          "ty": "heading",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "Vt8clU",
+          "external_id": "3d7GKE",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "📌 "
+              },
+              {
+                "insert": "Outcomes"
+              }
+            ]
+          }
+        },
+        "QeJnXm": {
+          "id": "QeJnXm",
+          "ty": "paragraph",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "k8fwUr",
+          "external_id": "RHtVhM",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Summarize key decisions in a tidy paragraph and communicate them to the team."
+              }
+            ]
+          }
+        },
+        "6X-9Ad": {
+          "id": "6X-9Ad",
+          "ty": "paragraph",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "RoIWp4",
+          "external_id": "gYbmWm",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "iPDM6s": {
+          "id": "iPDM6s",
+          "ty": "heading",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "lUk75Z",
+          "external_id": "MVOpyu",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "✅ "
+              },
+              {
+                "insert": "Action"
+              },
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": " "
+              },
+              {
+                "insert": "items"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "ufeqco": {
+          "id": "ufeqco",
+          "ty": "bulleted_list",
+          "parent": "73s58r",
+          "children": "FDYv6d",
+          "external_id": "OYgSVw",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Get aligned on the main upcoming topics "
+              }
+            ]
+          }
+        },
+        "8ENPwl": {
+          "id": "8ENPwl",
+          "ty": "heading",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "fAa1VX",
+          "external_id": "Qwvc9U",
+          "external_type": "text",
+          "data": {
+            "textDirection": null,
+            "delta": [
+              {
+                "attributes": {
+                  "bold": true
+                },
+                "insert": "🎯 "
+              },
+              {
+                "insert": "Agenda"
+              }
+            ],
+            "bgColor": null,
+            "level": 2
+          }
+        },
+        "UCXpHc": {
+          "id": "UCXpHc",
+          "ty": "paragraph",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "DbrSvR",
+          "external_id": "YvGvIj",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "aUvPQi": {
+          "id": "aUvPQi",
+          "ty": "quote",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "MurzPs",
+          "external_id": "4t-NOJ",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Project: @link the project plan\nAttendees: mention teammates\nDate & time: type @today"
+              }
+            ]
+          }
+        },
+        "l4IAr8": {
+          "id": "l4IAr8",
+          "ty": "todo_list",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "bYfKxk",
+          "external_id": "7ZtUJc",
+          "external_type": "text",
+          "data": {
+            "checked": false,
+            "delta": [
+              {
+                "insert": "E.g. @jess review the project roadmap"
+              }
+            ]
+          }
+        },
+        "RLy4Ta": {
+          "id": "RLy4Ta",
+          "ty": "todo_list",
+          "parent": "fcef8fbf-31b8-5cb7-b1b3-4494adc77363",
+          "children": "5viCjG",
+          "external_id": "NgB3iN",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "E.g. @mike contact copywriter freelancers"
+              }
+            ],
+            "checked": false
+          }
+        },
+        "LYdjF_": {
+          "id": "LYdjF_",
+          "ty": "paragraph",
+          "parent": "RLy4Ta",
+          "children": "X_hIbq",
+          "external_id": "qDt5_I",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "tLopPm": {
+          "id": "tLopPm",
+          "ty": "todo_list",
+          "parent": "l4IAr8",
+          "children": "RC-6Ot",
+          "external_id": "DYJee7",
+          "external_type": "text",
+          "data": {
+            "checked": false,
+            "delta": []
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "fcef8fbf-31b8-5cb7-b1b3-4494adc77363": [
+            "aUvPQi",
+            "UCXpHc",
+            "8ENPwl",
+            "zrRhCo",
+            "73s58r",
+            "niciky",
+            "y5Krqj",
+            "Gj4Z5_",
+            "CeoQZw",
+            "UdtYuS",
+            "e3Kljz",
+            "QeJnXm",
+            "6X-9Ad",
+            "iPDM6s",
+            "l4IAr8",
+            "RLy4Ta"
+          ],
+          "H-_Wsk": [],
+          "an3gEm": [
+            "ufeqco"
+          ],
+          "k7CKi8": [],
+          "vE0KUh": [],
+          "oHwDl5": [],
+          "xcee0t": [],
+          "br0RcS": [],
+          "Vt8clU": [],
+          "k8fwUr": [],
+          "RoIWp4": [],
+          "lUk75Z": [],
+          "FDYv6d": [],
+          "fAa1VX": [],
+          "DbrSvR": [],
+          "MurzPs": [],
+          "bYfKxk": [
+            "tLopPm"
+          ],
+          "5viCjG": [
+            "LYdjF_"
+          ],
+          "X_hIbq": [],
+          "RC-6Ot": []
+        },
+        "text_map": {
+          "EdvOvk": "[{\"insert\":\"Write down the main topics to discuss to successfully kick your project off.\"}]",
+          "GcgvOx": "[{\"insert\":\"E.g. project roadmap\"}]",
+          "vCgFEB": "[{\"insert\":\"Remaining open questions\"}]",
+          "akuaWO": "[]",
+          "uFgwcd": "[{\"insert\":\"🗒 Notes\"}]",
+          "6zd9FT": "[{\"insert\":\"Succinctly cover any key information discussed in the meeting.\"}]",
+          "_IulYB": "[]",
+          "3d7GKE": "[{\"insert\":\"📌 \",\"attributes\":{\"bold\":true}},{\"insert\":\"Outcomes\"}]",
+          "RHtVhM": "[{\"insert\":\"Summarize key decisions in a tidy paragraph and communicate them to the team.\"}]",
+          "gYbmWm": "[]",
+          "MVOpyu": "[{\"insert\":\"✅ \",\"attributes\":{\"bold\":true}},{\"insert\":\"Action\"},{\"insert\":\" \",\"attributes\":{\"bold\":true}},{\"insert\":\"items\"}]",
+          "OYgSVw": "[{\"insert\":\"Get aligned on the main upcoming topics \"}]",
+          "Qwvc9U": "[{\"insert\":\"🎯 \",\"attributes\":{\"bold\":true}},{\"insert\":\"Agenda\"}]",
+          "YvGvIj": "[]",
+          "4t-NOJ": "[{\"insert\":\"Project: @link the project plan\\nAttendees: mention teammates\\nDate & time: type @today\"}]",
+          "7ZtUJc": "[{\"insert\":\"E.g. @jess review the project roadmap\"}]",
+          "NgB3iN": "[{\"insert\":\"E.g. @mike contact copywriter freelancers\"}]",
+          "qDt5_I": "[]",
+          "DYJee7": "[]"
+        }
+      }
+    },
+    "children": []
+  }
+}

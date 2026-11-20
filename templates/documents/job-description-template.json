@@ -1,0 +1,360 @@
+{
+  "template_id": "job-description-template",
+  "order": 128,
+  "name": "Job Description Template",
+  "description": "Use this template for every new job post you open. ",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"circle\",\"color\":\"0xFFAAD93D\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Human Resources",
+    "Startups"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Job-Description-Template-20fc177e-e681-4d06-aaf3-12ac092ab729",
+  "pages": {
+    "id": "20fc177e-e681-4d06-aaf3-12ac092ab729",
+    "name": "Job Description Template",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"circle\",\"color\":\"0xFFAAD93D\"}"
+    },
+    "document": {
+      "page_id": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+      "blocks": {
+        "1d47e748-c27e-5bac-9d08-be68e6abdb45": {
+          "id": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "ty": "page",
+          "parent": "",
+          "children": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "external_id": "NP9DrR",
+          "external_type": "text",
+          "data": {
+            "cover_selection": "appflowy_them_color_tint7",
+            "cover_selection_type": "CoverType.color",
+            "selected_icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"circle\",\"color\":\"0xFFAAD93D\"}",
+            "image_type": "1"
+          }
+        },
+        "Qc26KS": {
+          "id": "Qc26KS",
+          "ty": "callout",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "_UrkLM",
+          "external_id": "NJ5et4",
+          "external_type": "text",
+          "data": {
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"help-question-1\"}",
+            "bgColor": "appflowy_them_color_tint8",
+            "textColor": "appflowy_them_color_tint8",
+            "icon_type": "icon"
+          }
+        },
+        "eCWndP": {
+          "id": "eCWndP",
+          "ty": "paragraph",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "_iIUgq",
+          "external_id": "tRK30G",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "0txjsG": {
+          "id": "0txjsG",
+          "ty": "heading",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "xIaMyA",
+          "external_id": "sJeg4L",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Job brief"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "f8sr6N": {
+          "id": "f8sr6N",
+          "ty": "paragraph",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "of41Ha",
+          "external_id": "wiQUUP",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Provide a quick 4-sentence description of the role, what success in the position looks like, and how it fits into the company or organization overall."
+              }
+            ]
+          }
+        },
+        "dIQGZw": {
+          "id": "dIQGZw",
+          "ty": "paragraph",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "eQSjCL",
+          "external_id": "pKlQc_",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "DOa23R": {
+          "id": "DOa23R",
+          "ty": "heading",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "aQEnxm",
+          "external_id": "WyH5Fl",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": " Responsibilities"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "HxHMtz": {
+          "id": "HxHMtz",
+          "ty": "bulleted_list",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "ZdYKzN",
+          "external_id": "JiHD9V",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "E.g. help developers grow their skills and experience"
+              }
+            ]
+          }
+        },
+        "Qr3l4n": {
+          "id": "Qr3l4n",
+          "ty": "bulleted_list",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "LU6o4K",
+          "external_id": "FthCSY",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "E.g. work closely with product and design teams"
+              }
+            ]
+          }
+        },
+        "ZxjZvy": {
+          "id": "ZxjZvy",
+          "ty": "bulleted_list",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "GU7IbZ",
+          "external_id": "AxFMo4",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "E.g. conduct code reviews and ensure knowledge sharing between developers"
+              }
+            ]
+          }
+        },
+        "0zjEhG": {
+          "id": "0zjEhG",
+          "ty": "paragraph",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "e1EjgP",
+          "external_id": "6b_KTo",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "RC4_ul": {
+          "id": "RC4_ul",
+          "ty": "heading",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "TMZQTV",
+          "external_id": "NdJ1Jl",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Qualifications"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "HvPOx_": {
+          "id": "HvPOx_",
+          "ty": "bulleted_list",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "jGa3hi",
+          "external_id": "DZeHFY",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "E.g. deep JavaScript experience"
+              }
+            ]
+          }
+        },
+        "ueg9To": {
+          "id": "ueg9To",
+          "ty": "bulleted_list",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "ZthoAJ",
+          "external_id": "JV2urE",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "E.g. excellent written and verbal communication skills"
+              }
+            ]
+          }
+        },
+        "1r_B39": {
+          "id": "1r_B39",
+          "ty": "bulleted_list",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "tC2zlK",
+          "external_id": "Kuw6lQ",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "E.g. 3 years or more experience in a technical management position"
+              }
+            ]
+          }
+        },
+        "gUmr8q": {
+          "id": "gUmr8q",
+          "ty": "paragraph",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "RkfhRw",
+          "external_id": "ngHbzn",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "aS8WD0": {
+          "id": "aS8WD0",
+          "ty": "heading",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "qheOdh",
+          "external_id": "V12agA",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "delta": [
+              {
+                "insert": "About company"
+              }
+            ]
+          }
+        },
+        "jiXNu4": {
+          "id": "jiXNu4",
+          "ty": "callout",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "WcKp4i",
+          "external_id": "iedr6Z",
+          "external_type": "text",
+          "data": {
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"help-question-1\"}",
+            "icon_type": "icon",
+            "bgColor": "appflowy_them_color_tint8",
+            "textColor": "appflowy_them_color_tint8"
+          }
+        },
+        "j-NbcE": {
+          "id": "j-NbcE",
+          "ty": "paragraph",
+          "parent": "1d47e748-c27e-5bac-9d08-be68e6abdb45",
+          "children": "oK8uKg",
+          "external_id": "VwJTu-",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "1d47e748-c27e-5bac-9d08-be68e6abdb45": [
+            "Qc26KS",
+            "eCWndP",
+            "0txjsG",
+            "f8sr6N",
+            "dIQGZw",
+            "DOa23R",
+            "HxHMtz",
+            "Qr3l4n",
+            "ZxjZvy",
+            "0zjEhG",
+            "RC4_ul",
+            "HvPOx_",
+            "ueg9To",
+            "1r_B39",
+            "gUmr8q",
+            "aS8WD0",
+            "jiXNu4",
+            "j-NbcE"
+          ],
+          "_UrkLM": [],
+          "_iIUgq": [],
+          "xIaMyA": [],
+          "of41Ha": [],
+          "eQSjCL": [],
+          "aQEnxm": [],
+          "ZdYKzN": [],
+          "LU6o4K": [],
+          "GU7IbZ": [],
+          "e1EjgP": [],
+          "TMZQTV": [],
+          "jGa3hi": [],
+          "ZthoAJ": [],
+          "tC2zlK": [],
+          "RkfhRw": [],
+          "qheOdh": [],
+          "WcKp4i": [],
+          "oK8uKg": []
+        },
+        "text_map": {
+          "NJ5et4": "[{\"insert\":\"Use this template for every new job post you open. \\nStart editing it according to your process.\\nPublish it to Web.\"}]",
+          "tRK30G": "[]",
+          "sJeg4L": "[{\"insert\":\"Job brief\"}]",
+          "wiQUUP": "[{\"insert\":\"Provide a quick 4-sentence description of the role, what success in the position looks like, and how it fits into the company or organization overall.\"}]",
+          "pKlQc_": "[]",
+          "WyH5Fl": "[{\"insert\":\" Responsibilities\"}]",
+          "JiHD9V": "[{\"insert\":\"E.g. help developers grow their skills and experience\"}]",
+          "FthCSY": "[{\"insert\":\"E.g. work closely with product and design teams\"}]",
+          "AxFMo4": "[{\"insert\":\"E.g. conduct code reviews and ensure knowledge sharing between developers\"}]",
+          "6b_KTo": "[]",
+          "NdJ1Jl": "[{\"insert\":\"Qualifications\"}]",
+          "DZeHFY": "[{\"insert\":\"E.g. deep JavaScript experience\"}]",
+          "JV2urE": "[{\"insert\":\"E.g. excellent written and verbal communication skills\"}]",
+          "Kuw6lQ": "[{\"insert\":\"E.g. 3 years or more experience in a technical management position\"}]",
+          "ngHbzn": "[]",
+          "V12agA": "[{\"insert\":\"About company\"}]",
+          "iedr6Z": "[{\"insert\":\"Use this section to link to a public document showcasing your company culture. \\nFor instance, your company handbook.\"}]",
+          "VwJTu-": "[]"
+        }
+      }
+    },
+    "children": []
+  }
+}

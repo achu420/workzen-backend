@@ -1,0 +1,1391 @@
+{
+  "page_id": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+  "blocks": {
+    "tbPQoy": {
+      "id": "tbPQoy",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "Jti4JK",
+      "external_id": "66oIro",
+      "external_type": "text",
+      "data": {}
+    },
+    "YbVhqS": {
+      "id": "YbVhqS",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "1YCgIO",
+      "external_id": "epMRpU",
+      "external_type": "text",
+      "data": {}
+    },
+    "YHexpd": {
+      "id": "YHexpd",
+      "ty": "numbered_list",
+      "parent": "KG1bAm",
+      "children": "yc3BtI",
+      "external_id": "ZKqQMB",
+      "external_type": "text",
+      "data": {}
+    },
+    "MO_axp": {
+      "id": "MO_axp",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "H9cQEd",
+      "external_id": "Dh-cIO",
+      "external_type": "text",
+      "data": {}
+    },
+    "FdNIi2": {
+      "id": "FdNIi2",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "Kh_oI1",
+      "external_id": "SITDM5",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "SfdrQV": {
+      "id": "SfdrQV",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "F8v2EO",
+      "external_id": "Vva0XM",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "-2QqVu": {
+      "id": "-2QqVu",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "Ue829a",
+      "external_id": "JRnU8Z",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "jKoy0O": {
+      "id": "jKoy0O",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "h85JQ6",
+      "external_id": "fZnPXm",
+      "external_type": "text",
+      "data": {}
+    },
+    "qcccml": {
+      "id": "qcccml",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "cBwXm9",
+      "external_id": "7MRieb",
+      "external_type": "text",
+      "data": {}
+    },
+    "lsJu7r": {
+      "id": "lsJu7r",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "N8Vfsd",
+      "external_id": "nNRHja",
+      "external_type": "text",
+      "data": {}
+    },
+    "e9wOFq": {
+      "id": "e9wOFq",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "Tqxq0v",
+      "external_id": "6smabU",
+      "external_type": "text",
+      "data": {}
+    },
+    "1V_5JO": {
+      "id": "1V_5JO",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "bJWwdP",
+      "external_id": "6owxoT",
+      "external_type": "text",
+      "data": {}
+    },
+    "vzy0Y7": {
+      "id": "vzy0Y7",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "F_jEOK",
+      "external_id": "_-ndn3",
+      "external_type": "text",
+      "data": {}
+    },
+    "qa0ZqP": {
+      "id": "qa0ZqP",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "iXDcWV",
+      "external_id": "345kmt",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "iEF27T": {
+      "id": "iEF27T",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "zbhRdp",
+      "external_id": "68BU9p",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "cVlVEw": {
+      "id": "cVlVEw",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "iH6wtJ",
+      "external_id": "flCjR2",
+      "external_type": "text",
+      "data": {}
+    },
+    "q5HQ9g": {
+      "id": "q5HQ9g",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "SJxf5y",
+      "external_id": "0U1S42",
+      "external_type": "text",
+      "data": {}
+    },
+    "x6xAB9": {
+      "id": "x6xAB9",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "uU61yw",
+      "external_id": "CMvTOP",
+      "external_type": "text",
+      "data": {}
+    },
+    "F8O9Zw": {
+      "id": "F8O9Zw",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "u1gv-d",
+      "external_id": "l36FGv",
+      "external_type": "text",
+      "data": {}
+    },
+    "8PtLjo": {
+      "id": "8PtLjo",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "NNbn2V",
+      "external_id": "vmjCtd",
+      "external_type": "text",
+      "data": {}
+    },
+    "yc26dW": {
+      "id": "yc26dW",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "JT9A39",
+      "external_id": "89Qh0s",
+      "external_type": "text",
+      "data": {}
+    },
+    "lcfNkm": {
+      "id": "lcfNkm",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "hxIOdZ",
+      "external_id": "oNNdSW",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "z2IHw0": {
+      "id": "z2IHw0",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "u9ZzUe",
+      "external_id": "tApbs_",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "_3XGDF": {
+      "id": "_3XGDF",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "u8S6w6",
+      "external_id": "hlECET",
+      "external_type": "text",
+      "data": {}
+    },
+    "En1drJ": {
+      "id": "En1drJ",
+      "ty": "numbered_list",
+      "parent": "KG1bAm",
+      "children": "fpy-Bl",
+      "external_id": "u1FPIg",
+      "external_type": "text",
+      "data": {}
+    },
+    "wEJs08": {
+      "id": "wEJs08",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "tsz8rH",
+      "external_id": "Eg-Cix",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "sOTdsR": {
+      "id": "sOTdsR",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "Vfqiim",
+      "external_id": "vIVkWF",
+      "external_type": "text",
+      "data": {}
+    },
+    "nFBzwd": {
+      "id": "nFBzwd",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "yYMn_T",
+      "external_id": "7TcPEw",
+      "external_type": "text",
+      "data": {}
+    },
+    "aqAV1e": {
+      "id": "aqAV1e",
+      "ty": "numbered_list",
+      "parent": "KG1bAm",
+      "children": "BVjqef",
+      "external_id": "-W8mO9",
+      "external_type": "text",
+      "data": {}
+    },
+    "HFSzF_": {
+      "id": "HFSzF_",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "jWrgT1",
+      "external_id": "z7Bntz",
+      "external_type": "text",
+      "data": {}
+    },
+    "SNoBL2": {
+      "id": "SNoBL2",
+      "ty": "numbered_list",
+      "parent": "z2IHw0",
+      "children": "mYRmLf",
+      "external_id": "NNnsaV",
+      "external_type": "text",
+      "data": {}
+    },
+    "KsngF1": {
+      "id": "KsngF1",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "_sHvOg",
+      "external_id": "9zhR5P",
+      "external_type": "text",
+      "data": {}
+    },
+    "EjArkA": {
+      "id": "EjArkA",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "XULU_m",
+      "external_id": "Fhk_RH",
+      "external_type": "text",
+      "data": {}
+    },
+    "Fhv0Hf": {
+      "id": "Fhv0Hf",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "gVPonP",
+      "external_id": "r3IpMC",
+      "external_type": "text",
+      "data": {}
+    },
+    "9JplAU": {
+      "id": "9JplAU",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "vycGME",
+      "external_id": "yLHzfN",
+      "external_type": "text",
+      "data": {}
+    },
+    "rIh-j9": {
+      "id": "rIh-j9",
+      "ty": "numbered_list",
+      "parent": "fUXxHR",
+      "children": "Yc7jBR",
+      "external_id": "V8J8Ru",
+      "external_type": "text",
+      "data": {}
+    },
+    "VGDOTL": {
+      "id": "VGDOTL",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "cAeCbZ",
+      "external_id": "T-JqpQ",
+      "external_type": "text",
+      "data": {}
+    },
+    "P8yBKf": {
+      "id": "P8yBKf",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "MXIP5U",
+      "external_id": "ZWyfNH",
+      "external_type": "text",
+      "data": {}
+    },
+    "nDtayB": {
+      "id": "nDtayB",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "D2CaWm",
+      "external_id": "s1021U",
+      "external_type": "text",
+      "data": {}
+    },
+    "pa5CVW": {
+      "id": "pa5CVW",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "iCWZSV",
+      "external_id": "zinspt",
+      "external_type": "text",
+      "data": {}
+    },
+    "CHx9AH": {
+      "id": "CHx9AH",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "PPyQ8l",
+      "external_id": "Ge7WB9",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "7sNn73": {
+      "id": "7sNn73",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "T9ERnX",
+      "external_id": "cJJsZ3",
+      "external_type": "text",
+      "data": {}
+    },
+    "R_gDNl": {
+      "id": "R_gDNl",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "n3AaLl",
+      "external_id": "0v0ild",
+      "external_type": "text",
+      "data": {}
+    },
+    "nyB4ym": {
+      "id": "nyB4ym",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "I8WQZD",
+      "external_id": "62_VG8",
+      "external_type": "text",
+      "data": {
+        "level": 2
+      }
+    },
+    "c0f0d58d-84fa-5e02-8f67-d8719642af0e": {
+      "id": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "ty": "page",
+      "parent": "",
+      "children": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "external_id": "B0HJhc",
+      "external_type": "text",
+      "data": {
+        "cover_selection": "https://images.unsplash.com/photo-1530578294319-9d6b376c11ca?crop=entropy&cs=srgb&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MzE4Mjk4NTR8&ixlib=rb-4.0.3&q=85",
+        "cover_selection_type": "CoverType.file",
+        "selected_icon": "{\"groupName\":\"artificial_intelligence\",\"iconName\":\"ai-edit-spark\",\"color\":\"0xFFA34AFD\"}",
+        "image_type": "1"
+      }
+    },
+    "7LNwlv": {
+      "id": "7LNwlv",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "quqRyQ",
+      "external_id": "v2YmBx",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "R4HJSh": {
+      "id": "R4HJSh",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "xV9Qzg",
+      "external_id": "n2Hti5",
+      "external_type": "text",
+      "data": {
+        "level": 2
+      }
+    },
+    "tGrXTA": {
+      "id": "tGrXTA",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "UrebPb",
+      "external_id": "HTDvRB",
+      "external_type": "text",
+      "data": {
+        "level": 2
+      }
+    },
+    "rLRoQT": {
+      "id": "rLRoQT",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "sHIUNv",
+      "external_id": "TzDbUt",
+      "external_type": "text",
+      "data": {}
+    },
+    "R_q_x5": {
+      "id": "R_q_x5",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "mda7C3",
+      "external_id": "uspwDo",
+      "external_type": "text",
+      "data": {}
+    },
+    "q4YNzs": {
+      "id": "q4YNzs",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "l_8xCD",
+      "external_id": "A3q1Fb",
+      "external_type": "text",
+      "data": {}
+    },
+    "Fd2UUG": {
+      "id": "Fd2UUG",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "tByxX9",
+      "external_id": "4yVKld",
+      "external_type": "text",
+      "data": {}
+    },
+    "H2D0K4": {
+      "id": "H2D0K4",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "6w7TcE",
+      "external_id": "Vud_ja",
+      "external_type": "text",
+      "data": {}
+    },
+    "Sl1SGt": {
+      "id": "Sl1SGt",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "k5Liqs",
+      "external_id": "cNXmxA",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "6zO2dP": {
+      "id": "6zO2dP",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "XJCUqD",
+      "external_id": "WeizD6",
+      "external_type": "text",
+      "data": {}
+    },
+    "6Vc4CP": {
+      "id": "6Vc4CP",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "MSFFmC",
+      "external_id": "7LypDD",
+      "external_type": "text",
+      "data": {}
+    },
+    "KG1bAm": {
+      "id": "KG1bAm",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "PRcMQ-",
+      "external_id": "KEz3O0",
+      "external_type": "text",
+      "data": {}
+    },
+    "zotsSq": {
+      "id": "zotsSq",
+      "ty": "callout",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "-fXOME",
+      "external_id": "6crz4f",
+      "external_type": "text",
+      "data": {
+        "bgColor": "appflowy_them_color_tint9",
+        "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"information-circle\"}",
+        "icon_type": "icon",
+        "textColor": "appflowy_them_color_tint9"
+      }
+    },
+    "Yxlz_T": {
+      "id": "Yxlz_T",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "uPUqL4",
+      "external_id": "OsvBR_",
+      "external_type": "text",
+      "data": {}
+    },
+    "hhkTdX": {
+      "id": "hhkTdX",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "3zrCdk",
+      "external_id": "dqQ97M",
+      "external_type": "text",
+      "data": {}
+    },
+    "3bm_mq": {
+      "id": "3bm_mq",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "YhWM7O",
+      "external_id": "wwD3sU",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "9YIEsJ": {
+      "id": "9YIEsJ",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "8b16si",
+      "external_id": "SRoGc7",
+      "external_type": "text",
+      "data": {}
+    },
+    "N9Baub": {
+      "id": "N9Baub",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "ILvuil",
+      "external_id": "huaMF8",
+      "external_type": "text",
+      "data": {}
+    },
+    "Uw9L1Z": {
+      "id": "Uw9L1Z",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "CSeoCe",
+      "external_id": "GDgkpT",
+      "external_type": "text",
+      "data": {}
+    },
+    "jD6GXY": {
+      "id": "jD6GXY",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "oG7-sW",
+      "external_id": "rYVbR2",
+      "external_type": "text",
+      "data": {}
+    },
+    "D9ltYj": {
+      "id": "D9ltYj",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "lypu6e",
+      "external_id": "VLM6jn",
+      "external_type": "text",
+      "data": {}
+    },
+    "m9IdCl": {
+      "id": "m9IdCl",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "PjY-yX",
+      "external_id": "W3N8VJ",
+      "external_type": "text",
+      "data": {}
+    },
+    "qLdrrt": {
+      "id": "qLdrrt",
+      "ty": "numbered_list",
+      "parent": "fUXxHR",
+      "children": "AHElI-",
+      "external_id": "MfnrM_",
+      "external_type": "text",
+      "data": {}
+    },
+    "Lf74FP": {
+      "id": "Lf74FP",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "3JdBAa",
+      "external_id": "ylEM_j",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "bm_ljY": {
+      "id": "bm_ljY",
+      "ty": "divider",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "Uc9lf2",
+      "external_id": null,
+      "external_type": null,
+      "data": {}
+    },
+    "F0mo6V": {
+      "id": "F0mo6V",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "GYlN0m",
+      "external_id": "TLjlDZ",
+      "external_type": "text",
+      "data": {}
+    },
+    "6nur1B": {
+      "id": "6nur1B",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "SYVhkZ",
+      "external_id": "h9n6Sr",
+      "external_type": "text",
+      "data": {}
+    },
+    "RDqyxZ": {
+      "id": "RDqyxZ",
+      "ty": "numbered_list",
+      "parent": "KG1bAm",
+      "children": "u5GlIz",
+      "external_id": "aZNMj9",
+      "external_type": "text",
+      "data": {}
+    },
+    "0aNV8g": {
+      "id": "0aNV8g",
+      "ty": "numbered_list",
+      "parent": "fUXxHR",
+      "children": "FVM3xM",
+      "external_id": "II5V_s",
+      "external_type": "text",
+      "data": {}
+    },
+    "iYNEUy": {
+      "id": "iYNEUy",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "BVsqvQ",
+      "external_id": "95a05B",
+      "external_type": "text",
+      "data": {
+        "level": 1
+      }
+    },
+    "a2T2np": {
+      "id": "a2T2np",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "9xZsyO",
+      "external_id": "sA2pZ9",
+      "external_type": "text",
+      "data": {}
+    },
+    "I0o2H-": {
+      "id": "I0o2H-",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "GpkA79",
+      "external_id": "H76ETw",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "_8o9r6": {
+      "id": "_8o9r6",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "vRoETz",
+      "external_id": "ghksz3",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "NtvT8S": {
+      "id": "NtvT8S",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "cjHcbS",
+      "external_id": "r3rVJw",
+      "external_type": "text",
+      "data": {}
+    },
+    "hDb3iI": {
+      "id": "hDb3iI",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "f5HcvM",
+      "external_id": "FsgvWr",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "oCtf57": {
+      "id": "oCtf57",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "hNMtiJ",
+      "external_id": "dzOo_R",
+      "external_type": "text",
+      "data": {}
+    },
+    "pu4dkd": {
+      "id": "pu4dkd",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "xN78Y2",
+      "external_id": "QJ41Xq",
+      "external_type": "text",
+      "data": {}
+    },
+    "g_TPcf": {
+      "id": "g_TPcf",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "MBRdnh",
+      "external_id": "Sftzhy",
+      "external_type": "text",
+      "data": {}
+    },
+    "-H9GvY": {
+      "id": "-H9GvY",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "so5ryr",
+      "external_id": "csTNfr",
+      "external_type": "text",
+      "data": {}
+    },
+    "ZmURxg": {
+      "id": "ZmURxg",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "LeKGDs",
+      "external_id": "vx59wj",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "Mu-CGj": {
+      "id": "Mu-CGj",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "hxFBSa",
+      "external_id": "pqVPCm",
+      "external_type": "text",
+      "data": {}
+    },
+    "hnJHn_": {
+      "id": "hnJHn_",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "dv45IJ",
+      "external_id": "ZyUEZ2",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "W4I_h6": {
+      "id": "W4I_h6",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "hSdHHq",
+      "external_id": "S4nb_8",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "IbgYes": {
+      "id": "IbgYes",
+      "ty": "numbered_list",
+      "parent": "KG1bAm",
+      "children": "XQxyHs",
+      "external_id": "kGJMK6",
+      "external_type": "text",
+      "data": {}
+    },
+    "AmOKgI": {
+      "id": "AmOKgI",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "I4sFvw",
+      "external_id": "yh49Ef",
+      "external_type": "text",
+      "data": {}
+    },
+    "fUXxHR": {
+      "id": "fUXxHR",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "NzEFgL",
+      "external_id": "CSkytA",
+      "external_type": "text",
+      "data": {}
+    },
+    "hSR5ev": {
+      "id": "hSR5ev",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "aZa_DC",
+      "external_id": "6Alpn0",
+      "external_type": "text",
+      "data": {
+        "bgColor": null,
+        "textDirection": null
+      }
+    },
+    "Fq1wFs": {
+      "id": "Fq1wFs",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "WAfUvE",
+      "external_id": "HLSaEN",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "o43XNh": {
+      "id": "o43XNh",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "i7DsU5",
+      "external_id": "X-6Pa3",
+      "external_type": "text",
+      "data": {}
+    },
+    "uiKRIu": {
+      "id": "uiKRIu",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "vdMH1y",
+      "external_id": "xSASLe",
+      "external_type": "text",
+      "data": {}
+    },
+    "LmoLXg": {
+      "id": "LmoLXg",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "UC8fhs",
+      "external_id": "vXAlfa",
+      "external_type": "text",
+      "data": {}
+    },
+    "UOsopF": {
+      "id": "UOsopF",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "FSchUk",
+      "external_id": "kmBlvo",
+      "external_type": "text",
+      "data": {}
+    },
+    "nspH9z": {
+      "id": "nspH9z",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "NwttLD",
+      "external_id": "JCGaHw",
+      "external_type": "text",
+      "data": {}
+    },
+    "M4twah": {
+      "id": "M4twah",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "YzS7gq",
+      "external_id": "InmT6G",
+      "external_type": "text",
+      "data": {}
+    },
+    "dScxbX": {
+      "id": "dScxbX",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "6BMjGO",
+      "external_id": "Tp4fPJ",
+      "external_type": "text",
+      "data": {
+        "level": 2
+      }
+    },
+    "zZlxfL": {
+      "id": "zZlxfL",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "SCuAan",
+      "external_id": "C6xlfJ",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "ECBFAv": {
+      "id": "ECBFAv",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "WuU_Aw",
+      "external_id": "a69NSN",
+      "external_type": "text",
+      "data": {}
+    },
+    "Kmohas": {
+      "id": "Kmohas",
+      "ty": "heading",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "x_aHmV",
+      "external_id": "pY3jN0",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "Ejo4iV": {
+      "id": "Ejo4iV",
+      "ty": "quote",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "x49nr3",
+      "external_id": "LCX6Mw",
+      "external_type": "text",
+      "data": {}
+    },
+    "ngPCEu": {
+      "id": "ngPCEu",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "qL4DLZ",
+      "external_id": "DTWBxn",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "ohHzbM": {
+      "id": "ohHzbM",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "lRBMZR",
+      "external_id": "o6Tl8M",
+      "external_type": "text",
+      "data": {}
+    },
+    "-H-b3S": {
+      "id": "-H-b3S",
+      "ty": "paragraph",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "1mRrGJ",
+      "external_id": "a1yw27",
+      "external_type": "text",
+      "data": {}
+    },
+    "YsxmpG": {
+      "id": "YsxmpG",
+      "ty": "numbered_list",
+      "parent": "c0f0d58d-84fa-5e02-8f67-d8719642af0e",
+      "children": "TcpqVk",
+      "external_id": "aycnsk",
+      "external_type": "text",
+      "data": {
+        "number": 1
+      }
+    },
+    "9omEbD": {
+      "id": "9omEbD",
+      "ty": "numbered_list",
+      "parent": "z2IHw0",
+      "children": "RcErcU",
+      "external_id": "IsBVk8",
+      "external_type": "text",
+      "data": {}
+    }
+  },
+  "meta": {
+    "children_map": {
+      "cjHcbS": [],
+      "Tqxq0v": [],
+      "xN78Y2": [],
+      "NwttLD": [],
+      "WuU_Aw": [],
+      "mda7C3": [],
+      "3JdBAa": [],
+      "MSFFmC": [],
+      "1YCgIO": [],
+      "tsz8rH": [],
+      "x49nr3": [],
+      "lRBMZR": [],
+      "9xZsyO": [],
+      "T9ERnX": [],
+      "SJxf5y": [],
+      "aZa_DC": [],
+      "zbhRdp": [],
+      "AHElI-": [],
+      "6w7TcE": [],
+      "NNbn2V": [],
+      "bJWwdP": [],
+      "MXIP5U": [],
+      "NzEFgL": [
+        "rIh-j9",
+        "0aNV8g",
+        "qLdrrt"
+      ],
+      "XQxyHs": [],
+      "k5Liqs": [],
+      "cAeCbZ": [],
+      "l_8xCD": [],
+      "CSeoCe": [],
+      "uPUqL4": [],
+      "tByxX9": [],
+      "UC8fhs": [],
+      "oG7-sW": [],
+      "h85JQ6": [],
+      "iH6wtJ": [],
+      "F8v2EO": [],
+      "Ue829a": [],
+      "YzS7gq": [],
+      "BVjqef": [],
+      "hxFBSa": [],
+      "-fXOME": [],
+      "quqRyQ": [],
+      "hNMtiJ": [],
+      "yc3BtI": [],
+      "c0f0d58d-84fa-5e02-8f67-d8719642af0e": [
+        "zotsSq",
+        "bm_ljY",
+        "iYNEUy",
+        "R_gDNl",
+        "H2D0K4",
+        "EjArkA",
+        "hSR5ev",
+        "oCtf57",
+        "R4HJSh",
+        "Fq1wFs",
+        "Sl1SGt",
+        "VGDOTL",
+        "rLRoQT",
+        "UOsopF",
+        "MO_axp",
+        "tbPQoy",
+        "qa0ZqP",
+        "YsxmpG",
+        "NtvT8S",
+        "jD6GXY",
+        "KsngF1",
+        "e9wOFq",
+        "q4YNzs",
+        "Lf74FP",
+        "ngPCEu",
+        "6zO2dP",
+        "Yxlz_T",
+        "ohHzbM",
+        "N9Baub",
+        "-H-b3S",
+        "Kmohas",
+        "CHx9AH",
+        "nspH9z",
+        "Uw9L1Z",
+        "M4twah",
+        "nFBzwd",
+        "F0mo6V",
+        "g_TPcf",
+        "Ejo4iV",
+        "Fhv0Hf",
+        "nyB4ym",
+        "9JplAU",
+        "Mu-CGj",
+        "I0o2H-",
+        "z2IHw0",
+        "KG1bAm",
+        "ECBFAv",
+        "ZmURxg",
+        "7LNwlv",
+        "R_q_x5",
+        "o43XNh",
+        "sOTdsR",
+        "tGrXTA",
+        "9YIEsJ",
+        "YbVhqS",
+        "3bm_mq",
+        "6Vc4CP",
+        "_3XGDF",
+        "SfdrQV",
+        "hhkTdX",
+        "iEF27T",
+        "cVlVEw",
+        "HFSzF_",
+        "qcccml",
+        "nDtayB",
+        "W4I_h6",
+        "zZlxfL",
+        "q5HQ9g",
+        "jKoy0O",
+        "_8o9r6",
+        "vzy0Y7",
+        "-2QqVu",
+        "yc26dW",
+        "1V_5JO",
+        "F8O9Zw",
+        "lcfNkm",
+        "wEJs08",
+        "fUXxHR",
+        "-H9GvY",
+        "uiKRIu",
+        "D9ltYj",
+        "a2T2np",
+        "FdNIi2",
+        "hnJHn_",
+        "lsJu7r",
+        "8PtLjo",
+        "AmOKgI",
+        "7sNn73",
+        "dScxbX",
+        "x6xAB9",
+        "hDb3iI",
+        "Fd2UUG",
+        "6nur1B",
+        "pu4dkd",
+        "LmoLXg",
+        "pa5CVW",
+        "m9IdCl",
+        "P8yBKf"
+      ],
+      "hxIOdZ": [],
+      "yYMn_T": [],
+      "TcpqVk": [],
+      "vRoETz": [],
+      "x_aHmV": [],
+      "f5HcvM": [],
+      "iCWZSV": [],
+      "jWrgT1": [],
+      "H9cQEd": [],
+      "PjY-yX": [],
+      "iXDcWV": [],
+      "JT9A39": [],
+      "LeKGDs": [],
+      "lypu6e": [],
+      "UrebPb": [],
+      "SYVhkZ": [],
+      "ILvuil": [],
+      "n3AaLl": [],
+      "Uc9lf2": [],
+      "I4sFvw": [],
+      "hSdHHq": [],
+      "_sHvOg": [],
+      "GYlN0m": [],
+      "PRcMQ-": [
+        "En1drJ",
+        "IbgYes",
+        "RDqyxZ",
+        "YHexpd",
+        "aqAV1e"
+      ],
+      "Kh_oI1": [],
+      "so5ryr": [],
+      "F_jEOK": [],
+      "vycGME": [],
+      "u1gv-d": [],
+      "FVM3xM": [],
+      "i7DsU5": [],
+      "mYRmLf": [],
+      "fpy-Bl": [],
+      "XULU_m": [],
+      "D2CaWm": [],
+      "XJCUqD": [],
+      "sHIUNv": [],
+      "vdMH1y": [],
+      "PPyQ8l": [],
+      "u8S6w6": [],
+      "Vfqiim": [],
+      "Jti4JK": [],
+      "GpkA79": [],
+      "6BMjGO": [],
+      "cBwXm9": [],
+      "u5GlIz": [],
+      "FSchUk": [],
+      "u9ZzUe": [
+        "SNoBL2",
+        "9omEbD"
+      ],
+      "3zrCdk": [],
+      "Yc7jBR": [],
+      "xV9Qzg": [],
+      "gVPonP": [],
+      "SCuAan": [],
+      "N8Vfsd": [],
+      "RcErcU": [],
+      "1mRrGJ": [],
+      "I8WQZD": [],
+      "qL4DLZ": [],
+      "MBRdnh": [],
+      "8b16si": [],
+      "YhWM7O": [],
+      "WAfUvE": [],
+      "BVsqvQ": [],
+      "dv45IJ": [],
+      "uU61yw": []
+    },
+    "text_map": {
+      "rYVbR2": "[{\"insert\":\"Get final answer by Dec 1: \",\"attributes\":{\"bold\":true}},{\"insert\":\"we have 8 weeks before Q1 resource planning starts.\",\"attributes\":{\"bold\":false}}]",
+      "n2Hti5": "[{\"insert\":\"Overview\"}]",
+      "r3rVJw": "[{\"insert\":\"Keep the test cheap: \",\"attributes\":{\"bold\":true}},{\"insert\":\"avoid all gold-plating, this will come in Q1 if our test succeeds.\",\"attributes\":{\"bold\":false}}]",
+      "dzOo_R": "[]",
+      "KEz3O0": "[{\"insert\":\"Ops wants to: \",\"attributes\":{\"bold\":true}}]",
+      "v2YmBx": "[{\"insert\":\"Need +90 orders/day to break even with 1 support head:\",\"attributes\":{\"underline\":false,\"bold\":true}},{\"insert\":\" based on cost per head, and lifetime value of a checkout. See spreadsheet for details.\",\"attributes\":{\"bold\":false,\"underline\":false}}]",
+      "vmjCtd": "[]",
+      "66oIro": "[]",
+      "Tp4fPJ": "[{\"insert\":\"Tasks and Timeline\",\"attributes\":{\"bold\":true}}]",
+      "MfnrM_": "[{\"insert\":\"Of users in the test, how many actually click on live chat.\",\"attributes\":{\"bold\":false}}]",
+      "a1yw27": "[]",
+      "Dh-cIO": "[{\"insert\":\"I highly recommend bullets for readability. Use bold words to quickly convey the gist of each point, and limit bullets to 2-3 lines. I prefer numbered lists so one can refer to a point verbally.\",\"attributes\":{\"bold\":false}}]",
+      "QJ41Xq": "[{\"insert\":\"Oct 17: \",\"attributes\":{\"bold\":true}},{\"insert\":\"sync after 1 week. We may have additional tasks then.\",\"attributes\":{\"bold\":false}}]",
+      "DTWBxn": "[{\"insert\":\"Major UX changes: \",\"attributes\":{\"bold\":true}},{\"insert\":\"we will only add a visible chat button, no other UX changes.\",\"attributes\":{\"bold\":false}}]",
+      "Ge7WB9": "[{\"insert\":\"Heather (cust ops manager): \",\"attributes\":{\"bold\":true}},{\"insert\":\"sign off on our support resourcing assumptions.\",\"attributes\":{\"bold\":false}}]",
+      "fZnPXm": "[]",
+      "kmBlvo": "[]",
+      "pY3jN0": "[{\"insert\":\"People and Roles\",\"attributes\":{\"bold\":true}}]",
+      "CMvTOP": "[{\"insert\":\"This timeline may slip by 1-2 weeks due to the kinds of issues mentioned in “future work”. That’s ok as long as we have results by Dec 1, so we can ask for heads during Q1 resource planning.\",\"attributes\":{\"bold\":false}}]",
+      "sA2pZ9": "[]",
+      "4yVKld": "[{\"insert\":\"Oct 8: \",\"attributes\":{\"bold\":true}},{\"insert\":\"test on dev env with customer support’s help in setting up agents/times.\",\"attributes\":{\"bold\":false}}]",
+      "dqQ97M": "[{\"insert\":\"View the XXX docs to get an idea of how their chat pops up. Based on that:\",\"attributes\":{\"bold\":false,\"underline\":false}}]",
+      "ZWyfNH": "[{\"insert\":\"It’s ok if you only have a rough estimate, and need more analysis to refine it (such as a tech spec). But it’s still important to try and put time bounds down as early as possible to signal roughly the size and scope. Estimates must come from the builders (dev, design, etc.).\",\"attributes\":{\"bold\":false}}]",
+      "Eg-Cix": "[{\"insert\":\"Logging: add: \",\"attributes\":{\"bold\":true}},{\"insert\":\"“live_checkout=true/false” to our existing metrics logging during checkout.\",\"attributes\":{\"bold\":false}}]",
+      "a69NSN": "[]",
+      "9zhR5P": "[]",
+      "S4nb_8": "[{\"insert\":\"Chat Variables\",\"attributes\":{\"bold\":true}}]",
+      "6Alpn0": "[{\"insert\":\"Describe the project in 2 lines or less. By “line” I mean the default reading width of your medium (e.g., Google Docs, wiki, text file) on a desktop client. Sticking to limits is critical for readability.\",\"attributes\":{\"bold\":false}}]",
+      "kGJMK6": "[{\"insert\":\"Add/reduce agents: \",\"attributes\":{\"bold\":true}},{\"insert\":\"on their own without having to consult the dev team. \",\"attributes\":{\"bold\":false}}]",
+      "aycnsk": "[{\"insert\":\"Test if live chat can profitably increase conversion: \",\"attributes\":{\"bold\":true}},{\"insert\":\"we need to add 90+ orders/day just to break even on our live chat support cost. Unclear if we can do it. This is a test!\",\"attributes\":{\"bold\":false}}]",
+      "vIVkWF": "[]",
+      "0U1S42": "[{\"insert\":\"Let’s send: \",\"attributes\":{\"bold\":true}},{\"insert\":\"user_id, user_email, user_agent, booking_id, booking_order_value.\",\"attributes\":{\"bold\":false}}]",
+      "Vud_ja": "[{\"insert\":\"This project aims to increase conversion by introducing live chat on our checkout page. It is a 30-day experiment, after which we’ll keep it alive or kill it (Schrödinger's chat? har har).\",\"attributes\":{\"bold\":false}}]",
+      "u1FPIg": "[{\"insert\":\"Be in the queue: \",\"attributes\":{\"bold\":true}},{\"insert\":\"via a desktop/web client, mobile is not needed.\",\"attributes\":{\"bold\":false}}]",
+      "HTDvRB": "[{\"insert\":\"Proposal\",\"attributes\":{\"bold\":true}}]",
+      "NNnsaV": "[{\"insert\":\"Get help within 2 mins: \",\"attributes\":{\"bold\":true}},{\"insert\":\"unsure if this is achievable, but let’s aim here for now.\",\"attributes\":{\"bold\":false}}]",
+      "6owxoT": "[{\"insert\":\"Ramp up plan: \",\"attributes\":{\"bold\":true}},{\"insert\":\"on day 1, we’ll only have this be at 5%, but will go to 10% on day 2 and then 20% by day 3 if all is going well per customer ops.\",\"attributes\":{\"bold\":false}}]",
+      "89Qh0s": "[{\"insert\":\"Persist which users see it: \",\"attributes\":{\"bold\":true}},{\"insert\":\"if a user sees live chat once, they should continue to see it on any given day that we’re running the test. Either cookie them, or base it on their user_id (e.g., show it if user id modulo 100 <= X).\",\"attributes\":{\"bold\":false}}]",
+      "II5V_s": "[{\"insert\":\"Total num orders and revenue attributed to live chat.\",\"attributes\":{\"bold\":false}}]",
+      "6crz4f": "[{\"insert\":\"This is an example product spec, written as part of \",\"attributes\":{\"bold\":true,\"underline\":false}},{\"insert\":\"this blog post\",\"attributes\":{\"bold\":true,\"href\":\"https://goberoi.com/on-writing-product-specs-5ca697b992fd\",\"underline\":false}},{\"insert\":\". Some notes:\\n\",\"attributes\":{\"underline\":false,\"bold\":true}},{\"insert\":\"- \",\"attributes\":{\"underline\":false}},{\"insert\":\"Commentary will appear with this light blue background throughout the doc. \\n\",\"attributes\":{\"bold\":true,\"underline\":false}},{\"insert\":\"- \",\"attributes\":{\"underline\":false}},{\"insert\":\"Read the doc once through while ignoring the blue bits, then go back and reread.\\n\",\"attributes\":{\"underline\":false,\"bold\":true}},{\"insert\":\"- \",\"attributes\":{\"underline\":false}},{\"insert\":\"Links don’t go anywhere. They exist to illustrate the need to do and show related work.\",\"attributes\":{\"bold\":true,\"underline\":false}}]",
+      "VLM6jn": "[{\"insert\":\"My example above may seem obtuse, but it won’t be for my engineering and BI teams -- and that’s the audience it is for. Remember: write what is necessary for human brains to execute.\",\"attributes\":{\"bold\":false}}]",
+      "TzDbUt": "[{\"insert\":\"Adding help content didn’t do much: \",\"attributes\":{\"bold\":true}},{\"insert\":\"last quarter we A/B tested content and UI to better point to help content and booking info. This nudged conversion by 1.5% points.\",\"attributes\":{\"underline\":false,\"bold\":false}}]",
+      "flCjR2": "[{\"insert\":\"Behavior:\",\"attributes\":{\"underline\":false,\"bold\":true}},{\"insert\":\" on click, show the agent’s name, and “How can we help you today?”.\",\"attributes\":{\"underline\":false,\"bold\":false}}]",
+      "7LypDD": "[{\"insert\":\"I picked XXX, they meet our stated use-cases and are cheap ($60/month). Note: we’ll do a proper vendor selection if this works. I created a paid account, credentials in our pw tool.\",\"attributes\":{\"underline\":false,\"bold\":false}}]",
+      "T-JqpQ": "[{\"insert\":\"No clear dropout reason:\",\"attributes\":{\"underline\":false,\"bold\":true}},{\"insert\":\" prior support tickets and survey results show a long tail of possible issues (questions on amenities, fees, checkout time), no clear categories. \",\"attributes\":{\"bold\":false,\"underline\":false}}]",
+      "H76ETw": "[{\"insert\":\"Use Cases\",\"attributes\":{\"bold\":true}}]",
+      "A3q1Fb": "[]",
+      "uspwDo": "[{\"insert\":\"Send 20% of checkout traffic per support head: \",\"attributes\":{\"bold\":true}},{\"insert\":\"based on some assumptions on wait times, chat lengths, and number of simultaneous chats. We don’t have any data to make a good guess, so let’s pick this and allow our system to ramp traffic up/down quickly.\",\"attributes\":{\"bold\":false}}]",
+      "HLSaEN": "[{\"insert\":\"Problem\",\"attributes\":{\"bold\":false}}]",
+      "W3N8VJ": "[]",
+      "TLjlDZ": "[{\"insert\":\"Vikram (BI): \",\"attributes\":{\"bold\":true}},{\"insert\":\"make sure we can get the reporting we need in time for the test.\",\"attributes\":{\"bold\":false}}]",
+      "7TcPEw": "[{\"insert\":\"Joha (design): \",\"attributes\":{\"bold\":true}},{\"insert\":\"very light review of the changes we’ll make, no major design requests.\",\"attributes\":{\"bold\":false}}]",
+      "WeizD6": "[{\"insert\":\"Finalizing a chat vendor: \",\"attributes\":{\"bold\":true}},{\"insert\":\"we’ll use SnapEngage for now, and review if the test works.\",\"attributes\":{\"bold\":false}}]",
+      "ZyUEZ2": "[{\"insert\":\"If we see very little live chat usage: we’ll need to try a few things like: (a) auto pop-up chat, (b) change CTA copy/UI, (c) photo of agent next to chat CTA.\",\"attributes\":{\"bold\":true}}]",
+      "GDgkpT": "[{\"insert\":\"Colin (dev): \",\"attributes\":{\"bold\":true}},{\"insert\":\"build and qa. Also configure SnapEngage, and show us all how you did it.\",\"attributes\":{\"bold\":false}}]",
+      "IsBVk8": "[{\"insert\":\"On mobile or desktop: \",\"attributes\":{\"bold\":true}},{\"insert\":\"28% of checkouts are on the phone, so this is critical.Customer \",\"attributes\":{\"bold\":false}}]",
+      "cNXmxA": "[{\"insert\":\"Checkout conversion is too low:\",\"attributes\":{\"bold\":true,\"underline\":false}},{\"insert\":\" only 18% of users who click on “Book” checkout. Comparable funnels for hotel booking sites achieve ~30% (\",\"attributes\":{\"underline\":false,\"bold\":false}},{\"insert\":\"source\",\"attributes\":{\"href\":\"https://skift.com/2014/03/18/online-booking-abandonment-is-huge-in-travel-as-consumers-comparison-shop/\",\"underline\":false,\"bold\":false}},{\"insert\":\"). We are missing out!\",\"attributes\":{\"bold\":false,\"underline\":false}}]",
+      "h9n6Sr": "[{\"insert\":\"Oct 11: \",\"attributes\":{\"bold\":true}},{\"insert\":\"launch. We will need to increase traffic over the next few days.\",\"attributes\":{\"bold\":false}}]",
+      "hlECET": "[]",
+      "s1021U": "[]",
+      "_-ndn3": "[{\"insert\":\"We will only show this to some checkout page traffic. Here’s what we need to make that work:\",\"attributes\":{\"bold\":false}}]",
+      "epMRpU": "[]",
+      "wwD3sU": "[{\"insert\":\"Live Chat Vendor\",\"attributes\":{\"bold\":true}}]",
+      "345kmt": "[{\"insert\":\"Goals\",\"attributes\":{\"bold\":true}}]",
+      "huaMF8": "[{\"insert\":\"This is your chance to eliminate bad assumptions and correctly set expectations.\",\"attributes\":{\"bold\":false}}]",
+      "JRnU8Z": "[{\"insert\":\"Only show to X% users: \",\"attributes\":{\"bold\":true}},{\"insert\":\"we must be able to control X without a redeploy, but it’s ok if CS has to file a ticket to dev to do this manually (e.g. if it’s in our DB/Redis).\",\"attributes\":{\"bold\":false}}]",
+      "V8J8Ru": "[{\"insert\":\"Conversion rate for users in live chat (test) vs. without it (control).\",\"attributes\":{\"bold\":false}}]",
+      "ylEM_j": "[{\"insert\":\"Out of Scope\"}]",
+      "LCX6Mw": "[{\"insert\":\"Help everyone know who is involved, and what is expected of them. Only include people who have authority to veto/approve decisions, or people who will execute on the plan.\",\"attributes\":{\"bold\":false}}]",
+      "yh49Ef": "[{\"insert\":\"It’s always a good idea to signal where this is headed so people can think longer-term.\",\"attributes\":{\"bold\":false}}]",
+      "Vva0XM": "[{\"insert\":\"User Experience\",\"attributes\":{\"bold\":true}}]",
+      "7MRieb": "[{\"insert\":\"No auto-popup:\",\"attributes\":{\"underline\":false,\"bold\":true}},{\"insert\":\" we may try this later, but let’s keep it low key for now.\",\"attributes\":{\"underline\":false,\"bold\":false}}]",
+      "95a05B": "[{\"insert\":\"Live chat on checkout\"}]",
+      "aZNMj9": "[{\"insert\":\"Set working hours: \",\"attributes\":{\"bold\":true}},{\"insert\":\"control when the live chat button is visible on the site.\",\"attributes\":{\"bold\":false}}]",
+      "C6xlfJ": "[{\"insert\":\"What is it: \",\"attributes\":{\"bold\":true}},{\"insert\":\"when we embed the vendor’s javascript, we can pass on additional variables that the support person can see, and will also get logged in reporting. \",\"attributes\":{\"bold\":false}}]",
+      "tApbs_": "[{\"insert\":\"Users want to:\",\"attributes\":{\"bold\":true}}]",
+      "nNRHja": "[{\"insert\":\"If the test succeeds: we’ll ask for more heads, and do a bigger roll out in Q1 with vendor selection, better reporting for wider consumption, and formal chat training.\",\"attributes\":{\"bold\":true}}]",
+      "62_VG8": "[{\"insert\":\"Context\",\"attributes\":{\"bold\":true}}]",
+      "X-6Pa3": "[{\"insert\":\"Checkout conversion should go from 18% to 20%:\",\"attributes\":{\"underline\":false,\"bold\":true}},{\"insert\":\" total conversion won’t increase much for us to be successful. See our funnel report here.\",\"attributes\":{\"bold\":false,\"underline\":false}}]",
+      "0v0ild": "[{\"insert\":\"Authored by Gaurav Oberoi. Last updated on Sep 28, 2016.\",\"attributes\":{\"bold\":false,\"italic\":true,\"underline\":false,\"strikethrough\":false}}]",
+      "ZKqQMB": "[{\"insert\":\"View user info: \",\"attributes\":{\"bold\":true}},{\"insert\":\"we must pass in the user-id so they can look up the current user.\",\"attributes\":{\"bold\":false}}]",
+      "oNNdSW": "[{\"insert\":\"Metrics and Reports\",\"attributes\":{\"bold\":true}}]",
+      "xSASLe": "[]",
+      "yLHzfN": "[{\"insert\":\"Use this section to provide supporting evidence for your problem and proposal. Add whatever you need here, e.g.: use-cases, personas, metrics, competitors’ solutions, survey results, etc.\",\"attributes\":{\"bold\":false}}]",
+      "ghksz3": "[{\"insert\":\"Knobs for Running the Test\",\"attributes\":{\"bold\":true}}]",
+      "SRoGc7": "[{\"insert\":\"Describe your proposal in the most natural way you can. Break it up into sections, and give it a clear narrative flow. Depending on the project, you may also add: wireframes, user flow diagrams, form inputs/validations, data models… all the specifics needed to execute the plan.\",\"attributes\":{\"bold\":false}}]",
+      "JCGaHw": "[{\"insert\":\"Randy (cust ops rep): \",\"attributes\":{\"bold\":true}},{\"insert\":\"man the queue, and summarize learnings once a week.\",\"attributes\":{\"bold\":false}}]",
+      "vx59wj": "[{\"insert\":\"Assumptions\",\"attributes\":{\"bold\":true}}]",
+      "r3IpMC": "[]",
+      "OsvBR_": "[{\"insert\":\"International and non-English: \",\"attributes\":{\"bold\":true}},{\"insert\":\"only US/English users to keep our test simple.\",\"attributes\":{\"bold\":false}}]",
+      "CSkytA": "[{\"insert\":\"New reports: \",\"attributes\":{\"bold\":true}}]",
+      "l36FGv": "[]",
+      "z7Bntz": "[{\"insert\":\"All checkout pages:\",\"attributes\":{\"bold\":true,\"underline\":false}},{\"insert\":\" it should persist across all 3 steps of checkout.\",\"attributes\":{\"bold\":false,\"underline\":false}}]",
+      "-W8mO9": "[{\"insert\":\"Tag chats: \",\"attributes\":{\"bold\":true}},{\"insert\":\"after a chat is done, put unstructured text into a comments field.\",\"attributes\":{\"bold\":false}}]",
+      "SITDM5": "[{\"insert\":\"Future Work\",\"attributes\":{\"bold\":true}}]",
+      "zinspt": "[{\"insert\":\"Dec 1: \",\"attributes\":{\"bold\":true}},{\"insert\":\"this is the hard date for having the project wrapped up and results on hand.\",\"attributes\":{\"bold\":false}}]",
+      "cJJsZ3": "[]",
+      "68BU9p": "[{\"insert\":\"Button:\",\"attributes\":{\"bold\":true,\"underline\":false}},{\"insert\":\" label it “Chat Now” and put it near our primary CTA “Book” on the detail page.\",\"attributes\":{\"underline\":false,\"bold\":false}}]",
+      "o6Tl8M": "[]",
+      "vXAlfa": "[{\"insert\":\"Nov 12: \",\"attributes\":{\"bold\":true}},{\"insert\":\"final sync to review stats and decide if we want to do more or kill it.\",\"attributes\":{\"bold\":false}}]",
+      "6smabU": "[{\"insert\":\"Make sure one can point to a goal and easily answer “did we hit it?”. Make clear promises.\",\"attributes\":{\"bold\":false}}]",
+      "Sftzhy": "[]",
+      "InmT6G": "[{\"insert\":\"Kalpana (finance): \",\"attributes\":{\"bold\":true}},{\"insert\":\"review my profitability assumptions for our test, and down the road.\",\"attributes\":{\"bold\":false}}]",
+      "Fhk_RH": "[]",
+      "FsgvWr": "[{\"insert\":\"Oct 4: \",\"attributes\":{\"bold\":true}},{\"insert\":\"spec review.\",\"attributes\":{\"bold\":false}}]",
+      "pqVPCm": "[]",
+      "csTNfr": "[{\"insert\":\"XXX reporting: \",\"attributes\":{\"bold\":true}},{\"insert\":\"can tell us time spent per chat, simultaneous chats, etc.\",\"attributes\":{\"bold\":false}}]"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "page_id": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+  "blocks": {
+    "Yg6rg1": {
+      "id": "Yg6rg1",
+      "ty": "paragraph",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "_x9AV1",
+      "external_id": "liknd_",
+      "external_type": "text",
+      "data": {}
+    },
+    "6TiKIN": {
+      "id": "6TiKIN",
+      "ty": "bulleted_list",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "F1IUGD",
+      "external_id": "ev_lX7",
+      "external_type": "text",
+      "data": {}
+    },
+    "mRw8d6": {
+      "id": "mRw8d6",
+      "ty": "paragraph",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "EgkKBT",
+      "external_id": "93tHiR",
+      "external_type": "text",
+      "data": {}
+    },
+    "mozBj1": {
+      "id": "mozBj1",
+      "ty": "quote",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "WVdQoc",
+      "external_id": "hcOTmK",
+      "external_type": "text",
+      "data": {}
+    },
+    "teq8pA": {
+      "id": "teq8pA",
+      "ty": "paragraph",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "KtzuRw",
+      "external_id": "mTXYzE",
+      "external_type": "text",
+      "data": {}
+    },
+    "hShMY6": {
+      "id": "hShMY6",
+      "ty": "heading",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "K6UfPz",
+      "external_id": "ndLH1k",
+      "external_type": "text",
+      "data": {
+        "level": 1,
+        "align": "center"
+      }
+    },
+    "91df80e7-2507-5ca2-b8a7-3b21d838a327": {
+      "id": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "ty": "page",
+      "parent": "",
+      "children": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "external_id": "WAMOQW",
+      "external_type": "text",
+      "data": {
+        "selected_icon": "{\"groupName\":\"money_shopping\",\"iconName\":\"business-handshake\",\"color\":\"0xFFD2515F\"}",
+        "image_type": "1",
+        "cover_selection_type": "CoverType.file",
+        "cover_selection": "https://beta.appflowy.cloud/api/file_storage/80947881-3ef3-493a-83d3-615f8035ae8d/v1/blob/800350e3%2Ddd2d%2D44fd%2Db3aa%2D2159859efaff/0-SEbudlD6Y8qzbeMvL9JQDCLPwtdNJXgVO4tYdM_EQ=.jpg"
+      }
+    },
+    "n5-EFR": {
+      "id": "n5-EFR",
+      "ty": "paragraph",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "jQx6O7",
+      "external_id": "M7RWEP",
+      "external_type": "text",
+      "data": {}
+    },
+    "1ry6iE": {
+      "id": "1ry6iE",
+      "ty": "bulleted_list",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "dyWi3u",
+      "external_id": "vsInzC",
+      "external_type": "text",
+      "data": {}
+    },
+    "YGDScZ": {
+      "id": "YGDScZ",
+      "ty": "bulleted_list",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "mu0qXb",
+      "external_id": "bkfVrp",
+      "external_type": "text",
+      "data": {}
+    },
+    "GFrdJx": {
+      "id": "GFrdJx",
+      "ty": "paragraph",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "UJpQMC",
+      "external_id": "GrNlW5",
+      "external_type": "text",
+      "data": {}
+    },
+    "u5u07D": {
+      "id": "u5u07D",
+      "ty": "bulleted_list",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "ZF6yi_",
+      "external_id": "K7GzgQ",
+      "external_type": "text",
+      "data": {}
+    },
+    "iw8mtd": {
+      "id": "iw8mtd",
+      "ty": "heading",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "_94act",
+      "external_id": "x0_L3b",
+      "external_type": "text",
+      "data": {
+        "level": 2
+      }
+    },
+    "teIvPo": {
+      "id": "teIvPo",
+      "ty": "paragraph",
+      "parent": "91df80e7-2507-5ca2-b8a7-3b21d838a327",
+      "children": "4T6m33",
+      "external_id": "necTrK",
+      "external_type": "text",
+      "data": {}
+    }
+  },
+  "meta": {
+    "children_map": {
+      "WVdQoc": [],
+      "K6UfPz": [],
+      "ZF6yi_": [],
+      "KtzuRw": [],
+      "UJpQMC": [],
+      "EgkKBT": [],
+      "_94act": [],
+      "_x9AV1": [],
+      "4T6m33": [],
+      "mu0qXb": [],
+      "dyWi3u": [],
+      "91df80e7-2507-5ca2-b8a7-3b21d838a327": [
+        "hShMY6",
+        "iw8mtd",
+        "mRw8d6",
+        "n5-EFR",
+        "Yg6rg1",
+        "teq8pA",
+        "mozBj1",
+        "teIvPo",
+        "YGDScZ",
+        "u5u07D",
+        "6TiKIN",
+        "1ry6iE",
+        "GFrdJx"
+      ],
+      "jQx6O7": [],
+      "F1IUGD": []
+    },
+    "text_map": {
+      "necTrK": "[{\"insert\":\" \"}]",
+      "vsInzC": "[{\"insert\":\"Links to help documentation and other resources\"}]",
+      "mTXYzE": "[{\"insert\":\"Inside this packet, you’ll find:\",\"attributes\":{\"bold\":true}}]",
+      "K7GzgQ": "[{\"insert\":\"A customer intake form (Please return this to us by \",\"attributes\":{\"bold\":false,\"italic\":false}},{\"insert\":\"[insert due date]\",\"attributes\":{\"font_color\":\"0xff9e9e9e\",\"italic\":false,\"bold\":false}},{\"insert\":\".)\",\"attributes\":{\"italic\":false,\"bold\":false}}]",
+      "GrNlW5": "[{\"insert\":\" \"}]",
+      "ndLH1k": "[{\"insert\":\"Welcome\"}]",
+      "hcOTmK": "[{\"insert\":\"Delete components that are not necessary for your company’s onboarding process and add any that we’ve\\nmissed.\",\"attributes\":{\"italic\":false,\"font_color\":\"0xff9e9e9e\"}}]",
+      "bkfVrp": "[{\"insert\":\"An introduction to our team and your points of contact at \",\"attributes\":{\"italic\":false}},{\"insert\":\"[Insert Your Company Name]\",\"attributes\":{\"font_color\":\"0xff9e9e9e\",\"italic\":false}}]",
+      "M7RWEP": "[{\"insert\":\"Welcome to the \",\"attributes\":{\"italic\":false}},{\"insert\":\"[Insert Your Company Name] \",\"attributes\":{\"italic\":false,\"font_color\":\"0xff9e9e9e\"}},{\"insert\":\"customer community. We’re honored that you’ve chosen to work with us. It’s our utmost priority to ensure you have an excellent experience with our \",\"attributes\":{\"italic\":false}},{\"insert\":\"[product/service]\",\"attributes\":{\"italic\":false,\"font_color\":\"0xff9e9e9e\"}},{\"insert\":\" and team from day one, so we’ve compiled this packet of resources to provide a framework and clear\\npath for success in the first \",\"attributes\":{\"italic\":false}},{\"insert\":\"[Insert onboarding time frame]\",\"attributes\":{\"italic\":false,\"font_color\":\"0xff9e9e9e\"}},{\"insert\":\" and beyond.\",\"attributes\":{\"italic\":false}}]",
+      "ev_lX7": "[{\"insert\":\"A timeline for our first \",\"attributes\":{\"italic\":false}},{\"insert\":\"[Insert time frame]\",\"attributes\":{\"font_color\":\"0xff9e9e9e\",\"italic\":false}},{\"insert\":\" months together\",\"attributes\":{\"italic\":false}}]",
+      "x0_L3b": "[{\"insert\":\"Welcome Packet Template\"}]",
+      "liknd_": "[{\"insert\":\" \"}]",
+      "93tHiR": "[{\"insert\":\" \"}]"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+[2026-11-05T20:08:10.476Z] PASS - Register dedicated test account via real backend API (PostgreSQL mode) :: task63-pg-1793909290368@example.test
+[2026-11-05T20:08:13.064Z] PASS - Login via real UI (PostgreSQL-backed backend) :: http://localhost:5202/app/850a00a9-8275-459e-8cbd-0d9e2a713d3f
+[2026-11-05T20:08:14.643Z] PASS - Open workspace
+[2026-11-05T20:08:16.364Z] PASS - Create a public space via real UI
+[2026-11-05T20:08:22.732Z] PASS - Create a Grid database via real UI (PostgreSQL mode) :: workspace=850a00a9-8275-459e-8cbd-0d9e2a713d3f database=691d932f-65bf-4a8d-be66-f6654c27e353
+[2026-11-05T20:08:23.284Z] PASS - Grid Database opens with its default Grid view and primary Name field :: ["ca3e9322-45df-49f2-bf98-d55483fab2fc"]
+[2026-11-05T20:08:23.311Z] PASS - Grid starts with zero rows :: []
+[2026-11-05T20:08:25.477Z] PASS - Row 1 appears in the Grid via real UI (PostgreSQL mode) :: rows=["79bc698b-d994-4084-9a8e-8927cca3f349"], newRowId=79bc698b-d994-4084-9a8e-8927cca3f349
+[2026-11-05T20:08:28.116Z] PASS - Enter a value in row 1's Name cell via real editor :: Task 63 Postgres row one
+[2026-11-05T20:08:31.716Z] PASS - Row 1 and its value persisted after reload (PostgreSQL mode) :: exists=true text="Task 63 Postgres row one"
+[2026-11-05T20:08:33.781Z] PASS - Row 2 appears in the Grid via real UI (second row -- not the trivial single-row case) :: rows=["79bc698b-d994-4084-9a8e-8927cca3f349","75f02f6c-ecaf-4fda-bc4c-c3b64ccca350"], newRowId2=75f02f6c-ecaf-4fda-bc4c-c3b64ccca350
+[2026-11-05T20:08:36.390Z] PASS - Enter a value in row 2's Name cell via real editor :: Task 63 Postgres row two
+[2026-11-05T20:08:39.969Z] PASS - BOTH rows and BOTH values persisted after reload (PostgreSQL mode) :: row1=true row2=true cell1="Task 63 Postgres row one" cell2="Task 63 Postgres row two"
+[2026-11-05T20:08:39.994Z] INFO - Restart the PostgreSQL-backed backend process (same disposable database, same port) :: killing PID and respawning
+[2026-11-05T20:08:43.137Z] PASS - New backend process is healthy on the same port (fresh PID, same disposable PostgreSQL database) :: pid=91710
+[2026-11-05T20:08:45.625Z] PASS - Both rows exist after a real PostgreSQL-backed backend process restart :: row1=true row2=true
+[2026-11-05T20:08:45.625Z] PASS - Both cell values survived a real PostgreSQL-backed backend process restart :: cell1="Task 63 Postgres row one" cell2="Task 63 Postgres row two"
+[2026-11-05T20:08:45.683Z] PASS - Independent backend collab-read confirms Database object is readable in PostgreSQL mode :: workspace=850a00a9-8275-459e-8cbd-0d9e2a713d3f database=691d932f-65bf-4a8d-be66-f6654c27e353
+[2026-11-05T20:08:45.683Z] PASS - FULL SINGLE-CLIENT WORKFLOW RESULT :: two-row PostgreSQL browser verification completed

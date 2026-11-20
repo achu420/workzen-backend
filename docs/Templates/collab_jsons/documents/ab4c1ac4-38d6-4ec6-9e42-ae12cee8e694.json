@@ -1,0 +1,154 @@
+{
+  "page_id": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+  "blocks": {
+    "VC8HFq": {
+      "id": "VC8HFq",
+      "ty": "paragraph",
+      "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "children": "rC9cCK",
+      "external_id": "5Q2l4b",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "Pdc5Eo": {
+      "id": "Pdc5Eo",
+      "ty": "paragraph",
+      "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "children": "XohQR5",
+      "external_id": "Sc0g9Q",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "9e933e92-49ce-5b9e-96dd-520cb8bffe36": {
+      "id": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "ty": "page",
+      "parent": "",
+      "children": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "external_id": null,
+      "external_type": null,
+      "data": {}
+    },
+    "bGkf_e": {
+      "id": "bGkf_e",
+      "ty": "paragraph",
+      "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "children": "IZNiII",
+      "external_id": "8XufDp",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Resources"
+          }
+        ]
+      }
+    },
+    "OhlTvN": {
+      "id": "OhlTvN",
+      "ty": "bulleted_list",
+      "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "children": "XI8JF2",
+      "external_id": "Eavdr8",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "First Month Essentials"
+          }
+        ]
+      }
+    },
+    "ncM1wG": {
+      "id": "ncM1wG",
+      "ty": "paragraph",
+      "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "children": "9N0VFW",
+      "external_id": "ZKvXTZ",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "ZQIcgF": {
+      "id": "ZQIcgF",
+      "ty": "bulleted_list",
+      "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "children": "TL-_SH",
+      "external_id": "YoJkFh",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "New Hire Contracts"
+          }
+        ]
+      }
+    },
+    "ZSKY3b": {
+      "id": "ZSKY3b",
+      "ty": "bulleted_list",
+      "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "children": "ssOrHG",
+      "external_id": "JN0Wir",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "1:1 Meeting"
+          }
+        ]
+      }
+    },
+    "NlYpwb": {
+      "id": "NlYpwb",
+      "ty": "paragraph",
+      "parent": "9e933e92-49ce-5b9e-96dd-520cb8bffe36",
+      "children": "TZYczY",
+      "external_id": "8bNZ1m",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "📧  Send Welcome Email"
+          }
+        ]
+      }
+    }
+  },
+  "meta": {
+    "children_map": {
+      "ssOrHG": [],
+      "9N0VFW": [],
+      "XohQR5": [],
+      "XI8JF2": [],
+      "rC9cCK": [],
+      "TZYczY": [],
+      "9e933e92-49ce-5b9e-96dd-520cb8bffe36": [
+        "NlYpwb",
+        "ncM1wG",
+        "VC8HFq",
+        "bGkf_e",
+        "OhlTvN",
+        "ZQIcgF",
+        "ZSKY3b",
+        "Pdc5Eo"
+      ],
+      "TL-_SH": [],
+      "IZNiII": []
+    },
+    "text_map": {
+      "ZKvXTZ": "[]",
+      "JN0Wir": "[{\"insert\":\"1:1 Meeting\"}]",
+      "8XufDp": "[{\"insert\":\"Resources\"}]",
+      "Eavdr8": "[{\"insert\":\"First Month Essentials\"}]",
+      "5Q2l4b": "[]",
+      "YoJkFh": "[{\"insert\":\"New Hire Contracts\"}]",
+      "Sc0g9Q": "[]",
+      "8bNZ1m": "[{\"insert\":\"📧  Send Welcome Email\"}]"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+✔ WebSocket route alias: `/ws/{workspaceId}` (AppFlowy-Web real client route, Task 52) behaves identically to `/ws/v2/{workspaceId}` for auth, authorization, sync, update-persistence/ack and reconnect (115.3685ms)
+✔ Task 53: favorites, trash, shared-with-me and database catalog unblock the AppFlowy-Web sidebar (73.4735ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7459.164667

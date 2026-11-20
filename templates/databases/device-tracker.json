@@ -1,0 +1,541 @@
+{
+  "template_id": "device-tracker",
+  "order": 108,
+  "name": "Device Tracker",
+  "description": "Help you effectively track and manage company equipment, ensuring accountability and minimizing loss or damage.",
+  "icon": null,
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Human Resources",
+    "Database",
+    "Engineering",
+    "Startups"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Grid-bd8ddc29-3c0a-40bb-9b08-7ed60eafa1cd",
+  "database_id": "98e3f206-247b-4a05-9661-503fe680790b",
+  "fields": [
+    {
+      "id": "0KAzuo",
+      "name": "Owner",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"IHK2\",\"name\":\"Zack\",\"color\":\"Purple\"},{\"id\":\"lQrC\",\"name\":\"Nathan\",\"color\":\"Pink\"},{\"id\":\"gbrI\",\"name\":\"Annie\",\"color\":\"LightPink\"},{\"id\":\"zSsk\",\"name\":\"Richard\",\"color\":\"Orange\"},{\"id\":\"4cnT\",\"name\":\"Office\",\"color\":\"Yellow\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "AmW788",
+      "name": "Currency",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"Sg30\",\"name\":\"USD\",\"color\":\"Green\"},{\"id\":\"a0iX\",\"name\":\"DKK\",\"color\":\"Yellow\"},{\"id\":\"Riiz\",\"name\":\"SGD\",\"color\":\"Aqua\"},{\"id\":\"awqT\",\"name\":\"TWD\",\"color\":\"Orange\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "59XOhF",
+      "name": "Comments",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "aM8RJ6",
+      "name": "Date of Purchase",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "timezone_id": "Asia/Singapore",
+          "date_format_v2": 3,
+          "time_format_v2": 1
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "xBSuDY",
+      "name": "Created at",
+      "field_type": 9,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "date_format_v2": 3,
+          "time_format_v2": 1,
+          "timezone_id": "Asia/Singapore"
+        },
+        "9": {
+          "field_type": 9,
+          "include_time": true
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "rnxqQM",
+      "name": "Last modified",
+      "field_type": 8,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "date_format_v2": 3,
+          "time_format_v2": 1,
+          "timezone_id": "Asia/Singapore"
+        },
+        "8": {
+          "field_type": 8,
+          "include_time": true
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "n8mHFn",
+      "name": "Device Name",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "3": {
+          "content": "{\"options\":[{\"id\":\"0Jta\",\"name\":\"iPhone 14 Pro (Purple)\",\"color\":\"Purple\"},{\"id\":\"aVBh\",\"name\":\"Macbook Pro 14”\",\"color\":\"Purple\"},{\"id\":\"AbPb\",\"name\":\"Dell Monitor 27 4K\",\"color\":\"Purple\"},{\"id\":\"PNw6\",\"name\":\"Ikea bookshelf\",\"color\":\"Purple\"},{\"id\":\"K1cG\",\"name\":\"Macbook Pro 14\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "SRU6NX",
+      "name": "Price",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "name": "Number",
+          "scale": 0,
+          "format": 0,
+          "symbol": "RUB"
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "bd8ddc29-3c0a-40bb-9b08-7ed60eafa1cd",
+      "database_id": "98e3f206-247b-4a05-9661-503fe680790b",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "10f4e9b0-e176-43bc-b16c-aa2ebae878aa",
+          "height": 60
+        },
+        {
+          "id": "e0d5c549-2dce-42db-84f4-0b4898633376",
+          "height": 60
+        },
+        {
+          "id": "f7e61b6c-3560-4e38-b0e0-6cbda0ee11bc",
+          "height": 60
+        },
+        {
+          "id": "b0311c4a-96d8-4827-9e80-9c3819217544",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "7e51a3f2-0bbc-44e4-b549-a03c08831823"
+        },
+        {
+          "height": 60,
+          "id": "d4353197-0c84-4941-a3a9-e556f18d954c"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "n8mHFn"
+        },
+        {
+          "id": "SRU6NX"
+        },
+        {
+          "id": "AmW788"
+        },
+        {
+          "id": "0KAzuo"
+        },
+        {
+          "id": "aM8RJ6"
+        },
+        {
+          "id": "xBSuDY"
+        },
+        {
+          "id": "rnxqQM"
+        },
+        {
+          "id": "59XOhF"
+        }
+      ],
+      "field_settings": {
+        "59XOhF": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "AmW788": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "aM8RJ6": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "n8mHFn": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "rnxqQM": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "0KAzuo": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "SRU6NX": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "xBSuDY": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1788873091
+    }
+  ],
+  "rows": [
+    {
+      "id": "b0311c4a-96d8-4827-9e80-9c3819217544",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "xBSuDY": {
+          "is_range": false,
+          "include_time": true,
+          "end_timestamp": "",
+          "data": "1724422920",
+          "field_type": 2,
+          "reminder_id": ""
+        },
+        "AmW788": {
+          "data": "awqT",
+          "field_type": 3
+        },
+        "SRU6NX": {
+          "data": "79900",
+          "field_type": 1
+        },
+        "n8mHFn": {
+          "field_type": 3,
+          "data": "aVBh"
+        },
+        "59XOhF": {
+          "data": "Lucas -> Richard",
+          "field_type": 0
+        },
+        "rnxqQM": {
+          "data": "1724423040",
+          "include_time": true,
+          "is_range": false,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "field_type": 2
+        },
+        "0KAzuo": {
+          "data": "zSsk",
+          "field_type": 3
+        },
+        "aM8RJ6": {
+          "is_range": false,
+          "end_timestamp": "",
+          "last_modified": 1788873204,
+          "data": "1787328000",
+          "reminder_id": "",
+          "created_at": 1788873204,
+          "field_type": 2,
+          "include_time": false
+        }
+      }
+    },
+    {
+      "id": "7e51a3f2-0bbc-44e4-b549-a03c08831823",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "AmW788": {
+          "data": "Riiz",
+          "field_type": 3
+        },
+        "SRU6NX": {
+          "field_type": 1,
+          "data": "314.2"
+        },
+        "rnxqQM": {
+          "field_type": 2,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "is_range": false,
+          "data": "1724422980",
+          "include_time": true
+        },
+        "xBSuDY": {
+          "data": "1724422920",
+          "reminder_id": "",
+          "is_range": false,
+          "include_time": true,
+          "field_type": 2,
+          "end_timestamp": ""
+        },
+        "aM8RJ6": {
+          "data": "1787414400",
+          "is_range": false,
+          "last_modified": 1788873207,
+          "created_at": 1788873207,
+          "end_timestamp": "",
+          "field_type": 2,
+          "reminder_id": "",
+          "include_time": false
+        },
+        "0KAzuo": {
+          "data": "4cnT",
+          "field_type": 3
+        },
+        "n8mHFn": {
+          "field_type": 3,
+          "data": "PNw6"
+        }
+      }
+    },
+    {
+      "id": "f7e61b6c-3560-4e38-b0e0-6cbda0ee11bc",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "AmW788": {
+          "data": "Riiz",
+          "field_type": 3
+        },
+        "SRU6NX": {
+          "field_type": 1,
+          "data": "499"
+        },
+        "n8mHFn": {
+          "field_type": 3,
+          "data": "AbPb"
+        },
+        "xBSuDY": {
+          "field_type": 2,
+          "data": "1724422620",
+          "include_time": true,
+          "is_range": false,
+          "reminder_id": "",
+          "end_timestamp": ""
+        },
+        "0KAzuo": {
+          "data": "gbrI",
+          "field_type": 3
+        },
+        "rnxqQM": {
+          "is_range": false,
+          "data": "1724422860",
+          "field_type": 2,
+          "end_timestamp": "",
+          "reminder_id": "",
+          "include_time": true
+        },
+        "aM8RJ6": {
+          "field_type": 2,
+          "is_range": false,
+          "include_time": false,
+          "data": "1787414400",
+          "reminder_id": "",
+          "created_at": 1788873200,
+          "last_modified": 1788873200,
+          "end_timestamp": ""
+        }
+      }
+    },
+    {
+      "id": "10f4e9b0-e176-43bc-b16c-aa2ebae878aa",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "SRU6NX": {
+          "field_type": 1,
+          "data": "1100"
+        },
+        "aM8RJ6": {
+          "data": "1780588800",
+          "end_timestamp": "",
+          "field_type": 2,
+          "include_time": false,
+          "is_range": false,
+          "created_at": 1788873189,
+          "last_modified": 1788873189,
+          "reminder_id": ""
+        },
+        "n8mHFn": {
+          "field_type": 3,
+          "data": "0Jta"
+        },
+        "AmW788": {
+          "data": "Sg30",
+          "field_type": 3
+        },
+        "0KAzuo": {
+          "field_type": 3,
+          "data": "IHK2"
+        },
+        "xBSuDY": {
+          "include_time": true,
+          "reminder_id": "",
+          "is_range": false,
+          "field_type": 2,
+          "data": "1724422620",
+          "end_timestamp": ""
+        },
+        "rnxqQM": {
+          "reminder_id": "",
+          "field_type": 2,
+          "is_range": false,
+          "data": "1724422800",
+          "end_timestamp": "",
+          "include_time": true
+        }
+      }
+    },
+    {
+      "id": "d4353197-0c84-4941-a3a9-e556f18d954c",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "n8mHFn": {
+          "field_type": 3,
+          "data": "K1cG"
+        },
+        "SRU6NX": {
+          "field_type": 1,
+          "data": "3807.4"
+        },
+        "AmW788": {
+          "field_type": 3,
+          "data": "Riiz"
+        },
+        "xBSuDY": {
+          "include_time": true,
+          "is_range": false,
+          "data": "1724422980",
+          "reminder_id": "",
+          "end_timestamp": "",
+          "field_type": 2
+        },
+        "aM8RJ6": {
+          "data": "1787414400",
+          "reminder_id": "",
+          "end_timestamp": "",
+          "include_time": false,
+          "created_at": 1788873211,
+          "field_type": 2,
+          "is_range": false,
+          "last_modified": 1788873211
+        },
+        "rnxqQM": {
+          "include_time": true,
+          "is_range": false,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "field_type": 2,
+          "data": "1724422980"
+        },
+        "0KAzuo": {
+          "data": "lQrC",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "e0d5c549-2dce-42db-84f4-0b4898633376",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "AmW788": {
+          "data": "a0iX",
+          "field_type": 3
+        },
+        "n8mHFn": {
+          "data": "aVBh",
+          "field_type": 3
+        },
+        "rnxqQM": {
+          "field_type": 2,
+          "include_time": true,
+          "end_timestamp": "",
+          "reminder_id": "",
+          "data": "1724422860",
+          "is_range": false
+        },
+        "0KAzuo": {
+          "field_type": 3,
+          "data": "lQrC"
+        },
+        "aM8RJ6": {
+          "end_timestamp": "",
+          "last_modified": 1788873197,
+          "include_time": false,
+          "data": "1771516800",
+          "created_at": 1788873197,
+          "field_type": 2,
+          "is_range": false,
+          "reminder_id": ""
+        },
+        "xBSuDY": {
+          "field_type": 2,
+          "include_time": true,
+          "is_range": false,
+          "end_timestamp": "",
+          "reminder_id": "",
+          "data": "1724422620"
+        },
+        "SRU6NX": {
+          "data": "28999",
+          "field_type": 1
+        }
+      }
+    }
+  ]
+}

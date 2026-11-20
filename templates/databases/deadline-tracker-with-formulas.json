@@ -1,0 +1,357 @@
+{
+  "template_id": "deadline-tracker-with-formulas",
+  "order": 106,
+  "name": "Deadline Tracker with Formulas",
+  "description": "Track project deadlines, calculate days remaining, flag overdue tasks, and plan review dates.",
+  "icon": null,
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Project Management",
+    "Database"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/formula-deadline-tracker",
+  "database_id": "b24172f2-3fc2-44a9-9621-e03f2bbb29b4",
+  "fields": [
+    {
+      "id": "done",
+      "name": "Done",
+      "field_type": 5,
+      "icon": "",
+      "type_options": {
+        "5": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "due",
+      "name": "Due",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "time_format": 0,
+          "date_format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "priority",
+      "name": "Priority",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"priority0\",\"name\":\"High\",\"color\":\"Blue\"},{\"id\":\"priority1\",\"name\":\"Medium\",\"color\":\"Purple\"},{\"id\":\"priority2\",\"name\":\"Low\",\"color\":\"Orange\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "task",
+      "name": "Task",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "0FLHvN",
+      "name": "Days left",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "19": {
+          "format": 0,
+          "expression": "if(prop(\"done\") or empty(prop(\"due\")), empty(), dateBetween(prop(\"due\"), today(), \"days\"))"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "6YgYpT",
+      "name": "Review on",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "19": {
+          "expression": "if(empty(prop(\"due\")), empty(), dateSubtract(prop(\"due\"), 2, \"days\"))",
+          "format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "sk1cPe",
+      "name": "Health",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "19": {
+          "expression": "ifs(prop(\"done\"), \"Complete\", empty(prop(\"due\")), \"No due date\", prop(\"due\") < today(), \"Overdue\", dateBetween(prop(\"due\"), today(), \"days\") == 0, \"Due today\", dateBetween(prop(\"due\"), today(), \"days\") <= 3, \"Due soon\", \"On track\")",
+          "format": 0
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "facb7e74-6370-4207-ab11-dda66ac1f6ed",
+      "database_id": "b24172f2-3fc2-44a9-9621-e03f2bbb29b4",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 52,
+          "id": "b84464f3-2ad7-4366-8d2b-3b282bad92a7"
+        },
+        {
+          "height": 52,
+          "id": "82331b8c-7c3b-46af-9d6b-140808f29483"
+        },
+        {
+          "id": "646aeb3d-055f-440a-ba17-443cc410044d",
+          "height": 52
+        },
+        {
+          "height": 52,
+          "id": "673f275f-550f-4042-8748-9d05ef4e1361"
+        },
+        {
+          "height": 52,
+          "id": "d8030724-84ff-4ddd-911e-85ca7967e4c8"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "task"
+        },
+        {
+          "id": "due"
+        },
+        {
+          "id": "done"
+        },
+        {
+          "id": "priority"
+        },
+        {
+          "id": "0FLHvN"
+        },
+        {
+          "id": "sk1cPe"
+        },
+        {
+          "id": "6YgYpT"
+        }
+      ],
+      "field_settings": {
+        "sk1cPe": {
+          "wrap": true,
+          "visibility": 0,
+          "width": "150"
+        },
+        "task": {
+          "wrap": true,
+          "visibility": 0,
+          "width": "255"
+        },
+        "done": {
+          "width": "100",
+          "wrap": true,
+          "visibility": 0
+        },
+        "0FLHvN": {
+          "visibility": 0,
+          "width": "105",
+          "wrap": true
+        },
+        "6YgYpT": {
+          "wrap": true,
+          "visibility": 0,
+          "width": "145"
+        },
+        "due": {
+          "visibility": 0,
+          "width": "145",
+          "wrap": true
+        },
+        "priority": {
+          "width": "110",
+          "wrap": true,
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1791888599
+    }
+  ],
+  "rows": [
+    {
+      "id": "82331b8c-7c3b-46af-9d6b-140808f29483",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "priority": {
+          "created_at": "1791889049",
+          "data": "priority0",
+          "last_modified": "1791889049",
+          "field_type": 3
+        },
+        "task": {
+          "created_at": "1791889049",
+          "field_type": 0,
+          "data": "Review onboarding flow",
+          "last_modified": "1791889049"
+        },
+        "done": {
+          "created_at": "1791889049",
+          "data": "No",
+          "field_type": 5,
+          "last_modified": "1791889049"
+        },
+        "due": {
+          "include_time": false,
+          "created_at": "1791889049",
+          "last_modified": "1791889049",
+          "field_type": 2,
+          "data": "1791648000"
+        }
+      }
+    },
+    {
+      "id": "646aeb3d-055f-440a-ba17-443cc410044d",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "priority": {
+          "last_modified": "1791889049",
+          "field_type": 3,
+          "created_at": "1791889049",
+          "data": "priority1"
+        },
+        "done": {
+          "last_modified": "1791889049",
+          "field_type": 5,
+          "created_at": "1791889049",
+          "data": "No"
+        },
+        "task": {
+          "field_type": 0,
+          "last_modified": "1791889049",
+          "created_at": "1791889049",
+          "data": "Plan customer interviews"
+        }
+      }
+    },
+    {
+      "id": "d8030724-84ff-4ddd-911e-85ca7967e4c8",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "done": {
+          "created_at": "1791889049",
+          "field_type": 5,
+          "data": "No",
+          "last_modified": "1791889049"
+        },
+        "due": {
+          "data": "1791820800",
+          "last_modified": "1791889049",
+          "include_time": false,
+          "field_type": 2,
+          "created_at": "1791889049"
+        },
+        "priority": {
+          "data": "priority0",
+          "created_at": "1791889049",
+          "field_type": 3,
+          "last_modified": "1791889049"
+        },
+        "task": {
+          "data": "Run release checklist",
+          "field_type": 0,
+          "last_modified": "1791889049",
+          "created_at": "1791889049"
+        }
+      }
+    },
+    {
+      "id": "673f275f-550f-4042-8748-9d05ef4e1361",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "due": {
+          "field_type": 2,
+          "data": "1791561600",
+          "created_at": "1791889049",
+          "include_time": false,
+          "last_modified": "1791889049"
+        },
+        "priority": {
+          "created_at": "1791889049",
+          "last_modified": "1791889049",
+          "data": "priority2",
+          "field_type": 3
+        },
+        "task": {
+          "data": "Approve project brief",
+          "field_type": 0,
+          "created_at": "1791889049",
+          "last_modified": "1791889049"
+        },
+        "done": {
+          "field_type": 5,
+          "data": "Yes",
+          "created_at": "1791889049",
+          "last_modified": "1791889049"
+        }
+      }
+    },
+    {
+      "id": "b84464f3-2ad7-4366-8d2b-3b282bad92a7",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "priority": {
+          "last_modified": "1791889049",
+          "data": "priority0",
+          "created_at": "1791889049",
+          "field_type": 3
+        },
+        "done": {
+          "data": "No",
+          "last_modified": "1791889049",
+          "field_type": 5,
+          "created_at": "1791889049"
+        },
+        "due": {
+          "created_at": "1791889049",
+          "data": "1791993600",
+          "include_time": false,
+          "field_type": 2,
+          "last_modified": "1791889049"
+        },
+        "task": {
+          "last_modified": "1791889049",
+          "field_type": 0,
+          "data": "Publish launch page",
+          "created_at": "1791889049"
+        }
+      }
+    }
+  ]
+}

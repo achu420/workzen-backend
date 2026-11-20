@@ -1,0 +1,12 @@
+WS OPEN ws://localhost:5199/?token=AJlG5e7Stsls
+WS CLOSE ws://localhost:5199/?token=AJlG5e7Stsls
+WS OPEN ws://localhost:5199/?token=AJlG5e7Stsls
+WS OPEN ws://localhost:8799/ws/v2/2fdd3e77-ac2a-446f-add1-719f18b688f8/?clientId=3857856037&deviceId=3MqQPHEb&token=z73b14CIQpjnLmNlh5VPQrK8avMaiz270IaFUa3dYfw&cv=0.10.0&cp=web
+WS CLOSE ws://localhost:5199/?token=AJlG5e7Stsls
+WS CLOSE ws://localhost:8799/ws/v2/2fdd3e77-ac2a-446f-add1-719f18b688f8/?clientId=3857856037&deviceId=3MqQPHEb&token=z73b14CIQpjnLmNlh5VPQrK8avMaiz270IaFUa3dYfw&cv=0.10.0&cp=web
+WS OPEN ws://localhost:5199/?token=AJlG5e7Stsls
+WS OPEN ws://localhost:8799/ws/v2/2fdd3e77-ac2a-446f-add1-719f18b688f8/?clientId=2566860959&deviceId=3MqQPHEb&token=z73b14CIQpjnLmNlh5VPQrK8avMaiz270IaFUa3dYfw&cv=0.10.0&cp=web
+WS CLOSE ws://localhost:5199/?token=AJlG5e7Stsls
+WS CLOSE ws://localhost:8799/ws/v2/2fdd3e77-ac2a-446f-add1-719f18b688f8/?clientId=2566860959&deviceId=3MqQPHEb&token=z73b14CIQpjnLmNlh5VPQrK8avMaiz270IaFUa3dYfw&cv=0.10.0&cp=web
+WS OPEN ws://localhost:5199/?token=AJlG5e7Stsls
+WS OPEN ws://localhost:8799/ws/v2/2fdd3e77-ac2a-446f-add1-719f18b688f8/?clientId=1199195349&deviceId=3MqQPHEb&token=z73b14CIQpjnLmNlh5VPQrK8avMaiz270IaFUa3dYfw&cv=0.10.0&cp=web

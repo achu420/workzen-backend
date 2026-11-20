@@ -1,0 +1,852 @@
+{
+  "template_id": "projects",
+  "order": 1,
+  "name": "Projects",
+  "description": "Track projects by status, risk, owner and delivery dates.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"artificial_intelligence\",\"iconName\":\"ai-generate-variation-spark\",\"color\":\"0xFFFF8933\"}"
+  },
+  "fields": [
+    {
+      "id": "e36Stg",
+      "name": "Project ID",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "515jX4",
+      "name": "Project",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "9fuLqD",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"1P4j\",\"name\":\"In progress\",\"color\":\"Yellow\"},{\"id\":\"20O3\",\"name\":\"Planned\",\"color\":\"Orange\"},{\"id\":\"06kS\",\"name\":\"Proposed\",\"color\":\"Cream\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "HB3040",
+      "name": "Health",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"0boH\",\"name\":\"On track\",\"color\":\"Purple\"},{\"id\":\"UPHR\",\"name\":\"At risk\",\"color\":\"LightPink\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "s0SC4Q",
+      "name": "Priority",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"eEMO\",\"name\":\"P0\",\"color\":\"Purple\"},{\"id\":\"d4ii\",\"name\":\"P1\",\"color\":\"Purple\"},{\"id\":\"Hc5o\",\"name\":\"P2\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "I6h23R",
+      "name": "Owner",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "ka4td1",
+      "name": "Team",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "QMZx1T",
+      "name": "Start Date",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "time_format_v2": 1,
+          "timezone_id": "Asia/Singapore",
+          "date_format_v2": 3
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "4JHy5t",
+      "name": "Target Date",
+      "field_type": 2,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "timezone_id": "Asia/Singapore",
+          "date_format_v2": 3,
+          "time_format_v2": 1
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "UW36LQ",
+      "name": "Success Metric",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "bCBzbO",
+      "name": "Progress",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "name": "Number",
+          "symbol": "RUB",
+          "format": 0,
+          "scale": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "ZjfA1U",
+      "name": "Dependencies",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "nBhrxm",
+      "name": "Risks",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "69029748-00ae-4487-8500-9569a46f7b76",
+      "database_id": "e8c48ace-2ff6-4b98-921e-9d3ad3f4f528",
+      "name": "By Status",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "group_settings": [],
+      "sorts": [],
+      "row_orders": [
+        {
+          "id": "f609ff59-dc7c-4f7c-88c4-6aef445ed144",
+          "height": 60
+        },
+        {
+          "id": "08ab0f9f-d7ac-463c-9783-13fdb6278de9",
+          "height": 60
+        },
+        {
+          "id": "efe629cd-9eb1-4a29-9dfe-d8e81f4bc3c7",
+          "height": 60
+        },
+        {
+          "id": "dfe6ddb2-6ba1-4d95-93bd-00887e04ff24",
+          "height": 60
+        },
+        {
+          "id": "0d926dee-4019-435f-87a7-8ee704871c04",
+          "height": 60
+        },
+        {
+          "id": "2e9ef8c8-5258-42df-930f-579c179ed675",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "e36Stg"
+        },
+        {
+          "id": "515jX4"
+        },
+        {
+          "id": "9fuLqD"
+        },
+        {
+          "id": "HB3040"
+        },
+        {
+          "id": "s0SC4Q"
+        },
+        {
+          "id": "I6h23R"
+        },
+        {
+          "id": "ka4td1"
+        },
+        {
+          "id": "QMZx1T"
+        },
+        {
+          "id": "4JHy5t"
+        },
+        {
+          "id": "UW36LQ"
+        },
+        {
+          "id": "bCBzbO"
+        },
+        {
+          "id": "ZjfA1U"
+        },
+        {
+          "id": "nBhrxm"
+        }
+      ],
+      "field_settings": {
+        "QMZx1T": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "nBhrxm": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "bCBzbO": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "UW36LQ": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "HB3040": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "ZjfA1U": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "9fuLqD": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "e36Stg": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "I6h23R": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "s0SC4Q": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "4JHy5t": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "515jX4": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "ka4td1": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        }
+      },
+      "created_at": 1786518667,
+      "modified_at": 1786518945,
+      "is_inline": false,
+      "embedded": false
+    },
+    {
+      "id": "4e5fedf4-6941-41de-bf66-3b17f7908667",
+      "database_id": "e8c48ace-2ff6-4b98-921e-9d3ad3f4f528",
+      "name": "At Risk",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [
+        {
+          "condition": 0,
+          "field_id": "HB3040",
+          "filter_type": 2,
+          "ty": 3,
+          "id": "igfSz-",
+          "content": "UPHR"
+        }
+      ],
+      "group_settings": [],
+      "sorts": [],
+      "row_orders": [
+        {
+          "id": "f609ff59-dc7c-4f7c-88c4-6aef445ed144",
+          "height": 60
+        },
+        {
+          "id": "08ab0f9f-d7ac-463c-9783-13fdb6278de9",
+          "height": 60
+        },
+        {
+          "id": "efe629cd-9eb1-4a29-9dfe-d8e81f4bc3c7",
+          "height": 60
+        },
+        {
+          "id": "dfe6ddb2-6ba1-4d95-93bd-00887e04ff24",
+          "height": 60
+        },
+        {
+          "id": "0d926dee-4019-435f-87a7-8ee704871c04",
+          "height": 60
+        },
+        {
+          "id": "2e9ef8c8-5258-42df-930f-579c179ed675",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "e36Stg"
+        },
+        {
+          "id": "515jX4"
+        },
+        {
+          "id": "9fuLqD"
+        },
+        {
+          "id": "HB3040"
+        },
+        {
+          "id": "s0SC4Q"
+        },
+        {
+          "id": "I6h23R"
+        },
+        {
+          "id": "ka4td1"
+        },
+        {
+          "id": "QMZx1T"
+        },
+        {
+          "id": "4JHy5t"
+        },
+        {
+          "id": "UW36LQ"
+        },
+        {
+          "id": "bCBzbO"
+        },
+        {
+          "id": "ZjfA1U"
+        },
+        {
+          "id": "nBhrxm"
+        }
+      ],
+      "field_settings": {
+        "I6h23R": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "s0SC4Q": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "bCBzbO": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "ka4td1": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "UW36LQ": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "9fuLqD": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "HB3040": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "e36Stg": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "nBhrxm": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "4JHy5t": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "ZjfA1U": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "QMZx1T": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "515jX4": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        }
+      },
+      "created_at": 0,
+      "modified_at": 1786518945,
+      "is_inline": false,
+      "embedded": false
+    }
+  ],
+  "rows": [
+    {
+      "id": "f609ff59-dc7c-4f7c-88c4-6aef445ed144",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "515jX4": {
+          "field_type": 0,
+          "data": "Granular permissions"
+        },
+        "9fuLqD": {
+          "field_type": 3,
+          "data": "1P4j"
+        },
+        "QMZx1T": {
+          "is_range": false,
+          "end_timestamp": "",
+          "data": "1783267200",
+          "include_time": false,
+          "field_type": 2,
+          "reminder_id": ""
+        },
+        "nBhrxm": {
+          "field_type": 0,
+          "data": "Permission inheritance may require migration of existing roles"
+        },
+        "4JHy5t": {
+          "reminder_id": "",
+          "is_range": false,
+          "field_type": 2,
+          "data": "1789660800",
+          "include_time": false,
+          "end_timestamp": ""
+        },
+        "e36Stg": {
+          "data": "PRJ-001",
+          "field_type": 0
+        },
+        "HB3040": {
+          "field_type": 3,
+          "data": "0boH"
+        },
+        "I6h23R": {
+          "field_type": 0,
+          "data": "Maya Chen"
+        },
+        "ka4td1": {
+          "data": "Platform",
+          "field_type": 0
+        },
+        "UW36LQ": {
+          "field_type": 0,
+          "data": "50% enterprise pilot-to-paid conversion"
+        },
+        "bCBzbO": {
+          "field_type": 1,
+          "data": "48"
+        },
+        "s0SC4Q": {
+          "data": "eEMO",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "08ab0f9f-d7ac-463c-9783-13fdb6278de9",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "515jX4": {
+          "data": "Sync reliability program",
+          "field_type": 0
+        },
+        "UW36LQ": {
+          "data": "50% reduction in sync-related support cases",
+          "field_type": 0
+        },
+        "I6h23R": {
+          "field_type": 0,
+          "data": "Noah Williams"
+        },
+        "e36Stg": {
+          "data": "PRJ-002",
+          "field_type": 0
+        },
+        "QMZx1T": {
+          "field_type": 2,
+          "is_range": false,
+          "data": "1781452800",
+          "reminder_id": "",
+          "end_timestamp": "",
+          "include_time": false
+        },
+        "4JHy5t": {
+          "is_range": false,
+          "field_type": 2,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "include_time": false,
+          "data": "1790697600"
+        },
+        "bCBzbO": {
+          "field_type": 1,
+          "data": "55"
+        },
+        "HB3040": {
+          "data": "UPHR",
+          "field_type": 3
+        },
+        "9fuLqD": {
+          "field_type": 3,
+          "data": "1P4j"
+        },
+        "nBhrxm": {
+          "data": "Large database benchmarks remain unstable on low-memory mobile devices",
+          "field_type": 0
+        },
+        "ka4td1": {
+          "data": "Infrastructure",
+          "field_type": 0
+        },
+        "s0SC4Q": {
+          "data": "eEMO",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "efe629cd-9eb1-4a29-9dfe-d8e81f4bc3c7",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ka4td1": {
+          "data": "AI Platform",
+          "field_type": 0
+        },
+        "515jX4": {
+          "field_type": 0,
+          "data": "On-prem AI platform"
+        },
+        "HB3040": {
+          "field_type": 3,
+          "data": "0boH"
+        },
+        "UW36LQ": {
+          "data": "5 production on-prem AI deployments",
+          "field_type": 0
+        },
+        "9fuLqD": {
+          "data": "1P4j",
+          "field_type": 3
+        },
+        "4JHy5t": {
+          "data": "1792080000",
+          "end_timestamp": "",
+          "field_type": 2,
+          "include_time": false,
+          "reminder_id": "",
+          "is_range": false
+        },
+        "e36Stg": {
+          "field_type": 0,
+          "data": "PRJ-003"
+        },
+        "s0SC4Q": {
+          "field_type": 3,
+          "data": "d4ii"
+        },
+        "nBhrxm": {
+          "field_type": 0,
+          "data": "Model and embedding compatibility varies by customer infrastructure"
+        },
+        "ZjfA1U": {
+          "data": "Granular permissions",
+          "field_type": 0
+        },
+        "QMZx1T": {
+          "is_range": false,
+          "include_time": false,
+          "reminder_id": "",
+          "end_timestamp": "",
+          "field_type": 2,
+          "data": "1784476800"
+        },
+        "bCBzbO": {
+          "data": "32",
+          "field_type": 1
+        },
+        "I6h23R": {
+          "field_type": 0,
+          "data": "Ava Patel"
+        }
+      }
+    },
+    {
+      "id": "dfe6ddb2-6ba1-4d95-93bd-00887e04ff24",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "9fuLqD": {
+          "field_type": 3,
+          "data": "20O3"
+        },
+        "e36Stg": {
+          "data": "PRJ-004",
+          "field_type": 0
+        },
+        "s0SC4Q": {
+          "data": "d4ii",
+          "field_type": 3
+        },
+        "bCBzbO": {
+          "data": "8",
+          "field_type": 1
+        },
+        "nBhrxm": {
+          "data": "Source formats are inconsistent and poorly documented",
+          "field_type": 0
+        },
+        "UW36LQ": {
+          "field_type": 0,
+          "data": "Median migration setup time below 3 days"
+        },
+        "515jX4": {
+          "field_type": 0,
+          "data": "Migration toolkit"
+        },
+        "QMZx1T": {
+          "reminder_id": "",
+          "is_range": false,
+          "end_timestamp": "",
+          "data": "1786896000",
+          "include_time": false,
+          "field_type": 2
+        },
+        "4JHy5t": {
+          "include_time": false,
+          "is_range": false,
+          "data": "1793894400",
+          "field_type": 2,
+          "end_timestamp": "",
+          "reminder_id": ""
+        },
+        "ka4td1": {
+          "field_type": 0,
+          "data": "Growth Engineering"
+        },
+        "HB3040": {
+          "field_type": 3,
+          "data": "0boH"
+        },
+        "I6h23R": {
+          "field_type": 0,
+          "data": "Leo Martin"
+        }
+      }
+    },
+    {
+      "id": "0d926dee-4019-435f-87a7-8ee704871c04",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "4JHy5t": {
+          "reminder_id": "",
+          "field_type": 2,
+          "is_range": false,
+          "data": "1795708800",
+          "include_time": false,
+          "end_timestamp": ""
+        },
+        "bCBzbO": {
+          "field_type": 1,
+          "data": "0"
+        },
+        "I6h23R": {
+          "data": "Sofia Rossi",
+          "field_type": 0
+        },
+        "UW36LQ": {
+          "data": "60% reduction in portfolio reporting time",
+          "field_type": 0
+        },
+        "ka4td1": {
+          "data": "Product Operations",
+          "field_type": 0
+        },
+        "9fuLqD": {
+          "data": "06kS",
+          "field_type": 3
+        },
+        "nBhrxm": {
+          "data": "Teams may not maintain consistent status and health fields",
+          "field_type": 0
+        },
+        "515jX4": {
+          "field_type": 0,
+          "data": "Portfolio visibility dashboard"
+        },
+        "s0SC4Q": {
+          "field_type": 3,
+          "data": "Hc5o"
+        },
+        "QMZx1T": {
+          "reminder_id": "",
+          "end_timestamp": "",
+          "data": "1788710400",
+          "include_time": false,
+          "field_type": 2,
+          "is_range": false
+        },
+        "e36Stg": {
+          "field_type": 0,
+          "data": "PRJ-005"
+        },
+        "HB3040": {
+          "data": "0boH",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "2e9ef8c8-5258-42df-930f-579c179ed675",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ka4td1": {
+          "data": "Marketing",
+          "field_type": 0
+        },
+        "9fuLqD": {
+          "field_type": 3,
+          "data": "1P4j"
+        },
+        "s0SC4Q": {
+          "data": "d4ii",
+          "field_type": 3
+        },
+        "I6h23R": {
+          "field_type": 0,
+          "data": "Emma Davis"
+        },
+        "HB3040": {
+          "data": "0boH",
+          "field_type": 3
+        },
+        "QMZx1T": {
+          "data": "1783872000",
+          "include_time": false,
+          "is_range": false,
+          "reminder_id": "",
+          "field_type": 2,
+          "end_timestamp": ""
+        },
+        "515jX4": {
+          "data": "Enterprise website conversion",
+          "field_type": 0
+        },
+        "UW36LQ": {
+          "field_type": 0,
+          "data": "Qualified demo conversion reaches 2.7%"
+        },
+        "bCBzbO": {
+          "data": "70",
+          "field_type": 1
+        },
+        "e36Stg": {
+          "data": "PRJ-006",
+          "field_type": 0
+        },
+        "4JHy5t": {
+          "data": "1787846400",
+          "end_timestamp": "",
+          "is_range": false,
+          "reminder_id": "",
+          "field_type": 2,
+          "include_time": false
+        },
+        "nBhrxm": {
+          "field_type": 0,
+          "data": "Customer approvals may delay publishing named case studies"
+        }
+      }
+    }
+  ]
+}

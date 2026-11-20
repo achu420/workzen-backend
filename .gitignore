@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+data/
+logs/
+backups/
+node_modules/
+test-results/
+playwright-report/
+
+# Build bundles and OS files
+deploy/out/
+.DS_Store

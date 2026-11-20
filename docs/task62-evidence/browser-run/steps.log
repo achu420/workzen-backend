@@ -1,0 +1,14 @@
+[2026-11-05T19:19:45.847Z] PASS - Register dedicated test account via real backend API :: task62-row-1793906385705@example.test
+[2026-11-05T19:19:50.708Z] PASS - Login via real UI :: http://localhost:5201/app/61499557-bd66-4156-bb3a-19dd30a9f8bc
+[2026-11-05T19:19:52.476Z] PASS - Open workspace
+[2026-11-05T19:19:54.191Z] PASS - Create a public space via real UI
+[2026-11-05T19:20:00.524Z] PASS - Create a Grid database via existing UI (Task 61 workflow)
+[2026-11-05T19:20:00.569Z] PASS - Grid Database opens with its default Grid view and primary field :: ["281408d3-5e01-4c5d-8537-f674f62efc13"]
+[2026-11-05T19:20:00.599Z] PASS - Grid starts with zero rows :: []
+[2026-11-05T19:20:02.678Z] PASS - A new row appears in the Grid via real UI :: rows=["bc64be71-60de-4cda-a131-e83f94575a11"], newRowId=bc64be71-60de-4cda-a131-e83f94575a11
+[2026-11-05T19:20:05.282Z] PASS - Enter a value in the primary Name field for the new row via real UI :: Task 62 row value
+[2026-11-05T19:20:09.262Z] PASS - Reload the page :: url before=http://localhost:5201/app/61499557-bd66-4156-bb3a-19dd30a9f8bc/115f76ee-4de4-4dda-9983-6a18ddb64f77, url after=http://localhost:5201/app/61499557-bd66-4156-bb3a-19dd30a9f8bc/115f76ee-4de4-4dda-9983-6a18ddb64f77
+[2026-11-05T19:20:10.831Z] PASS - Reopen the database
+[2026-11-05T19:20:10.872Z] PASS - The created row still exists after reload+reopen :: bc64be71-60de-4cda-a131-e83f94575a11
+[2026-11-05T19:20:10.880Z] PASS - The entered cell value persisted after reload+reopen :: expected="Task 62 row value" actual="Task 62 row value"
+[2026-11-05T19:20:10.906Z] PASS - FULL WORKFLOW RESULT :: All DatabaseRow browser-verification steps completed

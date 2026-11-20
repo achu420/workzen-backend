@@ -1,0 +1,20 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:database-view-collab
+> node --test test/database-view-collab.test.js
+
+(node:50884) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ Database view creation: a second (Board) view is added with cloned config, correct Folder mapping, and a non-empty default group (137.924292ms)
+✔ Database view creation: with no source_view_id, the new view defaults to the inline view's row membership, not empty (83.780042ms)
+✔ Database view creation: idempotent replay (same request_id) and REQUEST_ID_REUSED on a different body (85.266958ms)
+✔ Database view creation: invalid/unsupported requests are rejected (228.993084ms)
+✔ Database view creation: multi-view independence survives a config change and a restart (91.744334ms)
+✔ Database view: a live config change on a NEWLY CREATED view fans out to an already-connected peer (generalizes Task 66/71 beyond field edits) (163.87775ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1049.621292

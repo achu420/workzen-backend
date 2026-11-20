@@ -1,0 +1,23 @@
+{
+  "omitted_item_count": 3,
+  "samples": [
+    {
+      "kind": "unregistered_row_document",
+      "database_id": "3356b569-dc1e-4d5e-a20c-083a8ce756ce",
+      "row_id": "97faeb91-df8b-4dda-82e6-25a6071a4e91",
+      "document_id": "2b02b18e-c7b6-51e7-8a90-ae552675a82b"
+    },
+    {
+      "kind": "unregistered_row_document",
+      "database_id": "3356b569-dc1e-4d5e-a20c-083a8ce756ce",
+      "row_id": "7392630a-4e5e-450d-b2d9-2b1463b8176b",
+      "document_id": "6acdbd15-77da-5465-9602-164fc8394ebd"
+    },
+    {
+      "kind": "unregistered_row_document",
+      "database_id": "e8c48ace-2ff6-4b98-921e-9d3ad3f4f528",
+      "row_id": "f609ff59-dc7c-4f7c-88c4-6aef445ed144",
+      "document_id": "c5fefb90-e952-5baa-8608-efc09915cee7"
+    }
+  ]
+}

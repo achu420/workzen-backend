@@ -1,0 +1,12 @@
+
+Running 7 tests using 1 worker
+
+  ✓  1 [chromium] › test/e2e/core-navigation.spec.ts:124:1 › A. auth and app readiness (5.1s)
+  ✓  2 [chromium] › test/e2e/core-navigation.spec.ts:131:1 › B. document creation opens a ViewModal; closing it reaches the stable full-page route (6.5s)
+  ✓  3 [chromium] › test/e2e/core-navigation.spec.ts:153:1 › D. direct full-page route navigation (bypassing modal/sidebar) loads the correct document after reload (7.7s)
+  ✓  4 [chromium] › test/e2e/core-navigation.spec.ts:175:1 › E. content persists across a genuine reload (condition-based save/sync wait, not a fixed sleep) (18.2s)
+  ✓  5 [chromium] › test/e2e/core-navigation.spec.ts:215:1 › C. sidebar navigation between two documents, detecting duplicate/stale matches rather than guessing (9.3s)
+  ✓  6 [chromium] › test/e2e/core-navigation.spec.ts:246:1 › F. repeated A->B->A navigation keeps correct identity, no stale overlay/duplicate active state (11.5s)
+  ✓  7 [chromium] › test/e2e/core-navigation.spec.ts:271:1 › G. two independent browser contexts on the same document both resolve the correct identity (8.0s)
+
+  7 passed (1.1m)

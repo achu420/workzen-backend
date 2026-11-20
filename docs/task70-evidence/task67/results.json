@@ -1,0 +1,51 @@
+[
+  {
+    "title": "B1. initial authorized access (two independent contexts, same document)",
+    "status": "passed",
+    "annotations": [
+      {
+        "type": "live-delivery-BLOCKED",
+        "description": "authorized member live (no-refresh) read: FAIL; same content after reload: PASS"
+      }
+    ]
+  },
+  {
+    "title": "B2. revoke membership while connected; existing socket is closed by the periodic revalidation timer",
+    "status": "passed",
+    "annotations": []
+  },
+  {
+    "title": "B3. reconnection attempt is rejected; no protected content delivered",
+    "status": "passed",
+    "annotations": [
+      {
+        "type": "evidence",
+        "description": "workspace-API responses observed after reconnect attempt: [403,403,403,403,403,404,403,403]; url=http://localhost:14159/app/12ecbc3f-609b-4635-bf5d-38c7a83869d8/12cd5d3f-0008-45a7-a250-9aee4fa7d6f4"
+      }
+    ]
+  },
+  {
+    "title": "B4. offline update + authorization (bounded attempt)",
+    "status": "skipped",
+    "annotations": [
+      {
+        "type": "limitation",
+        "description": "Not attempted via the real browser in this run: constructing a reliable browser-level \"offline pending edit survives a revoke-while-offline-then-reconnect\" scenario requires deterministic control over this app's own sync-outbox timing that the proven Task 69 helpers do not yet expose, and the guardrail reserves new ad hoc timing hacks for a case with evidence justifying them. Protocol-level evidence for revoked-membership-rejects-offline-replay remains Task 67/68's authoritative evidence (test/security-authorization.test.js, test/collaboration-recovery.test.js). Classified NOT TESTED at the browser level, not claimed as passing."
+      },
+      {
+        "type": "skip",
+        "description": "Deliberately not attempted at the browser level this run; see annotation."
+      }
+    ]
+  },
+  {
+    "title": "B5. membership restoration requires a fresh connection",
+    "status": "passed",
+    "annotations": [
+      {
+        "type": "evidence",
+        "description": "old tab content reappeared after restoration (no manual reload): true; a NEW WebSocket open event was observed on that same tab in that window: true (opens before=11, after=12)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:offline-collab
+> node --test test/offline-collab.test.js
+
+(node:98709) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ loads the source-derived AppFlowy page fixture and computes state-vector diffs (5.290208ms)
+✔ accepts a valid ordinary-text Yjs update and rejects duplicate delivery (2.313958ms)
+✔ validates v2, metadata, malformed payloads, and unsupported flags safely (1.504167ms)
+✔ decodes source-shaped protobuf envelopes and rejects malformed frames (2.393208ms)
+✔ rejects invalid sync vectors and does not claim durability or server ordering (0.672708ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 164.630542
+EXIT:0

@@ -1,0 +1,31 @@
+
+> appflowy-independent-backend-prototype@0.1.0 test:database-row-collab
+> node --test test/database-row-collab.test.js
+
+(node:98711) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ DatabaseRow creation: valid request creates the row doc and inserts it into the parent Database row_orders (77.563958ms)
+✔ DatabaseRow creation: row ordering respects start/end/after position (78.788125ms)
+✔ DatabaseRow creation: duplicate request_id (retry) is idempotent (76.101042ms)
+✔ DatabaseRow creation: invalid/malformed requests and unauthorized/unknown identities are rejected (121.275459ms)
+✔ DatabaseRow WebSocket: unsupported collabType values are rejected, not silently admitted (62.647833ms)
+✔ DatabaseRow WebSocket: a row id from another workspace is rejected (109.632125ms)
+✔ DatabaseRow real-time: writing a cell over WebSocket updates (generic Yjs diff admission, same mechanism as Database field edits) (58.307125ms)
+✔ DatabaseRow real-time: duplicate/replayed update is admitted exactly once (76.305083ms)
+✔ DatabaseRow real-time: no ack while persistence is pending, then acks only after durable write completes (delayed-persistence fault injection, Task 44 pattern) (361.711625ms)
+WebSocket DatabaseRow update admission failed Error: task62 injected persistence failure
+    at store.persist (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/test/database-row-collab.test.js:596:41)
+    at mutate (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:912:34)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async operation (file:///Volumes/work%20disk/Codes/Tracker/AppFlowy-Independent-Backend/storage.js:807:16)
+✔ DatabaseRow real-time: no ack and closes with 1011 when persistence fails; the failed update is not durably admitted (failed-persistence fault injection, Task 44 pattern) (58.340958ms)
+✔ DatabaseRow persistence: JSON store reconstructs the latest accepted state after a simulated backend restart, including row_orders membership (59.823917ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6238.628334
+EXIT:0

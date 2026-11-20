@@ -1,0 +1,706 @@
+{
+  "template_id": "project-expense-tracker",
+  "order": 102,
+  "name": "Project Expense Tracker",
+  "description": "Track project expenses, sum linked costs, compare spending with budgets, and flag overruns.",
+  "icon": null,
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Database"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/project-expense-tracker",
+  "database_id": "e9523cae-2404-4bc6-9ec5-852402f2138d",
+  "fields": [
+    {
+      "id": "balance",
+      "name": "Remaining",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "19": {
+          "expression": "prop(\"budget\") - if(empty(prop(\"spent\")), 0, prop(\"spent\"))",
+          "format": 1
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "expenses",
+      "name": "Expenses",
+      "field_type": 10,
+      "icon": "",
+      "type_options": {
+        "10": {
+          "database_id": "b03c1a7b-1ff3-442a-9589-5df69c54a07e",
+          "is_two_way": true,
+          "reciprocal_field_name": "Project",
+          "source_limit": 0,
+          "reciprocal_field_id": "project",
+          "target_limit": 1
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "spent",
+      "name": "Spent",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "target_field_id": "amount",
+          "condition_value": "[]",
+          "calculation_type": 4,
+          "relation_field_id": "expenses",
+          "show_as": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "budget",
+      "name": "Budget",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "format": 1
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "project",
+      "name": "Project",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "signal",
+      "name": "Signal",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "19": {
+          "format": 0,
+          "expression": "if(prop(\"budget\") <= 0, \"Set budget\", if(prop(\"spent\") > prop(\"budget\"), \"Over budget\", if(prop(\"spent\") >= prop(\"budget\") * 0.8, \"Watch\", \"On track\")))"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "used",
+      "name": "Used %",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "19": {
+          "format": 36,
+          "expression": "if(prop(\"budget\") <= 0, empty(), if(empty(prop(\"spent\")), 0, prop(\"spent\")) / prop(\"budget\"))"
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "7df3eace-c765-418a-985e-df78eb59561b",
+      "database_id": "e9523cae-2404-4bc6-9ec5-852402f2138d",
+      "name": "Budget overview",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "77bf56fa-9e2b-4686-bc98-6581a44743b1",
+          "height": 64
+        },
+        {
+          "height": 64,
+          "id": "0c2e28f0-bc87-4eb4-809a-48daaea91c7b"
+        },
+        {
+          "height": 64,
+          "id": "425735d3-1ada-497e-aaf7-f6b70188a4b2"
+        },
+        {
+          "height": 64,
+          "id": "50e4a5e1-ff48-4fb1-a891-d86ebb3b055b"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "project"
+        },
+        {
+          "id": "budget"
+        },
+        {
+          "id": "spent"
+        },
+        {
+          "id": "balance"
+        },
+        {
+          "id": "used"
+        },
+        {
+          "id": "signal"
+        },
+        {
+          "id": "expenses"
+        }
+      ],
+      "field_settings": {
+        "balance": {
+          "width": "140",
+          "wrap": true,
+          "visibility": 0
+        },
+        "budget": {
+          "wrap": true,
+          "width": "130",
+          "visibility": 0
+        },
+        "project": {
+          "width": "210",
+          "wrap": true,
+          "visibility": 0
+        },
+        "signal": {
+          "width": "150",
+          "visibility": 0,
+          "wrap": true
+        },
+        "expenses": {
+          "width": "280",
+          "wrap": true,
+          "visibility": 0
+        },
+        "spent": {
+          "width": "130",
+          "visibility": 0,
+          "wrap": true
+        },
+        "used": {
+          "width": "130",
+          "wrap": true,
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1791965038
+    }
+  ],
+  "rows": [
+    {
+      "id": "0c2e28f0-bc87-4eb4-809a-48daaea91c7b",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "project": {
+          "data": "Client onboarding",
+          "field_type": 0,
+          "last_modified": "1791965272",
+          "created_at": "1791965272"
+        },
+        "expenses": {
+          "created_at": "1791965272",
+          "data": [
+            "d226f620-b6f5-490a-8cac-b61c301c89a7",
+            "a9c91a06-a4a5-46d7-9728-3e97a59448e1"
+          ],
+          "last_modified": "1791965272",
+          "field_type": 10
+        },
+        "budget": {
+          "data": "2000",
+          "created_at": "1791965272",
+          "last_modified": "1791965272",
+          "field_type": 1
+        }
+      }
+    },
+    {
+      "id": "425735d3-1ada-497e-aaf7-f6b70188a4b2",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "expenses": {
+          "data": [
+            "0c080628-4a96-4b80-924c-7805d74885a7"
+          ],
+          "last_modified": "1791965272",
+          "created_at": "1791965272",
+          "field_type": 10
+        },
+        "project": {
+          "field_type": 0,
+          "data": "Customer research",
+          "last_modified": "1791965272",
+          "created_at": "1791965272"
+        },
+        "budget": {
+          "created_at": "1791965272",
+          "data": "1000",
+          "last_modified": "1791965272",
+          "field_type": 1
+        }
+      }
+    },
+    {
+      "id": "77bf56fa-9e2b-4686-bc98-6581a44743b1",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "project": {
+          "created_at": "1791965272",
+          "field_type": 0,
+          "last_modified": "1791965272",
+          "data": "Website launch"
+        },
+        "budget": {
+          "created_at": "1791965272",
+          "last_modified": "1791965272",
+          "data": "5000",
+          "field_type": 1
+        },
+        "expenses": {
+          "data": [
+            "2e1ca777-f53e-4570-9938-b2b24a7349f7",
+            "8feebc5d-a768-4d1f-aff0-9d5bf58a26b9",
+            "30bf2abf-72d4-4d8d-913d-7cbdb95457ae"
+          ],
+          "field_type": 10,
+          "last_modified": "1791965272",
+          "created_at": "1791965272"
+        }
+      }
+    },
+    {
+      "id": "50e4a5e1-ff48-4fb1-a891-d86ebb3b055b",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "budget": {
+          "created_at": "1791965272",
+          "data": "0",
+          "last_modified": "1791965272",
+          "field_type": 1
+        },
+        "expenses": {
+          "data": [],
+          "field_type": 10,
+          "last_modified": "1791965272",
+          "created_at": "1791965272"
+        },
+        "project": {
+          "data": "Next quarter planning",
+          "field_type": 0,
+          "last_modified": "1791965272",
+          "created_at": "1791965272"
+        }
+      }
+    }
+  ],
+  "related_databases": [
+    {
+      "database_id": "b03c1a7b-1ff3-442a-9589-5df69c54a07e",
+      "fields": [
+        {
+          "id": "expense",
+          "name": "Expense",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": true
+        },
+        {
+          "id": "project",
+          "name": "Project",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "target_limit": 0,
+              "reciprocal_field_id": "expenses",
+              "reciprocal_field_name": "Expenses",
+              "is_two_way": true,
+              "source_limit": 1,
+              "database_id": "e9523cae-2404-4bc6-9ec5-852402f2138d"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "amount",
+          "name": "Amount",
+          "field_type": 1,
+          "icon": "",
+          "type_options": {
+            "1": {
+              "format": 1
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "category",
+          "name": "Category",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"category0\",\"name\":\"Design\",\"color\":\"Purple\"},{\"id\":\"category1\",\"name\":\"Development\",\"color\":\"Blue\"},{\"id\":\"category2\",\"name\":\"Testing\",\"color\":\"Green\"},{\"id\":\"category3\",\"name\":\"Services\",\"color\":\"Orange\"},{\"id\":\"category4\",\"name\":\"Research\",\"color\":\"Pink\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "owner",
+          "name": "Owner",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        }
+      ],
+      "views": [
+        {
+          "id": "de4fae7e-8ca5-4afd-8518-3591f2cf1b55",
+          "database_id": "b03c1a7b-1ff3-442a-9589-5df69c54a07e",
+          "name": "All expenses",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "height": 64,
+              "id": "2e1ca777-f53e-4570-9938-b2b24a7349f7"
+            },
+            {
+              "height": 64,
+              "id": "8feebc5d-a768-4d1f-aff0-9d5bf58a26b9"
+            },
+            {
+              "height": 64,
+              "id": "30bf2abf-72d4-4d8d-913d-7cbdb95457ae"
+            },
+            {
+              "height": 64,
+              "id": "d226f620-b6f5-490a-8cac-b61c301c89a7"
+            },
+            {
+              "id": "a9c91a06-a4a5-46d7-9728-3e97a59448e1",
+              "height": 64
+            },
+            {
+              "id": "0c080628-4a96-4b80-924c-7805d74885a7",
+              "height": 64
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "expense"
+            },
+            {
+              "id": "amount"
+            },
+            {
+              "id": "category"
+            },
+            {
+              "id": "owner"
+            },
+            {
+              "id": "project"
+            }
+          ],
+          "field_settings": {
+            "amount": {
+              "visibility": 0,
+              "width": "140",
+              "wrap": true
+            },
+            "owner": {
+              "visibility": 0,
+              "wrap": true,
+              "width": "120"
+            },
+            "project": {
+              "width": "220",
+              "wrap": true,
+              "visibility": 0
+            },
+            "expense": {
+              "wrap": true,
+              "visibility": 0,
+              "width": "260"
+            },
+            "category": {
+              "wrap": true,
+              "width": "140",
+              "visibility": 0
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1791965042
+        }
+      ],
+      "rows": [
+        {
+          "id": "a9c91a06-a4a5-46d7-9728-3e97a59448e1",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "category": {
+              "last_modified": "1791965261",
+              "created_at": "1791965261",
+              "data": "category3",
+              "field_type": 3
+            },
+            "owner": {
+              "field_type": 0,
+              "last_modified": "1791965261",
+              "data": "Jordan",
+              "created_at": "1791965261"
+            },
+            "expense": {
+              "last_modified": "1791965261",
+              "data": "Training materials",
+              "created_at": "1791965261",
+              "field_type": 0
+            },
+            "amount": {
+              "field_type": 1,
+              "created_at": "1791965261",
+              "data": "750",
+              "last_modified": "1791965261"
+            },
+            "project": {
+              "field_type": 10,
+              "last_modified": "1791965261",
+              "created_at": "1791965261",
+              "data": [
+                "0c2e28f0-bc87-4eb4-809a-48daaea91c7b"
+              ]
+            }
+          }
+        },
+        {
+          "id": "d226f620-b6f5-490a-8cac-b61c301c89a7",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "expense": {
+              "created_at": "1791965261",
+              "last_modified": "1791965261",
+              "data": "Implementation workshop",
+              "field_type": 0
+            },
+            "owner": {
+              "created_at": "1791965261",
+              "data": "Alex",
+              "field_type": 0,
+              "last_modified": "1791965261"
+            },
+            "project": {
+              "last_modified": "1791965261",
+              "field_type": 10,
+              "created_at": "1791965261",
+              "data": [
+                "0c2e28f0-bc87-4eb4-809a-48daaea91c7b"
+              ]
+            },
+            "category": {
+              "data": "category3",
+              "field_type": 3,
+              "last_modified": "1791965261",
+              "created_at": "1791965261"
+            },
+            "amount": {
+              "data": "1500",
+              "last_modified": "1791965261",
+              "created_at": "1791965261",
+              "field_type": 1
+            }
+          }
+        },
+        {
+          "id": "30bf2abf-72d4-4d8d-913d-7cbdb95457ae",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "expense": {
+              "field_type": 0,
+              "created_at": "1791965261",
+              "last_modified": "1791965261",
+              "data": "Usability testing"
+            },
+            "owner": {
+              "created_at": "1791965261",
+              "field_type": 0,
+              "last_modified": "1791965261",
+              "data": "Riley"
+            },
+            "project": {
+              "created_at": "1791965261",
+              "data": [
+                "77bf56fa-9e2b-4686-bc98-6581a44743b1"
+              ],
+              "field_type": 10,
+              "last_modified": "1791965261"
+            },
+            "amount": {
+              "created_at": "1791965261",
+              "data": "500",
+              "field_type": 1,
+              "last_modified": "1791965261"
+            },
+            "category": {
+              "created_at": "1791965261",
+              "field_type": 3,
+              "data": "category2",
+              "last_modified": "1791965261"
+            }
+          }
+        },
+        {
+          "id": "2e1ca777-f53e-4570-9938-b2b24a7349f7",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "amount": {
+              "field_type": 1,
+              "data": "1200",
+              "last_modified": "1791965261",
+              "created_at": "1791965261"
+            },
+            "category": {
+              "field_type": 3,
+              "last_modified": "1791965261",
+              "data": "category0",
+              "created_at": "1791965261"
+            },
+            "project": {
+              "data": [
+                "77bf56fa-9e2b-4686-bc98-6581a44743b1"
+              ],
+              "last_modified": "1791965261",
+              "created_at": "1791965261",
+              "field_type": 10
+            },
+            "expense": {
+              "field_type": 0,
+              "created_at": "1791965261",
+              "last_modified": "1791965261",
+              "data": "Design contractor"
+            },
+            "owner": {
+              "field_type": 0,
+              "data": "Alex",
+              "created_at": "1791965261",
+              "last_modified": "1791965261"
+            }
+          }
+        },
+        {
+          "id": "0c080628-4a96-4b80-924c-7805d74885a7",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "owner": {
+              "field_type": 0,
+              "created_at": "1791965261",
+              "last_modified": "1791965261",
+              "data": "Riley"
+            },
+            "amount": {
+              "data": "0",
+              "created_at": "1791965261",
+              "last_modified": "1791965261",
+              "field_type": 1
+            },
+            "category": {
+              "data": "category4",
+              "last_modified": "1791965261",
+              "created_at": "1791965261",
+              "field_type": 3
+            },
+            "expense": {
+              "data": "Community interview venue",
+              "last_modified": "1791965261",
+              "field_type": 0,
+              "created_at": "1791965261"
+            },
+            "project": {
+              "data": [
+                "425735d3-1ada-497e-aaf7-f6b70188a4b2"
+              ],
+              "created_at": "1791965261",
+              "field_type": 10,
+              "last_modified": "1791965261"
+            }
+          }
+        },
+        {
+          "id": "8feebc5d-a768-4d1f-aff0-9d5bf58a26b9",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "project": {
+              "last_modified": "1791965261",
+              "data": [
+                "77bf56fa-9e2b-4686-bc98-6581a44743b1"
+              ],
+              "created_at": "1791965261",
+              "field_type": 10
+            },
+            "owner": {
+              "data": "Sam",
+              "last_modified": "1791965261",
+              "field_type": 0,
+              "created_at": "1791965261"
+            },
+            "amount": {
+              "last_modified": "1791965261",
+              "created_at": "1791965261",
+              "field_type": 1,
+              "data": "1800"
+            },
+            "category": {
+              "data": "category1",
+              "field_type": 3,
+              "last_modified": "1791965261",
+              "created_at": "1791965261"
+            },
+            "expense": {
+              "last_modified": "1791965261",
+              "data": "Development services",
+              "field_type": 0,
+              "created_at": "1791965261"
+            }
+          }
+        }
+      ],
+      "name": "Project Expenses",
+      "icon": null
+    }
+  ]
+}

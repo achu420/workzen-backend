@@ -1,0 +1,857 @@
+{
+  "template_id": "opportunities",
+  "order": 0,
+  "name": "Opportunities",
+  "description": "Score and prioritise customer opportunities with evidence, stage and owner.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"money_shopping\",\"iconName\":\"bag-pound\",\"color\":\"0xFFFF8933\"}"
+  },
+  "fields": [
+    {
+      "id": "_l_VbU",
+      "name": "Opportunity ID",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "OZWf-Z",
+      "name": "Opportunity",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "DQQEP0",
+      "name": "Stage",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"G0ZZ\",\"name\":\"Prioritized\",\"color\":\"LightPink\"},{\"id\":\"3a9I\",\"name\":\"Validated\",\"color\":\"Green\"},{\"id\":\"tNzJ\",\"name\":\"Researching\",\"color\":\"Pink\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "iCdZnz",
+      "name": "Problem Statement",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "SFJ4qS",
+      "name": "Target Segment",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "A1rIR-",
+      "name": "Evidence Summary",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "w9soZC",
+      "name": "Impact",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "scale": 0,
+          "name": "Number",
+          "symbol": "RUB",
+          "format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "QWRNxJ",
+      "name": "Confidence",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "symbol": "RUB",
+          "name": "Number",
+          "scale": 0,
+          "format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "twWfPa",
+      "name": "Effort",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "symbol": "RUB",
+          "scale": 0,
+          "name": "Number",
+          "format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "aqLMzQ",
+      "name": "Priority Score",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "symbol": "RUB",
+          "format": 0,
+          "scale": 0,
+          "name": "Number"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "0BLopB",
+      "name": "Owner",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "oTSxTX",
+      "name": "Target Metric",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "1VVTY5",
+      "name": "Decision",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"Qoji\",\"name\":\"Pursue\",\"color\":\"Purple\"},{\"id\":\"CAh7\",\"name\":\"Monitor\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "8b830777-a526-4bef-8fe8-3968199397a2",
+      "database_id": "04c29a85-c52d-4f94-a6c1-696b426b2702",
+      "name": "By Score",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "group_settings": [],
+      "sorts": [
+        {
+          "id": "s:i4nThs",
+          "condition": 1,
+          "field_id": "aqLMzQ"
+        }
+      ],
+      "row_orders": [
+        {
+          "id": "2bc329ed-f361-40f9-83ab-3fb21468a09b",
+          "height": 60
+        },
+        {
+          "id": "2f75a523-bf76-4403-8fa0-3138f29964ae",
+          "height": 60
+        },
+        {
+          "id": "5d9399bf-7d92-465f-b86e-01c97a4c8915",
+          "height": 60
+        },
+        {
+          "id": "aa2424c1-e25f-4e6b-9c2f-ab556f693685",
+          "height": 60
+        },
+        {
+          "id": "a8f42a7a-8183-43aa-b297-c8fa32a3f964",
+          "height": 60
+        },
+        {
+          "id": "3dea94c0-459a-46ca-9180-1f35ae13e574",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "_l_VbU"
+        },
+        {
+          "id": "OZWf-Z"
+        },
+        {
+          "id": "DQQEP0"
+        },
+        {
+          "id": "iCdZnz"
+        },
+        {
+          "id": "SFJ4qS"
+        },
+        {
+          "id": "A1rIR-"
+        },
+        {
+          "id": "w9soZC"
+        },
+        {
+          "id": "QWRNxJ"
+        },
+        {
+          "id": "twWfPa"
+        },
+        {
+          "id": "aqLMzQ"
+        },
+        {
+          "id": "0BLopB"
+        },
+        {
+          "id": "oTSxTX"
+        },
+        {
+          "id": "1VVTY5"
+        }
+      ],
+      "field_settings": {
+        "_l_VbU": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "w9soZC": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "DQQEP0": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "iCdZnz": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "OZWf-Z": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "twWfPa": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "0BLopB": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "oTSxTX": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "A1rIR-": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "1VVTY5": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "SFJ4qS": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "QWRNxJ": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "aqLMzQ": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        }
+      },
+      "created_at": 1786518657,
+      "modified_at": 1786518778,
+      "is_inline": false,
+      "embedded": false
+    },
+    {
+      "id": "59194b6b-7447-4290-b839-706bfcc4dd60",
+      "database_id": "04c29a85-c52d-4f94-a6c1-696b426b2702",
+      "name": "By Stage",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": false
+        }
+      },
+      "filters": [],
+      "group_settings": [
+        {
+          "collapsed_group_ids": [],
+          "ty": 3,
+          "id": "g:iwfnhE",
+          "groups": [
+            {
+              "visible": false,
+              "id": "DQQEP0"
+            },
+            {
+              "visible": true,
+              "id": "tNzJ"
+            },
+            {
+              "id": "3a9I",
+              "visible": true
+            },
+            {
+              "id": "G0ZZ",
+              "visible": true
+            }
+          ],
+          "field_id": "DQQEP0",
+          "content": ""
+        }
+      ],
+      "sorts": [],
+      "row_orders": [
+        {
+          "id": "2bc329ed-f361-40f9-83ab-3fb21468a09b",
+          "height": 60
+        },
+        {
+          "id": "2f75a523-bf76-4403-8fa0-3138f29964ae",
+          "height": 60
+        },
+        {
+          "id": "5d9399bf-7d92-465f-b86e-01c97a4c8915",
+          "height": 60
+        },
+        {
+          "id": "aa2424c1-e25f-4e6b-9c2f-ab556f693685",
+          "height": 60
+        },
+        {
+          "id": "a8f42a7a-8183-43aa-b297-c8fa32a3f964",
+          "height": 60
+        },
+        {
+          "id": "3dea94c0-459a-46ca-9180-1f35ae13e574",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "_l_VbU"
+        },
+        {
+          "id": "OZWf-Z"
+        },
+        {
+          "id": "DQQEP0"
+        },
+        {
+          "id": "iCdZnz"
+        },
+        {
+          "id": "SFJ4qS"
+        },
+        {
+          "id": "A1rIR-"
+        },
+        {
+          "id": "w9soZC"
+        },
+        {
+          "id": "QWRNxJ"
+        },
+        {
+          "id": "twWfPa"
+        },
+        {
+          "id": "aqLMzQ"
+        },
+        {
+          "id": "0BLopB"
+        },
+        {
+          "id": "oTSxTX"
+        },
+        {
+          "id": "1VVTY5"
+        }
+      ],
+      "field_settings": {
+        "DQQEP0": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 1
+        },
+        "_l_VbU": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "OZWf-Z": {
+          "wrap": false,
+          "visibility": 1,
+          "width": 150
+        },
+        "twWfPa": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        },
+        "iCdZnz": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 1
+        },
+        "aqLMzQ": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 1
+        },
+        "A1rIR-": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        },
+        "w9soZC": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 1
+        },
+        "1VVTY5": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        },
+        "0BLopB": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 1
+        },
+        "oTSxTX": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 1
+        },
+        "SFJ4qS": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        },
+        "QWRNxJ": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        }
+      },
+      "created_at": 0,
+      "modified_at": 1786523868,
+      "is_inline": false,
+      "embedded": false
+    }
+  ],
+  "rows": [
+    {
+      "id": "2bc329ed-f361-40f9-83ab-3fb21468a09b",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0BLopB": {
+          "data": "Maya Chen",
+          "field_type": 0
+        },
+        "aqLMzQ": {
+          "data": "6.25",
+          "field_type": 1
+        },
+        "1VVTY5": {
+          "data": "Qoji",
+          "field_type": 3
+        },
+        "SFJ4qS": {
+          "field_type": 0,
+          "data": "Enterprise IT administrators"
+        },
+        "DQQEP0": {
+          "field_type": 3,
+          "data": "G0ZZ"
+        },
+        "iCdZnz": {
+          "data": "Workspace administrators cannot consistently apply permissions across teams and spaces, creating security and administration overhead.",
+          "field_type": 0
+        },
+        "OZWf-Z": {
+          "data": "Enterprise admins need granular access control",
+          "field_type": 0
+        },
+        "_l_VbU": {
+          "field_type": 0,
+          "data": "OPP-001"
+        },
+        "QWRNxJ": {
+          "field_type": 1,
+          "data": "5"
+        },
+        "w9soZC": {
+          "field_type": 1,
+          "data": "5"
+        },
+        "A1rIR-": {
+          "data": "12 sales calls; 8 support requests; 3 pilot blockers",
+          "field_type": 0
+        },
+        "twWfPa": {
+          "data": "4",
+          "field_type": 1
+        },
+        "oTSxTX": {
+          "field_type": 0,
+          "data": "Increase enterprise pilot-to-paid conversion from 35% to 50%"
+        }
+      }
+    },
+    {
+      "id": "2f75a523-bf76-4403-8fa0-3138f29964ae",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "_l_VbU": {
+          "data": "OPP-002",
+          "field_type": 0
+        },
+        "OZWf-Z": {
+          "data": "Distributed teams need more reliable cross-device syncing",
+          "field_type": 0
+        },
+        "QWRNxJ": {
+          "data": "5",
+          "field_type": 1
+        },
+        "SFJ4qS": {
+          "field_type": 0,
+          "data": "Distributed product and engineering teams"
+        },
+        "0BLopB": {
+          "data": "Noah Williams",
+          "field_type": 0
+        },
+        "oTSxTX": {
+          "data": "Reduce sync-related support cases by 50%",
+          "field_type": 0
+        },
+        "twWfPa": {
+          "data": "5",
+          "field_type": 1
+        },
+        "A1rIR-": {
+          "field_type": 0,
+          "data": "Sync telemetry review; 21 support cases; 6 customer interviews"
+        },
+        "DQQEP0": {
+          "field_type": 3,
+          "data": "G0ZZ"
+        },
+        "1VVTY5": {
+          "field_type": 3,
+          "data": "Qoji"
+        },
+        "aqLMzQ": {
+          "data": "5",
+          "field_type": 1
+        },
+        "w9soZC": {
+          "field_type": 1,
+          "data": "5"
+        },
+        "iCdZnz": {
+          "data": "Teams working across desktop and mobile experience delays or conflicts when connectivity is unstable or datasets are large.",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "5d9399bf-7d92-465f-b86e-01c97a4c8915",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "twWfPa": {
+          "field_type": 1,
+          "data": "4"
+        },
+        "w9soZC": {
+          "data": "5",
+          "field_type": 1
+        },
+        "iCdZnz": {
+          "data": "Security-conscious organizations cannot send workspace content to externally hosted AI providers.",
+          "field_type": 0
+        },
+        "SFJ4qS": {
+          "field_type": 0,
+          "data": "Regulated and air-gapped organizations"
+        },
+        "A1rIR-": {
+          "field_type": 0,
+          "data": "9 enterprise requests; 4 security reviews; 2 paid pilots"
+        },
+        "0BLopB": {
+          "data": "Ava Patel",
+          "field_type": 0
+        },
+        "DQQEP0": {
+          "data": "3a9I",
+          "field_type": 3
+        },
+        "QWRNxJ": {
+          "data": "4",
+          "field_type": 1
+        },
+        "oTSxTX": {
+          "data": "Enable 5 on-prem AI deployments this quarter",
+          "field_type": 0
+        },
+        "OZWf-Z": {
+          "field_type": 0,
+          "data": "Regulated organizations need AI within their own infrastructure"
+        },
+        "aqLMzQ": {
+          "field_type": 1,
+          "data": "5"
+        },
+        "1VVTY5": {
+          "data": "Qoji",
+          "field_type": 3
+        },
+        "_l_VbU": {
+          "data": "OPP-003",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "aa2424c1-e25f-4e6b-9c2f-ab556f693685",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "aqLMzQ": {
+          "field_type": 1,
+          "data": "5.33"
+        },
+        "DQQEP0": {
+          "data": "3a9I",
+          "field_type": 3
+        },
+        "w9soZC": {
+          "field_type": 1,
+          "data": "4"
+        },
+        "SFJ4qS": {
+          "field_type": 0,
+          "data": "Teams migrating from legacy knowledge tools"
+        },
+        "_l_VbU": {
+          "field_type": 0,
+          "data": "OPP-004"
+        },
+        "0BLopB": {
+          "field_type": 0,
+          "data": "Leo Martin"
+        },
+        "A1rIR-": {
+          "field_type": 0,
+          "data": "15 onboarding sessions; 7 migration samples; sales pipeline analysis"
+        },
+        "OZWf-Z": {
+          "field_type": 0,
+          "data": "New customers need a faster migration path"
+        },
+        "QWRNxJ": {
+          "field_type": 1,
+          "data": "4"
+        },
+        "oTSxTX": {
+          "field_type": 0,
+          "data": "Reduce median migration setup time from 10 days to 3 days"
+        },
+        "twWfPa": {
+          "data": "3",
+          "field_type": 1
+        },
+        "1VVTY5": {
+          "field_type": 3,
+          "data": "Qoji"
+        },
+        "iCdZnz": {
+          "field_type": 0,
+          "data": "Prospects delay adoption because importing large workspaces requires manual cleanup and loses structure."
+        }
+      }
+    },
+    {
+      "id": "a8f42a7a-8183-43aa-b297-c8fa32a3f964",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "aqLMzQ": {
+          "data": "4",
+          "field_type": 1
+        },
+        "twWfPa": {
+          "field_type": 1,
+          "data": "3"
+        },
+        "0BLopB": {
+          "field_type": 0,
+          "data": "Sofia Rossi"
+        },
+        "DQQEP0": {
+          "data": "tNzJ",
+          "field_type": 3
+        },
+        "iCdZnz": {
+          "data": "Leaders cannot quickly identify blocked initiatives, slipping milestones, or overloaded teams across the portfolio.",
+          "field_type": 0
+        },
+        "w9soZC": {
+          "data": "4",
+          "field_type": 1
+        },
+        "QWRNxJ": {
+          "field_type": 1,
+          "data": "3"
+        },
+        "OZWf-Z": {
+          "data": "Product teams need better visibility into delivery risk",
+          "field_type": 0
+        },
+        "1VVTY5": {
+          "field_type": 3,
+          "data": "CAh7"
+        },
+        "A1rIR-": {
+          "field_type": 0,
+          "data": "5 design-partner interviews; internal planning retrospective"
+        },
+        "SFJ4qS": {
+          "data": "Product and engineering leaders",
+          "field_type": 0
+        },
+        "oTSxTX": {
+          "data": "Reduce weekly portfolio reporting time by 60%",
+          "field_type": 0
+        },
+        "_l_VbU": {
+          "data": "OPP-005",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "3dea94c0-459a-46ca-9180-1f35ae13e574",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0BLopB": {
+          "data": "Emma Davis",
+          "field_type": 0
+        },
+        "twWfPa": {
+          "data": "2",
+          "field_type": 1
+        },
+        "QWRNxJ": {
+          "field_type": 1,
+          "data": "4"
+        },
+        "DQQEP0": {
+          "field_type": 3,
+          "data": "G0ZZ"
+        },
+        "iCdZnz": {
+          "field_type": 0,
+          "data": "Enterprise visitors understand the product but lack enough proof, deployment detail, and outcome-oriented examples to request a demo."
+        },
+        "1VVTY5": {
+          "field_type": 3,
+          "data": "Qoji"
+        },
+        "oTSxTX": {
+          "data": "Increase qualified demo conversion from 1.8% to 2.7%",
+          "field_type": 0
+        },
+        "w9soZC": {
+          "field_type": 1,
+          "data": "4"
+        },
+        "aqLMzQ": {
+          "data": "8",
+          "field_type": 1
+        },
+        "A1rIR-": {
+          "field_type": 0,
+          "data": "Funnel analysis; 10 sales interviews; usability test findings"
+        },
+        "SFJ4qS": {
+          "data": "Enterprise software buyers",
+          "field_type": 0
+        },
+        "_l_VbU": {
+          "field_type": 0,
+          "data": "OPP-006"
+        },
+        "OZWf-Z": {
+          "data": "Website visitors need clearer enterprise proof",
+          "field_type": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1079 @@
+{
+  "template_id": "user-interview",
+  "order": 130,
+  "name": "User Interview",
+  "description": "Keep and organize your interviews.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"user-multiple-group\",\"color\":\"0xFFAAD93D\"}"
+  },
+  "category": "Docs",
+  "categories": [
+    "Docs",
+    "Startups"
+  ],
+  "author": "Slite",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/User-Interview-9a2501d5-5107-4509-9a56-a8647c48e059",
+  "pages": {
+    "id": "9a2501d5-5107-4509-9a56-a8647c48e059",
+    "name": "User Interview",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"user-multiple-group\",\"color\":\"0xFFAAD93D\"}"
+    },
+    "document": {
+      "page_id": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+      "blocks": {
+        "ce9682cd-0005-5a01-ae2b-01589fdcd261": {
+          "id": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "ty": "page",
+          "parent": "",
+          "children": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "external_id": "mP_sUr",
+          "external_type": "text",
+          "data": {
+            "cover_selection_type": "CoverType.file",
+            "image_type": "1",
+            "selected_icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"user-multiple-group\",\"color\":\"0xFFAAD93D\"}",
+            "cover_selection": "https://images.unsplash.com/photo-1710362921917-2e33bb342a23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ1OTIwNTR8&ixlib=rb-4.0.3&q=80&w=1080"
+          }
+        },
+        "0CPx5L": {
+          "id": "0CPx5L",
+          "ty": "paragraph",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "TeOH7g",
+          "external_id": "HY85ei",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "Kq2ht8": {
+          "id": "Kq2ht8",
+          "ty": "callout",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "jWAmMy",
+          "external_id": "bE2ymI",
+          "external_type": "text",
+          "data": {
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"help-question-1\"}",
+            "bgColor": "appflowy_them_color_tint8",
+            "icon_type": "icon",
+            "textColor": "appflowy_them_color_tint8"
+          }
+        },
+        "psAxe1": {
+          "id": "psAxe1",
+          "ty": "paragraph",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "KqixGC",
+          "external_id": "e2QU4D",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Use this example as a starting doc for shaping your interviews and keep a nice tidy script."
+              }
+            ]
+          }
+        },
+        "pQqAJc": {
+          "id": "pQqAJc",
+          "ty": "heading",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "8bK_73",
+          "external_id": "CLsVPE",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Main takeaways"
+              }
+            ],
+            "level": 1
+          }
+        },
+        "OQZrq1": {
+          "id": "OQZrq1",
+          "ty": "bulleted_list",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "MW_RUZ",
+          "external_id": "2QG8Ie",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "The team is still unaware about some specific features, send them help center"
+              }
+            ]
+          }
+        },
+        "uFDdB4": {
+          "id": "uFDdB4",
+          "ty": "bulleted_list",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "94k7KD",
+          "external_id": "HSHFUa",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "The team would like the ability to integrate with more platforms"
+              }
+            ]
+          }
+        },
+        "9a7zZQ": {
+          "id": "9a7zZQ",
+          "ty": "paragraph",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "u2FRph",
+          "external_id": "ei11HE",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "BcPvWz": {
+          "id": "BcPvWz",
+          "ty": "heading",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "FpM8Y-",
+          "external_id": "uEgoMk",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Goal"
+              }
+            ],
+            "level": 1
+          }
+        },
+        "tgZYR8": {
+          "id": "tgZYR8",
+          "ty": "paragraph",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "Ejr8Hp",
+          "external_id": "8O_Wxy",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Understand how users are using the product, and how we can serve them better. "
+              }
+            ]
+          }
+        },
+        "LJj_VO": {
+          "id": "LJj_VO",
+          "ty": "paragraph",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "ax98WA",
+          "external_id": "ndluyY",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "d-rJeX": {
+          "id": "d-rJeX",
+          "ty": "heading",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "Eg5tBm",
+          "external_id": "yMYD9U",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "Interview notes"
+              }
+            ],
+            "level": 1
+          }
+        },
+        "O420lg": {
+          "id": "O420lg",
+          "ty": "paragraph",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "gqJed5",
+          "external_id": "ePbnrc",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "M7kW8n": {
+          "id": "M7kW8n",
+          "ty": "grid",
+          "parent": "ce9682cd-0005-5a01-ae2b-01589fdcd261",
+          "children": "JN0xvH",
+          "external_id": null,
+          "external_type": null,
+          "data": {
+            "view_id": "9be375d8-5018-40d8-ab28-1bfc21831dca",
+            "parent_id": "9a2501d5-5107-4509-9a56-a8647c48e059"
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "ce9682cd-0005-5a01-ae2b-01589fdcd261": [
+            "Kq2ht8",
+            "psAxe1",
+            "0CPx5L",
+            "pQqAJc",
+            "OQZrq1",
+            "uFDdB4",
+            "9a7zZQ",
+            "BcPvWz",
+            "tgZYR8",
+            "LJj_VO",
+            "d-rJeX",
+            "M7kW8n",
+            "O420lg"
+          ],
+          "TeOH7g": [],
+          "jWAmMy": [],
+          "KqixGC": [],
+          "8bK_73": [],
+          "MW_RUZ": [],
+          "94k7KD": [],
+          "u2FRph": [],
+          "FpM8Y-": [],
+          "Ejr8Hp": [],
+          "ax98WA": [],
+          "Eg5tBm": [],
+          "gqJed5": [],
+          "JN0xvH": []
+        },
+        "text_map": {
+          "HY85ei": "[]",
+          "bE2ymI": "[{\"insert\":\"Organization tip\"}]",
+          "e2QU4D": "[{\"insert\":\"Use this example as a starting doc for shaping your interviews and keep a nice tidy script.\"}]",
+          "CLsVPE": "[{\"insert\":\"Main takeaways\"}]",
+          "2QG8Ie": "[{\"insert\":\"The team is still unaware about some specific features, send them help center\"}]",
+          "HSHFUa": "[{\"insert\":\"The team would like the ability to integrate with more platforms\"}]",
+          "ei11HE": "[]",
+          "uEgoMk": "[{\"insert\":\"Goal\"}]",
+          "8O_Wxy": "[{\"insert\":\"Understand how users are using the product, and how we can serve them better. \"}]",
+          "ndluyY": "[]",
+          "yMYD9U": "[{\"insert\":\"Interview notes\"}]",
+          "ePbnrc": "[]"
+        }
+      }
+    },
+    "children": []
+  },
+  "embedded_databases": [
+    {
+      "block_id": "M7kW8n",
+      "name": "Notes",
+      "icon": {
+        "ty": 2,
+        "value": "{\"groupName\":\"artificial_intelligence\",\"iconName\":\"ai-upscale-spark\",\"color\":\"0xFFAAD93D\"}"
+      },
+      "view_ids": [
+        "9be375d8-5018-40d8-ab28-1bfc21831dca"
+      ],
+      "database": {
+        "database_id": "5fe77916-ecca-42c6-8cbf-c67c5384ebec",
+        "fields": [
+          {
+            "id": "zrXucR",
+            "name": "Name",
+            "field_type": 0,
+            "icon": "",
+            "type_options": {
+              "0": {
+                "data": ""
+              }
+            },
+            "is_primary": true
+          },
+          {
+            "id": "B9BwLZ",
+            "name": "Type",
+            "field_type": 3,
+            "icon": "",
+            "type_options": {
+              "3": {
+                "content": "{\"options\":[{\"id\":\"mR1O\",\"name\":\"Done\",\"color\":\"Purple\"}],\"disable_color\":false}"
+              }
+            },
+            "is_primary": false
+          },
+          {
+            "id": "hTHsd3",
+            "name": "Company size",
+            "field_type": 3,
+            "icon": "",
+            "type_options": {
+              "3": {
+                "content": "{\"options\":[{\"id\":\"ogzF\",\"name\":\"50-200\",\"color\":\"Purple\"}],\"disable_color\":false}"
+              },
+              "5": {
+                "content": "{\"options\":[{\"id\":\"Ecys\",\"name\":\"Yes\",\"color\":\"Green\"},{\"id\":\"C2Q-\",\"name\":\"No\",\"color\":\"Yellow\"}],\"disable_color\":false}"
+              }
+            },
+            "is_primary": false
+          },
+          {
+            "id": "LPitR0",
+            "name": "Interviewer",
+            "field_type": 3,
+            "icon": "",
+            "type_options": {
+              "0": {
+                "data": "",
+                "content": "{\"options\":[],\"disable_color\":false}"
+              },
+              "3": {
+                "content": "{\"options\":[{\"id\":\"mKxL\",\"name\":\"Arnaud\",\"color\":\"Purple\"}],\"disable_color\":false}"
+              }
+            },
+            "is_primary": false
+          },
+          {
+            "id": "Buuodt",
+            "name": "Text",
+            "field_type": 0,
+            "icon": "",
+            "type_options": {
+              "0": {}
+            },
+            "is_primary": false
+          }
+        ],
+        "views": [
+          {
+            "id": "9be375d8-5018-40d8-ab28-1bfc21831dca",
+            "database_id": "5fe77916-ecca-42c6-8cbf-c67c5384ebec",
+            "name": "Grid",
+            "layout": 0,
+            "layout_settings": {},
+            "filters": [],
+            "sorts": [],
+            "group_settings": [],
+            "row_orders": [
+              {
+                "id": "a78eb559-d33b-4a31-9705-7fea37efbeeb",
+                "height": 60
+              },
+              {
+                "height": 60,
+                "id": "d052b074-553f-451b-856b-cb37851c4b47"
+              },
+              {
+                "id": "b89b15dd-fb85-462a-b231-4d3ac97036ff",
+                "height": 60
+              }
+            ],
+            "field_orders": [
+              {
+                "id": "zrXucR"
+              },
+              {
+                "id": "B9BwLZ"
+              },
+              {
+                "id": "hTHsd3"
+              },
+              {
+                "id": "LPitR0"
+              },
+              {
+                "id": "Buuodt"
+              }
+            ],
+            "field_settings": {
+              "B9BwLZ": {
+                "wrap": true,
+                "visibility": 0,
+                "width": 150
+              },
+              "hTHsd3": {
+                "width": 150,
+                "wrap": true,
+                "visibility": 0
+              },
+              "zrXucR": {
+                "visibility": 0,
+                "wrap": true,
+                "width": 150
+              },
+              "LPitR0": {
+                "visibility": 0
+              },
+              "Buuodt": {
+                "visibility": 0
+              }
+            },
+            "is_inline": false,
+            "embedded": false,
+            "created_at": 1724567244
+          }
+        ],
+        "rows": [
+          {
+            "id": "d052b074-553f-451b-856b-cb37851c4b47",
+            "height": 60,
+            "visibility": true,
+            "cells": {
+              "zrXucR": {
+                "created_at": 1724567604,
+                "data": "User Interview Template",
+                "field_type": 0,
+                "last_modified": 1724567604
+              }
+            },
+            "document": {
+              "page_id": "013dc38f-e295-5215-be39-bd96d49b8d90",
+              "blocks": {
+                "013dc38f-e295-5215-be39-bd96d49b8d90": {
+                  "id": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "ty": "page",
+                  "parent": "",
+                  "children": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "QCj6Ak": {
+                  "id": "QCj6Ak",
+                  "ty": "heading",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "5J8EJv",
+                  "external_id": "SYH27W",
+                  "external_type": "text",
+                  "data": {
+                    "level": 1,
+                    "delta": [
+                      {
+                        "insert": "Takeaways"
+                      }
+                    ]
+                  }
+                },
+                "pdOXAy": {
+                  "id": "pdOXAy",
+                  "ty": "bulleted_list",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "5WDnR6",
+                  "external_id": "TYcqfQ",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "The team is still unaware about features x, y, z"
+                      }
+                    ]
+                  }
+                },
+                "JNW-Gz": {
+                  "id": "JNW-Gz",
+                  "ty": "bulleted_list",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "G-2FmW",
+                  "external_id": "FulmnX",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Takeaway 2"
+                      }
+                    ]
+                  }
+                },
+                "OTSCID": {
+                  "id": "OTSCID",
+                  "ty": "bulleted_list",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "kzaQ1Y",
+                  "external_id": "rhiWbI",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Takeaway 3"
+                      }
+                    ]
+                  }
+                },
+                "-rJVSE": {
+                  "id": "-rJVSE",
+                  "ty": "heading",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "-qF_sy",
+                  "external_id": "8DtpGw",
+                  "external_type": "text",
+                  "data": {
+                    "level": 1,
+                    "delta": [
+                      {
+                        "insert": "Goal"
+                      }
+                    ]
+                  }
+                },
+                "1gYF0L": {
+                  "id": "1gYF0L",
+                  "ty": "paragraph",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "MGOWhI",
+                  "external_id": "G864oG",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "What are you trying to find out with this interview?"
+                      }
+                    ]
+                  }
+                },
+                "b7dwBO": {
+                  "id": "b7dwBO",
+                  "ty": "heading",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "sR-JzV",
+                  "external_id": "Ef-yKt",
+                  "external_type": "text",
+                  "data": {
+                    "level": 1,
+                    "delta": [
+                      {
+                        "insert": "Feedback"
+                      }
+                    ]
+                  }
+                },
+                "zXu7QI": {
+                  "id": "zXu7QI",
+                  "ty": "heading",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "pbFfrA",
+                  "external_id": "Q0cSIf",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Why did you sign up? "
+                      }
+                    ],
+                    "level": 3
+                  }
+                },
+                "qBe9F6": {
+                  "id": "qBe9F6",
+                  "ty": "paragraph",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "Xya3NC",
+                  "external_id": "WpzhW9",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Record user's answer."
+                      }
+                    ]
+                  }
+                },
+                "iJ7i7z": {
+                  "id": "iJ7i7z",
+                  "ty": "paragraph",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "jnqvUv",
+                  "external_id": "EKuJui",
+                  "external_type": "text",
+                  "data": {
+                    "delta": []
+                  }
+                },
+                "VNgmOO": {
+                  "id": "VNgmOO",
+                  "ty": "heading",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "ZNwlPh",
+                  "external_id": "zJ5Wjt",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Have you tried other alternatives?"
+                      }
+                    ],
+                    "level": 3
+                  }
+                },
+                "KYtdjU": {
+                  "id": "KYtdjU",
+                  "ty": "bulleted_list",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "hz4N32",
+                  "external_id": "aXinZT",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Competitors"
+                      }
+                    ]
+                  }
+                },
+                "qHSFaL": {
+                  "id": "qHSFaL",
+                  "ty": "bulleted_list",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "7_edxv",
+                  "external_id": "jbutd1",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Process"
+                      }
+                    ]
+                  }
+                },
+                "nShaaX": {
+                  "id": "nShaaX",
+                  "ty": "paragraph",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "GgvQbj",
+                  "external_id": "5jyMM1",
+                  "external_type": "text",
+                  "data": {
+                    "delta": []
+                  }
+                },
+                "FC8ACG": {
+                  "id": "FC8ACG",
+                  "ty": "heading",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "TJSU9M",
+                  "external_id": "izV-K2",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Question #3"
+                      }
+                    ],
+                    "level": 3
+                  }
+                },
+                "mUqXov": {
+                  "id": "mUqXov",
+                  "ty": "paragraph",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "eYm2IN",
+                  "external_id": "MbOQkw",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Record user's answer."
+                      }
+                    ]
+                  }
+                },
+                "vwDdjp": {
+                  "id": "vwDdjp",
+                  "ty": "paragraph",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "ju6Lui",
+                  "external_id": "gXcNc5",
+                  "external_type": "text",
+                  "data": {
+                    "delta": []
+                  }
+                },
+                "th-fV0": {
+                  "id": "th-fV0",
+                  "ty": "heading",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "6CWVPy",
+                  "external_id": "z7W7Xt",
+                  "external_type": "text",
+                  "data": {
+                    "delta": [
+                      {
+                        "insert": "Resources"
+                      }
+                    ],
+                    "level": 1
+                  }
+                },
+                "Qf8ean": {
+                  "id": "Qf8ean",
+                  "ty": "paragraph",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "rr1uhx",
+                  "external_id": "iyqf5S",
+                  "external_type": "text",
+                  "data": {
+                    "delta": []
+                  }
+                },
+                "hrZClL": {
+                  "id": "hrZClL",
+                  "ty": "paragraph",
+                  "parent": "013dc38f-e295-5215-be39-bd96d49b8d90",
+                  "children": "dspJQg",
+                  "external_id": "MEU3ma",
+                  "external_type": "text",
+                  "data": {
+                    "delta": []
+                  }
+                }
+              },
+              "meta": {
+                "children_map": {
+                  "013dc38f-e295-5215-be39-bd96d49b8d90": [
+                    "QCj6Ak",
+                    "pdOXAy",
+                    "JNW-Gz",
+                    "OTSCID",
+                    "hrZClL",
+                    "-rJVSE",
+                    "1gYF0L",
+                    "Qf8ean",
+                    "b7dwBO",
+                    "zXu7QI",
+                    "qBe9F6",
+                    "iJ7i7z",
+                    "VNgmOO",
+                    "KYtdjU",
+                    "qHSFaL",
+                    "nShaaX",
+                    "FC8ACG",
+                    "mUqXov",
+                    "vwDdjp",
+                    "th-fV0"
+                  ],
+                  "5J8EJv": [],
+                  "5WDnR6": [],
+                  "G-2FmW": [],
+                  "kzaQ1Y": [],
+                  "-qF_sy": [],
+                  "MGOWhI": [],
+                  "sR-JzV": [],
+                  "pbFfrA": [],
+                  "Xya3NC": [],
+                  "jnqvUv": [],
+                  "ZNwlPh": [],
+                  "hz4N32": [],
+                  "7_edxv": [],
+                  "GgvQbj": [],
+                  "TJSU9M": [],
+                  "eYm2IN": [],
+                  "ju6Lui": [],
+                  "6CWVPy": [],
+                  "rr1uhx": [],
+                  "dspJQg": []
+                },
+                "text_map": {
+                  "SYH27W": "[{\"insert\":\"Takeaways\"}]",
+                  "TYcqfQ": "[{\"insert\":\"The team is still unaware about features x, y, z\"}]",
+                  "FulmnX": "[{\"insert\":\"Takeaway 2\"}]",
+                  "rhiWbI": "[{\"insert\":\"Takeaway 3\"}]",
+                  "8DtpGw": "[{\"insert\":\"Goal\"}]",
+                  "G864oG": "[{\"insert\":\"What are you trying to find out with this interview?\"}]",
+                  "Ef-yKt": "[{\"insert\":\"Feedback\"}]",
+                  "Q0cSIf": "[{\"insert\":\"Why did you sign up? \"}]",
+                  "WpzhW9": "[{\"insert\":\"Record user's answer.\"}]",
+                  "EKuJui": "[]",
+                  "zJ5Wjt": "[{\"insert\":\"Have you tried other alternatives?\"}]",
+                  "aXinZT": "[{\"insert\":\"Competitors\"}]",
+                  "jbutd1": "[{\"insert\":\"Process\"}]",
+                  "5jyMM1": "[]",
+                  "izV-K2": "[{\"insert\":\"Question #3\"}]",
+                  "MbOQkw": "[{\"insert\":\"Record user's answer.\"}]",
+                  "gXcNc5": "[]",
+                  "z7W7Xt": "[{\"insert\":\"Resources\"}]",
+                  "iyqf5S": "[]",
+                  "MEU3ma": "[]"
+                }
+              }
+            }
+          },
+          {
+            "id": "b89b15dd-fb85-462a-b231-4d3ac97036ff",
+            "height": 60,
+            "visibility": true,
+            "cells": {}
+          },
+          {
+            "id": "a78eb559-d33b-4a31-9705-7fea37efbeeb",
+            "height": 60,
+            "visibility": true,
+            "cells": {
+              "zrXucR": {
+                "created_at": 1724567274,
+                "data": "Lucie",
+                "field_type": 0,
+                "last_modified": 1724567416
+              },
+              "B9BwLZ": {
+                "created_at": 1724567275,
+                "field_type": 3,
+                "data": "mR1O",
+                "last_modified": 1724567275
+              },
+              "hTHsd3": {
+                "created_at": 1724567290,
+                "field_type": 3,
+                "data": "ogzF",
+                "last_modified": 1724567297
+              },
+              "LPitR0": {
+                "created_at": 1724567316,
+                "field_type": 3,
+                "data": "mKxL",
+                "last_modified": 1724567316
+              }
+            },
+            "document": {
+              "page_id": "03bc032c-371c-5389-a5e2-c28091e80f7b",
+              "blocks": {
+                "Dk1oWm": {
+                  "id": "Dk1oWm",
+                  "ty": "paragraph",
+                  "parent": "03bc032c-371c-5389-a5e2-c28091e80f7b",
+                  "children": "VYlT0d",
+                  "external_id": "hQW0-7",
+                  "external_type": "text",
+                  "data": {
+                    "delta": []
+                  }
+                },
+                "03bc032c-371c-5389-a5e2-c28091e80f7b": {
+                  "id": "03bc032c-371c-5389-a5e2-c28091e80f7b",
+                  "ty": "page",
+                  "parent": "",
+                  "children": "03bc032c-371c-5389-a5e2-c28091e80f7b",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "CAFMMC": {
+                  "id": "CAFMMC",
+                  "ty": "simple_table",
+                  "parent": "03bc032c-371c-5389-a5e2-c28091e80f7b",
+                  "children": "PNwBAF",
+                  "external_id": "JQicA7",
+                  "external_type": "text",
+                  "data": {
+                    "distribute_column_widths_evenly": false,
+                    "enable_header_column": false,
+                    "enable_header_row": true,
+                    "row_colors": {},
+                    "column_widths": {
+                      "0": 524.0546875,
+                      "1": 432.47265625
+                    }
+                  }
+                },
+                "xKSzDJ": {
+                  "id": "xKSzDJ",
+                  "ty": "simple_table_row",
+                  "parent": "CAFMMC",
+                  "children": "bCbpcr",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "MZMYId": {
+                  "id": "MZMYId",
+                  "ty": "simple_table_cell",
+                  "parent": "xKSzDJ",
+                  "children": "GXwjMy",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "y8kLCp": {
+                  "id": "y8kLCp",
+                  "ty": "paragraph",
+                  "parent": "MZMYId",
+                  "children": "ob5ZuQ",
+                  "external_id": "RRJ5lY",
+                  "external_type": "text",
+                  "data": {}
+                },
+                "zYtoj7": {
+                  "id": "zYtoj7",
+                  "ty": "simple_table_cell",
+                  "parent": "xKSzDJ",
+                  "children": "nJ9vD3",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "tUWUZO": {
+                  "id": "tUWUZO",
+                  "ty": "paragraph",
+                  "parent": "zYtoj7",
+                  "children": "kDXNgC",
+                  "external_id": "hYUktk",
+                  "external_type": "text",
+                  "data": {}
+                },
+                "k0_6oU": {
+                  "id": "k0_6oU",
+                  "ty": "simple_table_row",
+                  "parent": "CAFMMC",
+                  "children": "SinavM",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "0aJlC0": {
+                  "id": "0aJlC0",
+                  "ty": "simple_table_cell",
+                  "parent": "k0_6oU",
+                  "children": "Vnzy0w",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "jV5rML": {
+                  "id": "jV5rML",
+                  "ty": "paragraph",
+                  "parent": "0aJlC0",
+                  "children": "gkRCZ2",
+                  "external_id": "ume3ao",
+                  "external_type": "text",
+                  "data": {}
+                },
+                "-iaJUL": {
+                  "id": "-iaJUL",
+                  "ty": "simple_table_cell",
+                  "parent": "k0_6oU",
+                  "children": "mDicoD",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "9aqZka": {
+                  "id": "9aqZka",
+                  "ty": "paragraph",
+                  "parent": "-iaJUL",
+                  "children": "FNHASi",
+                  "external_id": "z_K4DK",
+                  "external_type": "text",
+                  "data": {}
+                },
+                "lqsW5z": {
+                  "id": "lqsW5z",
+                  "ty": "simple_table_row",
+                  "parent": "CAFMMC",
+                  "children": "VLEpbS",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "DWSRtH": {
+                  "id": "DWSRtH",
+                  "ty": "simple_table_cell",
+                  "parent": "lqsW5z",
+                  "children": "4SdsOR",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "ulrW8U": {
+                  "id": "ulrW8U",
+                  "ty": "paragraph",
+                  "parent": "DWSRtH",
+                  "children": "3TCEoY",
+                  "external_id": "xy1G2S",
+                  "external_type": "text",
+                  "data": {}
+                },
+                "GYFtai": {
+                  "id": "GYFtai",
+                  "ty": "simple_table_cell",
+                  "parent": "lqsW5z",
+                  "children": "NuZfvC",
+                  "external_id": null,
+                  "external_type": null,
+                  "data": {}
+                },
+                "zQ_KO2": {
+                  "id": "zQ_KO2",
+                  "ty": "paragraph",
+                  "parent": "GYFtai",
+                  "children": "k6cs_S",
+                  "external_id": "3aDvtz",
+                  "external_type": "text",
+                  "data": {}
+                }
+              },
+              "meta": {
+                "children_map": {
+                  "VYlT0d": [],
+                  "03bc032c-371c-5389-a5e2-c28091e80f7b": [
+                    "CAFMMC",
+                    "Dk1oWm"
+                  ],
+                  "PNwBAF": [
+                    "xKSzDJ",
+                    "k0_6oU",
+                    "lqsW5z"
+                  ],
+                  "bCbpcr": [
+                    "MZMYId",
+                    "zYtoj7"
+                  ],
+                  "GXwjMy": [
+                    "y8kLCp"
+                  ],
+                  "ob5ZuQ": [],
+                  "nJ9vD3": [
+                    "tUWUZO"
+                  ],
+                  "kDXNgC": [],
+                  "SinavM": [
+                    "0aJlC0",
+                    "-iaJUL"
+                  ],
+                  "Vnzy0w": [
+                    "jV5rML"
+                  ],
+                  "gkRCZ2": [],
+                  "mDicoD": [
+                    "9aqZka"
+                  ],
+                  "FNHASi": [],
+                  "VLEpbS": [
+                    "DWSRtH",
+                    "GYFtai"
+                  ],
+                  "4SdsOR": [
+                    "ulrW8U"
+                  ],
+                  "3TCEoY": [],
+                  "NuZfvC": [
+                    "zQ_KO2"
+                  ],
+                  "k6cs_S": []
+                },
+                "text_map": {
+                  "hQW0-7": "[]",
+                  "RRJ5lY": "[{\"insert\":\"Company Size\"}]",
+                  "hYUktk": "[{\"insert\":\"130\"}]",
+                  "ume3ao": "[{\"insert\":\"Location\"}]",
+                  "z_K4DK": "[{\"insert\":\"Brazil\"}]",
+                  "xy1G2S": "[{\"insert\":\"Why did you sign up? \"}]",
+                  "3aDvtz": "[{\"insert\":\"The team needed a doc solution, a nice clean easy place to put documentation and collaborate. \"}]"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

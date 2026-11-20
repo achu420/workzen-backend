@@ -1,0 +1,1460 @@
+{
+  "template_id": "project-progress-tracker",
+  "order": 103,
+  "name": "Project Progress Tracker",
+  "description": "Track project completion, count tasks by status, and spot blockers with linked task rollups.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"color\":\"0xFFFFBA00\",\"groupName\":\"interface_essential\",\"iconName\":\"half-star-1\"}"
+  },
+  "category": "Project Management",
+  "categories": [
+    "Management",
+    "Project Management",
+    "Database"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/project-task-progress",
+  "database_id": "84fc9bc3-d4bc-4b57-804e-32320cc9e698",
+  "fields": [
+    {
+      "id": "blocked_percent",
+      "name": "Blocked %",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "__rollup_show_as_type__": 2,
+          "relation_field_id": "project_tasks",
+          "__rollup_show_as_show_number__": true,
+          "__rollup_show_as_color__": "text-color-1",
+          "condition_value": "[\"task_tags2\"]",
+          "show_as": 0,
+          "target_field_id": "task_tags",
+          "calculation_type": 21
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "design_eng_count",
+      "name": "Design or Engineering",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "calculation_type": 18,
+          "condition_value": "[\"task_tags0\",\"task_tags1\"]",
+          "relation_field_id": "project_tasks",
+          "show_as": 0,
+          "target_field_id": "task_tags",
+          "__rollup_show_as_show_number__": true,
+          "__rollup_show_as_type__": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "blocked_count",
+      "name": "Blocked tasks",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "__rollup_show_as_type__": 0,
+          "calculation_type": 18,
+          "condition_value": "[\"task_tags2\"]",
+          "relation_field_id": "project_tasks",
+          "target_field_id": "task_tags",
+          "__rollup_show_as_show_number__": true,
+          "show_as": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "project_tasks",
+      "name": "Tasks",
+      "field_type": 10,
+      "icon": "",
+      "type_options": {
+        "10": {
+          "database_id": "7c72434c-93f8-499a-a578-e0d73e9866fe",
+          "reciprocal_field_name": "Project",
+          "is_two_way": true,
+          "source_limit": 0,
+          "target_limit": 1,
+          "reciprocal_field_id": "task_project"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "done_percent",
+      "name": "Done %",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "show_as": 0,
+          "relation_field_id": "project_tasks",
+          "__rollup_show_as_color__": "text-color-8",
+          "calculation_type": 21,
+          "__rollup_show_as_type__": 2,
+          "__rollup_show_as_show_number__": true,
+          "condition_value": "[\"task_status2\"]",
+          "target_field_id": "task_status"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "progress_percent",
+      "name": "In progress %",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "show_as": 0,
+          "target_field_id": "task_status",
+          "calculation_type": 21,
+          "__rollup_show_as_show_number__": true,
+          "__rollup_show_as_type__": 2,
+          "condition_value": "[\"task_status1\"]",
+          "relation_field_id": "project_tasks"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "project_title",
+      "name": "Project",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "progress_count",
+      "name": "In progress",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "target_field_id": "task_status",
+          "show_as": 0,
+          "calculation_type": 18,
+          "__rollup_show_as_type__": 0,
+          "condition_value": "[\"task_status1\"]",
+          "__rollup_show_as_show_number__": true,
+          "relation_field_id": "project_tasks"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "done_count",
+      "name": "Done",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "condition_value": "[\"task_status2\"]",
+          "__rollup_show_as_show_number__": true,
+          "relation_field_id": "project_tasks",
+          "show_as": 0,
+          "target_field_id": "task_status",
+          "__rollup_show_as_type__": 0,
+          "calculation_type": 18
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "started_percent",
+      "name": "In progress or Done %",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "__rollup_show_as_color__": "text-color-4",
+          "__rollup_show_as_show_number__": true,
+          "condition_value": "[\"task_status1\",\"task_status2\"]",
+          "target_field_id": "task_status",
+          "calculation_type": 21,
+          "show_as": 0,
+          "relation_field_id": "project_tasks",
+          "__rollup_show_as_type__": 2
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "total_tasks",
+      "name": "Total tasks",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "__rollup_show_as_show_number__": true,
+          "__rollup_show_as_type__": 0,
+          "calculation_type": 5,
+          "condition_value": "[]",
+          "show_as": 0,
+          "target_field_id": "task_title",
+          "relation_field_id": "project_tasks"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "design_eng_percent",
+      "name": "Design or Engineering %",
+      "field_type": 16,
+      "icon": "",
+      "type_options": {
+        "16": {
+          "__rollup_show_as_color__": "text-color-15",
+          "relation_field_id": "project_tasks",
+          "__rollup_show_as_show_number__": true,
+          "target_field_id": "task_tags",
+          "calculation_type": 21,
+          "__rollup_show_as_type__": 2,
+          "condition_value": "[\"task_tags0\",\"task_tags1\"]",
+          "show_as": 0
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "3074979a-fd0c-47d3-ab84-7934877b4ee7",
+      "database_id": "84fc9bc3-d4bc-4b57-804e-32320cc9e698",
+      "name": "Status summary",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 64,
+          "id": "cd9f628c-47a2-46a5-a34a-ca3395930cad"
+        },
+        {
+          "height": 64,
+          "id": "839cc247-b2a6-4880-98ad-9dd1707bdc91"
+        },
+        {
+          "id": "68cfccd7-b514-48a7-a709-6e13395875db",
+          "height": 64
+        },
+        {
+          "height": 64,
+          "id": "aaeec359-af13-4c1e-be6b-0dd36dd68726"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "project_title"
+        },
+        {
+          "id": "project_tasks"
+        },
+        {
+          "id": "total_tasks"
+        },
+        {
+          "id": "progress_count"
+        },
+        {
+          "id": "progress_percent"
+        },
+        {
+          "id": "done_count"
+        },
+        {
+          "id": "done_percent"
+        },
+        {
+          "id": "started_percent"
+        },
+        {
+          "id": "blocked_count"
+        },
+        {
+          "id": "blocked_percent"
+        },
+        {
+          "id": "design_eng_count"
+        },
+        {
+          "id": "design_eng_percent"
+        }
+      ],
+      "field_settings": {
+        "design_eng_percent": {
+          "width": "245",
+          "wrap": false,
+          "visibility": 2
+        },
+        "progress_count": {
+          "wrap": false,
+          "visibility": 0,
+          "width": "140"
+        },
+        "total_tasks": {
+          "width": "125",
+          "wrap": false,
+          "visibility": 0
+        },
+        "started_percent": {
+          "wrap": false,
+          "width": "225",
+          "visibility": 0
+        },
+        "project_title": {
+          "visibility": 0,
+          "wrap": false,
+          "width": "185"
+        },
+        "done_percent": {
+          "visibility": 0,
+          "width": "110",
+          "wrap": false
+        },
+        "design_eng_count": {
+          "width": "215",
+          "visibility": 2,
+          "wrap": false
+        },
+        "blocked_percent": {
+          "wrap": false,
+          "width": "140",
+          "visibility": 2
+        },
+        "done_count": {
+          "width": "100",
+          "wrap": false,
+          "visibility": 0
+        },
+        "progress_percent": {
+          "wrap": false,
+          "width": "150",
+          "visibility": 0
+        },
+        "blocked_count": {
+          "wrap": false,
+          "width": "145",
+          "visibility": 2
+        },
+        "project_tasks": {
+          "visibility": 2,
+          "width": "600",
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1791958820
+    },
+    {
+      "id": "fb5b21d1-7554-497d-b2bb-8099e738195e",
+      "database_id": "84fc9bc3-d4bc-4b57-804e-32320cc9e698",
+      "name": "Tag coverage",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 64,
+          "id": "cd9f628c-47a2-46a5-a34a-ca3395930cad"
+        },
+        {
+          "height": 64,
+          "id": "839cc247-b2a6-4880-98ad-9dd1707bdc91"
+        },
+        {
+          "height": 64,
+          "id": "68cfccd7-b514-48a7-a709-6e13395875db"
+        },
+        {
+          "id": "aaeec359-af13-4c1e-be6b-0dd36dd68726",
+          "height": 64
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "project_title"
+        },
+        {
+          "id": "project_tasks"
+        },
+        {
+          "id": "total_tasks"
+        },
+        {
+          "id": "progress_count"
+        },
+        {
+          "id": "progress_percent"
+        },
+        {
+          "id": "done_count"
+        },
+        {
+          "id": "done_percent"
+        },
+        {
+          "id": "started_percent"
+        },
+        {
+          "id": "blocked_count"
+        },
+        {
+          "id": "blocked_percent"
+        },
+        {
+          "id": "design_eng_count"
+        },
+        {
+          "id": "design_eng_percent"
+        }
+      ],
+      "field_settings": {
+        "done_count": {
+          "wrap": false,
+          "width": "100",
+          "visibility": 2
+        },
+        "blocked_count": {
+          "wrap": false,
+          "visibility": 0,
+          "width": "145"
+        },
+        "total_tasks": {
+          "width": "125",
+          "wrap": false,
+          "visibility": 0
+        },
+        "design_eng_percent": {
+          "visibility": 0,
+          "wrap": false,
+          "width": "245"
+        },
+        "project_title": {
+          "visibility": 0,
+          "width": "185",
+          "wrap": false
+        },
+        "progress_count": {
+          "visibility": 2,
+          "width": "140",
+          "wrap": false
+        },
+        "project_tasks": {
+          "wrap": false,
+          "width": "600",
+          "visibility": 2
+        },
+        "progress_percent": {
+          "visibility": 2,
+          "width": "150",
+          "wrap": false
+        },
+        "blocked_percent": {
+          "visibility": 0,
+          "width": "140",
+          "wrap": false
+        },
+        "started_percent": {
+          "wrap": false,
+          "width": "225",
+          "visibility": 2
+        },
+        "design_eng_count": {
+          "visibility": 0,
+          "width": "215",
+          "wrap": false
+        },
+        "done_percent": {
+          "visibility": 2,
+          "wrap": false,
+          "width": "110"
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1791959191
+    },
+    {
+      "id": "3fe1fc0a-0c05-4f96-b29f-c4fae6f4d903",
+      "database_id": "84fc9bc3-d4bc-4b57-804e-32320cc9e698",
+      "name": "Related tasks",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "cd9f628c-47a2-46a5-a34a-ca3395930cad",
+          "height": 64
+        },
+        {
+          "height": 64,
+          "id": "839cc247-b2a6-4880-98ad-9dd1707bdc91"
+        },
+        {
+          "height": 64,
+          "id": "68cfccd7-b514-48a7-a709-6e13395875db"
+        },
+        {
+          "id": "aaeec359-af13-4c1e-be6b-0dd36dd68726",
+          "height": 64
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "project_title"
+        },
+        {
+          "id": "project_tasks"
+        },
+        {
+          "id": "total_tasks"
+        },
+        {
+          "id": "progress_count"
+        },
+        {
+          "id": "progress_percent"
+        },
+        {
+          "id": "done_count"
+        },
+        {
+          "id": "done_percent"
+        },
+        {
+          "id": "started_percent"
+        },
+        {
+          "id": "blocked_count"
+        },
+        {
+          "id": "blocked_percent"
+        },
+        {
+          "id": "design_eng_count"
+        },
+        {
+          "id": "design_eng_percent"
+        }
+      ],
+      "field_settings": {
+        "blocked_count": {
+          "wrap": false,
+          "width": "145",
+          "visibility": 2
+        },
+        "design_eng_count": {
+          "visibility": 2,
+          "width": "215",
+          "wrap": false
+        },
+        "project_title": {
+          "width": "185",
+          "visibility": 0,
+          "wrap": false
+        },
+        "blocked_percent": {
+          "width": "140",
+          "wrap": false,
+          "visibility": 2
+        },
+        "project_tasks": {
+          "width": "600",
+          "visibility": 0,
+          "wrap": true
+        },
+        "total_tasks": {
+          "wrap": false,
+          "visibility": 0,
+          "width": "125"
+        },
+        "done_percent": {
+          "wrap": false,
+          "visibility": 2,
+          "width": "110"
+        },
+        "started_percent": {
+          "wrap": false,
+          "visibility": 2,
+          "width": "225"
+        },
+        "done_count": {
+          "width": "100",
+          "wrap": false,
+          "visibility": 2
+        },
+        "progress_percent": {
+          "wrap": false,
+          "visibility": 2,
+          "width": "150"
+        },
+        "progress_count": {
+          "width": "140",
+          "wrap": false,
+          "visibility": 2
+        },
+        "design_eng_percent": {
+          "visibility": 2,
+          "width": "245",
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1791959587
+    }
+  ],
+  "rows": [
+    {
+      "id": "aaeec359-af13-4c1e-be6b-0dd36dd68726",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "project_tasks": {
+          "created_at": "1791959076",
+          "last_modified": "1791959076",
+          "field_type": 10,
+          "data": []
+        },
+        "project_title": {
+          "created_at": "1791959076",
+          "data": "Next quarter planning",
+          "last_modified": "1791959076",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "cd9f628c-47a2-46a5-a34a-ca3395930cad",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "project_title": {
+          "field_type": 0,
+          "created_at": "1791959076",
+          "last_modified": "1791959076",
+          "data": "Website launch"
+        },
+        "project_tasks": {
+          "last_modified": "1791959076",
+          "data": [
+            "0a428e10-35f0-4150-a435-2725dd4d1ad6",
+            "ee3b6824-412e-4e2b-ad92-4a0d7b636ad2",
+            "ff6df11d-b527-4b40-aac0-1e0ec4b42dd9",
+            "bb2bd29e-9919-46d4-beb0-807d7eb7505d",
+            "b0574c32-4e05-444a-81f0-3e3e95fe82be",
+            "d526c4d1-a7b8-4add-9334-10aa5be2708f"
+          ],
+          "field_type": 10,
+          "created_at": "1791959076"
+        }
+      }
+    },
+    {
+      "id": "68cfccd7-b514-48a7-a709-6e13395875db",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "project_title": {
+          "field_type": 0,
+          "data": "Customer research",
+          "created_at": "1791959076",
+          "last_modified": "1791959076"
+        },
+        "project_tasks": {
+          "created_at": "1791959076",
+          "data": [
+            "a5d1c742-1812-49d4-97fc-de1191ebc6cb",
+            "10894d1d-474a-42e2-bc58-96384f7aa792",
+            "575f566e-2381-4cc0-a400-b01044bd8b33",
+            "92a73781-1f71-4c85-8398-f6936f4b3975"
+          ],
+          "last_modified": "1791959076",
+          "field_type": 10
+        }
+      }
+    },
+    {
+      "id": "839cc247-b2a6-4880-98ad-9dd1707bdc91",
+      "height": 64,
+      "visibility": true,
+      "cells": {
+        "project_title": {
+          "field_type": 0,
+          "created_at": "1791959076",
+          "last_modified": "1791959076",
+          "data": "Mobile onboarding"
+        },
+        "project_tasks": {
+          "created_at": "1791959076",
+          "data": [
+            "19588f67-4a42-4155-b6a3-50864b769d55",
+            "31ef0376-59ff-48cd-80cf-2492621e535e",
+            "a2e203c3-e09d-4af7-a560-eca03b0b3d26",
+            "f9e54f9f-1e6b-4b81-9517-6719a0efe561"
+          ],
+          "last_modified": "1791959076",
+          "field_type": 10
+        }
+      }
+    }
+  ],
+  "related_databases": [
+    {
+      "database_id": "7c72434c-93f8-499a-a578-e0d73e9866fe",
+      "fields": [
+        {
+          "id": "task_project",
+          "name": "Project",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "reciprocal_field_id": "project_tasks",
+              "source_limit": 1,
+              "target_limit": 0,
+              "reciprocal_field_name": "Tasks",
+              "database_id": "84fc9bc3-d4bc-4b57-804e-32320cc9e698",
+              "is_two_way": true
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "task_owner",
+          "name": "Owner",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "task_status",
+          "name": "Status",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"task_status0\",\"name\":\"To do\",\"color\":\"Purple\"},{\"id\":\"task_status1\",\"name\":\"In progress\",\"color\":\"Blue\"},{\"id\":\"task_status2\",\"name\":\"Done\",\"color\":\"Green\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "task_tags",
+          "name": "Tags",
+          "field_type": 4,
+          "icon": "",
+          "type_options": {
+            "4": {
+              "content": "{\"options\":[{\"id\":\"task_tags0\",\"name\":\"Design\",\"color\":\"Purple\"},{\"id\":\"task_tags1\",\"name\":\"Engineering\",\"color\":\"Blue\"},{\"id\":\"task_tags2\",\"name\":\"Blocked\",\"color\":\"Red\"},{\"id\":\"task_tags3\",\"name\":\"Content\",\"color\":\"Orange\"},{\"id\":\"task_tags4\",\"name\":\"Research\",\"color\":\"Pink\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "task_title",
+          "name": "Task",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": true
+        }
+      ],
+      "views": [
+        {
+          "id": "76959272-04d6-4f35-a714-4c7f8f16d9bc",
+          "database_id": "7c72434c-93f8-499a-a578-e0d73e9866fe",
+          "name": "All tasks",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "height": 64,
+              "id": "0a428e10-35f0-4150-a435-2725dd4d1ad6"
+            },
+            {
+              "height": 64,
+              "id": "ee3b6824-412e-4e2b-ad92-4a0d7b636ad2"
+            },
+            {
+              "height": 64,
+              "id": "ff6df11d-b527-4b40-aac0-1e0ec4b42dd9"
+            },
+            {
+              "id": "bb2bd29e-9919-46d4-beb0-807d7eb7505d",
+              "height": 64
+            },
+            {
+              "height": 64,
+              "id": "b0574c32-4e05-444a-81f0-3e3e95fe82be"
+            },
+            {
+              "id": "d526c4d1-a7b8-4add-9334-10aa5be2708f",
+              "height": 64
+            },
+            {
+              "id": "19588f67-4a42-4155-b6a3-50864b769d55",
+              "height": 64
+            },
+            {
+              "height": 64,
+              "id": "31ef0376-59ff-48cd-80cf-2492621e535e"
+            },
+            {
+              "height": 64,
+              "id": "a2e203c3-e09d-4af7-a560-eca03b0b3d26"
+            },
+            {
+              "height": 64,
+              "id": "f9e54f9f-1e6b-4b81-9517-6719a0efe561"
+            },
+            {
+              "height": 64,
+              "id": "a5d1c742-1812-49d4-97fc-de1191ebc6cb"
+            },
+            {
+              "height": 64,
+              "id": "10894d1d-474a-42e2-bc58-96384f7aa792"
+            },
+            {
+              "id": "575f566e-2381-4cc0-a400-b01044bd8b33",
+              "height": 64
+            },
+            {
+              "id": "92a73781-1f71-4c85-8398-f6936f4b3975",
+              "height": 64
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "task_title"
+            },
+            {
+              "id": "task_status"
+            },
+            {
+              "id": "task_tags"
+            },
+            {
+              "id": "task_owner"
+            },
+            {
+              "id": "task_project"
+            }
+          ],
+          "field_settings": {
+            "task_project": {
+              "width": "260",
+              "wrap": true,
+              "visibility": 0
+            },
+            "task_tags": {
+              "wrap": true,
+              "visibility": 0,
+              "width": "240"
+            },
+            "task_title": {
+              "visibility": 0,
+              "wrap": true,
+              "width": "280"
+            },
+            "task_owner": {
+              "width": "130",
+              "visibility": 0,
+              "wrap": true
+            },
+            "task_status": {
+              "width": "150",
+              "wrap": true,
+              "visibility": 0
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1791958825
+        }
+      ],
+      "rows": [
+        {
+          "id": "a5d1c742-1812-49d4-97fc-de1191ebc6cb",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_tags": {
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "data": "task_tags4,task_tags3",
+              "field_type": 4
+            },
+            "task_project": {
+              "created_at": "1791959070",
+              "field_type": 10,
+              "last_modified": "1791959070",
+              "data": [
+                "68cfccd7-b514-48a7-a709-6e13395875db"
+              ]
+            },
+            "task_status": {
+              "data": "task_status2",
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "field_type": 3
+            },
+            "task_owner": {
+              "created_at": "1791959070",
+              "data": "Riley",
+              "last_modified": "1791959070",
+              "field_type": 0
+            },
+            "task_title": {
+              "created_at": "1791959070",
+              "data": "Draft interview guide",
+              "last_modified": "1791959070",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "a2e203c3-e09d-4af7-a560-eca03b0b3d26",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_project": {
+              "created_at": "1791959070",
+              "data": [
+                "839cc247-b2a6-4880-98ad-9dd1707bdc91"
+              ],
+              "field_type": 10,
+              "last_modified": "1791959070"
+            },
+            "task_tags": {
+              "data": "task_tags1,task_tags2",
+              "created_at": "1791959070",
+              "field_type": 4,
+              "last_modified": "1791959070"
+            },
+            "task_title": {
+              "field_type": 0,
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": "Resolve login issue"
+            },
+            "task_owner": {
+              "data": "Alex",
+              "field_type": 0,
+              "last_modified": "1791959070",
+              "created_at": "1791959070"
+            },
+            "task_status": {
+              "created_at": "1791959070",
+              "field_type": 3,
+              "data": "task_status1",
+              "last_modified": "1791959070"
+            }
+          }
+        },
+        {
+          "id": "19588f67-4a42-4155-b6a3-50864b769d55",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_project": {
+              "field_type": 10,
+              "created_at": "1791959070",
+              "data": [
+                "839cc247-b2a6-4880-98ad-9dd1707bdc91"
+              ],
+              "last_modified": "1791959070"
+            },
+            "task_owner": {
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "field_type": 0,
+              "data": "Riley"
+            },
+            "task_status": {
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "data": "task_status2",
+              "field_type": 3
+            },
+            "task_tags": {
+              "field_type": 4,
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "data": "task_tags0"
+            },
+            "task_title": {
+              "created_at": "1791959070",
+              "data": "Map onboarding flow",
+              "last_modified": "1791959070",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "10894d1d-474a-42e2-bc58-96384f7aa792",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_owner": {
+              "field_type": 0,
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "data": "Jordan"
+            },
+            "task_project": {
+              "field_type": 10,
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": [
+                "68cfccd7-b514-48a7-a709-6e13395875db"
+              ]
+            },
+            "task_tags": {
+              "data": "task_tags4",
+              "field_type": 4,
+              "created_at": "1791959070",
+              "last_modified": "1791959070"
+            },
+            "task_title": {
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "field_type": 0,
+              "data": "Recruit participants"
+            },
+            "task_status": {
+              "created_at": "1791959070",
+              "field_type": 3,
+              "data": "task_status2",
+              "last_modified": "1791959070"
+            }
+          }
+        },
+        {
+          "id": "92a73781-1f71-4c85-8398-f6936f4b3975",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_project": {
+              "last_modified": "1791959070",
+              "field_type": 10,
+              "created_at": "1791959070",
+              "data": [
+                "68cfccd7-b514-48a7-a709-6e13395875db"
+              ]
+            },
+            "task_status": {
+              "data": "task_status0",
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "field_type": 3
+            },
+            "task_tags": {
+              "data": "task_tags3",
+              "field_type": 4,
+              "last_modified": "1791959070",
+              "created_at": "1791959070"
+            },
+            "task_owner": {
+              "data": "Alex",
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "field_type": 0
+            },
+            "task_title": {
+              "data": "Share research summary",
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "d526c4d1-a7b8-4add-9334-10aa5be2708f",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_tags": {
+              "field_type": 4,
+              "created_at": "1791959070",
+              "data": "",
+              "last_modified": "1791959070"
+            },
+            "task_title": {
+              "data": "Run launch checklist",
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "field_type": 0
+            },
+            "task_owner": {
+              "data": "Jordan",
+              "field_type": 0,
+              "created_at": "1791959070",
+              "last_modified": "1791959070"
+            },
+            "task_project": {
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": [
+                "cd9f628c-47a2-46a5-a34a-ca3395930cad"
+              ],
+              "field_type": 10
+            },
+            "task_status": {
+              "field_type": 3,
+              "data": "task_status0",
+              "created_at": "1791959070",
+              "last_modified": "1791959070"
+            }
+          }
+        },
+        {
+          "id": "0a428e10-35f0-4150-a435-2725dd4d1ad6",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_status": {
+              "last_modified": "1791959070",
+              "data": "task_status2",
+              "field_type": 3,
+              "created_at": "1791959070"
+            },
+            "task_title": {
+              "data": "Approve page designs",
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "field_type": 0
+            },
+            "task_tags": {
+              "data": "task_tags0,task_tags1",
+              "created_at": "1791959070",
+              "field_type": 4,
+              "last_modified": "1791959494"
+            },
+            "task_owner": {
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "field_type": 0,
+              "data": "Alex"
+            },
+            "task_project": {
+              "created_at": "1791959070",
+              "field_type": 10,
+              "data": [
+                "cd9f628c-47a2-46a5-a34a-ca3395930cad"
+              ],
+              "last_modified": "1791959070"
+            }
+          }
+        },
+        {
+          "id": "f9e54f9f-1e6b-4b81-9517-6719a0efe561",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_status": {
+              "created_at": "1791959070",
+              "field_type": 3,
+              "data": "task_status0",
+              "last_modified": "1791959070"
+            },
+            "task_owner": {
+              "created_at": "1791959070",
+              "data": "Jordan",
+              "field_type": 0,
+              "last_modified": "1791959070"
+            },
+            "task_project": {
+              "data": [
+                "839cc247-b2a6-4880-98ad-9dd1707bdc91"
+              ],
+              "last_modified": "1791959070",
+              "field_type": 10,
+              "created_at": "1791959070"
+            },
+            "task_tags": {
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "data": "task_tags4",
+              "field_type": 4
+            },
+            "task_title": {
+              "created_at": "1791959070",
+              "field_type": 0,
+              "data": "Schedule usability sessions",
+              "last_modified": "1791959070"
+            }
+          }
+        },
+        {
+          "id": "bb2bd29e-9919-46d4-beb0-807d7eb7505d",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_project": {
+              "created_at": "1791959070",
+              "data": [
+                "cd9f628c-47a2-46a5-a34a-ca3395930cad"
+              ],
+              "field_type": 10,
+              "last_modified": "1791959070"
+            },
+            "task_status": {
+              "created_at": "1791959070",
+              "field_type": 3,
+              "last_modified": "1791959070",
+              "data": "task_status1"
+            },
+            "task_title": {
+              "field_type": 0,
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": "Connect signup API"
+            },
+            "task_owner": {
+              "data": "Sam",
+              "field_type": 0,
+              "last_modified": "1791959070",
+              "created_at": "1791959070"
+            },
+            "task_tags": {
+              "field_type": 4,
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": "task_tags1,task_tags2"
+            }
+          }
+        },
+        {
+          "id": "b0574c32-4e05-444a-81f0-3e3e95fe82be",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_owner": {
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "field_type": 0,
+              "data": "Alex"
+            },
+            "task_tags": {
+              "field_type": 4,
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "data": "task_tags3"
+            },
+            "task_project": {
+              "data": [
+                "cd9f628c-47a2-46a5-a34a-ca3395930cad"
+              ],
+              "field_type": 10,
+              "created_at": "1791959070",
+              "last_modified": "1791959070"
+            },
+            "task_status": {
+              "created_at": "1791959070",
+              "field_type": 3,
+              "last_modified": "1791959070",
+              "data": "task_status0"
+            },
+            "task_title": {
+              "data": "Write launch announcement",
+              "created_at": "1791959070",
+              "field_type": 0,
+              "last_modified": "1791959070"
+            }
+          }
+        },
+        {
+          "id": "ee3b6824-412e-4e2b-ad92-4a0d7b636ad2",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_status": {
+              "created_at": "1791959070",
+              "last_modified": "1791959070",
+              "field_type": 3,
+              "data": "task_status2"
+            },
+            "task_tags": {
+              "field_type": 4,
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": "task_tags1"
+            },
+            "task_owner": {
+              "field_type": 0,
+              "data": "Sam",
+              "last_modified": "1791959070",
+              "created_at": "1791959070"
+            },
+            "task_project": {
+              "field_type": 10,
+              "data": [
+                "cd9f628c-47a2-46a5-a34a-ca3395930cad"
+              ],
+              "created_at": "1791959070",
+              "last_modified": "1791959070"
+            },
+            "task_title": {
+              "created_at": "1791959070",
+              "field_type": 0,
+              "last_modified": "1791959070",
+              "data": "Build pricing page"
+            }
+          }
+        },
+        {
+          "id": "31ef0376-59ff-48cd-80cf-2492621e535e",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_status": {
+              "created_at": "1791959070",
+              "field_type": 3,
+              "last_modified": "1791959070",
+              "data": "task_status1"
+            },
+            "task_title": {
+              "field_type": 0,
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": "Build welcome screens"
+            },
+            "task_owner": {
+              "created_at": "1791959070",
+              "field_type": 0,
+              "data": "Sam",
+              "last_modified": "1791959070"
+            },
+            "task_tags": {
+              "created_at": "1791959070",
+              "data": "task_tags0,task_tags1",
+              "field_type": 4,
+              "last_modified": "1791959070"
+            },
+            "task_project": {
+              "data": [
+                "839cc247-b2a6-4880-98ad-9dd1707bdc91"
+              ],
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "field_type": 10
+            }
+          }
+        },
+        {
+          "id": "ff6df11d-b527-4b40-aac0-1e0ec4b42dd9",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_status": {
+              "data": "task_status1",
+              "field_type": 3,
+              "last_modified": "1791959494",
+              "created_at": "1791959070"
+            },
+            "task_title": {
+              "created_at": "1791959070",
+              "data": "Review mobile layouts",
+              "field_type": 0,
+              "last_modified": "1791959070"
+            },
+            "task_project": {
+              "field_type": 10,
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": [
+                "cd9f628c-47a2-46a5-a34a-ca3395930cad"
+              ]
+            },
+            "task_owner": {
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": "Riley",
+              "field_type": 0
+            },
+            "task_tags": {
+              "last_modified": "1791959070",
+              "data": "task_tags0",
+              "created_at": "1791959070",
+              "field_type": 4
+            }
+          }
+        },
+        {
+          "id": "575f566e-2381-4cc0-a400-b01044bd8b33",
+          "height": 64,
+          "visibility": true,
+          "cells": {
+            "task_owner": {
+              "field_type": 0,
+              "last_modified": "1791959070",
+              "data": "Riley",
+              "created_at": "1791959070"
+            },
+            "task_project": {
+              "last_modified": "1791959070",
+              "field_type": 10,
+              "created_at": "1791959070",
+              "data": [
+                "68cfccd7-b514-48a7-a709-6e13395875db"
+              ]
+            },
+            "task_status": {
+              "data": "task_status2",
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "field_type": 3
+            },
+            "task_title": {
+              "last_modified": "1791959070",
+              "created_at": "1791959070",
+              "data": "Synthesize findings",
+              "field_type": 0
+            },
+            "task_tags": {
+              "last_modified": "1791959070",
+              "data": "task_tags4,task_tags0",
+              "created_at": "1791959070",
+              "field_type": 4
+            }
+          }
+        }
+      ],
+      "name": "Project Tasks",
+      "icon": {
+        "ty": 2,
+        "value": "{\"color\":\"0xFFFFBA00\",\"groupName\":\"interface_essential\",\"iconName\":\"star-1\"}"
+      }
+    }
+  ]
+}

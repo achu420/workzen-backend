@@ -1,0 +1,251 @@
+{
+  "page_id": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+  "blocks": {
+    "vrVYwk": {
+      "id": "vrVYwk",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "biktoj",
+      "external_id": "MVOXHz",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "dukIm4": {
+      "id": "dukIm4",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "c-dngV",
+      "external_id": "LG-J60",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "wF2nlW": {
+      "id": "wF2nlW",
+      "ty": "heading",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "xm8att",
+      "external_id": "WOP2Sl",
+      "external_type": "text",
+      "data": {
+        "level": 3
+      }
+    },
+    "El3oYY": {
+      "id": "El3oYY",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "PAFh61",
+      "external_id": "u-jP_O",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "FwrN7k": {
+      "id": "FwrN7k",
+      "ty": "paragraph",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "X_IBxn",
+      "external_id": "CLnJDd",
+      "external_type": "text",
+      "data": {}
+    },
+    "8vrYxd": {
+      "id": "8vrYxd",
+      "ty": "paragraph",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "6-q76Y",
+      "external_id": "B-1S92",
+      "external_type": "text",
+      "data": {}
+    },
+    "aHD6JA": {
+      "id": "aHD6JA",
+      "ty": "paragraph",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "pprBP7",
+      "external_id": "bZjdV0",
+      "external_type": "text",
+      "data": {}
+    },
+    "-8zPru": {
+      "id": "-8zPru",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "ynrt9W",
+      "external_id": "PbTCOt",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "h6HFfn": {
+      "id": "h6HFfn",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "K88Z9K",
+      "external_id": "TjnL4n",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "HLi6S5": {
+      "id": "HLi6S5",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "vQ_cUu",
+      "external_id": "2Uy6Lf",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "NnkIj6": {
+      "id": "NnkIj6",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "Ui83i_",
+      "external_id": "0pTXNd",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "4LJcXm": {
+      "id": "4LJcXm",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "59lTKX",
+      "external_id": "FemChs",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "SFxzA1": {
+      "id": "SFxzA1",
+      "ty": "paragraph",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "rvq3oj",
+      "external_id": "io73KH",
+      "external_type": "text",
+      "data": {}
+    },
+    "h50q2a": {
+      "id": "h50q2a",
+      "ty": "todo_list",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "icgyUB",
+      "external_id": "1vMA_1",
+      "external_type": "text",
+      "data": {
+        "checked": false
+      }
+    },
+    "ed4a5571-4fc6-5d28-8abc-33e530723db7": {
+      "id": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "ty": "page",
+      "parent": "",
+      "children": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "external_id": "oFt212",
+      "external_type": "text",
+      "data": {
+        "cover_selection": "https://beta.appflowy.cloud/api/file_storage/80947881-3ef3-493a-83d3-615f8035ae8d/v1/blob/ebd8da1d%2D1156%2D4b37%2Dac5b%2D8d11f4e78235/GBPc7Xp1OC2VgQ7NgCEC8507-dGiGSZEKqB6UgUxrnI=.webp",
+        "image_type": "1",
+        "cover_selection_type": "CoverType.file",
+        "selected_icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"empty-clipboard\",\"color\":\"0xFFD2515F\"}"
+      }
+    },
+    "HiEX73": {
+      "id": "HiEX73",
+      "ty": "quote",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "bPjMtT",
+      "external_id": "QDKRFb",
+      "external_type": "text",
+      "data": {}
+    },
+    "aozRbU": {
+      "id": "aozRbU",
+      "ty": "paragraph",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "EoBbDQ",
+      "external_id": "wbZAg0",
+      "external_type": "text",
+      "data": {}
+    },
+    "lqrb-J": {
+      "id": "lqrb-J",
+      "ty": "paragraph",
+      "parent": "ed4a5571-4fc6-5d28-8abc-33e530723db7",
+      "children": "t_tLE1",
+      "external_id": "oER-5z",
+      "external_type": "text",
+      "data": {}
+    }
+  },
+  "meta": {
+    "children_map": {
+      "K88Z9K": [],
+      "t_tLE1": [],
+      "xm8att": [],
+      "pprBP7": [],
+      "biktoj": [],
+      "ed4a5571-4fc6-5d28-8abc-33e530723db7": [
+        "wF2nlW",
+        "aozRbU",
+        "HiEX73",
+        "lqrb-J",
+        "aHD6JA",
+        "dukIm4",
+        "vrVYwk",
+        "HLi6S5",
+        "h6HFfn",
+        "NnkIj6",
+        "FwrN7k",
+        "SFxzA1",
+        "El3oYY",
+        "-8zPru",
+        "h50q2a",
+        "4LJcXm",
+        "8vrYxd"
+      ],
+      "rvq3oj": [],
+      "59lTKX": [],
+      "icgyUB": [],
+      "vQ_cUu": [],
+      "X_IBxn": [],
+      "6-q76Y": [],
+      "Ui83i_": [],
+      "c-dngV": [],
+      "EoBbDQ": [],
+      "PAFh61": [],
+      "bPjMtT": [],
+      "ynrt9W": []
+    },
+    "text_map": {
+      "FemChs": "[{\"insert\":\"Celebrate once a client hits an early milestone. This could come in the form of an in-app notification, handwritten note, or a small treat delivered to their office.\"}]",
+      "LG-J60": "[{\"insert\":\"Create an automated \"},{\"insert\":\"$\",\"attributes\":{\"mention\":{\"page_id\":\"800350e3-dd2d-44fd-b3aa-2159859efaff\",\"type\":\"page\"}}},{\"insert\":\"that triggers when a new user signs up.\"}]",
+      "2Uy6Lf": "[{\"insert\":\"Build a greeting message for the initial login that includes a CTA to take their first action.\"}]",
+      "B-1S92": "[{\"insert\":\" \"}]",
+      "TjnL4n": "[{\"insert\":\"Design feature callouts that pop up when a user enters for the first time to help them navigate.\"}]",
+      "bZjdV0": "[{\"insert\":\"Set Up Automation for All New Customers\",\"attributes\":{\"italic\":true}}]",
+      "0pTXNd": "[{\"insert\":\"Create content for all of your empty states (the areas within your product that don’t have content or data in them until the user adds their own).\"}]",
+      "u-jP_O": "[{\"insert\":\"Schedule the first meeting between your customer success team and the new customer.\"}]",
+      "PbTCOt": "[{\"insert\":\"Prepare welcome packet for the new customer, filling in their specific Customer Success Team members, objectives, and due dates.\"}]",
+      "MVOXHz": "[{\"insert\":\"Schedule a follow-up email to invite your new customer to login to the software that triggers after two days of inactivity.\"}]",
+      "oER-5z": "[{\"insert\":\" \"}]",
+      "WOP2Sl": "[{\"insert\":\"New Customer Onboarding Checklist\"}]",
+      "wbZAg0": "[{\"insert\":\" \"}]",
+      "CLnJDd": "[{\"insert\":\" \"}]",
+      "QDKRFb": "[{\"insert\":\"Here, you’ll fill in the action items that your customer success team members or account managers will need to take in order to onboard a new customer. We’ve pre-populated a list of actions, but you’ll need to add, delete, or specify certain items depending upon your company’s product or service.\"}]",
+      "1vMA_1": "[{\"insert\":\"Send over the welcome packet with the due date for the Customer Intake Questionnaire.\"}]",
+      "io73KH": "[{\"insert\":\"Tasks to Do Individually for Each New Customer\",\"attributes\":{\"italic\":true}}]"
+    }
+  }
+}

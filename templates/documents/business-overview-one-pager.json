@@ -1,0 +1,417 @@
+{
+  "template_id": "business-overview-one-pager",
+  "order": 124,
+  "name": "Business Overview One Pager",
+  "description": "This one’s perfect for giving a quick snapshot of your company. ",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"new-file\",\"color\":\"0xFFA34AFD\"}"
+  },
+  "category": "Marketing",
+  "categories": [
+    "Marketing",
+    "Startups"
+  ],
+  "author": "Zapier",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Business-Overview-One-Pager",
+  "pages": {
+    "id": "59a940e2-71ac-435e-a42f-9114f8dea7a5",
+    "name": "Business Overview One Pager",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"interface_essential\",\"iconName\":\"new-file\",\"color\":\"0xFFA34AFD\"}"
+    },
+    "document": {
+      "page_id": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+      "blocks": {
+        "9ac82e8b-09cc-518a-beeb-8cf39598910d": {
+          "id": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "ty": "page",
+          "parent": "",
+          "children": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "external_id": "3GKHED",
+          "external_type": "text",
+          "data": {
+            "image_type": "1",
+            "cover_selection_type": "CoverType.file",
+            "selected_icon": "🈺",
+            "cover_selection": "https://beta.appflowy.cloud/api/file_storage/fe17e5ce-30f1-4381-90a1-ab583d62cfb6/v1/blob/59a940e2%2D71ac%2D435e%2Da42f%2D9114f8dea7a5/3k1q11q8I8w_KJhYQ4PBIEFA2T1EYyawtTX8aV1_VxU=.jpg"
+          }
+        },
+        "om8nY0": {
+          "id": "om8nY0",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "xnr3hs",
+          "external_id": "8_87l3",
+          "external_type": "text",
+          "data": {}
+        },
+        "5rmmim": {
+          "id": "5rmmim",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "Ti2-KF",
+          "external_id": "ccTpDJ",
+          "external_type": "text",
+          "data": {}
+        },
+        "q3B2Bw": {
+          "id": "q3B2Bw",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "AyonFN",
+          "external_id": "0I9USt",
+          "external_type": "text",
+          "data": {}
+        },
+        "15TOWm": {
+          "id": "15TOWm",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "PJwFFg",
+          "external_id": "9_2hTV",
+          "external_type": "text",
+          "data": {}
+        },
+        "iDiGgW": {
+          "id": "iDiGgW",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "3ziZy0",
+          "external_id": "00t7zX",
+          "external_type": "text",
+          "data": {}
+        },
+        "HkdfPy": {
+          "id": "HkdfPy",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "6pc-W8",
+          "external_id": "NR5msz",
+          "external_type": "text",
+          "data": {}
+        },
+        "eIr3pr": {
+          "id": "eIr3pr",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "qVZ6nk",
+          "external_id": "8-QIRv",
+          "external_type": "text",
+          "data": {}
+        },
+        "utb_wc": {
+          "id": "utb_wc",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "eQhtzC",
+          "external_id": "FjFW8V",
+          "external_type": "text",
+          "data": {}
+        },
+        "9MA76h": {
+          "id": "9MA76h",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "-RPtL-",
+          "external_id": "sX0F8q",
+          "external_type": "text",
+          "data": {}
+        },
+        "LndH4H": {
+          "id": "LndH4H",
+          "ty": "callout",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "RXGNSf",
+          "external_id": "7qkDt3",
+          "external_type": "text",
+          "data": {
+            "icon_type": "icon",
+            "bgColor": "appflowy_them_color_tint9",
+            "textColor": "appflowy_them_color_tint9",
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"information-circle\"}"
+          }
+        },
+        "jMaqdV": {
+          "id": "jMaqdV",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "hsWskq",
+          "external_id": "nPz0zu",
+          "external_type": "text",
+          "data": {}
+        },
+        "ocjztt": {
+          "id": "ocjztt",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "l0w5po",
+          "external_id": "5SBpVh",
+          "external_type": "text",
+          "data": {}
+        },
+        "zDjFCj": {
+          "id": "zDjFCj",
+          "ty": "divider",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "v1Ko1R",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "IPR2pQ": {
+          "id": "IPR2pQ",
+          "ty": "divider",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "6Agypn",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "FwEPZi": {
+          "id": "FwEPZi",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "fPJXb1",
+          "external_id": "5lgr8B",
+          "external_type": "text",
+          "data": {}
+        },
+        "PwQu-3": {
+          "id": "PwQu-3",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "fmP7JB",
+          "external_id": "YmzNT8",
+          "external_type": "text",
+          "data": {}
+        },
+        "afwH4x": {
+          "id": "afwH4x",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "jykPuq",
+          "external_id": "00lU7M",
+          "external_type": "text",
+          "data": {}
+        },
+        "TrN3wM": {
+          "id": "TrN3wM",
+          "ty": "divider",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "7ZmxR_",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "0nx6Wv": {
+          "id": "0nx6Wv",
+          "ty": "divider",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "B0rHrY",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "r3wEIn": {
+          "id": "r3wEIn",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "OJCv5P",
+          "external_id": "VKxPFX",
+          "external_type": "text",
+          "data": {}
+        },
+        "5BVutG": {
+          "id": "5BVutG",
+          "ty": "heading",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "QFeu_e",
+          "external_id": "H3C5Rm",
+          "external_type": "text",
+          "data": {
+            "level": 4
+          }
+        },
+        "_qa05Q": {
+          "id": "_qa05Q",
+          "ty": "heading",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "Bfw43i",
+          "external_id": "aMrI34",
+          "external_type": "text",
+          "data": {
+            "level": 4
+          }
+        },
+        "A3vaTj": {
+          "id": "A3vaTj",
+          "ty": "heading",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "ir5t6d",
+          "external_id": "4bRB3R",
+          "external_type": "text",
+          "data": {
+            "level": 4
+          }
+        },
+        "DJlQNb": {
+          "id": "DJlQNb",
+          "ty": "heading",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "BFqkFI",
+          "external_id": "5UwO0h",
+          "external_type": "text",
+          "data": {
+            "level": 4
+          }
+        },
+        "RsmgRT": {
+          "id": "RsmgRT",
+          "ty": "heading",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "xgYnjp",
+          "external_id": "kYfQu7",
+          "external_type": "text",
+          "data": {
+            "level": 4
+          }
+        },
+        "4k_-sd": {
+          "id": "4k_-sd",
+          "ty": "image",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "35Vq6-",
+          "external_id": "okgrS6",
+          "external_type": "text",
+          "data": {
+            "image_type": 1,
+            "align": "center",
+            "url": ""
+          }
+        },
+        "rsFgvc": {
+          "id": "rsFgvc",
+          "ty": "paragraph",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "XMzmL1",
+          "external_id": "28ac19",
+          "external_type": "text",
+          "data": {}
+        },
+        "9jXydN": {
+          "id": "9jXydN",
+          "ty": "divider",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "c_U65G",
+          "external_id": null,
+          "external_type": null,
+          "data": {}
+        },
+        "BSynq7": {
+          "id": "BSynq7",
+          "ty": "heading",
+          "parent": "9ac82e8b-09cc-518a-beeb-8cf39598910d",
+          "children": "OorCVg",
+          "external_id": "gPJSEG",
+          "external_type": "text",
+          "data": {
+            "align": "center",
+            "level": 2
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "9ac82e8b-09cc-518a-beeb-8cf39598910d": [
+            "5BVutG",
+            "9jXydN",
+            "om8nY0",
+            "5rmmim",
+            "FwEPZi",
+            "_qa05Q",
+            "zDjFCj",
+            "q3B2Bw",
+            "15TOWm",
+            "PwQu-3",
+            "A3vaTj",
+            "IPR2pQ",
+            "iDiGgW",
+            "HkdfPy",
+            "afwH4x",
+            "DJlQNb",
+            "TrN3wM",
+            "eIr3pr",
+            "utb_wc",
+            "r3wEIn",
+            "RsmgRT",
+            "0nx6Wv",
+            "9MA76h",
+            "LndH4H",
+            "ocjztt",
+            "rsFgvc",
+            "BSynq7",
+            "4k_-sd",
+            "jMaqdV"
+          ],
+          "xnr3hs": [],
+          "Ti2-KF": [],
+          "AyonFN": [],
+          "PJwFFg": [],
+          "3ziZy0": [],
+          "6pc-W8": [],
+          "qVZ6nk": [],
+          "eQhtzC": [],
+          "-RPtL-": [],
+          "RXGNSf": [],
+          "hsWskq": [],
+          "l0w5po": [],
+          "v1Ko1R": [],
+          "6Agypn": [],
+          "fPJXb1": [],
+          "fmP7JB": [],
+          "jykPuq": [],
+          "7ZmxR_": [],
+          "B0rHrY": [],
+          "OJCv5P": [],
+          "QFeu_e": [],
+          "Bfw43i": [],
+          "ir5t6d": [],
+          "BFqkFI": [],
+          "xgYnjp": [],
+          "35Vq6-": [],
+          "XMzmL1": [],
+          "c_U65G": [],
+          "OorCVg": []
+        },
+        "text_map": {
+          "8_87l3": "[{\"insert\":\"Project Zen is a project management company that uses AI to save teams time and resources.\",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "ccTpDJ": "[]",
+          "0I9USt": "[{\"insert\":\"Project management processes are often time-consuming and inefficient, leading to missed deadlines and wasted resources.\",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "9_2hTV": "[]",
+          "00t7zX": "[{\"insert\":\"Our software helps marketing and product managers in businesses of all sizes plan, track, and manage their projects more efficiently.\",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "NR5msz": "[]",
+          "8-QIRv": "[{\"insert\":\"Easy to use: Our software is designed to be intuitive, even for non-technical users.Flexible: Our tool is customizable to meet the specific needs of any project. Resource allocation: Teams can track and allocate resources such as people, time, and budgets.Risk management: Teams can identify risks at a glance and mitigate issues proactively, saving time and money.\",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":false}}]",
+          "FjFW8V": "[]",
+          "sX0F8q": "[{\"insert\":\"We're committed to providing our customers with the best possible experience. In the next year, we plan to launch a new customer support portal and expand our product offerings.\",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "7qkDt3": "[{\"insert\":\"Request a demo to learn more about how our software can help your team run smoother than ever before.\",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "nPz0zu": "[]",
+          "5SBpVh": "[]",
+          "5lgr8B": "[]",
+          "YmzNT8": "[]",
+          "00lU7M": "[]",
+          "VKxPFX": "[]",
+          "H3C5Rm": "[{\"insert\":\"WHO WE ARE:\",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "aMrI34": "[{\"insert\":\"THE PROBLEM: \",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "4bRB3R": "[{\"insert\":\"THE SOLUTION:\",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "5UwO0h": "[{\"insert\":\"THE BENEFITS: \",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":false}}]",
+          "kYfQu7": "[{\"insert\":\"WHAT'S NEXT: \",\"attributes\":{\"font_family\":\"Playfair Display\",\"bold\":true}}]",
+          "28ac19": "[]",
+          "gPJSEG": "[{\"insert\":\"contact@projectzen.com\",\"attributes\":{\"font_family\":\"Playfair Display\",\"underline\":false,\"href\":\"contact@projectzen.com\",\"bold\":false}},{\"insert\":\"   |   (123) 456-7890\",\"attributes\":{\"bold\":false,\"font_family\":\"Playfair Display\",\"underline\":false}}]"
+        }
+      }
+    },
+    "children": []
+  }
+}

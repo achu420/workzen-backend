@@ -1,0 +1,2342 @@
+[
+  {
+    "t": 1407,
+    "text": "[vite] connecting..."
+  },
+  {
+    "t": 1931,
+    "text": "[vite] connected."
+  },
+  {
+    "t": 1944,
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+  },
+  {
+    "t": 2398,
+    "text": "[initAPIService][request] no token found, sending request without auth header {url: /api/server-info/auth-providers}"
+  },
+  {
+    "t": 2399,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 2401,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 2402,
+    "text": "Auth providers API returned error: Request failed"
+  },
+  {
+    "t": 2402,
+    "text": "Failed to fetch auth providers: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 2403,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 2896,
+    "text": "[Auth] signInWithPassword: completing login flow"
+  },
+  {
+    "t": 2896,
+    "text": "[Auth] signInWithPassword: starting {email: task71-diag-owner-1794327611145-287245@example.test}"
+  },
+  {
+    "t": 2926,
+    "text": "[Auth] signInWithPassword: GoTrue returned tokens, completing auth flow"
+  },
+  {
+    "t": 2926,
+    "text": "[Auth] signInWithPassword: verifying token with AppFlowy Cloud"
+  },
+  {
+    "t": 2926,
+    "text": "[initAPIService][request] no token found, sending request without auth header {url: /api/user/verify/Vgjj3HIE59iSJIn3vKXQg0wT2i_tC3f2zJx8ANX5cvw}"
+  },
+  {
+    "t": 2927,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/verify/Vgjj3HIE59iSJIn3vKXQg0wT2i_tC3f2zJx8ANX5cvw, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 2927,
+    "text": "[Auth] signInWithPassword: verifyToken completed {isNewUser: false}"
+  },
+  {
+    "t": 2927,
+    "text": "[Auth] signInWithPassword: refreshing token"
+  },
+  {
+    "t": 2927,
+    "text": "[Auth] refreshToken: requesting new token"
+  },
+  {
+    "t": 2929,
+    "text": "[Auth] refreshToken: success, saving token"
+  },
+  {
+    "t": 2929,
+    "text": "[Auth] signInWithPassword: success, calling afterAuth"
+  },
+  {
+    "t": 2929,
+    "text": "[Auth] afterAuth: no redirectTo saved, going to /app"
+  },
+  {
+    "t": 2938,
+    "text": "[vite] connecting..."
+  },
+  {
+    "t": 2939,
+    "text": "[vite] connected."
+  },
+  {
+    "t": 2939,
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+  },
+  {
+    "t": 3457,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 3459,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/profile, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3461,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 3461,
+    "text": "Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 3925,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/server-info, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3926,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/workspace, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3946,
+    "text": "[AppWorkspaceRedirect] Redirecting to workspace {workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55}"
+  },
+  {
+    "t": 3967,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/favorite, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3967,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/7963859b-70de-48b2-a9bd-35a0cb596b55?depth=6, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3968,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/trash, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3970,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/sharing/workspace/79638…iew/7963859b-70de-48b2-a9bd-35a0cb596b55?depth=50, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3971,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…8b2-a9bd-35a0cb596b55/database?offset=0&limit=200, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3971,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/v1/7963859b-7…607356c-5e4a-4a45-940c-8a7c85cbc07f?collab_type=2, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 3980,
+    "text": "🔗 Start WebSocket connection {url: ws://127.0.0.1:19071/ws/v2, workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, deviceId: _tbDOj3f}"
+  },
+  {
+    "t": 3995,
+    "text": "✅ WebSocket connection opened"
+  },
+  {
+    "t": 5204,
+    "text": "[executeAPIRequest] {method: POST, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/spaces, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 5205,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/af24edf2-544e-4a92-b136-99a048a9e6e0?depth=1, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 5208,
+    "text": "[executeAPIRequest] {method: POST, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…2-a9bd-35a0cb596b55/v2/page-view/document/default, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 5210,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/3d4f141e-0ba1-4b16-8582-bc81e795b8d5?depth=1, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 5210,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/v1/7963859b-7…d4f141e-0ba1-4b16-8582-bc81e795b8d5?collab_type=0, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 5211,
+    "text": "[DB] openCollabDBWithProvider start {name: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, alreadyOpened: false}"
+  },
+  {
+    "t": 5212,
+    "text": "[DB] collab provider synced {name: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, syncDurationMs: 1, wasOpened: false}"
+  },
+  {
+    "t": 5215,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1e-0ba1-4b16-8582-bc81e795b8d5/navigation?depth=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 5220,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1e-0ba1-4b16-8582-bc81e795b8d5/navigation?depth=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 5226,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 5227,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 5228,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1-4b16-8582-bc81e795b8d5/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 5232,
+    "text": "[ViewLoader] openView start {workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, layout: 0, databaseId: undefined}"
+  },
+  {
+    "t": 5233,
+    "text": "[ViewLoader] cache check {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, fromCache: true, forceFetch: false, durationMs: 1}"
+  },
+  {
+    "t": 5233,
+    "text": "[ViewLoader] openView complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, fromCache: true, collabType: 0, totalDurationMs: 1}"
+  },
+  {
+    "t": 5233,
+    "text": "[useViewOperations] loadView complete (sync not bound) {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, layout: 0, collabType: 0, databaseIdHint: undefined, isSubDocument: false}"
+  },
+  {
+    "t": 5234,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 5236,
+    "text": "📡 User awareness dispatched: {version: 1, timestamp: 1794327616, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"7ee2673d-c2a3-46e5-b236-512743774d20\"}}"
+  },
+  {
+    "t": 5236,
+    "text": "[useViewOperations] bindViewSync starting {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, hasAwareness: true}"
+  },
+  {
+    "t": 5236,
+    "text": "Registering sync context for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5 with collabType 0"
+  },
+  {
+    "t": 5236,
+    "text": "Initializing sync for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5 with collabType 0"
+  },
+  {
+    "t": 5239,
+    "text": "[sync] binding context with manifest exchange {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1}"
+  },
+  {
+    "t": 5239,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 5239,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 5239,
+    "text": "Registered sync context for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5; owner count=1"
+  },
+  {
+    "t": 5240,
+    "text": "[useViewOperations] bindViewSync complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0}"
+  },
+  {
+    "t": 5240,
+    "text": "[Header.Users] users updated [Object]"
+  },
+  {
+    "t": 5241,
+    "text": "🎯 Input focused"
+  },
+  {
+    "t": 5241,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 5241,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 5241,
+    "text": "🚫 Cursor awareness cleared for current user"
+  },
+  {
+    "t": 5241,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 5241,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 5242,
+    "text": "{code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 5243,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 5243,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 5243,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 5243,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 5243,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 5243,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 5244,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 5245,
+    "text": "Failed to hydrate workspace member profile: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 6040,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 6040,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 6122,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 6123,
+    "text": "🎯 Cursor awareness synced: {version: 1, timestamp: 1794327617, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"7ee2673d-c2a3-46e5-b236-512743774d20\"}, selection: undefined}"
+  },
+  {
+    "t": 6123,
+    "text": "[Header.Users] users updated [Object]"
+  },
+  {
+    "t": 6147,
+    "text": "MUI: You are providing a disabled `button` child to the Tooltip component.\nA disabled element does not fire events.\nTooltip needs to listen to the child element's events to display the title.\n\nAdd a simple wrapper element, such as a `span`."
+  },
+  {
+    "t": 6399,
+    "text": "⚡ Immediate update: "
+  },
+  {
+    "t": 6404,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 6405,
+    "text": "🚫 Awareness cleared for current user"
+  },
+  {
+    "t": 6405,
+    "text": "disconnect"
+  },
+  {
+    "t": 6419,
+    "text": "[vite] connecting..."
+  },
+  {
+    "t": 6440,
+    "text": "[vite] connected."
+  },
+  {
+    "t": 6440,
+    "text": "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold"
+  },
+  {
+    "t": 6703,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 6704,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/workspace, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6704,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/server-info, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6719,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 6719,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/user/profile, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6723,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/favorite, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6724,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/7963859b-70de-48b2-a9bd-35a0cb596b55?depth=6, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6724,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/sharing/workspace/79638…iew/7963859b-70de-48b2-a9bd-35a0cb596b55?depth=50, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6725,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…8b2-a9bd-35a0cb596b55/database?offset=0&limit=200, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6725,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de-48b2-a9bd-35a0cb596b55/trash, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6725,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/v1/7963859b-7…607356c-5e4a-4a45-940c-8a7c85cbc07f?collab_type=2, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6737,
+    "text": "🔗 Start WebSocket connection {url: ws://127.0.0.1:19071/ws/v2, workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, deviceId: _tbDOj3f}"
+  },
+  {
+    "t": 6748,
+    "text": "[ViewLoader] openView start {workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, layout: 0, databaseId: undefined}"
+  },
+  {
+    "t": 6758,
+    "text": "✅ WebSocket connection opened"
+  },
+  {
+    "t": 6759,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 6759,
+    "text": "{code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 6759,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1-4b16-8582-bc81e795b8d5/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6763,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…1-4b16-8582-bc81e795b8d5/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6770,
+    "text": "[DB] openCollabDBWithProvider start {name: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, alreadyOpened: false}"
+  },
+  {
+    "t": 6770,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 6770,
+    "text": "Failed to load the current user or initialize timezone: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 6791,
+    "text": "[DB] collab provider synced {name: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, syncDurationMs: 21, wasOpened: false}"
+  },
+  {
+    "t": 6791,
+    "text": "[ViewLoader] cached document is empty shell, re-fetching {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, blockCount: 2}"
+  },
+  {
+    "t": 6791,
+    "text": "[ViewLoader] cache check {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, fromCache: false, forceFetch: false, durationMs: 43}"
+  },
+  {
+    "t": 6791,
+    "text": "[ViewLoader] fetching from server {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 6793,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…55/page-view/3d4f141e-0ba1-4b16-8582-bc81e795b8d5, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 6793,
+    "text": "[ViewLoader] fetch complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, dataBytes: 827, rowCount: 0, databaseMetadataOnly: false, fetchDurationMs: 1}"
+  },
+  {
+    "t": 6793,
+    "text": "[ViewLoader] openView complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, fromCache: false, collabType: 0, totalDurationMs: 44}"
+  },
+  {
+    "t": 6793,
+    "text": "[useViewOperations] loadView complete (sync not bound) {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, layout: 0, collabType: 0, databaseIdHint: undefined, isSubDocument: false}"
+  },
+  {
+    "t": 6793,
+    "text": "[AppPage] loadPageDoc complete, setting doc state {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docViewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docObjectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 6793,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 6794,
+    "text": "📡 User awareness dispatched: {version: 1, timestamp: 1794327618, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"7ee2673d-c2a3-46e5-b236-512743774d20\"}}"
+  },
+  {
+    "t": 6794,
+    "text": "[AppPage] bindViewSync starting {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docViewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, docObjectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 6795,
+    "text": "[useViewOperations] bindViewSync starting {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, hasAwareness: true}"
+  },
+  {
+    "t": 6795,
+    "text": "Registering sync context for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5 with collabType 0"
+  },
+  {
+    "t": 6795,
+    "text": "Initializing sync for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5 with collabType 0"
+  },
+  {
+    "t": 6795,
+    "text": "[sync] binding context with manifest exchange {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1}"
+  },
+  {
+    "t": 6795,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 6795,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 6795,
+    "text": "Registered sync context for objectId 3d4f141e-0ba1-4b16-8582-bc81e795b8d5; owner count=1"
+  },
+  {
+    "t": 6795,
+    "text": "[useViewOperations] bindViewSync complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0}"
+  },
+  {
+    "t": 6795,
+    "text": "[AppPage] bindViewSync complete {viewId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5}"
+  },
+  {
+    "t": 6800,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 6800,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 6800,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 6800,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 6800,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 6800,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 6807,
+    "text": "🎯 Input focused"
+  },
+  {
+    "t": 6807,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 6807,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 6807,
+    "text": "🚫 Cursor awareness cleared for current user"
+  },
+  {
+    "t": 6808,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 6808,
+    "text": "Failed to hydrate workspace member profile: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 7007,
+    "text": "MUI: You are providing a disabled `button` child to the Tooltip component.\nA disabled element does not fire events.\nTooltip needs to listen to the child element's events to display the title.\n\nAdd a simple wrapper element, such as a `span`."
+  },
+  {
+    "t": 7022,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 7022,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 7041,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 7041,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 7107,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 7108,
+    "text": "🎯 Cursor awareness synced: {version: 1, timestamp: 1794327618, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"7ee2673d-c2a3-46e5-b236-512743774d20\"}, selection: undefined}"
+  },
+  {
+    "t": 7108,
+    "text": "[Header.Users] users updated [Object]"
+  },
+  {
+    "t": 7303,
+    "text": "👋 Input blurred"
+  },
+  {
+    "t": 7404,
+    "text": "🧹 Cleaning input state after blur"
+  },
+  {
+    "t": 7588,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…e-4a92-b136-99a048a9e6e0/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 7588,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 8113,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…e-4a92-b136-99a048a9e6e0/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 8367,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/af24edf2-544e-4a92-b136-99a048a9e6e0?depth=1, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 8371,
+    "text": "[executeAPIRequest] {method: POST, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…2-a9bd-35a0cb596b55/v2/page-view/document/default, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 8372,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…view/04029d32-98f4-4fb3-9163-4f8c7a5c0eca?depth=1, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 8373,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/v1/7963859b-7…4029d32-98f4-4fb3-9163-4f8c7a5c0eca?collab_type=0, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 8373,
+    "text": "[DB] openCollabDBWithProvider start {name: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, alreadyOpened: false}"
+  },
+  {
+    "t": 8374,
+    "text": "[DB] collab provider synced {name: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, syncDurationMs: 1, wasOpened: false}"
+  },
+  {
+    "t": 8375,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…32-98f4-4fb3-9163-4f8c7a5c0eca/navigation?depth=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 8394,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 8401,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 8403,
+    "text": "[executeAPIRequest] {method: GET, url: http://127.0.0.1:19071/api/workspace/7963859b-70de…4-4fb3-9163-4f8c7a5c0eca/permission?collab_type=0, response_data: Object, response_code: 0, response_message: success}"
+  },
+  {
+    "t": 8408,
+    "text": "[ViewLoader] openView start {workspaceId: 7963859b-70de-48b2-a9bd-35a0cb596b55, viewId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, layout: 0, databaseId: undefined}"
+  },
+  {
+    "t": 8408,
+    "text": "[ViewLoader] cache check {viewId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, fromCache: true, forceFetch: false, durationMs: 1}"
+  },
+  {
+    "t": 8408,
+    "text": "[ViewLoader] openView complete {viewId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, fromCache: true, collabType: 0, totalDurationMs: 1}"
+  },
+  {
+    "t": 8408,
+    "text": "[useViewOperations] loadView complete (sync not bound) {viewId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, layout: 0, collabType: 0, databaseIdHint: undefined, isSubDocument: false}"
+  },
+  {
+    "t": 8410,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 8416,
+    "text": "📡 User awareness dispatched: {version: 1, timestamp: 1794327619, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"7ee2673d-c2a3-46e5-b236-512743774d20\"}}"
+  },
+  {
+    "t": 8416,
+    "text": "[useViewOperations] bindViewSync starting {viewId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, objectId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, collabType: 0, hasAwareness: true}"
+  },
+  {
+    "t": 8416,
+    "text": "Registering sync context for objectId 04029d32-98f4-4fb3-9163-4f8c7a5c0eca with collabType 0"
+  },
+  {
+    "t": 8416,
+    "text": "Initializing sync for objectId 04029d32-98f4-4fb3-9163-4f8c7a5c0eca with collabType 0"
+  },
+  {
+    "t": 8416,
+    "text": "[sync] binding context with manifest exchange {objectId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, collabType: 0, version: appflowy-page-v1}"
+  },
+  {
+    "t": 8416,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 8416,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 8416,
+    "text": "Registered sync context for objectId 04029d32-98f4-4fb3-9163-4f8c7a5c0eca; owner count=1"
+  },
+  {
+    "t": 8416,
+    "text": "[useViewOperations] bindViewSync complete {viewId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, objectId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, collabType: 0}"
+  },
+  {
+    "t": 8417,
+    "text": "MUI: You are providing a disabled `button` child to the Tooltip component.\nA disabled element does not fire events.\nTooltip needs to listen to the child element's events to display the title.\n\nAdd a simple wrapper element, such as a `span`."
+  },
+  {
+    "t": 8418,
+    "text": "🎯 Input focused"
+  },
+  {
+    "t": 8418,
+    "text": "[UserMetadata] resolved icon url from user profile {metadataIconUrl: , fallbackAvatar: , resolved: }"
+  },
+  {
+    "t": 8418,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 8418,
+    "text": "🚫 Cursor awareness cleared for current user"
+  },
+  {
+    "t": 8418,
+    "text": "[Header.Users] users updated []"
+  },
+  {
+    "t": 8419,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 8419,
+    "text": "{code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 8420,
+    "text": "[Version] applyCollabMessage: objectId=04029d32-98f4-4fb3-9163-4f8c7a5c0eca, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 8420,
+    "text": "[Version] context lookup: objectId=04029d32-98f4-4fb3-9163-4f8c7a5c0eca, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 8420,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=04029d32-98f4-4fb3-9163-4f8c7a5c0eca"
+  },
+  {
+    "t": 8420,
+    "text": "[Version] handleOnActiveContext guard: objectId=04029d32-98f4-4fb3-9163-4f8c7a5c0eca, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 8420,
+    "text": "[sync] responding to sync request from server {objectId: 04029d32-98f4-4fb3-9163-4f8c7a5c0eca, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 8420,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 8434,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 8434,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 8434,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 8435,
+    "text": "Failed to hydrate workspace member profile: {code: 404, sourceDomain: http, message: We couldn't find this content., httpStatus: 404, user_error: undefined}"
+  },
+  {
+    "t": 8516,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 8516,
+    "text": "🎯 Cursor awareness synced: {version: 1, timestamp: 1794327619, user: Object, metadata: {\"user_name\":\"Anonymous\",\"cursor_color\":\"#cc4e4e\",…ser_uuid\":\"7ee2673d-c2a3-46e5-b236-512743774d20\"}, selection: undefined}"
+  },
+  {
+    "t": 8516,
+    "text": "[Header.Users] users updated [Object]"
+  },
+  {
+    "t": 9010,
+    "text": "👋 Input blurred"
+  },
+  {
+    "t": 9026,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 9026,
+    "text": "🚫 Awareness cleared for current user"
+  },
+  {
+    "t": 9026,
+    "text": "disconnect"
+  },
+  {
+    "t": 9033,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 9033,
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+  },
+  {
+    "t": 16553,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16554,
+    "text": "Remember new user mapping 1899084571 176296271261258"
+  },
+  {
+    "t": 16555,
+    "text": "[sync] binding context with manifest exchange {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1}"
+  },
+  {
+    "t": 16555,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16555,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16555,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16555,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16566,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16566,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16566,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16566,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16566,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 84}"
+  },
+  {
+    "t": 16567,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16567,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16570,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=null, isCollabVersionId=false"
+  },
+  {
+    "t": 16570,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16570,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16570,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=null, incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16570,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16570,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16571,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16571,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16571,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16571,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16571,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16571,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16571,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16572,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16572,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16572,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16572,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16572,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16572,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16572,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16581,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16581,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16586,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16586,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16586,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16587,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16587,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16607,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16607,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16611,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16611,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16611,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16612,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16612,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16612,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16612,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16612,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16612,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16612,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16612,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16612,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16612,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16633,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16633,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16649,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16649,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16649,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16649,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16649,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16649,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16649,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16650,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16650,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16650,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16650,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16650,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16650,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16665,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16665,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16670,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16670,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16670,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16670,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16670,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16670,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16670,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16671,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16671,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16671,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16671,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16671,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16671,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16691,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16692,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16696,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16696,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16696,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16697,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16697,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16716,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16717,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16733,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16733,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16733,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16733,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16733,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16742,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16742,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16750,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16750,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16750,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16750,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16750,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16767,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16767,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16772,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16772,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16772,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16772,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16772,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16793,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16794,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16798,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16798,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16798,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16798,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16798,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16819,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16819,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16823,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16823,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16823,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16823,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16823,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16823,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16824,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16824,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16824,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16824,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16824,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16824,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16824,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16844,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16844,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16849,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16849,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16849,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16849,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16849,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16870,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16870,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16875,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16875,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16875,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16875,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16875,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16896,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16896,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16901,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16901,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16901,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16901,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16901,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16922,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16922,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16927,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16927,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16927,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16927,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16927,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16948,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16948,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16952,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16952,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16952,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16952,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16952,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16952,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16952,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16953,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16953,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16953,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16953,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16953,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16953,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16973,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16973,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16977,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16977,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 16977,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 16977,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 16978,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 16998,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 16998,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17003,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17003,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17003,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17003,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 17003,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17023,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 17024,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17028,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17028,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17028,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17029,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 17029,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17048,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 17049,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17066,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17066,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17066,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17066,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 17066,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17073,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 17074,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 17083,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17083,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17083,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17083,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17083,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17083,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17083,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17084,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17084,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17084,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17084,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17084,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 17084,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17099,
+    "text": "insertText undefined [Object]"
+  },
+  {
+    "t": 17099,
+    "text": "sending sync message: {collabMessage: Object}"
+  },
+  {
+    "t": 17103,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17103,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17103,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17103,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17103,
+    "text": "[Version] handleUpdate: localDocVersion=%s, incomingMsgVersion=%s, docId=%s appflowy-page-v1 appflowy-page-v1 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17103,
+    "text": "applied update to doc 3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17104,
+    "text": "Received collab message: 0 CollabMessage"
+  },
+  {
+    "t": 17104,
+    "text": "[Version] applyCollabMessage: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, incomingVersion=\"appflowy-page-v1\", isCollabVersionId=false"
+  },
+  {
+    "t": 17104,
+    "text": "[Version] context lookup: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, hasContext=true, docVersion=\"appflowy-page-v1\", isCollabVersionId(docVersion)=false"
+  },
+  {
+    "t": 17104,
+    "text": "[Version] versionChanged=false, allowVersionReset=true, objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5"
+  },
+  {
+    "t": 17104,
+    "text": "[Version] handleOnActiveContext guard: objectId=3d4f141e-0ba1-4b16-8582-bc81e795b8d5, activeVersion=\"appflowy-page-v1\", activeVersionKnown=false, incomingVersion=\"appflowy-page-v1\", incomingVersionKnown=false, guardWillFire=false"
+  },
+  {
+    "t": 17104,
+    "text": "[sync] responding to sync request from server {objectId: 3d4f141e-0ba1-4b16-8582-bc81e795b8d5, collabType: 0, version: appflowy-page-v1, bytes: 2}"
+  },
+  {
+    "t": 17104,
+    "text": "Received collab message: 0 CollabMessage"
+  }
+]

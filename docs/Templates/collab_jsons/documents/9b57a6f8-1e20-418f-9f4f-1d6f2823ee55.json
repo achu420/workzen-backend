@@ -1,0 +1,830 @@
+{
+  "page_id": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+  "blocks": {
+    "zLhWt4": {
+      "id": "zLhWt4",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "mp1soV",
+      "external_id": "UFEV_A",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true,
+              "italic": true
+            },
+            "insert": "Summary Paragraph: "
+          },
+          {
+            "insert": "Start with the city, media outlet, and your proposed launch date. Give a summary of the product and the benefit."
+          }
+        ]
+      }
+    },
+    "J6ETR4": {
+      "id": "J6ETR4",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "Km0Y2r",
+      "external_id": "6LY1ha",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "lX5hBH": {
+      "id": "lX5hBH",
+      "ty": "bulleted_list",
+      "parent": "8w7331",
+      "children": "vW4DF9",
+      "external_id": "HiM0Jp",
+      "external_type": "text",
+      "data": {}
+    },
+    "gwDw9J": {
+      "id": "gwDw9J",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "-NJPow",
+      "external_id": "S4wHWA",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "SEiCWY": {
+      "id": "SEiCWY",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "8QxYOo",
+      "external_id": "3Engie",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Q: How large is the estimated consumer demand for Melinda?  What is the TAM (total addressable market? "
+          }
+        ]
+      }
+    },
+    "uqnbKl": {
+      "id": "uqnbKl",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "cLhLiF",
+      "external_id": "b59dCe",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "RS75Gb": {
+      "id": "RS75Gb",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "P-OouS",
+      "external_id": "PKajZD",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "italic": true
+            },
+            "insert": " "
+          }
+        ]
+      }
+    },
+    "k71apM": {
+      "id": "k71apM",
+      "ty": "toggle_list",
+      "parent": "8w7331",
+      "children": "W551_W",
+      "external_id": "sJMQKp",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "ch39-q": {
+      "id": "ch39-q",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "Rrq5Ir",
+      "external_id": "PrJ_Gr",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "P6vr8a": {
+      "id": "P6vr8a",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "bErLme",
+      "external_id": "H-Z8L6",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "duiXMy": {
+      "id": "duiXMy",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "f8M-MZ",
+      "external_id": "kacoca",
+      "external_type": "text",
+      "data": {}
+    },
+    "fTfOhC": {
+      "id": "fTfOhC",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "Ym_pVL",
+      "external_id": "AdhRK3",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true,
+              "italic": true
+            },
+            "insert": "Subheading:"
+          },
+          {
+            "insert": " Describe the customer for the product and what benefits they will gain from using it. One sentence only underneath the Heading."
+          }
+        ]
+      }
+    },
+    "cEPjnY": {
+      "id": "cEPjnY",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "cpmrWi",
+      "external_id": "quujcD",
+      "external_type": "text",
+      "data": {}
+    },
+    "iLU5i_": {
+      "id": "iLU5i_",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "UpOmJu",
+      "external_id": "6lYODv",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "qDbzn_": {
+      "id": "qDbzn_",
+      "ty": "bulleted_list",
+      "parent": "8w7331",
+      "children": "5HzE0a",
+      "external_id": "v-68bV",
+      "external_type": "text",
+      "data": {}
+    },
+    "c5rENB": {
+      "id": "c5rENB",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "BC19YA",
+      "external_id": "NbzT9D",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "y71pDp": {
+      "id": "y71pDp",
+      "ty": "heading",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "-7kG4h",
+      "external_id": "eZzIUq",
+      "external_type": "text",
+      "data": {
+        "level": 2,
+        "delta": [
+          {
+            "insert": "Sample FAQs"
+          }
+        ]
+      }
+    },
+    "x28hmR": {
+      "id": "x28hmR",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "KTN9vS",
+      "external_id": "l0-aBF",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "4mZwpd": {
+      "id": "4mZwpd",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "Dscrbr",
+      "external_id": "byVfkK",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Q: What is the price?"
+          }
+        ]
+      }
+    },
+    "tEXXho": {
+      "id": "tEXXho",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "kbdGhX",
+      "external_id": "utWG_S",
+      "external_type": "text",
+      "data": {}
+    },
+    "nJyURV": {
+      "id": "nJyURV",
+      "ty": "bulleted_list",
+      "parent": "8w7331",
+      "children": "uu1N2m",
+      "external_id": "oJtk1h",
+      "external_type": "text",
+      "data": {}
+    },
+    "-G7M4P": {
+      "id": "-G7M4P",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "MynZG4",
+      "external_id": "xuvMKs",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "‍"
+          }
+        ]
+      }
+    },
+    "pz8bfp": {
+      "id": "pz8bfp",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "KNmDvc",
+      "external_id": "DmlxOn",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true,
+              "italic": true
+            },
+            "insert": "Solution Paragraph(s):"
+          },
+          {
+            "insert": " Describe your product in some detail and how it simply and easily solves the customer’s problem. For more complex products, you may need more than one paragraph."
+          }
+        ]
+      }
+    },
+    "AcIUal": {
+      "id": "AcIUal",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "QMYZD_",
+      "external_id": "lrerBw",
+      "external_type": "text",
+      "data": {}
+    },
+    "gOxC9l": {
+      "id": "gOxC9l",
+      "ty": "heading",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "cnljGD",
+      "external_id": "1jPT8J",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Internal FAQs"
+          }
+        ],
+        "level": 3
+      }
+    },
+    "WtFcYk": {
+      "id": "WtFcYk",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "ovDIbS",
+      "external_id": "hCdeGB",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Q: How do I get it?"
+          }
+        ]
+      }
+    },
+    "5V7dE3": {
+      "id": "5V7dE3",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "QVh4ON",
+      "external_id": "rzEPcY",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "nV4hBj": {
+      "id": "nV4hBj",
+      "ty": "heading",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "SnM2_i",
+      "external_id": "YScZy9",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Press Release Components"
+          }
+        ],
+        "level": 3
+      }
+    },
+    "ReSEB0": {
+      "id": "ReSEB0",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "7j2XpU",
+      "external_id": "B3sj66",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "zLcNpZ": {
+      "id": "zLcNpZ",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "T5x_sI",
+      "external_id": "nhye8n",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Q: How does it work? (You are likely to have multiple versions of this question that cover different aspects of the customer experience.)"
+          }
+        ]
+      }
+    },
+    "fHUFR_": {
+      "id": "fHUFR_",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "h4kuSF",
+      "external_id": "Yyc5Nn",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true,
+              "italic": true
+            },
+            "insert": "Heading:"
+          },
+          {
+            "insert": " Name the product in a way the reader (i.e. your target customers) will understand. One sentence under the title. "
+          }
+        ]
+      }
+    },
+    "sK6EZO": {
+      "id": "sK6EZO",
+      "ty": "bulleted_list",
+      "parent": "8w7331",
+      "children": "RwcufH",
+      "external_id": "sU1lbn",
+      "external_type": "text",
+      "data": {}
+    },
+    "oFVM6j": {
+      "id": "oFVM6j",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "w-uMkI",
+      "external_id": "WxrGlN",
+      "external_type": "text",
+      "data": {}
+    },
+    "FhPkou": {
+      "id": "FhPkou",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "ubAvBO",
+      "external_id": "GxdnAa",
+      "external_type": "text",
+      "data": {}
+    },
+    "9Ln4MA": {
+      "id": "9Ln4MA",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "WoTgUP",
+      "external_id": "9nidFw",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true,
+              "italic": true
+            },
+            "insert": "Quotes & Getting Started:"
+          },
+          {
+            "insert": " Add one quote from you or your company's spokesperson and a second quote from a hypothetical customer in which they describe the benefit they are getting from using your new product. Describe how easy it is to get started, and provide a link to your website where customers can get more information and get started."
+          }
+        ]
+      }
+    },
+    "RbHZIF": {
+      "id": "RbHZIF",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "Ci5aiM",
+      "external_id": "iyjfJE",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "kf-pta": {
+      "id": "kf-pta",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "FBGAYW",
+      "external_id": "loiyeu",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "gsUfVC": {
+      "id": "gsUfVC",
+      "ty": "paragraph",
+      "parent": "8w7331",
+      "children": "Ok_PzS",
+      "external_id": "HuH7zs",
+      "external_type": "text",
+      "data": {}
+    },
+    "Mwq0Y3": {
+      "id": "Mwq0Y3",
+      "ty": "bulleted_list",
+      "parent": "8w7331",
+      "children": "LSH4Jy",
+      "external_id": "1tZ51Q",
+      "external_type": "text",
+      "data": {}
+    },
+    "d5AAt5": {
+      "id": "d5AAt5",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "3OKgBA",
+      "external_id": "tVuR7o",
+      "external_type": "text",
+      "data": {}
+    },
+    "nIU_HJ": {
+      "id": "nIU_HJ",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "lbj3OR",
+      "external_id": "o4kMPC",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true,
+              "italic": true
+            },
+            "insert": "Problem Paragraph:"
+          },
+          {
+            "insert": " This is where you describe the problem that your product is designed to solve. Make sure that you write this paragraph from the customer’s point of view. "
+          }
+        ]
+      }
+    },
+    "kUwDJV": {
+      "id": "kUwDJV",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "VbQaCP",
+      "external_id": "iB8EoT",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "fdA7l5": {
+      "id": "fdA7l5",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "IqisM7",
+      "external_id": "qhetA2",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "qWEqVh": {
+      "id": "qWEqVh",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "86Auha",
+      "external_id": "Gm5EOJ",
+      "external_type": "text",
+      "data": {}
+    },
+    "lv_E7y": {
+      "id": "lv_E7y",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "06ay0V",
+      "external_id": "I_2LB5",
+      "external_type": "text",
+      "data": {}
+    },
+    "8w7331": {
+      "id": "8w7331",
+      "ty": "callout",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "Wvi5L3",
+      "external_id": "gEpb-b",
+      "external_type": "text",
+      "data": {
+        "textColor": "appflowy_them_color_tint8",
+        "icon_type": "icon",
+        "bgColor": "appflowy_them_color_tint8",
+        "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"help-question-1\"}"
+      }
+    },
+    "da2444d8-0d48-510c-859d-f0b5981ff6d6": {
+      "id": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "ty": "page",
+      "parent": "",
+      "children": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "external_id": null,
+      "external_type": null,
+      "data": {
+        "selected_icon": "🙋🏼",
+        "image_type": "1"
+      }
+    },
+    "8Mexbx": {
+      "id": "8Mexbx",
+      "ty": "heading",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "1S1b2q",
+      "external_id": "hWyDn1",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "External FAQs"
+          }
+        ],
+        "level": 3
+      }
+    },
+    "OT0-Lu": {
+      "id": "OT0-Lu",
+      "ty": "toggle_list",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "gqLZao",
+      "external_id": "aR_b56",
+      "external_type": "text",
+      "data": {
+        "collapsed": true
+      }
+    },
+    "yGz5SS": {
+      "id": "yGz5SS",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "4U_ZOl",
+      "external_id": "mlkpHL",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "XBapBX": {
+      "id": "XBapBX",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "yRjHJn",
+      "external_id": "QAeQp8",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "Cc4MOH": {
+      "id": "Cc4MOH",
+      "ty": "paragraph",
+      "parent": "da2444d8-0d48-510c-859d-f0b5981ff6d6",
+      "children": "XyilRI",
+      "external_id": "BpvsdV",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "‍"
+          }
+        ]
+      }
+    }
+  },
+  "meta": {
+    "children_map": {
+      "T5x_sI": [],
+      "1S1b2q": [],
+      "mp1soV": [],
+      "da2444d8-0d48-510c-859d-f0b5981ff6d6": [
+        "nV4hBj",
+        "-G7M4P",
+        "fHUFR_",
+        "x28hmR",
+        "fTfOhC",
+        "RbHZIF",
+        "zLhWt4",
+        "RS75Gb",
+        "nIU_HJ",
+        "J6ETR4",
+        "pz8bfp",
+        "c5rENB",
+        "9Ln4MA",
+        "Cc4MOH",
+        "y71pDp",
+        "8Mexbx",
+        "4mZwpd",
+        "WtFcYk",
+        "zLcNpZ",
+        "XBapBX",
+        "gOxC9l",
+        "SEiCWY",
+        "yGz5SS",
+        "8w7331",
+        "lv_E7y",
+        "gwDw9J",
+        "qWEqVh",
+        "ch39-q",
+        "duiXMy",
+        "OT0-Lu",
+        "AcIUal",
+        "5V7dE3",
+        "tEXXho",
+        "ReSEB0",
+        "cEPjnY",
+        "kUwDJV",
+        "d5AAt5",
+        "kf-pta",
+        "FhPkou",
+        "P6vr8a",
+        "oFVM6j",
+        "uqnbKl",
+        "iLU5i_",
+        "fdA7l5"
+      ],
+      "3OKgBA": [],
+      "06ay0V": [],
+      "-NJPow": [],
+      "8QxYOo": [],
+      "W551_W": [],
+      "5HzE0a": [],
+      "KTN9vS": [],
+      "QMYZD_": [],
+      "Wvi5L3": [
+        "sK6EZO",
+        "lX5hBH",
+        "nJyURV",
+        "qDbzn_",
+        "Mwq0Y3",
+        "gsUfVC",
+        "k71apM"
+      ],
+      "86Auha": [],
+      "cnljGD": [],
+      "Ok_PzS": [],
+      "ubAvBO": [],
+      "MynZG4": [],
+      "UpOmJu": [],
+      "Rrq5Ir": [],
+      "h4kuSF": [],
+      "VbQaCP": [],
+      "7j2XpU": [],
+      "IqisM7": [],
+      "QVh4ON": [],
+      "LSH4Jy": [],
+      "w-uMkI": [],
+      "f8M-MZ": [],
+      "KNmDvc": [],
+      "RwcufH": [],
+      "4U_ZOl": [],
+      "kbdGhX": [],
+      "WoTgUP": [],
+      "P-OouS": [],
+      "vW4DF9": [],
+      "cLhLiF": [],
+      "-7kG4h": [],
+      "BC19YA": [],
+      "Ym_pVL": [],
+      "uu1N2m": [],
+      "bErLme": [],
+      "gqLZao": [],
+      "Dscrbr": [],
+      "lbj3OR": [],
+      "yRjHJn": [],
+      "SnM2_i": [],
+      "Km0Y2r": [],
+      "FBGAYW": [],
+      "cpmrWi": [],
+      "XyilRI": [],
+      "Ci5aiM": [],
+      "ovDIbS": []
+    },
+    "text_map": {
+      "PrJ_Gr": "[{\"insert\":\"Q: What are the challenging customer UI problems we will need to solve?\"}]",
+      "HuH7zs": "[]",
+      "HiM0Jp": "[{\"insert\":\"How big is the need?\"}]",
+      "QAeQp8": "[]",
+      "YScZy9": "[{\"insert\":\"Press Release Components\"}]",
+      "DmlxOn": "[{\"insert\":\"Solution Paragraph(s):\",\"attributes\":{\"italic\":true,\"bold\":true}},{\"insert\":\" Describe your product in some detail and how it simply and easily solves the customer’s problem. For more complex products, you may need more than one paragraph.\"}]",
+      "I_2LB5": "[]",
+      "9nidFw": "[{\"insert\":\"Quotes & Getting Started:\",\"attributes\":{\"bold\":true,\"italic\":true}},{\"insert\":\" Add one quote from you or your company's spokesperson and a second quote from a hypothetical customer in which they describe the benefit they are getting from using your new product. Describe how easy it is to get started, and provide a link to your website where customers can get more information and get started.\"}]",
+      "kacoca": "[]",
+      "H-Z8L6": "[{\"insert\":\"Q: What is the rationale for the price point you have chosen for the product?\"}]",
+      "aR_b56": "[{\"insert\":\"Q: How will we manage the risk of the upfront investment required?\"}]",
+      "mlkpHL": "[]",
+      "utWG_S": "[]",
+      "BpvsdV": "[{\"insert\":\"‍\"}]",
+      "PKajZD": "[{\"insert\":\" \",\"attributes\":{\"italic\":true}}]",
+      "Gm5EOJ": "[]",
+      "6LY1ha": "[]",
+      "qhetA2": "[{\"insert\":\"Q: What/who are the current competitors for this product?\"}]",
+      "tVuR7o": "[]",
+      "oJtk1h": "[{\"insert\":\"For how many consumers is this problem big enough that they are willing to spend money to do something about it?\"}]",
+      "eZzIUq": "[{\"insert\":\"Sample FAQs\"}]",
+      "iyjfJE": "[]",
+      "quujcD": "[]",
+      "xuvMKs": "[{\"insert\":\"‍\"}]",
+      "iB8EoT": "[{\"insert\":\"Q: Are there any potential regulatory or legal issues to consider?\"}]",
+      "loiyeu": "[{\"insert\":\"Q: What are the per-unit economics of the product? That is, what is our expected Gross Profit and Contribution profit per unit?\"}]",
+      "NbzT9D": "[]",
+      "S4wHWA": "[{\"insert\":\"Q: What are the challenging product engineering problems we will need to solve?\"}]",
+      "AdhRK3": "[{\"insert\":\"Subheading:\",\"attributes\":{\"italic\":true,\"bold\":true}},{\"insert\":\" Describe the customer for the product and what benefits they will gain from using it. One sentence only underneath the Heading.\"}]",
+      "GxdnAa": "[]",
+      "v-68bV": "[{\"insert\":\"If so, how much money would they be willing to spend?\"}]",
+      "o4kMPC": "[{\"insert\":\"Problem Paragraph:\",\"attributes\":{\"bold\":true,\"italic\":true}},{\"insert\":\" This is where you describe the problem that your product is designed to solve. Make sure that you write this paragraph from the customer’s point of view. \"}]",
+      "sJMQKp": "[{\"insert\":\"Q: What happens if a customer encounters x? How does the product deal with use case x? (there are likely to be several such questions).\"}]",
+      "hWyDn1": "[{\"insert\":\"External FAQs\"}]",
+      "hCdeGB": "[{\"insert\":\"Q: How do I get it?\"}]",
+      "nhye8n": "[{\"insert\":\"Q: How does it work? (You are likely to have multiple versions of this question that cover different aspects of the customer experience.)\"}]",
+      "WxrGlN": "[]",
+      "UFEV_A": "[{\"insert\":\"Summary Paragraph: \",\"attributes\":{\"bold\":true,\"italic\":true}},{\"insert\":\"Start with the city, media outlet, and your proposed launch date. Give a summary of the product and the benefit.\"}]",
+      "3Engie": "[{\"insert\":\"Q: How large is the estimated consumer demand for Melinda?  What is the TAM (total addressable market? \"}]",
+      "gEpb-b": "[{\"insert\":\"The component parts to answering this include:\"}]",
+      "lrerBw": "[]",
+      "B3sj66": "[{\"insert\":\"Q: What third-party technologies are we dependent on to function properly for x to work as promised?\"}]",
+      "6lYODv": "[]",
+      "1jPT8J": "[{\"insert\":\"Internal FAQs\"}]",
+      "rzEPcY": "[{\"insert\":\"Q: Do we have any third-party dependencies to build this product?  If so, what are they and why will they be willing to partner with us (what is in it for them)?\"}]",
+      "1tZ51Q": "[{\"insert\":\"How many of these consumers have the characteristics/capabilities/constraints necessary to make use of the product?\"}]",
+      "l0-aBF": "[]",
+      "Yyc5Nn": "[{\"insert\":\"Heading:\",\"attributes\":{\"bold\":true,\"italic\":true}},{\"insert\":\" Name the product in a way the reader (i.e. your target customers) will understand. One sentence under the title. \"}]",
+      "sU1lbn": "[{\"insert\":\"How many consumers have this need or problem?\"}]",
+      "byVfkK": "[{\"insert\":\"Q: What is the price?\"}]",
+      "b59dCe": "[{\"insert\":\"Q: How much will we have to invest up front to build this product in terms of people, technology, inventory, warehouse space, etc.? \"}]"
+    }
+  }
+}

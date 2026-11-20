@@ -1,0 +1,14 @@
+[2026-11-05T15:28:00.037Z] PASS - Register dedicated test account via real backend API :: task61-grid-1793892479988@example.test
+[2026-11-05T15:28:02.419Z] PASS - A1-prep: login via real UI :: http://localhost:5199/app/2fdd3e77-ac2a-446f-add1-719f18b688f8
+[2026-11-05T15:28:03.578Z] PASS - Open workspace
+[2026-11-05T15:28:05.637Z] PASS - Create a public space via real UI
+[2026-11-05T15:28:11.942Z] PASS - A1: create a Grid database via existing UI
+[2026-11-05T15:28:11.979Z] PASS - A2/A3: database appears and is open :: http://localhost:5199/app/2fdd3e77-ac2a-446f-add1-719f18b688f8/e828eadd-6482-4512-b195-5a2745d65aed
+[2026-11-05T15:28:11.986Z] PASS - A3: default Grid view loads :: field count=1
+[2026-11-05T15:28:11.986Z] PASS - A4: initial fields visible :: ["6d6e118b-6922-4c19-9131-655c5baff0ca"]
+[2026-11-05T15:28:13.589Z] PASS - A5: add a field via real UI :: new field id=VAu5h9, total fields=2
+[2026-11-05T15:28:17.161Z] PASS - A6: rename a field via real UI :: Task 61 Status
+[2026-11-05T15:28:21.048Z] PASS - Reload the page :: url before=http://localhost:5199/app/2fdd3e77-ac2a-446f-add1-719f18b688f8/e828eadd-6482-4512-b195-5a2745d65aed, url after=http://localhost:5199/app/2fdd3e77-ac2a-446f-add1-719f18b688f8/e828eadd-6482-4512-b195-5a2745d65aed
+[2026-11-05T15:28:21.070Z] PASS - Reopen the database
+[2026-11-05T15:28:21.120Z] PASS - A7/A8: database/field state persists after reload+reopen :: [{"id":"6d6e118b-6922-4c19-9131-655c5baff0ca","text":"Name"},{"id":"VAu5h9","text":"Task 61 Status"}]
+[2026-11-05T15:28:21.151Z] PASS - FULL WORKFLOW RESULT :: All 17 steps completed

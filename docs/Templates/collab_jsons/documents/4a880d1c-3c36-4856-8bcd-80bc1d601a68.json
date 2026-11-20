@@ -1,0 +1,140 @@
+{
+  "page_id": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+  "blocks": {
+    "2txjyT": {
+      "id": "2txjyT",
+      "ty": "paragraph",
+      "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "children": "agTGfS",
+      "external_id": "AARFrl",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "Nu8suY": {
+      "id": "Nu8suY",
+      "ty": "bulleted_list",
+      "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "children": "cYoyL1",
+      "external_id": "Z9I7c4",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Collaboration"
+          }
+        ]
+      }
+    },
+    "JOugJ1": {
+      "id": "JOugJ1",
+      "ty": "bulleted_list",
+      "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "children": "7cQzVU",
+      "external_id": "l6-ZWN",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Transparency"
+          }
+        ]
+      }
+    },
+    "8_DgwF": {
+      "id": "8_DgwF",
+      "ty": "bulleted_list",
+      "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "children": "gknmWD",
+      "external_id": "iGzpJo",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Honesty"
+          }
+        ]
+      }
+    },
+    "VZJu-S": {
+      "id": "VZJu-S",
+      "ty": "bulleted_list",
+      "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "children": "vpsgDk",
+      "external_id": "JVlETx",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Mission-driven"
+          }
+        ]
+      }
+    },
+    "BpyWqo": {
+      "id": "BpyWqo",
+      "ty": "bulleted_list",
+      "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "children": "K0a5J_",
+      "external_id": "3kTQQy",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Aim High and Iterate"
+          }
+        ]
+      }
+    },
+    "ef1c6446-a20a-51fa-bb09-c04a6f505c8e": {
+      "id": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "ty": "page",
+      "parent": "",
+      "children": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "external_id": null,
+      "external_type": null,
+      "data": {}
+    },
+    "ZnygLH": {
+      "id": "ZnygLH",
+      "ty": "paragraph",
+      "parent": "ef1c6446-a20a-51fa-bb09-c04a6f505c8e",
+      "children": "NQcf5x",
+      "external_id": "wqWgxS",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    }
+  },
+  "meta": {
+    "children_map": {
+      "K0a5J_": [],
+      "vpsgDk": [],
+      "ef1c6446-a20a-51fa-bb09-c04a6f505c8e": [
+        "VZJu-S",
+        "BpyWqo",
+        "JOugJ1",
+        "Nu8suY",
+        "8_DgwF",
+        "2txjyT",
+        "ZnygLH"
+      ],
+      "agTGfS": [],
+      "cYoyL1": [],
+      "7cQzVU": [],
+      "gknmWD": [],
+      "NQcf5x": []
+    },
+    "text_map": {
+      "l6-ZWN": "[{\"insert\":\"Transparency\"}]",
+      "JVlETx": "[{\"insert\":\"Mission-driven\"}]",
+      "Z9I7c4": "[{\"insert\":\"Collaboration\"}]",
+      "3kTQQy": "[{\"insert\":\"Aim High and Iterate\"}]",
+      "iGzpJo": "[{\"insert\":\"Honesty\"}]",
+      "wqWgxS": "[]",
+      "AARFrl": "[]"
+    }
+  }
+}

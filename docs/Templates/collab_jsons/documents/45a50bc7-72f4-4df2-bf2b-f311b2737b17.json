@@ -1,0 +1,675 @@
+{
+  "page_id": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+  "blocks": {
+    "1aLOkR": {
+      "id": "1aLOkR",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "WfPrNx",
+      "external_id": "4Iy9Nz",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "CMBl6H": {
+      "id": "CMBl6H",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "7DfQZ3",
+      "external_id": "Wn1h_b",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Think about your storyline / structure first before getting into details. If we go through only headlines, is there any missing section that could undermine your conclusion or goal of writing this doc?"
+          }
+        ]
+      }
+    },
+    "ERRW4D": {
+      "id": "ERRW4D",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "SyKlXN",
+      "external_id": "jQztMe",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Use short sentences"
+          },
+          {
+            "insert": ". Ideally, sentences should have fewer than 15 words. This improves clarity. The "
+          },
+          {
+            "attributes": {
+              "href": "https://hemingwayapp.com/"
+            },
+            "insert": "Hemingway Editor"
+          },
+          {
+            "insert": " helps achieve this."
+          }
+        ]
+      }
+    },
+    "lz9-Ci": {
+      "id": "lz9-Ci",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "aoiNI0",
+      "external_id": "slDUui",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "href": "https://www.workingbackwards.com/resources/correction-of-errors-coe"
+            },
+            "insert": "Correction of Errors"
+          }
+        ]
+      }
+    },
+    "a0k0Gs": {
+      "id": "a0k0Gs",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "7fE5IV",
+      "external_id": "N0Oqj2",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Cut common phrases"
+          },
+          {
+            "insert": ". E.g. replace \"due to the fact\" with \"because.\""
+          }
+        ]
+      }
+    },
+    "VdhvJk": {
+      "id": "VdhvJk",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "WXZFpW",
+      "external_id": "io97Ss",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Assume others have low context - provide as much context as possible to avoid confusion."
+          }
+        ]
+      }
+    },
+    "U0OM-5": {
+      "id": "U0OM-5",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "Xi06Tk",
+      "external_id": "XulWF7",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Use the \"So What?\" test"
+          },
+          {
+            "insert": ". Before sending a communique, re-read and ask \"So, what?\" Does your content provide value? Will your audience understand? Are you sharing enough context?"
+          }
+        ]
+      }
+    },
+    "Yr3y10": {
+      "id": "Yr3y10",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "ff56_s",
+      "external_id": "-R0Deg",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Be objective"
+          },
+          {
+            "insert": ". Objectivity injects confidence. E.g. replace \"I think this change is working\" with \"our new approach led to a 5% increase.\""
+          }
+        ]
+      }
+    },
+    "ZEukwG": {
+      "id": "ZEukwG",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "1E1_34",
+      "external_id": "POB05P",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Brainstorming in text forces you to clearly articulate proposals, designs, and ideas, with less variance in interpretations. This also breaks down silos by making information easily accessible. Documentation also helps with transparency and fosters collaboration."
+          }
+        ]
+      }
+    },
+    "6zsZFU": {
+      "id": "6zsZFU",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "XQh5GG",
+      "external_id": "m8wPrH",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Use Subject-Verb-Object sentences"
+          },
+          {
+            "insert": ". Follow this path when constructing sentences: Who/what are you writing about? ⮕ What did they do? ⮕ What was acted on?"
+          }
+        ]
+      }
+    },
+    "lkTcr_": {
+      "id": "lkTcr_",
+      "ty": "heading",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "Rr9JGL",
+      "external_id": "jjuwyr",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Resources"
+          }
+        ],
+        "level": 2
+      }
+    },
+    "QMRfXU": {
+      "id": "QMRfXU",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "8Qo2Mf",
+      "external_id": "Rs8aAC",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "The secret sauce of writing a good doc is to think clearly and thoroughly about your subject."
+          }
+        ]
+      }
+    },
+    "-LM5BQ": {
+      "id": "-LM5BQ",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "TSDsjy",
+      "external_id": "bbqlK8",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Replace adjectives with data"
+          },
+          {
+            "insert": ". Hard figures trump descriptors like \"most\" or \"the majority.\""
+          }
+        ]
+      }
+    },
+    "oEm3r1": {
+      "id": "oEm3r1",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "LDbhpb",
+      "external_id": "zItkb6",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Eliminate ambiguous words"
+          },
+          {
+            "insert": ". Actively avoid words which weaken your point (e.g. \"nearly\" instead of an exact percentage)"
+          }
+        ]
+      }
+    },
+    "bZPsxM": {
+      "id": "bZPsxM",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "SOHXBW",
+      "external_id": "78Nb1I",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Use indentations to organize the levels of information. In this way, your reader can easily zoom in / out."
+          }
+        ]
+      }
+    },
+    "ULxGSh": {
+      "id": "ULxGSh",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "_glXIu",
+      "external_id": "0qt_pa",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "\"Writing is nature's way of letting you know how sloppy your thinking is.\" -Dick Guindon, via Leslie Lamport"
+          }
+        ]
+      }
+    },
+    "Qne6Ps": {
+      "id": "Qne6Ps",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "sSMiPX",
+      "external_id": "sbq03v",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "href": "https://writingcooperative.com/the-anatomy-of-an-amazon-6-pager-fc79f31a41c9"
+            },
+            "insert": "The Anatomy of Amazon’s 6-pager"
+          }
+        ]
+      }
+    },
+    "uVXdeo": {
+      "id": "uVXdeo",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "zS0_ga",
+      "external_id": "wYtxiu",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "href": "https://aws.amazon.com/blogs/startups/startup-advice-how-to-write-a-narrative/"
+            },
+            "insert": "Startups: How to Use Amazon’s Narrative Process to Set Goals and Think Clearly"
+          }
+        ]
+      }
+    },
+    "cf2enj": {
+      "id": "cf2enj",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "tl3gT9",
+      "external_id": "Kfo1Ze",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Put a summary (TL;DR) at the very top including why the reader should care and what the doc is about."
+          }
+        ]
+      }
+    },
+    "b_L1E8": {
+      "id": "b_L1E8",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "5llcSV",
+      "external_id": "zszQKT",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "N8KfFU": {
+      "id": "N8KfFU",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "Fc_EHM",
+      "external_id": "QCTPTB",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Keep it as concise as possible and hide complementary / supporting information in links, appendices, and footers."
+          }
+        ]
+      }
+    },
+    "KmdD5P": {
+      "id": "KmdD5P",
+      "ty": "heading",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "mKGsce",
+      "external_id": "TabBxy",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Why?"
+          }
+        ],
+        "level": 1
+      }
+    },
+    "ea9fad93-56fa-554c-8dd2-6d7b8633cd09": {
+      "id": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "ty": "page",
+      "parent": "",
+      "children": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "external_id": "T9HlTM",
+      "external_type": "text",
+      "data": {
+        "cover_selection": "https://images.unsplash.com/photo-1473181488821-2d23949a045a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ0MjMzNTJ8&ixlib=rb-4.0.3&q=80&w=1080",
+        "image_type": "1",
+        "selected_icon": "{\"groupName\":\"artificial_intelligence\",\"iconName\":\"ai-technology-spark\",\"color\":\"0xFFA34AFD\"}",
+        "cover_selection_type": "CoverType.file"
+      }
+    },
+    "bgml_B": {
+      "id": "bgml_B",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "cilKsM",
+      "external_id": "PEaJVf",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "FcFX67": {
+      "id": "FcFX67",
+      "ty": "heading",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "bb3qSX",
+      "external_id": "R94gn2",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "How to write a good doc?"
+          }
+        ],
+        "level": 2
+      }
+    },
+    "xsxceY": {
+      "id": "xsxceY",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "TiIiIQ",
+      "external_id": "2eSFYu",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Cut acronyms and jargon"
+          },
+          {
+            "insert": ". Aim to explain to a child. E.g. do not assume that someone understands what MR means. Instead, write out \"merge request.\""
+          }
+        ]
+      }
+    },
+    "Vs0-L8": {
+      "id": "Vs0-L8",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "D-cHGT",
+      "external_id": "aIOWqR",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "href": "https://eugeneyan.com/writing/writing-docs-why-what-how/"
+            },
+            "insert": "How to Write Better with Why, What, How Framework"
+          }
+        ]
+      }
+    },
+    "nDIK7z": {
+      "id": "nDIK7z",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "DCZso4",
+      "external_id": "KHjvBC",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "href": "https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7"
+            },
+            "insert": "The Pyramid Principles"
+          }
+        ]
+      }
+    },
+    "L1kg3N": {
+      "id": "L1kg3N",
+      "ty": "bulleted_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "4AhmzW",
+      "external_id": "HOgAn6",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "insert": "Use docs for internal collaboration. This is more inclusive as no one is left out of the conversation."
+          }
+        ]
+      }
+    },
+    "2WGQrB": {
+      "id": "2WGQrB",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "MsPHcK",
+      "external_id": "4PyerB",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "href": "https://www.workingbackwards.com/resources/working-backwards-pr-faq"
+            },
+            "insert": "Working Backwards PR FAQ"
+          }
+        ]
+      }
+    },
+    "pUVyG6": {
+      "id": "pUVyG6",
+      "ty": "numbered_list",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "l58c1t",
+      "external_id": "uFZOxo",
+      "external_type": "text",
+      "data": {
+        "delta": [
+          {
+            "attributes": {
+              "bold": true
+            },
+            "insert": "Avoid adverbs"
+          },
+          {
+            "insert": ". If you spot an adverb, remove it. E.g. replace \"increased massively\" with \"added 300 new subscribers.\""
+          }
+        ]
+      }
+    },
+    "GvlFmo": {
+      "id": "GvlFmo",
+      "ty": "paragraph",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "kzi0v-",
+      "external_id": "gS-JRY",
+      "external_type": "text",
+      "data": {
+        "delta": []
+      }
+    },
+    "rINgXu": {
+      "id": "rINgXu",
+      "ty": "heading",
+      "parent": "ea9fad93-56fa-554c-8dd2-6d7b8633cd09",
+      "children": "BL_yp0",
+      "external_id": "PmV_LD",
+      "external_type": "text",
+      "data": {
+        "level": 2,
+        "delta": [
+          {
+            "insert": "Tips from Amazon’s writing procedures"
+          }
+        ]
+      }
+    }
+  },
+  "meta": {
+    "children_map": {
+      "l58c1t": [],
+      "sSMiPX": [],
+      "cilKsM": [],
+      "7fE5IV": [],
+      "kzi0v-": [],
+      "4AhmzW": [],
+      "DCZso4": [],
+      "TSDsjy": [],
+      "bb3qSX": [],
+      "tl3gT9": [],
+      "5llcSV": [],
+      "BL_yp0": [],
+      "zS0_ga": [],
+      "_glXIu": [],
+      "aoiNI0": [],
+      "WfPrNx": [],
+      "ea9fad93-56fa-554c-8dd2-6d7b8633cd09": [
+        "KmdD5P",
+        "L1kg3N",
+        "ZEukwG",
+        "bgml_B",
+        "FcFX67",
+        "CMBl6H",
+        "cf2enj",
+        "bZPsxM",
+        "N8KfFU",
+        "VdhvJk",
+        "QMRfXU",
+        "ULxGSh",
+        "1aLOkR",
+        "rINgXu",
+        "ERRW4D",
+        "a0k0Gs",
+        "-LM5BQ",
+        "oEm3r1",
+        "U0OM-5",
+        "pUVyG6",
+        "Yr3y10",
+        "xsxceY",
+        "6zsZFU",
+        "b_L1E8",
+        "lkTcr_",
+        "2WGQrB",
+        "uVXdeo",
+        "Qne6Ps",
+        "nDIK7z",
+        "lz9-Ci",
+        "Vs0-L8",
+        "GvlFmo"
+      ],
+      "1E1_34": [],
+      "ff56_s": [],
+      "mKGsce": [],
+      "7DfQZ3": [],
+      "XQh5GG": [],
+      "D-cHGT": [],
+      "SOHXBW": [],
+      "LDbhpb": [],
+      "Rr9JGL": [],
+      "Xi06Tk": [],
+      "Fc_EHM": [],
+      "SyKlXN": [],
+      "WXZFpW": [],
+      "8Qo2Mf": [],
+      "TiIiIQ": [],
+      "MsPHcK": []
+    },
+    "text_map": {
+      "4Iy9Nz": "[]",
+      "N0Oqj2": "[{\"insert\":\"Cut common phrases\",\"attributes\":{\"bold\":true}},{\"insert\":\". E.g. replace \\\"due to the fact\\\" with \\\"because.\\\"\"}]",
+      "wYtxiu": "[{\"insert\":\"Startups: How to Use Amazon’s Narrative Process to Set Goals and Think Clearly\",\"attributes\":{\"href\":\"https://aws.amazon.com/blogs/startups/startup-advice-how-to-write-a-narrative/\"}}]",
+      "R94gn2": "[{\"insert\":\"How to write a good doc?\"}]",
+      "zszQKT": "[]",
+      "gS-JRY": "[]",
+      "XulWF7": "[{\"insert\":\"Use the \\\"So What?\\\" test\",\"attributes\":{\"bold\":true}},{\"insert\":\". Before sending a communique, re-read and ask \\\"So, what?\\\" Does your content provide value? Will your audience understand? Are you sharing enough context?\"}]",
+      "-R0Deg": "[{\"insert\":\"Be objective\",\"attributes\":{\"bold\":true}},{\"insert\":\". Objectivity injects confidence. E.g. replace \\\"I think this change is working\\\" with \\\"our new approach led to a 5% increase.\\\"\"}]",
+      "PmV_LD": "[{\"insert\":\"Tips from Amazon’s writing procedures\"}]",
+      "slDUui": "[{\"insert\":\"Correction of Errors\",\"attributes\":{\"href\":\"https://www.workingbackwards.com/resources/correction-of-errors-coe\"}}]",
+      "uFZOxo": "[{\"insert\":\"Avoid adverbs\",\"attributes\":{\"bold\":true}},{\"insert\":\". If you spot an adverb, remove it. E.g. replace \\\"increased massively\\\" with \\\"added 300 new subscribers.\\\"\"}]",
+      "m8wPrH": "[{\"insert\":\"Use Subject-Verb-Object sentences\",\"attributes\":{\"bold\":true}},{\"insert\":\". Follow this path when constructing sentences: Who/what are you writing about? ⮕ What did they do? ⮕ What was acted on?\"}]",
+      "QCTPTB": "[{\"insert\":\"Keep it as concise as possible and hide complementary / supporting information in links, appendices, and footers.\"}]",
+      "TabBxy": "[{\"insert\":\"Why?\",\"attributes\":{\"bold\":true}}]",
+      "io97Ss": "[{\"insert\":\"Assume others have low context - provide as much context as possible to avoid confusion.\"}]",
+      "HOgAn6": "[{\"insert\":\"Use docs for internal collaboration. This is more inclusive as no one is left out of the conversation.\"}]",
+      "jQztMe": "[{\"insert\":\"Use short sentences\",\"attributes\":{\"bold\":true}},{\"insert\":\". Ideally, sentences should have fewer than 15 words. This improves clarity. The \"},{\"insert\":\"Hemingway Editor\",\"attributes\":{\"href\":\"https://hemingwayapp.com/\"}},{\"insert\":\" helps achieve this.\"}]",
+      "aIOWqR": "[{\"insert\":\"How to Write Better with Why, What, How Framework\",\"attributes\":{\"href\":\"https://eugeneyan.com/writing/writing-docs-why-what-how/\"}}]",
+      "Wn1h_b": "[{\"insert\":\"Think about your storyline / structure first before getting into details. If we go through only headlines, is there any missing section that could undermine your conclusion or goal of writing this doc?\"}]",
+      "bbqlK8": "[{\"insert\":\"Replace adjectives with data\",\"attributes\":{\"bold\":true}},{\"insert\":\". Hard figures trump descriptors like \\\"most\\\" or \\\"the majority.\\\"\"}]",
+      "POB05P": "[{\"insert\":\"Brainstorming in text forces you to clearly articulate proposals, designs, and ideas, with less variance in interpretations. This also breaks down silos by making information easily accessible. Documentation also helps with transparency and fosters collaboration.\"}]",
+      "78Nb1I": "[{\"insert\":\"Use indentations to organize the levels of information. In this way, your reader can easily zoom in / out.\"}]",
+      "0qt_pa": "[{\"insert\":\"\\\"Writing is nature's way of letting you know how sloppy your thinking is.\\\" -Dick Guindon, via Leslie Lamport\"}]",
+      "zItkb6": "[{\"insert\":\"Eliminate ambiguous words\",\"attributes\":{\"bold\":true}},{\"insert\":\". Actively avoid words which weaken your point (e.g. \\\"nearly\\\" instead of an exact percentage)\"}]",
+      "KHjvBC": "[{\"insert\":\"The Pyramid Principles\",\"attributes\":{\"href\":\"https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7\"}}]",
+      "PEaJVf": "[]",
+      "2eSFYu": "[{\"insert\":\"Cut acronyms and jargon\",\"attributes\":{\"bold\":true}},{\"insert\":\". Aim to explain to a child. E.g. do not assume that someone understands what MR means. Instead, write out \\\"merge request.\\\"\"}]",
+      "Rs8aAC": "[{\"insert\":\"The secret sauce of writing a good doc is to think clearly and thoroughly about your subject.\"}]",
+      "jjuwyr": "[{\"insert\":\"Resources\"}]",
+      "sbq03v": "[{\"insert\":\"The Anatomy of Amazon’s 6-pager\",\"attributes\":{\"href\":\"https://writingcooperative.com/the-anatomy-of-an-amazon-6-pager-fc79f31a41c9\"}}]",
+      "Kfo1Ze": "[{\"insert\":\"Put a summary (TL;DR) at the very top including why the reader should care and what the doc is about.\"}]",
+      "4PyerB": "[{\"insert\":\"Working Backwards PR FAQ\",\"attributes\":{\"href\":\"https://www.workingbackwards.com/resources/working-backwards-pr-faq\"}}]"
+    }
+  }
+}

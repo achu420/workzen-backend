@@ -1,0 +1,541 @@
+{
+  "template_id": "agile-sprint-board-template",
+  "order": 109,
+  "name": "Agile Sprint Board Template",
+  "description": "Move fast without losing sight by adopting an agile workflow that gives your team perspective during any project management situation.",
+  "icon": null,
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Engineering",
+    "Kanban",
+    "Startups"
+  ],
+  "author": "Trello",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Board-68154112-2410-4e04-b9be-a23c6bd7c4de",
+  "database_id": "a3eb6186-2221-4f5b-b7ab-6ca67efbb40a",
+  "fields": [
+    {
+      "id": "oN88x4",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"JcXu\",\"name\":\"Backlog\",\"color\":\"Cream\"},{\"id\":\"QRMb\",\"name\":\"Sprint Backlog\",\"color\":\"Orange\"},{\"id\":\"bROY\",\"name\":\"In Progress\",\"color\":\"Yellow\"},{\"id\":\"xGBe\",\"name\":\"0.6.8 Sprint - Complete\",\"color\":\"Pink\"},{\"id\":\"9-TU\",\"name\":\"0.6.9 Sprint - Complete\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "VQu2D0",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "T5CZmr",
+      "name": "GitHub PR",
+      "field_type": 6,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "6": {
+          "content": "",
+          "url": ""
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "68154112-2410-4e04-b9be-a23c6bd7c4de",
+      "database_id": "a3eb6186-2221-4f5b-b7ab-6ca67efbb40a",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": false
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "id": "g:ZFOJQq",
+          "ty": 3,
+          "collapsed_group_ids": [],
+          "field_id": "oN88x4",
+          "content": "",
+          "groups": [
+            {
+              "visible": false,
+              "id": "oN88x4"
+            },
+            {
+              "visible": true,
+              "id": "JcXu"
+            },
+            {
+              "id": "QRMb",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "bROY"
+            },
+            {
+              "id": "xGBe",
+              "visible": true
+            },
+            {
+              "id": "9-TU",
+              "visible": true
+            }
+          ]
+        }
+      ],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "c4731c7b-27e9-4419-bf24-ae7021eec904"
+        },
+        {
+          "height": 60,
+          "id": "e2347815-c249-4f3e-bf19-c79a65e3a1b5"
+        },
+        {
+          "height": 60,
+          "id": "68e34dbd-048b-4ea8-9e37-a157c1dce6ea"
+        },
+        {
+          "id": "b588da57-cd71-4320-a18e-3a2e587480a7",
+          "height": 60
+        },
+        {
+          "id": "7e5c9e30-204e-4e9e-b39e-a9678dc07942",
+          "height": 60
+        },
+        {
+          "id": "1e30fbea-d2d6-41b2-8de9-8166d4bb1562",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "13c873e7-67a8-490a-966c-c915ae435de2"
+        },
+        {
+          "height": 60,
+          "id": "b5baf974-e24a-4f8c-9fa9-213200c91887"
+        },
+        {
+          "height": 60,
+          "id": "7f17a0f2-ae69-4915-8262-6e2ade25b3ca"
+        },
+        {
+          "id": "c20ccd04-6e02-4421-bc39-9cfb52572539",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "d375028b-edcf-46b5-b3ac-7dd0e9cd2304"
+        },
+        {
+          "id": "e4ed55a4-3320-43e5-a154-3acbfa04398d",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "6fdbc46f-072c-4c4a-9174-b355f818fd74"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "VQu2D0"
+        },
+        {
+          "id": "oN88x4"
+        },
+        {
+          "id": "T5CZmr"
+        }
+      ],
+      "field_settings": {
+        "T5CZmr": {
+          "visibility": 1,
+          "wrap": false,
+          "width": 150
+        },
+        "oN88x4": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 1
+        },
+        "VQu2D0": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    },
+    {
+      "id": "ef8d031b-9899-4dfb-be1b-057b52d8fbca",
+      "database_id": "a3eb6186-2221-4f5b-b7ab-6ca67efbb40a",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "c4731c7b-27e9-4419-bf24-ae7021eec904",
+          "height": 60
+        },
+        {
+          "id": "e2347815-c249-4f3e-bf19-c79a65e3a1b5",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "68e34dbd-048b-4ea8-9e37-a157c1dce6ea"
+        },
+        {
+          "height": 60,
+          "id": "b588da57-cd71-4320-a18e-3a2e587480a7"
+        },
+        {
+          "height": 60,
+          "id": "7e5c9e30-204e-4e9e-b39e-a9678dc07942"
+        },
+        {
+          "id": "1e30fbea-d2d6-41b2-8de9-8166d4bb1562",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "13c873e7-67a8-490a-966c-c915ae435de2"
+        },
+        {
+          "id": "b5baf974-e24a-4f8c-9fa9-213200c91887",
+          "height": 60
+        },
+        {
+          "id": "7f17a0f2-ae69-4915-8262-6e2ade25b3ca",
+          "height": 60
+        },
+        {
+          "id": "c20ccd04-6e02-4421-bc39-9cfb52572539",
+          "height": 60
+        },
+        {
+          "id": "d375028b-edcf-46b5-b3ac-7dd0e9cd2304",
+          "height": 60
+        },
+        {
+          "id": "e4ed55a4-3320-43e5-a154-3acbfa04398d",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "6fdbc46f-072c-4c4a-9174-b355f818fd74"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "VQu2D0"
+        },
+        {
+          "id": "oN88x4"
+        },
+        {
+          "id": "T5CZmr"
+        }
+      ],
+      "field_settings": {
+        "T5CZmr": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "VQu2D0": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "oN88x4": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1788080688
+    }
+  ],
+  "rows": [
+    {
+      "id": "b588da57-cd71-4320-a18e-3a2e587480a7",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "oN88x4": {
+          "data": "QRMb",
+          "field_type": 3
+        },
+        "VQu2D0": {
+          "field_type": 0,
+          "data": "(2) Replace icons"
+        }
+      }
+    },
+    {
+      "id": "e2347815-c249-4f3e-bf19-c79a65e3a1b5",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "oN88x4": {
+          "data": "JcXu",
+          "field_type": 3
+        },
+        "VQu2D0": {
+          "field_type": 0,
+          "data": "(5) Card attachments"
+        }
+      }
+    },
+    {
+      "id": "6fdbc46f-072c-4c4a-9174-b355f818fd74",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VQu2D0": {
+          "data": "🤔 Sprint Review",
+          "field_type": 0
+        },
+        "oN88x4": {
+          "field_type": 3,
+          "data": "9-TU"
+        }
+      },
+      "document": {
+        "page_id": "3b8abbb8-44c9-50ea-9a86-751faf3ccf09",
+        "blocks": {
+          "1G_IU0": {
+            "id": "1G_IU0",
+            "ty": "bulleted_list",
+            "parent": "3b8abbb8-44c9-50ea-9a86-751faf3ccf09",
+            "children": "83qBoY",
+            "external_id": "DpmIPD",
+            "external_type": "text",
+            "data": {}
+          },
+          "3b8abbb8-44c9-50ea-9a86-751faf3ccf09": {
+            "id": "3b8abbb8-44c9-50ea-9a86-751faf3ccf09",
+            "ty": "page",
+            "parent": "",
+            "children": "3b8abbb8-44c9-50ea-9a86-751faf3ccf09",
+            "external_id": null,
+            "external_type": null,
+            "data": {}
+          },
+          "4PWwc2": {
+            "id": "4PWwc2",
+            "ty": "bulleted_list",
+            "parent": "3b8abbb8-44c9-50ea-9a86-751faf3ccf09",
+            "children": "rlidk9",
+            "external_id": "QfTUWM",
+            "external_type": "text",
+            "data": {}
+          },
+          "dsEADi": {
+            "id": "dsEADi",
+            "ty": "bulleted_list",
+            "parent": "3b8abbb8-44c9-50ea-9a86-751faf3ccf09",
+            "children": "n7LpxN",
+            "external_id": "TsCd1j",
+            "external_type": "text",
+            "data": {}
+          }
+        },
+        "meta": {
+          "children_map": {
+            "83qBoY": [],
+            "3b8abbb8-44c9-50ea-9a86-751faf3ccf09": [
+              "dsEADi",
+              "1G_IU0",
+              "4PWwc2"
+            ],
+            "rlidk9": [],
+            "n7LpxN": []
+          },
+          "text_map": {
+            "DpmIPD": "[{\"insert\":\"Unfortunately, time was cut short on some design elements that needed to be pushed to next week's sprint.  Will update the backlog accordingly.\"}]",
+            "QfTUWM": "[{\"insert\":\"For the next sprint we will be more mindful of the number of story points in the Sprint Backlog due to our reduced team size with Henry's paternity leave over the next 3 months.\"}]",
+            "TsCd1j": "[{\"insert\":\"This sprint saw the release of the plugin infrastructure that was hindering 3rd party integrations.\"}]"
+          }
+        }
+      }
+    },
+    {
+      "id": "b5baf974-e24a-4f8c-9fa9-213200c91887",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VQu2D0": {
+          "field_type": 0,
+          "data": "(4) Show tooltip on hover"
+        },
+        "oN88x4": {
+          "data": "bROY",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "d375028b-edcf-46b5-b3ac-7dd0e9cd2304",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VQu2D0": {
+          "data": "(10) Button color",
+          "field_type": 0
+        },
+        "oN88x4": {
+          "field_type": 3,
+          "data": "xGBe"
+        }
+      }
+    },
+    {
+      "id": "7e5c9e30-204e-4e9e-b39e-a9678dc07942",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VQu2D0": {
+          "field_type": 0,
+          "data": "(7) Toolbar optimization"
+        },
+        "oN88x4": {
+          "field_type": 3,
+          "data": "QRMb"
+        }
+      }
+    },
+    {
+      "id": "c20ccd04-6e02-4421-bc39-9cfb52572539",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VQu2D0": {
+          "data": "(9) Template center",
+          "field_type": 0
+        },
+        "oN88x4": {
+          "data": "xGBe",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "1e30fbea-d2d6-41b2-8de9-8166d4bb1562",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VQu2D0": {
+          "data": "(1) EditableGroupName",
+          "field_type": 0
+        },
+        "oN88x4": {
+          "field_type": 3,
+          "data": "bROY"
+        }
+      }
+    },
+    {
+      "id": "13c873e7-67a8-490a-966c-c915ae435de2",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VQu2D0": {
+          "data": "(3) Update Json",
+          "field_type": 0
+        },
+        "oN88x4": {
+          "field_type": 3,
+          "data": "bROY"
+        }
+      }
+    },
+    {
+      "id": "7f17a0f2-ae69-4915-8262-6e2ade25b3ca",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "oN88x4": {
+          "field_type": 3,
+          "data": "xGBe"
+        },
+        "VQu2D0": {
+          "data": "(6) Restart server",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "e4ed55a4-3320-43e5-a154-3acbfa04398d",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VQu2D0": {
+          "data": "(11) Mobile login options",
+          "field_type": 0
+        },
+        "oN88x4": {
+          "field_type": 3,
+          "data": "9-TU"
+        }
+      }
+    },
+    {
+      "id": "68e34dbd-048b-4ea8-9e37-a157c1dce6ea",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "oN88x4": {
+          "field_type": 3,
+          "data": "JcXu"
+        },
+        "VQu2D0": {
+          "data": "(8) Renderable action",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "c4731c7b-27e9-4419-bf24-ae7021eec904",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "oN88x4": {
+          "field_type": 3,
+          "data": "JcXu"
+        },
+        "VQu2D0": {
+          "field_type": 0,
+          "data": "Product Owner: Nathan"
+        }
+      }
+    }
+  ]
+}

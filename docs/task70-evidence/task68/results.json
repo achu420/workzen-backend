@@ -1,0 +1,27 @@
+[
+  {
+    "title": "C1. pre-restart collaboration + persistence",
+    "status": "passed",
+    "annotations": [
+      {
+        "type": "live-delivery-BLOCKED",
+        "description": "member live (no-refresh) receipt of pre-restart marker: FAIL; same content after reload: PASS"
+      }
+    ]
+  },
+  {
+    "title": "C2. backend restart against the SAME storage; both contexts reconnect and pre-restart content persists",
+    "status": "passed",
+    "annotations": []
+  },
+  {
+    "title": "C3. post-restart bidirectional delivery + reload persistence (the outstanding Task 68 gap)",
+    "status": "passed",
+    "annotations": [
+      {
+        "type": "live-delivery-pass",
+        "description": "post-restart LIVE (no-refresh) owner->member: PASS; post-restart LIVE member->owner: PASS -- this is the specific Task 68 bonus leg left outstanding by Task 69; same cross-context live-render gap documented for Task 66/67 applies here too (see report)."
+      }
+    ]
+  }
+]

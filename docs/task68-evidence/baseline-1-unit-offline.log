@@ -1,0 +1,40 @@
+✔ page CRUD, optimistic concurrency, validation and cross-workspace denial (2.755459ms)
+✔ data survives reopening the application with the same isolated file (4.249875ms)
+✔ compaction-retention: no compaction/snapshot mechanism exists; many sequential updates remain reconstructable from the single stored current-state blob, by a fresh client, and after a storage restart (67.391667ms)
+✔ version-history: create named snapshot, list it, preview it, tombstone-delete it and verify it no longer appears (59.078458ms)
+✔ version-history: restore a previous version preserves identity, advances generation, keeps before-restore snapshot, does not consume a workspace Rid, and rejects stale-generation updates (60.748208ms)
+✔ version-history: duplicate restore requests do not create multiple restore events; competing restores use optimistic concurrency (first wins); persistence failure does not report success; state survives a restart reload (68.213042ms)
+✔ CORS: allowed origin receives CORS headers, disallowed origin does not, and OPTIONS preflight is answered (47.448ms)
+✔ CORS: WebSocket upgrades are unaffected by CORS middleware (no Origin-based rejection at the HTTP layer) (0.677459ms)
+✔ CORS (Task 55): preflight allows Cache-Control and Device-Id, and real requests using them succeed (24.832459ms)
+✔ capability flag: enable_page_history reports true by default and can be overridden via ENABLE_PAGE_HISTORY=false (1.887708ms)
+✔ WebSocket route alias: `/ws/{workspaceId}` (AppFlowy-Web real client route, Task 52) behaves identically to `/ws/v2/{workspaceId}` for auth, authorization, sync, update-persistence/ack and reconnect (108.520375ms)
+✔ Task 53: favorites, trash, shared-with-me and database catalog unblock the AppFlowy-Web sidebar (64.014042ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6861.023959
+===offline-collab===
+
+> appflowy-independent-backend-prototype@0.1.0 test:offline-collab
+> node --test test/offline-collab.test.js
+
+(node:11980) ExperimentalWarning: localStorage is not available because --localstorage-file was not provided.
+(Use `node --trace-warnings ...` to show where the warning was created)
+✔ loads the source-derived AppFlowy page fixture and computes state-vector diffs (3.622458ms)
+✔ accepts a valid ordinary-text Yjs update and rejects duplicate delivery (1.73825ms)
+✔ validates v2, metadata, malformed payloads, and unsupported flags safely (1.346792ms)
+✔ decodes source-shaped protobuf envelopes and rejects malformed frames (1.895416ms)
+✔ rejects invalid sync vectors and does not claim durability or server ordering (0.456917ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 105.102666

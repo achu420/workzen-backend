@@ -1,0 +1,6073 @@
+{
+  "template_id": "product-development-tracker",
+  "order": 112,
+  "name": "Product Development Tracker",
+  "description": "Turn opportunities into shipped work by connecting product discovery, projects, epics, and tasks in one workflow.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"color\":\"0xFFFFBA00\",\"groupName\":\"interface_essential\",\"iconName\":\"filter-2\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Project Management",
+    "Database",
+    "Engineering",
+    "Product & Design",
+    "Startups"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Opportunities-20e79978",
+  "database_id": "1014b452-1828-490b-8367-8e46f8c2ee99",
+  "fields": [
+    {
+      "id": "ZhdbzZ",
+      "name": "Priority Score",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "symbol": "RUB",
+          "format": 0,
+          "scale": 0,
+          "name": "Number"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "8KneUw",
+      "name": "Decision",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"r4CB\",\"name\":\"Pursue\",\"color\":\"Purple\"},{\"id\":\"Ew5I\",\"name\":\"Monitor\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "0Sv0CN",
+      "name": "Effort",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "format": 0,
+          "symbol": "RUB",
+          "scale": 0,
+          "name": "Number"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "0HUU3-",
+      "name": "Confidence",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "name": "Number",
+          "format": 0,
+          "symbol": "RUB",
+          "scale": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "WPB8kp",
+      "name": "Evidence Summary",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "brgI1l",
+      "name": "Stage",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"ddec\",\"name\":\"Prioritized\",\"color\":\"LightPink\"},{\"id\":\"I0PW\",\"name\":\"Validated\",\"color\":\"Yellow\"},{\"id\":\"J1Hb\",\"name\":\"Researching\",\"color\":\"Green\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "KAvKtM",
+      "name": "Owner",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "JVr328",
+      "name": "Related Proj",
+      "field_type": 10,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "10": {
+          "reciprocal_field_name": "Related Opp",
+          "reciprocal_field_id": "vTX256",
+          "is_two_way": true,
+          "source_limit": 0,
+          "target_limit": 0,
+          "database_id": "01cdd149-0f42-479d-b8c2-b39cc1c0a2a4"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "870-a1",
+      "name": "Impact",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "format": 0,
+          "scale": 0,
+          "symbol": "RUB",
+          "name": "Number"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "n1x0-V",
+      "name": "Problem Statement",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "hmTBGy",
+      "name": "Opportunity ID",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "q2IlYg",
+      "name": "Opportunity",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "Hj0mKt",
+      "name": "Target Segment",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    },
+    {
+      "id": "XZK3xV",
+      "name": "Target Metric",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "04f37570-f39f-4ed1-a58b-270d6f74d70d",
+      "database_id": "1014b452-1828-490b-8367-8e46f8c2ee99",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [
+        {
+          "condition": 1,
+          "field_id": "ZhdbzZ",
+          "id": "s:vi9_4z"
+        }
+      ],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "ff8ede09-b929-4a57-b88a-e1ed292e51a7",
+          "height": 60
+        },
+        {
+          "id": "74d3a602-2507-44cc-8331-8368678aa28e",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "33f4eaa8-565e-40d0-980b-04fa1a5f3ad3"
+        },
+        {
+          "height": 60,
+          "id": "32ea3df1-9579-4f13-a0e9-98853225657c"
+        },
+        {
+          "height": 60,
+          "id": "9476cddd-393c-46ae-8a96-c55b0409ffcb"
+        },
+        {
+          "height": 60,
+          "id": "5a116dac-65d4-49a5-8bb5-5b7bbcef621d"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "hmTBGy"
+        },
+        {
+          "id": "q2IlYg"
+        },
+        {
+          "id": "brgI1l"
+        },
+        {
+          "id": "JVr328"
+        },
+        {
+          "id": "n1x0-V"
+        },
+        {
+          "id": "Hj0mKt"
+        },
+        {
+          "id": "WPB8kp"
+        },
+        {
+          "id": "870-a1"
+        },
+        {
+          "id": "0HUU3-"
+        },
+        {
+          "id": "0Sv0CN"
+        },
+        {
+          "id": "ZhdbzZ"
+        },
+        {
+          "id": "KAvKtM"
+        },
+        {
+          "id": "XZK3xV"
+        },
+        {
+          "id": "8KneUw"
+        }
+      ],
+      "field_settings": {
+        "KAvKtM": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "hmTBGy": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "n1x0-V": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "q2IlYg": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "ZhdbzZ": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "brgI1l": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "870-a1": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 2
+        },
+        "WPB8kp": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 2
+        },
+        "8KneUw": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "JVr328": {
+          "visibility": 0
+        },
+        "XZK3xV": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "0Sv0CN": {
+          "wrap": false,
+          "visibility": 2,
+          "width": 150
+        },
+        "0HUU3-": {
+          "wrap": false,
+          "visibility": 2,
+          "width": 150
+        },
+        "Hj0mKt": {
+          "visibility": 2,
+          "width": 150,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1786514192
+    },
+    {
+      "id": "88269c9a-04ca-46b6-a8e8-95aecc9d0d61",
+      "database_id": "1014b452-1828-490b-8367-8e46f8c2ee99",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": false
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "content": "",
+          "collapsed_group_ids": [],
+          "field_id": "brgI1l",
+          "groups": [
+            {
+              "visible": false,
+              "id": "brgI1l"
+            },
+            {
+              "id": "J1Hb",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "I0PW"
+            },
+            {
+              "visible": true,
+              "id": "ddec"
+            }
+          ],
+          "id": "g:dRJSrd",
+          "ty": 3
+        }
+      ],
+      "row_orders": [
+        {
+          "id": "ff8ede09-b929-4a57-b88a-e1ed292e51a7",
+          "height": 60
+        },
+        {
+          "id": "74d3a602-2507-44cc-8331-8368678aa28e",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "33f4eaa8-565e-40d0-980b-04fa1a5f3ad3"
+        },
+        {
+          "height": 60,
+          "id": "32ea3df1-9579-4f13-a0e9-98853225657c"
+        },
+        {
+          "height": 60,
+          "id": "9476cddd-393c-46ae-8a96-c55b0409ffcb"
+        },
+        {
+          "id": "5a116dac-65d4-49a5-8bb5-5b7bbcef621d",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "hmTBGy"
+        },
+        {
+          "id": "q2IlYg"
+        },
+        {
+          "id": "brgI1l"
+        },
+        {
+          "id": "n1x0-V"
+        },
+        {
+          "id": "Hj0mKt"
+        },
+        {
+          "id": "WPB8kp"
+        },
+        {
+          "id": "870-a1"
+        },
+        {
+          "id": "0HUU3-"
+        },
+        {
+          "id": "0Sv0CN"
+        },
+        {
+          "id": "ZhdbzZ"
+        },
+        {
+          "id": "KAvKtM"
+        },
+        {
+          "id": "XZK3xV"
+        },
+        {
+          "id": "8KneUw"
+        },
+        {
+          "id": "JVr328"
+        }
+      ],
+      "field_settings": {
+        "hmTBGy": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "0Sv0CN": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 2
+        },
+        "870-a1": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 2
+        },
+        "q2IlYg": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "WPB8kp": {
+          "visibility": 2,
+          "wrap": false,
+          "width": 150
+        },
+        "n1x0-V": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "JVr328": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "8KneUw": {
+          "visibility": 2,
+          "wrap": false,
+          "width": 150
+        },
+        "XZK3xV": {
+          "visibility": 2,
+          "width": 150,
+          "wrap": false
+        },
+        "KAvKtM": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "ZhdbzZ": {
+          "visibility": 2,
+          "wrap": false,
+          "width": 150
+        },
+        "Hj0mKt": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 2
+        },
+        "0HUU3-": {
+          "width": 150,
+          "visibility": 2,
+          "wrap": false
+        },
+        "brgI1l": {
+          "visibility": 2,
+          "wrap": false,
+          "width": 150
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    },
+    {
+      "id": "12bf9b99-cefe-46b9-8a8f-a0e4f384767a",
+      "database_id": "1014b452-1828-490b-8367-8e46f8c2ee99",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [
+        {
+          "content": "",
+          "filter_type": 2,
+          "ty": 3,
+          "id": "4PBTBH",
+          "field_id": "brgI1l",
+          "condition": 4
+        }
+      ],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "ff8ede09-b929-4a57-b88a-e1ed292e51a7"
+        },
+        {
+          "id": "74d3a602-2507-44cc-8331-8368678aa28e",
+          "height": 60
+        },
+        {
+          "id": "33f4eaa8-565e-40d0-980b-04fa1a5f3ad3",
+          "height": 60
+        },
+        {
+          "id": "32ea3df1-9579-4f13-a0e9-98853225657c",
+          "height": 60
+        },
+        {
+          "id": "9476cddd-393c-46ae-8a96-c55b0409ffcb",
+          "height": 60
+        },
+        {
+          "id": "5a116dac-65d4-49a5-8bb5-5b7bbcef621d",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "hmTBGy"
+        },
+        {
+          "id": "q2IlYg"
+        },
+        {
+          "id": "brgI1l"
+        },
+        {
+          "id": "n1x0-V"
+        },
+        {
+          "id": "Hj0mKt"
+        },
+        {
+          "id": "WPB8kp"
+        },
+        {
+          "id": "870-a1"
+        },
+        {
+          "id": "0HUU3-"
+        },
+        {
+          "id": "0Sv0CN"
+        },
+        {
+          "id": "ZhdbzZ"
+        },
+        {
+          "id": "KAvKtM"
+        },
+        {
+          "id": "XZK3xV"
+        },
+        {
+          "id": "8KneUw"
+        },
+        {
+          "id": "JVr328"
+        }
+      ],
+      "field_settings": {
+        "Hj0mKt": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "KAvKtM": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "ZhdbzZ": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        },
+        "hmTBGy": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "0HUU3-": {
+          "visibility": 0,
+          "wrap": false,
+          "width": 150
+        },
+        "n1x0-V": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "XZK3xV": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "JVr328": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "q2IlYg": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "brgI1l": {
+          "width": 150,
+          "wrap": false,
+          "visibility": 0
+        },
+        "0Sv0CN": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "WPB8kp": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": false
+        },
+        "870-a1": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "8KneUw": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    }
+  ],
+  "rows": [
+    {
+      "id": "74d3a602-2507-44cc-8331-8368678aa28e",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0HUU3-": {
+          "data": "5",
+          "field_type": 1
+        },
+        "n1x0-V": {
+          "data": "Teams working across desktop and mobile experience delays or conflicts when connectivity is unstable or datasets are large.",
+          "field_type": 0
+        },
+        "ZhdbzZ": {
+          "field_type": 1,
+          "data": "5"
+        },
+        "WPB8kp": {
+          "data": "Sync telemetry review; 21 support cases; 6 customer interviews",
+          "field_type": 0
+        },
+        "870-a1": {
+          "field_type": 1,
+          "data": "5"
+        },
+        "JVr328": {
+          "created_at": 1786514455,
+          "data": [
+            "721f2148-16e0-4141-a0bc-b5841cd09660"
+          ],
+          "field_type": 10,
+          "last_modified": 1786514455
+        },
+        "0Sv0CN": {
+          "field_type": 1,
+          "data": "5"
+        },
+        "8KneUw": {
+          "field_type": 3,
+          "data": "r4CB"
+        },
+        "hmTBGy": {
+          "data": "OPP-002",
+          "field_type": 0
+        },
+        "brgI1l": {
+          "field_type": 3,
+          "data": "ddec"
+        },
+        "XZK3xV": {
+          "data": "Reduce sync-related support cases by 50%",
+          "field_type": 0
+        },
+        "Hj0mKt": {
+          "field_type": 0,
+          "data": "Distributed product and engineering teams"
+        },
+        "KAvKtM": {
+          "field_type": 0,
+          "data": "Noah Williams"
+        },
+        "q2IlYg": {
+          "field_type": 0,
+          "data": "Distributed teams need more reliable cross-device syncing"
+        }
+      }
+    },
+    {
+      "id": "5a116dac-65d4-49a5-8bb5-5b7bbcef621d",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0HUU3-": {
+          "data": "4",
+          "field_type": 1
+        },
+        "0Sv0CN": {
+          "field_type": 1,
+          "data": "2"
+        },
+        "JVr328": {
+          "created_at": 1786514440,
+          "data": [
+            "bd90e1eb-e6ea-4b70-a85f-a3a748be8ab2"
+          ],
+          "last_modified": 1786514440,
+          "field_type": 10
+        },
+        "ZhdbzZ": {
+          "field_type": 1,
+          "data": "8"
+        },
+        "Hj0mKt": {
+          "field_type": 0,
+          "data": "Enterprise software buyers"
+        },
+        "870-a1": {
+          "data": "4",
+          "field_type": 1
+        },
+        "brgI1l": {
+          "data": "ddec",
+          "field_type": 3
+        },
+        "n1x0-V": {
+          "field_type": 0,
+          "data": "Enterprise visitors understand the product but lack enough proof, deployment detail, and outcome-oriented examples to request a demo."
+        },
+        "8KneUw": {
+          "data": "r4CB",
+          "field_type": 3
+        },
+        "hmTBGy": {
+          "data": "OPP-006",
+          "field_type": 0
+        },
+        "KAvKtM": {
+          "field_type": 0,
+          "data": "Emma Davis"
+        },
+        "WPB8kp": {
+          "field_type": 0,
+          "data": "Funnel analysis; 10 sales interviews; usability test findings"
+        },
+        "q2IlYg": {
+          "data": "Website visitors need clearer enterprise proof",
+          "field_type": 0
+        },
+        "XZK3xV": {
+          "data": "Increase qualified demo conversion from 1.8% to 2.7%",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "32ea3df1-9579-4f13-a0e9-98853225657c",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "0Sv0CN": {
+          "data": "3",
+          "field_type": 1
+        },
+        "KAvKtM": {
+          "field_type": 0,
+          "data": "Leo Martin"
+        },
+        "870-a1": {
+          "data": "4",
+          "field_type": 1
+        },
+        "n1x0-V": {
+          "field_type": 0,
+          "data": "Prospects delay adoption because importing large workspaces requires manual cleanup and loses structure."
+        },
+        "8KneUw": {
+          "field_type": 3,
+          "data": "r4CB"
+        },
+        "JVr328": {
+          "data": [
+            "bd91efce-ddcb-486e-b036-81bf504fa5e8"
+          ],
+          "created_at": 1786514452,
+          "field_type": 10,
+          "last_modified": 1786514452
+        },
+        "hmTBGy": {
+          "field_type": 0,
+          "data": "OPP-004"
+        },
+        "q2IlYg": {
+          "field_type": 0,
+          "data": "New customers need a faster migration path"
+        },
+        "WPB8kp": {
+          "data": "15 onboarding sessions; 7 migration samples; sales pipeline analysis",
+          "field_type": 0
+        },
+        "brgI1l": {
+          "field_type": 3,
+          "data": "I0PW"
+        },
+        "0HUU3-": {
+          "field_type": 1,
+          "data": "4"
+        },
+        "Hj0mKt": {
+          "data": "Teams migrating from legacy knowledge tools",
+          "field_type": 0
+        },
+        "ZhdbzZ": {
+          "field_type": 1,
+          "data": "5.33"
+        },
+        "XZK3xV": {
+          "data": "Reduce median migration setup time from 10 days to 3 days",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "33f4eaa8-565e-40d0-980b-04fa1a5f3ad3",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "8KneUw": {
+          "field_type": 3,
+          "data": "r4CB"
+        },
+        "brgI1l": {
+          "field_type": 3,
+          "data": "I0PW"
+        },
+        "KAvKtM": {
+          "data": "Ava Patel",
+          "field_type": 0
+        },
+        "Hj0mKt": {
+          "field_type": 0,
+          "data": "Regulated and air-gapped organizations"
+        },
+        "870-a1": {
+          "data": "5",
+          "field_type": 1
+        },
+        "XZK3xV": {
+          "data": "Enable 5 on-prem AI deployments this quarter",
+          "field_type": 0
+        },
+        "JVr328": {
+          "last_modified": 1786514458,
+          "field_type": 10,
+          "created_at": 1786514458,
+          "data": [
+            "e1ebd9f5-f067-47e2-9e32-17a638ffce91"
+          ]
+        },
+        "WPB8kp": {
+          "data": "9 enterprise requests; 4 security reviews; 2 paid pilots",
+          "field_type": 0
+        },
+        "ZhdbzZ": {
+          "data": "5",
+          "field_type": 1
+        },
+        "n1x0-V": {
+          "data": "Security-conscious organizations cannot send workspace content to externally hosted AI providers.",
+          "field_type": 0
+        },
+        "0HUU3-": {
+          "data": "4",
+          "field_type": 1
+        },
+        "0Sv0CN": {
+          "data": "4",
+          "field_type": 1
+        },
+        "hmTBGy": {
+          "data": "OPP-003",
+          "field_type": 0
+        },
+        "q2IlYg": {
+          "field_type": 0,
+          "data": "Regulated organizations need AI within their own infrastructure"
+        }
+      }
+    },
+    {
+      "id": "ff8ede09-b929-4a57-b88a-e1ed292e51a7",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "hmTBGy": {
+          "data": "OPP-001",
+          "field_type": 0
+        },
+        "brgI1l": {
+          "field_type": 3,
+          "data": "ddec"
+        },
+        "870-a1": {
+          "field_type": 1,
+          "data": "5"
+        },
+        "KAvKtM": {
+          "data": "Maya Chen",
+          "field_type": 0
+        },
+        "XZK3xV": {
+          "data": "Increase enterprise pilot-to-paid conversion from 35% to 50%",
+          "field_type": 0
+        },
+        "n1x0-V": {
+          "field_type": 0,
+          "data": "Workspace administrators cannot consistently apply permissions across teams and spaces, creating security and administration overhead."
+        },
+        "q2IlYg": {
+          "data": "Enterprise admins need granular access control",
+          "field_type": 0
+        },
+        "0Sv0CN": {
+          "data": "4",
+          "field_type": 1
+        },
+        "0HUU3-": {
+          "data": "5",
+          "field_type": 1
+        },
+        "WPB8kp": {
+          "field_type": 0,
+          "data": "12 sales calls; 8 support requests; 3 pilot blockers"
+        },
+        "Hj0mKt": {
+          "field_type": 0,
+          "data": "Enterprise IT administrators"
+        },
+        "8KneUw": {
+          "data": "r4CB",
+          "field_type": 3
+        },
+        "JVr328": {
+          "data": [
+            "439bd5d7-6b22-4117-8465-539dcc6c55d9"
+          ],
+          "field_type": 10,
+          "last_modified": 1786514448,
+          "created_at": 1786514448
+        },
+        "ZhdbzZ": {
+          "data": "6.25",
+          "field_type": 1
+        }
+      }
+    },
+    {
+      "id": "9476cddd-393c-46ae-8a96-c55b0409ffcb",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ZhdbzZ": {
+          "data": "4",
+          "field_type": 1
+        },
+        "brgI1l": {
+          "data": "J1Hb",
+          "field_type": 3
+        },
+        "JVr328": {
+          "created_at": 1786514460,
+          "data": [
+            "c941967b-dbd3-4150-bb9a-6c5048b99582"
+          ],
+          "field_type": 10,
+          "last_modified": 1786514460
+        },
+        "q2IlYg": {
+          "field_type": 0,
+          "data": "Product teams need better visibility into delivery risk"
+        },
+        "Hj0mKt": {
+          "data": "Product and engineering leaders",
+          "field_type": 0
+        },
+        "870-a1": {
+          "data": "4",
+          "field_type": 1
+        },
+        "XZK3xV": {
+          "data": "Reduce weekly portfolio reporting time by 60%",
+          "field_type": 0
+        },
+        "n1x0-V": {
+          "data": "Leaders cannot quickly identify blocked initiatives, slipping milestones, or overloaded teams across the portfolio.",
+          "field_type": 0
+        },
+        "8KneUw": {
+          "data": "Ew5I",
+          "field_type": 3
+        },
+        "0Sv0CN": {
+          "field_type": 1,
+          "data": "3"
+        },
+        "hmTBGy": {
+          "data": "OPP-005",
+          "field_type": 0
+        },
+        "WPB8kp": {
+          "field_type": 0,
+          "data": "5 design-partner interviews; internal planning retrospective"
+        },
+        "KAvKtM": {
+          "field_type": 0,
+          "data": "Sofia Rossi"
+        },
+        "0HUU3-": {
+          "data": "3",
+          "field_type": 1
+        }
+      }
+    }
+  ],
+  "related_databases": [
+    {
+      "database_id": "01cdd149-0f42-479d-b8c2-b39cc1c0a2a4",
+      "fields": [
+        {
+          "id": "1N_mL6",
+          "name": "Progress",
+          "field_type": 1,
+          "icon": "",
+          "type_options": {
+            "1": {
+              "symbol": "RUB",
+              "format": 0,
+              "scale": 0,
+              "name": "Number"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "3bPyoO",
+          "name": "Dependencies",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "r-QxKL",
+          "name": "Epics",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "0": {},
+            "10": {
+              "reciprocal_field_id": "JqGO5A",
+              "reciprocal_field_name": "Related Proj",
+              "source_limit": 0,
+              "target_limit": 0,
+              "database_id": "7f4ecf7f-ad29-4162-9d0a-956105f6159a",
+              "is_two_way": true
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "N3wS8_",
+          "name": "Start Date",
+          "field_type": 2,
+          "icon": "",
+          "type_options": {
+            "2": {
+              "timezone_id": "Asia/Singapore",
+              "date_format_v2": 3,
+              "time_format_v2": 1
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "HiPX_f",
+          "name": "Health",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"QJdm\",\"name\":\"On track\",\"color\":\"Purple\"},{\"id\":\"jAVc\",\"name\":\"At risk\",\"color\":\"LightPink\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "ohXHt8",
+          "name": "Team",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "MSI-Dq",
+          "name": "Risks",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "vTX256",
+          "name": "Primary Opp",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "source_limit": 0,
+              "reciprocal_field_id": "JVr328",
+              "target_limit": 0,
+              "database_id": "1014b452-1828-490b-8367-8e46f8c2ee99",
+              "is_two_way": true
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "g97HHW",
+          "name": "Target Date",
+          "field_type": 2,
+          "icon": "",
+          "type_options": {
+            "2": {
+              "date_format_v2": 3,
+              "time_format_v2": 1,
+              "timezone_id": "Asia/Singapore"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "X1CMQR",
+          "name": "Project ID",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": true
+        },
+        {
+          "id": "7sjQ8c",
+          "name": "Status",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"2XqZ\",\"name\":\"In progress\",\"color\":\"Purple\"},{\"id\":\"LuFl\",\"name\":\"Planned\",\"color\":\"Green\"},{\"id\":\"-CYz\",\"name\":\"Proposed\",\"color\":\"Cream\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "bgzbqO",
+          "name": "Owner",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "9i1_y1",
+          "name": "Project",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "vt5lf2",
+          "name": "Success Metric",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "vnhQa6",
+          "name": "Priority",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"WgFD\",\"name\":\"P0\",\"color\":\"Purple\"},{\"id\":\"W0KR\",\"name\":\"P1\",\"color\":\"Purple\"},{\"id\":\"zNB1\",\"name\":\"P2\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        }
+      ],
+      "views": [
+        {
+          "id": "b709de16-f480-43cb-a475-03b1808449cf",
+          "database_id": "01cdd149-0f42-479d-b8c2-b39cc1c0a2a4",
+          "name": "Grid",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "height": 60,
+              "id": "439bd5d7-6b22-4117-8465-539dcc6c55d9"
+            },
+            {
+              "height": 60,
+              "id": "721f2148-16e0-4141-a0bc-b5841cd09660"
+            },
+            {
+              "id": "e1ebd9f5-f067-47e2-9e32-17a638ffce91",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "bd91efce-ddcb-486e-b036-81bf504fa5e8"
+            },
+            {
+              "id": "c941967b-dbd3-4150-bb9a-6c5048b99582",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "bd90e1eb-e6ea-4b70-a85f-a3a748be8ab2"
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "X1CMQR"
+            },
+            {
+              "id": "9i1_y1"
+            },
+            {
+              "id": "vTX256"
+            },
+            {
+              "id": "r-QxKL"
+            },
+            {
+              "id": "7sjQ8c"
+            },
+            {
+              "id": "HiPX_f"
+            },
+            {
+              "id": "vnhQa6"
+            },
+            {
+              "id": "bgzbqO"
+            },
+            {
+              "id": "ohXHt8"
+            },
+            {
+              "id": "N3wS8_"
+            },
+            {
+              "id": "g97HHW"
+            },
+            {
+              "id": "vt5lf2"
+            },
+            {
+              "id": "1N_mL6"
+            },
+            {
+              "id": "3bPyoO"
+            },
+            {
+              "id": "MSI-Dq"
+            }
+          ],
+          "field_settings": {
+            "vTX256": {
+              "visibility": 0
+            },
+            "X1CMQR": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "MSI-Dq": {
+              "width": 150,
+              "visibility": 0,
+              "wrap": false
+            },
+            "3bPyoO": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 150
+            },
+            "ohXHt8": {
+              "width": 150,
+              "visibility": 0,
+              "wrap": false
+            },
+            "r-QxKL": {
+              "visibility": 0
+            },
+            "HiPX_f": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "vnhQa6": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "9i1_y1": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "vt5lf2": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 150
+            },
+            "7sjQ8c": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "g97HHW": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "N3wS8_": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "bgzbqO": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "1N_mL6": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1786514202
+        },
+        {
+          "id": "596547f1-def1-485e-a979-853986e570cf",
+          "database_id": "01cdd149-0f42-479d-b8c2-b39cc1c0a2a4",
+          "name": "Board",
+          "layout": 1,
+          "layout_settings": {
+            "1": {
+              "hide_ungrouped_column": false,
+              "collapse_hidden_groups": true
+            }
+          },
+          "filters": [],
+          "sorts": [],
+          "group_settings": [
+            {
+              "field_id": "7sjQ8c",
+              "collapsed_group_ids": [],
+              "id": "g:NgYbj7",
+              "content": "",
+              "groups": [
+                {
+                  "id": "7sjQ8c",
+                  "visible": false
+                },
+                {
+                  "visible": true,
+                  "id": "-CYz"
+                },
+                {
+                  "visible": true,
+                  "id": "LuFl"
+                },
+                {
+                  "id": "2XqZ",
+                  "visible": true
+                }
+              ],
+              "ty": 3
+            }
+          ],
+          "row_orders": [
+            {
+              "height": 60,
+              "id": "439bd5d7-6b22-4117-8465-539dcc6c55d9"
+            },
+            {
+              "height": 60,
+              "id": "721f2148-16e0-4141-a0bc-b5841cd09660"
+            },
+            {
+              "id": "e1ebd9f5-f067-47e2-9e32-17a638ffce91",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "bd91efce-ddcb-486e-b036-81bf504fa5e8"
+            },
+            {
+              "id": "c941967b-dbd3-4150-bb9a-6c5048b99582",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "bd90e1eb-e6ea-4b70-a85f-a3a748be8ab2"
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "X1CMQR"
+            },
+            {
+              "id": "9i1_y1"
+            },
+            {
+              "id": "7sjQ8c"
+            },
+            {
+              "id": "HiPX_f"
+            },
+            {
+              "id": "vnhQa6"
+            },
+            {
+              "id": "bgzbqO"
+            },
+            {
+              "id": "ohXHt8"
+            },
+            {
+              "id": "N3wS8_"
+            },
+            {
+              "id": "g97HHW"
+            },
+            {
+              "id": "vt5lf2"
+            },
+            {
+              "id": "1N_mL6"
+            },
+            {
+              "id": "3bPyoO"
+            },
+            {
+              "id": "MSI-Dq"
+            },
+            {
+              "id": "vTX256"
+            },
+            {
+              "id": "r-QxKL"
+            }
+          ],
+          "field_settings": {
+            "ohXHt8": {
+              "wrap": false,
+              "visibility": 1,
+              "width": 150
+            },
+            "9i1_y1": {
+              "wrap": false,
+              "visibility": 1,
+              "width": 150
+            },
+            "N3wS8_": {
+              "visibility": 1,
+              "wrap": false,
+              "width": 150
+            },
+            "vTX256": {
+              "width": 150,
+              "visibility": 1,
+              "wrap": false
+            },
+            "vt5lf2": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "3bPyoO": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 1
+            },
+            "HiPX_f": {
+              "visibility": 1,
+              "wrap": false,
+              "width": 150
+            },
+            "MSI-Dq": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "1N_mL6": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 1
+            },
+            "7sjQ8c": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 1
+            },
+            "bgzbqO": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "vnhQa6": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "r-QxKL": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 1
+            },
+            "X1CMQR": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 150
+            },
+            "g97HHW": {
+              "visibility": 1,
+              "wrap": false,
+              "width": 150
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 0
+        },
+        {
+          "id": "cba9eddc-5a0b-4524-9e8f-2e4536288a2d",
+          "database_id": "01cdd149-0f42-479d-b8c2-b39cc1c0a2a4",
+          "name": "Calendar",
+          "layout": 2,
+          "layout_settings": {
+            "2": {
+              "field_id": "g97HHW",
+              "layout_ty": 0,
+              "show_week_numbers": true,
+              "show_weekends": true
+            }
+          },
+          "filters": [],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "id": "439bd5d7-6b22-4117-8465-539dcc6c55d9",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "721f2148-16e0-4141-a0bc-b5841cd09660"
+            },
+            {
+              "id": "e1ebd9f5-f067-47e2-9e32-17a638ffce91",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "bd91efce-ddcb-486e-b036-81bf504fa5e8"
+            },
+            {
+              "id": "c941967b-dbd3-4150-bb9a-6c5048b99582",
+              "height": 60
+            },
+            {
+              "id": "bd90e1eb-e6ea-4b70-a85f-a3a748be8ab2",
+              "height": 60
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "X1CMQR"
+            },
+            {
+              "id": "9i1_y1"
+            },
+            {
+              "id": "7sjQ8c"
+            },
+            {
+              "id": "HiPX_f"
+            },
+            {
+              "id": "vnhQa6"
+            },
+            {
+              "id": "bgzbqO"
+            },
+            {
+              "id": "ohXHt8"
+            },
+            {
+              "id": "N3wS8_"
+            },
+            {
+              "id": "g97HHW"
+            },
+            {
+              "id": "vt5lf2"
+            },
+            {
+              "id": "1N_mL6"
+            },
+            {
+              "id": "3bPyoO"
+            },
+            {
+              "id": "MSI-Dq"
+            },
+            {
+              "id": "vTX256"
+            },
+            {
+              "id": "r-QxKL"
+            }
+          ],
+          "field_settings": {
+            "g97HHW": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "3bPyoO": {
+              "width": 150,
+              "visibility": 1,
+              "wrap": false
+            },
+            "vt5lf2": {
+              "width": 150,
+              "visibility": 1,
+              "wrap": false
+            },
+            "9i1_y1": {
+              "visibility": 1,
+              "wrap": false,
+              "width": 150
+            },
+            "bgzbqO": {
+              "wrap": false,
+              "visibility": 1,
+              "width": 150
+            },
+            "MSI-Dq": {
+              "wrap": false,
+              "visibility": 1,
+              "width": 150
+            },
+            "vnhQa6": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "ohXHt8": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 1
+            },
+            "vTX256": {
+              "wrap": false,
+              "visibility": 1,
+              "width": 150
+            },
+            "1N_mL6": {
+              "wrap": false,
+              "visibility": 1,
+              "width": 150
+            },
+            "HiPX_f": {
+              "visibility": 1,
+              "width": 150,
+              "wrap": false
+            },
+            "X1CMQR": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "r-QxKL": {
+              "width": 150,
+              "visibility": 1,
+              "wrap": false
+            },
+            "N3wS8_": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 1
+            },
+            "7sjQ8c": {
+              "visibility": 1,
+              "wrap": false,
+              "width": 150
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 0
+        },
+        {
+          "id": "46a25912-df2b-4cec-900d-e7450fab4b9c",
+          "database_id": "01cdd149-0f42-479d-b8c2-b39cc1c0a2a4",
+          "name": "Grid",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [
+            {
+              "content": "jAVc",
+              "filter_type": 2,
+              "field_id": "HiPX_f",
+              "condition": 0,
+              "id": "ysHjYf",
+              "ty": 3
+            }
+          ],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "height": 60,
+              "id": "439bd5d7-6b22-4117-8465-539dcc6c55d9"
+            },
+            {
+              "height": 60,
+              "id": "721f2148-16e0-4141-a0bc-b5841cd09660"
+            },
+            {
+              "height": 60,
+              "id": "e1ebd9f5-f067-47e2-9e32-17a638ffce91"
+            },
+            {
+              "height": 60,
+              "id": "bd91efce-ddcb-486e-b036-81bf504fa5e8"
+            },
+            {
+              "height": 60,
+              "id": "c941967b-dbd3-4150-bb9a-6c5048b99582"
+            },
+            {
+              "id": "bd90e1eb-e6ea-4b70-a85f-a3a748be8ab2",
+              "height": 60
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "X1CMQR"
+            },
+            {
+              "id": "9i1_y1"
+            },
+            {
+              "id": "7sjQ8c"
+            },
+            {
+              "id": "HiPX_f"
+            },
+            {
+              "id": "vnhQa6"
+            },
+            {
+              "id": "bgzbqO"
+            },
+            {
+              "id": "ohXHt8"
+            },
+            {
+              "id": "N3wS8_"
+            },
+            {
+              "id": "g97HHW"
+            },
+            {
+              "id": "vt5lf2"
+            },
+            {
+              "id": "1N_mL6"
+            },
+            {
+              "id": "3bPyoO"
+            },
+            {
+              "id": "MSI-Dq"
+            },
+            {
+              "id": "vTX256"
+            },
+            {
+              "id": "r-QxKL"
+            }
+          ],
+          "field_settings": {
+            "g97HHW": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 0
+            },
+            "vt5lf2": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "vTX256": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 0
+            },
+            "1N_mL6": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "r-QxKL": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "bgzbqO": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "9i1_y1": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "7sjQ8c": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "X1CMQR": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "vnhQa6": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "MSI-Dq": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "N3wS8_": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "HiPX_f": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 150
+            },
+            "3bPyoO": {
+              "width": 150,
+              "visibility": 0,
+              "wrap": false
+            },
+            "ohXHt8": {
+              "width": 150,
+              "visibility": 0,
+              "wrap": false
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 0
+        }
+      ],
+      "rows": [
+        {
+          "id": "e1ebd9f5-f067-47e2-9e32-17a638ffce91",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "vnhQa6": {
+              "field_type": 3,
+              "data": "W0KR"
+            },
+            "3bPyoO": {
+              "field_type": 0,
+              "data": "Granular permissions"
+            },
+            "N3wS8_": {
+              "end_timestamp": "",
+              "field_type": 2,
+              "data": "1784476800",
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": ""
+            },
+            "9i1_y1": {
+              "data": "On-prem AI platform",
+              "field_type": 0
+            },
+            "ohXHt8": {
+              "data": "AI Platform",
+              "field_type": 0
+            },
+            "g97HHW": {
+              "data": "1792080000",
+              "end_timestamp": "",
+              "field_type": 2,
+              "include_time": false,
+              "reminder_id": "",
+              "is_range": false
+            },
+            "vt5lf2": {
+              "field_type": 0,
+              "data": "5 production on-prem AI deployments"
+            },
+            "HiPX_f": {
+              "field_type": 3,
+              "data": "QJdm"
+            },
+            "1N_mL6": {
+              "field_type": 1,
+              "data": "32"
+            },
+            "7sjQ8c": {
+              "field_type": 3,
+              "data": "2XqZ"
+            },
+            "bgzbqO": {
+              "data": "Ava Patel",
+              "field_type": 0
+            },
+            "vTX256": {
+              "field_type": 10,
+              "data": [
+                "33f4eaa8-565e-40d0-980b-04fa1a5f3ad3"
+              ],
+              "created_at": 1786514458,
+              "last_modified": 1786514458
+            },
+            "X1CMQR": {
+              "data": "PRJ-003",
+              "field_type": 0
+            },
+            "MSI-Dq": {
+              "field_type": 0,
+              "data": "Model and embedding compatibility varies by customer infrastructure"
+            },
+            "r-QxKL": {
+              "last_modified": 1786514866,
+              "created_at": 1786514864,
+              "field_type": 10,
+              "data": [
+                "c6faf545-7913-46e9-8dde-1d0d13cd4f8a",
+                "2fa3a0e4-6047-40b6-a008-9bbd4bad1c33"
+              ]
+            }
+          }
+        },
+        {
+          "id": "721f2148-16e0-4141-a0bc-b5841cd09660",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "9i1_y1": {
+              "data": "Sync reliability program",
+              "field_type": 0
+            },
+            "MSI-Dq": {
+              "field_type": 0,
+              "data": "Large database benchmarks remain unstable on low-memory mobile devices"
+            },
+            "g97HHW": {
+              "include_time": false,
+              "reminder_id": "",
+              "end_timestamp": "",
+              "data": "1790697600",
+              "is_range": false,
+              "field_type": 2
+            },
+            "r-QxKL": {
+              "field_type": 10,
+              "data": [
+                "a2dd603d-3f02-4119-982d-fd8c8f1ffac6",
+                "57c52568-047e-4b3a-beaf-92f541d3c22b",
+                "c858ff3f-6bbb-483d-a856-36e6d655ba76"
+              ],
+              "created_at": 1786514853,
+              "last_modified": 1786515407
+            },
+            "1N_mL6": {
+              "data": "55",
+              "field_type": 1
+            },
+            "vTX256": {
+              "data": [
+                "74d3a602-2507-44cc-8331-8368678aa28e"
+              ],
+              "last_modified": 1786514455,
+              "created_at": 1786514455,
+              "field_type": 10
+            },
+            "N3wS8_": {
+              "data": "1781452800",
+              "include_time": false,
+              "reminder_id": "",
+              "is_range": false,
+              "field_type": 2,
+              "end_timestamp": ""
+            },
+            "7sjQ8c": {
+              "data": "2XqZ",
+              "field_type": 3
+            },
+            "X1CMQR": {
+              "data": "PRJ-002",
+              "field_type": 0
+            },
+            "ohXHt8": {
+              "data": "Infrastructure",
+              "field_type": 0
+            },
+            "vt5lf2": {
+              "data": "50% reduction in sync-related support cases",
+              "field_type": 0
+            },
+            "HiPX_f": {
+              "data": "jAVc",
+              "field_type": 3
+            },
+            "vnhQa6": {
+              "field_type": 3,
+              "data": "WgFD"
+            },
+            "bgzbqO": {
+              "data": "Noah Williams",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "bd90e1eb-e6ea-4b70-a85f-a3a748be8ab2",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "1N_mL6": {
+              "data": "70",
+              "field_type": 1
+            },
+            "X1CMQR": {
+              "data": "PRJ-006",
+              "field_type": 0
+            },
+            "HiPX_f": {
+              "data": "QJdm",
+              "field_type": 3
+            },
+            "7sjQ8c": {
+              "data": "2XqZ",
+              "field_type": 3
+            },
+            "vTX256": {
+              "created_at": 1786514440,
+              "data": [
+                "5a116dac-65d4-49a5-8bb5-5b7bbcef621d"
+              ],
+              "field_type": 10,
+              "last_modified": 1786514440
+            },
+            "r-QxKL": {
+              "field_type": 10,
+              "created_at": 1786514888,
+              "last_modified": 1786514894,
+              "data": [
+                "a9fd5445-4dd0-4cef-af5d-7fc5ebf53fee",
+                "74dee7a3-3169-4de2-a0b3-a9adfd082619"
+              ]
+            },
+            "N3wS8_": {
+              "is_range": false,
+              "data": "1783872000",
+              "end_timestamp": "",
+              "reminder_id": "",
+              "include_time": false,
+              "field_type": 2
+            },
+            "vnhQa6": {
+              "data": "W0KR",
+              "field_type": 3
+            },
+            "bgzbqO": {
+              "field_type": 0,
+              "data": "Emma Davis"
+            },
+            "ohXHt8": {
+              "field_type": 0,
+              "data": "Marketing"
+            },
+            "g97HHW": {
+              "data": "1787846400",
+              "end_timestamp": "",
+              "reminder_id": "",
+              "include_time": false,
+              "is_range": false,
+              "field_type": 2
+            },
+            "vt5lf2": {
+              "data": "Qualified demo conversion reaches 2.7%",
+              "field_type": 0
+            },
+            "MSI-Dq": {
+              "field_type": 0,
+              "data": "Customer approvals may delay publishing named case studies"
+            },
+            "9i1_y1": {
+              "field_type": 0,
+              "data": "Enterprise website conversion"
+            }
+          }
+        },
+        {
+          "id": "439bd5d7-6b22-4117-8465-539dcc6c55d9",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "N3wS8_": {
+              "end_timestamp": "",
+              "include_time": false,
+              "is_range": false,
+              "data": "1783267200",
+              "reminder_id": "",
+              "field_type": 2
+            },
+            "HiPX_f": {
+              "field_type": 3,
+              "data": "QJdm"
+            },
+            "g97HHW": {
+              "reminder_id": "",
+              "end_timestamp": "",
+              "include_time": false,
+              "field_type": 2,
+              "is_range": false,
+              "data": "1789660800"
+            },
+            "7sjQ8c": {
+              "field_type": 3,
+              "data": "2XqZ"
+            },
+            "vt5lf2": {
+              "field_type": 0,
+              "data": "50% enterprise pilot-to-paid conversion"
+            },
+            "MSI-Dq": {
+              "data": "Permission inheritance may require migration of existing roles",
+              "field_type": 0
+            },
+            "9i1_y1": {
+              "data": "Granular permissions",
+              "field_type": 0
+            },
+            "ohXHt8": {
+              "data": "Platform",
+              "field_type": 0
+            },
+            "r-QxKL": {
+              "field_type": 10,
+              "data": [
+                "65379b2f-e494-43a2-96c8-7f42d15ba203",
+                "aab3097d-b248-46e5-9e8b-4dd3f148f705",
+                "2584c967-753d-4f5f-a5e2-5558e68a46de"
+              ],
+              "created_at": 1786514845,
+              "last_modified": 1786515249
+            },
+            "vTX256": {
+              "field_type": 10,
+              "data": [
+                "ff8ede09-b929-4a57-b88a-e1ed292e51a7"
+              ],
+              "created_at": 1786514448,
+              "last_modified": 1786514448
+            },
+            "1N_mL6": {
+              "field_type": 1,
+              "data": "48"
+            },
+            "vnhQa6": {
+              "data": "WgFD",
+              "field_type": 3
+            },
+            "bgzbqO": {
+              "data": "Maya Chen",
+              "field_type": 0
+            },
+            "X1CMQR": {
+              "data": "PRJ-001",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "bd91efce-ddcb-486e-b036-81bf504fa5e8",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "HiPX_f": {
+              "field_type": 3,
+              "data": "QJdm"
+            },
+            "N3wS8_": {
+              "is_range": false,
+              "end_timestamp": "",
+              "data": "1786896000",
+              "include_time": false,
+              "field_type": 2,
+              "reminder_id": ""
+            },
+            "X1CMQR": {
+              "data": "PRJ-004",
+              "field_type": 0
+            },
+            "9i1_y1": {
+              "data": "Migration toolkit",
+              "field_type": 0
+            },
+            "7sjQ8c": {
+              "data": "LuFl",
+              "field_type": 3
+            },
+            "r-QxKL": {
+              "data": [
+                "a8ca4871-bd65-4d54-9107-4ceec7f3ab8c",
+                "28a156b8-888b-4173-988d-d879ef0a1bde",
+                "367e9ff3-c4ea-46fe-9b34-62b137ba2b68"
+              ],
+              "field_type": 10,
+              "created_at": 1786514874,
+              "last_modified": 1786515419
+            },
+            "vnhQa6": {
+              "data": "W0KR",
+              "field_type": 3
+            },
+            "MSI-Dq": {
+              "data": "Source formats are inconsistent and poorly documented",
+              "field_type": 0
+            },
+            "bgzbqO": {
+              "data": "Leo Martin",
+              "field_type": 0
+            },
+            "g97HHW": {
+              "reminder_id": "",
+              "is_range": false,
+              "include_time": false,
+              "end_timestamp": "",
+              "data": "1793894400",
+              "field_type": 2
+            },
+            "ohXHt8": {
+              "data": "Growth Engineering",
+              "field_type": 0
+            },
+            "vt5lf2": {
+              "data": "Median migration setup time below 3 days",
+              "field_type": 0
+            },
+            "1N_mL6": {
+              "data": "8",
+              "field_type": 1
+            },
+            "vTX256": {
+              "field_type": 10,
+              "data": [
+                "32ea3df1-9579-4f13-a0e9-98853225657c"
+              ],
+              "created_at": 1786514452,
+              "last_modified": 1786514452
+            }
+          }
+        },
+        {
+          "id": "c941967b-dbd3-4150-bb9a-6c5048b99582",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "ohXHt8": {
+              "data": "Product Operations",
+              "field_type": 0
+            },
+            "vnhQa6": {
+              "data": "zNB1",
+              "field_type": 3
+            },
+            "vTX256": {
+              "data": [
+                "9476cddd-393c-46ae-8a96-c55b0409ffcb"
+              ],
+              "created_at": 1786514460,
+              "last_modified": 1786514460,
+              "field_type": 10
+            },
+            "X1CMQR": {
+              "data": "PRJ-005",
+              "field_type": 0
+            },
+            "7sjQ8c": {
+              "data": "-CYz",
+              "field_type": 3
+            },
+            "vt5lf2": {
+              "data": "60% reduction in portfolio reporting time",
+              "field_type": 0
+            },
+            "1N_mL6": {
+              "field_type": 1,
+              "data": "0"
+            },
+            "HiPX_f": {
+              "data": "QJdm",
+              "field_type": 3
+            },
+            "g97HHW": {
+              "data": "1795708800",
+              "reminder_id": "",
+              "end_timestamp": "",
+              "include_time": false,
+              "is_range": false,
+              "field_type": 2
+            },
+            "r-QxKL": {
+              "field_type": 10,
+              "data": [
+                "f68f86bb-5a1e-4064-b097-0c6094175c8b"
+              ],
+              "last_modified": 1786514883,
+              "created_at": 1786514883
+            },
+            "9i1_y1": {
+              "field_type": 0,
+              "data": "Portfolio visibility dashboard"
+            },
+            "MSI-Dq": {
+              "field_type": 0,
+              "data": "Teams may not maintain consistent status and health fields"
+            },
+            "bgzbqO": {
+              "field_type": 0,
+              "data": "Sofia Rossi"
+            },
+            "N3wS8_": {
+              "field_type": 2,
+              "include_time": false,
+              "data": "1788710400",
+              "reminder_id": "",
+              "end_timestamp": "",
+              "is_range": false
+            }
+          }
+        }
+      ],
+      "name": "At Risk",
+      "icon": null
+    },
+    {
+      "database_id": "7f4ecf7f-ad29-4162-9d0a-956105f6159a",
+      "fields": [
+        {
+          "id": "JqGO5A",
+          "name": "Related Proj",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "source_limit": 0,
+              "database_id": "01cdd149-0f42-479d-b8c2-b39cc1c0a2a4",
+              "reciprocal_field_id": "r-QxKL",
+              "target_limit": 0,
+              "is_two_way": true
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "UDYCsz",
+          "name": "Epic ID",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": true
+        },
+        {
+          "id": "6I1YqC",
+          "name": "Status",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"r3Oi\",\"name\":\"In progress\",\"color\":\"Sunset\"},{\"id\":\"mp-V\",\"name\":\"Ready\",\"color\":\"Moss\"},{\"id\":\"CTgC\",\"name\":\"Blocked\",\"color\":\"Pearl\"},{\"id\":\"M90l\",\"name\":\"Backlog\",\"color\":\"Charcoal\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "ep3mMN",
+          "name": "Epic",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "wlyQ9o",
+          "name": "Priority",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"XzZH\",\"name\":\"P0\",\"color\":\"Purple\"},{\"id\":\"6qik\",\"name\":\"P1\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "CQDOUG",
+          "name": "Dependencies",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"fE6E\",\"name\":\"Space-level roles\",\"color\":\"Purple\"},{\"id\":\"Kq5V\",\"name\":\"Conflict merge performance\",\"color\":\"Purple\"},{\"id\":\"1xBy\",\"name\":\"Private model gateway\",\"color\":\"Purple\"},{\"id\":\"H-E4\",\"name\":\"Private model gateway; Custom embedding pipeline\",\"color\":\"Purple\"},{\"id\":\"XEJZ\",\"name\":\"Structured workspace importer\",\"color\":\"Purple\"},{\"id\":\"JVzW\",\"name\":\"Enterprise solution pages\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "leJ2oG",
+          "name": "Start Date",
+          "field_type": 2,
+          "icon": "",
+          "type_options": {
+            "2": {
+              "date_format_v2": 3,
+              "timezone_id": "Asia/Singapore",
+              "time_format_v2": 1
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "jq1oOD",
+          "name": "Owner",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "3Lx385",
+          "name": "Tasks",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "0": {},
+            "10": {
+              "database_id": "3f218d06-716f-4620-afaf-9cd37f2a9bbe",
+              "target_limit": 0,
+              "reciprocal_field_name": "Related Epics",
+              "is_two_way": true,
+              "reciprocal_field_id": "kxzfws",
+              "source_limit": 0
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "Hgqhry",
+          "name": "Progress",
+          "field_type": 1,
+          "icon": "",
+          "type_options": {
+            "1": {
+              "format": 0,
+              "scale": 0,
+              "symbol": "RUB",
+              "name": "Number"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "a9jDTR",
+          "name": "Acceptance Criteria",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "spEy_t",
+          "name": "Target Date",
+          "field_type": 2,
+          "icon": "",
+          "type_options": {
+            "2": {
+              "time_format_v2": 1,
+              "timezone_id": "Asia/Singapore",
+              "date_format_v2": 3
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "coXXF1",
+          "name": "Team",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"SBAo\",\"name\":\"Platform\",\"color\":\"Purple\"},{\"id\":\"nQzP\",\"name\":\"Identity\",\"color\":\"Purple\"},{\"id\":\"P3SU\",\"name\":\"Infrastructure\",\"color\":\"Purple\"},{\"id\":\"UY2q\",\"name\":\"Mobile\",\"color\":\"Purple\"},{\"id\":\"OR90\",\"name\":\"Database\",\"color\":\"Purple\"},{\"id\":\"4rzw\",\"name\":\"AI Platform\",\"color\":\"Purple\"},{\"id\":\"9yEz\",\"name\":\"Solutions\",\"color\":\"Purple\"},{\"id\":\"DSMd\",\"name\":\"Growth Engineering\",\"color\":\"Purple\"},{\"id\":\"NiDv\",\"name\":\"Product Operations\",\"color\":\"Purple\"},{\"id\":\"7jyV\",\"name\":\"Marketing\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "szPwzq",
+          "name": "Release",
+          "field_type": 1,
+          "icon": "",
+          "type_options": {
+            "1": {
+              "format": 0,
+              "name": "Number",
+              "symbol": "RUB",
+              "scale": 0
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "n2lR4J",
+          "name": "Opportunity",
+          "field_type": 16,
+          "icon": "",
+          "type_options": {
+            "0": {},
+            "16": {
+              "calculation_type": 5,
+              "condition_value": "",
+              "show_as": 2,
+              "target_field_id": "vTX256",
+              "relation_field_id": "JqGO5A"
+            }
+          },
+          "is_primary": false
+        }
+      ],
+      "views": [
+        {
+          "id": "01882b2e-bf38-4c02-b12b-91165b4a269d",
+          "database_id": "7f4ecf7f-ad29-4162-9d0a-956105f6159a",
+          "name": "Grid",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [],
+          "sorts": [],
+          "group_settings": [
+            {
+              "field_id": "6I1YqC",
+              "content": "",
+              "collapsed_group_ids": [],
+              "id": "g:zUVW69",
+              "ty": 3,
+              "groups": [
+                {
+                  "visible": true,
+                  "id": "6I1YqC"
+                },
+                {
+                  "visible": true,
+                  "id": "r3Oi"
+                },
+                {
+                  "id": "mp-V",
+                  "visible": true
+                },
+                {
+                  "visible": true,
+                  "id": "CTgC"
+                },
+                {
+                  "visible": true,
+                  "id": "M90l"
+                }
+              ]
+            }
+          ],
+          "row_orders": [
+            {
+              "id": "65379b2f-e494-43a2-96c8-7f42d15ba203",
+              "height": 60
+            },
+            {
+              "id": "aab3097d-b248-46e5-9e8b-4dd3f148f705",
+              "height": 60
+            },
+            {
+              "id": "2584c967-753d-4f5f-a5e2-5558e68a46de",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "a2dd603d-3f02-4119-982d-fd8c8f1ffac6"
+            },
+            {
+              "height": 60,
+              "id": "57c52568-047e-4b3a-beaf-92f541d3c22b"
+            },
+            {
+              "height": 60,
+              "id": "c858ff3f-6bbb-483d-a856-36e6d655ba76"
+            },
+            {
+              "id": "c6faf545-7913-46e9-8dde-1d0d13cd4f8a",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "2fa3a0e4-6047-40b6-a008-9bbd4bad1c33"
+            },
+            {
+              "height": 60,
+              "id": "367e9ff3-c4ea-46fe-9b34-62b137ba2b68"
+            },
+            {
+              "id": "a8ca4871-bd65-4d54-9107-4ceec7f3ab8c",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "28a156b8-888b-4173-988d-d879ef0a1bde"
+            },
+            {
+              "height": 60,
+              "id": "f68f86bb-5a1e-4064-b097-0c6094175c8b"
+            },
+            {
+              "id": "a9fd5445-4dd0-4cef-af5d-7fc5ebf53fee",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "74dee7a3-3169-4de2-a0b3-a9adfd082619"
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "UDYCsz"
+            },
+            {
+              "id": "ep3mMN"
+            },
+            {
+              "id": "3Lx385"
+            },
+            {
+              "id": "JqGO5A"
+            },
+            {
+              "id": "n2lR4J"
+            },
+            {
+              "id": "6I1YqC"
+            },
+            {
+              "id": "wlyQ9o"
+            },
+            {
+              "id": "jq1oOD"
+            },
+            {
+              "id": "coXXF1"
+            },
+            {
+              "id": "leJ2oG"
+            },
+            {
+              "id": "spEy_t"
+            },
+            {
+              "id": "szPwzq"
+            },
+            {
+              "id": "Hgqhry"
+            },
+            {
+              "id": "CQDOUG"
+            },
+            {
+              "id": "a9jDTR"
+            }
+          ],
+          "field_settings": {
+            "leJ2oG": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 150
+            },
+            "szPwzq": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "jq1oOD": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "wlyQ9o": {
+              "wrap": false,
+              "width": 150,
+              "visibility": 0
+            },
+            "spEy_t": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "CQDOUG": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "ep3mMN": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 274
+            },
+            "coXXF1": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "a9jDTR": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "6I1YqC": {
+              "width": 150,
+              "visibility": 0,
+              "wrap": false
+            },
+            "n2lR4J": {
+              "visibility": 0
+            },
+            "3Lx385": {
+              "visibility": 0
+            },
+            "Hgqhry": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "UDYCsz": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "JqGO5A": {
+              "visibility": 0
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1786514213
+        }
+      ],
+      "rows": [
+        {
+          "id": "65379b2f-e494-43a2-96c8-7f42d15ba203",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "spEy_t": {
+              "reminder_id": "",
+              "data": "1787241600",
+              "include_time": false,
+              "end_timestamp": "",
+              "field_type": 2,
+              "is_range": false
+            },
+            "szPwzq": {
+              "data": "2026.09",
+              "field_type": 1
+            },
+            "jq1oOD": {
+              "field_type": 0,
+              "data": "Maya Chen"
+            },
+            "JqGO5A": {
+              "created_at": 1786514845,
+              "data": [
+                "439bd5d7-6b22-4117-8465-539dcc6c55d9"
+              ],
+              "field_type": 10,
+              "last_modified": 1786514845
+            },
+            "3Lx385": {
+              "created_at": 1786515652,
+              "data": [
+                "d0a58ef6-72e8-45f7-91dd-76f1408089c6",
+                "4f0c1593-47db-454f-8ee4-ca0e8f985b89"
+              ],
+              "last_modified": 1786515654,
+              "field_type": 10
+            },
+            "ep3mMN": {
+              "data": "Space-level roles",
+              "field_type": 0
+            },
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-001"
+            },
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "Admins can assign predefined roles at the space level and existing members retain valid access."
+            },
+            "wlyQ9o": {
+              "field_type": 3,
+              "data": "XzZH"
+            },
+            "coXXF1": {
+              "field_type": 3,
+              "data": "SBAo"
+            },
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "65"
+            },
+            "6I1YqC": {
+              "field_type": 3,
+              "data": "r3Oi"
+            },
+            "leJ2oG": {
+              "reminder_id": "",
+              "include_time": false,
+              "field_type": 2,
+              "data": "1783267200",
+              "is_range": false,
+              "end_timestamp": ""
+            }
+          }
+        },
+        {
+          "id": "a8ca4871-bd65-4d54-9107-4ceec7f3ab8c",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "Hgqhry": {
+              "data": "12",
+              "field_type": 1
+            },
+            "spEy_t": {
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": "",
+              "end_timestamp": "",
+              "data": "1790870400",
+              "field_type": 2
+            },
+            "szPwzq": {
+              "data": "2026.1",
+              "field_type": 1
+            },
+            "3Lx385": {
+              "created_at": 1786515714,
+              "data": [
+                "9146d5cc-e922-474c-8d41-2ecffe65e727"
+              ],
+              "field_type": 10,
+              "last_modified": 1786515714
+            },
+            "6I1YqC": {
+              "data": "mp-V",
+              "field_type": 3
+            },
+            "ep3mMN": {
+              "field_type": 0,
+              "data": "Structured workspace importer"
+            },
+            "wlyQ9o": {
+              "data": "XzZH",
+              "field_type": 3
+            },
+            "leJ2oG": {
+              "end_timestamp": "",
+              "field_type": 2,
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": "",
+              "data": "1786896000"
+            },
+            "JqGO5A": {
+              "last_modified": 1786514874,
+              "created_at": 1786514874,
+              "field_type": 10,
+              "data": [
+                "bd91efce-ddcb-486e-b036-81bf504fa5e8"
+              ]
+            },
+            "coXXF1": {
+              "field_type": 3,
+              "data": "DSMd"
+            },
+            "jq1oOD": {
+              "data": "Leo Martin",
+              "field_type": 0
+            },
+            "a9jDTR": {
+              "data": "Importer preserves page hierarchy, databases, properties, and common rich-text blocks.",
+              "field_type": 0
+            },
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-010"
+            }
+          }
+        },
+        {
+          "id": "a2dd603d-3f02-4119-982d-fd8c8f1ffac6",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "72"
+            },
+            "ep3mMN": {
+              "field_type": 0,
+              "data": "Conflict merge performance"
+            },
+            "coXXF1": {
+              "data": "P3SU",
+              "field_type": 3
+            },
+            "6I1YqC": {
+              "data": "r3Oi",
+              "field_type": 3
+            },
+            "JqGO5A": {
+              "last_modified": 1786514853,
+              "field_type": 10,
+              "created_at": 1786514853,
+              "data": [
+                "721f2148-16e0-4141-a0bc-b5841cd09660"
+              ]
+            },
+            "leJ2oG": {
+              "field_type": 2,
+              "reminder_id": "",
+              "data": "1781452800",
+              "include_time": false,
+              "is_range": false,
+              "end_timestamp": ""
+            },
+            "jq1oOD": {
+              "data": "Noah Williams",
+              "field_type": 0
+            },
+            "wlyQ9o": {
+              "data": "XzZH",
+              "field_type": 3
+            },
+            "szPwzq": {
+              "data": "2026.08",
+              "field_type": 1
+            },
+            "spEy_t": {
+              "is_range": false,
+              "end_timestamp": "",
+              "data": "1787846400",
+              "field_type": 2,
+              "reminder_id": "",
+              "include_time": false
+            },
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-004"
+            },
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "P95 merge time stays below the target for representative large workspaces."
+            },
+            "3Lx385": {
+              "last_modified": 1786515667,
+              "created_at": 1786515665,
+              "data": [
+                "b5e96db8-7326-4c3f-b297-5d540dc051fd",
+                "83e5ec28-4b5b-4d55-bfc0-040dbf6edb41"
+              ],
+              "field_type": 10
+            }
+          }
+        },
+        {
+          "id": "c6faf545-7913-46e9-8dde-1d0d13cd4f8a",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-007"
+            },
+            "coXXF1": {
+              "data": "4rzw",
+              "field_type": 3
+            },
+            "jq1oOD": {
+              "field_type": 0,
+              "data": "Ava Patel"
+            },
+            "szPwzq": {
+              "data": "2026.09",
+              "field_type": 1
+            },
+            "ep3mMN": {
+              "field_type": 0,
+              "data": "Private model gateway"
+            },
+            "leJ2oG": {
+              "end_timestamp": "",
+              "field_type": 2,
+              "include_time": false,
+              "is_range": false,
+              "data": "1784476800",
+              "reminder_id": ""
+            },
+            "JqGO5A": {
+              "data": [
+                "e1ebd9f5-f067-47e2-9e32-17a638ffce91"
+              ],
+              "last_modified": 1786514864,
+              "field_type": 10,
+              "created_at": 1786514864
+            },
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "Admins can connect supported private model endpoints without sending data externally."
+            },
+            "spEy_t": {
+              "field_type": 2,
+              "include_time": false,
+              "is_range": false,
+              "data": "1788451200",
+              "reminder_id": "",
+              "end_timestamp": ""
+            },
+            "wlyQ9o": {
+              "data": "XzZH",
+              "field_type": 3
+            },
+            "6I1YqC": {
+              "data": "r3Oi",
+              "field_type": 3
+            },
+            "3Lx385": {
+              "created_at": 1786515690,
+              "field_type": 10,
+              "last_modified": 1786515693,
+              "data": [
+                "4df996fa-f08b-45b8-b973-e6d72bc0403f",
+                "74fd4e2c-ab05-48cf-905d-1014a19aa634"
+              ]
+            },
+            "Hgqhry": {
+              "data": "50",
+              "field_type": 1
+            }
+          }
+        },
+        {
+          "id": "367e9ff3-c4ea-46fe-9b34-62b137ba2b68",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "A customer can deploy and validate the AI stack without outbound internet access."
+            },
+            "coXXF1": {
+              "data": "9yEz",
+              "field_type": 3
+            },
+            "6I1YqC": {
+              "field_type": 3,
+              "data": "M90l"
+            },
+            "leJ2oG": {
+              "data": "1789315200",
+              "is_range": false,
+              "end_timestamp": "",
+              "field_type": 2,
+              "include_time": false,
+              "reminder_id": ""
+            },
+            "3Lx385": {
+              "created_at": 1786515705,
+              "data": [
+                "f6e07ba8-6294-4f1a-a9f0-13655e0f6bd3"
+              ],
+              "last_modified": 1786515705,
+              "field_type": 10
+            },
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "0"
+            },
+            "ep3mMN": {
+              "field_type": 0,
+              "data": "Air-gapped deployment guide"
+            },
+            "wlyQ9o": {
+              "data": "6qik",
+              "field_type": 3
+            },
+            "spEy_t": {
+              "include_time": false,
+              "reminder_id": "",
+              "end_timestamp": "",
+              "field_type": 2,
+              "is_range": false,
+              "data": "1792080000"
+            },
+            "CQDOUG": {
+              "data": "H-E4",
+              "field_type": 3
+            },
+            "szPwzq": {
+              "data": "2026.1",
+              "field_type": 1
+            },
+            "jq1oOD": {
+              "data": "Grace Tan",
+              "field_type": 0
+            },
+            "UDYCsz": {
+              "data": "EPC-009",
+              "field_type": 0
+            },
+            "JqGO5A": {
+              "data": [
+                "bd91efce-ddcb-486e-b036-81bf504fa5e8"
+              ],
+              "last_modified": 1786515419,
+              "created_at": 1786515419,
+              "field_type": 10
+            }
+          }
+        },
+        {
+          "id": "28a156b8-888b-4173-988d-d879ef0a1bde",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "wlyQ9o": {
+              "data": "6qik",
+              "field_type": 3
+            },
+            "leJ2oG": {
+              "end_timestamp": "",
+              "reminder_id": "",
+              "data": "1789920000",
+              "field_type": 2,
+              "is_range": false,
+              "include_time": false
+            },
+            "jq1oOD": {
+              "data": "Nora Evans",
+              "field_type": 0
+            },
+            "UDYCsz": {
+              "data": "EPC-011",
+              "field_type": 0
+            },
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "Each migration produces a report of imported, transformed, skipped, and failed items."
+            },
+            "coXXF1": {
+              "data": "DSMd",
+              "field_type": 3
+            },
+            "Hgqhry": {
+              "data": "0",
+              "field_type": 1
+            },
+            "6I1YqC": {
+              "field_type": 3,
+              "data": "M90l"
+            },
+            "ep3mMN": {
+              "data": "Migration validation report",
+              "field_type": 0
+            },
+            "spEy_t": {
+              "include_time": false,
+              "data": "1793894400",
+              "end_timestamp": "",
+              "field_type": 2,
+              "is_range": false,
+              "reminder_id": ""
+            },
+            "CQDOUG": {
+              "field_type": 3,
+              "data": "XEJZ"
+            },
+            "JqGO5A": {
+              "data": [
+                "bd91efce-ddcb-486e-b036-81bf504fa5e8"
+              ],
+              "last_modified": 1786514875,
+              "created_at": 1786514875,
+              "field_type": 10
+            },
+            "szPwzq": {
+              "data": "2026.11",
+              "field_type": 1
+            },
+            "3Lx385": {
+              "field_type": 10,
+              "data": [
+                "a69c373a-7d98-43b3-9750-eacfdf171bf9"
+              ],
+              "created_at": 1786515722,
+              "last_modified": 1786515722
+            }
+          }
+        },
+        {
+          "id": "2fa3a0e4-6047-40b6-a008-9bbd4bad1c33",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "coXXF1": {
+              "field_type": 3,
+              "data": "4rzw"
+            },
+            "JqGO5A": {
+              "created_at": 1786514866,
+              "data": [
+                "e1ebd9f5-f067-47e2-9e32-17a638ffce91"
+              ],
+              "field_type": 10,
+              "last_modified": 1786514866
+            },
+            "wlyQ9o": {
+              "field_type": 3,
+              "data": "6qik"
+            },
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-008"
+            },
+            "ep3mMN": {
+              "field_type": 0,
+              "data": "Custom embedding pipeline"
+            },
+            "szPwzq": {
+              "field_type": 1,
+              "data": "2026.1"
+            },
+            "leJ2oG": {
+              "end_timestamp": "",
+              "include_time": false,
+              "is_range": false,
+              "data": "1786896000",
+              "reminder_id": "",
+              "field_type": 2
+            },
+            "CQDOUG": {
+              "field_type": 3,
+              "data": "1xBy"
+            },
+            "6I1YqC": {
+              "data": "mp-V",
+              "field_type": 3
+            },
+            "jq1oOD": {
+              "field_type": 0,
+              "data": "Daniel Kim"
+            },
+            "spEy_t": {
+              "end_timestamp": "",
+              "include_time": false,
+              "field_type": 2,
+              "is_range": false,
+              "reminder_id": "",
+              "data": "1790265600"
+            },
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "15"
+            },
+            "3Lx385": {
+              "created_at": 1786515701,
+              "field_type": 10,
+              "data": [
+                "e3d2f03d-dbdf-4e91-8933-95cb95197fb1"
+              ],
+              "last_modified": 1786515701
+            },
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "Customers can configure approved embedding models and rebuild workspace indexes."
+            }
+          }
+        },
+        {
+          "id": "c858ff3f-6bbb-483d-a856-36e6d655ba76",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "38"
+            },
+            "UDYCsz": {
+              "data": "EPC-006",
+              "field_type": 0
+            },
+            "JqGO5A": {
+              "data": [
+                "721f2148-16e0-4141-a0bc-b5841cd09660"
+              ],
+              "field_type": 10,
+              "created_at": 1786515407,
+              "last_modified": 1786515407
+            },
+            "3Lx385": {
+              "created_at": 1786515682,
+              "field_type": 10,
+              "last_modified": 1786515682,
+              "data": [
+                "ea5ea0b3-daff-45be-bed0-f881d1740977"
+              ]
+            },
+            "ep3mMN": {
+              "field_type": 0,
+              "data": "Large database synchronization"
+            },
+            "CQDOUG": {
+              "field_type": 3,
+              "data": "Kq5V"
+            },
+            "szPwzq": {
+              "field_type": 1,
+              "data": "2026.09"
+            },
+            "coXXF1": {
+              "data": "OR90",
+              "field_type": 3
+            },
+            "wlyQ9o": {
+              "field_type": 3,
+              "data": "6qik"
+            },
+            "spEy_t": {
+              "reminder_id": "",
+              "end_timestamp": "",
+              "data": "1790697600",
+              "is_range": false,
+              "field_type": 2,
+              "include_time": false
+            },
+            "a9jDTR": {
+              "data": "Large databases meet sync latency and memory benchmarks on desktop and mobile.",
+              "field_type": 0
+            },
+            "leJ2oG": {
+              "is_range": false,
+              "data": "1783872000",
+              "end_timestamp": "",
+              "reminder_id": "",
+              "field_type": 2,
+              "include_time": false
+            },
+            "6I1YqC": {
+              "field_type": 3,
+              "data": "r3Oi"
+            },
+            "jq1oOD": {
+              "data": "Owen Clark",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "57c52568-047e-4b3a-beaf-92f541d3c22b",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "spEy_t": {
+              "is_range": false,
+              "data": "1789056000",
+              "field_type": 2,
+              "end_timestamp": "",
+              "include_time": false,
+              "reminder_id": ""
+            },
+            "JqGO5A": {
+              "last_modified": 1786514855,
+              "data": [
+                "721f2148-16e0-4141-a0bc-b5841cd09660"
+              ],
+              "created_at": 1786514855,
+              "field_type": 10
+            },
+            "3Lx385": {
+              "created_at": 1786515676,
+              "data": [
+                "c0d1513c-b485-4fcd-a47d-60c9e8d25cf7"
+              ],
+              "last_modified": 1786515676,
+              "field_type": 10
+            },
+            "CQDOUG": {
+              "field_type": 3,
+              "data": "Kq5V"
+            },
+            "coXXF1": {
+              "data": "UY2q",
+              "field_type": 3
+            },
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "45"
+            },
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-005"
+            },
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "Interrupted writes recover without data loss on supported Android and iOS versions."
+            },
+            "ep3mMN": {
+              "data": "Mobile offline recovery",
+              "field_type": 0
+            },
+            "leJ2oG": {
+              "data": "1782835200",
+              "reminder_id": "",
+              "include_time": false,
+              "is_range": false,
+              "field_type": 2,
+              "end_timestamp": ""
+            },
+            "6I1YqC": {
+              "data": "CTgC",
+              "field_type": 3
+            },
+            "jq1oOD": {
+              "data": "Lina Gomez",
+              "field_type": 0
+            },
+            "szPwzq": {
+              "data": "2026.09",
+              "field_type": 1
+            },
+            "wlyQ9o": {
+              "field_type": 3,
+              "data": "XzZH"
+            }
+          }
+        },
+        {
+          "id": "f68f86bb-5a1e-4064-b097-0c6094175c8b",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "szPwzq": {
+              "field_type": 1,
+              "data": "2026.1"
+            },
+            "Hgqhry": {
+              "data": "0",
+              "field_type": 1
+            },
+            "JqGO5A": {
+              "field_type": 10,
+              "last_modified": 1786514883,
+              "data": [
+                "c941967b-dbd3-4150-bb9a-6c5048b99582"
+              ],
+              "created_at": 1786514883
+            },
+            "jq1oOD": {
+              "data": "Sofia Rossi",
+              "field_type": 0
+            },
+            "leJ2oG": {
+              "field_type": 2,
+              "end_timestamp": "",
+              "is_range": false,
+              "reminder_id": "",
+              "data": "1788710400",
+              "include_time": false
+            },
+            "6I1YqC": {
+              "data": "M90l",
+              "field_type": 3
+            },
+            "ep3mMN": {
+              "data": "Portfolio health scorecard",
+              "field_type": 0
+            },
+            "a9jDTR": {
+              "data": "Leaders can compare status, health, progress, milestones, and risks across active projects.",
+              "field_type": 0
+            },
+            "wlyQ9o": {
+              "field_type": 3,
+              "data": "6qik"
+            },
+            "UDYCsz": {
+              "data": "EPC-012",
+              "field_type": 0
+            },
+            "3Lx385": {
+              "created_at": 1786515728,
+              "last_modified": 1786515729,
+              "field_type": 10,
+              "data": [
+                "586061a4-67a9-4d35-8e63-ee9d4973843a",
+                "324e7139-e158-4191-a531-ca6c8e0c83fb"
+              ]
+            },
+            "spEy_t": {
+              "include_time": false,
+              "field_type": 2,
+              "is_range": false,
+              "end_timestamp": "",
+              "reminder_id": "",
+              "data": "1792080000"
+            },
+            "coXXF1": {
+              "field_type": 3,
+              "data": "NiDv"
+            }
+          }
+        },
+        {
+          "id": "74dee7a3-3169-4de2-a0b3-a9adfd082619",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "UDYCsz": {
+              "data": "EPC-014",
+              "field_type": 0
+            },
+            "szPwzq": {
+              "data": "Website August",
+              "field_type": 1
+            },
+            "JqGO5A": {
+              "field_type": 10,
+              "last_modified": 1786514894,
+              "data": [
+                "bd90e1eb-e6ea-4b70-a85f-a3a748be8ab2"
+              ],
+              "created_at": 1786514894
+            },
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "Website includes approved proof points, quantified outcomes, and customer examples."
+            },
+            "6I1YqC": {
+              "field_type": 3,
+              "data": "r3Oi"
+            },
+            "wlyQ9o": {
+              "data": "6qik",
+              "field_type": 3
+            },
+            "CQDOUG": {
+              "data": "JVzW",
+              "field_type": 3
+            },
+            "jq1oOD": {
+              "field_type": 0,
+              "data": "Jack Brown"
+            },
+            "3Lx385": {
+              "field_type": 10,
+              "last_modified": 1786515741,
+              "created_at": 1786515739,
+              "data": [
+                "3cf9db70-8a14-4e6e-ac82-04585b928843",
+                "c3bf685d-535f-4eaa-8ddb-17c3dd41d180"
+              ]
+            },
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "55"
+            },
+            "coXXF1": {
+              "data": "7jyV",
+              "field_type": 3
+            },
+            "leJ2oG": {
+              "end_timestamp": "",
+              "field_type": 2,
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": "",
+              "data": "1785081600"
+            },
+            "ep3mMN": {
+              "data": "Customer proof library",
+              "field_type": 0
+            },
+            "spEy_t": {
+              "include_time": false,
+              "is_range": false,
+              "field_type": 2,
+              "end_timestamp": "",
+              "data": "1787846400",
+              "reminder_id": ""
+            }
+          }
+        },
+        {
+          "id": "aab3097d-b248-46e5-9e8b-4dd3f148f705",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "Hgqhry": {
+              "data": "40",
+              "field_type": 1
+            },
+            "CQDOUG": {
+              "field_type": 3,
+              "data": "fE6E"
+            },
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-002"
+            },
+            "coXXF1": {
+              "data": "SBAo",
+              "field_type": 3
+            },
+            "3Lx385": {
+              "last_modified": 1786515659,
+              "created_at": 1786515658,
+              "data": [
+                "4e35219f-03f3-4703-87ab-6e70611ec990",
+                "bbe0a3f9-c769-4a3c-9c79-afbf6b916d59"
+              ],
+              "field_type": 10
+            },
+            "6I1YqC": {
+              "data": "r3Oi",
+              "field_type": 3
+            },
+            "JqGO5A": {
+              "last_modified": 1786514847,
+              "created_at": 1786514847,
+              "field_type": 10,
+              "data": [
+                "439bd5d7-6b22-4117-8465-539dcc6c55d9"
+              ]
+            },
+            "a9jDTR": {
+              "data": "Pages inherit space permissions by default and exceptions are visible and auditable.",
+              "field_type": 0
+            },
+            "ep3mMN": {
+              "data": "Permission inheritance",
+              "field_type": 0
+            },
+            "spEy_t": {
+              "end_timestamp": "",
+              "is_range": false,
+              "field_type": 2,
+              "data": "1788451200",
+              "include_time": false,
+              "reminder_id": ""
+            },
+            "leJ2oG": {
+              "end_timestamp": "",
+              "is_range": false,
+              "field_type": 2,
+              "data": "1784476800",
+              "include_time": false,
+              "reminder_id": ""
+            },
+            "wlyQ9o": {
+              "data": "XzZH",
+              "field_type": 3
+            },
+            "jq1oOD": {
+              "field_type": 0,
+              "data": "Ethan Lee"
+            },
+            "szPwzq": {
+              "field_type": 1,
+              "data": "2026.09"
+            }
+          }
+        },
+        {
+          "id": "a9fd5445-4dd0-4cef-af5d-7fc5ebf53fee",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "wlyQ9o": {
+              "data": "6qik",
+              "field_type": 3
+            },
+            "3Lx385": {
+              "created_at": 1786515734,
+              "data": [
+                "fe668e56-f4ae-4df8-8b8a-23e14cda3829",
+                "2b5d8fd3-0f9a-4f18-86b6-6f297dc9843d"
+              ],
+              "last_modified": 1786515735,
+              "field_type": 10
+            },
+            "JqGO5A": {
+              "field_type": 10,
+              "data": [
+                "bd90e1eb-e6ea-4b70-a85f-a3a748be8ab2"
+              ],
+              "last_modified": 1786514888,
+              "created_at": 1786514888
+            },
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-013"
+            },
+            "leJ2oG": {
+              "end_timestamp": "",
+              "is_range": false,
+              "reminder_id": "",
+              "field_type": 2,
+              "data": "1783872000",
+              "include_time": false
+            },
+            "coXXF1": {
+              "field_type": 3,
+              "data": "7jyV"
+            },
+            "spEy_t": {
+              "field_type": 2,
+              "is_range": false,
+              "data": "1786636800",
+              "include_time": false,
+              "end_timestamp": "",
+              "reminder_id": ""
+            },
+            "jq1oOD": {
+              "field_type": 0,
+              "data": "Emma Davis"
+            },
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "85"
+            },
+            "ep3mMN": {
+              "field_type": 0,
+              "data": "Enterprise solution pages"
+            },
+            "6I1YqC": {
+              "field_type": 3,
+              "data": "r3Oi"
+            },
+            "szPwzq": {
+              "field_type": 1,
+              "data": "Website August"
+            },
+            "a9jDTR": {
+              "field_type": 0,
+              "data": "Core enterprise pages clearly explain deployment, security, migration, and administration."
+            }
+          }
+        },
+        {
+          "id": "2584c967-753d-4f5f-a5e2-5558e68a46de",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "Hgqhry": {
+              "field_type": 1,
+              "data": "10"
+            },
+            "UDYCsz": {
+              "field_type": 0,
+              "data": "EPC-003"
+            },
+            "szPwzq": {
+              "data": "2026.09",
+              "field_type": 1
+            },
+            "JqGO5A": {
+              "data": [
+                "439bd5d7-6b22-4117-8465-539dcc6c55d9"
+              ],
+              "created_at": 1786515249,
+              "field_type": 10,
+              "last_modified": 1786515249
+            },
+            "spEy_t": {
+              "is_range": false,
+              "data": "1789660800",
+              "field_type": 2,
+              "reminder_id": "",
+              "include_time": false,
+              "end_timestamp": ""
+            },
+            "jq1oOD": {
+              "data": "Priya Shah",
+              "field_type": 0
+            },
+            "3Lx385": {
+              "field_type": 10,
+              "data": [
+                "706ef62f-5ecb-42e6-b2db-c292e731eb54"
+              ],
+              "last_modified": 1786515662,
+              "created_at": 1786515662
+            },
+            "CQDOUG": {
+              "field_type": 3,
+              "data": "fE6E"
+            },
+            "leJ2oG": {
+              "data": "1786291200",
+              "include_time": false,
+              "end_timestamp": "",
+              "reminder_id": "",
+              "is_range": false,
+              "field_type": 2
+            },
+            "ep3mMN": {
+              "data": "Group-to-role mapping",
+              "field_type": 0
+            },
+            "a9jDTR": {
+              "data": "Directory groups can be mapped to workspace roles and changes sync automatically.",
+              "field_type": 0
+            },
+            "wlyQ9o": {
+              "field_type": 3,
+              "data": "6qik"
+            },
+            "6I1YqC": {
+              "field_type": 3,
+              "data": "mp-V"
+            },
+            "coXXF1": {
+              "field_type": 3,
+              "data": "nQzP"
+            }
+          }
+        }
+      ],
+      "name": "Product Development Tracker - By Status",
+      "icon": null
+    },
+    {
+      "database_id": "3f218d06-716f-4620-afaf-9cd37f2a9bbe",
+      "fields": [
+        {
+          "id": "TYQ-dA",
+          "name": "Type",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"Fdjl\",\"name\":\"Product\",\"color\":\"Purple\"},{\"id\":\"Xg3t\",\"name\":\"Engineering\",\"color\":\"Purple\"},{\"id\":\"ImfG\",\"name\":\"QA\",\"color\":\"Purple\"},{\"id\":\"tGio\",\"name\":\"Architecture\",\"color\":\"Purple\"},{\"id\":\"09Ro\",\"name\":\"Security\",\"color\":\"Purple\"},{\"id\":\"3Ikb\",\"name\":\"Documentation\",\"color\":\"Purple\"},{\"id\":\"f0eQ\",\"name\":\"Product Ops\",\"color\":\"Purple\"},{\"id\":\"8lrr\",\"name\":\"Content\",\"color\":\"Purple\"},{\"id\":\"x9XE\",\"name\":\"Design\",\"color\":\"Purple\"},{\"id\":\"9hcy\",\"name\":\"Research\",\"color\":\"Purple\"},{\"id\":\"FDGw\",\"name\":\"Experiment\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "kxzfws",
+          "name": "Related Epics",
+          "field_type": 10,
+          "icon": "",
+          "type_options": {
+            "10": {
+              "database_id": "7f4ecf7f-ad29-4162-9d0a-956105f6159a",
+              "reciprocal_field_id": "3Lx385",
+              "is_two_way": true,
+              "source_limit": 0,
+              "target_limit": 0
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "XFSv9G",
+          "name": "Acceptance Criteria",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        },
+        {
+          "id": "4CErlt",
+          "name": "Task ID",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": true
+        },
+        {
+          "id": "eLlGlm",
+          "name": "Sprint",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"KjXy\",\"name\":\"2026-W29\",\"color\":\"Purple\"},{\"id\":\"-pZ_\",\"name\":\"2026-W32\",\"color\":\"Purple\"},{\"id\":\"jqUm\",\"name\":\"2026-W33\",\"color\":\"Purple\"},{\"id\":\"kGXj\",\"name\":\"2026-W31\",\"color\":\"Purple\"},{\"id\":\"wU5i\",\"name\":\"2026-W34\",\"color\":\"Purple\"},{\"id\":\"RMlE\",\"name\":\"2026-W35\",\"color\":\"Purple\"},{\"id\":\"WJgL\",\"name\":\"2026-W28\",\"color\":\"Purple\"},{\"id\":\"7RC9\",\"name\":\"2026-W30\",\"color\":\"Purple\"},{\"id\":\"lsTS\",\"name\":\"2026-W37\",\"color\":\"Purple\"},{\"id\":\"q9Tv\",\"name\":\"2026-W39\",\"color\":\"Purple\"},{\"id\":\"o7vv\",\"name\":\"2026-W38\",\"color\":\"Purple\"},{\"id\":\"1syE\",\"name\":\"2026-W40\",\"color\":\"Purple\"},{\"id\":\"nN6W\",\"name\":\"2026-W41\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "6xTEdo",
+          "name": "Blocked By",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"gN0z\",\"name\":\"Build space role selector\",\"color\":\"Purple\"},{\"id\":\"X0mv\",\"name\":\"Add role migration script\",\"color\":\"Purple\"},{\"id\":\"nb-F\",\"name\":\"Benchmark conflict-heavy workspaces\",\"color\":\"Purple\"},{\"id\":\"euVn\",\"name\":\"Optimize conflict resolution algorithm\",\"color\":\"Purple\"},{\"id\":\"6rMS\",\"name\":\"Define private model connector contract\",\"color\":\"Purple\"},{\"id\":\"4Z0s\",\"name\":\"Add configurable model endpoint\",\"color\":\"Purple\"},{\"id\":\"4hPQ\",\"name\":\"Add outbound traffic validation\",\"color\":\"Purple\"},{\"id\":\"z5w2\",\"name\":\"Map source blocks to destination blocks\",\"color\":\"Purple\"},{\"id\":\"ghmB\",\"name\":\"Preserve database property types\",\"color\":\"Purple\"},{\"id\":\"5NVb\",\"name\":\"Define portfolio health rules\",\"color\":\"Purple\"},{\"id\":\"rE6Q\",\"name\":\"Rewrite self-hosting overview\",\"color\":\"Purple\"},{\"id\":\"o3Mj\",\"name\":\"Publish enterprise security page\",\"color\":\"Purple\"},{\"id\":\"pnYE\",\"name\":\"Collect three customer outcome stories\",\"color\":\"Purple\"},{\"id\":\"KMxo\",\"name\":\"Draft proof-point cards\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "FgFxhn",
+          "name": "Status",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"UTC_\",\"name\":\"Done\",\"color\":\"Purple\"},{\"id\":\"smdz\",\"name\":\"In progress\",\"color\":\"Purple\"},{\"id\":\"qhTe\",\"name\":\"To do\",\"color\":\"Purple\"},{\"id\":\"TzZq\",\"name\":\"Blocked\",\"color\":\"Purple\"},{\"id\":\"nBYK\",\"name\":\"Backlog\",\"color\":\"Purple\"},{\"id\":\"2RU0\",\"name\":\"In review\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "KuLQEE",
+          "name": "Assignee",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"6HgF\",\"name\":\"Maya Chen\",\"color\":\"Purple\"},{\"id\":\"rDL7\",\"name\":\"Ethan Lee\",\"color\":\"Purple\"},{\"id\":\"M5zC\",\"name\":\"Priya Shah\",\"color\":\"Purple\"},{\"id\":\"axDy\",\"name\":\"Noah Williams\",\"color\":\"Purple\"},{\"id\":\"pVCc\",\"name\":\"Owen Clark\",\"color\":\"Purple\"},{\"id\":\"JNbS\",\"name\":\"Lina Gomez\",\"color\":\"Purple\"},{\"id\":\"t40N\",\"name\":\"Ava Patel\",\"color\":\"Purple\"},{\"id\":\"Z27b\",\"name\":\"Daniel Kim\",\"color\":\"Purple\"},{\"id\":\"Qm-P\",\"name\":\"Grace Tan\",\"color\":\"Purple\"},{\"id\":\"5pgw\",\"name\":\"Leo Martin\",\"color\":\"Purple\"},{\"id\":\"CcmA\",\"name\":\"Nora Evans\",\"color\":\"Purple\"},{\"id\":\"Ovp3\",\"name\":\"Sofia Rossi\",\"color\":\"Purple\"},{\"id\":\"rrox\",\"name\":\"Emma Davis\",\"color\":\"Purple\"},{\"id\":\"v18b\",\"name\":\"Jack Brown\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "hECMeM",
+          "name": "Estimate",
+          "field_type": 1,
+          "icon": "",
+          "type_options": {
+            "1": {
+              "scale": 0,
+              "format": 0,
+              "symbol": "RUB",
+              "name": "Number"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "9a8KSe",
+          "name": "Priority",
+          "field_type": 3,
+          "icon": "",
+          "type_options": {
+            "3": {
+              "content": "{\"options\":[{\"id\":\"xhMg\",\"name\":\"P0\",\"color\":\"Purple\"},{\"id\":\"Wp3Z\",\"name\":\"P1\",\"color\":\"Purple\"},{\"id\":\"thPG\",\"name\":\"P2\",\"color\":\"Purple\"}],\"disable_color\":false}"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "AFEFIG",
+          "name": "Due Date",
+          "field_type": 2,
+          "icon": "",
+          "type_options": {
+            "2": {
+              "time_format_v2": 1,
+              "date_format_v2": 3,
+              "timezone_id": "Asia/Singapore"
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "hbDzrv",
+          "name": "Proj",
+          "field_type": 16,
+          "icon": "",
+          "type_options": {
+            "0": {},
+            "16": {
+              "show_as": 2,
+              "target_field_id": "JqGO5A",
+              "relation_field_id": "kxzfws",
+              "calculation_type": 5,
+              "condition_value": ""
+            }
+          },
+          "is_primary": false
+        },
+        {
+          "id": "FTNl6U",
+          "name": "Task",
+          "field_type": 0,
+          "icon": "",
+          "type_options": {
+            "0": {}
+          },
+          "is_primary": false
+        }
+      ],
+      "views": [
+        {
+          "id": "a280fc16-3321-488b-9f70-fbae79986267",
+          "database_id": "3f218d06-716f-4620-afaf-9cd37f2a9bbe",
+          "name": "Grid",
+          "layout": 0,
+          "layout_settings": {},
+          "filters": [],
+          "sorts": [],
+          "group_settings": [],
+          "row_orders": [
+            {
+              "id": "d0a58ef6-72e8-45f7-91dd-76f1408089c6",
+              "height": 60
+            },
+            {
+              "id": "4f0c1593-47db-454f-8ee4-ca0e8f985b89",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "38ffcb79-6288-433b-a7eb-fa6301624736"
+            },
+            {
+              "height": 60,
+              "id": "4e35219f-03f3-4703-87ab-6e70611ec990"
+            },
+            {
+              "height": 60,
+              "id": "bbe0a3f9-c769-4a3c-9c79-afbf6b916d59"
+            },
+            {
+              "height": 60,
+              "id": "706ef62f-5ecb-42e6-b2db-c292e731eb54"
+            },
+            {
+              "id": "b5e96db8-7326-4c3f-b297-5d540dc051fd",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "83e5ec28-4b5b-4d55-bfc0-040dbf6edb41"
+            },
+            {
+              "id": "926fb418-8db7-4caf-b1c6-3a9715250dd5",
+              "height": 60
+            },
+            {
+              "id": "221d9181-e9fa-4384-867c-3899110c1a76",
+              "height": 60
+            },
+            {
+              "id": "c0d1513c-b485-4fcd-a47d-60c9e8d25cf7",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "ea5ea0b3-daff-45be-bed0-f881d1740977"
+            },
+            {
+              "id": "4df996fa-f08b-45b8-b973-e6d72bc0403f",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "74fd4e2c-ab05-48cf-905d-1014a19aa634"
+            },
+            {
+              "id": "e3d2f03d-dbdf-4e91-8933-95cb95197fb1",
+              "height": 60
+            },
+            {
+              "id": "f6e07ba8-6294-4f1a-a9f0-13655e0f6bd3",
+              "height": 60
+            },
+            {
+              "id": "54487b94-2230-4770-bd30-48e1a1ed52a5",
+              "height": 60
+            },
+            {
+              "id": "5862a51d-1ceb-4efb-aea8-77c1cdee42fd",
+              "height": 60
+            },
+            {
+              "id": "9146d5cc-e922-474c-8d41-2ecffe65e727",
+              "height": 60
+            },
+            {
+              "id": "a69c373a-7d98-43b3-9750-eacfdf171bf9",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "586061a4-67a9-4d35-8e63-ee9d4973843a"
+            },
+            {
+              "id": "324e7139-e158-4191-a531-ca6c8e0c83fb",
+              "height": 60
+            },
+            {
+              "height": 60,
+              "id": "5b9ecbcd-6f30-4820-8cfb-5fc9def89f12"
+            },
+            {
+              "height": 60,
+              "id": "fe668e56-f4ae-4df8-8b8a-23e14cda3829"
+            },
+            {
+              "height": 60,
+              "id": "2b5d8fd3-0f9a-4f18-86b6-6f297dc9843d"
+            },
+            {
+              "height": 60,
+              "id": "3cf9db70-8a14-4e6e-ac82-04585b928843"
+            },
+            {
+              "height": 60,
+              "id": "c3bf685d-535f-4eaa-8ddb-17c3dd41d180"
+            },
+            {
+              "height": 60,
+              "id": "c05ce97c-6933-4037-8a2a-16befb4dacab"
+            }
+          ],
+          "field_orders": [
+            {
+              "id": "4CErlt"
+            },
+            {
+              "id": "FTNl6U"
+            },
+            {
+              "id": "kxzfws"
+            },
+            {
+              "id": "hbDzrv"
+            },
+            {
+              "id": "FgFxhn"
+            },
+            {
+              "id": "9a8KSe"
+            },
+            {
+              "id": "KuLQEE"
+            },
+            {
+              "id": "AFEFIG"
+            },
+            {
+              "id": "TYQ-dA"
+            },
+            {
+              "id": "hECMeM"
+            },
+            {
+              "id": "eLlGlm"
+            },
+            {
+              "id": "6xTEdo"
+            },
+            {
+              "id": "XFSv9G"
+            }
+          ],
+          "field_settings": {
+            "eLlGlm": {
+              "width": 150,
+              "wrap": false,
+              "visibility": 0
+            },
+            "FgFxhn": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "AFEFIG": {
+              "visibility": 0,
+              "width": 150,
+              "wrap": false
+            },
+            "9a8KSe": {
+              "width": 150,
+              "visibility": 0,
+              "wrap": false
+            },
+            "hECMeM": {
+              "width": 150,
+              "visibility": 0,
+              "wrap": false
+            },
+            "TYQ-dA": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 150
+            },
+            "hbDzrv": {
+              "visibility": 0
+            },
+            "kxzfws": {
+              "visibility": 0
+            },
+            "KuLQEE": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "4CErlt": {
+              "wrap": false,
+              "visibility": 0,
+              "width": 150
+            },
+            "6xTEdo": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 150
+            },
+            "XFSv9G": {
+              "visibility": 0,
+              "wrap": false,
+              "width": 150
+            },
+            "FTNl6U": {
+              "width": 232,
+              "wrap": false,
+              "visibility": 0
+            }
+          },
+          "is_inline": false,
+          "embedded": false,
+          "created_at": 1786514222
+        }
+      ],
+      "rows": [
+        {
+          "id": "4f0c1593-47db-454f-8ee4-ca0e8f985b89",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "kxzfws": {
+              "created_at": 1786515654,
+              "data": [
+                "65379b2f-e494-43a2-96c8-7f42d15ba203"
+              ],
+              "last_modified": 1786515654,
+              "field_type": 10
+            },
+            "XFSv9G": {
+              "data": "Admins can change a member role from the space settings interface.",
+              "field_type": 0
+            },
+            "FgFxhn": {
+              "data": "smdz",
+              "field_type": 3
+            },
+            "FTNl6U": {
+              "data": "Build space role selector",
+              "field_type": 0
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "eLlGlm": {
+              "data": "-pZ_",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "data": "8",
+              "field_type": 1
+            },
+            "TYQ-dA": {
+              "data": "Xg3t",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "data": "1786464000",
+              "reminder_id": "",
+              "field_type": 2,
+              "is_range": false,
+              "end_timestamp": "",
+              "include_time": false
+            },
+            "4CErlt": {
+              "data": "TSK-002",
+              "field_type": 0
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "rDL7"
+            }
+          }
+        },
+        {
+          "id": "221d9181-e9fa-4384-867c-3899110c1a76",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Automated test reliably reproduces the corrupted local write sequence."
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Reproduce interrupted mobile writes"
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "5"
+            },
+            "FgFxhn": {
+              "data": "UTC_",
+              "field_type": 3
+            },
+            "KuLQEE": {
+              "data": "JNbS",
+              "field_type": 3
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "ImfG"
+            },
+            "4CErlt": {
+              "data": "TSK-010",
+              "field_type": 0
+            },
+            "eLlGlm": {
+              "data": "7RC9",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "field_type": 2,
+              "end_timestamp": "",
+              "data": "1784649600",
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": ""
+            }
+          }
+        },
+        {
+          "id": "4e35219f-03f3-4703-87ab-6e70611ec990",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "eLlGlm": {
+              "data": "kGXj",
+              "field_type": 3
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "UTC_"
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "3"
+            },
+            "FTNl6U": {
+              "data": "Document inherited permission rules",
+              "field_type": 0
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-004"
+            },
+            "AFEFIG": {
+              "data": "1785427200",
+              "field_type": 2,
+              "is_range": false,
+              "end_timestamp": "",
+              "include_time": false,
+              "reminder_id": ""
+            },
+            "KuLQEE": {
+              "data": "6HgF",
+              "field_type": 3
+            },
+            "9a8KSe": {
+              "data": "Wp3Z",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "data": "Rules cover spaces, pages, nested pages, guests, and explicit overrides.",
+              "field_type": 0
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "Fdjl"
+            },
+            "kxzfws": {
+              "last_modified": 1786515658,
+              "created_at": 1786515658,
+              "data": [
+                "aab3097d-b248-46e5-9e8b-4dd3f148f705"
+              ],
+              "field_type": 10
+            }
+          }
+        },
+        {
+          "id": "5862a51d-1ceb-4efb-aea8-77c1cdee42fd",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "eLlGlm": {
+              "data": "RMlE",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "data": "Mapping specification covers all high-frequency source block types.",
+              "field_type": 0
+            },
+            "AFEFIG": {
+              "end_timestamp": "",
+              "include_time": false,
+              "data": "1787846400",
+              "field_type": 2,
+              "is_range": false,
+              "reminder_id": ""
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "8"
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Map source blocks to destination blocks"
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "smdz"
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "5pgw"
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-018"
+            },
+            "TYQ-dA": {
+              "data": "Xg3t",
+              "field_type": 3
+            }
+          }
+        },
+        {
+          "id": "c3bf685d-535f-4eaa-8ddb-17c3dd41d180",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "4CErlt": {
+              "data": "TSK-027",
+              "field_type": 0
+            },
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "pnYE"
+            },
+            "AFEFIG": {
+              "reminder_id": "",
+              "include_time": false,
+              "data": "1787241600",
+              "end_timestamp": "",
+              "field_type": 2,
+              "is_range": false
+            },
+            "FgFxhn": {
+              "data": "qhTe",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Cards use approved claims and link to supporting customer evidence."
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "rrox"
+            },
+            "eLlGlm": {
+              "data": "jqUm",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "data": "3",
+              "field_type": 1
+            },
+            "9a8KSe": {
+              "data": "Wp3Z",
+              "field_type": 3
+            },
+            "kxzfws": {
+              "data": [
+                "74dee7a3-3169-4de2-a0b3-a9adfd082619"
+              ],
+              "last_modified": 1786515741,
+              "created_at": 1786515741,
+              "field_type": 10
+            },
+            "TYQ-dA": {
+              "data": "8lrr",
+              "field_type": 3
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Draft proof-point cards"
+            }
+          }
+        },
+        {
+          "id": "c0d1513c-b485-4fcd-a47d-60c9e8d25cf7",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "XFSv9G": {
+              "data": "Incomplete local writes can be replayed or rolled back after app restart.",
+              "field_type": 0
+            },
+            "4CErlt": {
+              "data": "TSK-011",
+              "field_type": 0
+            },
+            "6xTEdo": {
+              "data": "euVn",
+              "field_type": 3
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "JNbS"
+            },
+            "9a8KSe": {
+              "field_type": 3,
+              "data": "xhMg"
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Implement local recovery journal"
+            },
+            "hECMeM": {
+              "data": "13",
+              "field_type": 1
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "TzZq"
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "Xg3t"
+            },
+            "kxzfws": {
+              "created_at": 1786515676,
+              "data": [
+                "57c52568-047e-4b3a-beaf-92f541d3c22b"
+              ],
+              "field_type": 10,
+              "last_modified": 1786515676
+            },
+            "AFEFIG": {
+              "end_timestamp": "",
+              "field_type": 2,
+              "include_time": false,
+              "is_range": false,
+              "data": "1787846400",
+              "reminder_id": ""
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "RMlE"
+            }
+          }
+        },
+        {
+          "id": "54487b94-2230-4770-bd30-48e1a1ed52a5",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "6xTEdo": {
+              "data": "4hPQ",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "data": "Checklist covers artifacts, registries, certificates, models, networking, and validation.",
+              "field_type": 0
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "3Ikb"
+            },
+            "4CErlt": {
+              "data": "TSK-017",
+              "field_type": 0
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Write offline deployment checklist"
+            },
+            "AFEFIG": {
+              "include_time": false,
+              "is_range": false,
+              "end_timestamp": "",
+              "data": "1790265600",
+              "reminder_id": "",
+              "field_type": 2
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "Qm-P"
+            },
+            "9a8KSe": {
+              "field_type": 3,
+              "data": "Wp3Z"
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "nBYK"
+            },
+            "eLlGlm": {
+              "data": "q9Tv",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "data": "5",
+              "field_type": 1
+            }
+          }
+        },
+        {
+          "id": "e3d2f03d-dbdf-4e91-8933-95cb95197fb1",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "eLlGlm": {
+              "data": "RMlE",
+              "field_type": 3
+            },
+            "kxzfws": {
+              "created_at": 1786515701,
+              "data": [
+                "2fa3a0e4-6047-40b6-a008-9bbd4bad1c33"
+              ],
+              "last_modified": 1786515701,
+              "field_type": 10
+            },
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "4Z0s"
+            },
+            "AFEFIG": {
+              "reminder_id": "",
+              "data": "1788192000",
+              "field_type": 2,
+              "end_timestamp": "",
+              "include_time": false,
+              "is_range": false
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Add outbound traffic validation"
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-015"
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "09Ro"
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "Qm-P"
+            },
+            "XFSv9G": {
+              "data": "Deployment test confirms no AI request leaves configured infrastructure.",
+              "field_type": 0
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "5"
+            },
+            "FgFxhn": {
+              "data": "qhTe",
+              "field_type": 3
+            }
+          }
+        },
+        {
+          "id": "ea5ea0b3-daff-45be-bed0-f881d1740977",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "9a8KSe": {
+              "field_type": 3,
+              "data": "Wp3Z"
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Profile large database memory use"
+            },
+            "AFEFIG": {
+              "reminder_id": "",
+              "end_timestamp": "",
+              "data": "1786636800",
+              "field_type": 2,
+              "include_time": false,
+              "is_range": false
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "Xg3t"
+            },
+            "XFSv9G": {
+              "data": "Profile identifies the top memory allocations during initial and incremental sync.",
+              "field_type": 0
+            },
+            "KuLQEE": {
+              "data": "pVCc",
+              "field_type": 3
+            },
+            "eLlGlm": {
+              "data": "-pZ_",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "data": "8",
+              "field_type": 1
+            },
+            "4CErlt": {
+              "data": "TSK-012",
+              "field_type": 0
+            },
+            "kxzfws": {
+              "data": [
+                "c858ff3f-6bbb-483d-a856-36e6d655ba76"
+              ],
+              "last_modified": 1786515682,
+              "created_at": 1786515682,
+              "field_type": 10
+            },
+            "FgFxhn": {
+              "data": "smdz",
+              "field_type": 3
+            }
+          }
+        },
+        {
+          "id": "c05ce97c-6933-4037-8a2a-16befb4dacab",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "9a8KSe": {
+              "data": "thPG",
+              "field_type": 3
+            },
+            "TYQ-dA": {
+              "data": "FDGw",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Test compares qualified demo conversion for baseline and proof-led variants."
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Run enterprise landing-page test"
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "5"
+            },
+            "6xTEdo": {
+              "data": "KMxo",
+              "field_type": 3
+            },
+            "4CErlt": {
+              "data": "TSK-028",
+              "field_type": 0
+            },
+            "AFEFIG": {
+              "data": "1787846400",
+              "reminder_id": "",
+              "field_type": 2,
+              "include_time": false,
+              "is_range": false,
+              "end_timestamp": ""
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "RMlE"
+            },
+            "FgFxhn": {
+              "data": "qhTe",
+              "field_type": 3
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "rrox"
+            }
+          }
+        },
+        {
+          "id": "926fb418-8db7-4caf-b1c6-3a9715250dd5",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "6xTEdo": {
+              "data": "nb-F",
+              "field_type": 3
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "FTNl6U": {
+              "data": "Optimize conflict resolution algorithm",
+              "field_type": 0
+            },
+            "AFEFIG": {
+              "data": "1787241600",
+              "reminder_id": "",
+              "is_range": false,
+              "end_timestamp": "",
+              "field_type": 2,
+              "include_time": false
+            },
+            "TYQ-dA": {
+              "data": "Xg3t",
+              "field_type": 3
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "smdz"
+            },
+            "hECMeM": {
+              "data": "13",
+              "field_type": 1
+            },
+            "KuLQEE": {
+              "data": "axDy",
+              "field_type": 3
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "jqUm"
+            },
+            "XFSv9G": {
+              "data": "P95 conflict resolution time improves by at least 40% in benchmark suite.",
+              "field_type": 0
+            },
+            "4CErlt": {
+              "data": "TSK-009",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "fe668e56-f4ae-4df8-8b8a-23e14cda3829",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "UTC_"
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Page covers identity, permissions, data handling, air-gapping, and compliance posture."
+            },
+            "kxzfws": {
+              "data": [
+                "a9fd5445-4dd0-4cef-af5d-7fc5ebf53fee"
+              ],
+              "field_type": 10,
+              "created_at": 1786515734,
+              "last_modified": 1786515734
+            },
+            "4CErlt": {
+              "data": "TSK-024",
+              "field_type": 0
+            },
+            "TYQ-dA": {
+              "data": "8lrr",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "field_type": 2,
+              "reminder_id": "",
+              "data": "1785513600",
+              "end_timestamp": "",
+              "is_range": false,
+              "include_time": false
+            },
+            "6xTEdo": {
+              "data": "rE6Q",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "5"
+            },
+            "9a8KSe": {
+              "data": "Wp3Z",
+              "field_type": 3
+            },
+            "FTNl6U": {
+              "data": "Publish enterprise security page",
+              "field_type": 0
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "rrox"
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "kGXj"
+            }
+          }
+        },
+        {
+          "id": "3cf9db70-8a14-4e6e-ac82-04585b928843",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "hECMeM": {
+              "field_type": 1,
+              "data": "5"
+            },
+            "AFEFIG": {
+              "data": "1786636800",
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": "",
+              "field_type": 2,
+              "end_timestamp": ""
+            },
+            "kxzfws": {
+              "data": [
+                "74dee7a3-3169-4de2-a0b3-a9adfd082619"
+              ],
+              "created_at": 1786515739,
+              "last_modified": 1786515739,
+              "field_type": 10
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "smdz"
+            },
+            "FTNl6U": {
+              "data": "Collect three customer outcome stories",
+              "field_type": 0
+            },
+            "KuLQEE": {
+              "data": "v18b",
+              "field_type": 3
+            },
+            "4CErlt": {
+              "data": "TSK-026",
+              "field_type": 0
+            },
+            "eLlGlm": {
+              "data": "-pZ_",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "data": "Each story includes context, deployment, use case, and measurable outcome.",
+              "field_type": 0
+            },
+            "TYQ-dA": {
+              "data": "9hcy",
+              "field_type": 3
+            },
+            "9a8KSe": {
+              "field_type": 3,
+              "data": "Wp3Z"
+            }
+          }
+        },
+        {
+          "id": "d0a58ef6-72e8-45f7-91dd-76f1408089c6",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Define default space roles"
+            },
+            "FgFxhn": {
+              "data": "UTC_",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "data": "Role definitions and allowed actions are approved by product and security.",
+              "field_type": 0
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "3"
+            },
+            "kxzfws": {
+              "last_modified": 1786515652,
+              "created_at": 1786515652,
+              "field_type": 10,
+              "data": [
+                "65379b2f-e494-43a2-96c8-7f42d15ba203"
+              ]
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-001"
+            },
+            "TYQ-dA": {
+              "data": "Fdjl",
+              "field_type": 3
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "reminder_id": "",
+              "data": "1784217600",
+              "end_timestamp": "",
+              "include_time": false,
+              "field_type": 2,
+              "is_range": false
+            },
+            "KuLQEE": {
+              "data": "6HgF",
+              "field_type": 3
+            },
+            "eLlGlm": {
+              "data": "KjXy",
+              "field_type": 3
+            }
+          }
+        },
+        {
+          "id": "83e5ec28-4b5b-4d55-bfc0-040dbf6edb41",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "hECMeM": {
+              "field_type": 1,
+              "data": "8"
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-008"
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Increase merge worker concurrency"
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Worker count scales safely by workspace load without duplicate processing."
+            },
+            "kxzfws": {
+              "created_at": 1786515667,
+              "data": [
+                "a2dd603d-3f02-4119-982d-fd8c8f1ffac6"
+              ],
+              "field_type": 10,
+              "last_modified": 1786515667
+            },
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "nb-F"
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "pVCc"
+            },
+            "eLlGlm": {
+              "data": "7RC9",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "data": "1784822400",
+              "reminder_id": "",
+              "field_type": 2,
+              "include_time": false,
+              "is_range": false,
+              "end_timestamp": ""
+            },
+            "FgFxhn": {
+              "data": "UTC_",
+              "field_type": 3
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "Xg3t"
+            }
+          }
+        },
+        {
+          "id": "4df996fa-f08b-45b8-b973-e6d72bc0403f",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "tGio"
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "data": "1785427200",
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": "",
+              "end_timestamp": "",
+              "field_type": 2
+            },
+            "FTNl6U": {
+              "data": "Define private model connector contract",
+              "field_type": 0
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "UTC_"
+            },
+            "KuLQEE": {
+              "data": "t40N",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "5"
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-013"
+            },
+            "kxzfws": {
+              "data": [
+                "c6faf545-7913-46e9-8dde-1d0d13cd4f8a"
+              ],
+              "field_type": 10,
+              "created_at": 1786515690,
+              "last_modified": 1786515690
+            },
+            "XFSv9G": {
+              "data": "Contract covers authentication, model discovery, chat, streaming, and errors.",
+              "field_type": 0
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "kGXj"
+            }
+          }
+        },
+        {
+          "id": "5b9ecbcd-6f30-4820-8cfb-5fc9def89f12",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "UTC_"
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "8lrr"
+            },
+            "hECMeM": {
+              "data": "5",
+              "field_type": 1
+            },
+            "9a8KSe": {
+              "data": "Wp3Z",
+              "field_type": 3
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-023"
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "7RC9"
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Rewrite self-hosting overview"
+            },
+            "AFEFIG": {
+              "reminder_id": "",
+              "end_timestamp": "",
+              "field_type": 2,
+              "data": "1784822400",
+              "include_time": false,
+              "is_range": false
+            },
+            "KuLQEE": {
+              "data": "rrox",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Page explains deployment models, data control, updates, and support clearly."
+            }
+          }
+        },
+        {
+          "id": "bbe0a3f9-c769-4a3c-9c79-afbf6b916d59",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "smdz"
+            },
+            "TYQ-dA": {
+              "data": "Xg3t",
+              "field_type": 3
+            },
+            "4CErlt": {
+              "data": "TSK-005",
+              "field_type": 0
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "wU5i"
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Implement inheritance evaluation API"
+            },
+            "AFEFIG": {
+              "reminder_id": "",
+              "field_type": 2,
+              "end_timestamp": "",
+              "data": "1787587200",
+              "is_range": false,
+              "include_time": false
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "API returns effective permissions with inheritance source and override details."
+            },
+            "hECMeM": {
+              "data": "13",
+              "field_type": 1
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "kxzfws": {
+              "field_type": 10,
+              "last_modified": 1786515659,
+              "created_at": 1786515659,
+              "data": [
+                "aab3097d-b248-46e5-9e8b-4dd3f148f705"
+              ]
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "rDL7"
+            }
+          }
+        },
+        {
+          "id": "74fd4e2c-ab05-48cf-905d-1014a19aa634",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "eLlGlm": {
+              "data": "jqUm",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "end_timestamp": "",
+              "reminder_id": "",
+              "field_type": 2,
+              "data": "1787241600",
+              "include_time": false,
+              "is_range": false
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "8"
+            },
+            "KuLQEE": {
+              "data": "Z27b",
+              "field_type": 3
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-014"
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Admin can save and test a private model endpoint from settings."
+            },
+            "kxzfws": {
+              "created_at": 1786515693,
+              "data": [
+                "c6faf545-7913-46e9-8dde-1d0d13cd4f8a"
+              ],
+              "last_modified": 1786515693,
+              "field_type": 10
+            },
+            "FTNl6U": {
+              "data": "Add configurable model endpoint",
+              "field_type": 0
+            },
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "6rMS"
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "smdz"
+            },
+            "TYQ-dA": {
+              "data": "Xg3t",
+              "field_type": 3
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            }
+          }
+        },
+        {
+          "id": "586061a4-67a9-4d35-8e63-ee9d4973843a",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "9a8KSe": {
+              "data": "Wp3Z",
+              "field_type": 3
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-021"
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "nBYK"
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Define portfolio health rules"
+            },
+            "TYQ-dA": {
+              "data": "f0eQ",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "include_time": false,
+              "is_range": false,
+              "end_timestamp": "",
+              "data": "1789660800",
+              "reminder_id": "",
+              "field_type": 2
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Rules combine milestone variance, blockers, dependency risk, and owner assessment."
+            },
+            "eLlGlm": {
+              "data": "o7vv",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "5"
+            },
+            "kxzfws": {
+              "last_modified": 1786515728,
+              "field_type": 10,
+              "data": [
+                "f68f86bb-5a1e-4064-b097-0c6094175c8b"
+              ],
+              "created_at": 1786515728
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "Ovp3"
+            }
+          }
+        },
+        {
+          "id": "f6e07ba8-6294-4f1a-a9f0-13655e0f6bd3",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "4Z0s"
+            },
+            "9a8KSe": {
+              "data": "Wp3Z",
+              "field_type": 3
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "lsTS"
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-016"
+            },
+            "AFEFIG": {
+              "end_timestamp": "",
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": "",
+              "field_type": 2,
+              "data": "1789056000"
+            },
+            "TYQ-dA": {
+              "data": "Xg3t",
+              "field_type": 3
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "qhTe"
+            },
+            "KuLQEE": {
+              "data": "Z27b",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "data": "8",
+              "field_type": 1
+            },
+            "kxzfws": {
+              "created_at": 1786515705,
+              "field_type": 10,
+              "last_modified": 1786515705,
+              "data": [
+                "367e9ff3-c4ea-46fe-9b34-62b137ba2b68"
+              ]
+            },
+            "FTNl6U": {
+              "data": "Support custom embedding dimensions",
+              "field_type": 0
+            },
+            "XFSv9G": {
+              "data": "Indexing pipeline accepts supported dimensions and rejects incompatible configurations.",
+              "field_type": 0
+            }
+          }
+        },
+        {
+          "id": "b5e96db8-7326-4c3f-b297-5d540dc051fd",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-007"
+            },
+            "9a8KSe": {
+              "field_type": 3,
+              "data": "xhMg"
+            },
+            "AFEFIG": {
+              "end_timestamp": "",
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": "",
+              "field_type": 2,
+              "data": "1783612800"
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Benchmark conflict-heavy workspaces"
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "axDy"
+            },
+            "XFSv9G": {
+              "data": "Benchmark suite includes offline edits, concurrent changes, and large documents.",
+              "field_type": 0
+            },
+            "hECMeM": {
+              "data": "5",
+              "field_type": 1
+            },
+            "kxzfws": {
+              "last_modified": 1786515665,
+              "created_at": 1786515665,
+              "data": [
+                "a2dd603d-3f02-4119-982d-fd8c8f1ffac6"
+              ],
+              "field_type": 10
+            },
+            "FgFxhn": {
+              "data": "UTC_",
+              "field_type": 3
+            },
+            "eLlGlm": {
+              "data": "WJgL",
+              "field_type": 3
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "Xg3t"
+            }
+          }
+        },
+        {
+          "id": "38ffcb79-6288-433b-a7eb-fa6301624736",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "TYQ-dA": {
+              "data": "Xg3t",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Existing workspace roles migrate without reducing access unexpectedly."
+            },
+            "4CErlt": {
+              "data": "TSK-003",
+              "field_type": 0
+            },
+            "AFEFIG": {
+              "include_time": false,
+              "reminder_id": "",
+              "end_timestamp": "",
+              "is_range": false,
+              "data": "1786982400",
+              "field_type": 2
+            },
+            "eLlGlm": {
+              "data": "jqUm",
+              "field_type": 3
+            },
+            "FTNl6U": {
+              "data": "Add role migration script",
+              "field_type": 0
+            },
+            "KuLQEE": {
+              "data": "M5zC",
+              "field_type": 3
+            },
+            "9a8KSe": {
+              "data": "xhMg",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "field_type": 1,
+              "data": "5"
+            },
+            "FgFxhn": {
+              "data": "qhTe",
+              "field_type": 3
+            },
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "gN0z"
+            }
+          }
+        },
+        {
+          "id": "9146d5cc-e922-474c-8d41-2ecffe65e727",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "z5w2"
+            },
+            "FTNl6U": {
+              "data": "Preserve database property types",
+              "field_type": 0
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "Xg3t"
+            },
+            "9a8KSe": {
+              "field_type": 3,
+              "data": "xhMg"
+            },
+            "AFEFIG": {
+              "field_type": 2,
+              "is_range": false,
+              "data": "1789660800",
+              "end_timestamp": "",
+              "include_time": false,
+              "reminder_id": ""
+            },
+            "KuLQEE": {
+              "data": "CcmA",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Supported database properties retain values and compatible destination types."
+            },
+            "eLlGlm": {
+              "data": "o7vv",
+              "field_type": 3
+            },
+            "hECMeM": {
+              "data": "13",
+              "field_type": 1
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-019"
+            },
+            "kxzfws": {
+              "data": [
+                "a8ca4871-bd65-4d54-9107-4ceec7f3ab8c"
+              ],
+              "last_modified": 1786515714,
+              "field_type": 10,
+              "created_at": 1786515714
+            },
+            "FgFxhn": {
+              "data": "qhTe",
+              "field_type": 3
+            }
+          }
+        },
+        {
+          "id": "324e7139-e158-4191-a531-ca6c8e0c83fb",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "View highlights active projects, progress, health, owners, milestones, and top risks."
+            },
+            "4CErlt": {
+              "data": "TSK-022",
+              "field_type": 0
+            },
+            "9a8KSe": {
+              "field_type": 3,
+              "data": "Wp3Z"
+            },
+            "eLlGlm": {
+              "field_type": 3,
+              "data": "nN6W"
+            },
+            "hECMeM": {
+              "data": "8",
+              "field_type": 1
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "Ovp3"
+            },
+            "kxzfws": {
+              "created_at": 1786515729,
+              "data": [
+                "f68f86bb-5a1e-4064-b097-0c6094175c8b"
+              ],
+              "field_type": 10,
+              "last_modified": 1786515729
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "nBYK"
+            },
+            "AFEFIG": {
+              "end_timestamp": "",
+              "field_type": 2,
+              "is_range": false,
+              "data": "1791475200",
+              "include_time": false,
+              "reminder_id": ""
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Build executive portfolio view"
+            },
+            "6xTEdo": {
+              "data": "5NVb",
+              "field_type": 3
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "f0eQ"
+            }
+          }
+        },
+        {
+          "id": "a69c373a-7d98-43b3-9750-eacfdf171bf9",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "AFEFIG": {
+              "end_timestamp": "",
+              "is_range": false,
+              "reminder_id": "",
+              "include_time": false,
+              "field_type": 2,
+              "data": "1790697600"
+            },
+            "FgFxhn": {
+              "field_type": 3,
+              "data": "nBYK"
+            },
+            "XFSv9G": {
+              "data": "Schema distinguishes imported, transformed, skipped, warning, and failed items.",
+              "field_type": 0
+            },
+            "hECMeM": {
+              "data": "3",
+              "field_type": 1
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "Fdjl"
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "CcmA"
+            },
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "ghmB"
+            },
+            "9a8KSe": {
+              "field_type": 3,
+              "data": "Wp3Z"
+            },
+            "eLlGlm": {
+              "data": "1syE",
+              "field_type": 3
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Design migration report schema"
+            },
+            "kxzfws": {
+              "created_at": 1786515722,
+              "field_type": 10,
+              "data": [
+                "28a156b8-888b-4173-988d-d879ef0a1bde"
+              ],
+              "last_modified": 1786515722
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-020"
+            }
+          }
+        },
+        {
+          "id": "706ef62f-5ecb-42e6-b2db-c292e731eb54",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "FgFxhn": {
+              "data": "qhTe",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "data": "1787846400",
+              "include_time": false,
+              "end_timestamp": "",
+              "field_type": 2,
+              "reminder_id": "",
+              "is_range": false
+            },
+            "hECMeM": {
+              "data": "8",
+              "field_type": 1
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "M5zC"
+            },
+            "6xTEdo": {
+              "data": "X0mv",
+              "field_type": 3
+            },
+            "TYQ-dA": {
+              "field_type": 3,
+              "data": "Xg3t"
+            },
+            "XFSv9G": {
+              "data": "Prototype maps one directory group to one configurable App role.",
+              "field_type": 0
+            },
+            "FTNl6U": {
+              "field_type": 0,
+              "data": "Prototype directory group mapping"
+            },
+            "eLlGlm": {
+              "data": "RMlE",
+              "field_type": 3
+            },
+            "kxzfws": {
+              "created_at": 1786515662,
+              "data": [
+                "2584c967-753d-4f5f-a5e2-5558e68a46de"
+              ],
+              "field_type": 10,
+              "last_modified": 1786515662
+            },
+            "4CErlt": {
+              "field_type": 0,
+              "data": "TSK-006"
+            },
+            "9a8KSe": {
+              "data": "Wp3Z",
+              "field_type": 3
+            }
+          }
+        },
+        {
+          "id": "2b5d8fd3-0f9a-4f18-86b6-6f297dc9843d",
+          "height": 60,
+          "visibility": true,
+          "cells": {
+            "TYQ-dA": {
+              "data": "x9XE",
+              "field_type": 3
+            },
+            "eLlGlm": {
+              "data": "-pZ_",
+              "field_type": 3
+            },
+            "AFEFIG": {
+              "data": "1786464000",
+              "include_time": false,
+              "is_range": false,
+              "reminder_id": "",
+              "end_timestamp": "",
+              "field_type": 2
+            },
+            "4CErlt": {
+              "data": "TSK-025",
+              "field_type": 0
+            },
+            "FgFxhn": {
+              "data": "2RU0",
+              "field_type": 3
+            },
+            "KuLQEE": {
+              "field_type": 3,
+              "data": "v18b"
+            },
+            "6xTEdo": {
+              "field_type": 3,
+              "data": "o3Mj"
+            },
+            "FTNl6U": {
+              "data": "Add deployment architecture visual",
+              "field_type": 0
+            },
+            "hECMeM": {
+              "data": "5",
+              "field_type": 1
+            },
+            "9a8KSe": {
+              "data": "Wp3Z",
+              "field_type": 3
+            },
+            "XFSv9G": {
+              "field_type": 0,
+              "data": "Visual distinguishes managed cloud, self-hosted, and air-gapped deployment paths."
+            },
+            "kxzfws": {
+              "created_at": 1786515735,
+              "data": [
+                "a9fd5445-4dd0-4cef-af5d-7fc5ebf53fee"
+              ],
+              "field_type": 10,
+              "last_modified": 1786515735
+            }
+          }
+        }
+      ],
+      "name": "Tasks",
+      "icon": {
+        "ty": 2,
+        "value": "{\"color\":\"0xFFFFBA00\",\"groupName\":\"interface_essential\",\"iconName\":\"check-square\"}"
+      }
+    }
+  ]
+}

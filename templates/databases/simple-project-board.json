@@ -1,0 +1,324 @@
+{
+  "template_id": "simple-project-board",
+  "order": 113,
+  "name": "Simple Project Board",
+  "description": "Simple but effective board to start on a project.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"entertainment\",\"iconName\":\"dice-4\",\"color\":\"0xFFFFBA00\"}"
+  },
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Kanban"
+  ],
+  "author": "dmugisha",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Simple-Project-Board-cf951ee9",
+  "database_id": "8bebcd6c-6373-45f8-b744-22bd8401c87b",
+  "fields": [
+    {
+      "id": "g9rKF5",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"hBEE\",\"name\":\"BRAINSTORM 🤔\",\"color\":\"Purple\"},{\"id\":\"kPLb\",\"name\":\"TODO 🎯\",\"color\":\"Purple\"},{\"id\":\"llWk\",\"name\":\"DOING 🏂\",\"color\":\"Purple\"},{\"id\":\"Mi9y\",\"name\":\"DONE! ✅\",\"color\":\"Purple\"},{\"id\":\"pjv4\",\"name\":\"About this template ❓\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "MFX6mm",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "NzVncl",
+      "name": "What needs to be done",
+      "field_type": 7,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "7": {}
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "3a7353f1-36c9-4619-8683-ed220b8f5a07",
+      "database_id": "8bebcd6c-6373-45f8-b744-22bd8401c87b",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "hide_ungrouped_column": false,
+          "collapse_hidden_groups": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "field_id": "g9rKF5",
+          "content": "",
+          "groups": [
+            {
+              "visible": false,
+              "id": "g9rKF5"
+            },
+            {
+              "visible": true,
+              "id": "pjv4"
+            },
+            {
+              "visible": true,
+              "id": "hBEE"
+            },
+            {
+              "visible": true,
+              "id": "kPLb"
+            },
+            {
+              "id": "llWk",
+              "visible": true
+            },
+            {
+              "id": "Mi9y",
+              "visible": true
+            }
+          ],
+          "id": "g:jj-hvv",
+          "collapsed_group_ids": [],
+          "ty": 3
+        }
+      ],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "4cd96cc2-783c-4179-bc44-1697bbf054fe"
+        },
+        {
+          "height": 60,
+          "id": "c0e1b9a9-9ba2-4814-9284-16e16f1a7226"
+        },
+        {
+          "height": 60,
+          "id": "a09946d3-e036-400c-8d51-bcd825a0e80a"
+        },
+        {
+          "height": 60,
+          "id": "df2bdd8d-424c-4ec4-a78a-2cac2dc96e33"
+        },
+        {
+          "height": 60,
+          "id": "043ed2b1-77b3-40a5-a3c8-d457edcdc631"
+        },
+        {
+          "height": 60,
+          "id": "62608a56-dd2e-497f-8497-eeca6b6524cf"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "MFX6mm"
+        },
+        {
+          "id": "g9rKF5"
+        },
+        {
+          "id": "NzVncl"
+        }
+      ],
+      "field_settings": {
+        "MFX6mm": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "g9rKF5": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        },
+        "NzVncl": {
+          "visibility": 1,
+          "width": 150,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    },
+    {
+      "id": "46d078a7-39db-4471-bbfa-25d9ba0a6cb3",
+      "database_id": "8bebcd6c-6373-45f8-b744-22bd8401c87b",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "4cd96cc2-783c-4179-bc44-1697bbf054fe",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "c0e1b9a9-9ba2-4814-9284-16e16f1a7226"
+        },
+        {
+          "height": 60,
+          "id": "a09946d3-e036-400c-8d51-bcd825a0e80a"
+        },
+        {
+          "height": 60,
+          "id": "df2bdd8d-424c-4ec4-a78a-2cac2dc96e33"
+        },
+        {
+          "id": "043ed2b1-77b3-40a5-a3c8-d457edcdc631",
+          "height": 60
+        },
+        {
+          "id": "62608a56-dd2e-497f-8497-eeca6b6524cf",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "MFX6mm"
+        },
+        {
+          "id": "g9rKF5"
+        },
+        {
+          "id": "NzVncl"
+        }
+      ],
+      "field_settings": {
+        "g9rKF5": {
+          "wrap": false,
+          "width": 150,
+          "visibility": 0
+        },
+        "MFX6mm": {
+          "wrap": false,
+          "visibility": 0,
+          "width": 150
+        },
+        "NzVncl": {
+          "width": 150,
+          "visibility": 0,
+          "wrap": false
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1787645192
+    }
+  ],
+  "rows": [
+    {
+      "id": "043ed2b1-77b3-40a5-a3c8-d457edcdc631",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "g9rKF5": {
+          "data": "Mi9y",
+          "field_type": 3
+        },
+        "NzVncl": {
+          "data": "[x] Create lists (Brainstorm, todo, doing, done)\n[x] Create template card example\n[x] Turn board into template\n[ ] Share with the community",
+          "field_type": 0
+        },
+        "MFX6mm": {
+          "field_type": 0,
+          "data": "Card Template"
+        }
+      }
+    },
+    {
+      "id": "c0e1b9a9-9ba2-4814-9284-16e16f1a7226",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MFX6mm": {
+          "data": "Move anything 'ready' here",
+          "field_type": 0
+        },
+        "g9rKF5": {
+          "field_type": 3,
+          "data": "kPLb"
+        }
+      }
+    },
+    {
+      "id": "4cd96cc2-783c-4179-bc44-1697bbf054fe",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MFX6mm": {
+          "data": "Add what you'd like to work on below",
+          "field_type": 0
+        },
+        "g9rKF5": {
+          "field_type": 3,
+          "data": "hBEE"
+        }
+      }
+    },
+    {
+      "id": "df2bdd8d-424c-4ec4-a78a-2cac2dc96e33",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "g9rKF5": {
+          "field_type": 3,
+          "data": "Mi9y"
+        },
+        "MFX6mm": {
+          "field_type": 0,
+          "data": "Move anything from doing to done here"
+        }
+      }
+    },
+    {
+      "id": "62608a56-dd2e-497f-8497-eeca6b6524cf",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "MFX6mm": {
+          "field_type": 0,
+          "data": "Read me"
+        },
+        "g9rKF5": {
+          "data": "pjv4",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "a09946d3-e036-400c-8d51-bcd825a0e80a",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "g9rKF5": {
+          "field_type": 3,
+          "data": "llWk"
+        },
+        "MFX6mm": {
+          "data": "Move anything that is actually started here",
+          "field_type": 0
+        }
+      }
+    }
+  ]
+}

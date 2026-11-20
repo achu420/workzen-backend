@@ -1,0 +1,360 @@
+{
+  "template_id": "sprint-progress-with-formulas",
+  "order": 105,
+  "name": "Sprint Progress with Formulas",
+  "description": "Track sprint progress with completion percentages, visual progress bars, and blocker tags.",
+  "icon": null,
+  "category": "Project Management",
+  "categories": [
+    "Project Management",
+    "Database",
+    "Engineering"
+  ],
+  "author": "AppFlowy",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/formula-sprint-progress",
+  "database_id": "a4b6a745-2037-48a2-9879-7f8f3df5894b",
+  "fields": [
+    {
+      "id": "SC0XdU",
+      "name": "Progress bar",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "19": {
+          "expression": "if((empty(prop(\"planned\")) or prop(\"planned\") <= 0), \"Set a target\", lets(p, prop(\"cWec1n\"), filled, floor(p * 10), repeat(\"■\", filled) + repeat(\"□\", 10 - filled) + \" \" + format(round(p * 100)) + \"%\"))",
+          "format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "tags",
+      "name": "Tags",
+      "field_type": 4,
+      "icon": "",
+      "type_options": {
+        "4": {
+          "content": "{\"options\":[{\"id\":\"tags0\",\"name\":\"Backend\",\"color\":\"Blue\"},{\"id\":\"tags1\",\"name\":\"Design\",\"color\":\"Purple\"},{\"id\":\"tags2\",\"name\":\"Blocked\",\"color\":\"Orange\"},{\"id\":\"tags3\",\"name\":\"QA\",\"color\":\"Green\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "completed",
+      "name": "Completed",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "cWec1n",
+      "name": "Progress",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "19": {
+          "expression": "if((empty(prop(\"planned\")) or prop(\"planned\") <= 0), empty(), min(1, max(0, prop(\"completed\") / prop(\"planned\"))))",
+          "format": 36
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "planned",
+      "name": "Planned",
+      "field_type": 1,
+      "icon": "",
+      "type_options": {
+        "1": {
+          "format": 0
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "task",
+      "name": "Workstream",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {}
+      },
+      "is_primary": true
+    },
+    {
+      "id": "bhtWlI",
+      "name": "Focus",
+      "field_type": 19,
+      "icon": "",
+      "type_options": {
+        "0": {},
+        "19": {
+          "format": 0,
+          "expression": "ifs(prop(\"tags\").includes(\"Blocked\"), \"Unblock first\", (empty(prop(\"planned\")) or prop(\"planned\") <= 0), \"Plan scope\", prop(\"completed\") >= prop(\"planned\"), \"Done\", \"Keep moving\")"
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "9a806952-a81f-4aa7-8747-a7b693e1382a",
+      "database_id": "a4b6a745-2037-48a2-9879-7f8f3df5894b",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "b315ca15-b513-437b-8a3a-8f60f6e2c831",
+          "height": 52
+        },
+        {
+          "id": "5780e553-993d-4702-b7b4-746a26e4331e",
+          "height": 52
+        },
+        {
+          "id": "c8acf6f5-3682-4a8a-93e7-1c3225fa6ffa",
+          "height": 52
+        },
+        {
+          "height": 52,
+          "id": "cdfbaec4-629e-4e88-a4b7-62bcf414f01d"
+        },
+        {
+          "id": "e7ef22b9-fac2-4741-b6df-74de36d6b421",
+          "height": 52
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "task"
+        },
+        {
+          "id": "planned"
+        },
+        {
+          "id": "completed"
+        },
+        {
+          "id": "tags"
+        },
+        {
+          "id": "cWec1n"
+        },
+        {
+          "id": "SC0XdU"
+        },
+        {
+          "id": "bhtWlI"
+        }
+      ],
+      "field_settings": {
+        "bhtWlI": {
+          "width": "145",
+          "wrap": true,
+          "visibility": 0
+        },
+        "cWec1n": {
+          "width": "110",
+          "wrap": true,
+          "visibility": 0
+        },
+        "SC0XdU": {
+          "visibility": 0,
+          "width": "245",
+          "wrap": true
+        },
+        "completed": {
+          "width": "140",
+          "wrap": true,
+          "visibility": 0
+        },
+        "tags": {
+          "wrap": true,
+          "width": "185",
+          "visibility": 0
+        },
+        "task": {
+          "width": "235",
+          "visibility": 0,
+          "wrap": true
+        },
+        "planned": {
+          "wrap": true,
+          "width": "100",
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1791888603
+    }
+  ],
+  "rows": [
+    {
+      "id": "e7ef22b9-fac2-4741-b6df-74de36d6b421",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "completed": {
+          "data": "2",
+          "field_type": 1,
+          "last_modified": "1791889056",
+          "created_at": "1791889056"
+        },
+        "planned": {
+          "data": "8",
+          "field_type": 1,
+          "created_at": "1791889056",
+          "last_modified": "1791889056"
+        },
+        "task": {
+          "data": "Release automation",
+          "created_at": "1791889056",
+          "last_modified": "1791889056",
+          "field_type": 0
+        },
+        "tags": {
+          "data": "tags0,tags3",
+          "created_at": "1791889056",
+          "field_type": 4,
+          "last_modified": "1791889056"
+        }
+      }
+    },
+    {
+      "id": "b315ca15-b513-437b-8a3a-8f60f6e2c831",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "planned": {
+          "last_modified": "1791889056",
+          "created_at": "1791889056",
+          "data": "20",
+          "field_type": 1
+        },
+        "completed": {
+          "created_at": "1791889056",
+          "data": "12",
+          "last_modified": "1791889056",
+          "field_type": 1
+        },
+        "tags": {
+          "last_modified": "1791889056",
+          "created_at": "1791889056",
+          "data": "tags0",
+          "field_type": 4
+        },
+        "task": {
+          "field_type": 0,
+          "data": "API integration",
+          "created_at": "1791889056",
+          "last_modified": "1791889056"
+        }
+      }
+    },
+    {
+      "id": "5780e553-993d-4702-b7b4-746a26e4331e",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "completed": {
+          "field_type": 1,
+          "created_at": "1791889056",
+          "last_modified": "1791889056",
+          "data": "5"
+        },
+        "tags": {
+          "field_type": 4,
+          "created_at": "1791889056",
+          "last_modified": "1791889056",
+          "data": "tags1"
+        },
+        "planned": {
+          "field_type": 1,
+          "created_at": "1791889056",
+          "last_modified": "1791889056",
+          "data": "5"
+        },
+        "task": {
+          "created_at": "1791889056",
+          "last_modified": "1791889056",
+          "data": "Design handoff",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "c8acf6f5-3682-4a8a-93e7-1c3225fa6ffa",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "completed": {
+          "created_at": "1791889056",
+          "last_modified": "1791889056",
+          "data": "3",
+          "field_type": 1
+        },
+        "tags": {
+          "created_at": "1791889056",
+          "data": "tags3,tags2",
+          "field_type": 4,
+          "last_modified": "1791889056"
+        },
+        "planned": {
+          "created_at": "1791889056",
+          "data": "10",
+          "field_type": 1,
+          "last_modified": "1791889056"
+        },
+        "task": {
+          "created_at": "1791889056",
+          "last_modified": "1791889056",
+          "data": "Checkout testing",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "cdfbaec4-629e-4e88-a4b7-62bcf414f01d",
+      "height": 52,
+      "visibility": true,
+      "cells": {
+        "task": {
+          "created_at": "1791889056",
+          "field_type": 0,
+          "last_modified": "1791889056",
+          "data": "Next sprint discovery"
+        },
+        "planned": {
+          "last_modified": "1791889056",
+          "data": "0",
+          "field_type": 1,
+          "created_at": "1791889056"
+        },
+        "tags": {
+          "created_at": "1791889056",
+          "field_type": 4,
+          "last_modified": "1791889056",
+          "data": "tags1"
+        },
+        "completed": {
+          "field_type": 1,
+          "created_at": "1791889056",
+          "data": "0",
+          "last_modified": "1791889056"
+        }
+      }
+    }
+  ]
+}

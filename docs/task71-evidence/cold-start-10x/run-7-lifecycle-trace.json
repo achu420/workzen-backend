@@ -1,0 +1,438 @@
+{
+  "docPageId": "c63aa99a-fef7-4f2c-95d5-dba67d0041bc",
+  "marker": "t71-diag-1794327566456",
+  "extraWaitMs": 0,
+  "readyAtT": 16537,
+  "typeStartedAtT": 16537,
+  "domHasMarkerLive": true,
+  "childrenHasMarkerLive": true,
+  "childrenSnapshotNote": "detected at i=0",
+  "yjsDocUpdateEventCount": 22,
+  "observeDeepEventCount": 22,
+  "rawEvents": [
+    {
+      "t": 1794327566523,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566523,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566546,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566547,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566573,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566573,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566600,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566600,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566628,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566628,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566654,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566654,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566680,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566680,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566707,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566707,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566732,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566733,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566758,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566758,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566783,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566783,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566808,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566808,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566833,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566833,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566860,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566860,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566885,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566885,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566912,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566912,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566935,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566935,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566961,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566961,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327566987,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327566987,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327567012,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327567012,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327567038,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327567038,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    },
+    {
+      "t": 1794327567063,
+      "stage": "2-observe-deep",
+      "eventCount": 1
+    },
+    {
+      "t": 1794327567064,
+      "stage": "1-doc-update",
+      "origin": "remote"
+    }
+  ],
+  "timeline": [
+    {
+      "tMs": 635,
+      "childrenHasMarker": true,
+      "domHasMarker": true
+    }
+  ],
+  "wsFrames": [
+    {
+      "t": 9828,
+      "dir": "received",
+      "bytes": 20
+    },
+    {
+      "t": 10204,
+      "dir": "received",
+      "bytes": 20
+    },
+    {
+      "t": 10612,
+      "dir": "sent",
+      "bytes": 66
+    },
+    {
+      "t": 10612,
+      "dir": "sent",
+      "bytes": 326
+    },
+    {
+      "t": 10613,
+      "dir": "received",
+      "bytes": 84
+    },
+    {
+      "t": 10619,
+      "dir": "sent",
+      "bytes": 317
+    },
+    {
+      "t": 10933,
+      "dir": "sent",
+      "bytes": 326
+    },
+    {
+      "t": 11598,
+      "dir": "received",
+      "bytes": 20
+    },
+    {
+      "t": 11934,
+      "dir": "sent",
+      "bytes": 66
+    },
+    {
+      "t": 11934,
+      "dir": "sent",
+      "bytes": 327
+    },
+    {
+      "t": 11938,
+      "dir": "received",
+      "bytes": 84
+    },
+    {
+      "t": 11949,
+      "dir": "sent",
+      "bytes": 318
+    },
+    {
+      "t": 12231,
+      "dir": "sent",
+      "bytes": 327
+    },
+    {
+      "t": 16598,
+      "dir": "received",
+      "bytes": 328
+    },
+    {
+      "t": 16599,
+      "dir": "sent",
+      "bytes": 328
+    },
+    {
+      "t": 16602,
+      "dir": "received",
+      "bytes": 167
+    },
+    {
+      "t": 16609,
+      "dir": "received",
+      "bytes": 157
+    },
+    {
+      "t": 16611,
+      "dir": "received",
+      "bytes": 167
+    },
+    {
+      "t": 16627,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16654,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16681,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16708,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16735,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16760,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16787,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16813,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16839,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16864,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16889,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16914,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16940,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16966,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 16992,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 17016,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 17042,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 17067,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 17093,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 17119,
+      "dir": "received",
+      "bytes": 97
+    },
+    {
+      "t": 17144,
+      "dir": "received",
+      "bytes": 97
+    }
+  ]
+}

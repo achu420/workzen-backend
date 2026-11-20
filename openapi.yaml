@@ -1,0 +1,203 @@
+openapi: 3.0.3
+info:
+  title: Independent Workspace Backend MVP
+  version: 0.1.0
+  description: Foundational isolated prototype; not the complete AppFlowy-Web API.
+servers:
+  - url: http://127.0.0.1:8787
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer }
+  schemas:
+    Error: { type: object, required: [error], properties: { error: { type: object, required: [code, message], properties: { code: { type: string }, message: { type: string } } } } }
+    GoTrueError: { type: object, required: [error, error_code, error_description], properties: { error: { type: string }, error_code: { type: string }, error_description: { type: string }, msg: { type: string } } }
+    Document: { type: object, additionalProperties: true }
+paths:
+  /health: { get: { responses: { '200': { description: Healthy } } } }
+  /api/server-info:
+    get:
+      summary: Advertise implemented AppFlowy-Web server capabilities
+      parameters:
+        - in: header
+          name: x-platform
+          required: false
+          schema: { type: string, enum: [web, app] }
+        - in: header
+          name: client-version
+          required: false
+          schema: { type: string }
+      responses: { '200': { description: AppFlowy APIResponse containing version, enable_page_history, self_hosted and ai_enabled } }
+  /token:
+    post:
+      summary: AppFlowy-Web password login and refresh-token exchange
+      parameters:
+        - in: query
+          name: grant_type
+          required: true
+          schema: { type: string, enum: [password, refresh_token] }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email: { type: string, format: email }
+                password: { type: string }
+                refresh_token: { type: string }
+      responses:
+        '200': { description: GoTrue-compatible access and refresh token response }
+        '400': { description: Invalid credentials, malformed request, or invalid refresh token, content: { application/json: { schema: { $ref: '#/components/schemas/GoTrueError' } } } }
+  /api/user/verify/{accessToken}:
+    get:
+      summary: Verify an active AppFlowy-Web access token
+      parameters:
+        - in: path
+          name: accessToken
+          required: true
+          schema: { type: string }
+      responses: { '200': { description: AppFlowy APIResponse containing is_new }, '401': { description: Invalid or expired access token } }
+  /api/user/profile:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Return the authenticated AppFlowy-Web user profile
+      responses: { '200': { description: AppFlowy APIResponse containing the current profile }, '401': { description: Unauthenticated } }
+  /api/user/workspace:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Return the authenticated user's persisted workspaces
+      responses:
+        '200': { description: AppFlowy APIResponse containing user_profile, visiting_workspace and workspaces }
+        '401': { description: Unauthenticated }
+        '404': { description: Authenticated user has no workspace }
+  /api/workspace/v1/{workspaceId}/collab/{objectId}:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Read the persisted WorkspaceDatabase collaboration state
+      description: Supports only collab_type 2; objectId must equal the workspace's database_storage_id.
+      parameters:
+        - in: path
+          name: workspaceId
+          required: true
+          schema: { type: string }
+        - in: path
+          name: objectId
+          required: true
+          schema: { type: string }
+        - in: query
+          name: collab_type
+          required: true
+          schema: { type: integer, enum: [2] }
+      responses:
+        '200':
+          description: AppFlowy APIResponse containing the v1 Yjs state as bytes
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [code, message, data]
+                properties:
+                  code: { type: integer, enum: [0] }
+                  message: { type: string, enum: [success] }
+                  data:
+                    type: object
+                    required: [object_id, doc_state]
+                    properties:
+                      object_id: { type: string }
+                      doc_state: { type: array, items: { type: integer, minimum: 0, maximum: 255 } }
+        '400': { description: Unsupported collaboration type }
+        '401': { description: Missing or invalid session }
+        '403': { description: User is not a member of the workspace }
+        '404': { description: Object ID does not match the workspace database storage object }
+  /api/workspace/{workspaceId}/spaces:
+    post:
+      security: [{ bearerAuth: [] }]
+      summary: Create a persisted public workspace space
+      description: Supports the checked-out Web client's default public permission only. Private/custom permissions are rejected until their access-control behavior is implemented.
+      parameters:
+        - in: path
+          name: workspaceId
+          required: true
+          schema: { type: string, format: uuid }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, view_id, permission]
+              properties:
+                name: { type: string, minLength: 1, maxLength: 200 }
+                space_icon: { type: string, maxLength: 500 }
+                space_icon_color: { type: string, maxLength: 128 }
+                view_id: { type: string, format: uuid }
+                permission:
+                  type: object
+                  required: [visibility, owner_access_level, member_default_access_level, invite_policy, sidebar_edit_policy, invite_link_enabled, security]
+                  properties:
+                    visibility: { type: string, enum: [public] }
+                    owner_access_level: { type: integer, enum: [50] }
+                    member_default_access_level: { type: integer, enum: [30] }
+                    everyone_else_access_level: { type: integer, nullable: true }
+                    invite_policy: { type: string, enum: [owners_only] }
+                    sidebar_edit_policy: { type: string, enum: [owners_only] }
+                    invite_link_enabled: { type: boolean, enum: [false] }
+                    security:
+                      type: object
+                      required: [disable_guests, disable_public_links, disable_export]
+                      properties:
+                        disable_guests: { type: boolean, enum: [false] }
+                        disable_public_links: { type: boolean, enum: [false] }
+                        disable_export: { type: boolean, enum: [false] }
+      responses:
+        '200': { description: AppFlowy APIResponse containing the persisted view_id }
+        '400': { description: Invalid input or unsupported permission settings }
+        '401': { description: Missing or invalid session }
+        '403': { description: User is not a member of the workspace }
+        '409': { description: The requested view_id conflicts with a different persisted space }
+  /api/workspace/{workspaceId}/view/{viewId}:
+    get:
+      security: [{ bearerAuth: [] }]
+      summary: Return an authorized persisted workspace root, space, or page outline view
+      parameters:
+        - in: path
+          name: workspaceId
+          required: true
+          schema: { type: string }
+        - in: path
+          name: viewId
+          required: true
+          schema: { type: string }
+        - in: query
+          name: depth
+          required: false
+          schema: { type: integer, minimum: 0, maximum: 50, default: 1 }
+      responses:
+        '200': { description: AppFlowy APIResponse containing a View; root children include persisted space and page metadata }
+        '400': { description: Invalid depth }
+        '401': { description: Missing or invalid session }
+        '403': { description: User is not a member of the workspace }
+        '404': { description: View does not exist in this workspace }
+  /api/auth/register:
+    post:
+      description: Creates the user, an owner membership and the initial "My Workspace" in one storage transaction.
+      requestBody: { required: true, content: { application/json: { schema: { type: object, required: [email, password], properties: { email: { type: string, format: email }, password: { type: string, minLength: 8 } } } } } }
+      responses: { '201': { description: Registered }, '400': { description: Invalid input, content: { application/json: { schema: { $ref: '#/components/schemas/Error' } } } }, '409': { description: Duplicate email } }
+  /api/auth/login:
+    post:
+      responses: { '200': { description: Session issued }, '401': { description: Invalid credentials } }
+  /api/auth/logout: { post: { security: [{ bearerAuth: [] }], responses: { '204': { description: Revoked }, '401': { description: Unauthenticated } } } }
+  /api/auth/me: { get: { security: [{ bearerAuth: [] }], responses: { '200': { description: Current user }, '401': { description: Unauthenticated } } } }
+  /api/workspaces:
+    get: { security: [{ bearerAuth: [] }], responses: { '200': { description: User workspaces }, '401': { description: Unauthenticated } } }
+    post: { security: [{ bearerAuth: [] }], responses: { '201': { description: Created }, '400': { description: Invalid input }, '401': { description: Unauthenticated } } }
+  /api/workspaces/{workspaceId}:
+    get: { security: [{ bearerAuth: [] }], parameters: [{ in: path, name: workspaceId, required: true, schema: { type: string } }], responses: { '200': { description: Workspace }, '401': { description: Unauthenticated }, '403': { description: Forbidden } } }
+  /api/workspaces/{workspaceId}/test-members:
+    post: { security: [{ bearerAuth: [] }], description: Development/test-only synthetic membership helper; disabled in production, responses: { '201': { description: Added }, '403': { description: Forbidden or disabled }, '404': { description: User not found } } }
+  /api/workspaces/{workspaceId}/pages:
+    get: { security: [{ bearerAuth: [] }], responses: { '200': { description: Pages }, '403': { description: Forbidden } } }
+    post: { security: [{ bearerAuth: [] }], responses: { '201': { description: Created }, '400': { description: Invalid page }, '403': { description: Forbidden } } }
+  /api/pages/{pageId}:
+    get: { security: [{ bearerAuth: [] }], responses: { '200': { description: Page }, '403': { description: Forbidden }, '404': { description: Missing } } }
+    put: { security: [{ bearerAuth: [] }], description: Requires expected_version or If-Match; increments version, responses: { '200': { description: Updated }, '400': { description: Invalid page }, '403': { description: Forbidden }, '409': { description: Stale version } } }

@@ -1,0 +1,192 @@
+{
+  "outcome": "SUCCESS",
+  "navType": "spa-after-reload-retry",
+  "navUrlBefore": "http://localhost:14184/app/83d60b44-8d51-4450-a3d4-00a9306d1e8a/96a3dba3-9445-4a39-92af-a273581546b4",
+  "navUrlAfter": "http://localhost:14184/app/83d60b44-8d51-4450-a3d4-00a9306d1e8a/96a3dba3-9445-4a39-92af-a273581546b4",
+  "fullNavigationCount": 1,
+  "navResult": {
+    "ok": true,
+    "matchedCount": 1,
+    "via": "sidebar(attempt 2)"
+  },
+  "rowId": "c748b929-be05-48cd-8173-1435a2b2645d",
+  "fieldId": "e75e8bc8-a5f7-437e-9b9a-e59f7f2ca3c4",
+  "marker1": "T7745-first-1794424160347",
+  "marker2": "T7745-second-1794424161856",
+  "firstWriteCommitted": true,
+  "secondWriteSucceeded": true,
+  "secondWriteError": null,
+  "secondContextOpened": true,
+  "checkpoints": [
+    {
+      "label": "1-before-first-write",
+      "selector": "[data-testid=\"grid-cell-c748b929-be05-48cd-8173-1435a2b2645d-e75e8bc8-a5f7-437e-9b9a-e59f7f2ca3c4\"]",
+      "matchCount": 1,
+      "elements": [
+        {
+          "tag": "DIV",
+          "className": "grid-cell flex h-full w-full items-start overflow-hidden px-2 text-sm py-2",
+          "attached": true,
+          "parentRowTestId": "grid-row-c748b929-be05-48cd-8173-1435a2b2645d",
+          "gridPresent": true,
+          "rect": {
+            "x": 364,
+            "y": 206.5,
+            "width": 150,
+            "height": 37
+          },
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "inViewport": true,
+          "hitTarget": "<div data-testid=\"grid-cell-c748b929-be05-48cd-8173-1435a2b2645d-e75e8bc8-a5f7-437e-9b9a-e59f7f2ca3c4\" class=\"grid-cell "
+        }
+      ],
+      "activeElement": {
+        "tag": "BODY",
+        "type": null,
+        "isContentEditable": false,
+        "testId": null
+      },
+      "rendererResponsive": true,
+      "rowPresentCount": 1,
+      "editorLikeElementCount": 1
+    },
+    {
+      "label": "2-after-first-write",
+      "selector": "[data-testid=\"grid-cell-c748b929-be05-48cd-8173-1435a2b2645d-e75e8bc8-a5f7-437e-9b9a-e59f7f2ca3c4\"]",
+      "matchCount": 1,
+      "elements": [
+        {
+          "tag": "DIV",
+          "className": "grid-cell flex h-full w-full items-start overflow-hidden px-2 text-sm py-2",
+          "attached": true,
+          "parentRowTestId": "grid-row-c748b929-be05-48cd-8173-1435a2b2645d",
+          "gridPresent": true,
+          "rect": {
+            "x": 364,
+            "y": 206.5,
+            "width": 150,
+            "height": 37
+          },
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "inViewport": true,
+          "hitTarget": "<div class=\"text-cell w-full text-sm cursor-pointer whitespace-nowrap\">T7745-first-1794424160347</div>"
+        }
+      ],
+      "activeElement": {
+        "tag": "BODY",
+        "type": null,
+        "isContentEditable": false,
+        "testId": null
+      },
+      "rendererResponsive": true,
+      "rowPresentCount": 1,
+      "editorLikeElementCount": 1
+    },
+    {
+      "label": "3-before-second-write",
+      "selector": "[data-testid=\"grid-cell-c748b929-be05-48cd-8173-1435a2b2645d-e75e8bc8-a5f7-437e-9b9a-e59f7f2ca3c4\"]",
+      "matchCount": 1,
+      "elements": [
+        {
+          "tag": "DIV",
+          "className": "grid-cell flex h-full w-full items-start overflow-hidden px-2 text-sm py-2",
+          "attached": true,
+          "parentRowTestId": "grid-row-c748b929-be05-48cd-8173-1435a2b2645d",
+          "gridPresent": true,
+          "rect": {
+            "x": 364,
+            "y": 206.5,
+            "width": 150,
+            "height": 37
+          },
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "inViewport": true,
+          "hitTarget": "<div class=\"text-cell w-full text-sm cursor-pointer whitespace-nowrap\">T7745-first-1794424160347</div>"
+        }
+      ],
+      "activeElement": {
+        "tag": "BODY",
+        "type": null,
+        "isContentEditable": false,
+        "testId": null
+      },
+      "rendererResponsive": true,
+      "rowPresentCount": 1,
+      "editorLikeElementCount": 1
+    },
+    {
+      "label": "4-second-write-attempt-1",
+      "selector": "[data-testid=\"grid-cell-c748b929-be05-48cd-8173-1435a2b2645d-e75e8bc8-a5f7-437e-9b9a-e59f7f2ca3c4\"]",
+      "matchCount": 1,
+      "elements": [
+        {
+          "tag": "DIV",
+          "className": "grid-cell flex h-full w-full items-start overflow-hidden px-2 text-sm py-2",
+          "attached": true,
+          "parentRowTestId": "grid-row-c748b929-be05-48cd-8173-1435a2b2645d",
+          "gridPresent": true,
+          "rect": {
+            "x": 364,
+            "y": 206.5,
+            "width": 150,
+            "height": 37
+          },
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "inViewport": true,
+          "hitTarget": "<div class=\"text-cell w-full text-sm cursor-pointer whitespace-nowrap\">T7745-first-1794424160347</div>"
+        }
+      ],
+      "activeElement": {
+        "tag": "BODY",
+        "type": null,
+        "isContentEditable": false,
+        "testId": null
+      },
+      "rendererResponsive": true,
+      "rowPresentCount": 1,
+      "editorLikeElementCount": 1
+    },
+    {
+      "label": "5-at-second-write-outcome",
+      "selector": "[data-testid=\"grid-cell-c748b929-be05-48cd-8173-1435a2b2645d-e75e8bc8-a5f7-437e-9b9a-e59f7f2ca3c4\"]",
+      "matchCount": 1,
+      "elements": [
+        {
+          "tag": "DIV",
+          "className": "grid-cell flex h-full w-full items-start overflow-hidden px-2 text-sm py-2",
+          "attached": true,
+          "parentRowTestId": "grid-row-c748b929-be05-48cd-8173-1435a2b2645d",
+          "gridPresent": true,
+          "rect": {
+            "x": 364,
+            "y": 206.5,
+            "width": 150,
+            "height": 37
+          },
+          "display": "flex",
+          "visibility": "visible",
+          "opacity": "1",
+          "inViewport": true,
+          "hitTarget": "<div class=\"text-cell w-full text-sm cursor-pointer whitespace-nowrap\">T7745-first-17944241T7745-second-1794424161856603"
+        }
+      ],
+      "activeElement": {
+        "tag": "BODY",
+        "type": null,
+        "isContentEditable": false,
+        "testId": null
+      },
+      "rendererResponsive": true,
+      "rowPresentCount": 1,
+      "editorLikeElementCount": 1
+    }
+  ]
+}

@@ -1,0 +1,629 @@
+{
+  "template_id": "teaching-weekly-planning",
+  "order": 136,
+  "name": "Teaching: Weekly Planning",
+  "description": "Teaching plan for your classroom.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"work_education\",\"iconName\":\"class-lesson\",\"color\":\"0xFF535CE4\"}"
+  },
+  "category": "Education",
+  "categories": [
+    "Education"
+  ],
+  "author": "Emma Trentman, Associate Professor of Arabic @ University of New Mexico",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Teaching--Weekly-Planning-ca2db846-b99c-4799-9811-aeaeed39ec37?v=ca2db846-b99c-4799-9811-aeaeed39ec37",
+  "database_id": "62d94344-492e-45f7-982c-170c68cb3350",
+  "fields": [
+    {
+      "id": "ijsBPI",
+      "name": "Description",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        }
+      },
+      "is_primary": true
+    },
+    {
+      "id": "VpAMlP",
+      "name": "Status",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[{\"id\":\"54YJ\",\"name\":\"Beginning of Term\",\"color\":\"Purple\"},{\"id\":\"HeDt\",\"name\":\"Week 1 (copy for remaining weeks)\",\"color\":\"Orange\"},{\"id\":\"Y8n1\",\"name\":\"Done\",\"color\":\"Yellow\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "ZKFemc",
+      "name": "Checklist",
+      "field_type": 7,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        },
+        "7": {}
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "ca2db846-b99c-4799-9811-aeaeed39ec37",
+      "database_id": "62d94344-492e-45f7-982c-170c68cb3350",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "id": "g:zeIvP3",
+          "groups": [
+            {
+              "visible": true,
+              "id": "VpAMlP"
+            },
+            {
+              "id": "54YJ",
+              "visible": true
+            },
+            {
+              "id": "HeDt",
+              "visible": true
+            },
+            {
+              "id": "Y8n1",
+              "visible": true
+            }
+          ],
+          "content": "",
+          "ty": 3,
+          "field_id": "VpAMlP"
+        }
+      ],
+      "row_orders": [
+        {
+          "id": "85623100-3416-4e30-9e20-8d53b14a13b9",
+          "height": 60
+        },
+        {
+          "id": "dc18a0d0-5ccc-4585-ac54-4d80ed43a9c1",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "452957cc-bbe5-4712-b649-61857adcde3c"
+        },
+        {
+          "id": "d6f40665-91c5-4496-bb30-046fec1c8ed5",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "decc9601-1a14-4fde-9a93-f6eb5e4d2cdd"
+        },
+        {
+          "height": 60,
+          "id": "fee6c4d2-8ce8-4659-9231-351994adf64d"
+        },
+        {
+          "height": 60,
+          "id": "83eb237a-2268-4008-af87-6c6072ef8558"
+        },
+        {
+          "height": 60,
+          "id": "d8c4db9e-d7a0-44bd-9c48-78f33c01838c"
+        },
+        {
+          "height": 60,
+          "id": "b591d285-3b75-4b3b-837d-aebe09712b89"
+        },
+        {
+          "id": "ca1c1b0d-a42b-49d2-97d4-7b82e1e59d95",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "7b49422a-d82a-44d3-99b2-a4840acdf89a"
+        },
+        {
+          "height": 60,
+          "id": "9353f8d5-eeb6-4ed5-bbb7-00fd873dead7"
+        },
+        {
+          "height": 60,
+          "id": "b29434d3-27d0-49e6-838f-d455fe1afc4c"
+        },
+        {
+          "height": 60,
+          "id": "e9de30b8-450b-4ce1-b455-d1149799cdce"
+        },
+        {
+          "height": 60,
+          "id": "9de0a00a-09a7-4a7e-9adc-bb920b197dc2"
+        },
+        {
+          "height": 60,
+          "id": "ac1bfb45-c294-4a87-a5b3-e5a87577c2d2"
+        },
+        {
+          "id": "7195407a-3b57-4727-bda7-cbbbc7200448",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "7c256903-a621-4419-ad09-b36267a4955d"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "ijsBPI"
+        },
+        {
+          "id": "VpAMlP"
+        },
+        {
+          "id": "ZKFemc"
+        }
+      ],
+      "field_settings": {
+        "VpAMlP": {
+          "width": 150,
+          "wrap": true,
+          "visibility": 1
+        },
+        "ijsBPI": {
+          "wrap": true,
+          "visibility": 0,
+          "width": 150
+        },
+        "ZKFemc": {
+          "visibility": 1
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1724469776
+    },
+    {
+      "id": "9bbd2f01-a0bf-471d-9bd3-d0ba8a298e4d",
+      "database_id": "62d94344-492e-45f7-982c-170c68cb3350",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "id": "85623100-3416-4e30-9e20-8d53b14a13b9",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "dc18a0d0-5ccc-4585-ac54-4d80ed43a9c1"
+        },
+        {
+          "height": 60,
+          "id": "452957cc-bbe5-4712-b649-61857adcde3c"
+        },
+        {
+          "height": 60,
+          "id": "d6f40665-91c5-4496-bb30-046fec1c8ed5"
+        },
+        {
+          "id": "decc9601-1a14-4fde-9a93-f6eb5e4d2cdd",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "fee6c4d2-8ce8-4659-9231-351994adf64d"
+        },
+        {
+          "height": 60,
+          "id": "83eb237a-2268-4008-af87-6c6072ef8558"
+        },
+        {
+          "id": "d8c4db9e-d7a0-44bd-9c48-78f33c01838c",
+          "height": 60
+        },
+        {
+          "id": "b591d285-3b75-4b3b-837d-aebe09712b89",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "ca1c1b0d-a42b-49d2-97d4-7b82e1e59d95"
+        },
+        {
+          "height": 60,
+          "id": "7b49422a-d82a-44d3-99b2-a4840acdf89a"
+        },
+        {
+          "height": 60,
+          "id": "9353f8d5-eeb6-4ed5-bbb7-00fd873dead7"
+        },
+        {
+          "height": 60,
+          "id": "b29434d3-27d0-49e6-838f-d455fe1afc4c"
+        },
+        {
+          "height": 60,
+          "id": "e9de30b8-450b-4ce1-b455-d1149799cdce"
+        },
+        {
+          "height": 60,
+          "id": "9de0a00a-09a7-4a7e-9adc-bb920b197dc2"
+        },
+        {
+          "height": 60,
+          "id": "ac1bfb45-c294-4a87-a5b3-e5a87577c2d2"
+        },
+        {
+          "id": "7195407a-3b57-4727-bda7-cbbbc7200448",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "7c256903-a621-4419-ad09-b36267a4955d"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "ijsBPI"
+        },
+        {
+          "id": "VpAMlP"
+        },
+        {
+          "id": "ZKFemc"
+        }
+      ],
+      "field_settings": {
+        "ijsBPI": {
+          "wrap": true,
+          "width": 333,
+          "visibility": 0
+        },
+        "VpAMlP": {
+          "visibility": 0,
+          "width": 243,
+          "wrap": true
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    }
+  ],
+  "rows": [
+    {
+      "id": "7195407a-3b57-4727-bda7-cbbbc7200448",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Make Final Exam",
+          "created_at": 1724470469,
+          "last_modified": 1724470469
+        },
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "Y8n1"
+        }
+      }
+    },
+    {
+      "id": "ac1bfb45-c294-4a87-a5b3-e5a87577c2d2",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Complete Curriculum Development Chart"
+        },
+        "VpAMlP": {
+          "data": "Y8n1",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "dc18a0d0-5ccc-4585-ac54-4d80ed43a9c1",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "54YJ"
+        },
+        "ijsBPI": {
+          "data": "Set up AppFlowy Boards",
+          "field_type": 0,
+          "created_at": 1724469823,
+          "last_modified": 1724469827
+        },
+        "ZKFemc": {
+          "created_at": 1724469855,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"PVHj\",\"name\":\"Create a board for the class\",\"color\":\"Purple\"},{\"id\":\"j8Kr\",\"name\":\"Copy beginning of term items\",\"color\":\"Purple\"},{\"id\":\"HZkV\",\"name\":\"Copy weekly activities list\",\"color\":\"Purple\"},{\"id\":\"rMqr\",\"name\":\"Make Week 1 (add all days and classes, assign people)\",\"color\":\"Purple\"},{\"id\":\"VvAO\",\"name\":\"Copy for rest of weeks\",\"color\":\"Purple\"},{\"id\":\"Xy_6\",\"name\":\"Copy end of term items\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1724469898
+        }
+      }
+    },
+    {
+      "id": "d6f40665-91c5-4496-bb30-046fec1c8ed5",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Web Enhance Class"
+        },
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "54YJ"
+        }
+      }
+    },
+    {
+      "id": "b591d285-3b75-4b3b-837d-aebe09712b89",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Write Syllabus"
+        },
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "54YJ"
+        }
+      }
+    },
+    {
+      "id": "9353f8d5-eeb6-4ed5-bbb7-00fd873dead7",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Weekly Schedule"
+        },
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "HeDt"
+        },
+        "ZKFemc": {
+          "created_at": 1724470576,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"FEt6\",\"name\":\"Change the dates\",\"color\":\"Purple\"},{\"id\":\"sDyx\",\"name\":\"Add assignments from semester plan\",\"color\":\"Purple\"},{\"id\":\"TLrq\",\"name\":\"Fill out the curriculum chart\",\"color\":\"Purple\"},{\"id\":\"hzt7\",\"name\":\"Check corresponding lessons with last year\",\"color\":\"Purple\"},{\"id\":\"BX1K\",\"name\":\"Put a card to make extra assignments on Trello\",\"color\":\"Purple\"},{\"id\":\"kbRI\",\"name\":\"Put a card to grade extra assignments on Trello\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1724470602
+        }
+      }
+    },
+    {
+      "id": "b29434d3-27d0-49e6-838f-d455fe1afc4c",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "HeDt"
+        },
+        "ijsBPI": {
+          "data": "Make Assignment 1",
+          "field_type": 0
+        }
+      }
+    },
+    {
+      "id": "decc9601-1a14-4fde-9a93-f6eb5e4d2cdd",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Set up Google Drive"
+        },
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "54YJ"
+        }
+      }
+    },
+    {
+      "id": "d8c4db9e-d7a0-44bd-9c48-78f33c01838c",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VpAMlP": {
+          "data": "54YJ",
+          "field_type": 3
+        },
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Make Semester Plan",
+          "created_at": 1724470117,
+          "last_modified": 1724470119
+        },
+        "ZKFemc": {
+          "created_at": 1724470128,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"9jQJ\",\"name\":\"Create chart with dates of semester\",\"color\":\"Purple\"},{\"id\":\"rNE7\",\"name\":\"Put in holidays\",\"color\":\"Purple\"},{\"id\":\"t98v\",\"name\":\"Put in conferences/travel\",\"color\":\"Purple\"},{\"id\":\"yo-W\",\"name\":\"Put in assignments\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1724470147
+        }
+      }
+    },
+    {
+      "id": "7b49422a-d82a-44d3-99b2-a4840acdf89a",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "data": "After Class",
+          "field_type": 0
+        },
+        "VpAMlP": {
+          "data": "HeDt",
+          "field_type": 3
+        },
+        "ZKFemc": {
+          "created_at": 1724470535,
+          "data": "{\"options\":[{\"id\":\"iqBE\",\"name\":\"Record Attendance\",\"color\":\"Purple\"},{\"id\":\"_btE\",\"name\":\"Send HW announcement\",\"color\":\"Purple\"},{\"id\":\"wddb\",\"name\":\"Check HW activities are on LMS\",\"color\":\"Purple\"},{\"id\":\"jg5e\",\"name\":\"Write notes on the lesson plan\",\"color\":\"Purple\"},{\"id\":\"37_V\",\"name\":\"Write activities, assessment and notes on the curriculum development plan\",\"color\":\"Purple\"},{\"id\":\"tTZZ\",\"name\":\"Correct the Homework\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "field_type": 7,
+          "last_modified": 1724470566
+        }
+      }
+    },
+    {
+      "id": "9de0a00a-09a7-4a7e-9adc-bb920b197dc2",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Reflection Meeting"
+        },
+        "VpAMlP": {
+          "data": "Y8n1",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "85623100-3416-4e30-9e20-8d53b14a13b9",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VpAMlP": {
+          "data": "54YJ",
+          "field_type": 3
+        },
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Reserve Labs/Special Rooms",
+          "created_at": 1724469811,
+          "last_modified": 1724469817
+        }
+      }
+    },
+    {
+      "id": "ca1c1b0d-a42b-49d2-97d4-7b82e1e59d95",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Lesson Plan"
+        },
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "HeDt"
+        },
+        "ZKFemc": {
+          "created_at": 1724470492,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"C-es\",\"name\":\"Read the notes from last year\",\"color\":\"Purple\"},{\"id\":\"t5NS\",\"name\":\"Write the plan\",\"color\":\"Purple\"},{\"id\":\"9o8C\",\"name\":\"Write the assessment for the Can-Do Statement on the plan\",\"color\":\"Purple\"},{\"id\":\"kjUF\",\"name\":\"Write the powerpoint\",\"color\":\"Purple\"},{\"id\":\"5tKx\",\"name\":\"Write the Can-Do Statement on the powerpoint\",\"color\":\"Purple\"},{\"id\":\"Rlse\",\"name\":\"Make the activities\",\"color\":\"Purple\"},{\"id\":\"Rkbj\",\"name\":\"Arrange the activities (cutting and organizing etc)\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1724470526
+        }
+      }
+    },
+    {
+      "id": "83eb237a-2268-4008-af87-6c6072ef8558",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Set up Online Textbook"
+        },
+        "VpAMlP": {
+          "data": "54YJ",
+          "field_type": 3
+        }
+      }
+    },
+    {
+      "id": "452957cc-bbe5-4712-b649-61857adcde3c",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VpAMlP": {
+          "field_type": 3,
+          "data": "54YJ"
+        },
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Set up dropbox folders",
+          "created_at": 1724469911,
+          "last_modified": 1724469919
+        }
+      }
+    },
+    {
+      "id": "e9de30b8-450b-4ce1-b455-d1149799cdce",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VpAMlP": {
+          "data": "HeDt",
+          "field_type": 3
+        },
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Correct Assignment 1"
+        }
+      }
+    },
+    {
+      "id": "fee6c4d2-8ce8-4659-9231-351994adf64d",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "VpAMlP": {
+          "data": "54YJ",
+          "field_type": 3
+        },
+        "ijsBPI": {
+          "field_type": 0,
+          "data": "Set up Learning Management System"
+        },
+        "ZKFemc": {
+          "created_at": 1724469946,
+          "field_type": 7,
+          "data": "{\"options\":[{\"id\":\"uKsf\",\"name\":\"Syllabus\",\"color\":\"Purple\"},{\"id\":\"rNBL\",\"name\":\"Grades\",\"color\":\"Purple\"},{\"id\":\"SyfN\",\"name\":\"Schedule\",\"color\":\"Purple\"}],\"selected_option_ids\":[]}",
+          "last_modified": 1724469955
+        }
+      }
+    },
+    {
+      "id": "7c256903-a621-4419-ad09-b36267a4955d",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "ijsBPI": {
+          "data": "Correct Final Exam",
+          "field_type": 0
+        },
+        "VpAMlP": {
+          "data": "Y8n1",
+          "field_type": 3
+        }
+      }
+    }
+  ]
+}

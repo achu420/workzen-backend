@@ -1,0 +1,398 @@
+{
+  "template_id": "sprint-retrospective-template",
+  "order": 131,
+  "name": "Sprint Retrospective Template",
+  "description": "Use this template to reflect on their progress and identify areas for improvement.",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"entertainment\",\"iconName\":\"button-previous\",\"color\":\"0xFFAAD93D\"}"
+  },
+  "category": "Management",
+  "categories": [
+    "Management",
+    "Project Management",
+    "Docs",
+    "Engineering",
+    "Startups"
+  ],
+  "author": "Slite",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Sprint-Retrospective-Template-04c8ff1b-21cc-4ce7-8cb6-62b2620180c8",
+  "pages": {
+    "id": "04c8ff1b-21cc-4ce7-8cb6-62b2620180c8",
+    "name": "Sprint Retrospective Template",
+    "icon": {
+      "ty": 2,
+      "value": "{\"groupName\":\"entertainment\",\"iconName\":\"button-previous\",\"color\":\"0xFFAAD93D\"}"
+    },
+    "document": {
+      "page_id": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+      "blocks": {
+        "154d025e-fbef-5c28-b42f-633b96eb55cd": {
+          "id": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "ty": "page",
+          "parent": "",
+          "children": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "external_id": "LpZNqR",
+          "external_type": "text",
+          "data": {
+            "image_type": "1",
+            "selected_icon": "{\"groupName\":\"entertainment\",\"iconName\":\"button-previous\",\"color\":\"0xFFAAD93D\"}",
+            "cover_selection": "https://images.unsplash.com/photo-1722175772834-5be13c04f57b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MTE1Mzd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MjQ1ODY3OTh8&ixlib=rb-4.0.3&q=80&w=1080",
+            "cover_selection_type": "CoverType.file"
+          }
+        },
+        "nq5HfQ": {
+          "id": "nq5HfQ",
+          "ty": "heading",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "ovxDXU",
+          "external_id": "L752Rn",
+          "external_type": "text",
+          "data": {
+            "level": 2,
+            "delta": [
+              {
+                "insert": "TL;DR"
+              }
+            ]
+          }
+        },
+        "xlaAxX": {
+          "id": "xlaAxX",
+          "ty": "heading",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "tPQ4hE",
+          "external_id": "HoKF0j",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "﻿🚦Stop/Start/Continue"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "0vhzty": {
+          "id": "0vhzty",
+          "ty": "heading",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "QRz84A",
+          "external_id": "AMEDv_",
+          "external_type": "text",
+          "data": {
+            "level": 3,
+            "delta": [
+              {
+                "insert": "﻿What should we continue to do?"
+              }
+            ]
+          }
+        },
+        "GoLglg": {
+          "id": "GoLglg",
+          "ty": "bulleted_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "RhlBuX",
+          "external_id": "qOa7V4",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "﻿[add your thoughts here]﻿"
+              }
+            ]
+          }
+        },
+        "L2Klkf": {
+          "id": "L2Klkf",
+          "ty": "bulleted_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "6MNaJR",
+          "external_id": "TChRdu",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "﻿[add your thoughts here]﻿"
+              }
+            ]
+          }
+        },
+        "2ogLEk": {
+          "id": "2ogLEk",
+          "ty": "heading",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "i_ovtM",
+          "external_id": "9mBrVr",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "What should we stop doing?"
+              }
+            ],
+            "level": 3
+          }
+        },
+        "u9IUZW": {
+          "id": "u9IUZW",
+          "ty": "bulleted_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "7sQ8eM",
+          "external_id": "aGhXTN",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "﻿[add your thoughts here]﻿"
+              }
+            ]
+          }
+        },
+        "sw0mTp": {
+          "id": "sw0mTp",
+          "ty": "bulleted_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "gwYYAA",
+          "external_id": "lhakZ-",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "﻿[add your thoughts here]﻿"
+              }
+            ]
+          }
+        },
+        "LqwOGc": {
+          "id": "LqwOGc",
+          "ty": "heading",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "wxjkhu",
+          "external_id": "6Qula6",
+          "external_type": "text",
+          "data": {
+            "level": 3,
+            "delta": [
+              {
+                "insert": "What should we start doing next cycle?"
+              }
+            ]
+          }
+        },
+        "YNwYoK": {
+          "id": "YNwYoK",
+          "ty": "bulleted_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "Q4osWk",
+          "external_id": "jvZ1yP",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "﻿[add your thoughts here]﻿"
+              }
+            ]
+          }
+        },
+        "TVEunc": {
+          "id": "TVEunc",
+          "ty": "bulleted_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "34K7CB",
+          "external_id": "0LbhKO",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "﻿[add your thoughts here]﻿"
+              }
+            ]
+          }
+        },
+        "T2iwxh": {
+          "id": "T2iwxh",
+          "ty": "heading",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "q9norX",
+          "external_id": "U4rWkU",
+          "external_type": "text",
+          "data": {
+            "level": 2
+          }
+        },
+        "lSakF9": {
+          "id": "lSakF9",
+          "ty": "paragraph",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "v3hRm-",
+          "external_id": "wx3-kj",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "PuM3zN": {
+          "id": "PuM3zN",
+          "ty": "heading",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "a3SfKR",
+          "external_id": "ixB-4T",
+          "external_type": "text",
+          "data": {
+            "delta": [
+              {
+                "insert": "﻿Shoutouts"
+              }
+            ],
+            "level": 2
+          }
+        },
+        "X3lNFJ": {
+          "id": "X3lNFJ",
+          "ty": "callout",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "n5VuhY",
+          "external_id": "7A7rtn",
+          "external_type": "text",
+          "data": {
+            "bgColor": "appflowy_them_color_tint8",
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"help-question-1\"}",
+            "icon_type": "icon",
+            "textColor": "appflowy_them_color_tint8"
+          }
+        },
+        "9cQadw": {
+          "id": "9cQadw",
+          "ty": "paragraph",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "xlKz9g",
+          "external_id": "ccFRem",
+          "external_type": "text",
+          "data": {
+            "delta": []
+          }
+        },
+        "vw0A-4": {
+          "id": "vw0A-4",
+          "ty": "todo_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "ahIjy0",
+          "external_id": "Y0i0sb",
+          "external_type": "text",
+          "data": {
+            "delta": [],
+            "checked": false
+          }
+        },
+        "JHwVko": {
+          "id": "JHwVko",
+          "ty": "todo_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "tD2hr4",
+          "external_id": "cZ4lqm",
+          "external_type": "text",
+          "data": {
+            "checked": false,
+            "delta": []
+          }
+        },
+        "hUCYrB": {
+          "id": "hUCYrB",
+          "ty": "callout",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "99JXlc",
+          "external_id": "Jv2EY7",
+          "external_type": "text",
+          "data": {
+            "bgColor": "appflowy_them_color_tint8",
+            "icon": "{\"groupName\":\"interface_essential\",\"iconName\":\"help-question-1\"}",
+            "textColor": "appflowy_them_color_tint8",
+            "icon_type": "icon"
+          }
+        },
+        "0Xcoli": {
+          "id": "0Xcoli",
+          "ty": "todo_list",
+          "parent": "154d025e-fbef-5c28-b42f-633b96eb55cd",
+          "children": "-EdYTI",
+          "external_id": "BIHQU9",
+          "external_type": "text",
+          "data": {
+            "checked": false
+          }
+        }
+      },
+      "meta": {
+        "children_map": {
+          "154d025e-fbef-5c28-b42f-633b96eb55cd": [
+            "nq5HfQ",
+            "X3lNFJ",
+            "9cQadw",
+            "xlaAxX",
+            "0vhzty",
+            "GoLglg",
+            "L2Klkf",
+            "2ogLEk",
+            "u9IUZW",
+            "sw0mTp",
+            "LqwOGc",
+            "YNwYoK",
+            "TVEunc",
+            "T2iwxh",
+            "0Xcoli",
+            "vw0A-4",
+            "JHwVko",
+            "lSakF9",
+            "PuM3zN",
+            "hUCYrB"
+          ],
+          "ovxDXU": [],
+          "tPQ4hE": [],
+          "QRz84A": [],
+          "RhlBuX": [],
+          "6MNaJR": [],
+          "i_ovtM": [],
+          "7sQ8eM": [],
+          "gwYYAA": [],
+          "wxjkhu": [],
+          "Q4osWk": [],
+          "34K7CB": [],
+          "q9norX": [],
+          "v3hRm-": [],
+          "a3SfKR": [],
+          "n5VuhY": [],
+          "xlKz9g": [],
+          "ahIjy0": [],
+          "tD2hr4": [],
+          "99JXlc": [],
+          "-EdYTI": []
+        },
+        "text_map": {
+          "L752Rn": "[{\"insert\":\"TL;DR\"}]",
+          "HoKF0j": "[{\"insert\":\"﻿🚦Stop/Start/Continue\"}]",
+          "AMEDv_": "[{\"insert\":\"﻿What should we continue to do?\"}]",
+          "qOa7V4": "[{\"insert\":\"﻿[add your thoughts here]﻿\"}]",
+          "TChRdu": "[{\"insert\":\"﻿[add your thoughts here]﻿\"}]",
+          "9mBrVr": "[{\"insert\":\"What should we stop doing?\"}]",
+          "aGhXTN": "[{\"insert\":\"﻿[add your thoughts here]﻿\"}]",
+          "lhakZ-": "[{\"insert\":\"﻿[add your thoughts here]﻿\"}]",
+          "6Qula6": "[{\"insert\":\"What should we start doing next cycle?\"}]",
+          "jvZ1yP": "[{\"insert\":\"﻿[add your thoughts here]﻿\"}]",
+          "0LbhKO": "[{\"insert\":\"﻿[add your thoughts here]﻿\"}]",
+          "U4rWkU": "[{\"insert\":\" Action steps\"}]",
+          "wx3-kj": "[]",
+          "ixB-4T": "[{\"insert\":\"﻿Shoutouts\"}]",
+          "7A7rtn": "[{\"insert\":\"Drop your 1-line summary of the cycle here.\"}]",
+          "ccFRem": "[]",
+          "Y0i0sb": "[]",
+          "cZ4lqm": "[]",
+          "Jv2EY7": "[{\"insert\":\"Shoutout your teammates for the work they did this cycle!\"}]",
+          "BIHQU9": "[]"
+        }
+      }
+    },
+    "children": []
+  }
+}

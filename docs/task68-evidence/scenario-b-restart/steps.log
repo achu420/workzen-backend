@@ -1,0 +1,27 @@
+[2026-11-10T09:24:52.815Z] INFO - .env.local backed up (MD5-verified) :: c85de40fc13dc3b2379325c6ecc3471d
+[2026-11-10T09:24:52.815Z] INFO - Wrote temporary .env.local pointing at this run's disposable backend :: APPFLOWY_BASE_URL=http://127.0.0.1:18789 | APPFLOWY_GOTRUE_BASE_URL=http://127.0.0.1:18789 | APPFLOWY_WS_BASE_URL=ws://127.0.0.1:18789/ws/v2 | 
+[2026-11-10T09:24:53.329Z] PASS - Backend process started (STORAGE=json, port 18789) :: pid=9571
+[2026-11-10T09:24:54.393Z] PASS - Frontend dev server started (port 13002) :: pid=9576
+[2026-11-10T09:24:54.492Z] PASS - Registered real user account via the backend's own auth API :: task68-restart-1794302694464@example.test
+[2026-11-10T09:24:59.719Z] PASS - Logged in via real UI :: http://localhost:13002/app/3dd1e79f-7298-4c2c-a50d-64bbea899729
+[2026-11-10T09:25:03.048Z] PASS - Created a public Space via real UI :: workspace=3dd1e79f-7298-4c2c-a50d-64bbea899729
+[2026-11-10T09:25:06.400Z] PASS - Created a new Document page via real UI :: pageId=dc53d1ad-50e6-416d-8629-200e49024e6c
+[2026-11-10T09:25:16.785Z] FAIL - WORKFLOW FAILED :: locator.click: Timeout 8000ms exceeded.
+Call log:
+  - waiting for getByTestId('page-dc53d1ad-50e6-416d-8629-200e49024e6c').first()
+    - locator resolved to <div draggable="true" data-selected="true" data-drop-target-for-element="true" data-testid="page-dc53d1ad-50e6-416d-8629-200e49024e6c" class="relative my-[1px] flex min-h-[30px] w-full cursor-pointer select-none items-center gap-1 rounded-[8px] px-0.5 py-0.5 text-sm hover:bg-fill-content-hover focus:outline-none">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    15 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+    at main (/Volumes/work disk/Codes/Tracker/AppFlowy-Independent-Backend/test/t68-scenario-b-restart.mjs:294:59)

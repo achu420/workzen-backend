@@ -1,0 +1,516 @@
+{
+  "template_id": "class-notes",
+  "order": 138,
+  "name": "Class Notes",
+  "description": "Capture every insight with our Class Notes templates, designed for clarity and retention. ",
+  "icon": {
+    "ty": 2,
+    "value": "{\"groupName\":\"artificial_intelligence\",\"iconName\":\"ai-edit-spark\",\"color\":\"0xFF535CE4\"}"
+  },
+  "category": "Database",
+  "categories": [
+    "Database",
+    "Education",
+    "Kanban"
+  ],
+  "author": "Notion",
+  "source_url": "https://appflowy.com/5fca8c8a-8126-428e-bb5e-0efeef22ab56/Class-Notes-6f3a0877-5372-4ecc-a68b-60457f2c8e9a",
+  "database_id": "b5af2da2-1822-4940-a3d1-3c77b512fe74",
+  "fields": [
+    {
+      "id": "xOwWDq",
+      "name": "Name",
+      "field_type": 0,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": ""
+        }
+      },
+      "is_primary": true
+    },
+    {
+      "id": "c_BK5I",
+      "name": "Created",
+      "field_type": 9,
+      "icon": "",
+      "type_options": {
+        "3": {
+          "content": "{\"options\":[],\"disable_color\":false}",
+          "time_format": 1,
+          "field_type": 9,
+          "include_time": true,
+          "date_format": 3
+        },
+        "9": {
+          "date_format": 3,
+          "include_time": true,
+          "field_type": 9,
+          "time_format": 1
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "Eiv9cM",
+      "name": "Class",
+      "field_type": 3,
+      "icon": "",
+      "type_options": {
+        "0": {
+          "data": "",
+          "content": "{\"options\":[],\"disable_color\":false}"
+        },
+        "3": {
+          "content": "{\"options\":[{\"id\":\"IK6Z\",\"name\":\"Econ 101\",\"color\":\"Orange\"},{\"id\":\"jX4v\",\"name\":\"Arch 330\",\"color\":\"LightPink\"},{\"id\":\"qY2v\",\"name\":\"CS 105\",\"color\":\"Pink\"},{\"id\":\"vDQL\",\"name\":\"Math 221\",\"color\":\"Purple\"}],\"disable_color\":false}"
+        }
+      },
+      "is_primary": false
+    },
+    {
+      "id": "mqSLUC",
+      "name": "Date",
+      "field_type": 9,
+      "icon": "",
+      "type_options": {
+        "2": {
+          "timezone_id": "",
+          "time_format": 1,
+          "date_format": 3,
+          "field_type": 9,
+          "include_time": true
+        },
+        "9": {
+          "time_format": 1,
+          "include_time": true,
+          "field_type": 9,
+          "date_format": 3
+        }
+      },
+      "is_primary": false
+    }
+  ],
+  "views": [
+    {
+      "id": "6f3a0877-5372-4ecc-a68b-60457f2c8e9a",
+      "database_id": "b5af2da2-1822-4940-a3d1-3c77b512fe74",
+      "name": "Grid",
+      "layout": 0,
+      "layout_settings": {},
+      "filters": [],
+      "sorts": [],
+      "group_settings": [],
+      "row_orders": [
+        {
+          "height": 60,
+          "id": "18a9e67e-9ba8-4c45-99ef-9c467d5863e4"
+        },
+        {
+          "height": 60,
+          "id": "766dbe2a-dd99-43a6-b0ef-7a37044ba45b"
+        },
+        {
+          "height": 60,
+          "id": "edebaf90-1f4b-45af-83cf-d5b36445019f"
+        },
+        {
+          "height": 60,
+          "id": "26a240ce-a8ca-4313-997d-8563490af300"
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "xOwWDq"
+        },
+        {
+          "id": "c_BK5I"
+        },
+        {
+          "id": "Eiv9cM"
+        },
+        {
+          "id": "mqSLUC"
+        }
+      ],
+      "field_settings": {
+        "c_BK5I": {
+          "visibility": 0,
+          "width": 150,
+          "wrap": true
+        },
+        "xOwWDq": {
+          "wrap": true,
+          "visibility": 0,
+          "width": 150
+        },
+        "Eiv9cM": {
+          "visibility": 0
+        },
+        "mqSLUC": {
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 1724473590
+    },
+    {
+      "id": "c5dd8a70-48e6-4653-8985-bc469c278db4",
+      "database_id": "b5af2da2-1822-4940-a3d1-3c77b512fe74",
+      "name": "Board",
+      "layout": 1,
+      "layout_settings": {
+        "1": {
+          "collapse_hidden_groups": true,
+          "hide_ungrouped_column": true
+        }
+      },
+      "filters": [],
+      "sorts": [],
+      "group_settings": [
+        {
+          "content": "",
+          "field_id": "Eiv9cM",
+          "groups": [
+            {
+              "visible": true,
+              "id": "Eiv9cM"
+            },
+            {
+              "visible": true,
+              "id": "IK6Z"
+            },
+            {
+              "visible": true,
+              "id": "jX4v"
+            },
+            {
+              "id": "qY2v",
+              "visible": true
+            },
+            {
+              "visible": true,
+              "id": "vDQL"
+            }
+          ],
+          "ty": 3,
+          "id": "g:Pm2Xig"
+        }
+      ],
+      "row_orders": [
+        {
+          "id": "18a9e67e-9ba8-4c45-99ef-9c467d5863e4",
+          "height": 60
+        },
+        {
+          "id": "766dbe2a-dd99-43a6-b0ef-7a37044ba45b",
+          "height": 60
+        },
+        {
+          "height": 60,
+          "id": "edebaf90-1f4b-45af-83cf-d5b36445019f"
+        },
+        {
+          "id": "26a240ce-a8ca-4313-997d-8563490af300",
+          "height": 60
+        }
+      ],
+      "field_orders": [
+        {
+          "id": "xOwWDq"
+        },
+        {
+          "id": "c_BK5I"
+        },
+        {
+          "id": "Eiv9cM"
+        },
+        {
+          "id": "mqSLUC"
+        }
+      ],
+      "field_settings": {
+        "xOwWDq": {
+          "wrap": true,
+          "visibility": 0,
+          "width": 150
+        },
+        "c_BK5I": {
+          "visibility": 0,
+          "wrap": true,
+          "width": 150
+        },
+        "Eiv9cM": {
+          "visibility": 0
+        },
+        "mqSLUC": {
+          "visibility": 0
+        }
+      },
+      "is_inline": false,
+      "embedded": false,
+      "created_at": 0
+    }
+  ],
+  "rows": [
+    {
+      "id": "26a240ce-a8ca-4313-997d-8563490af300",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "xOwWDq": {
+          "created_at": 1724473907,
+          "data": "Econ: Lecture 9",
+          "field_type": 0,
+          "last_modified": 1724573927
+        },
+        "Eiv9cM": {
+          "created_at": 1724473910,
+          "field_type": 3,
+          "data": "IK6Z",
+          "last_modified": 1724473910
+        }
+      }
+    },
+    {
+      "id": "edebaf90-1f4b-45af-83cf-d5b36445019f",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "xOwWDq": {
+          "created_at": 1724473839,
+          "data": "Arch: Lecture 8",
+          "field_type": 0,
+          "last_modified": 1724573911
+        },
+        "Eiv9cM": {
+          "created_at": 1724473844,
+          "field_type": 3,
+          "data": "jX4v",
+          "last_modified": 1724473844
+        }
+      }
+    },
+    {
+      "id": "18a9e67e-9ba8-4c45-99ef-9c467d5863e4",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "xOwWDq": {
+          "created_at": 1724473640,
+          "field_type": 0,
+          "data": "Calculus: Lecture 4",
+          "last_modified": 1724573834
+        },
+        "Eiv9cM": {
+          "created_at": 1724473696,
+          "field_type": 3,
+          "data": "vDQL",
+          "last_modified": 1724473696
+        }
+      },
+      "document": {
+        "page_id": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+        "blocks": {
+          "1ebdc10a-def6-56bd-83c3-7927f01db915": {
+            "id": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "ty": "page",
+            "parent": "",
+            "children": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "external_id": null,
+            "external_type": null,
+            "data": {}
+          },
+          "cR3n_a": {
+            "id": "cR3n_a",
+            "ty": "paragraph",
+            "parent": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "children": "H6kbeS",
+            "external_id": "-KfNFh",
+            "external_type": "text",
+            "data": {
+              "delta": [
+                {
+                  "insert": "Today we covered integration by parts. The formula for integration by parts is given by:"
+                }
+              ]
+            }
+          },
+          "sNiEXj": {
+            "id": "sNiEXj",
+            "ty": "paragraph",
+            "parent": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "children": "TKjP69",
+            "external_id": "MfAvvI",
+            "external_type": "text",
+            "data": {
+              "delta": [
+                {
+                  "insert": "Where "
+                },
+                {
+                  "attributes": {
+                    "formula": "u"
+                  },
+                  "insert": "$"
+                },
+                {
+                  "insert": " and "
+                },
+                {
+                  "attributes": {
+                    "formula": "v"
+                  },
+                  "insert": "$"
+                },
+                {
+                  "insert": " are functions of "
+                },
+                {
+                  "attributes": {
+                    "formula": "x"
+                  },
+                  "insert": "$"
+                },
+                {
+                  "insert": ". The process involves choosing "
+                },
+                {
+                  "attributes": {
+                    "formula": "u"
+                  },
+                  "insert": "$"
+                },
+                {
+                  "insert": " and "
+                },
+                {
+                  "attributes": {
+                    "formula": "dv"
+                  },
+                  "insert": "$"
+                },
+                {
+                  "insert": " such that the integral on the right-hand side is easier to solve than the original integral."
+                }
+              ]
+            }
+          },
+          "u-pojB": {
+            "id": "u-pojB",
+            "ty": "paragraph",
+            "parent": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "children": "o08Bku",
+            "external_id": "oESRyj",
+            "external_type": "text",
+            "data": {
+              "delta": [
+                {
+                  "insert": "We also discussed the method of partial fractions, which allows us to break down complex fractions into simpler ones, making them easier to integrate."
+                }
+              ]
+            }
+          },
+          "aTfCJC": {
+            "id": "aTfCJC",
+            "ty": "paragraph",
+            "parent": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "children": "pd3L98",
+            "external_id": "f31DzH",
+            "external_type": "text",
+            "data": {
+              "delta": [
+                {
+                  "insert": "Example:"
+                }
+              ]
+            }
+          },
+          "sFSz1n": {
+            "id": "sFSz1n",
+            "ty": "paragraph",
+            "parent": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "children": "N8bm5B",
+            "external_id": "iJ1FHJ",
+            "external_type": "text",
+            "data": {
+              "delta": [
+                {
+                  "insert": "To integrate this, we would first decompose the fraction into partial fractions and then integrate each one individually."
+                }
+              ]
+            }
+          },
+          "uwhHMV": {
+            "id": "uwhHMV",
+            "ty": "math_equation",
+            "parent": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "children": "jUgVrJ",
+            "external_id": null,
+            "external_type": null,
+            "data": {
+              "formula": "\\int u dv = uv - \\int v du"
+            }
+          },
+          "GUFJNd": {
+            "id": "GUFJNd",
+            "ty": "math_equation",
+            "parent": "1ebdc10a-def6-56bd-83c3-7927f01db915",
+            "children": "JF2h19",
+            "external_id": null,
+            "external_type": null,
+            "data": {
+              "formula": "\\int \\frac{3x^2 - 2x + 1}{x^3 - x^2 + x - 1} dx"
+            }
+          }
+        },
+        "meta": {
+          "children_map": {
+            "1ebdc10a-def6-56bd-83c3-7927f01db915": [
+              "cR3n_a",
+              "uwhHMV",
+              "sNiEXj",
+              "u-pojB",
+              "aTfCJC",
+              "GUFJNd",
+              "sFSz1n"
+            ],
+            "H6kbeS": [],
+            "TKjP69": [],
+            "o08Bku": [],
+            "pd3L98": [],
+            "N8bm5B": [],
+            "jUgVrJ": [],
+            "JF2h19": []
+          },
+          "text_map": {
+            "-KfNFh": "[{\"insert\":\"Today we covered integration by parts. The formula for integration by parts is given by:\"}]",
+            "MfAvvI": "[{\"insert\":\"Where \"},{\"insert\":\"$\",\"attributes\":{\"formula\":\"u\"}},{\"insert\":\" and \"},{\"insert\":\"$\",\"attributes\":{\"formula\":\"v\"}},{\"insert\":\" are functions of \"},{\"insert\":\"$\",\"attributes\":{\"formula\":\"x\"}},{\"insert\":\". The process involves choosing \"},{\"insert\":\"$\",\"attributes\":{\"formula\":\"u\"}},{\"insert\":\" and \"},{\"insert\":\"$\",\"attributes\":{\"formula\":\"dv\"}},{\"insert\":\" such that the integral on the right-hand side is easier to solve than the original integral.\"}]",
+            "oESRyj": "[{\"insert\":\"We also discussed the method of partial fractions, which allows us to break down complex fractions into simpler ones, making them easier to integrate.\"}]",
+            "f31DzH": "[{\"insert\":\"Example:\"}]",
+            "iJ1FHJ": "[{\"insert\":\"To integrate this, we would first decompose the fraction into partial fractions and then integrate each one individually.\"}]"
+          }
+        }
+      }
+    },
+    {
+      "id": "766dbe2a-dd99-43a6-b0ef-7a37044ba45b",
+      "height": 60,
+      "visibility": true,
+      "cells": {
+        "xOwWDq": {
+          "created_at": 1724473760,
+          "field_type": 0,
+          "data": "CS 105: Lecture 5",
+          "last_modified": 1724573905
+        },
+        "Eiv9cM": {
+          "created_at": 1724473762,
+          "field_type": 3,
+          "data": "qY2v",
+          "last_modified": 1724473762
+        }
+      }
+    }
+  ]
+}
