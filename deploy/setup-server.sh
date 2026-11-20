@@ -15,6 +15,11 @@
 #   SIGNUP_ALLOWED_DOMAINS   e.g. "yourcompany.com": only those addresses may create accounts.
 #                            Leave empty to open sign-up for the first account; then lock it (see the end of the output).
 #   SKIP_FIREWALL=1   do not touch ufw
+#   PROXY=nginx       shared server: an nginx already serves other sites on 80/443. Workzen is added as one more nginx site
+#                     (certificate from certbot); Caddy, the firewall, fail2ban and an existing Node are left alone.
+#                     Remembered for updates. Default: PROXY=caddy (a server of its own).
+#   CERTBOT_EMAIL     PROXY=nginx only: address Let's Encrypt writes to about expiring certificates (optional)
+#   SKIP_DNS_CHECK=1  do not compare the domain's DNS with this server's public address (behind NAT, or tests)
 set -Eeuo pipefail
 
 BACKEND_TGZ="${1:-}"
@@ -24,6 +29,9 @@ APP_DIR=/opt/tracker
 DATA_DIR=/var/lib/tracker
 BACKUP_DIR=/var/backups/tracker
 SERVICE_USER=tracker
+DEPLOY_CONF=/etc/tracker-deploy.conf
+NGINX_SITE=/etc/nginx/sites-available/workzen.conf
+ACME_ROOT=/var/www/workzen-acme
 
 say()  { printf '\n\033[1m==> %s\033[0m\n' "$*"; }
 warn() { printf '\033[33mWARNING: %s\033[0m\n' "$*" >&2; }
@@ -44,11 +52,34 @@ else
   DOMAIN="$(grep -E '^PUBLIC_URL=' "$ENV_FILE" | head -1 | sed -E 's#^PUBLIC_URL=https?://##; s#/.*##')"
   [ -n "$DOMAIN" ] || die "could not read PUBLIC_URL from $ENV_FILE"
 fi
-say "Mode: $([ "$UPDATE" = 1 ] && echo "update of the install for $DOMAIN" || echo "first install for $DOMAIN")"
+[ -z "${PROXY:-}" ] && [ -f "$DEPLOY_CONF" ] && PROXY="$(sed -n 's/^PROXY=//p' "$DEPLOY_CONF")"
+PROXY="${PROXY:-caddy}"
+case "$PROXY" in caddy|nginx) ;; *) die "PROXY must be caddy or nginx (got '$PROXY')" ;; esac
+say "Mode: $([ "$UPDATE" = 1 ] && echo "update of the install for $DOMAIN" || echo "first install for $DOMAIN"), front door: $PROXY"
+
+# ---------------------------------------------------------------- what else uses this server
+port_owner() { ss -Hltnp "sport = :$1" 2>/dev/null | sed -n 's/.*users:(("\([^"]*\)".*/\1/p' | head -1; }
+if [ "$PROXY" = caddy ]; then
+  for port in 80 443; do
+    owner="$(port_owner "$port")"
+    [ -z "$owner" ] || [ "$owner" = caddy ] \
+      || die "port $port is already used by '$owner' (another website on this server?). Run again with PROXY=nginx in front of the command to add Workzen next to it (docs/DEPLOYMENT.md, section 2c)."
+  done
+else
+  command -v nginx >/dev/null 2>&1 || die "PROXY=nginx, but nginx is not installed here. Use the default (Caddy) on a server of its own."
+  nginx -t >/dev/null 2>&1 || die "the existing nginx configuration does not pass 'nginx -t' before any change; fix that first (nothing was changed)."
+  if grep -rlE "server_name[^;]*[[:space:]]${DOMAIN//./\\.}([[:space:];]|$)" /etc/nginx/sites-enabled /etc/nginx/conf.d 2>/dev/null | grep -qv "/workzen.conf$"; then
+    die "another nginx site already uses server_name $DOMAIN; remove it or pick another DOMAIN (nothing was changed)."
+  fi
+fi
+# DATABASE_URL points at 127.0.0.1:5432, so that port must be this machine's own PostgreSQL (or free), not e.g. a container.
+PG_PORT_OWNER="$(port_owner 5432)"
+[ -z "$PG_PORT_OWNER" ] || [ "$PG_PORT_OWNER" = postgres ] \
+  || die "port 5432 is used by '$PG_PORT_OWNER', not by a PostgreSQL installed on this machine (a database in a container?). Nothing was changed; see docs/DEPLOYMENT.md section 2c."
 
 # ---------------------------------------------------------------- DNS check (first install)
-SERVER_IP="$(curl -fsS -4 --max-time 8 https://ifconfig.me 2>/dev/null || true)"
-if [ "$UPDATE" = 0 ]; then
+if [ "$UPDATE" = 0 ] && [ "${SKIP_DNS_CHECK:-0}" != 1 ]; then
+  SERVER_IP="$(curl -fsS -4 --max-time 8 https://ifconfig.me 2>/dev/null || true)"
   RESOLVED="$(getent ahostsv4 "$DOMAIN" 2>/dev/null | awk '{print $1; exit}' || true)"
   if [ -z "$RESOLVED" ]; then
     die "$DOMAIN does not resolve yet. Create a DNS A record  $DOMAIN -> ${SERVER_IP:-the server IPv4 address}  at your DNS provider, wait a few minutes, then run this again (HTTPS certificates need it)."
@@ -59,23 +90,31 @@ if [ "$UPDATE" = 0 ]; then
 fi
 
 # ---------------------------------------------------------------- packages
-say "Installing system packages (PostgreSQL, Caddy, Node 22, firewall)"
 export DEBIAN_FRONTEND=noninteractive
 apt-get update -y
-apt-get install -y ca-certificates curl gnupg ufw fail2ban unattended-upgrades postgresql postgresql-contrib debian-keyring debian-archive-keyring apt-transport-https openssl rsync
-
-if ! command -v caddy >/dev/null 2>&1; then
-  curl -fsSL 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
-  curl -fsSL 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' -o /etc/apt/sources.list.d/caddy-stable.list
-  apt-get update -y && apt-get install -y caddy
+if [ "$PROXY" = caddy ]; then
+  say "Installing system packages (PostgreSQL, Caddy, Node 22, firewall)"
+  apt-get install -y ca-certificates curl gnupg ufw fail2ban unattended-upgrades postgresql postgresql-contrib debian-keyring debian-archive-keyring apt-transport-https openssl rsync
+  if ! command -v caddy >/dev/null 2>&1; then
+    curl -fsSL 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+    curl -fsSL 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' -o /etc/apt/sources.list.d/caddy-stable.list
+    apt-get update -y && apt-get install -y caddy
+  fi
+else
+  say "Installing system packages (PostgreSQL, certbot, Node 22 if missing); nginx and the firewall stay as they are"
+  apt-get install -y ca-certificates curl gnupg postgresql postgresql-contrib openssl rsync
+  command -v certbot >/dev/null 2>&1 || apt-get install -y certbot
 fi
 NODE_MAJOR=0
 command -v node >/dev/null 2>&1 && NODE_MAJOR="$(node -p 'process.versions.node.split(".")[0]')"
 if [ "$NODE_MAJOR" -lt 20 ]; then
+  # On a shared server another app may rely on the installed Node; replacing it is the operator's call.
+  [ "$PROXY" = caddy ] || [ "$NODE_MAJOR" = 0 ] || [ "${ALLOW_NODE_UPGRADE:-0}" = 1 ] \
+    || die "Node $(node --version) is installed and Workzen needs 20+. Upgrading replaces it for every app on this server: if that is fine, run again with ALLOW_NODE_UPGRADE=1 in front of the command."
   curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
   apt-get install -y nodejs
 fi
-echo "node $(node --version), postgres $(psql --version | awk '{print $3}'), $(caddy version | head -1)"
+echo "node $(node --version), postgres $(psql --version | awk '{print $3}'), $([ "$PROXY" = caddy ] && caddy version | head -1 || nginx -v 2>&1)"
 systemctl enable --now postgresql
 
 # ---------------------------------------------------------------- user and folders
@@ -179,6 +218,9 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable tracker >/dev/null
+systemctl stop tracker 2>/dev/null || true
+BACKEND_PORT_OWNER="$(port_owner 8787)"
+[ -z "$BACKEND_PORT_OWNER" ] || die "port 8787 is already used by '$BACKEND_PORT_OWNER' (another app on this server); the backend needs it on 127.0.0.1."
 systemctl restart tracker
 printf 'Waiting for the backend'
 for i in $(seq 1 60); do
@@ -188,7 +230,103 @@ for i in $(seq 1 60); do
 done
 journalctl -u tracker -n 12 --no-pager | grep -i "config\|warn\|listening" || true
 
+printf 'PROXY=%s\n' "$PROXY" > "$DEPLOY_CONF"
+
+# ---------------------------------------------------------------- nginx (PROXY=nginx: next to the sites already there)
+# Only $NGINX_SITE (and its sites-enabled link) is ever written; every change is checked with nginx -t first and
+# undone if it fails, and nginx is reloaded (never restarted), so the other sites keep serving throughout.
+write_nginx_site() { # $1: "tls" once the certificate exists, otherwise only the port 80 part
+  local ipv6=0 proxy loaded
+  # Captured first: with pipefail, grep -q closing the pipe early would make "nginx -T | grep -q" fail at random.
+  loaded="$(nginx -T 2>/dev/null || true)"
+  grep -qE '^\s*listen\s+\[::\]' <<<"$loaded" && ipv6=1
+  proxy="proxy_pass http://127.0.0.1:8787;
+		proxy_http_version 1.1;
+		proxy_set_header Host \$host;
+		proxy_set_header X-Forwarded-For \$remote_addr;
+		proxy_set_header X-Forwarded-Proto \$scheme;
+		proxy_set_header Upgrade \$http_upgrade;
+		proxy_set_header Connection \$workzen_connection_upgrade;
+		proxy_read_timeout 1h;
+		proxy_send_timeout 1h;
+		proxy_buffering off;"
+  {
+    echo "# Workzen - written by setup-server.sh on every run; edit the script, not this file."
+    echo "map \$http_upgrade \$workzen_connection_upgrade { default upgrade; '' close; }"
+    echo "server {"
+    echo "	listen 80;"; [ "$ipv6" = 1 ] && echo "	listen [::]:80;"
+    echo "	server_name ${DOMAIN};"
+    echo "	location /.well-known/acme-challenge/ { root ${ACME_ROOT}; }"
+    echo "	location / { return 301 https://\$host\$request_uri; }"
+    echo "}"
+    if [ "$1" = tls ]; then
+      cat <<EOF
+server {
+	listen 443 ssl http2;
+$([ "$ipv6" = 1 ] && printf '\tlisten [::]:443 ssl http2;')
+	server_name ${DOMAIN};
+	ssl_certificate /etc/letsencrypt/live/${DOMAIN}/fullchain.pem;
+	ssl_certificate_key /etc/letsencrypt/live/${DOMAIN}/privkey.pem;
+	client_max_body_size 110m;
+	gzip on;
+	gzip_types text/css application/javascript application/json image/svg+xml text/plain;
+	root ${APP_DIR}/web;
+
+	location ~ ^/(api|ws)/ {
+		${proxy}
+	}
+	location = /mcp {
+		${proxy}
+	}
+	location = /health {
+		${proxy}
+	}
+	location /gotrue/ {
+		${proxy/http:\/\/127.0.0.1:8787;/http://127.0.0.1:8787/;}
+	}
+	# The backend sets these on its own responses; here only for the static web app.
+	location / {
+		add_header X-Content-Type-Options nosniff always;
+		add_header Referrer-Policy no-referrer always;
+		add_header X-Frame-Options DENY always;
+		add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+		try_files \$uri /index.html;
+	}
+}
+EOF
+    fi
+  } > "$NGINX_SITE.new"
+  [ -f "$NGINX_SITE" ] && cp "$NGINX_SITE" "$NGINX_SITE.previous"
+  mv "$NGINX_SITE.new" "$NGINX_SITE"
+  ln -sf "$NGINX_SITE" /etc/nginx/sites-enabled/workzen.conf
+  if ! nginx -t >/dev/null 2>&1; then
+    nginx -t || true
+    if [ -f "$NGINX_SITE.previous" ]; then mv "$NGINX_SITE.previous" "$NGINX_SITE"; else rm -f "$NGINX_SITE" /etc/nginx/sites-enabled/workzen.conf; fi
+    die "the Workzen nginx site did not pass nginx -t (output above); it was taken out again and nginx was not reloaded, so the other sites are untouched."
+  fi
+  rm -f "$NGINX_SITE.previous"
+  systemctl reload nginx
+  loaded="$(nginx -T 2>/dev/null || true)"
+  grep -qF "server_name ${DOMAIN};" <<<"$loaded" \
+    || die "nginx does not read /etc/nginx/sites-enabled/ (its nginx.conf has no include for it); add 'include /etc/nginx/sites-enabled/*;' to the http block and run again."
+}
+
+if [ "$PROXY" = nginx ]; then
+  say "HTTPS front door (a site in the existing nginx)"
+  mkdir -p "$ACME_ROOT"
+  if [ ! -f "/etc/letsencrypt/live/${DOMAIN}/fullchain.pem" ]; then
+    write_nginx_site http
+    certbot certonly --webroot -w "$ACME_ROOT" -d "$DOMAIN" --non-interactive --agree-tos --keep-until-expiring \
+      ${CERTBOT_EMAIL:+-m "$CERTBOT_EMAIL"} $([ -z "${CERTBOT_EMAIL:-}" ] && echo --register-unsafely-without-email) \
+      --deploy-hook "systemctl reload nginx" \
+      || die "certbot could not get a certificate for $DOMAIN (output above). Usually DNS does not point here yet, or port 80 is blocked in the provider's firewall. Workzen is only reachable over plain HTTP for now; the other sites are untouched. Fix it and run the same command again."
+  fi
+  write_nginx_site tls
+  systemctl is-active --quiet nginx || die "nginx is not running after the reload"
+fi
+
 # ---------------------------------------------------------------- Caddy
+if [ "$PROXY" = caddy ]; then
 say "HTTPS front door (Caddy)"
 cat > /etc/caddy/Caddyfile <<EOF
 ${DOMAIN} {
@@ -215,9 +353,12 @@ EOF
 caddy validate --config /etc/caddy/Caddyfile --adapter caddyfile >/dev/null
 systemctl enable --now caddy
 systemctl reload caddy
+fi
 
 # ---------------------------------------------------------------- firewall
-if [ "${SKIP_FIREWALL:-0}" != 1 ]; then
+if [ "$PROXY" = nginx ]; then
+  echo "Firewall left as it is (shared server). Ports 80 and 443 must already be open for the other sites."
+elif [ "${SKIP_FIREWALL:-0}" != 1 ]; then
   say "Firewall (SSH, 80, 443)"
   # Never lock yourself out: allow every port sshd is configured for (22 if it cannot be read).
   SSH_PORTS="$(sshd -T 2>/dev/null | awk '/^port / {print $2}' | sort -u)"; SSH_PORTS="${SSH_PORTS:-22}"
@@ -238,7 +379,7 @@ chmod 644 /etc/cron.d/tracker-backup
 say "Smoke test"
 curl -fsS http://127.0.0.1:8787/api/server-info | head -c 200; echo
 curl -fsS -o /dev/null -w "front door over HTTPS: HTTP %{http_code}\n" --max-time 30 "https://${DOMAIN}/api/server-info" \
-  || warn "https://${DOMAIN} did not answer yet. Caddy needs a minute to get the certificate: wait, then open the address. If it still fails: journalctl -u caddy -n 50"
+  || warn "https://${DOMAIN} did not answer yet. $([ "$PROXY" = caddy ] && echo "Caddy needs a minute to get the certificate: wait, then open the address. If it still fails: journalctl -u caddy -n 50" || echo "Check: nginx -t, journalctl -u nginx -n 50, and that $DOMAIN resolves to this server")"
 
 say "Done"
 cat <<EOF
@@ -248,12 +389,12 @@ ${FIRST_SECRET:+IMPORTANT - save this secret somewhere OUTSIDE this server (pass
   AI_KEY_SECRET=${FIRST_SECRET}
 }
 Next:
-  1. After the owner account exists, lock sign-up:  edit ${ENV_FILE}, set SIGNUP_ENABLED=false (and remove SIGNUP_ALLOWED_DOMAINS), then:  systemctl restart tracker
+  1. If sign-up is open to anyone (no SIGNUP_ALLOWED_DOMAINS), close it once the owner account exists:  edit ${ENV_FILE}, set SIGNUP_ENABLED=false, then:  systemctl restart tracker
      People are then added with invitations from Settings > People (an invited e-mail address may create its account).
   2. Mail: put SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS and EMAIL_FROM in ${ENV_FILE}, restart, then check
      GET /api/workspace/<id>/email-status (see docs/DEPLOYMENT.md).
   3. Copy ${BACKUP_DIR} off this server regularly, and rehearse one restore (docs/DEPLOYMENT.md section 5).
   4. SSH: use a key and turn off password login when you can. Hostinger's panel firewall, if enabled, must also allow 22, 80 and 443.
-Logs:   journalctl -u tracker -f        Status: systemctl status tracker caddy
+Logs:   journalctl -u tracker -f        Status: systemctl status tracker ${PROXY}
 Update: build new archives, copy them here, and run the same command again (no DOMAIN needed).
 EOF

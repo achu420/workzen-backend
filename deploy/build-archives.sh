@@ -8,6 +8,7 @@ here="$(cd "$(dirname "$0")/.." && pwd)"
 web="${1:-$here/../AppFlowy-Web}"
 [ -n "${DOMAIN:-}" ] || { echo "set DOMAIN=your.domain.name" >&2; exit 1; }
 [ -d "$web" ] || { echo "web app folder not found: $web" >&2; exit 1; }
+[ -d "$web/node_modules" ] || { echo "the web app has no dependencies yet: cd $web && npx -y pnpm@10.9.0 install --frozen-lockfile" >&2; exit 1; }
 out="$here/deploy/out"; rm -rf "$out"; mkdir -p "$out"
 
 echo "== backend archive"

@@ -3,6 +3,46 @@
 Written for: whoever runs this server for the team. Everything here was exercised on this project's own test setup;
 what was **not** tried (a real public host, a real certificate, a real load) is listed at the end.
 
+## 0. Start here
+
+Workzen is two pieces of code, each in its own private GitHub repository:
+
+| Repository | What it is |
+|---|---|
+| `achu420/workzen-backend` | Node.js server: API, WebSockets, MCP, e-mail, backups. Holds all deploy scripts and this guide. (On the developer's machine the folder is called `AppFlowy-Independent-Backend`.) |
+| `achu420/workzen-web` | The web app (React, built with Vite into static files that Caddy serves). (Developer folder: `AppFlowy-Web`.) |
+
+Internal names still say "tracker" or "AppFlowy" (service `tracker`, database `tracker`, `/etc/tracker.env`,
+`appflowy-*` package names). That is deliberate; the product name people see is Workzen.
+
+You need these before you start (nothing else has to come from anyone):
+
+| Input | Example | Used for |
+|---|---|---|
+| A server: Ubuntu 22.04 or 24.04, 2 vCPU, 2-4 GB RAM, 40 GB disk, root SSH | small VPS (section 1) | everything runs on this one machine |
+| The address `workzen.achalgarg.com` and access to its DNS (GoDaddy, where `achalgarg.com` is managed) | - | HTTPS certificate and the address people open |
+| Read access to both repositories | GitHub collaborator invite | getting the code |
+| A build machine with Node 20 or newer, `git` and `bash` (your laptop is fine; not the server) | macOS or Linux | building the two archives |
+| An SMTP account of your choice (optional, can be added later): host, port, user, password, From address | any provider that allows SMTP login (Zoho, Google Workspace, Brevo, Mailgun, SES, ...). Port 587 (STARTTLS) or 465 (TLS) both work; the From address must be one the account may send as | invitations and password-reset codes |
+| Who may sign up | **decided 2026-11-20: anyone, any e-mail domain** (so no `SIGNUP_ALLOWED_DOMAINS`) | sign-up policy, section 6 |
+
+The order of work:
+
+1. Create the DNS record first (it can take minutes to spread). In GoDaddy, under DNS for `achalgarg.com`, add:
+   type `A`, name `workzen`, value `<server IPv4>`, TTL 600. Add an `AAAA` record only if the server really has that
+   IPv6 address (a wrong one makes the certificate fail). Do not touch the existing `achalgarg.com` or Zoho mail
+   (`MX`) records. Check with `dig +short workzen.achalgarg.com`: it must print the server's IP.
+2. On the build machine, get the code and build the archives (section 2b, "Build").
+3. Copy them to the server and run `setup-server.sh` **with `PROXY=nginx`** (section 2c: the server 187.127.178.137
+   also runs the company website infisutra.com in nginx, and Workzen is added next to it). Save the `AI_KEY_SECRET`
+   it prints.
+4. Create the test accounts and walk through the checks (section 4b).
+5. Check mail if SMTP was given (section 6, "E-mail"), take a first backup and rehearse a restore (section 5).
+6. Lock the test accounts and go through the checklist (section 8). If something fails, see section 8b.
+
+Sections 3 and 4 describe by hand what `setup-server.sh` does; read them to understand the result or to install
+without the script. You do not need to run them when you use the script.
+
 ## 1. Pick the right kind of hosting
 
 This server is a **long-running Node.js process** that keeps **WebSocket connections** open (that is how people see
@@ -33,25 +73,126 @@ connections, and use PostgreSQL?"* If any answer is no, it will not work and no 
 
 Everything is behind one domain, so no cross-origin (CORS) settings are needed.
 
+Everything that ends up on the server (as `setup-server.sh` creates it). On this deployment's shared server (section
+2c) the front door is the existing **nginx** instead of Caddy, and the firewall is left as it is; the rest is the same.
+
+| Piece | Details |
+|---|---|
+| Services (systemd) | `tracker` (the backend, `node server.js`), `postgresql`, `caddy`. Status: `systemctl status tracker caddy postgresql` |
+| Also installed | `ufw` firewall, `fail2ban`, `unattended-upgrades` (security updates), nightly backup in `/etc/cron.d/tracker-backup` |
+| Versions | Node 22 (any 20+ works), PostgreSQL from Ubuntu (14 on 22.04, 16 on 24.04), Caddy 2 |
+| Ports | public: 22 (SSH), 80 and 443 (Caddy; 80 is needed for the certificate). Local only: 8787 (backend), 5432 (PostgreSQL). Nothing else listens publicly |
+| Database | PostgreSQL database `tracker`, owned by role `tracker`, on 127.0.0.1:5432. The password is generated and written into `DATABASE_URL` in `/etc/tracker.env`. Tables are created and upgraded by the backend at start (folder `migrations/`); there is no separate migration step |
+| Service user | `tracker` (system user, no login shell). The backend runs as it; the env file is readable only by root and it |
+| Settings file | `/etc/tracker.env` (mode 640, owner root, group tracker): all settings and secrets; section 4 lists every line |
+| Code | `/opt/tracker/backend` (backend, with its `node_modules`), `/opt/tracker/web` (the built web app; the previous one is kept in `web.old`) |
+| Data | PostgreSQL holds everything except uploaded files, which are in `/var/lib/tracker/files` |
+| Backups | `/var/backups/tracker`, 03:00 every night, newest 14 kept; log in `/opt/tracker/backend/logs/backup.log` |
+| Logs | `journalctl -u tracker` (start-up, `[config]` warnings, errors), `/opt/tracker/backend/logs/api.log` (one line per request, rotates by itself), `journalctl -u caddy` (certificates, proxy) |
+| Health | `curl http://127.0.0.1:8787/health` on the server; `https://<domain>/api/server-info` from outside |
+| Secrets | `AI_KEY_SECRET` and the database password are generated by the script. SMTP details come from you. AI provider keys (OpenAI, Anthropic, OpenRouter) are entered by a workspace owner in the app (Settings > AI) and stored encrypted in the database. `DEV_TEST_KEY` must never be set in production (the server refuses to start) |
+
+Connections the server makes to the internet: during install, the Ubuntu, NodeSource (Node), Cloudsmith (Caddy) and
+npm package sites; Let's Encrypt for the certificate; while running, your SMTP server (usually port 587) and, once
+someone adds an AI key, `api.openai.com`, `api.anthropic.com` or `openrouter.ai` over HTTPS. Nothing else.
+
 ## 2b. The quick way: one script
 
 `deploy/setup-server.sh` does sections 3-5 below in one go on a fresh Ubuntu 22.04/24.04 server (PostgreSQL, Node 22,
 Caddy with automatic HTTPS, the settings file with generated secrets, the service, the firewall and the nightly backup),
 and updates an existing install when run again.
 
+**Build** (on your computer, not the server; needs Node 20+, git, bash and internet; takes a few minutes):
+
 ```sh
-# on your computer: build the two archives for your address (needs the web app folder next to this one)
-DOMAIN=tracker.example.com bash deploy/build-archives.sh
-# the DNS A record tracker.example.com -> the server's IP must already exist, then:
-scp deploy/out/tracker-backend.tgz deploy/out/tracker-web.tgz deploy/setup-server.sh root@SERVER:/root/
-ssh root@SERVER 'DOMAIN=tracker.example.com bash /root/setup-server.sh /root/tracker-backend.tgz /root/tracker-web.tgz'
+git clone https://github.com/achu420/workzen-backend.git
+git clone https://github.com/achu420/workzen-web.git
+cd workzen-web
+npx -y pnpm@10.9.0 install --frozen-lockfile     # the web app's dependencies; use pnpm, NOT npm (see below)
+cd ../workzen-backend
+DOMAIN=workzen.achalgarg.com bash deploy/build-archives.sh ../workzen-web
 ```
 
-Optional settings can be added in front of the command (`SMTP_HOST=... SMTP_USER=... SMTP_PASS=... EMAIL_FROM=...`,
-`SIGNUP_ALLOWED_DOMAINS=yourcompany.com`). The script prints the `AI_KEY_SECRET` once: store it outside the server. To
-update later, run `build-archives.sh` again, copy the two archives and run the same ssh command without `DOMAIN`.
-The archives were checked by unpacking them, installing only the production dependencies and starting the server in
-production mode against PostgreSQL; the script itself has not been run on a real server yet, so read its output.
+That leaves `deploy/out/tracker-backend.tgz` (about 33 MB) and `deploy/out/tracker-web.tgz` (about 13 MB). The web
+address is built into the web archive, so build again whenever the domain changes. Install the web app's dependencies
+with **pnpm** as shown: `npm ci` stops with a peer-dependency error (`ERESOLVE ... slate`), and even with
+`--legacy-peer-deps` the build then fails with `failed to resolve import "react-gesture-responder"`. The repository's
+`package-lock.json` is a leftover; `pnpm-lock.yaml` is the one that is used.
+
+**Install** (the DNS A record must already point at the server). This is the command for a server of its own; **for
+workzen.achalgarg.com use the command in section 2c instead**, because that server also hosts infisutra.com.
+
+```sh
+scp deploy/out/tracker-backend.tgz deploy/out/tracker-web.tgz deploy/setup-server.sh root@SERVER:/root/
+ssh root@SERVER 'DOMAIN=workzen.achalgarg.com SIGNUP_ALLOWED_DOMAINS=yourcompany.com bash /root/setup-server.sh /root/tracker-backend.tgz /root/tracker-web.tgz'
+```
+
+* `SIGNUP_ALLOWED_DOMAINS` (recommended): only addresses at that domain can create accounts, so the real team can sign
+  up later and nobody else can. Without it the script leaves sign-up **open to anyone** until you set
+  `SIGNUP_ENABLED=false` in `/etc/tracker.env` and restart. You do not need open sign-up for testing: the seeder
+  (section 4b) creates the test accounts directly.
+* SMTP: rather than typing the password on the command line (it stays in shell history), add the `SMTP_*` and
+  `EMAIL_FROM` lines to `/etc/tracker.env` afterwards and run `systemctl restart tracker`.
+* The script prints `AI_KEY_SECRET` once at the end: store it in the company password manager, not on the server.
+* The account that signs up first does **not** get the test workspace; every account that signs up gets its own
+  workspace, and people are brought into a shared one by invitation (section 6).
+
+To update later: pull both repositories, run the pnpm install and `build-archives.sh` again, copy the two archives and
+run the same ssh command without `DOMAIN` (it takes a backup first).
+
+Checked on 2026-11-20: fresh clones of both repositories built with exactly the commands above; the archives were
+unpacked, installed with `npm ci --omit=dev` and started with `NODE_ENV=production` against PostgreSQL, and the seeder
+and sign-in worked from them. `setup-server.sh` itself has not been run on a real server yet, so read its output.
+
+## 2c. Shared server: next to infisutra.com (this deployment)
+
+The server behind `workzen.achalgarg.com` (187.127.178.137, Ubuntu 24.04) already runs **nginx 1.24 serving the
+company website infisutra.com** on ports 80 and 443. Caddy cannot run there (the ports are taken), so the script
+adds Workzen to that nginx as one more site. Without `PROXY=nginx` the script sees nginx on port 80 and stops before
+changing anything.
+
+```sh
+scp deploy/out/tracker-backend.tgz deploy/out/tracker-web.tgz deploy/setup-server.sh root@187.127.178.137:/root/
+ssh root@187.127.178.137 'PROXY=nginx DOMAIN=workzen.achalgarg.com CERTBOT_EMAIL=<your e-mail> bash /root/setup-server.sh /root/tracker-backend.tgz /root/tracker-web.tgz'
+```
+
+`CERTBOT_EMAIL` is optional (Let's Encrypt writes there if renewal ever fails); leave it out if you have none.
+Sign-up stays **open to any e-mail address** on this deployment, as decided: leave `SIGNUP_ENABLED=true` in
+`/etc/tracker.env` even though the script's closing notes and the server's start-up `[config]` warning mention closing
+it. Someone who signs up gets only an empty workspace of their own; they see nothing else until invited.
+
+What it does differently from a server of its own:
+
+| | Server of its own (default) | Shared server (`PROXY=nginx`) |
+|---|---|---|
+| HTTPS front door | installs Caddy | adds **one file**, `/etc/nginx/sites-available/workzen.conf` (+ its `sites-enabled` link), for `server_name workzen.achalgarg.com` only |
+| Certificate | Caddy gets and renews it | `certbot certonly --webroot` for workzen.achalgarg.com only; certbot's timer renews it and reloads nginx. The website's own certificate is not touched |
+| Firewall, fail2ban, unattended-upgrades | installed and enabled | **left exactly as they are** (80 and 443 are already open for the website) |
+| Node | installs Node 22 if older than 20 | same if Node is missing; if an older Node is installed (another app may need it) it stops and asks for `ALLOW_NODE_UPGRADE=1` |
+| PostgreSQL | installs it | installs it if missing; an existing one gets one more database `tracker` and role `tracker`, nothing else. Stops if port 5432 belongs to something else (e.g. a database container) |
+
+How the website is protected:
+
+* Before anything: the existing nginx configuration must pass `nginx -t`, and no other site may already use
+  `workzen.achalgarg.com`; otherwise it stops with nothing changed.
+* Every change to the Workzen file is tested with `nginx -t` first. If the test fails, the file is put back as it was
+  (or removed) and nginx is **not** reloaded, so the website never sees a broken configuration.
+* nginx is only ever **reloaded** (old workers finish their requests), never restarted. No other nginx file is
+  written. Port 8787 must be free (it stops otherwise).
+* The choice `PROXY=nginx` is remembered in `/etc/tracker-deploy.conf`, so updates use the same command without it.
+
+Before and after running it, open `https://infisutra.com` yourself to see the website is fine.
+
+To remove Workzen's nginx part later: `rm /etc/nginx/sites-enabled/workzen.conf && nginx -t && systemctl reload nginx`.
+
+Checked on 2026-11-20 in an Ubuntu 24.04 container with nginx 1.24 and a stand-in website on 80/443 (default_server,
+HTTP to HTTPS redirect, IPv4 and IPv6), using the archives built for workzen.achalgarg.com: without `PROXY=nginx` it
+refused and changed nothing; the first install, two updates and a forced bad certificate all finished as described
+above; the stand-in website answered all 157 checks (every half second) during those runs, and its configuration file
+was unchanged. Through nginx: the web app, deep links, `/api`, `/health`, `/mcp` (401 without a token), sign-in through
+`/gotrue`, and real WebSocket connections on `/ws/v2/<id>` and `/ws/<id>` (still open after 70 seconds) all worked. Not
+covered by that test: getting the real Let's Encrypt certificate (a container cannot), and the real server's own nginx
+files, which nobody has looked at yet.
 
 ## 3. Install
 
@@ -70,10 +211,11 @@ sudo chown -R tracker:tracker /opt/tracker /var/lib/tracker /var/backups/tracker
 Build the web app on any machine and copy `dist/` to `/opt/tracker/web`:
 
 ```sh
-cd AppFlowy-Web
-APPFLOWY_BASE_URL=https://tracker.example.com \
-APPFLOWY_GOTRUE_BASE_URL=https://tracker.example.com/gotrue \
-APPFLOWY_WS_BASE_URL=wss://tracker.example.com/ws/v2 \
+cd AppFlowy-Web                                  # or workzen-web, as cloned in 2b
+npx -y pnpm@10.9.0 install --frozen-lockfile
+APPFLOWY_BASE_URL=https://workzen.achalgarg.com \
+APPFLOWY_GOTRUE_BASE_URL=https://workzen.achalgarg.com/gotrue \
+APPFLOWY_WS_BASE_URL=wss://workzen.achalgarg.com/ws/v2 \
 npx vite build
 ```
 
@@ -98,7 +240,7 @@ SMTP_PORT=587
 SMTP_USER=mailer@yourcompany.com
 SMTP_PASS=CHANGE-ME
 EMAIL_FROM=tracker@yourcompany.com
-PUBLIC_URL=https://tracker.example.com
+PUBLIC_URL=https://workzen.achalgarg.com
 # EMAIL_NOTIFICATIONS=true                      # e-mail mentions, replies and assignments too
 # VERSION_QUIET_SECONDS=180   VERSION_MAX_SECONDS=600   VERSION_KEEP_AUTO=100   (automatic page history)
 # Optional tuning
@@ -136,7 +278,7 @@ WantedBy=multi-user.target
 `/etc/caddy/Caddyfile`:
 
 ```
-tracker.example.com {
+workzen.achalgarg.com {
 	encode gzip
 	header {
 		X-Content-Type-Options nosniff
@@ -189,10 +331,10 @@ would overwrite the seeder's changes), then run `npm run seed` in the backend fo
 
 What to try with them:
 
-1. Open `https://tracker.example.com`, sign in as `owner@workzen.test`. The first sign-in creates the workspace's first
+1. Open `https://workzen.achalgarg.com`, sign in as `owner@workzen.test`. The first sign-in creates the workspace's first
    space, as it does for anyone who signs up. Create a page and a board.
 2. In a private window, sign in as `member@workzen.test`: the same workspace and page are there, and typing in one
-   window shows up in the other within a second or two (WebSockets work through Caddy).
+   window shows up in the other within a second or two (WebSockets work through Caddy or nginx).
 3. As `admin@workzen.test`, open Members: all three people are listed. The list labels the admin as "Member" (the web
    app only shows Owner/Member); the admin rights are still there, as step 4 shows.
 4. As admin, copying the Members invite link works; as member the server refuses it.
@@ -317,13 +459,35 @@ on start (they are idempotent and use an advisory lock). Then replace `/opt/trac
 ## 8. Checklist before you invite the team
 
 - [ ] `journalctl -u tracker` shows no `[config]` warnings you did not choose to accept
-- [ ] `curl -I https://tracker.example.com/api/server-info` answers 200 with `strict-transport-security`
-- [ ] Sign-up behaves as you intend (try it in a private window)
+- [ ] `curl -I https://workzen.achalgarg.com/api/server-info` answers 200 with `strict-transport-security`
+- [ ] Sign-up behaves as you intend (try it in a private window; on workzen.achalgarg.com any address may sign up)
 - [ ] The three test accounts from section 4b are locked (`node scripts/seed.mjs --lock`)
 - [ ] A nightly backup exists **off the machine**, and one restore has been rehearsed
 - [ ] `AI_KEY_SECRET` is stored somewhere other than this server
 - [ ] `GET /api/workspace/<id>/email-status` shows `connection: { ok: true }` and a test e-mail reached a real inbox
 - [ ] You know who is an owner/admin (they can manage AI keys and agent tokens)
+
+## 8b. When something goes wrong
+
+`setup-server.sh` stops at the first failure and prints the line and command; fix the cause and run the same command
+again (it is safe to repeat). The usual causes:
+
+| Symptom | Cause and fix |
+|---|---|
+| `does not resolve yet` or `points to ... but this server is ...` | The DNS A record is missing or wrong. Fix it at the DNS provider, wait a few minutes (`getent hosts <domain>` on the server shows what it sees), run again |
+| `the backend did not start` | The 40 log lines printed above it say why. `[config]` lines mean a setting in `/etc/tracker.env` is refused; a database error means PostgreSQL is not running (`systemctl status postgresql`) |
+| `port 80 is already used by 'nginx'` | The server also hosts another site: use `PROXY=nginx` (section 2c) |
+| `the existing nginx configuration does not pass 'nginx -t'` | Run `nginx -t` to see the problem. It is in the existing setup (or a missing certificate file); fix it, then run again. Nothing was changed |
+| `certbot could not get a certificate` | DNS for workzen.achalgarg.com does not point at the server yet, or port 80 is closed in the provider's firewall. The website is unaffected; fix and run again |
+| `Node vXX is installed and Workzen needs 20+` | Ask whoever runs infisutra.com whether it uses that Node. If not, add `ALLOW_NODE_UPGRADE=1` in front of the command |
+| `port 5432 is used by '...'` or `port 8787 is already used` | Another app already uses that port. Stop and ask before changing anything on the shared server |
+| The site does not open over HTTPS, `journalctl -u caddy` shows certificate errors | Ports 80 and 443 are closed somewhere outside the server. Many providers (Hostinger, AWS, Azure, ...) have a firewall in their control panel too: allow 22, 80 and 443 there |
+| `npm ci` fails during install | The server cannot reach the npm registry, or it ran out of memory (1 GB servers: add swap) |
+| Web page loads but stays on a spinner or "cannot connect" | The archive was built for another address. Rebuild with the right `DOMAIN` (the address is baked into the web build) and run the script again |
+| Live editing does not show up in a second window | WebSockets are blocked between the browser and the server (a corporate proxy or a CDN in front). Without a proxy in front, Caddy or the nginx site from section 2c passes them through as configured |
+| `email-status` shows the connection failing | Wrong SMTP details, or the provider blocks outgoing mail ports (some VPS providers block 25/465/587 until you ask them). Fix `/etc/tracker.env`, then `systemctl restart tracker` |
+| Test accounts cannot sign in | They are locked (section 4b): run the seed command again |
+| Need to start over on a fresh test server | `systemctl stop tracker`, `sudo -u postgres dropdb tracker`, `rm /etc/tracker.env`, then run the first-install command again. **This deletes all data**: never on a server people already use |
 
 ## 9. What this guide does not cover
 
