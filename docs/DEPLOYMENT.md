@@ -161,6 +161,54 @@ tracker.example.com {
 Start: `sudo systemctl enable --now tracker && sudo systemctl reload caddy`. Caddy obtains the HTTPS certificate by itself
 once the domain points at the server.
 
+## 4b. Test accounts (seeder)
+
+`scripts/seed.mjs` creates three accounts that share one workspace, **Workzen Test Workspace**, so you can sign in and
+check the install while sign-up is still closed:
+
+| Role | E-mail | Password | Can do |
+|---|---|---|---|
+| owner | `owner@workzen.test` | `Owner#Test2026` | everything, including members, AI settings and agent tokens |
+| admin | `admin@workzen.test` | `Admin#Test2026` | the same as owner (manages members, the invite link and AI settings) |
+| member | `member@workzen.test` | `Member#Test2026` | edit content; no member or AI settings (the invite link answers 403) |
+
+**These passwords are public (they are in this file).** Lock the accounts when you have finished testing (below).
+
+On the server (it reads the same settings file as the service, so it writes to the real database):
+
+```sh
+sudo -u tracker bash -c 'set -a; . /etc/tracker.env; set +a; cd /opt/tracker/backend && node scripts/seed.mjs --allow-production'
+```
+
+It prints the workspace id and one line per account (`created`, or `reset` if it already existed). With
+`NODE_ENV=production` it refuses to run without `--allow-production`. Running it again is safe: it puts back the
+passwords and roles above and signs those accounts out, and changes nothing else. The service can keep running.
+
+On a developer machine with the default JSON storage, **stop the backend first** (it holds the data in memory and
+would overwrite the seeder's changes), then run `npm run seed` in the backend folder and start it again.
+
+What to try with them:
+
+1. Open `https://tracker.example.com`, sign in as `owner@workzen.test`. The first sign-in creates the workspace's first
+   space, as it does for anyone who signs up. Create a page and a board.
+2. In a private window, sign in as `member@workzen.test`: the same workspace and page are there, and typing in one
+   window shows up in the other within a second or two (WebSockets work through Caddy).
+3. As `admin@workzen.test`, open Members: all three people are listed. The list labels the admin as "Member" (the web
+   app only shows Owner/Member); the admin rights are still there, as step 4 shows.
+4. As admin, copying the Members invite link works; as member the server refuses it.
+
+The addresses end in `.test`, so the server never e-mails them and "Forgot password" does nothing for them; use the
+passwords above.
+
+When testing is finished, give the three accounts random passwords and sign them out:
+
+```sh
+sudo -u tracker bash -c 'set -a; . /etc/tracker.env; set +a; cd /opt/tracker/backend && node scripts/seed.mjs --lock'
+```
+
+Locking keeps the accounts and the test workspace (delete the test pages yourself if you want them gone). Run the seed
+command again to unlock them for the next test.
+
 ## 5. Backups (do this before anyone writes real content)
 
 One command makes a verified archive of the database, the uploaded files and the AI key secret:
@@ -271,6 +319,7 @@ on start (they are idempotent and use an advisory lock). Then replace `/opt/trac
 - [ ] `journalctl -u tracker` shows no `[config]` warnings you did not choose to accept
 - [ ] `curl -I https://tracker.example.com/api/server-info` answers 200 with `strict-transport-security`
 - [ ] Sign-up behaves as you intend (try it in a private window)
+- [ ] The three test accounts from section 4b are locked (`node scripts/seed.mjs --lock`)
 - [ ] A nightly backup exists **off the machine**, and one restore has been rehearsed
 - [ ] `AI_KEY_SECRET` is stored somewhere other than this server
 - [ ] `GET /api/workspace/<id>/email-status` shows `connection: { ok: true }` and a test e-mail reached a real inbox
@@ -280,5 +329,7 @@ on start (they are idempotent and use an advisory lock). Then replace `/opt/trac
 
 Not tried on a real public host: certificate issuance, behaviour behind your actual network, sustained load from 20
 simultaneous editors, a PostgreSQL major-version upgrade, running two backend processes (not supported - one process).
+The seeder (section 4b) was checked against PostgreSQL and JSON storage through the API (sign-in, workspace, roles,
+lock, re-seed), not yet by signing in through the web app in a browser.
 Private spaces, single sign-on and publishing pages to the public web do not
 exist yet.

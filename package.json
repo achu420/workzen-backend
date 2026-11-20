@@ -12,6 +12,7 @@
     "test:database-row-collab": "node --test test/database-row-collab.test.js",
     "test:search": "node --test test/search.test.js test/search-text.test.js",
     "reindex-search": "node scripts/reindex-search.mjs",
+    "seed": "node scripts/seed.mjs",
     "test:database-catalog": "node --test test/database-catalog.test.js",
     "test:database-view-collab": "node --test test/database-view-collab.test.js",
     "test:collab-conformance": "node test/collab-conformance.js",
