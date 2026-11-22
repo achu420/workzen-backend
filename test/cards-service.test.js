@@ -284,7 +284,9 @@ test('createCard validation: title, idempotency key, columns, fields, ambiguity'
   await rejects(cards.createCard({ ...base, title: 'x', idempotencyKey: undefined }), 'INVALID_INPUT', /idempotency_key/);
   await rejects(cards.createCard({ ...base, title: 'x', column: 'Blocked' }), 'INVALID_INPUT', /Valid|Columns/);
   await rejects(cards.createCard({ ...base, title: 'x', fields: { Nope: 1 } }), 'INVALID_INPUT', /Unknown field/);
-  await rejects(cards.createCard({ ...base, title: 'x', fields: { Related: 'a' } }), 'UNSUPPORTED', /relation/);
+  // Relation values are writable since the schema tools; a relation field that points at no database still refuses them.
+  await rejects(cards.createCard({ ...base, title: 'x', fields: { Related: 'a' } }), 'UNSUPPORTED', /not linked to a database/);
+  await rejects(cards.createCard({ ...base, title: 'x', fields: { Related: [7] } }), 'INVALID_INPUT', /card ids/);
   await rejects(cards.createCard({ ...base, title: 'x', fields: { Points: 'many' } }), 'INVALID_INPUT', /number/);
   await rejects(cards.createCard({ ...base, title: 'x', fields: { Reviewed: 'yes' } }), 'INVALID_INPUT', /true or false/);
   await rejects(cards.createCard({ ...base, title: 'x', fields: { Priority: 'Urgent' } }), 'INVALID_INPUT', /Valid options/);

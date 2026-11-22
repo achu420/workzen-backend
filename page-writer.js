@@ -1,6 +1,6 @@
 // Lets an agent write documents: create a page, or append to one. Text is plain "markdown-lite" (headings, bullets,
-// numbered items, to-dos, quotes, code fences, dividers and **bold** / *italic* / `code` / [links](https://...)),
-// turned into the same blocks the editor makes, so people see and edit it like anything typed by hand.
+// numbered items, to-dos, quotes, code fences, dividers, | pipe | tables | and **bold** / *italic* / `code` /
+// [links](https://...)), turned into the same blocks the editor makes, so people see and edit it like anything typed by hand.
 //
 // Appending first saves the page's current state as a named version ("Before <agent>'s edit"), so a person can look
 // at the page's version history and restore it. Everything goes through the normal storage path, so live editors see
@@ -43,13 +43,52 @@ export function parseInline(text) {
   return ops.filter((op) => op.insert.length > 0);
 }
 
-/** @returns {{ty: string, data: object, delta: object[]}[]} */
+// A pipe table ("| a | b |" lines, an optional "|---|---|" separator) becomes the editor's simple table: table -> rows
+// -> cells -> one paragraph each, the same tree AppFlowy-Web builds when markdown is pasted (table-parser.ts).
+const TABLE_ROW = /^\s*\|.*\|\s*$/;
+const TABLE_SEPARATOR = /^\s*\|?\s*:?-{2,}:?\s*(\|\s*:?-{2,}:?\s*)*\|?\s*$/;
+export const CONTAINER_BLOCKS = new Set(['simple_table', 'simple_table_row', 'simple_table_cell']);
+
+function splitTableRow(line) {
+  return line.trim().replace(/^\|/, '').replace(/\|$/, '').split(/(?<!\\)\|/).map((cell) => cell.trim().replace(/\\\|/g, '|'));
+}
+
+function tableBlock(lines) {
+  const rows = lines.filter((line) => !TABLE_SEPARATOR.test(line)).map(splitTableRow);
+  const width = Math.max(...rows.map((cells) => cells.length));
+
+  return {
+    ty: 'simple_table',
+    data: { enable_header_row: TABLE_SEPARATOR.test(lines[1] ?? '') },
+    children: rows.map((cells) => ({
+      ty: 'simple_table_row',
+      data: {},
+      children: Array.from({ length: width }, (_, index) => ({
+        ty: 'simple_table_cell', data: {}, children: [{ ty: 'paragraph', data: {}, delta: parseInline(cells[index] ?? '') }],
+      })),
+    })),
+  };
+}
+
+/** Every block of a tree, parents before children. */
+export function flattenBlocks(blocks) {
+  return blocks.flatMap((block) => [block, ...flattenBlocks(block.children ?? [])]);
+}
+
+/** @returns {{ty: string, data: object, delta?: object[], children?: object[]}[]} */
 export function parseMarkdownLite(content) {
   const lines = String(content).replace(/\r\n?/g, '\n').split('\n');
   const blocks = [];
   let fence = null;
+  let table = null;
 
   for (const raw of lines) {
+    if (table && !fence) {
+      if (TABLE_ROW.test(raw) || (table.length === 1 && TABLE_SEPARATOR.test(raw))) { table.push(raw); continue; }
+      blocks.push(tableBlock(table));
+      table = null;
+    }
+    if (!fence && TABLE_ROW.test(raw)) { table = [raw]; continue; }
     if (fence) {
       if (/^\s*```\s*$/.test(raw)) {
         blocks.push({ ty: 'code', data: { language: fence.language }, delta: fence.lines.length ? [{ insert: fence.lines.join('\n') }] : [] });
@@ -67,15 +106,20 @@ export function parseMarkdownLite(content) {
 
     if (/^\s*([-*_])\1{2,}\s*$/.test(line)) blocks.push({ ty: 'divider', data: {}, delta: [] });
     else if ((m = /^\s*#{1,6}\s+(.*)$/.exec(line))) blocks.push({ ty: 'heading', data: { level: Math.min(3, /^\s*(#+)/.exec(line)[1].length) }, delta: parseInline(m[1]) });
-    else if ((m = /^\s*[-*+]\s+\[([ xX])\]\s+(.*)$/.exec(line))) blocks.push({ ty: 'todo_list', data: { checked: m[1] !== ' ' }, delta: parseInline(m[2]) });
-    else if ((m = /^\s*[-*+•]\s+(.*)$/.exec(line))) blocks.push({ ty: 'bulleted_list', data: {}, delta: parseInline(m[1]) });
-    else if ((m = /^\s*(\d{1,3})[.)]\s+(.*)$/.exec(line))) blocks.push({ ty: 'numbered_list', data: { number: Number(m[1]) }, delta: parseInline(m[2]) });
+    // A marker with nothing after it ("- ", "1. ", "- [ ] ") is an empty item: card templates leave them for people to fill.
+    else if ((m = /^\s*[-*+]\s+\[([ xX])\](?:\s+(.*))?$/.exec(line))) blocks.push({ ty: 'todo_list', data: { checked: m[1] !== ' ' }, delta: parseInline(m[2] ?? '') });
+    else if ((m = /^\s*[-*+•](?:\s+(.*))?$/.exec(line))) blocks.push({ ty: 'bulleted_list', data: {}, delta: parseInline(m[1] ?? '') });
+    else if ((m = /^\s*(\d{1,3})[.)](?:\s+(.*))?$/.exec(line))) blocks.push({ ty: 'numbered_list', data: { number: Number(m[1]) }, delta: parseInline(m[2] ?? '') });
     else if ((m = /^\s*>\s?(.*)$/.exec(line))) blocks.push({ ty: 'quote', data: {}, delta: parseInline(m[1]) });
     else blocks.push({ ty: 'paragraph', data: {}, delta: parseInline(line.trim()) });
   }
+  if (table) blocks.push(tableBlock(table));
   if (fence) blocks.push({ ty: 'code', data: { language: fence.language }, delta: fence.lines.length ? [{ insert: fence.lines.join('\n') }] : [] });
   return blocks;
 }
+
+/** Whether a block carries its own text (dividers and table containers do not). */
+export const hasText = (block) => block.ty !== 'divider' && !CONTAINER_BLOCKS.has(block.ty);
 
 function checkContent(content) {
   if (typeof content !== 'string' || !content.trim()) throw new WriteError('INVALID_INPUT', 'content is required.');
@@ -83,28 +127,34 @@ function checkContent(content) {
   const blocks = parseMarkdownLite(content);
 
   if (!blocks.length) throw new WriteError('INVALID_INPUT', 'content has nothing to write.');
-  if (blocks.length > MAX_BLOCKS) throw new WriteError('INVALID_INPUT', `content has too many lines (at most ${MAX_BLOCKS} blocks).`);
+  if (flattenBlocks(blocks).length > MAX_BLOCKS) throw new WriteError('INVALID_INPUT', `content has too many lines (at most ${MAX_BLOCKS} blocks).`);
   return blocks;
 }
+
+/** Parses and checks markdown-lite the way create_page and append_to_page do (throws INVALID_INPUT). */
+export const markdownBlocks = (content) => checkContent(content);
 
 const shortId = () => randomBytes(5).toString('base64url').replace(/[-_]/g, 'x').slice(0, 8);
 
 /** The plain-JSON document shape the template builder understands, for a page that does not exist yet. */
-function exportDocumentFor(blocks, rootId) {
+export function exportDocumentFor(blocks, rootId) {
   const rootChildren = shortId();
   const exported = { page_id: rootId, blocks: {}, meta: { children_map: { [rootChildren]: [] }, text_map: {} } };
-
-  exported.blocks[rootId] = { id: rootId, ty: 'page', parent: '', children: rootChildren, external_id: null, external_type: null, data: {} };
-  for (const block of blocks) {
+  const add = (block, parentId, siblings) => {
     const id = shortId();
     const children = shortId();
     const textId = shortId();
+    const text = hasText(block);
 
-    exported.blocks[id] = { id, ty: block.ty, parent: rootId, children, external_id: block.ty === 'divider' ? null : textId, external_type: block.ty === 'divider' ? null : 'text', data: block.data };
+    exported.blocks[id] = { id, ty: block.ty, parent: parentId, children, external_id: text ? textId : null, external_type: text ? 'text' : null, data: block.data };
     exported.meta.children_map[children] = [];
-    exported.meta.children_map[rootChildren].push(id);
-    if (block.ty !== 'divider') exported.meta.text_map[textId] = JSON.stringify(block.delta);
-  }
+    siblings.push(id);
+    if (text) exported.meta.text_map[textId] = JSON.stringify(block.delta ?? []);
+    for (const child of block.children ?? []) add(child, id, exported.meta.children_map[children]);
+  };
+
+  exported.blocks[rootId] = { id: rootId, ty: 'page', parent: '', children: rootChildren, external_id: null, external_type: null, data: {} };
+  for (const block of blocks) add(block, rootId, exported.meta.children_map[rootChildren]);
   return exported;
 }
 
@@ -114,36 +164,39 @@ function appendBlocksToDoc(doc, blocks) {
   const meta = document.get('meta');
   const rootId = document.get('page_id');
   const rootChildren = meta.get('children_map').get(blockMap.get(rootId).get('children'));
+  const add = (block, parentId, siblings) => {
+    const id = shortId();
+    const childrenId = shortId();
+    const textId = shortId();
+    const map = new Y.Map();
+    const children = new Y.Array();
+
+    map.set('id', id);
+    map.set('ty', block.ty);
+    map.set('parent', parentId);
+    map.set('children', childrenId);
+    map.set('external_id', hasText(block) ? textId : null);
+    map.set('external_type', hasText(block) ? 'text' : null);
+    map.set('data', JSON.stringify(block.data));
+    blockMap.set(id, map);
+    meta.get('children_map').set(childrenId, children);
+    if (hasText(block)) {
+      const text = new Y.Text();
+
+      meta.get('text_map').set(textId, text);
+      let offset = 0;
+
+      for (const op of block.delta ?? []) {
+        text.insert(offset, op.insert, op.attributes);
+        offset += op.insert.length;
+      }
+    }
+    siblings.push([id]);
+    for (const child of block.children ?? []) add(child, id, children);
+  };
 
   doc.transact(() => {
-    for (const block of blocks) {
-      const id = shortId();
-      const childrenId = shortId();
-      const textId = shortId();
-      const map = new Y.Map();
-
-      map.set('id', id);
-      map.set('ty', block.ty);
-      map.set('parent', rootId);
-      map.set('children', childrenId);
-      map.set('external_id', block.ty === 'divider' ? null : textId);
-      map.set('external_type', block.ty === 'divider' ? null : 'text');
-      map.set('data', JSON.stringify(block.data));
-      blockMap.set(id, map);
-      meta.get('children_map').set(childrenId, new Y.Array());
-      if (block.ty !== 'divider') {
-        const text = new Y.Text();
-
-        meta.get('text_map').set(textId, text);
-        let offset = 0;
-
-        for (const op of block.delta) {
-          text.insert(offset, op.insert, op.attributes);
-          offset += op.insert.length;
-        }
-      }
-      rootChildren.push([id]);
-    }
+    for (const block of blocks) add(block, rootId, rootChildren);
   });
 }
 
@@ -260,10 +313,13 @@ export function createPageWriter({ store, broadcast = async () => {}, isReadable
     return appendBlocks({ workspaceId, userId, page, blocks, agentName });
   }
 
-  /** Adds text to the end of a card's body (the document of its detail page), creating that document if the card never had one. */
-  async function appendToCardBody({ workspaceId, userId, cardId, content, agentName = 'an agent' }) {
+  /**
+   * Adds text to the end of a card's body (the document of its detail page), creating that document if the card never
+   * had one. `blocks` (already parsed, e.g. a database's card template) can be given instead of `content`.
+   */
+  async function appendToCardBody({ workspaceId, userId, cardId, content, blocks: given = null, agentName = 'an agent' }) {
     if (!cards || !ensureRowDocument) throw new WriteError('UNSUPPORTED', 'Writing card bodies is not available on this server.');
-    const blocks = checkContent(content);
+    const blocks = given ?? checkContent(content);
     const card = await cards.getCard({ workspaceId, cardId });
 
     if (card.archived) throw new WriteError('INVALID_INPUT', 'This card is archived. Restore it with restore_card before changing it.');

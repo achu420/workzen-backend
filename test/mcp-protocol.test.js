@@ -10,7 +10,7 @@ let mcp;
 before(async () => { mcp = await startMcp(); });
 after(async () => { await mcp.close(); });
 
-const EXPECTED_TOOLS = ['list_databases', 'get_database', 'list_cards', 'get_card', 'create_card', 'update_card', 'move_card', 'archive_card', 'restore_card', 'search', 'read_page', 'list_pages', 'create_page', 'append_to_page', 'list_comments', 'add_comment', 'resolve_comment', 'append_to_card_body'];
+const EXPECTED_TOOLS = ['list_databases', 'get_database', 'create_database', 'update_database', 'list_cards', 'get_card', 'create_card', 'update_card', 'move_card', 'archive_card', 'restore_card', 'search', 'read_page', 'list_pages', 'create_page', 'append_to_page', 'list_comments', 'add_comment', 'resolve_comment', 'append_to_card_body'];
 
 test('modern stateless flow: discover, list tools, call a tool, ping', async () => {
   const discover = await callModern(mcp.url, 'server/discover', {}, { id: 'd1' });
@@ -52,7 +52,7 @@ test('server/discover reports versions, capabilities, identity, instructions and
   assert.ok(['public', 'private'].includes(result.cacheScope));
 });
 
-test('tools/list exposes exactly the eighteen tools with valid schemas and annotations', async () => {
+test('tools/list exposes exactly the twenty tools with valid schemas and annotations', async () => {
   const { json } = await callModern(mcp.url, 'tools/list', {});
   const tools = json.result.tools;
 

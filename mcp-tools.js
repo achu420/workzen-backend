@@ -6,6 +6,7 @@
 
 import { CardError } from './cards.js';
 import { runAsActor } from './actor-context.js';
+import { FIELD_TYPES, OPTION_COLORS, ROLLUP_CALCULATIONS } from './database-schema.js';
 
 export const CARD_ERROR_CODES = new Set([
   'INVALID_INPUT', 'NOT_FOUND', 'AMBIGUOUS', 'CONFLICT', 'UNSUPPORTED', 'PARTIAL_FAILURE', 'FORBIDDEN',
@@ -42,7 +43,8 @@ const fieldValue = {
 const fieldsInput = {
   type: 'object',
   description: 'Field values keyed by field name (see get_database). Text, number, URL, date (YYYY-MM-DD or an ISO date-time), ' +
-    'single-select (option name), multi-select (array of option names) and checkbox (true/false) fields are writable.',
+    'single-select (option name), multi-select (array of option names), checkbox (true/false), relation (array of card ids of the linked database; ' +
+    'the other side of a two-way link updates too) and person (array of member emails or names) fields are writable. Rollups and formulas are computed by Workzen.',
   maxProperties: 50,
   propertyNames: { minLength: 1, maxLength: 200 },
   additionalProperties: fieldValue,
@@ -84,6 +86,55 @@ const databaseSummaryOutput = {
 };
 
 const noArguments = { type: 'object', additionalProperties: false };
+
+// create_database / update_database field definitions (database-schema.js checks the combinations).
+const optionsInput = {
+  type: 'array', maxItems: 100,
+  items: { anyOf: [{ type: 'string', minLength: 1, maxLength: 100 }, { type: 'object', required: ['name'], additionalProperties: false, properties: { name: { type: 'string', minLength: 1, maxLength: 100 }, color: { type: 'string', enum: OPTION_COLORS } } }] },
+};
+const rollupInput = {
+  type: 'object', required: ['relation', 'target', 'calculation'], additionalProperties: false,
+  description: 'Computed from the cards a relation field links to.',
+  properties: {
+    relation: { type: 'string', description: 'A relation field of this database.' },
+    target: { type: 'string', description: 'A field of the linked database.' },
+    calculation: { type: 'string', enum: Object.keys(ROLLUP_CALCULATIONS) },
+    values: { type: 'array', maxItems: 20, items: { type: 'string' }, description: 'count_values / percent_values: the target select options to count.' },
+  },
+};
+const fieldDefinition = {
+  type: 'object', required: ['name', 'type'], additionalProperties: false,
+  properties: {
+    name: { type: 'string', minLength: 1, maxLength: 200 },
+    type: { type: 'string', enum: Object.keys(FIELD_TYPES) },
+    options: { ...optionsInput, description: 'select / multi_select options.' },
+    number_format: { type: 'string', enum: ['number', 'percent', 'usd', 'eur'] },
+    include_time: { type: 'boolean', description: 'date: also show a time.' },
+    one_person_only: { type: 'boolean', description: 'person: at most one person.' },
+    relation: {
+      type: 'object', required: ['database_id'], additionalProperties: false,
+      properties: {
+        database_id: { type: 'string', minLength: 1, maxLength: 128, description: 'Database to link to, or "self".' },
+        two_way: { type: 'boolean', description: 'Default true (not for "self"): the linked database gets a field showing the links back.' },
+        reciprocal_name: { type: 'string', maxLength: 200, description: 'Name of that field (default: this database\'s name).' },
+        one_card_only: { type: 'boolean', description: 'Each card links to at most one card.' },
+        reciprocal_one_card_only: { type: 'boolean' },
+      },
+    },
+    rollup: rollupInput,
+    formula: { type: 'object', required: ['expression'], additionalProperties: false, properties: { expression: { type: 'string', minLength: 1, maxLength: 4000, description: 'e.g. if(prop("Total") == 0, 0, prop("Done") / prop("Total"))' } } },
+  },
+};
+const cardTemplateInput = {
+  type: 'object', required: ['content'], additionalProperties: false,
+  description: 'Body new cards start from (markdown-lite).',
+  properties: { content: { type: 'string', minLength: 1, maxLength: 20000 }, name: { type: 'string', minLength: 1, maxLength: 100 } },
+};
+
+function schemaService(services) {
+  if (!services.databaseSchema) throw new CardError('UNSUPPORTED', 'Creating and changing databases is not available on this server.');
+  return services.databaseSchema;
+}
 
 // ------------------------------------------------------------- normalisation
 const text = (value, fallback = '') => (typeof value === 'string' ? value : fallback);
@@ -217,6 +268,100 @@ export const TOOLS = [
     },
   },
   {
+    name: 'create_database',
+    title: 'Create database',
+    scope: 'write',
+    description: 'Create a database in a space or under a document page: a title field, your fields, a Grid view and optionally a Board grouped by one of the new select fields, ' +
+      'and optionally a card template (markdown-lite, incl. | pipe | tables |) that new cards start from. A two-way relation also adds a field to the linked database. ' +
+      'Rollup and formula fields refer to fields by name; formulas use prop("Field name"). Always pass a fresh `idempotency_key`. ' + UNTRUSTED,
+    inputSchema: {
+      type: 'object',
+      required: ['parent_id', 'name', 'idempotency_key'],
+      additionalProperties: false,
+      properties: {
+        parent_id: { ...idString, description: 'A space id or document page id (see list_pages).' },
+        name: { type: 'string', minLength: 1, maxLength: 200 },
+        title_field: { type: 'string', minLength: 1, maxLength: 200, description: 'Name of the title field (default "Name").' },
+        fields: { type: 'array', maxItems: 60, items: fieldDefinition },
+        board: { type: 'object', required: ['group_by'], additionalProperties: false, properties: { group_by: { type: 'string', description: 'A new select field; its options become the columns.' }, name: { type: 'string', maxLength: 200 } } },
+        card_template: cardTemplateInput,
+        idempotency_key: { type: 'string', pattern: '^[A-Za-z0-9._:-]{8,128}$', description: '8-128 characters (letters, digits . _ : -), unique per intended database.' },
+      },
+    },
+    outputSchema: { type: 'object', required: ['database_id', 'name', 'fields'], properties: { database_id: { type: 'string' }, name: { type: 'string' }, fields: { type: 'array' }, replayed: { type: 'boolean' } } },
+    annotations: write({}),
+    target: (args) => args.parent_id,
+    async run({ ctx, args, services }) {
+      const created = await schemaService(services).createDatabase({
+        workspaceId: ctx.workspaceId, userId: ctx.userId, parentId: args.parent_id, name: args.name, titleField: args.title_field, fields: args.fields ?? [],
+        board: args.board ?? null, cardTemplate: args.card_template ?? null, idempotencyKey: args.idempotency_key,
+      });
+      const lines = created.fields.map((field) => `${field.name} [${field.type}]${field.options ? `: ${field.options.join(', ')}` : ''}`);
+      const linked = created.reciprocal_fields.map((entry) => `"${entry.reciprocal_field}" added to database ${entry.database_id}`);
+
+      return {
+        text: cap(`${created.replayed ? 'Returned the existing database for this idempotency key' : 'Created database'} "${created.name}" | id ${created.database_id}\nFields: ${lines.join('; ')}` +
+          `${linked.length ? `\nTwo-way links: ${linked.join('; ')}` : ''}${created.card_template ? `\nCard template: "${created.card_template}"` : ''}`),
+        structured: created,
+        targetOverride: created.database_id,
+        audit: { target_type: 'database', target_id: created.database_id, target_title: created.name, summary: created.replayed ? `Replayed creation of database ${quote(created.name)}` : `Created database ${quote(created.name)} with ${created.fields.length} fields`, undo: null },
+      };
+    },
+  },
+  {
+    name: 'update_database',
+    title: 'Update database',
+    scope: 'write',
+    description: 'Change a database\'s properties: `name` renames it; `operations` (applied together, all checked before anything is written) can ' +
+      'add_field (new_field), rename_field (field, new_name), add_options (field, options), rename_option (field, option, new_name, color?), ' +
+      'set_formula (field, expression), set_rollup (field, rollup) and set_card_template (content, name?, default?). Fields are never deleted or retyped here. ' + UNTRUSTED,
+    inputSchema: {
+      type: 'object',
+      required: ['database_id'],
+      additionalProperties: false,
+      properties: {
+        database_id: { ...idString, description: 'Database id from list_databases.' },
+        name: { type: 'string', minLength: 1, maxLength: 200, description: 'New database name.' },
+        operations: {
+          type: 'array',
+          maxItems: 40,
+          items: {
+            type: 'object',
+            required: ['op'],
+            additionalProperties: false,
+            properties: {
+              op: { type: 'string', enum: ['add_field', 'rename_field', 'add_options', 'rename_option', 'set_formula', 'set_rollup', 'set_card_template'] },
+              // Checked in full by database-schema.js; repeating fieldDefinition here would double its context cost.
+              new_field: { type: 'object', description: 'add_field: a field definition, exactly as one item of create_database `fields`.' },
+              field: { type: 'string', minLength: 1, maxLength: 200, description: 'Existing field name or id.' },
+              new_name: { type: 'string', minLength: 1, maxLength: 200 },
+              options: optionsInput,
+              option: { type: 'string', minLength: 1, maxLength: 100 },
+              color: { type: 'string', enum: OPTION_COLORS },
+              expression: { type: 'string', minLength: 1, maxLength: 4000 },
+              rollup: rollupInput,
+              ...cardTemplateInput.properties,
+              default: { type: 'boolean', description: 'set_card_template: use it for new cards (default true).' },
+            },
+          },
+        },
+      },
+    },
+    outputSchema: { type: 'object', required: ['database_id', 'name', 'changes'], properties: { database_id: { type: 'string' }, name: { type: 'string' }, changes: { type: 'array', items: { type: 'string' } }, fields: { type: 'array' } } },
+    annotations: write({ idempotentHint: false }),
+    target: (args) => args.database_id,
+    async run({ ctx, args, services }) {
+      const updated = await schemaService(services).updateDatabase({ workspaceId: ctx.workspaceId, userId: ctx.userId, databaseId: args.database_id, name: args.name, operations: args.operations ?? [] });
+      const linked = updated.reciprocal_fields.map((entry) => `"${entry.reciprocal_field}" added to database ${entry.database_id}`);
+
+      return {
+        text: cap(`Updated database "${updated.name}":\n- ${updated.changes.join('\n- ') || 'nothing changed'}${linked.length ? `\nTwo-way links: ${linked.join('; ')}` : ''}`),
+        structured: updated,
+        audit: { target_type: 'database', target_id: updated.database_id, target_title: updated.name, summary: `Changed database ${quote(updated.name)}: ${oneLine(updated.changes.join('; '), 200)}`, undo: null },
+      };
+    },
+  },
+  {
     name: 'list_cards',
     title: 'List cards',
     scope: 'read',
@@ -293,7 +438,8 @@ export const TOOLS = [
       const more = card.body_next_offset ? ` (chars ${args.body_offset ?? 0}-${card.body_next_offset} of ${card.body_total_chars}; call get_card with body_offset=${card.body_next_offset} for the rest)` : '';
       const body = typeof card.body === 'string' && card.body ? `\nBody${more}:\n${card.body}` : '';
 
-      const head = `${cardLine(card)}\n${JSON.stringify(card.fields)}`;
+      const links = Object.entries(card.links ?? {}).map(([field, linked]) => `${field} → ${linked.map((link) => `${quote(link.title ?? '')} (${link.id})`).join(', ')}`);
+      const head = `${cardLine(card)}\n${JSON.stringify(card.fields)}${links.length ? `\nLinks: ${links.join('; ')}` : ''}`;
 
       // The body gets its own budget so long field values can never cut it off mid-word.
       return { text: cap(`${head.length > 1500 ? `${head.slice(0, 1499)}…` : head}${body}`), structured: { card }, audit: cardAudit(card, `Read card ${quote(card.title)}`) };
@@ -305,6 +451,7 @@ export const TOOLS = [
     scope: 'write',
     description: 'Create a card (database row). Use list_databases and get_database first for valid field and column names. ' +
       '`column` names a Board column and only applies to databases with a Board; it is never created automatically. ' +
+      'If the database has a default card template, its body is written into the new card (as in the app) unless `use_template` is false. ' +
       'Always pass a fresh `idempotency_key`; repeating a call with the same key and arguments returns the original card instead of creating a second one. ' + UNTRUSTED,
     inputSchema: {
       type: 'object',
@@ -315,13 +462,14 @@ export const TOOLS = [
         title: { type: 'string', minLength: 1, maxLength: 2000, description: 'The card title (the database\'s primary field).' },
         column: { type: 'string', minLength: 1, maxLength: 200, description: 'Optional Board column name; omit for "No status".' },
         fields: fieldsInput,
+        use_template: { type: 'boolean', description: 'Write the database\'s default card template into the body (default true).' },
         idempotency_key: { type: 'string', pattern: '^[A-Za-z0-9._:-]{8,128}$', description: '8-128 characters (letters, digits . _ : -), unique per intended card.' },
       },
     },
-    outputSchema: { type: 'object', required: ['card', 'replayed'], properties: { card: cardOutput, replayed: { type: 'boolean' } } },
+    outputSchema: { type: 'object', required: ['card', 'replayed'], properties: { card: cardOutput, replayed: { type: 'boolean' }, template: nullableString } },
     annotations: write({}),
     target: (args) => args.database_id,
-    async run({ cards, ctx, args }) {
+    async run({ cards, ctx, args, services }) {
       const raw = await cards.createCard({
         workspaceId: ctx.workspaceId,
         userId: ctx.userId,
@@ -334,10 +482,17 @@ export const TOOLS = [
       });
       const card = unwrapCard(raw);
       const replayed = Boolean(raw?.replayed);
+      // Same as a card made with the app's "+ New": the default template's body goes into the new card.
+      const template = !replayed && args.use_template !== false && services.writer ? await cards.getCardTemplate({ workspaceId: ctx.workspaceId, databaseId: card.database_id }) : null;
+
+      if (template) {
+        await services.writer.appendToCardBody({ workspaceId: ctx.workspaceId, userId: ctx.userId, cardId: card.id, blocks: template.blocks, agentName: ctx.tokenName ?? 'an agent' })
+          .catch((error) => { throw new CardError('PARTIAL_FAILURE', `The card was created, but its template body could not be written (${error?.message ?? 'storage error'}). Use append_to_card_body to add it.`, { card_id: card.id }); });
+      }
 
       return {
-        text: `${replayed ? 'Returned the existing card for this idempotency key' : 'Created card'}: ${cardLine(card)}`,
-        structured: { card, replayed },
+        text: `${replayed ? 'Returned the existing card for this idempotency key' : 'Created card'}: ${cardLine(card)}${template ? ` (body from template "${template.name}")` : ''}`,
+        structured: { card, replayed, template: template?.name ?? null },
         targetOverride: card.id,
         audit: cardAudit(card, replayed ? `Replayed creation of ${quote(card.title)}` : `Created card ${quote(card.title)} in ${oneLine(card.database_name, 60) || 'a database'}`,
           replayed ? null : { type: 'archive_card', card_id: card.id }),

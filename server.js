@@ -15,7 +15,8 @@ import { createInitialPageCollab, createPageCollabFromFirstBodyContribution, dec
 import { createInitialDatabaseCollab, DATABASE_COLLAB_VERSION, FOLDER_LAYOUTS, SUPPORTED_ADDITIONAL_VIEW_LAYOUTS } from './database-document.js';
 import { createInitialDatabaseRowCollab } from './database-row-document.js';
 import { createAgentAuthenticator } from './agent-auth.js';
-import { createCardService, createIndexRowCandidates } from './cards.js';
+import { CardError, createCardService, createIndexRowCandidates } from './cards.js';
+import { createDatabaseSchemaService } from './database-schema.js';
 import { createMcpHandler } from './mcp.js';
 import { TOOL_BY_NAME } from './mcp-tools.js';
 import { buildDatabaseCollabFromTemplate } from './database-template-builder.js';
@@ -34,6 +35,7 @@ import { createCardHistory } from './card-history.js';
 import { createCardHistoryRoutes } from './card-history-routes.js';
 import { createWorkspaceKnowledge } from './workspace-knowledge.js';
 import { createPageWriter } from './page-writer.js';
+import { templateRootIds } from './row-template.js';
 import { createPageComments } from './page-comments.js';
 import { planTemplateDatabases, relinkTemplateDatabase } from './database-template-plan.js';
 import { createMailer } from './mailer.js';
@@ -1127,6 +1129,38 @@ export async function createApp(options = {}) {
       store, { workspace: { id: workspaceId } }, { databaseId, databaseViewId: null, rowId, documentId: rowDocumentIdFromRowId(rowId), actorUserId },
     ),
   });
+  // create_database / update_database (MCP): new databases go through the same path as library templates.
+  const databaseSchema = createDatabaseSchemaService({
+    cards: cardService,
+    async createDatabaseContainer({ workspaceId, userId, parentId, template, requestId, databaseId }) {
+      const [workspace, user] = await Promise.all([store.getWorkspace(workspaceId), store.getUserById(userId)]);
+      const space = validateUuid(parentId) ? await store.getSpace(parentId) : null;
+
+      if (!workspace || !user) throw new CardError('NOT_FOUND', 'Workspace not found.');
+      if (!validateUuid(parentId) || !(await isWritableCreationParent(store, workspaceId, parentId, space))) {
+        throw new CardError('NOT_FOUND', 'Parent not found: pass a space id or a document page id (see list_pages).');
+      }
+      const derive = (label) => deriveUuid(requestId, label);
+
+      if (derive('database') !== databaseId) throw new Error('database id derivation mismatch');
+      const digest = createHash('sha256').update(JSON.stringify({ parentId, template })).digest('hex');
+      let made;
+
+      try {
+        made = await createTemplateDatabases({ access: { workspace, user }, template, parentViewId: parentId, derive, requestId, digest, timestamp: now(), position: { kind: 'end' }, name: template.name });
+      } catch (creationError) {
+        if (creationError.code === 'REQUEST_ID_REUSED') throw new CardError('IDEMPOTENCY_CONFLICT', 'That idempotency_key was already used with different arguments.');
+        throw creationError;
+      }
+      return { container_id: made.primaryPlan.containerId, replayed: made.primaryResult.outcome === 'already_applied' };
+    },
+    async renameContainer({ workspaceId, containerId, name }) {
+      const updated = await store.updatePageTitle(containerId, workspaceId, name, now());
+
+      if (!updated) throw new CardError('NOT_FOUND', 'Database not found.');
+      broadcastFolderChanged(workspaceId);
+    },
+  });
   const pageComments = createPageComments({
     store,
     broadcast: (event) => broadcastCollabUpdate(event),
@@ -1176,7 +1210,7 @@ export async function createApp(options = {}) {
   const mcpAllowedOrigins = options.mcpAllowedOrigins ?? (process.env.MCP_ALLOWED_ORIGINS ?? '').split(',').map((origin) => origin.trim()).filter(Boolean);
   const mcpHandler = createMcpHandler({
     cards: cardService,
-    services: { knowledge: workspaceKnowledge, writer: pageWriter, pageComments, userNames, notifyCardComment },
+    services: { knowledge: workspaceKnowledge, writer: pageWriter, pageComments, userNames, notifyCardComment, databaseSchema },
     authenticate: createAgentAuthenticator({ store }),
     audit: (record) => {
       const { detail, token_name: tokenName, ...loggable } = record;
@@ -2745,8 +2779,25 @@ export async function createApp(options = {}) {
           if (decodedDocument) {
             const documentId = rowDocumentIdFromRowId(rowId);
             const doc = decodedDocument.doc.getMap('data').get('document');
+            const pageId = doc instanceof Y.Map ? doc.get('page_id') : null;
+            const root = typeof pageId === 'string' && doc.get('blocks') instanceof Y.Map ? doc.get('blocks').get(pageId) : null;
+            // A body made from one of this database's card templates keeps the template's own root block id:
+            // AppFlowy-Web copies the template document as it is (row-template-graph.ts), as Desktop does. Only those
+            // roots are accepted besides the row's own; a body copied from another row still is not.
+            const fromTemplate = () => {
+              const databaseDoc = new Y.Doc({ guid: databaseId });
 
-            if (!(doc instanceof Y.Map) || doc.get('page_id') !== pageIdFromDocumentId(documentId))
+              try {
+                Y.applyUpdate(databaseDoc, databaseCollab.doc_state);
+                const metas = databaseDoc.getMap('data').get('database')?.get('metas');
+
+                return metas instanceof Y.Map && templateRootIds(metas, pageIdFromDocumentId).has(pageId);
+              } finally {
+                databaseDoc.destroy();
+              }
+            };
+
+            if (!(doc instanceof Y.Map) || (pageId !== pageIdFromDocumentId(documentId) && !(root instanceof Y.Map && root.get('ty') === 'page' && fromTemplate())))
               throw new Error('Row document collab identity does not match its row');
           }
         } catch (shapeError) {

@@ -266,7 +266,7 @@ test('end to end through the real MCP handler: legacy and modern flows over stdi
     assert.equal(result.code, 0);
     assert.deepEqual(result.lines.map((line) => line.id), [1, 2, 3, 4, 5]);
     assert.equal(result.lines[0].result.protocolVersion, '2025-06-18');
-    assert.equal(result.lines[1].result.tools.length, 18);
+    assert.equal(result.lines[1].result.tools.length, 20);
     assert.equal(result.lines[2].result.structuredContent.card.id, 'c-1');
     assert.equal(result.lines[3].result.resultType, 'complete');
     assert.deepEqual(result.lines[3].result.supportedVersions, ['2026-07-28']);

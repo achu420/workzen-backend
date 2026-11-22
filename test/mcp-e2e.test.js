@@ -17,7 +17,7 @@ const { account, createTemplateDatabase, startCardsEnv } = await import('./helpe
 const { eachStorageMode, mcpOk, mcpTool, mcpUrl, mintToken } = await import('./helpers/mcp-live-env.js');
 const { callModern, legacy, post } = await import('./helpers/mcp-test-kit.js');
 
-const TOOLS = ['add_comment', 'append_to_card_body', 'append_to_page', 'archive_card', 'create_card', 'create_page', 'get_card', 'get_database', 'list_cards', 'list_comments', 'list_databases', 'list_pages', 'move_card', 'read_page', 'resolve_comment', 'restore_card', 'search', 'update_card'];
+const TOOLS = ['add_comment', 'append_to_card_body', 'append_to_page', 'archive_card', 'create_card', 'create_database', 'create_page', 'get_card', 'get_database', 'list_cards', 'list_comments', 'list_databases', 'list_pages', 'move_card', 'read_page', 'resolve_comment', 'restore_card', 'search', 'update_card', 'update_database'];
 
 process.on('exit', () => { try { rm(logDir, { recursive: true, force: true }); } catch { /* best effort */ } });
 
@@ -57,7 +57,7 @@ eachStorageMode('MCP e2e', (mode) => {
   });
   after(async () => { await env?.stop(); });
 
-  test('modern stateless profile: discover, list the eighteen tools, call a tool', async () => {
+  test('modern stateless profile: discover, list the twenty tools, call a tool', async () => {
     const discover = await callModern(mcpUrl(env), 'server/discover', {}, { token: write.token });
 
     assert.equal(discover.status, 200, discover.text);

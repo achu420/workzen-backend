@@ -7,9 +7,11 @@ import test, { before, after } from 'node:test';
 import assert from 'node:assert/strict';
 import * as Y from 'yjs';
 import { createInitialDatabaseRowCollab } from '../database-row-document.js';
-import { createInitialPageCollab, rowDocumentIdFromRowId } from '../page-document.js';
+import { createInitialPageCollab, pageIdFromDocumentId, rowDocumentIdFromRowId } from '../page-document.js';
 import { readCardBody } from '../card-body.js';
-import { account, createTemplateDatabase, id, rowOrdersOf, startCardsEnv } from './helpers/cards-env.js';
+import { parseMarkdownLite } from '../page-writer.js';
+import { templateRootIds, writeRowTemplate } from '../row-template.js';
+import { account, createTemplateDatabase, humanEditDatabase, id, readDatabaseDoc, rowOrdersOf, startCardsEnv } from './helpers/cards-env.js';
 
 const RESTORE = '00000000-0000-0000-0000-000000000000';
 let env;
@@ -96,6 +98,57 @@ test('a seeded row with a body document creates the hidden row-detail page that 
   assert.ok(page.parent_view_id == null, 'a card document never appears in the sidebar'); // null in JSON mode, undefined in Postgres
   assert.deepEqual(page.extra.row_document.source, { database_id: db.databaseId, database_view_id: db.viewIds[0], row_id: rowId });
   assert.deepEqual(await readCardBody({ store: env.store, workspaceId: acct.workspaceId, databaseId: db.databaseId, rowId }), { text: '', truncated: false, has_document: true, total_chars: 0, next_offset: null });
+});
+
+test('a body copied from one of the database\'s card templates keeps the template root id and is accepted; other roots are not', async () => {
+  const ctx = await setup('seeded-row-template-doc');
+  const { acct, db } = ctx;
+
+  await humanEditDatabase(env, acct.workspaceId, db.databaseId, (database) => writeRowTemplate(database.get('metas'), { name: 'Spec', blocks: parseMarkdownLite('## Goal') }));
+  const { doc: databaseDoc, database } = await readDatabaseDoc(env, acct.workspaceId, db.databaseId);
+  const [templateRoot] = templateRootIds(database.get('metas'), pageIdFromDocumentId);
+
+  databaseDoc.destroy();
+  // What AppFlowy-Web sends for "+ New" with a default template: the template document copied as it is.
+  const templateDoc = (rootId, rootType) => {
+    const blocks = { [rootId]: { id: rootId, ty: rootType, parent: '', children: 'c0', external_id: null, external_type: null, data: {} } };
+    const doc = new Y.Doc();
+    const document = new Y.Map();
+    const map = new Y.Map();
+    const meta = new Y.Map();
+    const children = new Y.Map();
+
+    doc.getMap('data').set('document', document);
+    document.set('page_id', rootId);
+    document.set('blocks', map);
+    document.set('meta', meta);
+    meta.set('children_map', children);
+    meta.set('text_map', new Y.Map());
+    children.set('c0', new Y.Array());
+    for (const [blockId, block] of Object.entries(blocks)) {
+      const entry = new Y.Map();
+
+      for (const [field, value] of Object.entries(block)) entry.set(field, field === 'data' ? JSON.stringify(value) : value);
+      map.set(blockId, entry);
+    }
+    return encodeCreation(Y.encodeStateVector(doc), Y.encodeStateAsUpdate(doc));
+  };
+  const post = (document) => {
+    const rowId = id();
+
+    return env.api('POST', seededUrl(acct, db.databaseId), seededBody(ctx, { row: { row_id: rowId, collab: rowCollab(rowId, db.databaseId, acct), document } }), acct.token).then((response) => ({ rowId, response }));
+  };
+  const accepted = await post(templateDoc(templateRoot, 'page'));
+
+  assert.ok(templateRoot);
+  assert.equal(accepted.response.status, 200, JSON.stringify(accepted.response.body));
+  assert.ok(await env.store.getPage(rowDocumentIdFromRowId(accepted.rowId)), 'stored under the row\'s own document id');
+  for (const [document, why] of [[templateDoc('not-a-template', 'page'), 'a root no template of this database has'], [templateDoc(templateRoot, 'paragraph'), 'a root that is not a page block']]) {
+    const { response } = await post(document);
+
+    assert.equal(response.status, 400, why);
+    assert.match(response.body.error.message, /identity does not match/, why);
+  }
 });
 
 test('seeded row creation is idempotent per request, and refuses reuse, duplicates and foreign ids', async () => {

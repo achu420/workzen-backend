@@ -298,6 +298,6 @@ eachStorageMode('MCP comments and card bodies', (mode) => {
       assert.ok(tool, name);
       assert.equal(tool.annotations.readOnlyHint, name === 'list_comments', `${name} read/write annotation`);
     }
-    assert.equal(tools.length, 18);
+    assert.equal(tools.length, 20);
   });
 });

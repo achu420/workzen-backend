@@ -14,6 +14,7 @@ import { rowDocumentIdFromRowId } from './page-document.js';
 import { readCardBody } from './card-body.js';
 import { addRowComment, deleteRowComment, readRowComments, setRowCommentResolved } from './row-comments.js';
 import { buildReadableIndex, searchWorkspace } from './search-index.js';
+import { defaultTemplateBlocks } from './row-template.js';
 
 /**
  * Errors the MCP layer maps to tool errors (`isError: true`).
@@ -34,8 +35,9 @@ export class CardError extends Error {
   }
 }
 
-const FIELD = { text: 0, number: 1, date: 2, single: 3, multi: 4, checkbox: 5, url: 6 };
+const FIELD = { text: 0, number: 1, date: 2, single: 3, multi: 4, checkbox: 5, url: 6, relation: 10, person: 15 };
 const WRITABLE_TYPES = new Set(Object.values(FIELD));
+const RELATION_ONE_ONLY = 1; // RelationLimit.OneOnly (relation.type.ts)
 const TYPE_NAMES = {
   0: 'text', 1: 'number', 2: 'date', 3: 'single_select', 4: 'multi_select', 5: 'checkbox', 6: 'url', 7: 'checklist',
   8: 'last_edited_time', 9: 'created_time', 10: 'relation', 11: 'summary', 12: 'translate', 13: 'time', 14: 'media',
@@ -163,6 +165,55 @@ function parseOptions(field, type) {
     .map((option) => ({ id: option.id, name: option.name, color: typeof option.color === 'string' ? option.color : null }));
 }
 
+function typeOptionOf(field, type) {
+  const typeOption = field.get('type_option');
+  const config = typeOption instanceof Y.Map ? typeOption.get(String(type)) : null;
+
+  return config instanceof Y.Map ? config : null;
+}
+
+/** A relation field's link target and limits (AppFlowy-Web fields/relation/parse.ts). */
+function parseRelation(field) {
+  const config = typeOptionOf(field, FIELD.relation);
+  const databaseId = config?.get('database_id');
+
+  return {
+    databaseId: typeof databaseId === 'string' && databaseId ? databaseId : null,
+    twoWay: config?.get('is_two_way') === true,
+    reciprocalFieldId: typeof config?.get('reciprocal_field_id') === 'string' ? config.get('reciprocal_field_id') : null,
+    oneOnly: Number(config?.get('source_limit')) === RELATION_ONE_ONLY,
+  };
+}
+
+/** Relation cell row ids, in every stored form AppFlowy-Web reads (relation/cell.ts). */
+function relationIds(raw) {
+  let ids = [];
+
+  if (Array.isArray(raw)) ids = raw;
+  else if (typeof raw === 'string' && raw) {
+    try {
+      const parsed = JSON.parse(raw);
+
+      ids = Array.isArray(parsed) ? parsed : [];
+    } catch {
+      ids = raw.split(',');
+    }
+  }
+  return [...new Set(ids.map((id) => String(id).trim()).filter(Boolean))];
+}
+
+/** Person cell user ids: a JSON array string (PersonCellMenu.tsx writes JSON.stringify(ids)). */
+function personIds(raw) {
+  if (Array.isArray(raw)) return raw.map(String);
+  try {
+    const parsed = JSON.parse(String(raw ?? ''));
+
+    return Array.isArray(parsed) ? parsed.map(String) : [];
+  } catch {
+    return [];
+  }
+}
+
 /** Everything cards.js needs from a Database collab, decoded once. */
 function readDatabaseModel(docState, databaseId) {
   const doc = decode(docState, databaseId);
@@ -212,6 +263,8 @@ function readDatabaseModel(docState, databaseId) {
           isPrimary: field.get('is_primary') === true,
           writable: WRITABLE_TYPES.has(type),
           options: type === FIELD.single || type === FIELD.multi ? parseOptions(field, type) : [],
+          ...(type === FIELD.relation ? { relation: parseRelation(field) } : {}),
+          ...(type === FIELD.person ? { singlePerson: typeOptionOf(field, FIELD.person)?.get('is_single_select') === true } : {}),
         });
       }
     }
@@ -272,11 +325,21 @@ function optionByIdOrName(field, raw) {
   return value ? field.options.find((option) => option.id === value) ?? field.options.find((option) => option.name === value) ?? null : null;
 }
 
-function readCellValue(field, cell, timeZone) {
+function readCellValue(field, cell, timeZone, people = null) {
   if (!cell) return null;
   const raw = cell.data;
 
   switch (field.type) {
+    case FIELD.relation: {
+      const ids = relationIds(raw);
+
+      return ids.length ? ids : null;
+    }
+    case FIELD.person: {
+      const names = personIds(raw).map((userId) => people?.get(userId) ?? `Former member (${userId})`);
+
+      return names.length ? names : null;
+    }
     case FIELD.text:
     case FIELD.url:
       return typeof raw === 'string' && raw !== '' ? raw : null;
@@ -407,7 +470,22 @@ export function createCardService({
     const model = collab ? readDatabaseModel(collab.doc_state, databaseId) : null;
 
     if (!model) throw new CardError('NOT_FOUND', `Database "${databaseId}" was not found.`);
-    return { model, container, name: container.title || model.views[0]?.name || '', readable };
+    const people = model.fields.some((field) => field.type === FIELD.person) ? await workspacePeople(workspaceId) : null;
+
+    return { model, container, name: container.title || model.views[0]?.name || '', readable, people: people?.labels ?? null, members: people?.members ?? null };
+  }
+
+  /** Workspace members as person-field values: labels by user id, plus what a written value may name (id, email or name). */
+  async function workspacePeople(workspaceId) {
+    const rows = await store.listWorkspaceMembers?.(workspaceId) ?? [];
+    // Same name the @-mention list shows (server.js mentionablePerson): member profile name, then account name, then email.
+    const members = rows.filter((row) => row?.user?.id).map(({ membership, user }) => ({
+      id: user.id,
+      name: (typeof membership?.profile?.name === 'string' && membership.profile.name.trim()) || user.name || user.email || user.id,
+      email: user.email ?? null,
+    }));
+
+    return { members, labels: new Map(members.map((member) => [member.id, member.name])) };
   }
 
   async function loadCardContext(workspaceId, cardId) {
@@ -434,7 +512,7 @@ export function createCardService({
 
     for (const field of model.fields) {
       if (field.isPrimary) continue;
-      const value = readCellValue(field, row.cells.get(field.id), timeZone);
+      const value = readCellValue(field, row.cells.get(field.id), timeZone, context.people);
 
       if (value === null || value === undefined) continue;
       fields[nameCount.get(lower(field.name)) > 1 ? `${field.name} [${field.id}]` : field.name] = value;
@@ -473,7 +551,7 @@ export function createCardService({
     const field = matches[0];
 
     if (forWrite && !field.writable) {
-      throw new CardError('UNSUPPORTED', `Field "${field.name}" has type ${field.typeName} which cannot be written in v1. Writable types: text, number, date, single_select, multi_select, checkbox, url.`);
+      throw new CardError('UNSUPPORTED', `Field "${field.name}" has type ${field.typeName} which cannot be written${['rollup', 'formula', 'created_time', 'last_edited_time', 'created_by', 'last_edited_by'].includes(field.typeName) ? ' (Workzen computes it)' : ''}. Writable types: text, number, date, single_select, multi_select, checkbox, url, relation, person.`);
     }
     return field;
   }
@@ -491,11 +569,41 @@ export function createCardService({
     return byName[0] ?? matches[0];
   }
 
+  /** A person value (user id, email or member name) -> the member's user id. */
+  function resolvePerson(field, members, raw) {
+    const wanted = lower(raw);
+    const matches = (members ?? []).filter((member) => member.id === String(raw).trim() || lower(member.email) === wanted);
+    const byName = matches.length ? matches : (members ?? []).filter((member) => lower(member.name) === wanted);
+
+    if (byName.length === 1) return byName[0].id;
+    if (byName.length > 1) throw new CardError('AMBIGUOUS', `Several workspace members are named "${raw}". Use their email instead.`);
+    throw new CardError('INVALID_INPUT', `"${raw}" is not a member of this workspace (field "${field.name}"). Members: ${(members ?? []).map((member) => `"${member.name}"`).join(', ') || '(none)'}.`);
+  }
+
   /** Converts one requested value to the stored cell data (and date extras); throws CardError when it is not representable. */
-  function buildCellWrite(field, value) {
+  function buildCellWrite(field, value, members = null) {
     const label = `Field "${field.name}"`;
 
     switch (field.type) {
+      case FIELD.relation: {
+        const list = value === null ? [] : typeof value === 'string' ? [value] : value;
+
+        if (!Array.isArray(list) || list.some((item) => typeof item !== 'string' || !item.trim())) throw new CardError('INVALID_INPUT', `${label} expects a list of card ids (from list_cards), or [] to clear it.`);
+        const ids = [...new Set(list.map((item) => item.trim()))];
+
+        if (field.relation?.oneOnly && ids.length > 1) throw new CardError('INVALID_INPUT', `${label} links to one card only.`);
+        if (ids.length > 100) throw new CardError('INVALID_INPUT', `${label}: at most 100 linked cards per write.`);
+        return { relation: ids };
+      }
+      case FIELD.person: {
+        const list = value === null ? [] : typeof value === 'string' ? [value] : value;
+
+        if (!Array.isArray(list) || list.some((item) => typeof item !== 'string' || !item.trim())) throw new CardError('INVALID_INPUT', `${label} expects a list of workspace members (email or name), or [] to clear it.`);
+        const ids = [...new Set(list.map((item) => resolvePerson(field, members, item)))];
+
+        if (field.singlePerson && ids.length > 1) throw new CardError('INVALID_INPUT', `${label} holds one person only.`);
+        return { data: ids.length ? JSON.stringify(ids) : '' };
+      }
       case FIELD.text: {
         if (value === null) return { data: '' };
         if (typeof value !== 'string') throw new CardError('INVALID_INPUT', `${label} expects text.`);
@@ -542,7 +650,7 @@ export function createCardService({
   }
 
   /** Splits title/fields into validated writes keyed by field id. */
-  function planWrites(model, { title, fields }, { forbidFieldId = null } = {}) {
+  function planWrites(model, { title, fields }, { forbidFieldId = null, members = null } = {}) {
     if (fields !== undefined && fields !== null && !isPlainObject(fields)) throw new CardError('INVALID_INPUT', '`fields` must be an object of field name to value.');
     if (!model.primaryField) throw new CardError('UNSUPPORTED', 'This database has no title field.');
     const writes = new Map();
@@ -561,7 +669,29 @@ export function createCardService({
       if (model.primaryField.type !== FIELD.text) throw new CardError('UNSUPPORTED', 'The title field is not a text field, so the title cannot be written.');
       writes.set(model.primaryField.id, { field: model.primaryField, value: title });
     }
-    return [...writes.values()].map(({ field, value }) => ({ field, write: buildCellWrite(field, value) }));
+    return [...writes.values()].map(({ field, value }) => ({ field, write: buildCellWrite(field, value, members) }));
+  }
+
+  /** Every card a relation write links to must be a live card of the field's related database. */
+  async function checkRelationTargets(workspaceId, writes) {
+    for (const { field, write } of writes) {
+      if (!write.relation?.length) continue;
+      const targetDatabaseId = field.relation?.databaseId;
+
+      if (!targetDatabaseId) throw new CardError('UNSUPPORTED', `Field "${field.name}" is not linked to a database yet.`);
+      const target = await loadDatabase(workspaceId, targetDatabaseId).catch(() => null);
+
+      if (!target) throw new CardError('NOT_FOUND', `Field "${field.name}" links to a database that is not readable here.`);
+      for (const rowId of write.relation) {
+        const collab = await store.getDatabaseRowCollab(workspaceId, rowId);
+        const row = collab ? readRowState(collab.doc_state) : null;
+
+        if (!row || row.databaseId !== targetDatabaseId || !rowKnown(target.model, rowId)) {
+          throw new CardError('INVALID_INPUT', `Field "${field.name}": "${rowId}" is not a card of "${target.name}". Use list_cards on that database for card ids.`);
+        }
+        if (rowArchived(target.model, rowId)) throw new CardError('INVALID_INPUT', `Field "${field.name}": card "${rowId}" is archived.`);
+      }
+    }
   }
 
   // -------------------------------------------------------------- yjs mutation helpers
@@ -628,6 +758,7 @@ export function createCardService({
 
   /** Same shape and rules as AppFlowy-Web's writeCellToRow; returns whether anything changed. */
   function applyCellWrite(cellsMap, field, write, stamp) {
+    if (write.relation) return applyRelationWrite(cellsMap, field, write.relation, stamp);
     let cell = cellsMap.get(field.id);
     const wantsDate = field.type === FIELD.date && write.date;
 
@@ -664,6 +795,90 @@ export function createCardService({
     if (cell.has('source_field_type')) cell.delete('source_field_type');
     cell.set('last_modified', stamp);
     return true;
+  }
+
+  /** Same shape as AppFlowy-Web's setRelationCellRowIds: the ids in a Y.Array, the cell marked as a Relation cell. */
+  function applyRelationWrite(cellsMap, field, ids, stamp) {
+    let cell = cellsMap.get(field.id);
+
+    if (!(cell instanceof Y.Map)) {
+      if (!ids.length) return false;
+      cell = new Y.Map();
+      cell.set('created_at', stamp);
+      cellsMap.set(field.id, cell);
+    } else {
+      const previous = cell.get('data');
+      const current = relationIds(previous instanceof Y.Array ? previous.toArray() : previous);
+
+      if (cell.get('field_type') === FIELD.relation && current.length === ids.length && current.every((id, index) => id === ids[index])) return false;
+    }
+    const data = new Y.Array();
+
+    if (ids.length) data.push(ids);
+    cell.set('data', data);
+    cell.set('field_type', FIELD.relation);
+    if (cell.has('source_field_type')) cell.delete('source_field_type');
+    cell.set('last_modified', stamp);
+    return true;
+  }
+
+  /** The linked card ids a row holds in one relation field. */
+  function linkedIds(doc, fieldId) {
+    const data = doc.getMap('data').get('data')?.get('cells')?.get(fieldId)?.get('data');
+
+    return relationIds(data instanceof Y.Array ? data.toArray() : data);
+  }
+
+  /**
+   * Keeps the other side of a two-way relation in step after `rowId`'s `field` changed from `before` to `after`
+   * (AppFlowy-Web dispatch/relation.ts applyRelationReciprocalInserts and its removal counterpart): each newly linked
+   * card gets `rowId` in its reciprocal field, each unlinked one loses it. When the reciprocal side holds one card
+   * only, linking replaces its previous link, and that previous card drops the link back.
+   */
+  async function syncReciprocal(workspaceId, model, rowId, field, before, after, uid) {
+    const relation = field.relation;
+
+    if (!relation?.twoWay || !relation.databaseId || !relation.reciprocalFieldId) return;
+    // Every linked card is checked, not only new ones, so retrying after a partial failure completes the other side
+    // (an already-correct card writes nothing).
+    const added = after;
+    const removed = before.filter((id) => !after.includes(id));
+
+    if (!added.length && !removed.length) return;
+    const target = relation.databaseId === model.id ? { model } : await loadDatabase(workspaceId, relation.databaseId);
+    const reciprocal = target.model.fieldsById.get(relation.reciprocalFieldId);
+
+    if (!reciprocal || reciprocal.type !== FIELD.relation) return;
+    const stamp = unixNow(now);
+    const edit = (targetRowId, change) => mutateRow(workspaceId, targetRowId, (doc) => {
+      const current = linkedIds(doc, reciprocal.id);
+      const next = change(current);
+
+      if (applyRelationWrite(doc.getMap('data').get('data').get('cells'), reciprocal, next, stamp)) touchRow(doc, uid, stamp);
+      return current;
+    });
+
+    for (const targetRowId of added) {
+      const { result: previous } = await edit(targetRowId, (current) => (reciprocal.relation?.oneOnly ? [rowId] : [...new Set([...current, rowId])]));
+
+      if (!reciprocal.relation?.oneOnly) continue;
+      for (const displaced of (previous ?? []).filter((id) => id !== rowId)) {
+        await mutateRow(workspaceId, displaced, (doc) => {
+          const next = linkedIds(doc, field.id).filter((id) => id !== targetRowId);
+
+          if (applyRelationWrite(doc.getMap('data').get('data').get('cells'), field, next, stamp)) touchRow(doc, uid, stamp);
+        }).catch(() => undefined);
+      }
+    }
+    for (const targetRowId of removed) await edit(targetRowId, (current) => current.filter((id) => id !== rowId));
+  }
+
+  async function syncAllReciprocals(workspaceId, model, rowId, changes, uid) {
+    try {
+      for (const { field, before, after } of changes) await syncReciprocal(workspaceId, model, rowId, field, before, after, uid);
+    } catch (error) {
+      throw new CardError('PARTIAL_FAILURE', `The card was saved, but the linked cards' side of a two-way relation could not all be updated (${error?.message ?? 'storage error'}). Retry the same call to finish.`, { card_id: rowId });
+    }
   }
 
   // AppFlowy-Web refuses to change a text cell whose formatting needs a newer client (rich-text-guard.ts).
@@ -772,6 +987,8 @@ export function createCardService({
         is_primary: field.isPrimary,
         writable: field.writable,
         ...(field.options.length ? { options: field.options } : {}),
+        ...(field.relation ? { links_to: { database_id: field.relation.databaseId, two_way: field.relation.twoWay, one_card_only: field.relation.oneOnly } } : {}),
+        ...(field.type === FIELD.person ? { one_person_only: field.singlePerson } : {}),
       })),
       views: model.views.map((view) => ({ view_id: view.id, name: view.name, layout: view.layout })),
       boards,
@@ -890,12 +1107,55 @@ export function createCardService({
     const card = toCard(context, context.row, boardsOf(context.model)[0] ?? null);
 
     if (!includeBody) return card;
+    card.links = await linkTitles(workspaceId, context.model, card.fields);
     const body = await readCardBody({ store, workspaceId, databaseId: context.row.databaseId, rowId: cardId, offset: bodyOffset, ...(bodyMaxChars ? { maxChars: bodyMaxChars } : {}) });
 
     return {
       ...card, body: body.text, body_truncated: body.truncated, has_body_document: body.has_document,
       body_total_chars: body.total_chars ?? 0, body_next_offset: body.next_offset ?? null,
     };
+  }
+
+  /** The database's default card template ({ name, blocks }), or null: what the app puts in a new card's body. */
+  async function getCardTemplate({ workspaceId, databaseId }) {
+    await loadDatabase(workspaceId, databaseId);
+    const collab = await store.getDatabaseCollab(workspaceId, databaseId);
+    const doc = decode(collab.doc_state, databaseId);
+
+    try {
+      const metas = doc.getMap('data').get('database')?.get('metas');
+
+      return metas instanceof Y.Map ? defaultTemplateBlocks(metas) : null;
+    } finally {
+      doc.destroy();
+    }
+  }
+
+  /** { "<relation field>": [{ id, title }] } for the relation values of one card (titles read from the linked cards). */
+  async function linkTitles(workspaceId, model, fields) {
+    const links = {};
+    const titleFields = new Map();
+
+    for (const field of model.fields) {
+      const ids = field.type === FIELD.relation ? fields[field.name] : null;
+
+      if (!Array.isArray(ids) || !ids.length || !field.relation?.databaseId) continue;
+      if (!titleFields.has(field.relation.databaseId)) {
+        const target = await loadDatabase(workspaceId, field.relation.databaseId).catch(() => null);
+
+        titleFields.set(field.relation.databaseId, target?.model.primaryField?.id ?? null);
+      }
+      const titleField = titleFields.get(field.relation.databaseId);
+
+      links[field.name] = [];
+      for (const rowId of ids.slice(0, 50)) {
+        const collab = await store.getDatabaseRowCollab(workspaceId, rowId);
+        const title = collab && titleField ? readRowState(collab.doc_state)?.cells.get(titleField)?.data : null;
+
+        links[field.name].push({ id: rowId, title: typeof title === 'string' ? title : null });
+      }
+    }
+    return links;
   }
 
   async function createCard({ workspaceId, userId, databaseId, title, column = null, fields = {}, viewId = null, idempotencyKey, tokenId = null }) {
@@ -912,11 +1172,17 @@ export function createCardService({
       board = pickBoard(model, viewId);
       columnChoice = resolveColumn(board, column);
     }
-    const writes = planWrites(model, { title, fields }, { forbidFieldId: board?.groupField?.id ?? null });
+    const writes = planWrites(model, { title, fields }, { forbidFieldId: board?.groupField?.id ?? null, members: context.members });
+
+    await checkRelationTargets(workspaceId, writes);
     const stamp = unixNow(now);
     const cells = {};
 
     for (const { field, write } of writes) {
+      if (write.relation) {
+        if (write.relation.length) cells[field.id] = { created_at: stamp, field_type: FIELD.relation, data: write.relation, last_modified: stamp };
+        continue;
+      }
       if (write.data === '' && !write.date) continue;
       cells[field.id] = { created_at: stamp, field_type: field.type, data: write.data, last_modified: stamp };
       if (write.date) Object.assign(cells[field.id], write.date);
@@ -952,6 +1218,8 @@ export function createCardService({
     if (!replayed) {
       await emit({ workspaceId, collabType: 1, objectId: databaseId, update: created.database_update, beforeStateVector: null, accepted: created });
     }
+    // Also on a replay: finishing the other side of two-way links is what a retry after PARTIAL_FAILURE is for.
+    await syncAllReciprocals(workspaceId, model, created.row_id, writes.filter(({ write }) => write.relation).map(({ field, write }) => ({ field, before: [], after: write.relation })), uid);
     return { card: await getCard({ workspaceId, cardId: created.row_id }), replayed };
   }
 
@@ -961,18 +1229,26 @@ export function createCardService({
     }
     const context = await loadCardContext(workspaceId, cardId);
     if (rowArchived(context.model, cardId)) throw new CardError('INVALID_INPUT', 'This card is archived. Restore it with restore_card before changing it.');
-    const writes = planWrites(context.model, { title, fields });
+    const writes = planWrites(context.model, { title, fields }, { members: context.members });
+
+    await checkRelationTargets(workspaceId, writes);
     const uid = await actorUid(userId);
     const stamp = unixNow(now);
-
-    await mutateRow(workspaceId, cardId, (doc) => {
+    const { result: linkChanges } = await mutateRow(workspaceId, cardId, (doc) => {
       const row = doc.getMap('data').get('data');
       const cells = row.get('cells');
+      const changes = [];
       let changed = false;
 
-      for (const { field, write } of writes) changed = applyCellWrite(cells, field, write, stamp) || changed;
+      for (const { field, write } of writes) {
+        if (write.relation) changes.push({ field, before: linkedIds(doc, field.id), after: write.relation });
+        changed = applyCellWrite(cells, field, write, stamp) || changed;
+      }
       if (changed) touchRow(doc, uid, stamp);
+      return changes;
     });
+
+    await syncAllReciprocals(workspaceId, context.model, cardId, linkChanges ?? [], uid);
     return getCard({ workspaceId, cardId });
   }
 
@@ -1174,6 +1450,11 @@ export function createCardService({
     deleteCardComment,
     archiveCard: (args) => setArchived({ ...args, archive: true }),
     restoreCard: (args) => setArchived({ ...args, archive: false }),
+    // For the database schema service (database-schema.js): the same readable-database check and the same
+    // retrying, broadcasting write path card writes use.
+    loadDatabase,
+    mutateDatabase,
+    getCardTemplate,
   };
 }
 

@@ -396,6 +396,12 @@ guess. (The automated test does this on a throwaway database; it cannot test you
   chat's scope limits *documents* to those pages; cards and databases are included by default and can be switched off
   with "Include cards and databases" in the same picker. Agents get the same search
   through the `search`, `read_page` and `list_pages` tools, and can write with `create_page`, `append_to_page` and `append_to_card_body` (existing text is never changed; a restore point is saved first), and read and write comments with `list_comments`, `add_comment` and `resolve_comment`.
+  Agents can also create databases (`create_database`: fields of every type including relation, rollup, formula and
+  person, an optional Board and a card template) and change their properties (`update_database`: rename, add fields,
+  rename fields, add or rename options, edit formulas and rollups, set the card template). They can never delete a
+  field, change a field's type or remove an option; those stay manual in the app. Card writes accept relation values
+  (card ids; both sides of a two-way link are kept in step) and person values (member email or name). Rollup and
+  formula values are computed by the app, so agents do not see them in `get_card`.
   How good the answers are depends on the model behind your API key: this was tested with a stand-in model, not a real
   one.
 * **Passwords.** The web form requires at least one special character; the server accepts 8-200 characters. Without
